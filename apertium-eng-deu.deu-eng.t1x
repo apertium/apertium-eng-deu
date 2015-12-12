@@ -1483,11 +1483,12 @@
 								</lu>
 								<b pos="1"/>
 								<lu>
-									<clip pos="2" side="tl" part="lem"/>		<!-- Verb -->
+									<clip pos="2" side="tl" part="lemh"/>		<!-- Verb -->
 									<clip pos="2" side="tl" part="a_verb"/>
 									<var n="v_temps"/>  <!--"pres"-->
 									<clip pos="1" side="tl" part="pers"/>
 									<clip pos="1" side="tl" part="nbr"/>
+									<clip pos="2" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
 						</out>
@@ -1521,11 +1522,12 @@
 								</lu>
 								<b pos="1"/>
 								<lu>
-									<clip pos="2" side="tl" part="lem"/>
+									<clip pos="2" side="tl" part="lemh"/>
 									<clip pos="2" side="tl" part="a_verb"/>
 									<var n="v_temps"/>  <!--"pres"-->
 									<clip pos="1" side="tl" part="pers"/>
 									<clip pos="1" side="tl" part="nbr"/>
+									<clip pos="2" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
 						</out>
@@ -1573,11 +1575,12 @@
 								</lu>
 								<b pos="1"/>
 								<lu>
-									<clip pos="2" side="tl" part="lem"/>		<!-- Verb -->
+									<clip pos="2" side="tl" part="lemh"/>		<!-- Verb -->
 									<clip pos="2" side="tl" part="a_verb"/>
 									<var n="v_temps"/>  <!--"past"-->
 									<clip pos="1" side="tl" part="pers"/>
 									<clip pos="1" side="tl" part="nbr"/>
+									<clip pos="2" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
 						</out>
@@ -1671,10 +1674,11 @@
 							<tag><lit-tag v="V"/></tag>
 						</tags>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_verb"/>
 							<clip pos="2" side="tl" part="temps"/>
 							<!--<var n="v_temps"/>-->
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 					<b/>
@@ -1705,9 +1709,10 @@
 							<tag><lit-tag v="V"/></tag>
 						</tags>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_verb"/>
 							<clip pos="1" side="tl" part="temps"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -1874,11 +1879,12 @@
 									<tag><lit-tag v="V"/></tag>
 								</tags>
 								<lu>  <!-- output with pers,nbr -->
-									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="lemh"/>
 									<clip pos="1" side="tl" part="a_verb"/>
 									<var n="v_temps"/>
 									<clip pos="1" side="tl" part="pers"/>
 									<clip pos="1" side="tl" part="nbr"/>
+									<clip pos="1" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
 						</out>
@@ -1897,13 +1903,14 @@
 									<tag><lit-tag v="V"/></tag>
 								</tags>
 								<lu>
-									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="lemh"/>
 									<clip pos="1" side="tl" part="a_verb"/>
 									<var n="v_temps"/>
 									<var n="v_pers_nom"/>
 									<var n="v_nbr_nom"/>
 									<!--<clip pos="1" side="tl" part="pers"/>-->
 									<!--<clip pos="1" side="tl" part="nbr"/>-->
+									<clip pos="1" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
 						</out>
@@ -1983,9 +1990,10 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_verb"/>
 							<clip pos="2" side="tl" part="temps"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 						<b pos="2"/>
 						<lu>
