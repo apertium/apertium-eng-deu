@@ -9,6 +9,28 @@
   </rule>
 
   <rule>
+    <match lemma="answer" tags="vblex.*">
+      <select lemma="beantworten" tags="vblex.*"/>
+    </match>
+	<or>
+      <match lemma="the"/>
+      <match lemma="a"/>
+	</or>
+    <match lemma="question"/>
+  </rule>
+
+  <rule>
+    <match lemma="cross" tags="vblex.*">
+      <select lemma="überqueren" tags="vblex.*"/>
+    </match>
+    <match lemma="the"/>
+	<or>
+	  <match lemma="street"/>
+      <match lemma="road"/>
+	</or>
+  </rule>
+
+  <rule>
     <match lemma="daddy"/>
     <match lemma="and"/>
     <match lemma="mummy" tags="n.*">
