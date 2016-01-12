@@ -377,7 +377,7 @@
 		</def-macro>
 
 
-		<!-- (nom) get gender, if empty set "nt" -->
+		<!-- (nom) get gender, if empty set "nt" / OUT: v_gen -->
 		<def-macro n="set_gen" npar="1">
 			<let>
 				<var n="v_gen"/>
@@ -667,15 +667,21 @@
 			</choose>
 		</def-macro>
 
-		<!-- (prn) if "sg" set "mf" to "m" -->
+		<!-- (prn) set "mf"/"mfn" to "m" -->
 		<def-macro n="chg_mf__m_gen" npar="1">
 			<choose>
 				<when>
 					<test>
-						<equal>
-							<clip pos="1" side="tl" part="a_gen"/>
-							<lit-tag v="mf"/>
-						</equal>
+						<or>
+							<equal>
+								<clip pos="1" side="tl" part="a_gen"/>
+								<lit-tag v="mf"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="a_gen"/>
+								<lit-tag v="mfn"/>
+							</equal>
+						</or>
 					</test>
 					<let>
 						<var n="v_gen"/>
@@ -1445,7 +1451,7 @@
 				<pattern-item n="prpers"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_prpers">
+				<call-macro n="proc_prpers">  <!-- OUT: v_..._prn -->
 					<with-param pos="1"/>
 				</call-macro>
 
@@ -1566,7 +1572,7 @@
 							<clip pos="1" side="tl" part="a_pers"/>
 							<clip pos="1" side="tl" part="a_gen"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
-							<var n="v_kas_nom"/>  <!-- case from noun -->
+							<var n="v_kas_nom"/>    <!-- case from noun -->
 						</lu>
 						<b pos="1"/>
 						<lu>
