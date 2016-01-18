@@ -57,12 +57,23 @@
 			<cat-item tags="np.*"/>
 			<cat-item tags="n.*"/>
 		</def-cat>
+		<def-cat n="verbs"> <!-- any verb -->
+			<cat-item tags="vblex.*"/>
+			<cat-item tags="vbser.*"/>
+			<cat-item tags="vbhaver.*"/>
+			<cat-item tags="vbdo.*"/>
+			<cat-item tags="vbmod.*"/>
+			<cat-item tags="vaux.*"/>
+		</def-cat>
+		<def-cat n="verbm"> <!-- modal verb -->
+			<cat-item tags="vbmod.*"/>
+			<cat-item tags="vaux.*"/>
+		</def-cat>
 		<def-cat n="verbnm"> <!-- verb no modal -->
 			<cat-item tags="vblex.*"/>
 			<cat-item tags="vbser.*"/>
 			<cat-item tags="vbhaver.*"/>
 			<cat-item tags="vbdo.*"/>
-			<cat-item tags="vaux.*"/>
 		</def-cat>
 		<def-cat n="verbdo">
 			<cat-item tags="vbdo.*"/>
@@ -273,7 +284,7 @@
 
 	<section-def-vars>
 		<def-var n="numero"/>
-		<def-var n="caseFirstWord"/>
+		<def-var n="caseFirstWord" v="aa"/>
 		<def-var n="nombre"/>
 		<def-var n="v_sint_adj"/>
 		<def-var n="v_obj_prn"/>
@@ -305,7 +316,7 @@
 	</section-def-vars>
 
 
-<!-- macro: 	(by wth)
+<!-- macros: 	(by wth)
 	set_		store attribut into variable (set_name stores value in variable v_name)
 	chg_		change value of variable
 	trim_		if "whole" already has this value, set variable to null
@@ -732,7 +743,7 @@
 					</test>
 					<let>
 						<var n="v_pers"/>
-						<lit-tag v="sg"/>
+						<lit-tag v="p3"/>
 					</let>
 				</when>
 			</choose>
@@ -1193,6 +1204,20 @@
 					</let>
 				</when>
 			</choose>
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<var n="v_pers_verb"/>
+							<lit v=""/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_pers_verb"/>
+						<lit-tag v="p3"/>
+					</let>
+				</when>
+			</choose>
 		</def-macro>
 
 
@@ -1451,6 +1476,10 @@
 				<pattern-item n="prpers"/>
 			</pattern>
 			<action>
+				<modify-case>
+					<clip pos="1" side="tl" part="lem"/>
+					<lit v="aa"/>
+				</modify-case>
 				<call-macro n="proc_prpers">  <!-- OUT: v_..._prn -->
 					<with-param pos="1"/>
 				</call-macro>
@@ -1501,6 +1530,11 @@
 						</out>
 					</otherwise>
 				</choose>
+
+				<let>
+					<var n="caseFirstWord"/>
+					<lit v="aa"/>
+				</let>
 			</action>
 		</rule>
 
@@ -2584,9 +2618,9 @@
 		</rule>
 
 <!--25-->
-		<rule comment="REGLA: VERBNM">
+		<rule comment="REGLA: VERBS">
 			<pattern>
-				<pattern-item n="verbnm"/>
+				<pattern-item n="verbs"/>
 			</pattern>
 			<action>
 				<call-macro n="set_temps_pers_nbr_verb">
@@ -2639,10 +2673,10 @@
 
 
 		<!-- "be" + <vblex><pp> -->
-		<rule comment="REGLA: VERBNM VERBNM">
+		<rule comment="REGLA: VERBNM VERBS">
 			<pattern>
 				<pattern-item n="verbnm"/>
-				<pattern-item n="verbnm"/>
+				<pattern-item n="verbs"/>
 			</pattern>
 			<action>
 				<call-macro n="set_temps">
@@ -2830,7 +2864,7 @@
 
 <!--29-->
 		<!--  BE: "has he got" => "hat er" -->
-		<rule comment="REGLA: HAVE PRPERS GOT">
+		<rule comment="REGLA: HAVE NOUNS GOT">
 			<pattern>
 				<pattern-item n="verbhave"/>
 				<pattern-item n="nouns"/>
@@ -2913,12 +2947,57 @@
 						</lu>
 					</chunk>
 				</out>
-
 			</action>
 		</rule>
 
 
-		<!-- " I don't know" => "ich kenne nicht" -->
+		<!-- "you can" => "du kannst" -->
+		<rule comment="REGLA: PRPERS VERBS">
+			<pattern>
+				<pattern-item n="prpers"/>
+				<pattern-item n="verbs"/>
+			</pattern>
+			<action>
+				<call-macro n="set_pers_gen_nbr_kas_nom">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="trim_kas_nom">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="set_obj_prn__kas_nom">  <!-- "obj" to "iobj" -->
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="set_temps_pers_nbr_verb">
+					<with-param pos="2"/>
+				</call-macro>
+				<out>
+					<chunk name="verb_prn" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="V"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lem"/>
+							<var n="v_obj_prn"/>    <!-- obj to iobj -->
+							<clip pos="1" side="tl" part="a_pers"/>
+							<var n="v_gen_nom"/>
+							<var n="v_nbr_nom"/>
+							<var n="v_kas_nom"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_verb"/>
+							<var n="v_temps"/>      <!-- converted tense tag -->
+							<clip pos="1" side="tl" part="a_pers"/>
+							<var n="v_nbr_nom"/>
+						</lu>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+<!--32-->
+		<!-- "I don't know" => "ich kenne nicht" -->
 		<rule comment="REGLA: NOUNS VERBDO ADV VERBNM">
 			<pattern>
 				<pattern-item n="nouns"/>
@@ -2938,6 +3017,9 @@
 				</call-macro>
 				<call-macro n="set_temps_pers_nbr_verb">
 					<with-param pos="4"/>
+				</call-macro>
+				<call-macro n="set_temps"> <!--(after pos="4"!)-->
+					<with-param pos="2"/>
 				</call-macro>
 				<out>
 					<chunk name="nom_verb_adv" case="caseFirstWord">
@@ -2963,6 +3045,54 @@
 						<b/>
 						<lu>
 							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+
+			</action>
+		</rule>
+
+
+		<!-- "first he must" => "zuerst muss er" -->
+		<rule comment="REGLA: ADV NOUNS VERBS">
+			<pattern>
+				<pattern-item n="adv"/>
+				<pattern-item n="nouns"/>
+				<pattern-item n="verbs"/>
+			</pattern>
+			<action>
+				<call-macro n="set_pers_gen_nbr_kas_prn">
+					<with-param pos="2"/>
+				</call-macro>
+				<!--<call-macro n="set_temps_pers_nbr_verb">-->
+				<call-macro n="set_temps">
+					<with-param pos="3"/>
+				</call-macro>
+
+				<out>
+					<chunk name="adv_verb_prn" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="V"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="a_verb"/>
+							<var n="v_temps"/>      <!-- converted tense tag -->
+							<var n="v_pers_prn"/>
+							<var n="v_nbr_prn"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_tipus_prn"/>
+							<clip pos="2" side="tl" part="a_pers"/>
+							<var n="v_gen_prn"/>
+							<var n="v_nbr_prn"/>
+							<var n="v_kas_prn"/>
 						</lu>
 					</chunk>
 				</out>
