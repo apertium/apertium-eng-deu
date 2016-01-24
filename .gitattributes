@@ -19,5 +19,8 @@
 /deu-eng.prob -text svneol=unset#unset
 dev/story.deu.txt -text
 dev/story.eng.txt -text
+dev/testvoc/inconsistency-summary.sh -text
+dev/testvoc/inconsistency.sh -text
+dev/testvoc/testvoc.sh -text
 /eng-deu.prob -text svneol=unset#unset
 /modes.xml -text
