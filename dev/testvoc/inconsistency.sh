@@ -5,7 +5,7 @@ SRCDEU=`cat ../../config.status | grep AP_SRC2 | cut -f2 -d'=' | tr -d '"'`
 
 if [[ $DIR == "deu-eng" ]]; then
 
-    lt-expand $SRCDEU/apertium-deu.deu.dix | grep -v '<lower>' | grep -v '<cmp>'| grep -v '<cmp-split>'| grep -v 'NON_ANALYSIS'| grep -v 'REGEX' | grep -e ':<:' -e '\w:\w' | sed 's/:<:/%/g' | sed 's/:/%/g' | cut -f2 -d'%' |  sed 's/^/^/g' | sed 's/$/$ ^.<sent>$/g' | tee $TMPDIR/tmp_testvoc1.txt |\
+    lt-expand $SRCDEU/apertium-deu.deu.dix | grep -v '<lower>' | grep -v '<cmp>'| grep -v '<cmp-split>'| grep -v 'NON_ANALYSIS'| grep -v 'REGEX' | grep -v ':<:' | sed 's/:>:/%/g' | sed 's/:/%/g' | cut -f2 -d'%' |  sed 's/^/^/g' | sed 's/$/$ ^.<sent>$/g' | tee $TMPDIR/tmp_testvoc1.txt |\
     apertium-pretransfer|\
     lt-proc -b ../../deu-eng.autobil.bin | tee $TMPDIR/tmp_testvoc2.txt |\
     lrx-proc -m ../../deu-eng.autolex.bin |\
@@ -20,7 +20,7 @@ if [[ $DIR == "deu-eng" ]]; then
 
 elif [[ $DIR == "eng-deu" ]]; then
 
-    lt-expand $SRCENG/apertium-eng.eng.dix | grep -v '<lower>' | grep -v '<cmp>'| grep -v '<cmp-split>'| grep -v 'NON_ANALYSIS'| grep -v 'REGEX' | grep -e ':<:' -e '\w:\w' | sed 's/:<:/%/g' | sed 's/:/%/g' | cut -f2 -d'%' |  sed 's/^/^/g' | sed 's/$/$ ^.<sent>$/g' | tee $TMPDIR/tmp_testvoc1.txt |\
+    lt-expand $SRCENG/apertium-eng.eng.dix | grep -v '<lower>' | grep -v '<cmp>'| grep -v '<cmp-split>'| grep -v 'NON_ANALYSIS'| grep -v 'REGEX' | grep -v ':<:' | sed 's/:>:/%/g' | sed 's/:/%/g' | cut -f2 -d'%' |  sed 's/^/^/g' | sed 's/$/$ ^.<sent>$/g' | tee $TMPDIR/tmp_testvoc1.txt |\
     apertium-pretransfer|\
     lt-proc -b ../../eng-deu.autobil.bin | tee $TMPDIR/tmp_testvoc2.txt |\
     lrx-proc -m ../../eng-deu.autolex.bin |\
