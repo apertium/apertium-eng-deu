@@ -4,11 +4,15 @@
 
 	<section-def-cats>
 
-		<def-cat n="NP">
-			<cat-item tags="NP"/>
-			<cat-item tags="NP.*"/>
-			<cat-item tags="ADJP"/>          <!-- this part is horrible and should be fixed sensibly -->
-			<cat-item tags="ADJP.*"/>
+		<def-cat n="SN">
+			<cat-item tags="SN"/>
+			<cat-item tags="SN.*"/>
+			<!-- <cat-item tags="ADJ"/>
+			<cat-item tags="ADJ.*"/> -->
+		</def-cat>
+		<def-cat n="ADJ">
+			<cat-item tags="ADJ"/>
+			<cat-item tags="ADJ.*"/>
 		</def-cat>
 		<def-cat n="PRN">
 			<cat-item tags="PRN"/>
@@ -17,9 +21,9 @@
 		<def-cat n="CONJ">
 			<cat-item tags="CONJ"/>
 		</def-cat>
-		<def-cat n="V">
-			<cat-item tags="V"/>
-			<cat-item tags="V.*"/>
+		<def-cat n="SV">
+			<cat-item tags="SV"/>
+			<cat-item tags="SV.*"/>
 		</def-cat>
 		<def-cat n="VPART">
 			<cat-item tags="V.PART"/>
@@ -35,6 +39,10 @@
 		<def-cat n="PR">
 			<cat-item tags="PR"/>
 		</def-cat>
+		
+		<!--  <def-cat n="unknown">
+			<cat-item tags="unknown"/>
+		</def-cat> -->
 	</section-def-cats>
 
 	<section-def-attrs>
@@ -58,7 +66,7 @@
 			<pattern>
 				<pattern-item n="PRN"/>
 				<pattern-item n="ADV"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -84,11 +92,11 @@
 		</rule>
 
 		
-		<rule comment="REGLA: V VPART NP">
+		<rule comment="REGLA: V VPART N">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="VPART"/>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 			</pattern>
 			<action>
 				<out>
@@ -114,13 +122,13 @@
 		</rule>
 
 
-		<rule comment="REGLA: V VPART NP CONJ NP">
+		<rule comment="REGLA: V VPART N CONJ N">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="VPART"/>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 				<pattern-item n="CONJ"/>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 			</pattern>
 			<action>
 				<out>
@@ -158,15 +166,15 @@
 		</rule>
 
 
-		<!-- ^verb<V>{^hê<vbhaver><pres>$}$ ^verb_participle<V>{^ge$^wees<vbser><inf>$}$ ^pr<PR>{^in<pr>$}$ ^det_nom<NP><sg>{^die<det><def><sg>$ ^huis<n><sg>$}$ -->
+		<!-- ^verb<V>{^hê<vbhaver><pres>$}$ ^verb_participle<V>{^ge$^wees<vbser><inf>$}$ ^pr<PR>{^in<pr>$}$ ^det_nom<SN><sg>{^die<det><def><sg>$ ^huis<n><sg>$}$ -->
 
-		<!-- "V V PR NP" =} "V PR NP V" -->
-		<rule comment="REGLA: V V PR NP">
+		<!-- "SV V PR N" =} "SV PR N V" -->
+		<rule comment="REGLA: V V PR N">
 			<pattern>
-				<pattern-item n="V"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="PR"/>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 			</pattern>
 			<action>
 				<out>
@@ -198,16 +206,16 @@
 		</rule>
 
 
-		<!-- SN V V SN SN REL -->
+		<!-- N V V N N REL -->
 
-		<!-- "NP V V NP NP REL" =} "NP V NP NP V REL" -->
-		<rule comment="REGLA: NP V V NP NP REL">
+		<!-- "N V V N N REL" =} "N V N N V REL" -->
+		<rule comment="REGLA: N V V N N REL">
 			<pattern>
-				<pattern-item n="NP"/>
-				<pattern-item n="V"/>
-				<pattern-item n="V"/>
-				<pattern-item n="NP"/>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SN"/>
 				<pattern-item n="REL"/>
 			</pattern>
 			<action>
@@ -252,14 +260,14 @@
 		</rule>
 
 
-		<!-- "NP V V PRN NP" =} "NP V PRN NP V" -->
-		<rule comment="REGLA: NP V V PRN NP">
+		<!-- "N V V PRN N" =} "N V PRN N V" -->
+		<rule comment="REGLA: N V V PRN N">
 			<pattern>
-				<pattern-item n="NP"/>
-				<pattern-item n="V"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="PRN"/>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 			</pattern>
 			<action>
 				<out>
@@ -297,14 +305,14 @@
 		</rule>
 
 
-		<rule comment="REGLA: NP PRN V PR NP">
+		<rule comment="REGLA: N PRN V PR N">
 			<pattern>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 				<pattern-item n="PRN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<!--<pattern-item n="PR"/>-->
 				<pattern-item n="ADV"/>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 			</pattern>
 			<action>
 				<out>
@@ -342,12 +350,43 @@
 		</rule>
 
 
-		<!-- "NP PRN V" =} "NP V PRN" -->
-		<rule comment="REGLA: NP PRN V">
+		<!-- "N PRN V" =} "N V PRN" -->
+		<rule comment="REGLA: N PRN V">
 			<pattern>
-				<pattern-item n="NP"/>
+				<pattern-item n="SN"/>
 				<pattern-item n="PRN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "V N ADV" =} "V ADV N" -->
+		<rule comment="REGLA: V N ADV">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="ADV"/>
 			</pattern>
 			<action>
 				<out>

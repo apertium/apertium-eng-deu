@@ -6,9 +6,9 @@
 			<cat-item tags="SN"/>
 			<cat-item tags="SN.*"/>
 		</def-cat>
-		<def-cat n="V">
-			<cat-item tags="V"/>
-			<cat-item tags="V.*"/>
+		<def-cat n="SV">
+			<cat-item tags="SV"/>
+			<cat-item tags="SV.*"/>
 		</def-cat>
 		<def-cat n="PRN__V">
 			<cat-item tags="PRN.V"/>
@@ -102,7 +102,7 @@
 
 	<section-rules>
 
-		<rule comment="REGLA: SN (per assignar gènere i nombre si hi ha GD i ND que no s'han pogut determinar, com passa en alguns pronoms: both, etc.)">
+		<rule comment="REGLA: N (per assignar gènere i nombre si hi ha GD i ND que no s'han pogut determinar, com passa en alguns pronoms: both, etc.)">
 			<pattern>
 				<pattern-item n="SN"/>
 			</pattern>
@@ -189,12 +189,12 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJADV PRN SN V">
+		<rule comment="REGLA: CNJADV PRN N V">
 			<pattern>
 				<pattern-item n="CNJADV"/>
 				<pattern-item n="PRN"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -229,11 +229,11 @@
 		</rule>
 
 <!--
-		<rule comment="REGLA: PRN SN V">
+		<rule comment="REGLA: PRN N V">
 			<pattern>
 				<pattern-item n="PRN"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -262,12 +262,12 @@
 		</rule>
 -->
 
-		<rule comment="REGLA: SN V SN V">
+		<rule comment="REGLA: N V N V">
 			<pattern>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -302,12 +302,12 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN V SN V">
+		<rule comment="REGLA: PRN V N V">
 			<pattern>
 				<pattern-item n="PRN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -342,11 +342,11 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN__V SN V ADV">
+		<rule comment="REGLA: PRN__V N V ADV">
 			<pattern>
 				<pattern-item n="PRN__V"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
 			</pattern>
 			<action>
@@ -382,12 +382,12 @@
 		</rule>
 
 
-		<rule comment="REGLA: V PR SN V">
+		<rule comment="REGLA: V PR N V">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -422,13 +422,13 @@
 		</rule>
 
 
-		<rule comment="REGLA: V ADV PR SN V">
+		<rule comment="REGLA: V ADV PR N V">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -469,7 +469,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: SN PR SN CNJ PR SN V">
+		<rule comment="REGLA: N PR N CNJ PR N V">
 			<pattern>
 				<pattern-item n="SN"/> <!-- 1 -->
 				<pattern-item n="PR"/>  <!-- 2 -->
@@ -477,7 +477,7 @@
 				<pattern-item n="CNJ"/>
 				<pattern-item n="PR"/> <!-- 5 -->
 				<pattern-item n="SN"/> <!-- 6 -->
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -530,12 +530,12 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN__V PR SN V">
+		<rule comment="REGLA: PRN__V PR N V">
 			<pattern>
 				<pattern-item n="PRN__V"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -570,14 +570,14 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN__V ADV SN PR SN V">
+		<rule comment="REGLA: PRN__V ADV N PR N V">
 			<pattern>
 				<pattern-item n="PRN__V"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -624,12 +624,12 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJADV SN ADJ V">
+		<rule comment="REGLA: CNJADV N ADJ V">
 			<pattern>
 				<pattern-item n="CNJADV"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="ADJ"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -664,12 +664,12 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJ PR SN V">
+		<rule comment="REGLA: CNJ PR N V">
 			<pattern>
 				<pattern-item n="CNJ"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -704,12 +704,12 @@
 		</rule>
 
 
-		<rule comment="REGLA: ADV SN PR VBLEX V">
+		<rule comment="REGLA: ADV N PR VBLEX V">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="PR"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="PR"/>
 			</pattern>
 			<action>
@@ -751,13 +751,13 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJ ADV PR SN V">
+		<rule comment="REGLA: CNJ ADV PR N V">
 			<pattern>
 				<pattern-item n="CNJ"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -801,12 +801,12 @@
 <!--
 ^<V>{^believe<vblex><pres>$}$ ^<ADV>{^not<adv>$}$ ^<SN><sg>{^his<det><sg>$ ^mobile phone<n><sg>$}$ ^<V>{^get<vblex><past>$}$ ^<pr>{^back<pr><atp>$}$
 -->
-		<rule comment="REGLA: V ADV SN V PR">
+		<rule comment="REGLA: V ADV N V PR">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="PR"/>
 			</pattern>
 			<action>
@@ -850,10 +850,10 @@
 
 		<rule comment="REGLA: V PREADV ADJ V CNJ">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="PREADV"/>
 				<pattern-item n="ADJ"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="CNJ"/>
 			</pattern>
 			<action>
@@ -895,14 +895,14 @@
 		</rule>
 
 
-		<rule comment="REGLA: ADV PR SN CNJ SN V">
+		<rule comment="REGLA: ADV PR N CNJ N V">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="CNJ"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -949,15 +949,15 @@
 		</rule>
 
 
-		<rule comment="REGLA: V ADV PR SN PR SN V">
+		<rule comment="REGLA: V ADV PR N PR N V">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -1009,18 +1009,18 @@
 			</action>
 		</rule>
 
-		<!-- ADV PRN ADV PR SN V V -> ADV PRN V V ADV PR SN -->
+		<!-- ADV PRN ADV PR N V V -> ADV PRN V V ADV PR N -->
 		<!-- 1   2   3   4  5  6 7 -> 1   2   7 6 3   4  5 -->
 
-		<rule comment="REGLA: ADV PRN ADV PR SN V V">
+		<rule comment="REGLA: ADV PRN ADV PR N V V">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PRN"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -1073,16 +1073,16 @@
 		</rule>
 
 
-		<rule comment="REGLA: V ADV SN PR SN PR SN V">
+		<rule comment="REGLA: V ADV N PR N PR N V">
 			<pattern>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="PR"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 			</pattern>
 			<action>
 				<out>
@@ -1144,7 +1144,7 @@
 		<rule comment="REGLA: ADV V PRN">
 			<pattern>
 				<pattern-item n="ADV"/>
-				<pattern-item n="V"/>
+				<pattern-item n="SV"/>
 				<pattern-item n="PRN"/>
 			</pattern>
 			<action>
