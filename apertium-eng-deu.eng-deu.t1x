@@ -102,6 +102,7 @@
 			<cat-item tags="n.*"/>
 		</def-cat>
 		<def-cat n="verbs"> <!-- any verb -->
+			<cat-item tags="vblex"/>
 			<cat-item tags="vblex.*"/>
 			<cat-item tags="vbser.*"/>
 			<cat-item tags="vbhaver.*"/>
@@ -353,9 +354,9 @@
 	</section-def-attrs>
 
 	<section-def-vars>
-		<def-var n="numero"/>
 		<def-var n="caseFirstWord" v="Aa"/>
-		<def-var n="nombre"/>
+		<def-var n="caseOtherWord" v="aa"/>
+		<def-var n="v_nombre"/>
 		<def-var n="v_temps"/>
 		<def-var n="v_cas"/>
 		<def-var n="v_gen"/>
@@ -565,7 +566,7 @@
 		</def-macro>
 
 
-		<!-- (nom) after predicate set default case to dative / OUT: v_cas_nom -->
+		<!-- (nom) after predicate set default case to dative/accusative? / OUT: v_cas_nom -->
 		<def-macro n="chg_cas_nom" npar="1">
 			<choose>
 				<when>
@@ -578,10 +579,16 @@
 						</not>
 					</test>-->
 					<test>
-						<equal>
-							<var n="v_predicate"/>
-							<lit-tag v="vblex"/>
-						</equal>
+						<or>
+							<equal>
+								<var n="v_predicate"/>
+								<lit-tag v="vblex"/>
+							</equal>
+							<equal>
+								<var n="v_predicate"/>
+								<lit-tag v="vbhaver"/>
+							</equal>
+						</or>
 					</test>
 					<choose>
 						<when>
@@ -599,8 +606,8 @@
 							</test>
 							<let>
 								<var n="v_cas_nom"/>
-								<lit-tag v="dat"/>
-								<!--<lit-tag v="acc"/>-->
+								<!--<lit-tag v="dat"/>-->
+								<lit-tag v="acc"/>
 							</let>
 						</when>
 					</choose>
@@ -2130,7 +2137,7 @@
 		</rule>
 
 
-		<!-- "James and Mary are" => "James und Mary sind" (pl) -->
+		<!-- (pl): "James and Mary are" => "James und Mary sind" -->
 		<rule comment="RULE: NOUNS AND NOUNS VERBBE">
 			<pattern>
 				<pattern-item n="nouns"/>
@@ -2198,7 +2205,7 @@
 		</rule>
 
 
-		<!-- "Mr and Mrs Brown are" : "Herr und Frau Brown sind" <pl> -->
+		<!-- (pl): "Mr and Mrs Brown are" = "Herr und Frau Brown sind" -->
 		<rule comment="RULE: MR AND MRS COG VERBS">
 			<pattern>
 				<pattern-item n="mr_ms"/>
@@ -3378,7 +3385,7 @@
 			</action>
 		</rule>
 
-
+<!--35-->
 		<rule comment="RULE: VERBS">
 			<pattern>
 				<pattern-item n="verbs"/>
@@ -3424,7 +3431,7 @@
 								<lu>
 									<clip pos="1" side="tl" part="lemh"/>
 									<clip pos="1" side="tl" part="a_verb"/>
-									<var n="v_temp_verb"/>      <!-- converted tense tag -->
+									<var n="v_temp_verb"/>  <!-- converted tense tag -->
 									<var n="v_pers_verb"/>
 									<var n="v_nbr_verb"/>
 									<clip pos="1" side="tl" part="lemq"/>
@@ -3741,7 +3748,7 @@
 					<with-param pos="1"/>
 				</call-macro>
 				<out>
-					<chunk name="verb_prn">
+					<chunk name="verb_adv">
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 						</tags>
@@ -3908,9 +3915,9 @@
 				</let>
 				<let><var n="v_pers_verb"/><var n="v_pers_nom"/></let>
 				<let><var n="v_nbr_verb"/><var n="v_nbr_nom"/></let>
-				<call-macro n="chg_pers_nbr_verb">
+				<!-- <call-macro n="chg_pers_nbr_verb">
 					<with-param pos="2"/>
-				</call-macro>
+				</call-macro> -->
 				<out>
 					<chunk name="prn" case="caseFirstWord">
 						<tags>
@@ -4183,7 +4190,7 @@
 					<with-param pos="3"/>
 				</call-macro>
 				<out>
-					<chunk name="prn" case="caseFirstWord">
+					<chunk name="nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
 						</tags>
@@ -4307,7 +4314,7 @@
 				<pattern-item n="sent"/>
 			</pattern>
 			<action>
-				<let><var n="nombre"/><lit-tag v="sg"/></let>
+				<let><var n="v_nombre"/><lit-tag v="sg"/></let>
 				<let><var n="v_predicate"/><lit v=""/></let>
 				<out>
 					<chunk name="punt">

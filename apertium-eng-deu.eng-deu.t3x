@@ -13,6 +13,12 @@
 			<cat-item name="prn"/>
 		</def-cat>
 
+			<!-- <cat-item name="nom_nom"/> -->
+			<!-- <cat-item name="nom_cnj_nom"/> -->
+			<!-- <cat-item name="nom_cnj_nom_nom"/> -->
+			<!-- <cat-item name="det_nom_nom"/> -->
+			<!-- <cat-item name="det_adj_nom"/> -->
+			<!-- <cat-item name="det_num_nom"/> -->
 	</section-def-cats>
 
 	<section-def-attrs>
