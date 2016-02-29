@@ -40,6 +40,9 @@
 			<cat-item tags="det.def.*"/>
 			<cat-item tags="det.dem.*"/>
 			<cat-item tags="det.*"/>
+			<cat-item tags="det.ord.*"/>
+			<cat-item tags="det.qnt.*"/>
+			<cat-item tags="det.itg.*"/>
 		</def-cat>
 		<def-cat n="adj">
 			<cat-item tags="adj"/>
@@ -107,7 +110,6 @@
 		</def-cat>
 
 		<def-cat n="the">
-			<cat-item lemma="the" tags="det.*"/>
 			<cat-item lemma="der" tags="det.*"/>
 		</def-cat>
 		<def-cat n="family">
@@ -118,6 +120,9 @@
 			<cat-item lemma="herr" tags="n.*"/>
 			<cat-item lemma="frau" tags="n.*"/>
 			<cat-item lemma="fräulein" tags="n.*"/>
+			<cat-item lemma="mr." tags="n.*"/>
+			<cat-item lemma="ms." tags="n.*"/>
+			<cat-item lemma="mrs." tags="n.*"/>
 		</def-cat>
 		<def-cat n="cog_np">
 			<cat-item tags="np.cog"/>
@@ -188,8 +193,11 @@
 			<attr-item tags="det.ind"/>
 			<attr-item tags="det.def"/>
 			<attr-item tags="det.dem"/>
-			<attr-item tags="det"/>
 			<attr-item tags="det.pos"/>
+			<attr-item tags="det"/>
+			<attr-item tags="det.ord"/>
+			<attr-item tags="det.qnt"/>
+			<attr-item tags="det.itg"/>
 		</def-attr>
 		<def-attr n="a_prn_det">
 			<attr-item tags="prn.det"/>
@@ -345,7 +353,7 @@
 		</def-macro>
 
 
-		<!-- (verb) convert "pri" to "pres", "pii" to "past", "prs" to "inf" / OUT: v_temps -->
+		<!-- (verb) convert "pri" to "pres", "pii" to "past", "pis" to "past", "prs" to "inf" / OUT: v_temps -->
 		<def-macro n="set_temps" npar="1">
 			<choose>
 				<when>
@@ -365,6 +373,18 @@
 						<equal>
 							<clip pos="1" side="tl" part="a_temps"/>
 							<lit-tag v="pii"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_temps"/>
+						<lit-tag v="past"/>
+					</let>
+				</when>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_temps"/>
+							<lit-tag v="pis"/>
 						</equal>
 					</test>
 					<let>
@@ -1068,8 +1088,8 @@
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_det"/>
-							<var n="v_pers_det"/>  <!--(for prn only, else null)-->
-							<var n="v_gen_det"/>   <!--(for prn only, else null)-->
+							<var n="v_pers_det"/>   <!--(for prn only, else null)-->
+							<var n="v_gen_det"/>    <!--(for prn only, else null)-->
 							<var n="v_nbr_det"/>
 							<!--<clip pos="2" side="sl" part="a_nbr"/>-->
 						</lu>
@@ -1145,7 +1165,8 @@
 							<tag><clip pos="3" side="tl" part="a_nbr"/></tag> -->
 						</tags>
 						<lu>
-							<clip pos="1" side="tl" part="whole"/>
+							<clip pos="1" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="a_prep"/>
 						</lu>
 						<b pos="1"/>
 						<lu>
@@ -1199,7 +1220,8 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="whole"/>
+							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="a_prep"/>
 						</lu>
 						<b pos="3"/>
 						<lu>
@@ -1759,8 +1781,7 @@
 			</action>
 		</rule>
 
-		<!-- that: <p><l></l> <r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r> </p> -->
-		<!-- what: <p><l></l> <r><s n="rel"/><s n="nn"/><s n="mf"/><s n="sg"/></r> </p> -->
+		<!-- that: <s n="rel"/><s n="an"/> / what: <s n="rel"/><s n="nn"/> -->
 		<rule comment="RULE: REL">
 			<pattern>
 				<pattern-item n="rel"/>
@@ -1899,7 +1920,7 @@
 									<tag><lit-tag v="PRN"/></tag>
 								</tags>
 								<lu>
-									<clip pos="1" side="tl" part="lem"/>		<!-- Pronoun -->
+									<clip pos="1" side="tl" part="lem"/>
 									<var n="v_tipus_prn"/>
 									<clip pos="1" side="tl" part="a_pers"/>
 									<clip pos="1" side="tl" part="a_gen"/>
@@ -1912,7 +1933,7 @@
 									<tag><lit-tag v="SV"/></tag>
 								</tags>
 								<lu>
-									<clip pos="2" side="tl" part="lemh"/>		<!-- Verb -->
+									<clip pos="2" side="tl" part="lemh"/>
 									<clip pos="2" side="tl" part="a_verb"/>
 									<var n="v_temp_verb"/>  <!-- converted tense tag -->
 									<var n="v_pers_verb"/>  <!--(empty if not pres/past)-->
@@ -2358,7 +2379,6 @@
 								<lit-tag v="vblex"/>
 							</equal>
 						</test>
-						<!--<let><var n="caseFirstWord"/><lit v="aa"/></let>-->
 						<out>
 							<chunk name="vaux" case="caseFirstWord">
 								<tags>
