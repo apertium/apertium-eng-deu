@@ -17,6 +17,8 @@
 /autogen.sh -text
 /configure.ac -text
 /deu-eng.prob -text svneol=unset#unset
+dev/apertium-de-en/AUTHORS -text
+dev/apertium-de-en/apertium-de-en.de-en.dix -text
 dev/apertium-en-de/AUTHORS -text
 dev/apertium-en-de/Adjektiven.txt -text
 dev/apertium-en-de/COPYING -text
