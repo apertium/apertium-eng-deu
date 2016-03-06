@@ -4,7 +4,10 @@
     <match lemma="ride" tags="vblex.*">
       <select lemma="fahren" tags="vblex.*"/>
     </match>
-    <match lemma="a"/>
+	<or>
+      <match lemma="a"/>
+      <match lemma="my"/>
+	</or>
     <match lemma="bike"/>
   </rule>
 
@@ -28,6 +31,17 @@
 	  <match lemma="street"/>
       <match lemma="road"/>
 	</or>
+  </rule>
+
+  <rule>
+    <match lemma="light" tags="vblex.*">
+      <select lemma="anzünden" tags="vblex.*"/>
+    </match>
+	<or>
+      <match lemma="the"/>
+      <match lemma="a"/>
+	</or>
+    <match lemma="candle"/>
   </rule>
 
   <rule>
