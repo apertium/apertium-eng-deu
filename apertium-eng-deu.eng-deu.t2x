@@ -40,7 +40,7 @@
 			<cat-item tags="PR"/>
 		</def-cat>
 		
-		<!--  <def-cat n="unknown">
+		<!-- <def-cat n="unknown">
 			<cat-item tags="unknown"/>
 		</def-cat> -->
 	</section-def-cats>
@@ -55,8 +55,8 @@
 	</section-def-attrs>
 
 	<section-def-vars>
-		<def-var n="nombre"/>
-		<def-var n="genere"/>
+		<def-var n="v_nombre"/>
+		<def-var n="v_genere"/>
 	</section-def-vars>
 
 
@@ -206,8 +206,6 @@
 		</rule>
 
 
-		<!-- N V V N N REL -->
-
 		<!-- "N V V N N REL" =} "N V N N V REL" -->
 		<rule comment="REGLA: N V V N N REL">
 			<pattern>
@@ -305,6 +303,7 @@
 		</rule>
 
 
+						<!-- "N PRN V ADV N" -->
 		<rule comment="REGLA: N PRN V PR N">
 			<pattern>
 				<pattern-item n="SN"/>
@@ -400,6 +399,37 @@
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "ADV1 N ADV2" =} "ADV2 ADV1 N" -->
+		<rule comment="REGLA: ADV N ADV">
+			<pattern>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="ADV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
 					</chunk>
 					<b/>
 					<chunk>
