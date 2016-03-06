@@ -270,7 +270,8 @@
 
 
 	<section-def-vars>
-		<def-var n="caseFirstWord" v="Aa"/>
+		<!--<def-var n="caseFirstWord" v="Aa"/>-->
+		<def-var n="caseFirstWord" v="aa"/>  <!--(for use with testvoc)-->
 		<def-var n="caseOtherWord" v="aa"/>
 		<def-var n="v_numero"/>
 		<def-var n="v_genere"/>
@@ -907,7 +908,6 @@
 				<call-macro n="set_cas">
 					<with-param pos="1"/>
 				</call-macro>
-				<!-- <modify-case><clip pos="1" side="sl" part="lem"/><lit v="Aa"/></modify-case> -->
 				<out>
 					<chunk name="nom" case="caseFirstWord">
 						<tags>
@@ -919,15 +919,12 @@
 							<clip pos="1" side="tl" part="lemh"/>
 							<clip pos="1" side="tl" part="a_nom"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
-							<var n="v_cas"/>        <!-- null or gen -->
+							<var n="v_cas"/>        <!-- null or "gen" -->
 							<clip pos="1" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -967,10 +964,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1017,10 +1011,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1057,15 +1048,12 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
 <!--5-->
-		<!-- transfer gender from noun to determiner -->
+		<!-- set dictionary tags for determiners -->
 		<rule comment="RULE: DET NOM">
 			<pattern>
 				<pattern-item n="det"/>
@@ -1091,7 +1079,6 @@
 							<var n="v_pers_det"/>   <!--(for prn only, else null)-->
 							<var n="v_gen_det"/>    <!--(for prn only, else null)-->
 							<var n="v_nbr_det"/>
-							<!--<clip pos="2" side="sl" part="a_nbr"/>-->
 						</lu>
 						<b pos="1"/>
 						<lu>
@@ -1102,10 +1089,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1141,10 +1125,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1182,15 +1163,12 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
 
-		<!-- "a blouse for Betty" -->
+		<!-- build noun chunk "a blouse for Betty" -->
 		<rule comment="RULE: DET NOM PR NOM">
 			<pattern>
 				<pattern-item n="det"/>
@@ -1229,10 +1207,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1278,10 +1253,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1320,10 +1292,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1359,15 +1328,12 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
 
-		<!-- die Familie Smith  >>>  the Smith Family -->
+		<!-- die Familie Smith  =>  the Smith Family -->
 		<rule comment="RULE: DET FAMILY COG">
 			<pattern>
 				<pattern-item n="det"/>
@@ -1403,10 +1369,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1448,10 +1411,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1461,10 +1421,6 @@
 				<pattern-item n="adj"/>
 			</pattern>
 			<action>
-				<!-- <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case> -->
-				<!-- <call-macro n="set_comp_sup_adj">
-					<with-param pos="1"/>
-				</call-macro> -->
 				<out>
 					<chunk name="adj" case="caseFirstWord">
 						<tags>
@@ -1478,10 +1434,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1514,10 +1467,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1557,10 +1507,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1592,10 +1539,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1615,10 +1559,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1638,10 +1579,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1663,10 +1601,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1688,10 +1623,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1713,10 +1645,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1744,10 +1673,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1774,14 +1700,12 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
-		<!-- that: <s n="rel"/><s n="an"/> / what: <s n="rel"/><s n="nn"/> -->
+
+		<!-- that: <s n="rel"/><s n="an"/> // what: <s n="rel"/><s n="nn"/> -->
 		<rule comment="RULE: REL">
 			<pattern>
 				<pattern-item n="rel"/>
@@ -1828,10 +1752,7 @@
 						</out>
 					</otherwise>
 				</choose>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1873,10 +1794,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -1979,12 +1897,8 @@
 									<clip pos="2" side="tl" part="lemh"/>
 									<clip pos="2" side="tl" part="a_verb"/>
 									<var n="v_temps"/>      <!--"pres"-->
-									<!-- <clip pos="1" side="tl" part="a_pers"/>
-									<clip pos="1" side="tl" part="a_nbr"/> -->
 									<var n="v_pers_prn"/>
 									<var n="v_nbr_prn"/>
-									<!-- <var n="v_pers_verb"/>
-									<var n="v_nbr_verb"/> -->
 									<clip pos="2" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
@@ -2024,7 +1938,7 @@
 									<tag><lit-tag v="PRN"/></tag>
 								</tags>
 								<lu>
-									<clip pos="1" side="tl" part="lem"/>		<!-- Pronoun -->
+									<clip pos="1" side="tl" part="lem"/>  <!-- Pronoun -->
 									<var n="v_tipus_prn"/>
 									<clip pos="1" side="tl" part="a_pers"/>
 									<clip pos="1" side="tl" part="a_gen"/>
@@ -2037,15 +1951,11 @@
 									<tag><lit-tag v="SV"/></tag>
 								</tags>
 								<lu>
-									<clip pos="2" side="tl" part="lemh"/>		<!-- Verb -->
+									<clip pos="2" side="tl" part="lemh"/>  <!-- Verb -->
 									<clip pos="2" side="tl" part="a_verb"/>
 									<var n="v_temps"/>      <!--"past"-->
-									<!-- <clip pos="1" side="tl" part="a_pers"/>
-									<clip pos="1" side="tl" part="a_nbr"/> -->
 									<var n="v_pers_prn"/>
 									<var n="v_nbr_prn"/>
-									<!-- <var n="v_pers_verb"/>
-									<var n="v_nbr_verb"/> -->
 									<clip pos="2" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
@@ -2081,10 +1991,7 @@
 						</out>
 					</otherwise>
 				</choose>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2115,7 +2022,7 @@
 						</lu>
 					</chunk>
 					<b pos="1"/>
-					
+
 					<chunk name="verb" case="caseOtherWord">
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
@@ -2130,10 +2037,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2154,10 +2058,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2179,10 +2080,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2192,6 +2090,7 @@
 				<pattern-item n="adv"/>
 			</pattern>
 			<action>
+				<modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
 				<out>
 					<chunk name="adv" case="caseFirstWord">
 						<tags>
@@ -2203,10 +2102,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2231,10 +2127,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2262,10 +2155,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2276,7 +2166,7 @@
 				<pattern-item n="verbnm"/>
 			</pattern>
 			<action>
-				<call-macro n="set_temps">
+				<call-macro n="set_temps"> <!--(convert tense tag)-->
 					<with-param pos="1"/>
 				</call-macro>
 				<let><var n="v_temps1"/><var n="v_temps"/></let>
@@ -2302,10 +2192,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2350,10 +2237,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
@@ -2440,10 +2324,7 @@
 						</out>
 					</otherwise>
 				</choose>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="aa"/>
-				</let>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
 
