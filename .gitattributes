@@ -62,10 +62,10 @@ dev/testvoc/inconsistency.sh -text
 dev/testvoc/testvoc.sh -text
 /eng-deu.prob -text
 /modes.xml -text
-/regression-tests.sh -text
 t/README.org -text
 t/config.sh -text
-t/config.sh.in -text
+t/latest-pending.results -text
+t/latest-regression.results -text
 t/pending-tests -text
 t/regression-tests -text
 t/update-latest -text

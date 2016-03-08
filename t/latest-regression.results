@@ -1,0 +1,44 @@
+Revision: 66187
+AP_SRC1 Revision: 66187
+AP_SRC2 Revision: 66187
+Running Regression-tests with mode "eng-deu" with updated tests ...
+
+eng-deu	  cat, dog, house.
+WORKS	  Katze, Hund, Haus.
+
+
+eng-deu	  the cat, the dog, the house.
+	- die Katze, der Hund, das Haus.
+	+ Die Katze, der Hund, das Haus.
+
+
+eng-deu	  a cat, a dog, a house.
+	- eine Katze, ein Hund, ein Haus.
+	+ Eine Katze, ein Hund, ein Haus.
+
+
+eng-deu	  cats, dogs, houses.
+WORKS	  Katzen, Hunde, Häuser.
+
+
+eng-deu	  the cats, the dogs, the houses.
+	- die Katzen, die Hunde, die Häuser.
+	+ Die Katzen, die Hunde, die Häuser.
+
+
+eng-deu	  the black cat, the brown dog, the big house.
+	- die schwarze Katze, der braune Hund, das große Haus.
+	+ Die schwarze Katze, der braune Hund, das große Haus.
+
+
+eng-deu	  my cat, his cat, her cat, our cat.
+	- meine Katze, seine Katze, ihre Katze, unsere Katze.
+	+ Meine Katze, seine Katze, ihre Katze, unsere Katze.
+
+
+eng-deu	  my house, his house, her house, our house.
+	- mein Haus, sein Haus, ihr Haus, unser Haus.
+	+ Mein Haus, sein Haus, ihr Haus, unser Haus.
+
+
+2 / 8, 25%
