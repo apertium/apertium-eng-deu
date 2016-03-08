@@ -16,7 +16,7 @@
 /apertium-eng-deu.eng-deu.t3x -text
 /autogen.sh -text
 /configure.ac -text
-/deu-eng.prob -text svneol=unset#unset
+/deu-eng.prob -text
 dev/apertium-de-en/AUTHORS -text
 dev/apertium-de-en/apertium-de-en.de-en.dix -text
 dev/apertium-en-de/AUTHORS -text
