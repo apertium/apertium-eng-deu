@@ -60,7 +60,7 @@ dev/story.eng.txt -text
 dev/testvoc/inconsistency-summary.sh -text
 dev/testvoc/inconsistency.sh -text
 dev/testvoc/testvoc.sh -text
-/eng-deu.prob -text svneol=unset#unset
+/eng-deu.prob -text
 /modes.xml -text
 /regression-tests.sh -text
 t/README.org -text
