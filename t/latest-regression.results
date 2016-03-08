@@ -1,44 +1,82 @@
-Revision: 66187
-AP_SRC1 Revision: 66187
-AP_SRC2 Revision: 66187
+Revision: 66196
+AP_SRC1 (doesn't seem to be a repo)
+AP_SRC2 (doesn't seem to be a repo)
 Running Regression-tests with mode "eng-deu" with updated tests ...
 
-eng-deu	  cat, dog, house.
-WORKS	  Katze, Hund, Haus.
+eng-deu	  Dog, cat, house.
+WORKS	  Hund, Katze, Haus.
 
 
-eng-deu	  the cat, the dog, the house.
-	- die Katze, der Hund, das Haus.
-	+ Die Katze, der Hund, das Haus.
+eng-deu	  The dog, the cat, the house.
+WORKS	  Der Hund, die Katze, das Haus.
 
 
-eng-deu	  a cat, a dog, a house.
-	- eine Katze, ein Hund, ein Haus.
-	+ Eine Katze, ein Hund, ein Haus.
+eng-deu	  A dog, a cat, a house.
+WORKS	  Ein Hund, eine Katze, ein Haus.
 
 
-eng-deu	  cats, dogs, houses.
-WORKS	  Katzen, Hunde, Häuser.
+eng-deu	  Dogs, cats, houses.
+WORKS	  Hunde, Katzen, Häuser.
 
 
-eng-deu	  the cats, the dogs, the houses.
-	- die Katzen, die Hunde, die Häuser.
-	+ Die Katzen, die Hunde, die Häuser.
+eng-deu	  Fast dog, black cat, big house.
+WORKS	  Schneller Hund, schwarze Katze, großes Haus.
 
 
-eng-deu	  the black cat, the brown dog, the big house.
-	- die schwarze Katze, der braune Hund, das große Haus.
-	+ Die schwarze Katze, der braune Hund, das große Haus.
+eng-deu	  The dogs, the cats, the houses.
+WORKS	  Die Hunde, die Katzen, die Häuser.
 
 
-eng-deu	  my cat, his cat, her cat, our cat.
-	- meine Katze, seine Katze, ihre Katze, unsere Katze.
-	+ Meine Katze, seine Katze, ihre Katze, unsere Katze.
+eng-deu	  The brown dog, the black cat, the big house.
+WORKS	  Der braune Hund, die schwarze Katze, das große Haus.
 
 
-eng-deu	  my house, his house, her house, our house.
-	- mein Haus, sein Haus, ihr Haus, unser Haus.
-	+ Mein Haus, sein Haus, ihr Haus, unser Haus.
+eng-deu	  The fast brown dog, the fast black cat, the big grey house.
+WORKS	  Der schnelle braune Hund, die schnelle schwarze Katze, das große graue Haus.
 
 
-2 / 8, 25%
+eng-deu	  My dog, his dog, her dog, our dog, their dog.
+WORKS	  Mein Hund, sein Hund, ihr Hund, unser Hund, ihr Hund.
+
+
+eng-deu	  My cat, his cat, her cat, our cat, their cat.
+WORKS	  Meine Katze, seine Katze, ihre Katze, unsere Katze, ihre Katze.
+
+
+eng-deu	  My house, his house, her house, our house, their house.
+WORKS	  Mein Haus, sein Haus, ihr Haus, unser Haus, ihr Haus.
+
+
+eng-deu	  My dogs, his dogs, her dogs, our dogs, their dogs.
+WORKS	  Meine Hunde, seine Hunde, ihre Hunde, unsere Hunde, ihre Hunde.
+
+
+eng-deu	  It is grey.
+WORKS	  Es ist grau.
+
+
+eng-deu	  It's grey.
+WORKS	  Es ist grau.
+
+
+eng-deu	  It's in a cage.
+WORKS	  Es ist in einem Käfig.
+
+
+eng-deu	  The mouse is running.
+WORKS	  Die Maus rennt.
+
+
+eng-deu	  She is laughing.
+WORKS	  Sie lacht.
+
+
+eng-deu	  Where is Daddy's shoe?
+WORKS	  Wo ist Vatis Schuh?
+
+
+eng-deu	  First he left Miami.
+WORKS	  Zuerst verließ er Miami.
+
+
+19 / 19, 100%
