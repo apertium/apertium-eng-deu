@@ -21,7 +21,10 @@
 			<cat-item tags="np.cog.*"/>
 			<cat-item tags="np.ant"/>
 			<cat-item tags="np.ant.*"/>
-			<!--<cat-item tags="np.top.*"/>-->
+		</def-cat>
+		<def-cat n="location">
+			<cat-item tags="np.loc.*"/>
+			<cat-item tags="np.top.*"/>
 		</def-cat>
 		<def-cat n="det">
 			<cat-item tags="det.ind.*"/>
@@ -330,6 +333,7 @@
 		</def-attr>
 		<def-attr n="a_verb">
 			<attr-item tags="vblex"/>
+			<attr-item tags="vblex.sep"/>
 			<attr-item tags="vbser"/>
 			<attr-item tags="vbhaver"/>
 			<attr-item tags="vbdo"/>
@@ -3360,6 +3364,43 @@
 			</action>
 		</rule>
 
+<!--35-->
+		<!-- "to" LOC => "nach" LOC -->
+		<rule comment="RULE: PR NOM">
+			<pattern>
+				<pattern-item n="prep"/>
+				<pattern-item n="location"/>
+			</pattern>
+			<action>
+				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="2"/>
+				</call-macro>
+				<out>
+					<chunk name="pr_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<lit v="nach"/>
+							<clip pos="1" side="tl" part="a_pr"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="a_nom"/>
+							<var n="v_gen_nom"/>
+							<var n="v_nbr_nom"/>
+							<var n="v_cas_nom"/>
+							<clip pos="2" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
 
 		<!-- PR with accusative (if not dative) -->
 		<rule comment="RULE: PR DET NOM">
@@ -3513,7 +3554,7 @@
 			</action>
 		</rule>
 
-
+<!--40-->
 		<rule comment="RULE: REL">
 			<pattern>
 				<pattern-item n="rel_prn"/>
@@ -3592,6 +3633,33 @@
 						</out>
 					</otherwise>
 				</choose>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: TO VERBS">
+			<pattern>
+				<pattern-item n="to"/>
+				<pattern-item n="verbs"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk name="to_verb">
+						<tags>
+							<tag><lit-tag v="SV"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_verb"/>
+							<lit-tag v="inf"/>
+						</lu>
+					</chunk>
+				</out>
 				<let><var n="caseFirstWord"/><lit v="aa"/></let>
 			</action>
 		</rule>
@@ -3998,7 +4066,7 @@
 			</action>
 		</rule>
 
-
+<!--50-->
 		<!-- "do you know" => "kennst du" -->
 		<rule comment="RULE: VERBDO PRPERS VERBNM =} VERBNM PRPERS">
 			<pattern>
@@ -4037,6 +4105,57 @@
 							<var n="v_gen_nom"/>
 							<var n="v_nbr_nom"/>
 							<var n="v_cas_nom"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
+<!--51-->
+		<rule comment="RULE: NOUNS VERBM VERBS">
+			<pattern>
+				<pattern-item n="nouns"/>
+				<pattern-item n="verbm"/>
+				<pattern-item n="verbs"/>
+			</pattern>
+			<action>
+				<call-macro n="proc_nom_verb"> <!-- OUT: v...nom / v...verb -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>
+				</call-macro>
+				<out>
+					<chunk name="nom_verb" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lem"/>
+							<var n="v_obj_prn"/>    <!-- obj to iobj -->
+							<clip pos="1" side="tl" part="a_pers"/>
+							<var n="v_gen_nom"/>
+							<var n="v_nbr_nom"/>
+							<var n="v_cas_nom"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_verb"/>
+							<var n="v_temps"/>      <!-- converted tense tag -->
+							<var n="v_pers_verb"/>
+							<var n="v_nbr_verb"/>
+						</lu>
+					</chunk>
+					<b pos="2"/>
+					
+					<chunk name="verb">
+						<tags>
+							<tag><lit-tag v="SV"/></tag>
+						</tags>
+						<lu>
+							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="a_verb"/>
+							<lit-tag v="inf"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4146,7 +4265,7 @@
 
 
 		<!-- "I can not go" => "ich kann nicht gehen" -->
-		<rule comment="RULE: NOUNS VERBDO ADV VERBNM =} NOUNS VERBNM ADV">
+		<rule comment="RULE: NOUNS VERBM ADV VERBNM">
 			<pattern>
 				<pattern-item n="nouns"/>
 				<pattern-item n="verbm"/>
@@ -4192,7 +4311,13 @@
 						<lu>
 							<clip pos="3" side="tl" part="whole"/>
 						</lu>
-						<b pos="3"/>
+					</chunk>
+					<b pos="3"/>
+					
+					<chunk name="verb">
+						<tags>
+							<tag><lit-tag v="SV"/></tag>
+						</tags>
 						<lu>
 							<clip pos="4" side="tl" part="lem"/>
 							<clip pos="4" side="tl" part="a_verb"/>
@@ -4285,6 +4410,65 @@
 							<var n="v_gen_prn"/>
 							<var n="v_nbr_prn"/>
 							<var n="v_cas_prn"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
+
+		<!-- "after he had travelled" => "nachdem er gereist war" -->
+		<rule comment="RULE: ADV NOUNS HAVE VERBS">
+			<pattern>
+				<pattern-item n="adv"/>
+				<pattern-item n="nouns"/>
+				<pattern-item n="verbhave"/>
+				<pattern-item n="verbs"/>
+			</pattern>
+			<action>
+				<call-macro n="proc_nom_verb"> <!-- OUT: v...nom / v...verb -->
+					<with-param pos="2"/>
+					<with-param pos="3"/>
+				</call-macro>
+				<out>
+					<chunk name="adv_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<var n="v_obj_prn"/>    <!-- obj to iobj -->
+							<clip pos="2" side="tl" part="a_pers"/>
+							<var n="v_gen_nom"/>
+							<var n="v_nbr_nom"/>
+							<var n="v_cas_nom"/>
+						</lu>
+					</chunk>
+					<b pos="2"/>
+					
+					<chunk name="verb_verb" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SV"/></tag>
+						</tags>
+						<lu>
+							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="a_verb"/>
+							<lit-tag v="pp"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="a_verb"/>
+							<!-- <lit v="sein"/>
+							<lit-tag v="vbser"/> -->
+							<var n="v_temp_verb"/>  <!-- converted tense tag -->
+							<var n="v_pers_verb"/>
+							<var n="v_nbr_verb"/>
 						</lu>
 					</chunk>
 				</out>
