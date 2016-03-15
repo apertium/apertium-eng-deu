@@ -280,8 +280,8 @@
 
 
 	<section-def-vars>
-		<!--<def-var n="caseFirstWord" v="Aa"/>-->
-		<def-var n="caseFirstWord" v="aa"/>  <!--(for use with testvoc)-->
+		<!--<def-var n="caseFirstWord" v="aa"/>  <!-#-(for use with testvoc)-->
+		<def-var n="caseFirstWord" v="Aa"/>
 		<def-var n="caseOtherWord" v="aa"/>
 		<def-var n="v_numero"/>
 		<def-var n="v_genere"/>
@@ -583,7 +583,7 @@
 		</def-macro>
 
 
-		<!-- OUT: set_cas, set_gen -->
+		<!-- OUT: v_cas, v_gen -->
 		<def-macro n="set_gen_cas" npar="1">
 			<call-macro n="set_cas">
 				<with-param pos="1"/>
@@ -971,8 +971,6 @@
 					<let><var n="v_temp_verb"/><var n="v_temps"/></let>  <!-- converted tense tag -->
 					<let><var n="v_pers_verb"/><var n="v_pers"/></let>  <!--(empty if not pres/past)-->
 					<let><var n="v_nbr_verb"/><var n="v_nbr"/></let>   <!--(empty if not pres/past)-->
-					<!--<let><var n="v_pers_verb"/><var n="v_pers_prn"/></let>  <!-#-(empty if not pres/past)-->
-					<!--<let><var n="v_nbr_verb"/><var n="v_nbr_prn"/></let>   <!-#-(empty if not pres/past)-->
 				</when>
 
 				<when>
@@ -1959,8 +1957,6 @@
 		<!-- In <PRN><VBLEX> constructions, propagate the person / number of the personal pronoun to the verb. -->
 		<rule comment="RULE: PRN VERBNM">
 			<pattern>
-				<!--<pattern-item n="prpers"/>
-				<pattern-item n="verbnm"/>-->
 				<pattern-item n="prpers_ant"/>
 				<pattern-item n="verbs"/>
 			</pattern>
@@ -1977,9 +1973,6 @@
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<var n="v_tipus_prn"/>
-							<!-- <clip pos="1" side="tl" part="a_pers"/>
-							<clip pos="1" side="tl" part="a_gen"/>
-							<clip pos="1" side="tl" part="a_nbr"/> -->
 							<var n="v_pers_prn"/>
 							<var n="v_gen_prn"/>
 							<var n="v_nbr_prn"/>

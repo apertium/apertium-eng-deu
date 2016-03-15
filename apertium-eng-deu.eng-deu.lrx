@@ -45,6 +45,13 @@
   </rule>
 
   <rule>
+    <match lemma="first"/>
+    <match lemma="floor" tags="n.*">
+      <select lemma="Stockwerk" tags="n.*"/>
+    </match>
+  </rule>
+
+  <rule>
     <match lemma="daddy"/>
     <match lemma="and"/>
     <match lemma="mummy" tags="n.*">
