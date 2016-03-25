@@ -5,6 +5,7 @@
 		<def-cat n="SN">
 			<cat-item tags="SN"/>
 			<cat-item tags="SN.*"/>
+			<cat-item tags="SN.pl"/>
 		</def-cat>
 		<def-cat n="SV">
 			<cat-item tags="SV"/>
@@ -17,6 +18,10 @@
 		<def-cat n="PRN">
 			<cat-item tags="PRN"/>
 			<cat-item tags="PRN.*"/>
+		</def-cat>
+		<def-cat n="PRPERS">
+			<cat-item tags="PRPERS"/>
+			<cat-item tags="PRPERS.*"/>
 		</def-cat>
 		<def-cat n="CNJADV">
 			<cat-item tags="CNJADV"/>
@@ -47,6 +52,14 @@
 		</def-cat>
 		<def-cat n="PREADV">
 			<cat-item tags="PREADV"/>
+		</def-cat>
+		<def-cat n="ANY">
+			<cat-item tags="*"/>
+		</def-cat>
+		<def-cat n="QST">
+			<cat-item tags="QST"/>
+			<cat-item tags="sent"/>
+			<!--<cat-item lemma="?" tags="sent"/>-->
 		</def-cat>
 	</section-def-cats>
 
@@ -222,6 +235,58 @@
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "(Magst) du Katzen ?" => "(Do) you (like) cats ?" -->
+		<rule comment="REGLA: V PRN N ?">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="PRPERS"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="QST"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<lit v="vbdo"/>
+						<lit-tag v="SV"/>
+						<lit v="{^"/>
+						<get-case-from pos="1">
+							<lit v="do"/>
+						</get-case-from>
+						<lit-tag v="vaux"/>
+						<lit-tag v="pres"/>
+						<lit v="$}"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
 					</chunk>
 				</out>
 				<call-macro n="nombre_SN">
