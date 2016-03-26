@@ -70,37 +70,6 @@
 
 
 	<section-rules>
-
-		<!-- "PRN ADV V" =} "PRN V ADV" -->
-		<rule comment="REGLA: PRN ADV V">
-			<pattern>
-				<pattern-item n="PRN"/>
-				<pattern-item n="ADV"/>
-				<pattern-item n="SV"/>
-			</pattern>
-			<action>
-				<out>
-					<chunk>
-						<clip pos="1" part="lem"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="3" part="tags"/>
-						<clip pos="3" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-				</out>
-			</action>
-		</rule>
-
 		
 		<!-- "V VPART N" =} "V N VPART" -->
 		<rule comment="REGLA: V VPART N">
@@ -206,6 +175,37 @@
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "V N ADV" =} "V ADV N" -->
+		<rule comment="REGLA: V N ADV">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="ADV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
 					</chunk>
 					<b/>
 					<chunk>
@@ -354,6 +354,77 @@
 		</rule>
 
 
+		<!-- "he often drinks tea" =} "er trinkt oft Tee" -->
+		<rule comment="REGLA: PRN V ADV N">
+			<pattern>
+				<!--<pattern-item n="PRPERS"/>-->
+				<pattern-item n="PRN"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "PRN ADV V" =} "PRN V ADV" -->
+		<rule comment="REGLA: PRN ADV V">
+			<pattern>
+				<pattern-item n="PRN"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+
 						<!-- "N PRN V ADV N" -->
 		<rule comment="REGLA: N PRN V PR N">
 			<pattern>
@@ -431,37 +502,6 @@
 		</rule>
 
 
-		<!-- "V N ADV" =} "V ADV N" -->
-		<rule comment="REGLA: V N ADV">
-			<pattern>
-				<pattern-item n="SV"/>
-				<pattern-item n="SN"/>
-				<pattern-item n="ADV"/>
-			</pattern>
-			<action>
-				<out>
-					<chunk>
-						<clip pos="1" part="lem"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="3" part="tags"/>
-						<clip pos="3" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-				</out>
-			</action>
-		</rule>
-
-
 		<!-- "ADV1 N ADV2" =} "ADV2 ADV1 N" -->
 		<rule comment="REGLA: ADV N ADV">
 			<pattern>
@@ -487,45 +527,6 @@
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
-					</chunk>
-				</out>
-			</action>
-		</rule>
-
-
-		<!-- "he often drinks tea" =} "er trinkt oft Tee" -->
-		<rule comment="REGLA: PRN V ADV N">
-			<pattern>
-				<!--<pattern-item n="PRPERS"/>-->
-				<pattern-item n="PRN"/>
-				<pattern-item n="ADV"/>
-				<pattern-item n="SV"/>
-				<pattern-item n="SN"/>
-			</pattern>
-			<action>
-				<out>
-					<chunk>
-						<clip pos="1" part="lem"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="3" part="tags"/>
-						<clip pos="3" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="4" part="lem"/>
-						<clip pos="4" part="tags"/>
-						<clip pos="4" part="chcontent"/>
 					</chunk>
 				</out>
 			</action>
