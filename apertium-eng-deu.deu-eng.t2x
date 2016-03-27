@@ -23,6 +23,12 @@
 			<cat-item tags="PRPERS"/>
 			<cat-item tags="PRPERS.*"/>
 		</def-cat>
+		<def-cat n="PRON">
+			<cat-item tags="PRN"/>
+			<cat-item tags="PRN.*"/>
+			<cat-item tags="PRPERS"/>
+			<cat-item tags="PRPERS.*"/>
+		</def-cat>
 		<def-cat n="CNJADV">
 			<cat-item tags="CNJADV"/>
 			<cat-item tags="CNJADV.*"/>
@@ -49,6 +55,7 @@
 		</def-cat>
 		<def-cat n="ADV">
 			<cat-item tags="ADV"/>
+			<cat-item tags="ADV.*"/>
 		</def-cat>
 		<def-cat n="PREADV">
 			<cat-item tags="PREADV"/>
@@ -62,7 +69,15 @@
 	</section-def-cats>
 
 	<section-def-attrs>
-		<def-attr n="nbr">
+		<def-attr n="a_gen">
+			<attr-item tags="m"/>
+			<attr-item tags="f"/>
+			<attr-item tags="nt"/>
+			<attr-item tags="mf"/>
+			<attr-item tags="mfn"/>
+			<attr-item tags="GD"/>
+		</def-attr>
+		<def-attr n="a_nbr">
 			<attr-item tags="sg"/>
 			<attr-item tags="pl"/>
 			<attr-item tags="sp"/>
@@ -87,7 +102,7 @@
 				<when>
 					<test>
 						<equal>
-							<clip pos="1" part="nbr"/>
+							<clip pos="1" part="a_nbr"/>
 							<lit-tag v="sg"/>
 						</equal>
 					</test>
@@ -96,7 +111,7 @@
 				<when>
 					<test>
 						<equal>
-							<clip pos="1" part="nbr"/>
+							<clip pos="1" part="a_nbr"/>
 							<lit-tag v="pl"/>
 						</equal>
 					</test>
@@ -105,6 +120,43 @@
 				<otherwise>
 					<let><var n="v_nombre"/><lit-tag v="sg"/></let>
 				</otherwise>
+			</choose>
+		</def-macro>
+
+
+		<!-- (verb) if "ND" get number from next word (noun) -->
+		<def-macro n="upd_ND_nbr" npar="2">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_nbr"/>
+							<lit-tag v="ND"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_nbr"/>
+						<clip pos="2" part="a_nbr"/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+		<!-- () if "GD" get gender from next word -->
+		<def-macro n="upd_GD_gen" npar="2">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_gen"/>
+							<lit-tag v="GD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_gen"/>
+						<clip pos="2" part="a_gen"/>
+					</let>
+				</when>
 			</choose>
 		</def-macro>
 
@@ -122,12 +174,12 @@
 					<when>
 						<test>
 							<equal>
-								<clip pos="1" part="nbr"/>
+								<clip pos="1" part="a_nbr"/>
 								<lit-tag v="ND"/>
 							</equal>
 						</test>
 						<let>
-							<clip pos="1" part="nbr"/>
+							<clip pos="1" part="a_nbr"/>
 							<lit-tag v="sg"/>
 						</let>
 					</when>
@@ -287,7 +339,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRPERS V ADV">
+		<rule comment="REGLA: PRPERS V ADV S">
 			<pattern>
 				<pattern-item n="PRPERS"/>
 				<pattern-item n="SV"/>
@@ -1271,7 +1323,8 @@
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SV"/>
-				<pattern-item n="PRN"/>
+				<pattern-item n="PRON"/>
+				<!--<pattern-item n="PRN"/>-->
 			</pattern>
 			<action>
 				<out>

@@ -36,13 +36,23 @@
 			<cat-item tags="rel.*"/>
 		</def-cat>
 		<def-cat n="det">
+			<cat-item tags="det.*"/>
 			<cat-item tags="det.ind.*"/>
 			<cat-item tags="det.def.*"/>
-			<cat-item tags="det.dem.*"/>
-			<cat-item tags="det.*"/>
 			<cat-item tags="det.ord.*"/>
-			<cat-item tags="det.qnt.*"/>
 			<cat-item tags="det.itg.*"/>
+			<cat-item tags="det.qnt.*"/>
+			<cat-item tags="det.dem.*"/>
+		</def-cat>
+		<def-cat n="dets">
+			<cat-item tags="det.ind.*"/>
+			<cat-item tags="det.def.*"/>
+			<cat-item tags="det.ord.*"/>
+			<cat-item tags="det.itg.*"/>
+			<cat-item tags="det.qnt.*"/>
+			<cat-item tags="det.dem.*"/>
+			<cat-item tags="prn.dem.*"/>
+			<cat-item tags="rel.*"/>
 		</def-cat>
 		<def-cat n="adj">
 			<cat-item tags="adj"/>
@@ -51,6 +61,12 @@
 		<def-cat n="num">
 			<cat-item tags="num"/>
 			<cat-item tags="num.*"/>
+		</def-cat>
+		<def-cat n="ord_num">
+			<cat-item tags="num.ord"/>
+			<cat-item tags="adj.ord"/>
+			<cat-item tags="adj.ord.*"/>
+			<cat-item tags="num"/>
 		</def-cat>
 		<def-cat n="adv">
 			<cat-item tags="adv"/>
@@ -182,14 +198,29 @@
 			<cat-item lemma="februar" tags="n.*"/>
 			<cat-item lemma="maärz" tags="n.*"/>
 			<cat-item lemma="april" tags="n.*"/>
+			<cat-item lemma="april" tags="np.*"/>
 			<cat-item lemma="mai" tags="n.*"/>
 			<cat-item lemma="juni" tags="n.*"/>
 			<cat-item lemma="juli" tags="n.*"/>
 			<cat-item lemma="august" tags="n.*"/>
+			<cat-item lemma="august" tags="np.*"/>
 			<cat-item lemma="september" tags="n.*"/>
 			<cat-item lemma="oktober" tags="n.*"/>
 			<cat-item lemma="november" tags="n.*"/>
 			<cat-item lemma="dezember" tags="n.*"/>
+		</def-cat>
+
+		<def-cat n="daytimes">
+			<cat-item lemma="morgen" tags="n.*"/>
+			<cat-item lemma="mittag" tags="n.*"/>
+			<cat-item lemma="nachmittag" tags="n.*"/>
+			<cat-item lemma="abend" tags="n.*"/>
+			<cat-item lemma="nacht" tags="n.*"/>
+			<cat-item lemma="mitternacht" tags="n.*"/>
+		</def-cat>
+
+		<def-cat n="any_tag">
+			<cat-item tags="*"/>
 		</def-cat>
 
 		<def-cat n="xxxx">	<!-- for tests only to block rules -->
@@ -338,6 +369,10 @@
 		<def-attr n="a_coma">
 			<attr-item tags="cm"/>
 		</def-attr>
+		<def-attr n="a_anytag">
+			<attr-item tags="*"/>
+		</def-attr>
+
 	</section-def-attrs>
 
 
@@ -377,7 +412,49 @@
 		<def-var n="v_nbr_verb"/>
 		<def-var n="v_subject"/>
 		<def-var n="v_predicate"/>
+		<def-var n="v_firstWord"/>
+		<def-var n="v_chunk_tag"/>
 	</section-def-vars>
+
+
+	<section-def-lists>
+
+		<def-list n="l_weekdays"> 
+			<list-item v="montag"/>
+			<list-item v="dienstag"/>
+			<list-item v="mittwoch"/>
+			<list-item v="donnerstag"/>
+			<list-item v="freitag"/>
+			<list-item v="samstag"/>
+			<list-item v="sonnabend"/>
+			<list-item v="sonntag"/>
+		</def-list>
+
+		<def-list n="l_months">
+			<list-item v="januar"/>
+			<list-item v="februar"/>
+			<list-item v="märz"/>
+			<list-item v="april"/>
+			<list-item v="mai"/>
+			<list-item v="juni"/>
+			<list-item v="juli"/>
+			<list-item v="august"/>
+			<list-item v="september"/>
+			<list-item v="oktober"/>
+			<list-item v="november"/>
+			<list-item v="dezember"/>
+		</def-list>
+
+		<def-list n="l_daytimes">
+			<list-item v="morgen"/>
+			<list-item v="mittag"/>
+			<list-item v="nachmittag"/>
+			<list-item v="abend"/>
+			<list-item v="nacht"/>
+			<list-item v="mitternacht"/>
+		</def-list>
+
+	</section-def-lists>
 
 
 <!-- macros: 	(by wth)
@@ -424,6 +501,22 @@
 					</let>
 				</otherwise>
 			</choose>
+
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<var n="EOS"/>
+							<lit v="true"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_firstWord"/>
+						<clip pos="1" side="tl" part="a_verb"/>
+					</let>
+				</when>
+			</choose>
+
 			<let>
 				<var n="EOS"/>
 				<lit v="false"/>
@@ -1172,6 +1265,40 @@
 			</choose>
 		</def-macro>
 
+
+		<!-- set tag to ADV if noun is a time / OUT: v_chunk_tag -->
+		<def-macro n="chg_ADV_chunk_tag" npar="1">
+			<choose>
+				<when>
+					<test>
+						<in caseless="yes">
+							<clip pos="1" side="sl" part="lem"/>
+							<list n="l_daytimes"/>
+						</in>
+					</test>
+					<let><var n="v_chunk_tag"/><lit-tag v="ADV"/></let>
+				</when>
+				<when>
+					<test>
+						<in caseless="yes">
+							<clip pos="1" side="sl" part="lem"/>
+							<list n="l_weekdays"/>
+						</in>
+					</test>
+					<let><var n="v_chunk_tag"/><lit-tag v="ADV"/></let>
+				</when>
+				<when>
+					<test>
+						<in caseless="yes">
+							<clip pos="1" side="sl" part="lem"/>
+							<list n="l_months"/>
+						</in>
+					</test>
+					<let><var n="v_chunk_tag"/><lit-tag v="ADV"/></let>
+				</when>
+			</choose>
+		</def-macro>
+
 	</section-def-macros>
 
 
@@ -1318,10 +1445,16 @@
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
+
+				<let><var n="v_chunk_tag"/><lit-tag v="SN"/></let>
+				<call-macro n="chg_ADV_chunk_tag">
+					<with-param pos="2"/>
+				</call-macro>
 				<out>
 					<chunk name="det_nom" case="caseFirstWord">
 						<tags>
-							<tag><lit-tag v="SN"/></tag>
+							<!--<tag><lit-tag v="SN"/></tag>-->
+							<tag><var n="v_chunk_tag"/></tag>
 							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1958,7 +2091,7 @@
 			</action>
 		</rule>
 
-
+<!--20-->
 		<rule comment="RULE: NUM">
 			<pattern>
 				<pattern-item n="num"/>
@@ -2522,6 +2655,206 @@
 			</action>
 		</rule>
 
+<!--37-->
+		<!-- "der dritte Juni"  =>  "June the third" -->
+		<rule comment="RULE: DET NUM MONTHS =} MONTHS DET NUM">
+			<pattern>
+				<pattern-item n="det"/>
+				<!--<pattern-item n="num"/>-->
+				<pattern-item n="ord_num"/>
+				<pattern-item n="months"/>
+			</pattern>
+			<action>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="nom_det_num" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+						</tags>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
+
+		<!-- "an dem"/"am 24. August"  =>  "on August 24th" -->
+		<rule comment="RULE: ON DET NUM MONTHS">
+			<pattern>
+				<pattern-item n="prep"/>
+				<pattern-item n="det"/>
+				<pattern-item n="num"/>
+				<!--<pattern-item n="ord_num"/>-->
+				<pattern-item n="months"/>
+			</pattern>
+			<action>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="pr_num_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+						</tags>
+						<lu>
+							<lit v="on"/>
+							<lit-tag v="pr"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="4" side="tl" part="whole"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
+
+		<!-- "Mittwoch der 5. April"  =>  "Wednesday , April 5th" -->
+		<rule comment="RULE: WEEKS DET NUM MONTHS =} WEEKS CM MONTHS NUM">
+			<pattern>
+				<pattern-item n="weekdays"/>
+				<pattern-item n="dets"/>
+				<pattern-item n="ord_num"/>
+				<pattern-item n="months"/>
+			</pattern>
+			<action>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="nom_cm_nom_num" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<!--<clip pos="2" side="tl" part="whole"/>-->
+							<lit v=","/>
+							<lit-tag v="cm"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="4" side="tl" part="whole"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
+
+		<!-- "Mittwoch , 5. April"  =>  "Wednesday , April 5th" -->
+		<rule comment="RULE: WEEKS CM NUM MONTHS =} WEEKS CM MONTHS NUM">
+			<pattern>
+				<pattern-item n="weekdays"/>
+				<pattern-item n="coma"/>
+				<pattern-item n="ord_num"/>
+				<pattern-item n="months"/>
+			</pattern>
+			<action>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="nom_cm_nom_num" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="4" side="tl" part="whole"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
+
+		<!-- "Mittwoch , der 5. April"  =>  "Wednesday , April 5th" -->
+		<rule comment="RULE: WEEKS CM DET NUM MONTHS =} WEEKS CM MONTHS NUM">
+			<pattern>
+				<pattern-item n="weekdays"/>
+				<pattern-item n="coma"/>
+				<pattern-item n="dets"/>
+				<pattern-item n="ord_num"/>
+				<pattern-item n="months"/>
+			</pattern>
+			<action>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="nom_cm_num_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="5" side="tl" part="whole"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="4" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="caseFirstWord"/><lit v="aa"/></let>
+			</action>
+		</rule>
+
 
 		<!-- RULE: reset variables -->
 		<rule comment="RULE: SENT">
@@ -2531,8 +2864,8 @@
 			<action>
 				<let><var n="v_subject"/><lit v=""/></let>
 				<let><var n="v_predicate"/><lit v=""/></let>
-				<let><var n="v_gen"/><lit v=""/></let>
-				<let><var n="v_nbr"/><lit v=""/></let>
+				<let><var n="v_gen"/><lit v="GD"/></let>
+				<let><var n="v_nbr"/><lit v="ND"/></let>
 				<let><var n="v_cas"/><lit v=""/></let>
 				<let><var n="v_pers"/><lit v=""/></let>
 
