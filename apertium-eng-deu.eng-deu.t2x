@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?> <!-- -*- nxml -*- -->
-
 <interchunk>
 
 	<section-def-cats>
@@ -13,6 +12,14 @@
 			<cat-item tags="SN.*"/>
 			<cat-item tags="ADJ"/>
 			<cat-item tags="ADJ.*"/>
+		</def-cat>
+		<def-cat n="SN_noun">
+			<cat-item tags="SN"/>
+			<cat-item tags="SN.*"/>
+			<cat-item tags="PRN"/>
+			<cat-item tags="PRN.*"/>
+			<cat-item tags="PRPERS"/>
+			<cat-item tags="PRPERS.*"/>
 		</def-cat>
 		<def-cat n="PRN">
 			<cat-item tags="PRN"/>
@@ -28,14 +35,6 @@
 			<cat-item tags="PRPERS"/>
 			<cat-item tags="PRPERS.*"/>
 		</def-cat>
-		<def-cat n="NOUN">
-			<cat-item tags="SN"/>
-			<cat-item tags="SN.*"/>
-			<cat-item tags="PRN"/>
-			<cat-item tags="PRN.*"/>
-			<cat-item tags="PRPERS"/>
-			<cat-item tags="PRPERS.*"/>
-		</def-cat>
 		<def-cat n="ADJ">
 			<cat-item tags="ADJ"/>
 			<cat-item tags="ADJ.*"/>
@@ -46,6 +45,12 @@
 		<def-cat n="SV">
 			<cat-item tags="SV"/>
 			<cat-item tags="SV.*"/>
+			<cat-item tags="SV_aux"/>
+			<cat-item tags="SV_aux.*"/>
+		</def-cat>
+		<def-cat n="SV_aux">
+			<cat-item tags="SV_aux"/>
+			<cat-item tags="SV_aux.*"/>
 		</def-cat>
 		<def-cat n="VPART">
 			<cat-item tags="V.PART"/>
@@ -63,6 +68,9 @@
 		</def-cat>
 		<def-cat n="PR">
 			<cat-item tags="PR"/>
+		</def-cat>
+		<def-cat n="CM">
+			<cat-item tags="CM"/>
 		</def-cat>
 		<!-- <def-cat n="unknown">
 			<cat-item tags="unknown"/>
@@ -380,10 +388,10 @@
 
 
 		<!--  -->
-		<rule comment="REGLA: PRN V V N">
+		<rule comment="REGLA: SN V V N / PRN V V N / PRPERS V V N">
 			<pattern>
 				<!--<pattern-item n="PRN"/>-->
-				<pattern-item n="NOUN"/>
+				<pattern-item n="SN_noun"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
@@ -488,14 +496,11 @@
 		</rule>
 
 
-
-						<!-- "N PRN V ADV N" -->
-		<rule comment="REGLA: N PRN V PR N">
+		<rule comment="REGLA: N PRN V ADV N">
 			<pattern>
 				<pattern-item n="SN"/>
 				<pattern-item n="PRN"/>
 				<pattern-item n="SV"/>
-				<!--<pattern-item n="PR"/>-->
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN"/>
 			</pattern>
@@ -694,7 +699,8 @@
 		<rule comment="REGLA: ADV N V">
 			<pattern>
 				<pattern-item n="ADV"/>
-				<pattern-item n="SN"/>
+				<!--<pattern-item n="SN"/>-->
+				<pattern-item n="SN_noun"/>
 				<pattern-item n="SV"/>
 			</pattern>
 			<action>
@@ -720,9 +726,52 @@
 			</action>
 		</rule>
 
-<!--14-->
+
 		<!-- update nbr/ND -->
-		<!-- (pl): "here are four cakes" =} "hier sind vier Kuchen " -->
+		<!-- (pl): "(he) has just played football" =} "(er) hat gerade Fußball gespielt " -->
+		<rule comment="REGLA: V ADV V N">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="2"/>
+					<with-param pos="3"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- update nbr/ND -->
+		<!-- (pl): "here are four cakes" =} "hier sind vier Kuchen" -->
 		<rule comment="REGLA: ADV V N">
 			<pattern>
 				<pattern-item n="ADV"/>
@@ -732,7 +781,7 @@
 			<action>
 				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
 					<with-param pos="2"/>
-					<with-param pos="3"/>  <!-- has the nbr -->
+					<with-param pos="3"/>  <!-- "nbr" from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -757,6 +806,35 @@
 		</rule>
 
 
+		<!-- update nbr/ND -->
+		<!-- "look at your calendar" =} "sieh auf deinen Kalender" -->
+		<rule comment="REGLA: V N">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- (question) update nbr/ND -->
 		<rule comment="REGLA: V PRN N">
 			<pattern>
@@ -767,7 +845,7 @@
 			<action>
 				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- has the nbr -->
+					<with-param pos="2"/>  <!-- "nbr" from noun -->
 				</call-macro>
 				<out>
 					<chunk>
