@@ -120,7 +120,7 @@
 			</choose>
 		</def-macro>
 
-		<!-- () if "GD" get gender from next word -->
+		<!-- (verb) if "GD" get gender from next word -->
 		<def-macro n="upd_GD_gen" npar="2">
 			<choose>
 				<when>
@@ -729,7 +729,7 @@
 
 		<!-- update nbr/ND -->
 		<!-- (pl): "(he) has just played football" =} "(er) hat gerade Fußball gespielt " -->
-		<rule comment="REGLA: V ADV V N">
+		<rule comment="REGLA: V ADV V N =} V ADV N V">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
@@ -738,8 +738,8 @@
 			</pattern>
 			<action>
 				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
-					<with-param pos="2"/>
-					<with-param pos="3"/>  <!-- "nbr" from noun -->
+					<with-param pos="1"/>
+					<with-param pos="4"/>  <!-- "nbr" from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -800,6 +800,49 @@
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- update nbr/ND -->
+		<!-- "there are often traffic lights" =} "dort sind oft Ampeln" -->
+		<rule comment="REGLA: ADV V ADV N">
+			<pattern>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="2"/>
+					<with-param pos="4"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
 					</chunk>
 				</out>
 			</action>
