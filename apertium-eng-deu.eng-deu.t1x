@@ -22,6 +22,13 @@
 			<cat-item tags="np.ant"/>
 			<cat-item tags="np.ant.*"/>
 		</def-cat>
+		<def-cat n="cog_names"> <!-- after Mr/Ms -->
+			<cat-item tags="np.cog"/>
+			<cat-item tags="np.cog.*"/>
+			<cat-item tags="np.ant"/>
+			<cat-item tags="np.ant.*"/>
+			<cat-item tags="adj.*"/>
+		</def-cat>
 		<def-cat n="location">
 			<cat-item tags="np.loc.*"/>
 			<cat-item tags="np.top.*"/>
@@ -90,7 +97,6 @@
 		</def-cat>
 		<def-cat n="prpos">
 			<cat-item lemma="prpers" tags="prn.pos.*"/>
-			<!-- <cat-item lemma="prpers" tags="prn.det.*"/> -->
 		</def-cat>
 		<def-cat n="prpers_det">
 			<cat-item lemma="prpers" tags="prn.det"/>
@@ -1298,7 +1304,7 @@
 		</def-macro>
 
 
-		<!-- (prn) clear casus variable / OUT: v_cas_prn -->
+		<!-- (prn) clear casus variable (prn.pos without case) / OUT: v_cas_prn -->
 		<def-macro n="trim_v_cas_prn" npar="1">
 			<let>
 				<var n="v_cas_prn"/>
@@ -1347,23 +1353,46 @@
 					<test>
 						<and>
 							<equal>
-								<clip pos="1" side="tl" part="a_nbr"/>
+								<!--<clip pos="1" side="tl" part="a_nbr"/>-->
+								<var n="v_nbr"/>
 								<lit-tag v="pl"/>
 							</equal>
 							<or>
 								<equal>
-									<clip pos="1" side="tl" part="a_gen"/>
+									<!--<clip pos="1" side="tl" part="a_gen"/>-->
+									<var n="v_gen"/>
 									<lit-tag v="m"/>
 								</equal>
 								<equal>
-									<clip pos="1" side="tl" part="a_gen"/>
+									<!--<clip pos="1" side="tl" part="a_gen"/>-->
+									<var n="v_gen"/>
 									<lit-tag v="f"/>
 								</equal>
 							</or>
 						</and>
 					</test>
 					<let>
-						<var n="v_gen_adj"/>
+						<!--<var n="v_gen_adj"/>-->
+						<var n="v_gen"/>
+						<lit-tag v="mf"/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+
+		<!-- (adj) if "pl" set to "mf" / OUT: v_gen_adj -->
+		<def-macro n="chg_pl__mf_gen" npar="1">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<var n="v_nbr"/>
+							<lit-tag v="pl"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_gen"/>
 						<lit-tag v="mf"/>
 					</let>
 				</when>
@@ -1589,8 +1618,10 @@
 			<call-macro n="chg_sg_mf__m_gen">
 				<with-param pos="1"/>
 			</call-macro>
-			<call-macro n="chg_pl_m_f__mf_gen">
-				<with-param pos="1"/>
+			<!--<call-macro n="chg_pl_m_f__mf_gen">
+				<with-param pos="1"/> -->
+			<call-macro n="chg_pl__mf_gen">
+				<with-param pos="2"/>  <!-- nbr of noun -->
 			</call-macro>
 			
 			<let><var n="v_gen_adj"/><var n="v_gen"/></let>
@@ -2107,10 +2138,8 @@
 					<let><var n="v_nbr_verb"/><var n="v_nbr_nom"/></let>
 				</when>
 				<otherwise>  <!--"default"-->
-					<!-- <let><var n="v_pers"/><lit-tag v="p3"/></let>
-					<let><var n="v_nbr"/><lit-tag v="sg"/></let> -->
 					<let><var n="v_pers"/><lit-tag v="p3"/></let>
-					<let><var n="v_nbr"/><lit-tag v="ND"/></let>
+					<let><var n="v_nbr"/><lit-tag v="ND"/></let>  <!--"sg"/"pl" -->
 					<let><var n="v_pers_verb"/><var n="v_pers"/></let>
 					<let><var n="v_nbr_verb"/><var n="v_nbr"/></let>
 				</otherwise>
@@ -2690,7 +2719,7 @@
 				<pattern-item n="mrs"/>
 				<pattern-item n="and"/>
 				<pattern-item n="mrs"/>
-				<pattern-item n="cog_np"/>
+				<pattern-item n="cog_names"/>
 			</pattern>
 			<action>
 				<call-macro n="chg_default_nom">
@@ -3760,7 +3789,7 @@
 			</action>
 		</rule>
 
-<!--30-->
+
 		<rule comment="RULE: ADV ADJ">
 			<pattern>
 				<pattern-item n="adv"/>
@@ -4165,7 +4194,7 @@
 			</action>
 		</rule>
 
-<!--40-->
+
 		<!-- preposition with dative -->
 		<rule comment="RULE: PRDAT DET NOM">
 			<pattern>
@@ -4644,7 +4673,7 @@
 			</action>
 		</rule>
 
-<!--50-->
+
 		<rule comment="RULE: DET">
 			<pattern>
 				<pattern-item n="det"/>
@@ -4824,7 +4853,7 @@
 				<out>
 					<chunk name="verbm" case="caseFirstWord">
 						<tags>
-							<tag><lit-tag v="SV_vaux"/></tag>
+							<tag><lit-tag v="SV_aux"/></tag>
 							<tag><var n="v_pers_verb"/></tag>
 							<tag><var n="v_nbr_verb"/></tag>
 						</tags>
@@ -4856,7 +4885,7 @@
 
 
 		<!-- "(he) is going" => "(er) geht" -->
-		<rule comment="RULE: VERBNM VERBS">
+		<rule comment="RULE: BE VERBS">
 			<pattern>
 				<!--<pattern-item n="verbnm"/>-->
 				<pattern-item n="verbbe"/>
@@ -5225,7 +5254,7 @@
 
 
 		<!-- "(I) don't go" => "(ich) gehe nicht" -->
-		<rule comment="RULE: VERBDO ADV VERBNM =} VERBNM ADV">
+		<rule comment="RULE: DO ADV VERBNM =} VERBNM ADV">
 			<pattern>
 				<pattern-item n="verbdo"/>
 				<pattern-item n="adv"/>
