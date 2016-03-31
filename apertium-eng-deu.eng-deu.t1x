@@ -1026,7 +1026,8 @@
 				<when>
 					<test>
 						<equal>
-							<clip pos="1" side="tl" part="a_nbr"/>
+							<!--<clip pos="1" side="tl" part="a_nbr"/>-->
+							<var n="v_nbr"/>
 							<lit-tag v="sp"/>
 						</equal>
 					</test>
@@ -1063,11 +1064,13 @@
 					<test>
 						<or>
 							<equal>
-								<clip pos="1" side="tl" part="a_gen"/>
+								<!--<clip pos="1" side="tl" part="a_gen"/>-->
+								<var n="v_gen"/>
 								<lit-tag v="mf"/>
 							</equal>
 							<equal>
-								<clip pos="1" side="tl" part="a_gen"/>
+								<!--<clip pos="1" side="tl" part="a_gen"/>-->
+								<var n="v_gen"/>
 								<lit-tag v="mfn"/>
 							</equal>
 						</or>
@@ -1170,7 +1173,7 @@
 		</def-macro>
 
 
-		<!-- (nom) set nomen default values / OUT: v...nom -->
+		<!-- (nom) set nomen default values / OUT: v...nom, v_subject -->
 		<def-macro n="chg_default_nom" npar="1">
 			<let><var n="v_pers_nom"/><lit-tag v="p3"/></let>
 			<let><var n="v_gen_nom"/><lit-tag v="mf"/></let>
@@ -1712,7 +1715,7 @@
 					</test>
 					<let>
 						<var n="v_pers_verb"/>
-						<lit-tag v="p3"/>
+						<lit-tag v="p3"/> <!-- default -->
 					</let>
 				</when>
 			</choose>
@@ -1818,6 +1821,7 @@
 					</call-macro>
 				</otherwise>
 			</choose>
+
 			<call-macro n="chg_pers_nbr_verb">
 				<with-param pos="1"/>
 			</call-macro>
@@ -2006,6 +2010,31 @@
 					<let><var n="v_gen_det"/><var n="v_gen"/></let>			
 				</otherwise>
 			</choose>
+		</def-macro>
+
+
+		<!-- (adj+nom) set variables / OUT: v...adj, v...nom -->
+		<def-macro n="proc_adj_nom" npar="2">
+			<call-macro n="set_decl_typ_a_adj">
+				<with-param pos="1"/>
+			</call-macro>
+			<call-macro n="set_pers_gen_nbr_cas_nom">
+				<with-param pos="2"/>
+			</call-macro>
+		</def-macro>
+
+
+		<!-- (det+adj+nom) set variables / OUT: v...det, v...adj, v...nom -->
+		<def-macro n="proc_det_adj_nom" npar="3">
+			<call-macro n="proc_det_nom">
+				<with-param pos="1"/>
+				<with-param pos="3"/>
+			</call-macro>
+			<call-macro n="set_decl_det_a_adj">
+				<with-param pos="1"/>
+				<with-param pos="2"/>
+				<with-param pos="3"/>
+			</call-macro>
 		</def-macro>
 
 
@@ -2615,10 +2644,14 @@
 				<call-macro n="set_pers_gen_nbr_cas_prn">
 					<with-param pos="1"/>
 				</call-macro>
-				<call-macro n="set_decl_typ_a_adj">
+				<!--<call-macro n="set_decl_typ_a_adj">
 					<with-param pos="2"/>
 				</call-macro>
 				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="3"/>
+				</call-macro>-->
+				<call-macro n="proc_adj_nom">
+					<with-param pos="2"/>
 					<with-param pos="3"/>
 				</call-macro>
 				<call-macro n="trim_v_cas_prn">  <!-- case from noun -->
@@ -2999,11 +3032,12 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_det_nom">
+				<!--<call-macro n="proc_det_nom">
 					<with-param pos="1"/>
 					<with-param pos="3"/>
 				</call-macro>
-				<call-macro n="set_decl_det_a_adj">
+				<call-macro n="set_decl_det_a_adj">-->
+				<call-macro n="proc_det_adj_nom">
 					<with-param pos="1"/>
 					<with-param pos="2"/>
 					<with-param pos="3"/>
@@ -3261,10 +3295,14 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="set_decl_typ_a_adj">
+				<!--<call-macro n="set_decl_typ_a_adj">
 					<with-param pos="1"/>
 				</call-macro>
 				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="2"/>
+				</call-macro>-->
+				<call-macro n="proc_adj_nom">
+					<with-param pos="1"/>
 					<with-param pos="2"/>
 				</call-macro>
 
@@ -3312,10 +3350,14 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="set_decl_typ_a_adj">
+				<!--<call-macro n="set_decl_typ_a_adj">
 					<with-param pos="1"/>
 				</call-macro>
 				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="3"/>
+				</call-macro>-->
+				<call-macro n="proc_adj_nom">
+					<with-param pos="1"/>
 					<with-param pos="3"/>
 				</call-macro>
 				<out>
@@ -3367,10 +3409,14 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="set_decl_typ_a_adj">
+				<!--<call-macro n="set_decl_typ_a_adj">
 					<with-param pos="1"/>
 				</call-macro>
 				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="4"/>
+				</call-macro>-->
+				<call-macro n="proc_adj_nom">
+					<with-param pos="1"/>
 					<with-param pos="4"/>
 				</call-macro>
 				<out>
@@ -3426,10 +3472,14 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="set_decl_typ_a_adj">
+				<!--<call-macro n="set_decl_typ_a_adj">
 					<with-param pos="3"/>
 				</call-macro>
 				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="4"/>
+				</call-macro>-->
+				<call-macro n="proc_adj_nom">
+					<with-param pos="3"/>
 					<with-param pos="4"/>
 				</call-macro>
 				<out>
@@ -3485,17 +3535,18 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_det_nom">
+				<!--<call-macro n="proc_det_nom">
 					<with-param pos="1"/>
 					<with-param pos="4"/>
 				</call-macro>
-				<call-macro n="set_decl_det_a_adj">
+				<call-macro n="set_decl_det_a_adj">-->
+				<call-macro n="proc_det_adj_nom">
 					<with-param pos="1"/>
 					<with-param pos="3"/>
 					<with-param pos="4"/>
 				</call-macro>
 				<out>
-					<chunk name="det_adv_adj_nom" case="caseFirstWord">
+					<chunk name="det_adj_adj_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
 							<tag><var n="v_gen_nom"/></tag>
@@ -3552,11 +3603,12 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_det_nom">
+				<!--<call-macro n="proc_det_nom">
 					<with-param pos="1"/>
 					<with-param pos="4"/>
 				</call-macro>
-				<call-macro n="set_decl_det_a_adj">
+				<call-macro n="set_decl_det_a_adj">-->
+				<call-macro n="proc_det_adj_nom">
 					<with-param pos="1"/>
 					<with-param pos="3"/>
 					<with-param pos="4"/>
@@ -3612,10 +3664,14 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="set_decl_typ_a_adj">
+				<!--<call-macro n="set_decl_typ_a_adj">
 					<with-param pos="2"/>
 				</call-macro>
 				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="3"/>
+				</call-macro>-->
+				<call-macro n="proc_adj_nom">
+					<with-param pos="2"/>
 					<with-param pos="3"/>
 				</call-macro>
 				<out>
@@ -3941,7 +3997,6 @@
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
-							<!--<clip pos="2" side="tl" part="whole"/>-->
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_det"/>
 						    <var n="v_gen_det"/>
@@ -3995,7 +4050,6 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<!--<clip pos="3" side="tl" part="whole"/>-->
 							<clip pos="3" side="tl" part="lem"/>
 							<clip pos="3" side="tl" part="a_det"/>
 						    <var n="v_gen_det"/>
@@ -4307,11 +4361,12 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_det_nom">
+				<!--<call-macro n="proc_det_nom">
 					<with-param pos="2"/>
 					<with-param pos="4"/>
 				</call-macro>
-				<call-macro n="set_decl_det_a_adj">
+				<call-macro n="set_decl_det_a_adj">-->
+				<call-macro n="proc_det_adj_nom">
 					<with-param pos="2"/>
 					<with-param pos="3"/>
 					<with-param pos="4"/>
@@ -4595,11 +4650,12 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_det_nom">
+				<!--<call-macro n="proc_det_nom">
 					<with-param pos="2"/>
 					<with-param pos="4"/>
 				</call-macro>
-				<call-macro n="set_decl_det_a_adj">
+				<call-macro n="set_decl_det_a_adj">-->
+				<call-macro n="proc_det_adj_nom">
 					<with-param pos="2"/>
 					<with-param pos="3"/>
 					<with-param pos="4"/>
