@@ -1858,22 +1858,6 @@
 				<var n="v_predicate"/>
 				<clip pos="1" side="tl" part="a_verb"/>
 			</let>
-<!--
-			<choose>
-				<when>
-					<test>
-						<equal>
-							<var n="EOS"/>
-							<lit v="true"/>
-						</equal>
-					</test>
-					<let>
-						<var n="v_predicate"/>
-						<lit v=""/>
-					</let>
-				</when>
-			</choose>
--->
 		</def-macro>
 
 
@@ -2405,6 +2389,35 @@
 		</def-macro>
 
 
+		<!-- PRPERS to prpers conversion
+			Apertium always choose PRPERS for "I" -->
+		<def-macro n="PRPERS_to_prpers" npar="1">
+			<choose>
+				<when>      <!-- "I" : PRPERS => prpers -->
+					<test>  <!-- "PRPERS.prn.subj.p1.mf.sg" -->
+						<and>
+							<equal>
+								<clip pos="1" side="sl" part="lem"/>
+								<lit v="PRPERS"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="sl" part="tags"/>
+								<lit-tag v="prn.subj.p1.mf.sg"/>
+							</equal>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" side="sl" part="lem"/>
+						<lit v="prpers"/>
+					</let>
+					<let>
+						<clip pos="1" side="tl" part="lem"/>
+						<lit v="prpers"/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
 	</section-def-macros>
 
 
@@ -2507,6 +2520,10 @@
 				<call-macro n="proc_prpers">  <!-- OUT: v_..._prn -->
 					<with-param pos="1"/>
 				</call-macro>
+				<call-macro n="PRPERS_to_prpers">
+					<with-param pos="1"/>
+				</call-macro>
+				<!-- <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case> -->
 
 				<choose>
 					<when>  <!-- "prn.det" without <obj> tag -->
@@ -2517,10 +2534,9 @@
 							</equal>
 						</test>
 						<out>
-							<!--<chunk name="nom" case="caseFirstWord">-->
+							<!--<chunk name="prn" case="caseFirstWord">-->
 							<chunk name="prpers" case="caseFirstWord">
 								<tags>
-									<!--<tag><lit-tag v="SN"/></tag>-->
 									<tag><lit-tag v="PRN"/></tag>
 									<tag><var n="v_pers_prn"/></tag>
 									<tag><var n="v_gen_prn"/></tag>
@@ -2529,7 +2545,6 @@
 								<lu>
 									<clip pos="1" side="tl" part="lem"/>
 									<clip pos="1" side="tl" part="a_prpos"/>
-									<!--<clip pos="1" side="tl" part="a_tipus_prn"/>-->
 									<var n="v_pers_prn"/>
 									<var n="v_gen_prn"/>
 									<var n="v_nbr_prn"/>
@@ -2543,6 +2558,7 @@
 						<out>
 							<chunk name="prpers" case="caseFirstWord">
 								<tags>
+									<!--<tag><lit-tag v="PRPERS"/></tag>-->
 									<!--<tag><lit-tag v="SN"/></tag>-->
 									<tag><lit-tag v="PRN"/></tag>
 									<tag><var n="v_pers_prn"/></tag>
