@@ -11,6 +11,9 @@
 			<cat-item tags="SV"/>
 			<cat-item tags="SV.*"/>
 		</def-cat>
+		<def-cat n="SV_pp">
+			<cat-item tags="SV.pp"/>
+		</def-cat>
 		<def-cat n="PRN__V">
 			<cat-item tags="PRN.V"/>
 			<cat-item tags="PRN.V.*"/>
@@ -165,7 +168,7 @@
 
 	<section-rules>
 
-		<rule comment="REGLA: N (set ND to sg)">
+		<rule comment="RULE: N (set ND to sg)">
 			<pattern>
 				<pattern-item n="SN"/>
 			</pattern>
@@ -198,7 +201,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: N V N V">
+		<rule comment="RULE: N V N V">
 			<pattern>
 				<pattern-item n="SN"/>
 				<pattern-item n="SV"/>
@@ -238,7 +241,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: N PR N CNJ PR N V">
+		<rule comment="RULE: N PR N CNJ PR N V">
 			<pattern>
 				<pattern-item n="SN"/> <!-- 1 -->
 				<pattern-item n="PR"/> <!-- 2 -->
@@ -299,7 +302,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN V N V">
+		<rule comment="RULE: PRN V N V">
 			<pattern>
 				<pattern-item n="PRN"/>
 				<pattern-item n="SV"/>
@@ -339,7 +342,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRPERS V ADV S">
+		<rule comment="RULE: PRPERS V ADV S">
 			<pattern>
 				<pattern-item n="PRPERS"/>
 				<pattern-item n="SV"/>
@@ -379,7 +382,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRPERS V ADV ADV">
+		<rule comment="RULE: PRPERS V ADV ADV">
 			<pattern>
 				<pattern-item n="PRPERS"/>
 				<pattern-item n="SV"/>
@@ -420,7 +423,7 @@
 
 
 		<!-- "er wird seine Hände waschen" => "he is going to wash his hands" -->
-		<rule comment="REGLA: PRPERS V SN V">
+		<rule comment="RULE: PRPERS V SN V">
 			<pattern>
 				<pattern-item n="PRPERS"/>
 				<pattern-item n="SV"/>
@@ -460,7 +463,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN__V N V ADV">
+		<rule comment="RULE: PRN__V N V ADV">
 			<pattern>
 				<pattern-item n="PRN__V"/>
 				<pattern-item n="SN"/>
@@ -500,7 +503,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN__V PR N V">
+		<rule comment="RULE: PRN__V PR N V">
 			<pattern>
 				<pattern-item n="PRN__V"/>
 				<pattern-item n="PR"/>
@@ -540,7 +543,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: PRN__V ADV N PR N V">
+		<rule comment="RULE: PRN__V ADV N PR N V">
 			<pattern>
 				<pattern-item n="PRN__V"/>
 				<pattern-item n="ADV"/>
@@ -594,7 +597,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJADV PRN N V">
+		<rule comment="RULE: CNJADV PRN N V">
 			<pattern>
 				<pattern-item n="CNJADV"/>
 				<pattern-item n="PRN"/>
@@ -634,7 +637,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJADV N ADJ V">
+		<rule comment="RULE: CNJADV N ADJ V">
 			<pattern>
 				<pattern-item n="CNJADV"/>
 				<pattern-item n="SN"/>
@@ -674,7 +677,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJ PR N V">
+		<rule comment="RULE: CNJ PR N V">
 			<pattern>
 				<pattern-item n="CNJ"/>
 				<pattern-item n="PR"/>
@@ -714,7 +717,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: CNJ ADV PR N V">
+		<rule comment="RULE: CNJ ADV PR N V">
 			<pattern>
 				<pattern-item n="CNJ"/>
 				<pattern-item n="ADV"/>
@@ -762,7 +765,7 @@
 
 
 		<!-- "(Magst) du Katzen ?" => "(Do) you (like) cats ?" -->
-		<rule comment="REGLA: V PRN N ?">
+		<rule comment="RULE: V PRN N ?">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="PRPERS"/>
@@ -813,7 +816,49 @@
 		</rule>
 
 
-		<rule comment="REGLA: V PR N V">
+		<!-- "Hat er die Blumen gegossen (?)" => "Has he watered the flowers (?)" -->
+		<rule comment="RULE: V PRN N V">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="PRPERS"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+				<!--<pattern-item n="SV_pp"/>-->
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: V PR N V">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="PR"/>
@@ -853,7 +898,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: V ADV PR N V">
+		<rule comment="RULE: V ADV PR N V">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
@@ -900,7 +945,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: V ADV N V PR">
+		<rule comment="RULE: V ADV N V PR">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
@@ -947,7 +992,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: V ADV PR N PR N V">
+		<rule comment="RULE: V ADV PR N PR N V">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
@@ -1008,7 +1053,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: V PREADV ADJ V CNJ">
+		<rule comment="RULE: V PREADV ADJ V CNJ">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="PREADV"/>
@@ -1052,7 +1097,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: V ADV N PR N PR N V">
+		<rule comment="RULE: V ADV N PR N PR N V">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
@@ -1121,7 +1166,7 @@
 
 
 		<!-- "V N ADV" =} "V ADV N" -->
-		<rule comment="REGLA: V SN ADV">
+		<rule comment="RULE: V SN ADV">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
@@ -1154,7 +1199,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: ADV N PR VBLEX V">
+		<rule comment="RULE: ADV N PR VBLEX V">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN"/>
@@ -1201,7 +1246,7 @@
 		</rule>
 
 
-		<rule comment="REGLA: ADV PR N CNJ N V">
+		<rule comment="RULE: ADV PR N CNJ N V">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PR"/>
@@ -1257,7 +1302,7 @@
 		<!-- ADV PRN ADV PR N V V -> ADV PRN V V ADV PR N -->
 		<!-- 1   2   3   4  5 6 7 -> 1   2   7 6 3   4  5 -->
 
-		<rule comment="REGLA: ADV PRN ADV PR N V V">
+		<rule comment="RULE: ADV PRN ADV PR N V V">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="PRN"/>
@@ -1319,7 +1364,7 @@
 
 
 		<!-- "ADV V PRN" =} "V PRN ADV" -->
-		<rule comment="REGLA: ADV V PRN">
+		<rule comment="RULE: ADV V PRN">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SV"/>
@@ -1351,7 +1396,7 @@
 
 
 		<!-- insert "more" -->
-		<rule comment="REGLA: MORE ADJ">
+		<rule comment="RULE: MORE ADJ">
 			<pattern>
 				<pattern-item n="COMP-ADJ"/>
 			</pattern>
@@ -1379,7 +1424,7 @@
 
 
 		<!-- insert "most" -->
-		<rule comment="REGLA: MOST ADJ">
+		<rule comment="RULE: MOST ADJ">
 			<pattern>
 				<pattern-item n="SUP-ADJ"/>
 			</pattern>
