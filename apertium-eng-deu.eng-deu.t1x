@@ -2520,7 +2520,7 @@
 				<call-macro n="proc_prpers">  <!-- OUT: v_..._prn -->
 					<with-param pos="1"/>
 				</call-macro>
-				<call-macro n="PRPERS_to_prpers">
+				<call-macro n="PRPERS_to_prpers">  <!--(for "I" only)-->
 					<with-param pos="1"/>
 				</call-macro>
 				<!-- <modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case> -->
@@ -5090,7 +5090,7 @@
 				<out>
 					<chunk name="verbm">
 						<tags>
-							<tag><lit-tag v="SV_vaux"/></tag>
+							<tag><lit-tag v="SV_aux"/></tag>
 							<tag><var n="v_pers_verb"/></tag>
 							<tag><var n="v_nbr_verb"/></tag>
 						</tags>
@@ -5596,7 +5596,7 @@
 				<out>
 					<chunk name="verb_adv">
 						<tags>
-							<tag><lit-tag v="SV_vaux"/></tag>
+							<tag><lit-tag v="SV_aux"/></tag>
 							<tag><var n="v_pers_verb"/></tag>
 							<tag><var n="v_nbr_verb"/></tag>
 						</tags>
@@ -5700,9 +5700,9 @@
 			</pattern>
 			<action>
 				<out>
-					<chunk name="cnj" case="caseFirstWord">
+					<chunk name="conj" case="caseFirstWord">
 						<tags>
-							<tag><lit-tag v="CONJ"/></tag>
+							<tag><lit-tag v="CNJ"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="whole"/>
