@@ -5,7 +5,6 @@
 		<def-cat n="SN">
 			<cat-item tags="SN"/>
 			<cat-item tags="SN.*"/>
-			<cat-item tags="SN.pl"/>
 		</def-cat>
 		<def-cat n="SV">
 			<cat-item tags="SV"/>
@@ -13,6 +12,12 @@
 		</def-cat>
 		<def-cat n="SV_pp">
 			<cat-item tags="SV.pp"/>
+		</def-cat>
+		<def-cat n="SV_aux">
+			<cat-item lemma="vaux" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_inf">
+			<cat-item tags="SV.inf"/>
 		</def-cat>
 		<def-cat n="PRN__V">
 			<cat-item tags="PRN.V"/>
@@ -30,6 +35,14 @@
 			<cat-item tags="PRPERS.*"/>
 		</def-cat>
 		<def-cat n="PRON">
+			<cat-item tags="PRN"/>
+			<cat-item tags="PRN.*"/>
+			<cat-item tags="PRPERS"/>
+			<cat-item tags="PRPERS.*"/>
+		</def-cat>
+		<def-cat n="NPH">  <!-- any noun phrase -->
+			<cat-item tags="SN"/>
+			<cat-item tags="SN.*"/>
 			<cat-item tags="PRN"/>
 			<cat-item tags="PRN.*"/>
 			<cat-item tags="PRPERS"/>
@@ -103,7 +116,6 @@
 		</def-attr>
 	</section-def-attrs>
 
-
 	<section-def-vars>
 		<def-var n="v_nombre"/>
 		<def-var n="v_genere"/>
@@ -160,7 +172,7 @@
 			</choose>
 		</def-macro>
 
-		<!-- () if "GD" get gender from next word -->
+		<!-- (verb) if "GD" get gender from next word -->
 		<def-macro n="upd_GD_gen" npar="2">
 			<choose>
 				<when>
@@ -217,10 +229,125 @@
 		</rule>
 
 
-		<!-- "N V N ~V" => "N V ~V N" -->
-		<rule comment="RULE: N V N V">
+		<!-- "(er) will ein Comic und ein Buch kaufen" =} "(he) is going to buy a comic and a book" -->
+		<!-- "" => "" -->
+		<rule comment="RULE: N V N CNJ N V">
 			<pattern>
 				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="CNJ"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<lit v="prep"/>
+						<lit-tag v="PR"/>
+						<lit v="{^"/>
+						<lit v="to"/>
+						<lit-tag v="pr"/>
+						<lit v="$}"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="6" part="lem"/>
+						<clip pos="6" part="tags"/>
+						<clip pos="6" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "man muß eine Briefmarke auf einen Brief kleben" =} "you must put a stamp on a letter" -->
+		<!-- "NP V N N ~V" => "NP V ~V N N" -->
+		<rule comment="RULE: NP V N N V">
+			<pattern>
+				<pattern-item n="NPH"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "er wird seine Hände waschen" => "he is going to wash his hands" -->
+		<!-- "NP V N ~V" => "NP V ~V N" -->
+		<rule comment="RULE: NP V N V">
+			<pattern>
+				<pattern-item n="NPH"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
 				<pattern-item n="SV"/>
@@ -315,47 +442,6 @@
 				</out>
 				<call-macro n="nombre_SN">
 					<with-param pos="1"/>
-				</call-macro>
-			</action>
-		</rule>
-
-
-		<!-- "PRN V N ~V" => "PRN V ~V N" -->
-		<rule comment="RULE: PRN V N V">
-			<pattern>
-				<pattern-item n="PRN"/>
-				<pattern-item n="SV"/>
-				<pattern-item n="SN"/>
-				<pattern-item n="SV"/>
-			</pattern>
-			<action>
-				<out>
-					<chunk>
-						<clip pos="1" part="lem"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="4" part="lem"/>
-						<clip pos="4" part="tags"/>
-						<clip pos="4" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="3" part="tags"/>
-						<clip pos="3" part="chcontent"/>
-					</chunk>
-				</out>
-				<call-macro n="nombre_SN">
-					<with-param pos="3"/>
 				</call-macro>
 			</action>
 		</rule>
@@ -468,7 +554,7 @@
 							<lit v="do"/>
 						</get-case-from>
 						<lit-tag v="vaux"/>
-						<lit-tag v="2"/>  <!-- link to 2 -->
+						<lit-tag v="2"/>  <!-- link to 2 / "a_temps" -->
 						<lit v="$}"/>
 					</chunk>
 					<b/>
@@ -480,7 +566,6 @@
 					<b/>
 					<chunk>
 						<clip pos="2" part="lem"/>
-						<!--<clip pos="2" part="tags"/>-->
 						<lit-tag v="SV"/>
 						<lit-tag v="inf"/>
 						<clip pos="2" part="chcontent"/>
@@ -490,48 +575,6 @@
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
-					</chunk>
-				</out>
-				<call-macro n="nombre_SN">
-					<with-param pos="1"/>
-				</call-macro>
-			</action>
-		</rule>
-
-
-		<!-- "er wird seine Hände waschen" => "he is going to wash his hands" -->
-		<!-- "PRPERS V SN ~V" => "PRPERS V ~V SN" -->
-		<rule comment="RULE: PRPERS V SN V">
-			<pattern>
-				<pattern-item n="PRPERS"/>
-				<pattern-item n="SV"/>
-				<pattern-item n="SN"/>
-				<pattern-item n="SV"/>
-			</pattern>
-			<action>
-				<out>
-					<chunk>
-						<clip pos="1" part="lem"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="4" part="lem"/>
-						<clip pos="4" part="tags"/>
-						<clip pos="4" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="3" part="tags"/>
-						<clip pos="3" part="chcontent"/>
 					</chunk>
 				</out>
 				<call-macro n="nombre_SN">
@@ -621,7 +664,6 @@
 		</rule>
 
 
-		<!-- "" => "" -->
 		<rule comment="RULE: PRN__V ADV N PR N V">
 			<pattern>
 				<pattern-item n="PRN__V"/>
@@ -1258,7 +1300,7 @@
 
 
 		<!-- "V N ~ADV" => "V ~ADV N" -->
-		<rule comment="RULE: V SN ADV">
+		<rule comment="RULE: V S ADV">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
