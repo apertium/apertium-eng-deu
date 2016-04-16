@@ -130,7 +130,11 @@
 			<cat-item tags="vbmod.*"/>
 			<cat-item tags="vaux.*"/>
 		</def-cat>
-		<def-cat n="verbm"> <!-- modal verb -->
+		<def-cat n="verbnh"> <!-- any verb but "have" -->
+			<cat-item tags="vblex"/>
+			<cat-item tags="vblex.*"/>
+			<cat-item tags="vbser.*"/>
+			<cat-item tags="vbdo.*"/>
 			<cat-item tags="vbmod.*"/>
 			<cat-item tags="vaux.*"/>
 		</def-cat>
@@ -140,6 +144,10 @@
 			<cat-item tags="vbhaver.*"/>
 			<cat-item tags="vbdo.*"/>
 			<cat-item lemma="do" tags="vaux.*"/>
+		</def-cat>
+		<def-cat n="verbm"> <!-- modal verb -->
+			<cat-item tags="vbmod.*"/>
+			<cat-item tags="vaux.*"/>
 		</def-cat>
 		<def-cat n="verbaux">
 			<cat-item tags="vbmod.*"/>
@@ -154,10 +162,21 @@
 		</def-cat>
 		<def-cat n="verbhave">
 			<cat-item tags="vbhaver.*"/>
+			<cat-item lemma="have" tags="vblex.*"/>
+			<cat-item lemma="have got" tags="vblex.*"/>
 		</def-cat>
 		<def-cat n="verbbe">
 			<cat-item tags="vbser.*"/>
 		</def-cat>
+		<def-cat n="verblex"> <!-- main verb -->
+			<cat-item tags="vblex"/>
+			<cat-item tags="vblex.*"/>
+			<cat-item tags="vbdo.*"/> <!--(vbdo has no single rule)-->
+		</def-cat>
+		<!--<def-cat n="verbsep">
+			<cat-item tags="vblex.sep"/>
+			<cat-item tags="vblex.sep.*"/>
+		</def-cat>-->
 		<def-cat n="prep"> <!-- preposition -->
 			<cat-item tags="pr"/>
 			<cat-item tags="pr.*"/>
@@ -176,6 +195,7 @@
 			<cat-item lemma="in" tags="pr"/>
 			<cat-item lemma="in front of" tags="pr"/>
 			<cat-item lemma="of" tags="pr"/>
+			<cat-item lemma="out of" tags="pr"/>
 			<cat-item lemma="on" tags="pr"/>
 			<cat-item lemma="to" tags="pr"/>
 			<cat-item lemma="under" tags="pr"/>
@@ -412,6 +432,11 @@
 			<attr-item tags="vbmod"/>
 			<attr-item tags="vaux"/>
 		</def-attr>
+		<def-attr n="a_sep_verb">
+			<attr-item tags="vblex.sep.fm"/>
+			<attr-item tags="vblex.sep.fs"/>
+			<attr-item tags="vblex.sep"/>
+		</def-attr>
 		<def-attr n="a_temps">
 			<attr-item tags="pp"/>
 			<attr-item tags="ger"/>
@@ -484,6 +509,7 @@
 		<def-var n="v_firstWord"/>
 		<def-var n="v_chunk_tag"/>
 
+		<def-var n="v_link_temp_verb"/>
 		<def-var n="v_link_pers_verb"/>
 		<def-var n="v_link_nbr_verb"/>
 		<def-var n="link_to_2" v="&lt;2&gt;"/>  <!-- <2> / link-to="2" -->
@@ -1631,6 +1657,36 @@
 		</def-macro>
 
 
+		<!-- (verb) remove "sep" tag -->
+		<def-macro n="rm_sep_a_verb" npar="1">
+			<choose>
+				<when>
+					<test>
+						<or>
+							<equal>
+								<clip pos="1" side="tl" part="a_sep_verb"/>
+								<lit-tag v="vblex.sep"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="a_sep_verb"/>
+								<lit-tag v="vblex.sep.fm"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="a_sep_verb"/>
+								<lit-tag v="vblex.sep.fs"/>
+							</equal>
+						</or>
+					</test>
+					<let>
+						<clip pos="1" side="tl" part="a_sep_verb"/>
+						<lit-tag v="vblex"/>
+					</let>
+					<!--<let><var n="v_sep_verb"/><lit-tag v="sep"/></let>-->
+				</when>
+			</choose>
+		</def-macro>
+
+
 		<!-- (adj / ADJ+NOM) set variables for adjective declension -->
 		<!-- OUT: v_gen_adj, v_nbr_adj, v_cas_adj, v_typ_adj, v_a_adj -->
 		<def-macro n="set_decl_a_adj" npar="2">
@@ -2220,32 +2276,6 @@
 			<call-macro n="upd_verb">
 				<with-param pos="1"/>
 			</call-macro>
--->
-<!--
-			<let><var n="v_sep_verb"/><clip pos="1" side="tl" part="lemq"/></let>
-			<let><var n="v_lemq_verb"/><clip pos="1" side="tl" part="lemq"/></let>
-			<choose>
-				<when>
-					<test>
-						<not>
-							<equal>
-								<var n="v_sep_verb"/>
-								<lit v=""/>
-							</equal>
-						</not>
-					</test>
-					<let>
-						<var n="v_lemq_verb"/>
-						<concat>
-							<lit v="$ ^"/>
-							<lit v="hoch"/>-->
-							<!--<var n="v_sep_verb"/>-->
-<!--							<lit-tag v="pr"/>
-							<lit-tag v="sep"/>
-						</concat>
-					</let>
-				</when>
-			</choose>
 -->
 		</def-macro>
 
@@ -3892,7 +3922,7 @@
 			</action>
 		</rule>
 
-<!--30-->
+
 		<!-- more expensive => teurer -->
 		<rule comment="RULE: MORE ADJ">
 			<pattern>
@@ -4330,7 +4360,7 @@
 			</action>
 		</rule>
 
-<!--40-->
+
 		<!-- "on August 24th"  =>  "am 24. August" -->
 		<rule comment="RULE: ON MONTHS NUM">
 			<pattern>
@@ -4774,7 +4804,7 @@
 			</action>
 		</rule>
 
-<!--50-->
+
 		<rule comment="RULE: PR DET ADJ NOM">
 			<pattern>
 				<pattern-item n="prep"/>
@@ -4977,9 +5007,9 @@
 		</rule>
 
 
-		<rule comment="RULE: VERBS">
+		<rule comment="RULE: HAVE">
 			<pattern>
-				<pattern-item n="verbs"/>
+				<pattern-item n="verbhave"/>
 			</pattern>
 			<action>
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
@@ -5014,6 +5044,30 @@
 							</chunk>
 						</out>
 					</when>
+					<when>  <!-- BE: have got => have (don't use lemq!)-->
+						<test>
+							<equal>
+								<clip pos="1" side="sl" part="lem"/>
+								<lit v="have got"/>
+							</equal>
+						</test>
+						<out>
+							<chunk name="verb">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+									<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lem"/>
+									<lit-tag v="vbhaver"/>
+									<var n="v_temp_verb"/>
+									<clip pos="1" side="tl" part="a_pers"/>
+									<clip pos="1" side="tl" part="a_nbr"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
 
 					<otherwise>
 						<out>
@@ -5029,16 +5083,116 @@
 									<var n="v_temp_verb"/>
 									<var n="v_pers_verb"/>
 									<var n="v_link_nbr_verb"/> <!-- link-to="3" -->
-									<!--<clip pos="1" side="tl" part="a_nbr" link-to="3"/>-->
 									<clip pos="1" side="tl" part="lemq"/>
 								</lu>
-								<!--<lu>
-									<var n="v_lemq_verb"/>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: VERBS / VERBS+ATP">
+			<pattern>
+				<pattern-item n="verbnh"/> <!-- any verb but "have" -->
+			</pattern>
+			<action>
+				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="link_nbr_verb"> <!-- OUT: v_link_nbr_verb -->
+					<with-param pos="0"/>
+				</call-macro>
+
+
+				<let><var n="v_sep_verb"/><clip pos="1" side="tl" part="lemq"/></let>
+				<let><var n="v_lemq_verb"/><clip pos="1" side="tl" part="lemq"/></let>
+				<choose>
+					<when>
+						<test>
+							<and>
+								<not>
+									<equal>
+										<var n="v_sep_verb"/>
+										<lit v=""/>
+									</equal>
+								</not>
+								<equal>
+									<clip pos="1" side="tl" part="a_sep_verb"/>
+									<lit-tag v="vblex.sep"/>
+								</equal>
+							</and>
+						</test>
+						<let>
+							<var n="v_lemq_verb"/>
+							<var n="v_sep_verb"/>
+						</let>
+						<call-macro n="rm_sep_a_verb">
+							<with-param pos="1"/>
+						</call-macro>
+
+						<out>
+							<chunk name="verb">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<var n="v_temp_verb"/>  <!-- converted tense tag -->
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+								</lu>
+							</chunk>
+							<b pos="1"/>
+							<chunk name="prep">
+								<tags>
+									<tag><lit-tag v="PR"/></tag>
+									<tag><lit-tag v="atp"/></tag>
+									<!--<tag><lit-tag v="sep"/></tag>-->
+								</tags>
+								<lu>
+									<!--<clip pos="1" side="tl" part="lemq"/>-->
+									<var n="v_lemq_verb"/> <!-- separable prefix -->
+									<lit-tag v="atp"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+
+					<otherwise>
+						<out>
+							<chunk name="verb">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<var n="v_temp_verb"/>
+									<var n="v_pers_verb"/>
+									<var n="v_link_nbr_verb"/> <!-- link-to="3" -->
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+								<!--<b/>
+								<lu>
+									<clip pos="1" side="tl" part="lemq"/>
+									<lit-tag v="pr"/>
+									<!-#-<var n="v_lemq_verb"/>-#->
 								</lu>-->
 							</chunk>
 						</out>
 					</otherwise>
 				</choose>
+
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -5124,7 +5278,7 @@
 
 		<rule comment="RULE: VERBM VERBS">
 			<pattern>
-				<pattern-item n="verbm"/>
+				<pattern-item n="verbm"/>  <!-- vbmod/vaux -->
 				<pattern-item n="verbs"/>
 			</pattern>
 			<action>
@@ -5164,13 +5318,118 @@
 			</action>
 		</rule>
 
-
-		<!-- "(he) is going" => "(er) geht" -->
-		<rule comment="RULE: BE VERBS">
+<!--61-->
+		<!-- "(he) is going into" => "(er) geht (...) hinein" --> <!-- separable verb -->
+		<rule comment="RULE: BE VERBS / BE VERBS+ATP">
 			<pattern>
-				<pattern-item n="verbbe"/>
+				<pattern-item n="verbbe"/> <!-- vbser -->
 				<pattern-item n="verbs"/>
-				<!--<pattern-item n="verbpp"/>-->
+			</pattern>
+			<action>
+				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
+					<with-param pos="1"/>
+				</call-macro>
+
+				<let><var n="v_sep_verb"/><clip pos="2" side="tl" part="lemq"/></let>
+				<let><var n="v_lemq_verb"/><clip pos="2" side="tl" part="lemq"/></let>
+				<choose>
+					<when>
+						<test>
+							<and>
+								<not>
+									<equal>
+										<var n="v_sep_verb"/>
+										<lit v=""/>
+									</equal>
+								</not>
+								<equal>
+									<clip pos="2" side="tl" part="a_sep_verb"/>
+									<lit-tag v="vblex.sep"/>
+								</equal>
+							</and>
+						</test>
+						<let>
+							<var n="v_lemq_verb"/>
+							<var n="v_sep_verb"/>
+							<!-- <concat>
+								<lit v="$ ^"/>
+								<var n="v_sep_verb"/>
+								<lit-tag v="pr"/>
+								<lit-tag v="sep"/>
+							</concat> -->
+						</let>
+						<call-macro n="rm_sep_a_verb">
+							<with-param pos="2"/>
+						</call-macro>
+
+						<out>
+							<chunk name="verb">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_verb"/>
+									<var n="v_temp_verb"/>  <!-- converted tense tag -->
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+								</lu>
+							</chunk>
+							<b pos="1"/>
+							<chunk name="prep">
+								<tags>
+									<tag><lit-tag v="PR"/></tag>
+									<tag><lit-tag v="atp"/></tag>
+									<!--<tag><lit-tag v="sep"/></tag>-->
+								</tags>
+								<lu>
+									<!--<clip pos="2" side="tl" part="lemq"/>-->
+									<var n="v_lemq_verb"/> <!-- separable prefix -->
+									<lit-tag v="atp"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+
+					<otherwise>
+						<!-- "be" + <vblex><pp> -->
+						<out>
+							<chunk name="verb">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<!-- <lu><lit v="am"/><lit-tag v="pr"/></lu> <b/> -->
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_verb"/>
+									<var n="v_temp_verb"/>  <!-- converted tense tag -->
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+									<clip pos="2" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
+
+				<let><var n="v_predicate"/><clip pos="2" side="tl" part="a_verb"/></let>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "had worked"    => "gearbeitet hatte" -->
+		<!--("had travelled" => "gereist war") -->
+		<rule comment="RULE: HAVE VERBS">
+			<pattern>
+				<pattern-item n="verbhave"/>  <!-- vbhaver -->
+				<pattern-item n="verbs"/>
 			</pattern>
 			<action>
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
@@ -5204,55 +5463,80 @@
 							</chunk>
 						</out>
 					</when>
+					<otherwise>
+						<out>
+							<chunk name="verb_verb" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_verb"/>
+									<lit-tag v="pp"/>
+									<clip pos="2" side="tl" part="lemq"/>
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<!-- <lit v="sein"/>
+									<lit-tag v="vbser"/> -->
+									<var n="v_temp_verb"/>  <!-- converted tense tag -->
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
 
-					<when>  <!-- "be" + <vblex><pp> -->
+
+		<!-- "(we) do have" => "(wir) haben" -->
+		<rule comment="RULE: BE VERBS">
+			<pattern>
+				<pattern-item n="verblex"/>
+				<pattern-item n="verbs"/>
+				<!--<pattern-item n="verbpp"/>-->
+			</pattern>
+			<action>
+				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="rm_sep_a_verb">
+					<with-param pos="2"/>
+				</call-macro>
+				
+				<choose>
+					<when>
 						<test>
 							<and>
 								<equal>
 									<clip pos="1" side="sl" part="lem"/>
-									<lit v="be"/>
+									<lit v="do"/>
 								</equal>
-								<or>
-									<equal>
-										<clip pos="1" side="sl" part="a_temps"/>
-										<lit-tag v="pri"/>
-									</equal>
-									<equal>
-										<clip pos="1" side="sl" part="a_temps"/>
-										<lit-tag v="pres"/>
-									</equal>
-									<equal>
-										<clip pos="1" side="sl" part="a_temps"/>
-										<lit-tag v="past"/>
-									</equal>
-								</or>
-								<or>
-									<equal>
-										<clip pos="2" side="sl" part="a_temps"/>
-										<lit-tag v="pprs"/>
-									</equal>
-									<equal>
-										<clip pos="2" side="sl" part="a_temps"/>
-										<lit-tag v="ger"/>  <!-- because of bad PoS tagging -->
-									</equal>
-								</or>
+								<equal>
+									<clip pos="2" side="sl" part="lem"/>
+									<lit v="have"/>
+								</equal>
 							</and>
 						</test>
 						<out>
 							<chunk name="verb">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
-									<tag><var n="v_pers_verb"/></tag>
-									<tag><var n="v_nbr_verb"/></tag>
+									<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+									<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 								</tags>
-								<!-- <lu><lit v="am"/><lit-tag v="pr"/></lu> <b/> -->
 								<lu>
-									<clip pos="2" side="tl" part="lemh"/>
-									<clip pos="2" side="tl" part="a_verb"/>
-									<var n="v_temp_verb"/>  <!-- converted tense tag -->
-									<var n="v_pers_verb"/>
-									<var n="v_nbr_verb"/>
-									<clip pos="2" side="tl" part="lemq"/>
+									<clip pos="2" side="tl" part="whole"/>
 								</lu>
 							</chunk>
 						</out>
@@ -5288,50 +5572,6 @@
 				</choose>
 
 				<let><var n="v_predicate"/><clip pos="2" side="tl" part="a_verb"/></let>
-				<call-macro n="firstWord">
-					<with-param pos="1"/>
-				</call-macro>
-			</action>
-		</rule>
-
-
-		<!-- "had worked"    => "gearbeitet hatte" -->
-		<!--("had travelled" => "gereist war") -->
-		<rule comment="RULE: HAVE VERBS">
-			<pattern>
-				<pattern-item n="verbhave"/>
-				<pattern-item n="verbs"/>
-			</pattern>
-			<action>
-				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
-					<with-param pos="1"/>
-				</call-macro>
-				<out>
-					<chunk name="verb_verb" case="caseFirstWord">
-						<tags>
-							<tag><lit-tag v="SV"/></tag>
-							<tag><var n="v_pers_verb"/></tag>
-							<tag><var n="v_nbr_verb"/></tag>
-						</tags>
-						<lu>
-							<clip pos="2" side="tl" part="lemh"/>
-							<clip pos="2" side="tl" part="a_verb"/>
-							<lit-tag v="pp"/>
-							<clip pos="2" side="tl" part="lemq"/>
-						</lu>
-						<b pos="1"/>
-						<lu>
-							<clip pos="1" side="tl" part="lemh"/>
-							<clip pos="1" side="tl" part="a_verb"/>
-							<!-- <lit v="sein"/>
-							<lit-tag v="vbser"/> -->
-							<var n="v_temp_verb"/>  <!-- converted tense tag -->
-							<var n="v_pers_verb"/>
-							<var n="v_nbr_verb"/>
-							<clip pos="1" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>

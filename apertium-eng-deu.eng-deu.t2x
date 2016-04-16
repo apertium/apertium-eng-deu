@@ -75,6 +75,10 @@
 		<def-cat n="PR">
 			<cat-item tags="PR"/>
 		</def-cat>
+		<def-cat n="ATP">
+			<cat-item tags="PR.atp"/>
+			<cat-item tags="PR.atp.*"/>
+		</def-cat>
 		<def-cat n="CM">
 			<cat-item tags="CM"/>
 		</def-cat>
@@ -210,8 +214,43 @@
 			</action>
 		</rule>
 
+		<!-- separable verb -->
+		<rule comment="REGLA: V ATP N">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="ATP"/>
+				<pattern-item n="SN_prn"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- update nbr/ND -->
-		<rule comment="REGLA: V PR N">
+		<rule comment="REGLA: V PR PRN">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="PR"/>
@@ -852,7 +891,8 @@
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SV"/>
-				<pattern-item n="SN"/>
+				<pattern-item n="SN_prn"/>
+				<!--<pattern-item n="SN"/>-->
 			</pattern>
 			<action>
 				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
