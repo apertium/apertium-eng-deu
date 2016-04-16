@@ -427,10 +427,13 @@
 		<def-var n="v_temp_verb"/>
 		<def-var n="v_pers_verb"/>
 		<def-var n="v_nbr_verb"/>
+		<!--<def-var n="v_use_participle" v="true"/> <!-#- translate verbs with present participle -->
+		<def-var n="v_use_participle" v="false"/>
 		<def-var n="v_subject"/>
 		<def-var n="v_predicate"/>
 		<def-var n="v_firstWord"/>
 		<def-var n="v_chunk_tag"/>
+		<def-var n="v_chunk_name"/>
 
 		<def-var n="v_link_temp_verb"/>
 		<def-var n="v_link_pers_verb"/>
@@ -1210,10 +1213,23 @@
 							<call-macro n="set_nbr">
 								<with-param pos="1"/>
 							</call-macro>
-							
 							<let><var n="v_pers_verb"/><var n="v_pers"/></let>
 							<let><var n="v_nbr_verb"/><var n="v_nbr"/></let>
 						</when>
+<!--
+						<when>
+							<test>
+								<equal>
+									<var n="v_temps"/>
+									<lit-tag v="imp"/>
+								</equal>
+							</test>
+							<call-macro n="set_nbr">
+								<with-param pos="1"/>
+							</call-macro>
+							<let><var n="v_nbr_verb"/><var n="v_nbr"/></let>
+						</when>
+-->
 					</choose>
 				</otherwise>
 			</choose>
@@ -1351,6 +1367,25 @@
 					<let><var n="v_temp_verb"/><var n="v_temps"/></let>  <!-- converted tense tag -->
 					<let><var n="v_pers_verb"/><lit v=""/></let>
 					<let><var n="v_nbr_verb"/><lit v=""/></let>
+				</otherwise>
+			</choose>
+		</def-macro>
+
+
+		<!-- chunk name -->
+		<def-macro n="set_chunk_name_verb" npar="1">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_verb"/>
+							<lit-tag v="vbser"/>
+						</equal>
+					</test>
+					<let><var n="v_chunk_name"/><lit v="vbser"/></let>
+				</when>
+				<otherwise>
+					<let><var n="v_chunk_name"/><lit v="verb"/></let>
 				</otherwise>
 			</choose>
 		</def-macro>
@@ -2696,7 +2731,7 @@
 			</action>
 		</rule>
 
-
+<!--36-->
 		<rule comment="RULE: VERBNM">
 			<pattern>
 				<pattern-item n="verbnm"/>
@@ -2706,24 +2741,73 @@
 					<with-param pos="1"/>
 				</call-macro>
 				<modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
-				<out>
-					<chunk name="verb" case="caseOtherWord">
-						<tags>
-							<tag><lit-tag v="SV"/></tag>
-							<tag><var n="v_temp_verb"/></tag>
-							<!--<tag><var n="v_pers_verb"/></tag>
-							<tag><var n="v_nbr_verb"/></tag>-->
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="lemh"/>
-							<clip pos="1" side="tl" part="a_verb"/>
-							<var n="link_to_2"/>    <!--<var n="v_temp_verb"/>  <!-#- converted tense tag -->
-							<var n="v_pers_verb"/>  <!--(empty if not pres/past)-->
-							<var n="v_nbr_verb"/>   <!--(empty if not pres/past)-->
-							<clip pos="1" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
+				<call-macro n="set_chunk_name_verb">
+					<with-param pos="1"/>
+				</call-macro>
+
+				<choose>
+					<when> <!-- use present participle -->
+						<test>
+							<and>
+								<equal>
+									<var n="v_use_participle"/>
+									<lit v="true"/>
+								</equal>
+								<equal>
+									<clip pos="1" side="tl" part="a_verbnm"/>
+									<lit-tag v="vblex"/>
+								</equal>
+							</and>
+						</test>
+						<out>
+							<chunk name="verb_verb" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_temp_verb"/></tag>
+									<!--<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>-->
+								</tags>
+								<lu>
+									<lit v="be"/>
+									<lit-tag v="vbser"/>
+									<var n="v_temp_verb"/>
+									<var n="v_pers_verb"/>  <!--(empty if not pres/past)-->
+									<var n="v_nbr_verb"/>   <!--(empty if not pres/past)-->
+								</lu>
+								<b/>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<lit-tag v="pprs"/>
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+
+					<otherwise>
+						<out>
+							<!--<chunk name="verb" case="caseOtherWord">-->
+							<chunk namefrom="v_chunk_name" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_temp_verb"/></tag>
+									<!--<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>-->
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<var n="link_to_2"/>    <!--<var n="v_temp_verb"/>  <!-#- converted tense tag -->
+									<var n="v_pers_verb"/>  <!--(empty if not pres/past)-->
+									<var n="v_nbr_verb"/>   <!--(empty if not pres/past)-->
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
+
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
