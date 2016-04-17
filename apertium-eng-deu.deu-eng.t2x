@@ -85,6 +85,9 @@
 		<def-cat n="QST">  <!-- question mark -->
 			<cat-item tags="QST"/>
 		</def-cat>
+		<def-cat n="SENT">
+			<cat-item tags="SENT"/>
+		</def-cat> 
 	</section-def-cats>
 
 	<section-def-attrs>
@@ -113,9 +116,6 @@
 			<attr-item tags="imp"/>
 			<attr-item tags="pprs"/>
 			<attr-item tags="pp"/>
-		</def-attr>
-		<def-attr n="a_vbser">
-			<attr-item tags="vbser"/>
 		</def-attr>
 	</section-def-attrs>
 
@@ -356,31 +356,80 @@
 				<pattern-item n="SV"/>
 			</pattern>
 			<action>
-				<out>
-					<chunk>
-						<clip pos="1" part="lem"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="4" part="lem"/>
-						<clip pos="4" part="tags"/>
-						<clip pos="4" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="3" part="tags"/>
-						<clip pos="3" part="chcontent"/>
-					</chunk>
-				</out>
+				<choose>
+					<when>  <!-- without "to" -->
+						<test>
+							<equal>
+								<clip pos="2" part="lem"/>
+								<lit v="vaux"/>  <!-- chunk name -->
+							</equal>
+						</test>
+						<out>
+							<chunk>
+								<clip pos="1" part="lem"/>
+								<clip pos="1" part="tags"/>
+								<clip pos="1" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="2" part="lem"/>
+								<clip pos="2" part="tags"/>
+								<clip pos="2" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="4" part="lem"/>
+								<clip pos="4" part="tags"/>
+								<clip pos="4" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="3" part="lem"/>
+								<clip pos="3" part="tags"/>
+								<clip pos="3" part="chcontent"/>
+							</chunk>
+						</out>
+					</when>
+					<otherwise>  <!-- with "to" -->
+						<out>
+							<chunk>
+								<clip pos="1" part="lem"/>
+								<clip pos="1" part="tags"/>
+								<clip pos="1" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="2" part="lem"/>
+								<clip pos="2" part="tags"/>
+								<clip pos="2" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<lit v="prep"/>
+								<lit-tag v="PR"/>
+								<lit v="{^"/>
+								<get-case-from pos="2">
+									<lit v="to"/>
+								</get-case-from>
+								<lit-tag v="pr"/>
+								<lit v="$}"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="4" part="lem"/>
+								<clip pos="4" part="tags"/>
+								<clip pos="4" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="3" part="lem"/>
+								<clip pos="3" part="tags"/>
+								<clip pos="3" part="chcontent"/>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
+
 				<call-macro n="nombre_SN">
 					<with-param pos="1"/>
 				</call-macro>
@@ -906,12 +955,10 @@
 				<choose>
 					<when>
 						<test>
-						<not>
 							<equal>
-								<clip pos="1" part="a_vbser"/>
-								<lit-tag v="vbser"/>
+								<clip pos="1" part="lem"/>
+								<lit v="vbser"/>  <!-- chunk name -->
 							</equal>
-						</not>
 						</test>
 						<out>
 							<chunk>
@@ -1419,12 +1466,55 @@
 
 
 		<!-- move prefix of separable verbs -->
-		<!-- "V N ~PR" => "V ~PR N" -->
+		<!-- "V N ~PR V" => "V ~PR V N" -->
+		<rule comment="RULE: V N PR V">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="PR"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="2"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- move prefix of separable verbs -->
+		<!-- "V N ~PR ." => "V ~PR N ." -->
 		<rule comment="RULE: V N PR">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="SNP"/>
 				<pattern-item n="PR"/>
+				<pattern-item n="SENT"/>
 			</pattern>
 			<action>
 				<out>
@@ -1444,6 +1534,11 @@
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
 					</chunk>
 				</out>
 				<call-macro n="nombre_SN">
