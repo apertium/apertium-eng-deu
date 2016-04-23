@@ -82,6 +82,10 @@
 		<def-cat n="CM">
 			<cat-item tags="CM"/>
 		</def-cat>
+		<def-cat n="SENT">
+			<cat-item tags="SENT"/>
+			<cat-item tags="QST"/>
+		</def-cat> 
 		<def-cat n="ANY_TAG">
 			<cat-item tags="*"/>
 		</def-cat>
@@ -115,7 +119,7 @@
 
 	<section-def-macros>
 
-		<!-- (verb) if "ND" get number from next word (noun) -->
+		<!-- (verb) if "ND" get number from next noun -->
 		<!--(only necessary for rules that start with Verbs)-->
 		<def-macro n="upd_ND_nbr" npar="2">
 			<choose>
@@ -171,8 +175,6 @@
 
 	<section-rules>
 
-		<!-- ^verb<V>{^hê<vbhaver><pres>$}$ ^verb_participle<V>{^ge$^wees<vbser><inf>$}$ ^pr<PR>{^in<pr>$}$ ^det_nom<SN><sg>{^die<det><def><sg>$ ^huis<n><sg>$}$ -->
-
 		<!-- "V V PR N" =} "V PR N V" -->
 		<rule comment="REGLA: V V PR N">
 			<pattern>
@@ -214,8 +216,102 @@
 			</action>
 		</rule>
 
+
+		<!-- "can I have (...)" => "kann ich (...) haben" -->
+		<!-- "Vx N ~V N" =} "Vx N N ~V" -->
+		<rule comment="REGLA: Vx N V N">
+			<pattern>
+				<pattern-item n="SV_aux"/>
+				<pattern-item n="SN_prn"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "can I have (...)" => "kann ich (...) haben" -->
+		<!-- "Vx N ~V N N" =} "Vx N N N ~V" -->
+		<rule comment="REGLA: Vx N V N N">
+			<pattern>
+				<pattern-item n="SV_aux"/>
+				<pattern-item n="SN_prn"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN_prn"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- separable verb -->
-		<rule comment="REGLA: V ATP N">
+		<rule comment="REGLA: V ATP NP">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="ATP"/>
@@ -363,10 +459,47 @@
 
 		<!-- update nbr/ND -->
 		<!-- "look at your calendar" =} "sieh auf deinen Kalender" -->
+		<rule comment="REGLA: V N , ADV">
+			<pattern>
+				<pattern-item n="SV"/>
+				<!--<pattern-item n="SN_prn"/>-->
+				<pattern-item n="SN_adj"/>
+				<pattern-item n="CM_ADV"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- update nbr/ND -->  <!--(this rule can block rules that start with SN and have only 2 chunks!)-->
+		<!-- "look at your calendar" =} "sieh auf deinen Kalender" -->
 		<rule comment="REGLA: V N">
 			<pattern>
 				<pattern-item n="SV"/>
-				<pattern-item n="SN"/>
+				<pattern-item n="SN_prn"/>
 			</pattern>
 			<action>
 				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
@@ -392,7 +525,7 @@
 
 		<!-- update nbr/ND -->
 		<!-- "(he) is going to buy a comic and a book" =} "(er) will ein Comic und ein Buch kaufen" -->
-		<rule comment="REGLA: V V N CNJ N">
+		<rule comment="REGLA: Vx V N CNJ N">
 			<pattern>
 				<pattern-item n="SV_aux"/>
 				<pattern-item n="SV"/>
@@ -441,7 +574,7 @@
 
 
 		<!-- (question) update nbr/ND -->
-		<rule comment="REGLA: V PRN N">
+		<rule comment="REGLA: V PRN NP">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="PRON"/>
@@ -649,7 +782,7 @@
 
 
 		<!-- REGLA: N V V N / PRN V V N / PRPERS V V N -->
-		<rule comment="REGLA: N V V N">
+		<rule comment="REGLA: NP Vx V N">
 			<pattern>
 				<pattern-item n="SN_prn"/>
 				<pattern-item n="SV_aux"/>
@@ -687,7 +820,7 @@
 
 
 		<!-- REGLA: N/PRN/PRPERS V V N CNJ N-->
-		<rule comment="REGLA: N V V N CNJ N">
+		<rule comment="REGLA: NP Vx V N CNJ N">
 			<pattern>
 				<pattern-item n="SN_prn"/>
 				<pattern-item n="SV_aux"/>
@@ -855,7 +988,7 @@
 
 
 		<!-- "N ADV V" =} "N V ADV" -->
-		<rule comment="REGLA: N ADV V">
+		<rule comment="REGLA: NP ADV V">
 			<pattern>
 				<pattern-item n="SN_prn"/>
 				<pattern-item n="ADV"/>
@@ -887,12 +1020,11 @@
 
 		<!-- update nbr/ND -->
 		<!-- (pl): "here are four cakes" =} "hier sind vier Kuchen" -->
-		<rule comment="REGLA: ADV V N">
+		<rule comment="REGLA: ADV V NP">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN_prn"/>
-				<!--<pattern-item n="SN"/>-->
 			</pattern>
 			<action>
 				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
@@ -966,8 +1098,8 @@
 
 
 		<!-- "then I had"  =>  "dann hatte ich" -->
-		<!-- "ADV N V" =} "ADV V N" -->
-		<rule comment="REGLA: ADV N V">
+		<!-- "ADV N V" =} "ADV V NP" -->
+		<rule comment="REGLA: ADV NP V">
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN_prn"/>
@@ -1028,8 +1160,8 @@
 		</rule>
 
 
-		<!-- "N N N , ADV" =} "ADV N N N" -->
-		<rule comment="REGLA: N N N , ADV">
+		<!-- (,too): "N N N , ADV" =} "ADV N N N" -->
+		<rule comment="REGLA: NP NP NP , ADV">
 			<pattern>
 				<pattern-item n="SN_adj"/>
 				<pattern-item n="SN_adj"/>
@@ -1066,8 +1198,8 @@
 		</rule>
 
 
-		<!-- "N N , ADV" =} "ADV N N" -->
-		<rule comment="REGLA: N N , ADV">
+		<!-- (,too): "N N , ADV" =} "ADV N N" -->
+		<rule comment="REGLA: NP NP , ADV">
 			<pattern>
 				<pattern-item n="SN_adj"/>
 				<pattern-item n="SN_adj"/>
@@ -1097,8 +1229,8 @@
 		</rule>
 
 
-		<!-- "N , ADV" =} "ADV N" -->
-		<rule comment="REGLA: N , ADV">
+		<!-- (,too): "N , ADV" =} "ADV N" -->
+		<rule comment="REGLA: NP , ADV">
 			<pattern>
 				<pattern-item n="SN_adj"/>
 				<pattern-item n="CM_ADV"/>

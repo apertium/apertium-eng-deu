@@ -130,13 +130,13 @@
 			<cat-item tags="vbmod.*"/>
 			<cat-item tags="vaux.*"/>
 		</def-cat>
-		<def-cat n="verbnh"> <!-- any verb but "have" -->
+		<def-cat n="verbnmh"> <!-- any verb but modal or "have" -->
 			<cat-item tags="vblex"/>
 			<cat-item tags="vblex.*"/>
 			<cat-item tags="vbser.*"/>
 			<cat-item tags="vbdo.*"/>
-			<cat-item tags="vbmod.*"/>
-			<cat-item tags="vaux.*"/>
+			<!--<cat-item tags="vbmod.*"/>
+			<cat-item tags="vaux.*"/>-->
 		</def-cat>
 		<def-cat n="verbnm"> <!-- verb no modal -->
 			<cat-item tags="vblex.*"/>
@@ -212,6 +212,9 @@
 			<cat-item tags="cnjsub.*"/>
 			<!--<cat-item tags="cnjadv"/>
 			<cat-item tags="cnjadv.*"/>-->  <!--(see "adv2")-->
+		</def-cat>
+		<def-cat n="cnjcoo">
+			<cat-item tags="cnjcoo"/>
 		</def-cat>
 		<def-cat n="ij">
 			<cat-item tags="ij"/>
@@ -2249,6 +2252,36 @@
 
 
 		<!-- (det+nom) set variables / OUT: v...det, v...nom -->
+		<def-macro n="proc_nom_nom" npar="2">
+			<call-macro n="set_pers_gen_nbr_cas_nom">
+				<with-param pos="1"/>
+			</call-macro>			
+			<let><var n="v_pers_det"/><var n="v_pers_nom"/></let>
+			<let><var n="v_nbr_det"/><var n="v_nbr_nom"/></let>
+			<let><var n="v_cas_det"/><var n="v_cas_nom"/></let>
+			<call-macro n="chg_pl_m_f_nt__mfn_gen"> <!-- OUT: v_gen -->
+				<with-param pos="0"/> <!-- m/f/nt => mfn -->
+			</call-macro>
+			<let><var n="v_gen_det"/><var n="v_gen"/></let>
+			
+			<call-macro n="set_pers_gen_nbr_cas_nom">
+				<with-param pos="2"/>
+			</call-macro>			
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="2" side="tl" part="a_cog"/>
+							<lit-tag v="np.cog"/>
+						</equal>
+					</test>
+					<let><var n="v_gen_nom"/><lit-tag v="mf"/></let>
+				</when>
+			</choose>
+		</def-macro>
+
+
+		<!-- (det+nom) set variables / OUT: v...det, v...nom -->
 		<def-macro n="proc_det_nom" npar="2">
 			<call-macro n="set_pers_gen_nbr_cas_nom">
 				<with-param pos="2"/>
@@ -2974,7 +3007,8 @@
 		<rule comment="RULE: NOUNS AND NOUNS">
 			<pattern>
 				<pattern-item n="nouns"/>
-				<pattern-item n="and"/>
+				<!--<pattern-item n="and"/>-->
+				<pattern-item n="cnjcoo"/>
 				<pattern-item n="nouns"/>
 			</pattern>
 			<action>
@@ -3073,7 +3107,7 @@
 				<pattern-item n="cog_np"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_det_nom"> <!-- OUT: v...det, v...nom -->
+				<call-macro n="proc_nom_nom"> <!-- OUT: v...det, v...nom -->
 					<with-param pos="1"/>
 					<with-param pos="2"/>
 				</call-macro>
@@ -4234,6 +4268,42 @@
 		</rule>
 
 
+		<rule comment="RULE: DET ADJ">
+			<pattern>
+				<pattern-item n="det"/>
+				<pattern-item n="adj"/>
+			</pattern>
+			<action>
+				<call-macro n="set_decl_a_adj">  <!-- OUT: v_a_adj -->
+					<with-param pos="2"/>  <!-- adj(!) -->
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="det_adj" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<var n="v_a_adj"/>
+							<var n="v_gen_adj"/>
+							<var n="v_nbr_adj"/>
+							<var n="v_cas_adj"/>
+							<var n="v_typ_adj"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<rule comment="RULE: ADV ADJ">
 			<pattern>
 				<pattern-item n="adv"/>
@@ -4953,7 +5023,7 @@
 		</rule>
 
 		<!-- "at ten past nine" / "um zehn nach neun" -#-#>
-		<rule comment="RULE: PR NUM PR NUM">
+		<r-u-l-e comment="RULE: PR NUM PR NUM">
 			<pattern>
 				<pattern-item n="prep"/>
 				<pattern-item n="num"/>
@@ -5416,9 +5486,9 @@
 		</rule>
 
 
-		<rule comment="RULE: VERBS / VERBS+ATP">
+		<rule comment="RULE: VERBM">
 			<pattern>
-				<pattern-item n="verbnh"/> <!-- any verb but "have" -->
+				<pattern-item n="verbm"/>  <!-- vbmod/vaux -->
 			</pattern>
 			<action>
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
@@ -5427,7 +5497,40 @@
 				<call-macro n="link_nbr_verb"> <!-- OUT: v_link_nbr_verb -->
 					<with-param pos="0"/>
 				</call-macro>
+				<out>
+					<chunk name="verbm" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SV_aux"/></tag>
+							<tag><var n="v_pers_verb"/></tag>
+							<tag><var n="v_nbr_verb"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="a_verb"/>
+							<var n="v_temps"/>      <!-- converted tense tag -->
+							<var n="v_pers_verb"/>
+							<var n="v_link_nbr_verb"/> <!-- link-to="3" -->
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
 
+<!--60-->
+		<rule comment="RULE: VERBS / VERBS+ATP">
+			<pattern>
+				<pattern-item n="verbnmh"/> <!-- any verb but "have" -->
+			</pattern>
+			<action>
+				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="link_nbr_verb"> <!-- OUT: v_link_nbr_verb -->
+					<with-param pos="0"/>
+				</call-macro>
 
 				<let><var n="v_sep_verb"/><clip pos="1" side="tl" part="lemq"/></let>
 				<let><var n="v_lemq_verb"/><clip pos="1" side="tl" part="lemq"/></let>
@@ -5822,7 +5925,7 @@
 
 
 		<!-- "(we) do have" => "(wir) haben" -->
-		<rule comment="RULE: BE VERBS">
+		<rule comment="RULE: VERBLEX VERBS">
 			<pattern>
 				<pattern-item n="verblex"/>
 				<pattern-item n="verbs"/>
