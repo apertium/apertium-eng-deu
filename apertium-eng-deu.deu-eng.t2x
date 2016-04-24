@@ -87,6 +87,7 @@
 		</def-cat>
 		<def-cat n="SENT">
 			<cat-item tags="SENT"/>
+			<cat-item tags="QST"/>
 		</def-cat> 
 	</section-def-cats>
 
