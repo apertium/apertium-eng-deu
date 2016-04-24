@@ -1981,7 +1981,6 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 							<var n="v_pers_det"/>
 							<var n="v_gen_det"/>
 							<var n="v_nbr_det"/>
-							<!--<var n="v_nbr_nom"/>-->
 						</lu>
 						<b pos="2"/>
 						<lu>
@@ -2298,6 +2297,7 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 		</rule>
 
 
+		<!-- nouns and proper nouns -->
 		<rule comment="RULE: NOM">
 			<pattern>
 				<pattern-item n="nom"/>
@@ -2698,12 +2698,12 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 					<with-param pos="1"/>
 				</call-macro>
 				<out>
-					<chunk name="vaux" case="caseOtherWord">
+					<chunk name="vaux" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 							<tag><var n="v_temps"/></tag>
-							<!--<tag><clip pos="1" side="tl" part="a_pers"/></tag>
-							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>-->
+							<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2752,8 +2752,8 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
-									<!--<tag><var n="v_pers_verb"/></tag>
-									<tag><var n="v_nbr_verb"/></tag>-->
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
 								</tags>
 								<lu>
 									<lit v="be"/>
@@ -2780,8 +2780,8 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
-									<!--<tag><var n="v_pers_verb"/></tag>
-									<tag><var n="v_nbr_verb"/></tag>-->
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
 								</tags>
 								<lu>
 									<clip pos="1" side="tl" part="lemh"/>
@@ -2821,8 +2821,8 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 							<tag><var n="v_temps1"/></tag>
-							<!--<tag><clip pos="1" side="tl" part="a_pers"/></tag>
-							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>-->
+							<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2845,6 +2845,7 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 		</rule>
 
 
+		<!-- build verb chunk -->
 		<rule comment="RULE: VAUX VERBNM ADV">
 			<pattern>
 				<pattern-item n="verbm"/>
@@ -2864,8 +2865,8 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 							<tag><var n="v_temps1"/></tag>
-							<!--<tag><clip pos="1" side="tl" part="a_pers"/></tag>
-							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>-->
+							<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2917,8 +2918,8 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 							<tag><var n="v_temp_verb"/></tag>
-							<!--<tag><var n="v_pers_verb"/></tag>
-							<tag><var n="v_nbr_verb"/></tag>-->
+							<tag><clip pos="2" side="tl" part="a_pers"/></tag>
+							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2957,8 +2958,8 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 							<tag><var n="v_temp_verb"/></tag>
-							<!--<tag><var n="v_pers_verb"/></tag>
-							<tag><var n="v_nbr_verb"/></tag>-->
+							<tag><var n="v_pers_verb"/></tag>
+							<tag><var n="v_nbr_verb"/></tag>
 						</tags>
 						<lu>
 							<lit v="do"/>
@@ -3006,8 +3007,8 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 							<tag><clip pos="1" side="tl" part="a_temps"/></tag>
-							<!--<tag><clip pos="1" side="tl" part="a_pers"/></tag>
-							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>-->
+							<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="whole"/>
@@ -3223,6 +3224,29 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 						<b pos="3"/>
 						<lu>
 							<clip pos="4" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- interjection -->
+		<rule comment="RULE: IJ">
+			<pattern>
+				<pattern-item n="ij"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk name="ij" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="IJ"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
 						</lu>
 					</chunk>
 				</out>

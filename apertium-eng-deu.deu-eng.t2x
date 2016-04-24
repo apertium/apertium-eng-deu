@@ -233,8 +233,8 @@
 		</rule>
 
 
-		<!-- "(er) will ein Comic und ein Buch kaufen" =} "(he) is going to buy a comic and a book" -->
-		<!-- "" => "" -->
+		<!-- "(er) will ein Comic und ein Buch kaufen" => "(he) is going to buy a comic and a book" -->
+		<!-- "N V N CNJ N ~V" => "N V +TO ~V N CNJ N" -->
 		<rule comment="RULE: N V N CNJ N V">
 			<pattern>
 				<pattern-item n="SN"/>
@@ -943,8 +943,9 @@
 
 
 		<!-- "Magst du Katzen ?" => "(+Do) you like cats ?" -->
-		<!-- "Bist du Betty ?"   => "Are you Betty ?" -->
 		<!-- "~V PRN NP ?" => "+DO PRN ~V NP ?" -->
+		<!-- "Bist du Betty ?"   => "Are you Betty ?" -->
+		<!-- "V PRN NP ?" => "V PRN NP ?" -->
 		<rule comment="RULE: V PRPERS N ?">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -1391,6 +1392,47 @@
 		</rule>
 
 
+		<!-- "Vx ~N ADV V" => "Vx ADV V ~N" -->
+		<rule comment="RULE: Vx N ADV V">
+			<pattern>
+				<pattern-item n="SV_aux"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "V N ~ADV" => "V ~ADV N" -->
 		<rule comment="RULE: V N ADV">
 			<pattern>
@@ -1426,7 +1468,7 @@
 
 
 		<!-- "V N N ~PR" => "V ~PR N N" -->
-		<rule comment="RULE: V N PR">
+		<rule comment="RULE: V N N PR">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="SNP"/>
@@ -1719,8 +1761,7 @@
 			<pattern>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SV"/>
-				<pattern-item n="PRON"/>
-				<!--<pattern-item n="PRN"/>-->
+				<pattern-item n="SNP"/> <!--"SN"/"PRN"/"PRPERS" -->
 			</pattern>
 			<action>
 				<out>

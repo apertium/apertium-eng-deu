@@ -484,30 +484,27 @@
 			<attr-item tags="num"/>
 			<attr-item tags="adv"/>
 			<attr-item tags="prn"/>
-			<attr-item tags="vblex"/>
-			<attr-item tags="pr"/>
-			<attr-item tags="cnjcoo"/>
-			<attr-item tags="cnjsub"/>
-			<attr-item tags="cnjadv"/>
-			<attr-item tags="ij"/>
-			<attr-item tags="cm"/>
-			<attr-item tags="sent"/>
-<!--
 			<attr-item tags="rel"/>
-			<attr-item tags="pprep"/>
+			<attr-item tags="vblex"/>
 			<attr-item tags="vbmod"/>
 			<attr-item tags="vaux"/>
 			<attr-item tags="vbdo"/>
 			<attr-item tags="vbhaver"/>
 			<attr-item tags="vbser"/>
+			<attr-item tags="pr"/>
+			<attr-item tags="pprep"/>
+			<attr-item tags="cnjcoo"/>
+			<attr-item tags="cnjsub"/>
+			<attr-item tags="cnjadv"/>
+			<attr-item tags="ij"/>
 			<attr-item tags="guio"/>
--->
+			<attr-item tags="cm"/>
+			<attr-item tags="sent"/>
 		</def-attr> 
 
 	</section-def-attrs>
 
 	<section-def-vars>
-		<!--<def-var n="caseFirstWord" v="aa"/>  <!-#-(for use with testvoc)-->
 		<def-var n="caseFirstWord" v="Aa"/>
 		<def-var n="caseOtherWord" v="aa"/>
 		<def-var n="EOS" v="true"/>
