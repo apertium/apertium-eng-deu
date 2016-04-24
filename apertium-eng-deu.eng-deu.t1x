@@ -6297,44 +6297,6 @@
 		</rule>
 
 
-		<!-- "just picked (them)" => "(sie) eben gepflückt" -->
-		<rule comment="RULE: ADV VERBS">
-			<pattern>
-				<pattern-item n="xxxx"/>
-				<!--<pattern-item n="adv1"/>
-				<pattern-item n="verbs"/>-->
-			</pattern>
-			<action>
-				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
-					<with-param pos="2"/>
-				</call-macro>
-				<out>
-					<chunk name="adv_verb">
-						<tags>
-							<tag><lit-tag v="SV"/></tag>
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="whole"/>
-						</lu>
-						<b pos="1"/>
-						<lu>
-							<clip pos="2" side="tl" part="lemh"/>
-							<clip pos="2" side="tl" part="a_verb"/>
-							<var n="v_temp_verb"/>  <!-- converted tense tag -->
-							<var n="v_pers_verb"/>
-							<var n="v_nbr_verb"/>
-							<clip pos="2" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
-				<let><var n="v_predicate"/><clip pos="2" side="tl" part="a_verb"/></let>
-				<call-macro n="firstWord">
-					<with-param pos="1"/>
-				</call-macro>
-			</action>
-		</rule>
-
-
 		<rule comment="RULE: ADV">
 			<pattern>
 				<pattern-item n="adv2"/>
