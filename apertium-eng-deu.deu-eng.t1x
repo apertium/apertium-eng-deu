@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transfer default="chunk">
 
-<!--
-you can use following statment to generate an overview of all rules 
-with rule numbers (if your text editor shows line numbers (=rule number)):
-cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
--->
-
 	<section-def-cats>
 		<def-cat n="nom">
 			<cat-item tags="n.*"/>
@@ -2691,7 +2685,7 @@ cat ./apertium-eng-deu.deu-eng.t1x | grep '<rule' > ./xt1x.deu-eng.txt
 
 		<rule comment="RULE: VAUX">
 			<pattern>
-				<pattern-item n="verbm"/>
+				<pattern-item n="verbm"/> <!-- "vaux"/"vbmod" -->
 			</pattern>
 			<action>
 				<call-macro n="set_temps">
