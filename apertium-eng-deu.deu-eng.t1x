@@ -1562,6 +1562,64 @@
 
 
 		<!-- set dictionary tags for determiners -->
+		<rule comment="RULE: DET NOM NOM">
+			<pattern>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="set_pers_gen_nbr_det">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="set_pers_gen_nbr_cas_nom">
+					<with-param pos="3"/>
+				</call-macro>
+
+				<let><var n="v_chunk_tag"/><lit-tag v="SN"/></let>
+				<call-macro n="chg_ADV_chunk_tag">
+					<with-param pos="3"/>
+				</call-macro>
+				<out>
+					<chunk name="det_nom_nom" case="caseFirstWord">
+						<tags>
+							<tag><var n="v_chunk_tag"/></tag>  <!-- "SN" / "ADV" -->
+							<tag><clip pos="3" side="tl" part="a_gen"/></tag>
+							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="a_det"/>
+							<var n="v_pers_det"/>   <!--(for prn only, else null)-->
+							<var n="v_gen_det"/>    <!--(for prn only, else null)-->
+							<var n="v_nbr_det"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="a_nom"/>
+							<clip pos="2" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
+							<clip pos="2" side="tl" part="lemq"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="lemh"/>
+							<clip pos="3" side="tl" part="a_nom"/>
+							<clip pos="3" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
+							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- set dictionary tags for determiners -->
 		<rule comment="RULE: DET NOM">
 			<pattern>
 				<pattern-item n="det"/>
