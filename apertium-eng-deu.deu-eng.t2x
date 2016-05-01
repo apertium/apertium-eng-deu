@@ -10,11 +10,15 @@
 			<cat-item tags="SV"/>
 			<cat-item tags="SV.*"/>
 		</def-cat>
-		<def-cat n="SV_pp">
-			<cat-item tags="SV.pp"/>
-		</def-cat>
 		<def-cat n="SV_aux">
 			<cat-item lemma="vaux" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_have">
+			<cat-item lemma="vbhaver" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_pp">
+			<cat-item tags="SV.pp"/>
+			<cat-item tags="SV.pp.*"/>
 		</def-cat>
 		<def-cat n="SV_inf">
 			<cat-item tags="SV.inf"/>
@@ -134,8 +138,7 @@
 	<section-def-macros>
 
 		<def-macro n="nombre_SN" npar="1">
-			<!-- To determine value of variables of gender and number and propagate
-				to other rules. Variables are not used again in this rule -->
+			<!-- To determine value of variables of gender and number and propagate to other rules. -->
 			<choose>
 				<when>
 					<test>
@@ -426,10 +429,16 @@
 				<choose>
 					<when>  <!-- without "to" -->
 						<test>
-							<equal>
-								<clip pos="2" part="lem"/>
-								<lit v="vaux"/>  <!-- chunk name -->
-							</equal>
+							<or>
+								<equal>
+									<clip pos="2" part="lem"/>
+									<lit v="vaux"/>  <!-- chunk name -->
+								</equal>
+								<equal>
+									<clip pos="2" part="lem"/>
+									<lit v="vbhaver"/>  <!-- chunk name -->
+								</equal>
+							</or>
 						</test>
 						<out>
 							<chunk>
@@ -1751,8 +1760,106 @@
 		</rule>
 
 
+		<!-- "V PRN N N ~V" => "V PRN ~V N N" -->
+		<rule comment="RULE: V PRPERS N N V">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="PRPERS"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV_pp"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="4"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "Hat er die Blumen gegossen (?)" => "Did he water the flowers (?)" -->
+		<!-- "Vh PRN N ~V" => "Vd PRN ~V N" -->
+		<rule comment="RULE: V PRPERS N V">
+			<pattern>
+				<pattern-item n="SV_have"/>
+				<pattern-item n="PRPERS"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+				<!--<pattern-item n="SV_pp"/>-->
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<lit v="verb"/>
+						<clip pos="1" part="tags"/>
+						<lit v="{^"/>
+						<get-case-from pos="1">
+							<lit v="do"/>
+						</get-case-from>
+						<lit-tag v="vaux"/>
+						<lit-tag v="past"/>
+						<lit v="$}"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<lit-tag v="SV"/>
+						<lit-tag v="inf"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "Hat er die Blumen gegossen (?)" => "Has he watered the flowers (?)" -->
-		<!-- "V PRN NP ~V" => "V PRN ~V NP" -->
+		<!-- "V PRN N ~V" => "V PRN ~V N" -->
 		<rule comment="RULE: V PRPERS N V">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -1794,10 +1901,118 @@
 		</rule>
 
 
+		<!-- "~V PRN ~ADV N ?" => "+DO PRN ~V N ~ADV ?" -->
+		<!-- "V PRN ~ADV N ?" => "V PRN N ~ADV ?" -->
+		<rule comment="RULE: V PRPERS ADV N ?">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="PRPERS"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="QST"/>
+			</pattern>
+			<action>
+				<choose>
+					<when>
+						<test>
+							<equal>
+								<clip pos="1" part="lem"/>
+								<lit v="vbser"/>  <!-- chunk name -->
+							</equal>
+						</test>
+						<out>
+							<chunk>
+								<clip pos="1" part="lem"/>
+								<clip pos="1" part="tags"/>
+								<clip pos="1" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="2" part="lem"/>
+								<clip pos="2" part="tags"/>
+								<clip pos="2" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="4" part="lem"/>
+								<clip pos="4" part="tags"/>
+								<clip pos="4" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="3" part="lem"/>
+								<clip pos="3" part="tags"/>
+								<clip pos="3" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="5" part="lem"/>
+								<clip pos="5" part="tags"/>
+								<clip pos="5" part="chcontent"/>
+							</chunk>
+						</out>
+					</when>
+
+					<otherwise>
+						<out>
+							<chunk>
+								<lit v="vbdo"/>
+								<lit-tag v="SV"/>
+								<lit-tag v="pres"/>
+								<lit v="{^"/>
+								<get-case-from pos="1">
+									<lit v="do"/>
+								</get-case-from>
+								<lit-tag v="vaux"/>
+								<clip pos="1" part="a_temps"/>
+								<lit v="$}"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="2" part="lem"/>
+								<clip pos="2" part="tags"/>
+								<clip pos="2" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="1" part="lem"/>
+								<!--<clip pos="1" part="tags"/>-->
+								<lit-tag v="SV"/>
+								<lit-tag v="inf"/>
+								<clip pos="1" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="4" part="lem"/>
+								<clip pos="4" part="tags"/>
+								<clip pos="4" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="3" part="lem"/>
+								<clip pos="3" part="tags"/>
+								<clip pos="3" part="chcontent"/>
+							</chunk>
+							<b/>
+							<chunk>
+								<clip pos="5" part="lem"/>
+								<clip pos="5" part="tags"/>
+								<clip pos="5" part="chcontent"/>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
+				<call-macro n="nombre_SN">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "Magst du Katzen ?" => "(+Do) you like cats ?" -->
-		<!-- "~V PRN NP ?" => "+DO PRN ~V NP ?" -->
+		<!-- "~V PRN N ?" => "+DO PRN ~V N ?" -->
 		<!-- "Bist du Betty ?"   => "Are you Betty ?" -->
-		<!-- "V PRN NP ?" => "V PRN NP ?" -->
+		<!-- "V PRN N ?" => "V PRN N ?" -->
 		<rule comment="RULE: V PRPERS N ?">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -1852,7 +2067,7 @@
 									<lit v="do"/>
 								</get-case-from>
 								<lit-tag v="vaux"/>
-								<lit-tag v="pres"/>
+								<clip pos="1" part="a_temps"/>
 								<lit v="$}"/>
 							</chunk>
 							<b/>
@@ -1864,7 +2079,9 @@
 							<b/>
 							<chunk>
 								<clip pos="1" part="lem"/>
-								<clip pos="1" part="tags"/>
+								<!--<clip pos="1" part="tags"/>-->
+								<lit-tag v="SV"/>
+								<lit-tag v="inf"/>
 								<clip pos="1" part="chcontent"/>
 							</chunk>
 							<b/>

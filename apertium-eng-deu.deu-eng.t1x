@@ -168,6 +168,10 @@
 			<cat-item lemma="ms." tags="n.*"/>
 			<cat-item lemma="mrs." tags="n.*"/>
 			<cat-item lemma="dr." tags="n.*"/>
+			<cat-item lemma="dr" tags="n.*"/>
+			<cat-item lemma="mr" tags="n.*"/>
+			<cat-item lemma="ms" tags="n.*"/>
+			<cat-item lemma="mrs" tags="n.*"/>
 		</def-cat>
 		<def-cat n="cog_np">
 			<cat-item tags="np.cog"/>
@@ -1417,7 +1421,22 @@
 							<lit-tag v="vbser"/>
 						</equal>
 					</test>
-					<let><var n="v_chunk_name"/><lit v="vbser"/></let>
+					<let>
+						<var n="v_chunk_name"/>
+						<lit v="vbser"/>  <!-- stored as name! (not as tag)-->
+					</let>
+				</when>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_verb"/>
+							<lit-tag v="vbhaver"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_chunk_name"/>
+						<lit v="vbhaver"/>  <!-- stored as name! (not as tag)-->
+					</let>
 				</when>
 				<otherwise>
 					<let><var n="v_chunk_name"/><lit v="verb"/></let>
@@ -3146,41 +3165,73 @@
 				<pattern-item n="no"/>
 			</pattern>
 			<action>
-				<call-macro n="set_temps">
-					<with-param pos="1"/>
-				</call-macro>
 				<call-macro n="set_temp_pers_nbr_verb">
 					<with-param pos="1"/>
 				</call-macro>
-				<out>
-					<chunk name="verb_adv" case="caseOtherWord">
-						<tags>
-							<tag><lit-tag v="SV"/></tag>
-							<tag><var n="v_temp_verb"/></tag>
-							<tag><var n="v_pers_verb"/></tag>
-							<tag><var n="v_nbr_verb"/></tag>
-						</tags>
-						<lu>
-							<lit v="do"/>
-							<lit-tag v="vblex"/>
-							<var n="v_temp_verb"/>
-							<var n="v_pers_verb"/>
-							<var n="v_nbr_verb"/>
-						</lu>
-						<b/>
-						<lu>
-							<lit v="not"/>
-							<lit-tag v="adv"/>
-						</lu>
-						<b pos="1"/>
-						<lu>
-							<clip pos="1" side="tl" part="lemh"/>
-							<lit-tag v="vblex"/>
-							<lit-tag v="inf"/>
-							<clip pos="1" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
+				<choose>
+					<when>
+						<test>
+							<equal>
+								<clip pos="1" side="tl" part="a_verb"/>
+								<lit-tag v="vbser"/>
+							</equal>
+						</test>
+						<out>
+							<chunk name="verb_adv" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_temp_verb"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<var n="v_temp_verb"/>
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="whole"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+
+					<otherwise>  <!-- with "do" -->
+						<out>
+							<chunk name="verb_adv" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_temp_verb"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<lit v="do"/>
+									<lit-tag v="vblex"/>
+									<var n="v_temp_verb"/>
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+								</lu>
+								<b/>
+								<lu>
+									<lit v="not"/>
+									<lit-tag v="adv"/>
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<lit-tag v="vblex"/>
+									<lit-tag v="inf"/>
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -3195,9 +3246,6 @@
 				<pattern-item n="no"/>
 			</pattern>
 			<action>
-				<call-macro n="set_temps">
-					<with-param pos="1"/>
-				</call-macro>
 				<call-macro n="set_temp_pers_nbr_verb">
 					<with-param pos="1"/>
 				</call-macro>
