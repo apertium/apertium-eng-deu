@@ -48,10 +48,28 @@
 			<cat-item tags="SV.*"/>
 			<cat-item tags="SV_aux"/>
 			<cat-item tags="SV_aux.*"/>
+			<cat-item tags="SV_ser"/>
+			<cat-item tags="SV_ser.*"/>
+			<cat-item tags="SV_haver"/>
+			<cat-item tags="SV_haver.*"/>
+			<cat-item tags="SV_do"/>
+			<cat-item tags="SV_do.*"/>
 		</def-cat>
 		<def-cat n="SV_aux">
 			<cat-item tags="SV_aux"/>
 			<cat-item tags="SV_aux.*"/>
+		</def-cat>
+		<def-cat n="SV_ser">
+			<cat-item tags="SV_ser"/>
+			<cat-item tags="SV_ser.*"/>
+		</def-cat>
+		<def-cat n="SV_haver">
+			<cat-item tags="SV_haver"/>
+			<cat-item tags="SV_haver.*"/>
+		</def-cat>
+		<def-cat n="SV_do">
+			<cat-item tags="SV_do"/>
+			<cat-item tags="SV_do.*"/>
 		</def-cat>
 		<def-cat n="VPART">
 			<cat-item tags="V.PART"/>
@@ -175,7 +193,7 @@
 
 	<section-rules>
 
-		<!-- "V V PR N" =} "V PR N V" -->
+		<!-- "V ~V PR N" => "V PR N ~V" -->
 		<rule comment="REGLA: V V PR N">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -218,7 +236,7 @@
 
 
 		<!-- "can I have (...)" => "kann ich (...) haben" -->
-		<!-- "Vx N ~V N" =} "Vx N N ~V" -->
+		<!-- "Vx N ~V N" => "Vx N N ~V" -->
 		<rule comment="REGLA: Vx N V N">
 			<pattern>
 				<pattern-item n="SV_aux"/>
@@ -260,8 +278,45 @@
 		</rule>
 
 
+		<!-- "are you drinking coffee" => "trinkst du (gerade) Kaffee" -->
+		<!-- "-Vs N ~V N" => "~V N N" -->
+		<rule comment="REGLA: Vs N V N">
+			<pattern>
+				<pattern-item n="SV_ser"/>
+				<pattern-item n="SN_prn"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="1" part="tags"/>  <!-- tense from first verb -->
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- "can I have (...)" => "kann ich (...) haben" -->
-		<!-- "Vx N ~V N N" =} "Vx N N N ~V" -->
+		<!-- "Vx N ~V N N" => "Vx N N N ~V" -->
 		<rule comment="REGLA: Vx N V N N">
 			<pattern>
 				<pattern-item n="SV_aux"/>
@@ -311,6 +366,7 @@
 
 
 		<!-- separable verb -->
+		<!-- "V ~ATP N" => "V N ~ATP" -->
 		<rule comment="REGLA: V ATP NP">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -380,8 +436,8 @@
 		</rule>
 
 
-		<!-- (pl): "(he) has just played football" =} "(er) hat gerade Fußball gespielt " -->
-		<!-- V ADV V N =} V ADV N V // update nbr/ND -->
+		<!-- (pl): "(he) has just played football" => "(er) hat gerade Fußball gespielt " -->
+		<!-- V ADV ~V N => V ADV N ~V --> <!-- update nbr/ND -->
 		<rule comment="REGLA: V ADV V N">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -422,7 +478,7 @@
 			</action>
 		</rule>
 
-		<!-- "V N ADV" =} "V ADV N" -->
+		<!-- "V ~N ADV" => "V ADV ~N" -->
 		<rule comment="REGLA: V N ADV">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -458,11 +514,10 @@
 
 
 		<!-- update nbr/ND -->
-		<!-- "look at your calendar" =} "sieh auf deinen Kalender" -->
+		<!-- "look at your calendar" => "sieh auf deinen Kalender" -->
 		<rule comment="REGLA: V N , ADV">
 			<pattern>
 				<pattern-item n="SV"/>
-				<!--<pattern-item n="SN_prn"/>-->
 				<pattern-item n="SN_adj"/>
 				<pattern-item n="CM_ADV"/>
 			</pattern>
@@ -495,7 +550,7 @@
 
 
 		<!-- update nbr/ND -->  <!--(this rule can block rules that start with SN and have only 2 chunks!)-->
-		<!-- "look at your calendar" =} "sieh auf deinen Kalender" -->
+		<!-- "look at your calendar" => "sieh auf deinen Kalender" -->
 		<rule comment="REGLA: V N">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -524,7 +579,8 @@
 
 
 		<!-- update nbr/ND -->
-		<!-- "(he) is going to buy a comic and a book" =} "(er) will ein Comic und ein Buch kaufen" -->
+		<!-- "(he) is going to buy a comic and a book" => "(er) will ein Comic und ein Buch kaufen" -->
+		<!-- "Vx ~V N CNJ N" => "Vx N CNJ N ~V" -->
 		<rule comment="REGLA: Vx V N CNJ N">
 			<pattern>
 				<pattern-item n="SV_aux"/>
@@ -607,7 +663,7 @@
 			</action>
 		</rule>
 
-		<!-- "V VPART N" =} "V N VPART" -->
+		<!-- "V ~VPART N" => "V N ~VPART" -->
 		<rule comment="REGLA: V VPART N">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -638,7 +694,7 @@
 		</rule>
 
 
-		<!-- "V VPART N CNJ N" =} "V N CNJ N VPART" -->
+		<!-- "V ~VPART N CNJ N" => "V N CNJ N ~VPART" -->
 		<rule comment="REGLA: V VPART N CNJ N">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -684,7 +740,7 @@
 
 
 
-		<!-- "N V V N N REL" =} "N V N N V REL" -->
+		<!-- "N V ~V N N REL" => "N V N N ~V REL" -->
 		<rule comment="REGLA: N V V N N REL">
 			<pattern>
 				<pattern-item n="SN"/>
@@ -736,7 +792,7 @@
 		</rule>
 
 
-		<!-- "N V V PRN N" =} "N V PRN N V" -->
+		<!-- "N V ~V PRN N" => "N V PRN N ~V" -->
 		<rule comment="REGLA: N V V PRN N">
 			<pattern>
 				<pattern-item n="SN"/>
@@ -781,7 +837,7 @@
 		</rule>
 
 
-		<!-- REGLA: N V V N / PRN V V N / PRPERS V V N -->
+		<!-- REGLA: N/PRN/PRPERS V ~V N => NPR V N ~V -->
 		<rule comment="REGLA: NP Vx V N">
 			<pattern>
 				<pattern-item n="SN_prn"/>
@@ -819,7 +875,7 @@
 		</rule>
 
 
-		<!-- REGLA: N/PRN/PRPERS V V N CNJ N-->
+		<!-- REGLA: N/PRN/PRPERS V ~V N CNJ N -->
 		<rule comment="REGLA: NP Vx V N CNJ N">
 			<pattern>
 				<pattern-item n="SN_prn"/>
@@ -871,7 +927,7 @@
 		</rule>
 
 
-		<!-- "N PRN V ADV N" => "N V PRN N ADV" -->
+		<!-- "N PRN ~V ~ADV N" => "N ~V PRN N ~ADV" -->
 		<rule comment="REGLA: N PRN V ADV N">
 			<pattern>
 				<pattern-item n="SN"/>
@@ -916,7 +972,7 @@
 		</rule>
 
 
-		<!-- "N PRN V" =} "N V PRN" -->
+		<!-- "N ~PRN V" => "N V ~PRN" -->
 		<rule comment="REGLA: N PRN V">
 			<pattern>
 				<pattern-item n="SN"/>
@@ -948,10 +1004,9 @@
 
 
 		<!-- "he often drinks tea" => "er trinkt oft Tee" -->
-		<!-- PRN ADV V N  =>  PRN V ADV N -->
+		<!-- PRN ~ADV V N  =>  PRN V ~ADV N -->
 		<rule comment="REGLA: PRN ADV V N">
 			<pattern>
-				<!--<pattern-item n="PRPERS"/>-->
 				<pattern-item n="PRN"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SV"/>
@@ -987,7 +1042,7 @@
 		</rule>
 
 
-		<!-- "N ADV V" =} "N V ADV" -->
+		<!-- "N ~ADV V" => "N V ~ADV" -->
 		<rule comment="REGLA: NP ADV V">
 			<pattern>
 				<pattern-item n="SN_prn"/>
@@ -1019,7 +1074,7 @@
 
 
 		<!-- update nbr/ND -->
-		<!-- (pl): "here are four cakes" =} "hier sind vier Kuchen" -->
+		<!-- (pl): "here are four cakes" => "hier sind vier Kuchen" -->
 		<rule comment="REGLA: ADV V NP">
 			<pattern>
 				<pattern-item n="ADV"/>
@@ -1055,7 +1110,7 @@
 
 
 		<!-- update nbr/ND -->
-		<!-- "there are often traffic lights" =} "dort sind oft Ampeln" -->
+		<!-- "there are often traffic lights" => "dort sind oft Ampeln" -->
 		<rule comment="REGLA: ADV V ADV N">
 			<pattern>
 				<pattern-item n="ADV"/>
@@ -1098,7 +1153,7 @@
 
 
 		<!-- "then I had"  =>  "dann hatte ich" -->
-		<!-- "ADV N V" =} "ADV V NP" -->
+		<!-- "ADV ~N V" => "ADV V ~N" -->
 		<rule comment="REGLA: ADV NP V">
 			<pattern>
 				<pattern-item n="ADV"/>
@@ -1129,7 +1184,7 @@
 		</rule>
 
 
-		<!-- "ADV1 N ADV2" =} "ADV2 ADV1 N" -->
+		<!-- "ADV1 N ~ADV2" => "~ADV2 ADV1 N" -->
 		<rule comment="REGLA: ADV N ADV">
 			<pattern>
 				<pattern-item n="ADV"/>
@@ -1160,7 +1215,7 @@
 		</rule>
 
 
-		<!-- (,too): "N N N , ADV" =} "ADV N N N" -->
+		<!-- (,too): "N N N , ~ADV" => "~ADV N N N" -->
 		<rule comment="REGLA: NP NP NP , ADV">
 			<pattern>
 				<pattern-item n="SN_adj"/>
@@ -1198,7 +1253,7 @@
 		</rule>
 
 
-		<!-- (,too): "N N , ADV" =} "ADV N N" -->
+		<!-- (,too): "N N , ~ADV" => "~ADV N N" -->
 		<rule comment="REGLA: NP NP , ADV">
 			<pattern>
 				<pattern-item n="SN_adj"/>
@@ -1229,7 +1284,7 @@
 		</rule>
 
 
-		<!-- (,too): "N , ADV" =} "ADV N" -->
+		<!-- (,too): "N , ~ADV" => "~ADV N" -->
 		<rule comment="REGLA: NP , ADV">
 			<pattern>
 				<pattern-item n="SN_adj"/>

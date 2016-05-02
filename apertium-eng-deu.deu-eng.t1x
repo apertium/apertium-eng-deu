@@ -303,14 +303,16 @@
 			<attr-item tags="adj.sint.sup"/>
 		</def-attr>
 		<def-attr n="a_det">
-			<attr-item tags="det.ind"/>
 			<attr-item tags="det.def"/>
+			<attr-item tags="det.ind"/>
+			<attr-item tags="det.qnt"/>
 			<attr-item tags="det.dem"/>
 			<attr-item tags="det.pos"/>
-			<attr-item tags="det"/>
 			<attr-item tags="det.ord"/>
-			<attr-item tags="det.qnt"/>
 			<attr-item tags="det.itg"/>
+		</def-attr>
+		<def-attr n="a_det1">
+			<attr-item tags="det"/>
 		</def-attr>
 		<def-attr n="a_prn_det">
 			<attr-item tags="prn.det"/>
@@ -2269,7 +2271,7 @@
 							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
-							<clip pos="1" side="tl" part="lemh"/>
+							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_det"/>
 							<var n="v_pers_det"/>   <!--(for prn only, else null)-->
 							<var n="v_gen_det"/>    <!--(for prn only, else null)-->
@@ -2958,7 +2960,7 @@
 				</call-macro>
 
 				<choose>
-					<when> <!-- use present participle -->
+					<when> <!-- translate with present participle -->
 						<test>
 							<and>
 								<equal>
