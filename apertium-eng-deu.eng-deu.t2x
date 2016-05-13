@@ -237,7 +237,7 @@
 
 		<!-- "can I have (...)" => "kann ich (...) haben" -->
 		<!-- "Vx N ~V N" => "Vx N N ~V" -->
-		<rule comment="REGLA: Vx N V N">
+		<rule comment="REGLA: Vx NP V N">
 			<pattern>
 				<pattern-item n="SV_aux"/>
 				<pattern-item n="SN_prn"/>
@@ -280,7 +280,7 @@
 
 		<!-- "are you drinking coffee" => "trinkst du (gerade) Kaffee" -->
 		<!-- "-Vs N ~V N" => "~V N N" -->
-		<rule comment="REGLA: Vs N V N">
+		<rule comment="REGLA: Vs NP V N">
 			<pattern>
 				<pattern-item n="SV_ser"/>
 				<pattern-item n="SN_prn"/>
@@ -294,7 +294,9 @@
 				</call-macro>
 				<out>
 					<chunk>
-						<clip pos="3" part="lem"/>
+						<get-case-from pos="1">
+							<clip pos="3" part="lem"/>
+						</get-case-from>
 						<clip pos="1" part="tags"/>  <!-- tense from first verb -->
 						<clip pos="3" part="chcontent"/>
 					</chunk>
@@ -317,7 +319,7 @@
 
 		<!-- "can I have (...)" => "kann ich (...) haben" -->
 		<!-- "Vx N ~V N N" => "Vx N N N ~V" -->
-		<rule comment="REGLA: Vx N V N N">
+		<rule comment="REGLA: Vx NP V NP N">
 			<pattern>
 				<pattern-item n="SV_aux"/>
 				<pattern-item n="SN_prn"/>
@@ -406,7 +408,7 @@
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="PR"/>
-				<pattern-item n="PRN"/>
+				<pattern-item n="PRON"/>
 			</pattern>
 			<action>
 				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
@@ -551,7 +553,7 @@
 
 		<!-- update nbr/ND -->  <!--(this rule can block rules that start with SN and have only 2 chunks!)-->
 		<!-- "look at your calendar" => "sieh auf deinen Kalender" -->
-		<rule comment="REGLA: V N">
+		<rule comment="REGLA: V NP">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN_prn"/>
@@ -798,7 +800,7 @@
 				<pattern-item n="SN"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SV"/>
-				<pattern-item n="PRN"/>
+				<pattern-item n="PRON"/>
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
@@ -931,7 +933,7 @@
 		<rule comment="REGLA: N PRN V ADV N">
 			<pattern>
 				<pattern-item n="SN"/>
-				<pattern-item n="PRN"/>
+				<pattern-item n="PRON"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SN"/>
@@ -976,7 +978,7 @@
 		<rule comment="REGLA: N PRN V">
 			<pattern>
 				<pattern-item n="SN"/>
-				<pattern-item n="PRN"/>
+				<pattern-item n="PRON"/>
 				<pattern-item n="SV"/>
 			</pattern>
 			<action>
@@ -1007,7 +1009,7 @@
 		<!-- PRN ~ADV V N  =>  PRN V ~ADV N -->
 		<rule comment="REGLA: PRN ADV V N">
 			<pattern>
-				<pattern-item n="PRN"/>
+				<pattern-item n="PRON"/>
 				<pattern-item n="ADV"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>

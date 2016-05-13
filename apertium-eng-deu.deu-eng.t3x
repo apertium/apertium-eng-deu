@@ -8,6 +8,18 @@
 		<def-cat n="det_nom">
 			<cat-item name="det_nom"/>
 		</def-cat>
+		<def-cat n="itg">
+			<cat-item name="itg"/>
+		</def-cat>
+		<def-cat n="prpers">
+			<cat-item name="prpers"/>
+		</def-cat>
+		<def-cat n="verb">
+			<cat-item name="verb"/>
+		</def-cat>
+		<def-cat n="adv">
+			<cat-item name="adv"/>
+		</def-cat>
 
 	</section-def-cats>
 
@@ -32,73 +44,12 @@
 
 
 	<section-rules>
-<!--
-		<rule comment="CHUNK: regla que no fa res">
-			<pattern>
-				<pattern-item n="det_nom"/>
-			</pattern>
-			<action>
-				<out>
-					<lu>
-						<clip pos="1" part="whole"/>
-					</lu>
-					<b pos="1"/>
-					<lu>
-						<clip pos="2" part="whole"/>
-					</lu>
-				</out>
-			</action>
-		</rule>
--->
-<!--
-		<rule comment="CHUNK:">
-			<pattern>
-				<pattern-item n="nom"/>
-			</pattern>
-			<action>
-				<out>
-					<lu>
-						<clip pos="1" part="whole"/>
-					</lu>
-				</out>
-			</action>
-		</rule>
--->
 
-		<rule comment="CHUNK: nom">
+		<rule comment="CHUNK: itg">
 			<pattern>
-				<pattern-item n="nom"/>
+				<pattern-item n="itg"/>
 			</pattern>
 			<action>
-				<choose>
-					<when>
-						<test>
-							<and>
-								<equal>
-									<clip pos="0" part="a_SN"/>
-									<lit-tag v="PDET"/>
-								</equal>
-								<not>
-									<equal>
-										<clip pos="1" part="a_nom"/>
-										<lit-tag v="np"/>
-									</equal>
-								</not>
-							</and>
-						</test>
-						<out>
-							<lu>
-								<get-case-from pos="1">
-									<lit v="el"/>
-								</get-case-from>
-								<lit-tag v="det.def"/>
-								<clip pos="1" part="gen"/>
-								<clip pos="1" part="nbr"/>
-							</lu>
-							<b/>
-						</out>
-					</when>
-				</choose>
 				<out>
 					<lu>
 						<clip pos="1" part="whole"/>
@@ -106,6 +57,23 @@
 				</out>
 			</action>
 		</rule>
+
+
+		<rule comment="CHUNK: verb">
+			<pattern>
+				<pattern-item n="verb"/>
+			</pattern>
+			<action>
+				<out>
+					<lu>
+						<clip pos="1" part="lemh"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="lemq"/>
+					</lu>
+				</out>
+			</action>
+		</rule>
+
 
 	</section-rules>
 </postchunk>
