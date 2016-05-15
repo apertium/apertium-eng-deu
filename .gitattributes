@@ -55,6 +55,7 @@ dev/apertium-en-de/texts/story.deu.txt -text
 dev/apertium-en-de/texts/story.eng.txt -text
 dev/apertium-en-de/wordmirror/WordMirror.py -text
 dev/apertium-en-de/wordmirror/printnounxml.py -text
+dev/rule_overview.sh -text
 dev/story.deu.txt -text
 dev/story.eng.txt -text
 dev/testvoc/inconsistency-summary.sh -text
