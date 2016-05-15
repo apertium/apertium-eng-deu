@@ -6,33 +6,9 @@
 			<cat-item tags="SN"/>
 			<cat-item tags="SN.*"/>
 		</def-cat>
-		<def-cat n="SV">
-			<cat-item tags="SV"/>
-			<cat-item tags="SV.*"/>
-		</def-cat>
-		<def-cat n="SV_aux">
-			<cat-item lemma="vaux" tags="SV.*"/>
-		</def-cat>
-		<def-cat n="SV_have">
-			<cat-item lemma="vbhaver" tags="SV.*"/>
-		</def-cat>
-		<def-cat n="SV_pp">
-			<cat-item tags="SV.pp"/>
-			<cat-item tags="SV.pp.*"/>
-		</def-cat>
-		<def-cat n="SV_inf">
-			<cat-item tags="SV.inf"/>
-		</def-cat>
-		<def-cat n="PRN__V">
-			<cat-item tags="PRN.V"/>
-			<cat-item tags="PRN.V.*"/>
-		</def-cat>
 		<def-cat n="PRN">
 			<cat-item tags="PRN"/>
 			<cat-item tags="PRN.*"/>
-		</def-cat>
-		<def-cat n="ITG">
-			<cat-item tags="ITG"/>
 		</def-cat>
 		<def-cat n="PRPERS">
 			<cat-item tags="PRPERS"/>
@@ -51,7 +27,34 @@
 			<cat-item tags="PRN.*"/>
 			<cat-item tags="PRPERS"/>
 			<cat-item tags="PRPERS.*"/>
+			<cat-item tags="DET"/>  <!-- determinder added by rule -->
 		</def-cat>
+		<def-cat n="ITG">
+			<cat-item tags="ITG"/>
+		</def-cat>
+		<def-cat n="REL">
+			<cat-item tags="REL"/>
+			<cat-item tags="REL.*"/>
+		</def-cat>
+
+		<def-cat n="SV">
+			<cat-item tags="SV"/>
+			<cat-item tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_aux">
+			<cat-item lemma="vaux" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_have">
+			<cat-item lemma="vbhaver" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_pp">
+			<cat-item tags="SV.pp"/>
+			<cat-item tags="SV.pp.*"/>
+		</def-cat>
+		<def-cat n="SV_inf">
+			<cat-item tags="SV.inf"/>
+		</def-cat>
+
 		<def-cat n="CNJADV">
 			<cat-item tags="CNJADV"/>
 			<cat-item tags="CNJADV.*"/>
@@ -368,7 +371,7 @@
 
 
 		<!-- "man muß eine Briefmarke auf einen Brief kleben" =} "you must put a stamp on a letter" -->
-		<!-- "NP V N N ~V" => "NP V ~V N N" -->
+		<!-- "N V N N ~V" => "N V ~V N N" -->
 		<rule comment="RULE: NP V N N V">
 			<pattern>
 				<pattern-item n="SNP"/>
@@ -417,7 +420,7 @@
 
 
 		<!-- "er wird seine Hände waschen" => "he is going to wash his hands" -->
-		<!-- "NP V N ~V" => "NP V ~V N" -->
+		<!-- "N V N ~V" => "N V ~V N" -->
 		<rule comment="RULE: NP V N V">
 			<pattern>
 				<pattern-item n="SNP"/>
@@ -466,6 +469,7 @@
 							</chunk>
 						</out>
 					</when>
+
 					<otherwise>  <!-- with "to" -->
 						<out>
 							<chunk>
@@ -514,7 +518,7 @@
 
 
 		<!-- "Er hat immer ein Auto gewollt" => "He has always wanted a car" -->
-		<!-- "NP V ADV N ~V" => "NP V ADV ~V N" -->
+		<!-- "N V ADV N ~V" => "N V ADV ~V N" -->
 		<rule comment="RULE: NP V ADV N V">
 			<pattern>
 				<pattern-item n="SNP"/>
@@ -562,7 +566,62 @@
 		</rule>
 
 
-		<!-- "NP V ADV1 ~ADV2" => "NP V ~ADV2 ADV1" -->
+		<!-- "N V ADV N N ~V" => "N V ADV ~V N N" -->
+		<rule comment="RULE: NP V ADV NP NP V">
+			<pattern>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="6" part="lem"/>
+						<clip pos="6" part="tags"/>
+						<clip pos="6" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="nombre_SN">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "N V ADV1 ~ADV2" => "N V ~ADV2 ADV1" -->
 		<rule comment="RULE: NP V ADV ADV">
 			<pattern>
 				<pattern-item n="SNP"/>
@@ -603,7 +662,7 @@
 		</rule>
 
 
-		<!-- "ITG ~V NP ADV" => "ITG +DO NP ~V ADV" -->
+		<!-- "ITG ~V N ADV" => "ITG +DO N ~V ADV" -->
 		<rule comment="RULE: ITG V PRPERS ADV">
 			<pattern>
 				<pattern-item n="ITG"/>
@@ -994,7 +1053,7 @@
 		</rule>
 
 
-		<!-- "ADV Vx ~NP N ~V" => "ADV ~NP Vx ~V N" -->
+		<!-- "ADV Vx ~N N ~V" => "ADV ~N Vx ~V N" -->
 		<rule comment="RULE: ADV Vx NP N V">
 			<pattern>
 				<pattern-item n="ADV"/>
@@ -1039,7 +1098,7 @@
 		</rule>
 
 
-		<!-- "ADV V ~NP" => "ADV ~NP V" -->
+		<!-- "ADV V ~N" => "ADV ~N V" -->
 		<rule comment="RULE: ADV V NP">
 			<pattern>
 				<pattern-item n="ADV"/>
@@ -1395,7 +1454,7 @@
 
 		<!-- move prefix of separable verbs -->
 		<!-- "V N ~PR V" => "V ~PR V N" -->
-		<rule comment="RULE: V N PR V">
+		<rule comment="RULE: V NP PR V">
 			<pattern>
 				<pattern-item n="SV"/>
 				<pattern-item n="SNP"/>

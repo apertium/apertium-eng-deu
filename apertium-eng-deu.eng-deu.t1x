@@ -548,17 +548,11 @@
 		<def-var n="v_lemq_verb"/>
 		<def-var n="v_sep_verb"/>
 		<def-var n="v_pers_tmp"/>
+
 		<def-var n="v_subject"/>
 		<def-var n="v_predicate"/>
 		<def-var n="v_firstWord"/>
 		<def-var n="v_chunk_tag"/>
-
-		<def-var n="v_link_temp_verb"/>
-		<def-var n="v_link_pers_verb"/>
-		<def-var n="v_link_nbr_verb"/>
-		<def-var n="link_to_2" v="&lt;2&gt;"/>  <!-- <2> / link-to="2" -->
-		<def-var n="link_to_3" v="&lt;3&gt;"/>  <!-- <3> / link-to="3" -->
-		<def-var n="link_to_4" v="&lt;4&gt;"/>  <!-- <4> / link-to="4" -->
 	</section-def-vars>
 
 
@@ -616,7 +610,7 @@
 
 
 <!-- macros: 	(by wth)
-	set_		store tag into variable (set_[name] stores value in variable v_[name])
+	set_		store tag into variable (set_[name] stores value into variable v_[name])
 	chg_		change value of variable
 	trim_		if "whole" already has this value, set variable to null
 	rm_			remove tag from variable
@@ -1671,25 +1665,16 @@
 				</when>
 				<when>
 					<test>
-						<equal>
-							<clip pos="1" side="sl" part="lem"/>
-							<lit v="most"/>
-						</equal>
-					</test>
-					<let>
-						<var n="v_a_adj"/>
-						<concat>
-							<var n="v_a_adj"/>
-							<lit-tag v="sup"/>
-						</concat>
-					</let>
-				</when>
-				<when>
-					<test>
-						<equal>
-							<clip pos="1" side="sl" part="lem"/>
-							<lit v="the most"/>
-						</equal>
+						<or>
+							<equal>
+								<clip pos="1" side="sl" part="lem"/>
+								<lit v="most"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="sl" part="lem"/>
+								<lit v="the most"/>
+							</equal>
+						</or>
 					</test>
 					<let>
 						<var n="v_a_adj"/>
@@ -2388,24 +2373,6 @@
 		</def-macro>
 
 
-		<!-- (PRN + VERB) / OUT: v...prn / v...verb -->  <!--(not used)-->
-		<def-macro n="proc_prn_verb" npar="2">
-			<call-macro n="set_pers_gen_nbr_cas_prn">
-				<with-param pos="1"/>
-			</call-macro>
-			<!--<call-macro n="set_temp_pers_nbr_verb">-->
-			<call-macro n="set_temps">
-				<with-param pos="2"/>
-			</call-macro>
-			<let><var n="v_temp_verb"/><var n="v_temps"/></let>
-			<let><var n="v_pers_verb"/><var n="v_pers_prn"/></let>
-			<let><var n="v_nbr_verb"/><var n="v_nbr_prn"/></let>
-			<call-macro n="chg_pers_nbr_verb">
-				<with-param pos="2"/>
-			</call-macro>
-		</def-macro>
-
-
 		<!-- (VERB) update -->
 		<def-macro n="upd_verb" npar="1">
 			<let>
@@ -2523,43 +2490,6 @@
 			</call-macro>
 
 			<let><var n="v_pers_nom"/><var n="v_pers_tmp"/></let>
-		</def-macro>
-
-
-		<!-- (verb) link to nbr always <3> / OUT: v_link_nbr_verb -->
-		<def-macro n="link_nbr_verb" npar="1">
-			<let><var n="v_link_nbr_verb"/><var n="link_to_4"/></let>
-<!--
-			<choose>
-				<when>
-					<test>
-						<not>
-							<equal>
-								<var n="v_nbr_verb"/>
-								<lit v=""/>
-							</equal>
-						</not>
-					</test>
-					<choose>
-						<when>
-							<test>
-								<equal>
-									<var n="v_pers_verb"/>
-									<lit v=""/>
-								</equal>
-							</test>
-							<let><var n="v_link_nbr_verb"/><var n="link_to_2"/></let>
-						</when>
-						<otherwise>
-							<let><var n="v_link_nbr_verb"/><var n="link_to_3"/></let>
-						</otherwise>
-					</choose>
-				</when>
-				<otherwise>
-					<let><var n="v_link_nbr_verb"/><lit v=""/></let>
-				</otherwise>
-			</choose>
--->
 		</def-macro>
 
 
@@ -3098,7 +3028,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate to verb -->
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -3144,7 +3074,7 @@
 						</lu>
 					</chunk>
 				</out>
-				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate to verb -->
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -3203,22 +3133,22 @@
 			</pattern>
 			<action>
 				<call-macro n="proc_nom_nom"> <!-- OUT: v1...nom, v...nom -->
-					<with-param pos="2"/>
-					<with-param pos="3"/>
+					<with-param pos="2"/>     <!-- v1...nom -->
+					<with-param pos="3"/>     <!-- v...nom -->
 				</call-macro>
 				<out>
 					<chunk name="det_nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="3" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_det"/>
-							<clip pos="3" side="tl" part="a_gen"/>
-							<clip pos="3" side="tl" part="a_nbr"/>
-							<var n="v1_cas_nom"/>
+							<var n="v_gen_nom"/>  <!-- pos="3" -->
+							<var n="v_nbr_nom"/>  <!-- pos="3" -->
+							<var n="v1_cas_nom"/> <!-- pos="2" -->
 						</lu>
 						<b pos="1"/>
 						<lu>
@@ -4121,14 +4051,9 @@
 					<with-param pos="1"/>
 					<with-param pos="2"/>
 				</call-macro>
-				<!--<let><var n="v_chunk_tag"/><lit-tag v="SN"/></let>
-				<call-macro n="chg_ADV_chunk_tag">
-					<with-param pos="2"/>
-				</call-macro>-->
 				<out>
 					<chunk name="adj_nom" case="caseFirstWord">
 						<tags>
-							<!--<tag><var n="v_chunk_tag"/></tag>  <!-#- "SN" / "ADV" -->
 							<tag><lit-tag v="SN"/></tag>
 							<tag><var n="v_gen_nom"/></tag>
 							<tag><var n="v_nbr_nom"/></tag>
@@ -4316,15 +4241,13 @@
 
 
 		<!-- more expensive => teurer -->
+		<!-- conversion : English analytic to German synthetic adjective -->
 		<rule comment="RULE: MORE ADJ">
 			<pattern>
 				<pattern-item n="more"/>
 				<pattern-item n="adj"/>
 			</pattern>
 			<action>
-				<!--<call-macro n="chg_more_most_a_adj">
-					<with-param pos="2"/>
-				</call-macro>-->
 				<call-macro n="trim_sint_adj"> 
 					<with-param pos="2"/>
 				</call-macro>
@@ -4354,6 +4277,9 @@
 				<pattern-item n="adj"/>
 			</pattern>
 			<action>
+				<call-macro n="trim_sint_adj"> 
+					<with-param pos="2"/>
+				</call-macro>
 				<!--<call-macro n="chg_more_most_a_adj">
 					<with-param pos="2"/>
 				</call-macro>-->
@@ -4399,6 +4325,7 @@
 								<b pos="1"/>
 								<lu>
 									<clip pos="2" side="tl" part="whole"/>
+									<!--<var n="v_sint_adj"/>-->
 								</lu>
 							</chunk>
 						</out>
@@ -5261,7 +5188,6 @@
 					<with-param pos="2"/>
 				</call-macro>
 				<out>
-					<!--<chunk name="adv_num_nom" case="caseFirstWord">-->
 					<chunk name="adv_num_nom" case="caseOtherWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
@@ -5555,10 +5481,6 @@
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
 					<with-param pos="1"/>
 				</call-macro>
-				<call-macro n="link_nbr_verb"> <!-- OUT: v_link_nbr_verb -->
-					<with-param pos="0"/>
-				</call-macro>
-
 				<choose>
 					<when>  <!-- BE: have got => have -->
 						<test>
@@ -5625,7 +5547,7 @@
 									<clip pos="1" side="tl" part="a_verb"/>
 									<var n="v_temp_verb"/>
 									<var n="v_pers_verb"/>
-									<var n="v_link_nbr_verb"/> <!-- link-to="3" -->
+									<clip pos="1" side="tl" part="a_nbr" link-to="4"/>
 									<clip pos="1" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
@@ -5647,9 +5569,6 @@
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
 					<with-param pos="1"/>
 				</call-macro>
-				<call-macro n="link_nbr_verb"> <!-- OUT: v_link_nbr_verb -->
-					<with-param pos="0"/>
-				</call-macro>
 				<out>
 					<chunk name="verbm" case="caseFirstWord">
 						<tags>
@@ -5663,7 +5582,7 @@
 							<clip pos="1" side="tl" part="a_verb"/>
 							<var n="v_temps"/>      <!-- converted tense tag -->
 							<var n="v_pers_verb"/>
-							<var n="v_link_nbr_verb"/> <!-- link-to="3" -->
+							<clip pos="1" side="tl" part="a_nbr" link-to="4"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5676,14 +5595,11 @@
 
 		<rule comment="RULE: VERBS / VERBS+ATP">
 			<pattern>
-				<pattern-item n="verbnmh"/> <!-- any verb but "have" -->
+				<pattern-item n="verbnmh"/> <!-- any verb but  modal or "have" -->
 			</pattern>
 			<action>
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
 					<with-param pos="1"/>
-				</call-macro>
-				<call-macro n="link_nbr_verb"> <!-- OUT: v_link_nbr_verb -->
-					<with-param pos="0"/>
 				</call-macro>
 				<call-macro n="set_chunk_tag_verb">
 					<with-param pos="1"/>
@@ -5759,20 +5675,11 @@
 								<lu>
 									<clip pos="1" side="tl" part="lemh"/>
 									<clip pos="1" side="tl" part="a_verb"/>
-									<!--<var n="v_temp_verb"/>
-									<var n="v_pers_verb"/>
-									<var n="v_link_nbr_verb"/> <!-#- link-to="3" -->
-									<lit-tag v="2"/>   <!-- link-to="2" -->
-									<lit-tag v="3"/>   <!-- link-to="3" -->
-									<lit-tag v="4"/>   <!-- link-to="4" -->
+									<clip pos="1" side="tl" part="a_temps" link-to="2"/>
+									<clip pos="1" side="tl" part="a_pers" link-to="3"/>
+									<clip pos="1" side="tl" part="a_nbr" link-to="4"/>
 									<clip pos="1" side="tl" part="lemq"/>
 								</lu>
-								<!--<b/>
-								<lu>
-									<clip pos="1" side="tl" part="lemq"/>
-									<lit-tag v="pr"/>
-									<!-#-<var n="v_lemq_verb"/>-#->
-								</lu>-->
 							</chunk>
 						</out>
 					</otherwise>
@@ -6192,6 +6099,7 @@
 				<out>
 					<chunk name="verb_adv">
 						<tags>
+							<!--<tag><lit-tag v="SV_adv"/></tag>-->
 							<tag><lit-tag v="SV"/></tag>
 							<tag><var n="v_temp_verb"/></tag>
 							<tag><var n="v_pers_verb"/></tag>

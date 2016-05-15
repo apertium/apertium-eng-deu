@@ -462,13 +462,6 @@
 
 		<!--<def-var n="v_use_participle" v="true"/> <!-#- translate verbs with present participle -->
 		<def-var n="v_use_participle" v="false"/>
-
-		<def-var n="v_link_temp_verb"/>
-		<def-var n="v_link_pers_verb"/>
-		<def-var n="v_link_nbr_verb"/>
-		<def-var n="link_to_2" v="&lt;2&gt;"/>  <!-- <2> / link-to="2" -->
-		<def-var n="link_to_3" v="&lt;3&gt;"/>  <!-- <3> / link-to="3" -->
-		<def-var n="link_to_4" v="&lt;4&gt;"/>  <!-- <4> / link-to="4" -->
 	</section-def-vars>
 
 
@@ -884,7 +877,7 @@
 		</def-macro>
 
 
-		<!-- (TL) set "mfn" to "nt" (leave "m" or "f" or "nt") / OUT: v_gen -->
+		<!-- (TL) change "mfn" to "nt" (leave "m" or "f" or "nt") / OUT: v_gen -->
 		<def-macro n="chg_mfn__m_f_nt_gen" npar="1">
 			<choose>
 				<when>  <!-- leave "m"/"f"/"nt" -->
@@ -915,7 +908,7 @@
 		</def-macro>
 
 
-		<!-- (TL) set "mfn" to "mf" (leave "m" or "f" or "nt") / OUT: v_gen -->
+		<!-- (TL) change "mfn" to "mf" (leave "m" or "f" or "nt") / OUT: v_gen -->
 		<def-macro n="chg_mfn__m_f_nt__mf_gen" npar="1">
 			<choose>
 				<when>  <!-- leave "m"/"f"/"nt" -->
@@ -1189,7 +1182,7 @@
 			<call-macro n="set_tipus_prn">  <!-- convert iobj/dobj to obj -->
 				<with-param pos="1"/>
 			</call-macro>
-			
+
 			<call-macro n="set_pers">
 				<with-param pos="1"/>
 			</call-macro>
@@ -1199,7 +1192,7 @@
 			<call-macro n="set_nbr">
 				<with-param pos="1"/>
 			</call-macro>
-			<call-macro n="chg_gen_prn">
+			<call-macro n="chg_gen_prn">  <!-- if "pl" set "m" or "f" to "mf" -->
 				<with-param pos="1"/>
 			</call-macro>
 
@@ -1298,10 +1291,10 @@
 		</def-macro>
 
 
-		<!-- (prn) / OUT: v_pers_prn, v_nbr_prn, v_cas_prn -->
+		<!-- (prn / np.ant) / OUT: v_pers_prn, v_nbr_prn, v_cas_prn -->
 		<def-macro n="proc_prn" npar="1">
 			<choose>
-				<when>  <!-- "np.ant" -->
+				<when>  <!-- "np.ant", set variables v...prn and v...nom -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_nom"/>
@@ -1319,7 +1312,7 @@
 					<let><var n="v_nbr_prn"/><var n="v_nbr_nom"/></let>
 					<let><var n="v_cas_prn"/><var n="v_cas_nom"/></let>
 				</when>
-				<otherwise>
+				<otherwise>  <!-- set variables v...prn -->
 					<call-macro n="set_tipus_pers_gen_nbr_prn">
 						<with-param pos="1"/>
 					</call-macro>
@@ -1327,7 +1320,7 @@
 			</choose>
 
 			<choose>
-				<when>  <!-- proper noun -->
+				<when>  <!-- proper noun: clear v_pers_prn only -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_nom"/>
@@ -1348,7 +1341,7 @@
 			
 			<choose>
 				<when>
-					<test>     <!-- If it is third person singular in the present tense -->
+					<test>     <!-- if it is third person singular in the present tense -->
 						<and>
 							<equal>
 								<var n="v_pers"/>
@@ -1394,7 +1387,7 @@
 				</when>
 
 				<when>
-					<test>     <!-- If it is the past tense of 'be' , [I was, you were, he/she/it was, we were, you were, they were] -->
+					<test>     <!-- if it is the past tense of 'be' , [I was, you were, he/she/it was, we were, you were, they were] -->
 						<and>    <!-- Check for 'p1.sg' and 'p3.sg' -->
 							<or>
 								<equal>
@@ -1434,7 +1427,7 @@
 		</def-macro>
 
 
-		<!-- chunk name -->
+		<!-- build chunk name from verb tag -->
 		<def-macro n="set_chunk_name_verb" npar="1">
 			<choose>
 				<when>
@@ -1459,6 +1452,18 @@
 					<let>
 						<var n="v_chunk_name"/>
 						<lit v="vbhaver"/>  <!-- stored as name! (not as tag)-->
+					</let>
+				</when>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_verb"/>
+							<lit-tag v="vbdo"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_chunk_name"/>
+						<lit v="vbdo"/>  <!-- stored as name! (not as tag)-->
 					</let>
 				</when>
 				<otherwise>
@@ -1707,6 +1712,7 @@
 							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
 							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
@@ -1750,6 +1756,7 @@
 							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
 							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
@@ -1769,9 +1776,9 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<!-- <call-macro n="set_pers_gen_nbr_cas_nom">
+				<call-macro n="set_pers_gen_nbr_cas_nom">
 					<with-param pos="4"/>
-				</call-macro> -->
+				</call-macro>
 				<out>
 					<chunk name="np_cnj_np_nom" case="caseFirstWord">
 						<tags>
@@ -1795,6 +1802,7 @@
 							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
 							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
@@ -1957,6 +1965,7 @@
 							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
 							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
@@ -2206,6 +2215,7 @@
 							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
 							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
@@ -2254,6 +2264,7 @@
 							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
 							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
@@ -2451,6 +2462,7 @@
 							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_nbr"/>  <!-- nbr from <num> -->
+							<var n="v_cas_nom"/>    <!-- null or "gen" -->
 							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
@@ -2980,10 +2992,10 @@
 				<call-macro n="set_temp_pers_nbr_verb">
 					<with-param pos="1"/>
 				</call-macro>
-				<modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
 				<call-macro n="set_chunk_name_verb">
 					<with-param pos="1"/>
 				</call-macro>
+				<modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
 
 				<choose>
 					<when> <!-- translate with present participle -->
@@ -3010,7 +3022,7 @@
 								<lu>
 									<lit v="be"/>
 									<lit-tag v="vbser"/>
-									<var n="v_temp_verb"/>
+									<clip pos="1" side="tl" part="a_temps" link-to="2"/> <!-- link-to="2" -->
 									<var n="v_pers_verb"/>  <!--(empty if not pres/past)-->
 									<var n="v_nbr_verb"/>   <!--(empty if not pres/past)-->
 								</lu>
@@ -3027,7 +3039,6 @@
 
 					<otherwise>
 						<out>
-							<!--<chunk name="verb" case="caseOtherWord">-->
 							<chunk namefrom="v_chunk_name" case="caseOtherWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
@@ -3038,7 +3049,7 @@
 								<lu>
 									<clip pos="1" side="tl" part="lemh"/>
 									<clip pos="1" side="tl" part="a_verb"/>
-									<var n="link_to_2"/>    <!--<var n="v_temp_verb"/>-->
+									<clip pos="1" side="tl" part="a_temps" link-to="2"/>
 									<var n="v_pers_verb"/>  <!--(empty if not pres/past)-->
 									<var n="v_nbr_verb"/>   <!--(empty if not pres/past)-->
 									<clip pos="1" side="tl" part="lemq"/>
@@ -3277,34 +3288,87 @@
 				<call-macro n="set_temp_pers_nbr_verb">
 					<with-param pos="1"/>
 				</call-macro>
-				<out>
-					<chunk name="verb_adv" case="caseOtherWord">
-						<tags>
-							<tag><lit-tag v="SV"/></tag>
-							<tag><clip pos="1" side="tl" part="a_temps"/></tag>
-							<tag><clip pos="1" side="tl" part="a_pers"/></tag>
-							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="whole"/>
-						</lu>
-						<b pos="1"/>
-						<lu>
-							<lit v="not"/>
-							<lit-tag v="adv"/>
-						</lu>
-					</chunk>
-					<b/>
-					<chunk name="det" case="caseOtherWord">
-						<tags>
-							<tag><lit-tag v="DET"/></tag>
-						</tags>
-						<lu>
-							<lit v="a"/>
-							<lit-tag v="det.ind.ND"/>
-						</lu>
-					</chunk>
-				</out>
+				<choose>
+					<when>  <!-- ("kein" =} "nicht ein" =} "not a") -->
+						<test>
+							<equal>
+								<clip pos="2" side="sl" part="lem"/>
+								<lit v="kein"/>
+							</equal>
+						</test>
+						<out>
+							<!--<chunk name="verb_adv" case="caseOtherWord">-->
+							<chunk name="verb" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_temp_verb"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<var n="v_temp_verb"/>
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+							<b pos="1"/>
+							<chunk name="adv" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="ADV"/></tag>
+								</tags>
+								<lu>
+									<lit v="not"/>
+									<lit-tag v="adv"/>
+								</lu>
+							</chunk>
+							<b/>
+							<chunk name="det" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="DET"/></tag>
+								</tags>
+								<lu>
+									<lit v="a"/>
+									<lit-tag v="det.ind.sg"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+
+					<otherwise>  <!-- "nicht" -->
+						<out>
+							<!--<chunk name="verb_adv" case="caseOtherWord">-->
+							<chunk name="verb" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_temp_verb"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<var n="v_temp_verb"/>
+									<var n="v_pers_verb"/>
+									<var n="v_nbr_verb"/>
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+							<b pos="1"/>
+							<chunk name="adv" case="caseOtherWord">
+								<tags>
+									<tag><lit-tag v="ADV"/></tag>
+								</tags>
+								<lu>
+									<lit v="not"/>
+									<lit-tag v="adv"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
