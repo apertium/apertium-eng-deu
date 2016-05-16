@@ -8,10 +8,11 @@
 # to avoid that this was counted by this script)
 
 # output to same dir as rule files
-TO_DIR=".."
+TO_DIR="."      ## start as:  dev/rule_overview.sh  (from apertium-eng-deu)
+#TO_DIR=".."     ## start as:  ./rule_overview.sh    (from dev)
 
-cat ../apertium-eng-deu.deu-eng.t1x | grep '<rule' | cat -n > $TO_DIR/xt1x.deu-eng.txt
-cat ../apertium-eng-deu.deu-eng.t2x | grep '<rule' | cat -n > $TO_DIR/xt2x.deu-eng.txt
+cat $TO_DIR/apertium-eng-deu.deu-eng.t1x | grep '<rule' | cat -n > $TO_DIR/xt1x.deu-eng.txt
+cat $TO_DIR/apertium-eng-deu.deu-eng.t2x | grep '<rule' | cat -n > $TO_DIR/xt2x.deu-eng.txt
 
-cat ../apertium-eng-deu.eng-deu.t1x | grep '<rule' | cat -n > $TO_DIR/xt1x.eng-deu.txt
-cat ../apertium-eng-deu.eng-deu.t1x | grep '<rule' | cat -n > $TO_DIR/xt2x.eng-deu.txt
+cat $TO_DIR/apertium-eng-deu.eng-deu.t1x | grep '<rule' | cat -n > $TO_DIR/xt1x.eng-deu.txt
+cat $TO_DIR/apertium-eng-deu.eng-deu.t2x | grep '<rule' | cat -n > $TO_DIR/xt2x.eng-deu.txt
