@@ -114,7 +114,7 @@
 	</section-def-cats>
 
 	<section-def-attrs>
-		<def-attr n="a_gen">
+		<def-attr n="a_gen">			<!-- Gender -->
 			<attr-item tags="m"/>
 			<attr-item tags="f"/>
 			<attr-item tags="nt"/>
@@ -122,11 +122,17 @@
 			<attr-item tags="mfn"/>
 			<attr-item tags="GD"/>
 		</def-attr>
-		<def-attr n="a_nbr">
+		<def-attr n="a_nbr">			<!-- Number -->
 			<attr-item tags="sg"/>
 			<attr-item tags="pl"/>
 			<attr-item tags="sp"/>
 			<attr-item tags="ND"/>
+		</def-attr>
+		<def-attr n="a_pers">			<!-- Person -->
+			<attr-item tags="p1"/>
+			<attr-item tags="p2"/>
+			<attr-item tags="p3"/>
+			<attr-item tags="PD"/>
 		</def-attr>
 	</section-def-attrs>
 
@@ -137,6 +143,40 @@
 
 
 	<section-def-macros>
+
+		<!-- (verb) if "PD" get person from next noun -->
+		<!--(only necessary for rules that start with Verbs)-->
+		<def-macro n="upd_PD_nbr" npar="2">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_pers"/>
+							<lit-tag v="PD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_pers"/>
+						<clip pos="2" part="a_pers"/>
+					</let>
+				</when>
+			</choose>
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_pers"/>
+							<lit-tag v="PD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_pers"/>
+						<lit-tag v="p3"/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
 
 		<!-- (verb) if "ND" get number from next noun -->
 		<!--(only necessary for rules that start with Verbs)-->
@@ -274,6 +314,47 @@
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "do you give your (...)" => "gibst du deiner (...)" -->
+		<!-- "-Vd N ~V N" => "~V N N" -->
+		<rule comment="RULE: Vd NP V N">
+			<pattern>
+				<pattern-item n="SV_do"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_nbr">  <!-- PD to "pers" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- "pers" from noun -->
+				</call-macro>
+				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- "nbr" from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="1" part="tags"/>  <!-- "do" -->
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
 					</chunk>
 				</out>
 			</action>

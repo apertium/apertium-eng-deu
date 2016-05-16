@@ -103,7 +103,7 @@
 	</section-def-cats>
 
 	<section-def-attrs>
-		<def-attr n="a_gen">
+		<def-attr n="a_gen">			<!-- Gender -->
 			<attr-item tags="m"/>
 			<attr-item tags="f"/>
 			<attr-item tags="nt"/>
@@ -111,11 +111,17 @@
 			<attr-item tags="mfn"/>
 			<attr-item tags="GD"/>
 		</def-attr>
-		<def-attr n="a_nbr">
+		<def-attr n="a_nbr">			<!-- Number -->
 			<attr-item tags="sg"/>
 			<attr-item tags="pl"/>
 			<attr-item tags="sp"/>
 			<attr-item tags="ND"/>
+		</def-attr>
+		<def-attr n="a_pers">			<!-- Person -->
+			<attr-item tags="p1"/>
+			<attr-item tags="p2"/>
+			<attr-item tags="p3"/>
+			<attr-item tags="PD"/>
 		</def-attr>
 		<def-attr n="a_temps">
 			<attr-item tags="pri"/>
@@ -132,9 +138,8 @@
 	</section-def-attrs>
 
 	<section-def-vars>
-		<def-var n="v_nombre"/>
-		<def-var n="v_genere"/>
-		<def-var n="v_numero"/>
+		<def-var n="v_temps"/>
+		<def-var n="v_nbr"/>
 	</section-def-vars>
 
 	
@@ -150,7 +155,7 @@
 							<lit-tag v="sg"/>
 						</equal>
 					</test>
-					<let><var n="v_nombre"/><lit-tag v="sg"/></let>
+					<let><var n="v_nbr"/><lit-tag v="sg"/></let>
 				</when>
 				<when>
 					<test>
@@ -159,10 +164,10 @@
 							<lit-tag v="pl"/>
 						</equal>
 					</test>
-					<let><var n="v_nombre"/><lit-tag v="pl"/></let>
+					<let><var n="v_nbr"/><lit-tag v="pl"/></let>
 				</when>
 				<otherwise>
-					<let><var n="v_nombre"/><lit-tag v="sg"/></let>
+					<let><var n="v_nbr"/><lit-tag v="sg"/></let>
 				</otherwise>
 			</choose>
 		</def-macro>
@@ -1880,14 +1885,16 @@
 			<action>
 				<out>
 					<chunk>
-						<lit v="verb"/>
-						<clip pos="1" part="tags"/>
+						<get-case-from pos="1">
+							<lit v="verb"/>
+						</get-case-from>
+						<lit-tag v="past"/>
 						<lit v="{^"/>
 						<get-case-from pos="1">
 							<lit v="do"/>
 						</get-case-from>
 						<lit-tag v="vaux"/>
-						<lit-tag v="past"/>
+						<lit-tag v="past"/>  <!--("hat ... getan")-->
 						<lit v="$}"/>
 					</chunk>
 					<b/>
@@ -1900,7 +1907,7 @@
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<lit-tag v="SV"/>
-						<lit-tag v="inf"/>
+						<clip pos="1" part="a_temps"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
 					<b/>

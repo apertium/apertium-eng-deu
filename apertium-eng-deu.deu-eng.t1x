@@ -1538,8 +1538,9 @@
 					<chunk name="det_nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -1593,6 +1594,7 @@
 					<chunk name="det_nom_pr_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1654,8 +1656,9 @@
 					<chunk name="det_nom" case="caseFirstWord">
 						<tags>
 							<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
-							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -1695,6 +1698,7 @@
 					<chunk name="nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1738,6 +1742,7 @@
 					<chunk name="nom_cnj_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="3" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1783,6 +1788,7 @@
 					<chunk name="np_cnj_np_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1828,6 +1834,7 @@
 					<chunk name="nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1862,6 +1869,7 @@
 				<pattern-item n="cog_np"/>
 			</pattern>
 			<action>
+				<let><var n="v_pers_nom"/><lit v="p3"/></let>
 				<call-macro n="set_cas">
 					<with-param pos="2"/>
 				</call-macro>
@@ -1869,6 +1877,7 @@
 					<chunk name="det_nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1913,6 +1922,7 @@
 					<chunk name="det_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1950,6 +1960,7 @@
 					<chunk name="det_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -1996,7 +2007,9 @@
 					<chunk name="pr_prn_pr_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2053,7 +2066,9 @@
 					<chunk name="prn_pr_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2102,8 +2117,9 @@
 					<chunk name="pr_det_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="3" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2148,8 +2164,9 @@
 					<chunk name="pr_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2190,8 +2207,9 @@
 					<chunk name="det_adj_adj_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="4" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lemh"/>
@@ -2244,8 +2262,9 @@
 					<chunk name="det_adj_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="3" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2299,8 +2318,9 @@
 					<chunk name="det_nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
-							<tag><clip pos="3" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2348,8 +2368,9 @@
 					<chunk name="adj_adj_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2391,8 +2412,9 @@
 					<chunk name="num_adj_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="3" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="3" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2436,8 +2458,9 @@
 					<chunk name="num_nom_num_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="4" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="4" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2492,8 +2515,9 @@
 					<chunk name="adj_nom" case="caseFirstWord">
 						<tags>
 							<tag><var n="v_chunk_tag"/></tag>  <!--"SN"-->
-							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2532,8 +2556,9 @@
 					<chunk name="num_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="2" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2569,8 +2594,9 @@
 					<chunk name="nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lemh"/>
@@ -2649,6 +2675,9 @@
 					<chunk name="det" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="DET"/></tag>
+							<tag><var n="v_pers_det"/></tag>
+							<tag><var n="v_gen_det"/></tag>
+							<tag><var n="v_nbr_det"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2752,6 +2781,9 @@
 					<chunk name="prpers" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="PRPERS"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2782,6 +2814,9 @@
 					<chunk name="itg" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="ITG"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2808,9 +2843,12 @@
 					<with-param pos="1"/>
 				</call-macro>
 				<out>
-					<chunk name="prn" case="aa">
+					<chunk name="prn" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="PRN"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
 						</tags>
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
@@ -2835,41 +2873,51 @@
 			</pattern>
 			<action>
 				<choose>
-					<when>
+					<when>  <!-- "rel.nn" -->
 						<test>
 							<equal>
 								<clip pos="1" side="tl" part="a_rel"/>
 								<lit-tag v="rel.nn"/>
 							</equal>
 						</test>
+						<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
+						<let><var n="v_nbr_prn"/><lit-tag v="sg"/></let> <!-- "sg" -->
 						<out>
 							<chunk name="prn" case="caseFirstWord">
 								<tags>
-									<tag><lit-tag v="PRN"/></tag>
+									<!--<tag><lit-tag v="PRN"/></tag>-->
 									<tag><lit-tag v="REL"/></tag>
+									<tag><var n="v_pers_prn"/></tag>
+									<tag><var n="v_gen_prn"/></tag>
+									<tag><var n="v_nbr_prn"/></tag>
 								</tags>
 								<lu>
 									<clip pos="1" side="tl" part="lem"/>
 									<clip pos="1" side="tl" part="a_rel"/>
-									<lit-tag v="mf"/>
-									<lit-tag v="sg"/>
+									<var n="v_gen_prn"/>
+									<var n="v_nbr_prn"/>
 								</lu>
 							</chunk>
 						</out>
 					</when>
 						
 					<otherwise>
+						<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
+						<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let> <!-- "sp" -->
 						<out>
 							<chunk name="prn" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="PRN"/></tag>
+									<tag><var n="v_pers_prn"/></tag>
+									<tag><var n="v_gen_prn"/></tag>
+									<tag><var n="v_nbr_prn"/></tag>
 								</tags>
 								<lu>
 									<clip pos="1" side="tl" part="lem"/>
 									<clip pos="1" side="tl" part="a_rel"/>
 									<lit-tag v="an"/>
-									<lit-tag v="mf"/>
-									<lit-tag v="sp"/>
+									<var n="v_gen_prn"/>
+									<var n="v_nbr_prn"/>
 								</lu>
 							</chunk>
 						</out>
@@ -3012,7 +3060,7 @@
 							</and>
 						</test>
 						<out>
-							<chunk name="verb_verb" case="caseOtherWord">
+							<chunk name="verb_verb" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
@@ -3039,7 +3087,7 @@
 
 					<otherwise>
 						<out>
-							<chunk namefrom="v_chunk_name" case="caseOtherWord">
+							<chunk namefrom="v_chunk_name" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
@@ -3171,7 +3219,7 @@
 					<lit-tag v="inf"/>
 				</let>
 				<out>
-					<chunk name="to_verb" case="caseOtherWord">
+					<chunk name="to_verb" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SV"/></tag>
 							<tag><var n="v_temp_verb"/></tag>
@@ -3216,7 +3264,7 @@
 							</equal>
 						</test>
 						<out>
-							<chunk name="verb_adv" case="caseOtherWord">
+							<chunk name="verb_adv" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
@@ -3241,7 +3289,7 @@
 
 					<otherwise>  <!-- with "do" -->
 						<out>
-							<chunk name="verb_adv" case="caseOtherWord">
+							<chunk name="verb_adv" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
@@ -3297,8 +3345,8 @@
 							</equal>
 						</test>
 						<out>
-							<!--<chunk name="verb_adv" case="caseOtherWord">-->
-							<chunk name="verb" case="caseOtherWord">
+							<!--<chunk name="verb_adv" case="caseFirstWord">-->
+							<chunk name="verb" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
@@ -3339,8 +3387,8 @@
 
 					<otherwise>  <!-- "nicht" -->
 						<out>
-							<!--<chunk name="verb_adv" case="caseOtherWord">-->
-							<chunk name="verb" case="caseOtherWord">
+							<!--<chunk name="verb_adv" case="caseFirstWord">-->
+							<chunk name="verb" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
@@ -3386,10 +3434,14 @@
 				<pattern-item n="months"/>
 			</pattern>
 			<action>
+				<let><var n="v_pers_nom"/><lit v="p3"/></let>
 				<out>
 					<chunk name="pr_num_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
 						<lu>
 							<lit v="on"/>
@@ -3421,10 +3473,12 @@
 				<pattern-item n="months"/>
 			</pattern>
 			<action>
+				<let><var n="v_pers_nom"/><lit v="p3"/></let>
 				<out>
 					<chunk name="nom_det_num" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -3458,10 +3512,12 @@
 				<pattern-item n="months"/>
 			</pattern>
 			<action>
+				<let><var n="v_pers_nom"/><lit v="p3"/></let>
 				<out>
 					<chunk name="nom_cm_nom_num" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -3500,10 +3556,12 @@
 				<pattern-item n="months"/>
 			</pattern>
 			<action>
+				<let><var n="v_pers_nom"/><lit v="p3"/></let>
 				<out>
 					<chunk name="nom_cm_nom_num" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -3542,10 +3600,12 @@
 				<pattern-item n="months"/>
 			</pattern>
 			<action>
+				<let><var n="v_pers_nom"/><lit v="p3"/></let>
 				<out>
 					<chunk name="nom_cm_num_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
