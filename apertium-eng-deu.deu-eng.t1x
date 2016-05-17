@@ -3288,6 +3288,10 @@
 					</when>
 
 					<otherwise>  <!-- with "do" -->
+						<modify-case>
+							<clip pos="1" side="tl" part="lemh"/>
+							<var n="caseOtherWord"/>
+						</modify-case>
 						<out>
 							<chunk name="verb_adv" case="caseFirstWord">
 								<tags>

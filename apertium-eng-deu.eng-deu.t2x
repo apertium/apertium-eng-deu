@@ -145,8 +145,7 @@
 	<section-def-macros>
 
 		<!-- (verb) if "PD" get person from next noun -->
-		<!--(only necessary for rules that start with Verbs)-->
-		<def-macro n="upd_PD_nbr" npar="2">
+		<def-macro n="upd_PD_pers" npar="2">
 			<choose>
 				<when>
 					<test>
@@ -177,9 +176,7 @@
 			</choose>
 		</def-macro>
 
-
 		<!-- (verb) if "ND" get number from next noun -->
-		<!--(only necessary for rules that start with Verbs)-->
 		<def-macro n="upd_ND_nbr" npar="2">
 			<choose>
 				<when>
@@ -228,6 +225,38 @@
 					</let>
 				</when>
 			</choose>
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_gen"/>
+							<lit-tag v="GD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_gen"/>
+						<lit-tag v="nt"/>
+						<!--<lit-tag v="mf"/>-->
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+		<!-- (verb) (to be determined) -->
+		<!--(only necessary for rules that start with Verbs)-->
+		<def-macro n="upd_PD_ND_GD" npar="2">
+			<call-macro n="upd_PD_pers">  <!-- PD to "pers" -->
+				<with-param pos="1"/>
+				<with-param pos="2"/>    <!-- "pers" from noun -->
+			</call-macro>
+			<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<with-param pos="1"/>
+				<with-param pos="2"/>    <!-- "nbr" from noun -->
+			</call-macro>
+			<call-macro n="upd_GD_gen">  <!-- GD to "gen" -->
+				<with-param pos="1"/>
+				<with-param pos="2"/>    <!-- "gen" from noun -->
+			</call-macro>
 		</def-macro>
 
 	</section-def-macros>
@@ -244,9 +273,9 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="4"/>  <!-- "nbr" from noun -->
+					<with-param pos="4"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -254,19 +283,19 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -287,9 +316,9 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
+					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -297,64 +326,23 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
-					</chunk>
-				</out>
-			</action>
-		</rule>
-
-
-		<!-- "do you give your (...)" => "gibst du deiner (...)" -->
-		<!-- "-Vd N ~V N" => "~V N N" -->
-		<rule comment="RULE: Vd NP V N">
-			<pattern>
-				<pattern-item n="SV_do"/>
-				<pattern-item n="SNP"/>
-				<pattern-item n="SV"/>
-				<pattern-item n="SN"/>
-			</pattern>
-			<action>
-				<call-macro n="upd_PD_nbr">  <!-- PD to "pers" -->
-					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "pers" from noun -->
-				</call-macro>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
-					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
-				</call-macro>
-				<out>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="1" part="tags"/>  <!-- "do" -->
-						<clip pos="3" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-					<b/>
-					<chunk>
-						<clip pos="4" part="lem"/>
-						<clip pos="4" part="tags"/>
-						<clip pos="4" part="chcontent"/>
 					</chunk>
 				</out>
 			</action>
@@ -371,9 +359,9 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
+					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -383,17 +371,98 @@
 						<clip pos="1" part="tags"/>  <!-- tense from first verb -->
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "do you give your (...)" => "gibst du deiner (...)" -->
+		<!-- "-Vd N ~V N" => "~V N N" -->
+		<rule comment="RULE: Vd NP V N">
+			<pattern>
+				<pattern-item n="SV_do"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- PD to "pers" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="1" part="tags"/>  <!-- "do" -->
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "do you never give your (...)" => "gibst du deiner (...) nie" -->
+		<!-- "-Vd N ~ADV ~V N" => "~V N N ~ADV" -->
+		<rule comment="RULE: Vd NP ADV V N">
+			<pattern>
+				<pattern-item n="SV_do"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- PD to "pers" -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="1" part="tags"/>  <!-- "do" -->
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
 					</chunk>
 				</out>
 			</action>
@@ -411,9 +480,9 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
+					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -421,25 +490,25 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
 						<clip pos="5" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -459,9 +528,9 @@
 				<pattern-item n="SNP"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="3"/>  <!-- "nbr" from noun -->
+					<with-param pos="3"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -469,13 +538,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -494,9 +563,9 @@
 				<pattern-item n="PRON"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="3"/>  <!-- "nbr" from noun -->
+					<with-param pos="3"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -504,13 +573,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -531,9 +600,9 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="4"/>  <!-- "nbr" from noun -->
+					<with-param pos="4"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -541,19 +610,19 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -571,9 +640,9 @@
 				<pattern-item n="ADV"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
+					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -581,13 +650,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -607,9 +676,9 @@
 				<pattern-item n="CM_ADV"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
+					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -617,13 +686,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -642,9 +711,9 @@
 				<pattern-item n="SNP"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
+					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -652,7 +721,7 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -675,9 +744,9 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="3"/>  <!-- "nbr" from noun -->
+					<with-param pos="3"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -685,25 +754,25 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
 						<clip pos="5" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -722,9 +791,9 @@
 				<pattern-item n="SN_adj"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="2"/>  <!-- "nbr" from noun -->
+					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -732,13 +801,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -762,13 +831,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -795,25 +864,25 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
 						<clip pos="5" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -830,7 +899,7 @@
 				<pattern-item n="SV"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
 					<with-param pos="1"/>
 				</call-macro>
@@ -863,31 +932,31 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
 						<clip pos="5" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="5"/>
 					<chunk>
 						<clip pos="6" part="lem"/>
 						<clip pos="6" part="tags"/>
@@ -914,25 +983,25 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
 						<clip pos="5" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -958,19 +1027,19 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -998,31 +1067,31 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
 						<clip pos="5" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="6" part="lem"/>
 						<clip pos="6" part="tags"/>
 						<clip pos="6" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="5"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -1049,25 +1118,25 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
 						<clip pos="5" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
@@ -1092,13 +1161,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -1125,19 +1194,19 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
@@ -1162,13 +1231,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -1188,9 +1257,9 @@
 				<pattern-item n="SNP"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="2"/>
-					<with-param pos="3"/>  <!-- "nbr" from noun -->
+					<with-param pos="3"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -1198,13 +1267,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -1225,9 +1294,9 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_ND_nbr">  <!-- ND to "nbr" -->
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="2"/>
-					<with-param pos="4"/>  <!-- "nbr" from noun -->
+					<with-param pos="4"/>  <!-- from noun -->
 				</call-macro>
 				<out>
 					<chunk>
@@ -1235,19 +1304,19 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
@@ -1273,13 +1342,13 @@
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -1304,13 +1373,13 @@
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -1336,19 +1405,19 @@
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -1373,13 +1442,13 @@
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="2"/>
 					<chunk>
 						<clip pos="2" part="lem"/>
 						<clip pos="2" part="tags"/>
@@ -1403,7 +1472,7 @@
 						<clip pos="2" part="tags"/>
 						<clip pos="2" part="chcontent"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>

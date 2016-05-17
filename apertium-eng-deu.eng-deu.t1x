@@ -3019,7 +3019,7 @@
 		</rule>
 
 
-		<!-- (pl): "James and Mary (are)" => "James und Mary (sind)" -->
+		<!-- (plural): "James and Mary (are)" => "James und Mary (sind)" -->
 		<rule comment="RULE: NOUNS AND NOUNS">
 			<pattern>
 				<pattern-item n="nouns"/>
@@ -3213,7 +3213,7 @@
 		</rule>
 
 
-		<!--  "of" deletion : "a glass of milk" =} "ein Glas Milch" -->
+		<!--  "of" deletion : "a glass of water" =} "ein Glas Wasser" -->
 		<rule comment="RULE: DET NOM PR NOM">
 			<pattern>
 				<pattern-item n="any_det"/>
@@ -4057,8 +4057,8 @@
 			</pattern>
 			<action>
 				<call-macro n="proc_nom_nom"> <!-- OUT: v1...nom, v...nom -->
-					<with-param pos="2"/>
-					<with-param pos="3"/>
+					<with-param pos="2"/>  <!-- v1...nom -->
+					<with-param pos="3"/>  <!-- v...nom -->
 				</call-macro>
 				<out>
 					<chunk name="num_nom_nom" case="caseFirstWord">
@@ -4102,7 +4102,7 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_adj_nom">
+				<call-macro n="proc_adj_nom">  <!-- OUT: v...adj, v...nom -->
 					<with-param pos="1"/>
 					<with-param pos="2"/>
 				</call-macro>
