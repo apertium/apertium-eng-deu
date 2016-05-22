@@ -463,25 +463,25 @@
 						<lit-tag v="pr"/>
 						<lit v="$}"/>
 					</chunk>
-					<b pos="3"/>
+					<b/>
 					<chunk>
 						<clip pos="6" part="lem"/>
 						<clip pos="6" part="tags"/>
 						<clip pos="6" part="chcontent"/>
 					</chunk>
-					<b pos="4"/>
+					<b pos="3"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
-					<b pos="5"/>
+					<b pos="4"/>
 					<chunk>
 						<clip pos="4" part="lem"/>
 						<clip pos="4" part="tags"/>
 						<clip pos="4" part="chcontent"/>
 					</chunk>
-					<b pos="6"/>
+					<b pos="5"/>
 					<chunk>
 						<clip pos="5" part="lem"/>
 						<clip pos="5" part="tags"/>
