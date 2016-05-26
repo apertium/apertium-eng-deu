@@ -17,6 +17,11 @@
 		<def-cat n="verb">
 			<cat-item name="verb"/>
 		</def-cat>
+		<def-cat n="verbs">
+			<cat-item name="verb"/>
+			<cat-item name="vaux"/>
+			<cat-item name="vbdo"/>
+		</def-cat>
 		<def-cat n="adv">
 			<cat-item name="adv"/>
 		</def-cat>
@@ -25,15 +30,35 @@
 
 
 	<section-def-attrs>
-		<def-attr n="nbr">
+		<def-attr n="a_nom">
+			<attr-item tags="n"/>
+			<attr-item tags="np"/>
+		</def-attr>
+		<def-attr n="a_verb">
+			<attr-item tags="vblex"/>
+			<attr-item tags="vaux"/>
+			<attr-item tags="vbmod"/>
+			<attr-item tags="vbser"/>
+			<attr-item tags="vbhaver"/>
+			<attr-item tags="vbdo"/>
+		</def-attr>
+		<def-attr n="a_nbr">
 			<attr-item tags="sg"/>
 			<attr-item tags="pl"/>
 			<attr-item tags="sp"/>
 			<attr-item tags="ND"/>
 		</def-attr>
-		<def-attr n="a_nom">
-			<attr-item tags="n"/>
-			<attr-item tags="np"/>
+		<def-attr n="a_temps">
+			<attr-item tags="pri"/>
+			<attr-item tags="pii"/>
+			<attr-item tags="prs"/>
+			<attr-item tags="pis"/>
+			<attr-item tags="pres"/>
+			<attr-item tags="past"/>
+			<attr-item tags="inf"/>
+			<attr-item tags="imp"/>
+			<attr-item tags="pprs"/>
+			<attr-item tags="pp"/>
 		</def-attr>
 	</section-def-attrs>
 
@@ -45,32 +70,40 @@
 
 	<section-rules>
 
-		<rule comment="CHUNK: itg">
-			<pattern>
-				<pattern-item n="itg"/>
-			</pattern>
-			<action>
-				<out>
-					<lu>
-						<clip pos="1" part="whole"/>
-					</lu>
-				</out>
-			</action>
-		</rule>
-
-
 		<rule comment="CHUNK: verb">
 			<pattern>
-				<pattern-item n="verb"/>
+				<pattern-item n="verbs"/>
 			</pattern>
 			<action>
-				<out>
-					<lu>
-						<clip pos="1" part="lemh"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="lemq"/>
-					</lu>
-				</out>
+				<choose>
+					<when>
+						<test>
+							<equal>
+								<clip pos="0" part="a_temps"/>
+								<lit-tag v="inf"/>
+							</equal>
+						</test>
+						<out>
+							<lu>
+								<get-case-from pos="0">
+									<clip pos="1" part="lemh"/>
+								</get-case-from>
+								<clip pos="1" part="a_verb"/>
+								<clip pos="0" part="a_temps"/>
+								<clip pos="1" part="lemq"/>
+							</lu>
+						</out>
+					</when>
+					<otherwise>
+						<out>
+							<lu>
+								<clip pos="1" part="lemh"/>
+								<clip pos="1" part="tags"/>
+								<clip pos="1" part="lemq"/>
+							</lu>
+						</out>
+					</otherwise>
+				</choose>
 			</action>
 		</rule>
 

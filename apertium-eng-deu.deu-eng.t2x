@@ -823,7 +823,9 @@
 					</chunk>
 					<b pos="2"/>
 					<chunk>
-						<clip pos="2" part="lem"/>
+						<get-case-from pos="3"> <!-- "aa" -->
+							<clip pos="2" part="lem"/>
+						</get-case-from>
 						<lit-tag v="SV"/>
 						<lit-tag v="inf"/>
 						<clip pos="2" part="chcontent"/>
@@ -2160,8 +2162,9 @@
 							</chunk>
 							<b pos="1"/>
 							<chunk>
-								<clip pos="1" part="lem"/>
-								<!--<clip pos="1" part="tags"/>-->
+								<get-case-from pos="2"> <!-- "aa" -->
+									<clip pos="1" part="lem"/>
+								</get-case-from>
 								<lit-tag v="SV"/>
 								<lit-tag v="inf"/>
 								<clip pos="1" part="chcontent"/>
@@ -2263,8 +2266,9 @@
 							</chunk>
 							<b pos="1"/>
 							<chunk>
-								<clip pos="1" part="lem"/>
-								<!--<clip pos="1" part="tags"/>-->
+								<get-case-from pos="2"> <!-- "aa" -->
+									<clip pos="1" part="lem"/>
+								</get-case-from>
 								<lit-tag v="SV"/>
 								<lit-tag v="inf"/>
 								<clip pos="1" part="chcontent"/>

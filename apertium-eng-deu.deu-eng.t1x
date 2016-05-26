@@ -440,7 +440,6 @@
 		<def-var n="v_tipus_prn"/>
 		<def-var n="v_comp_sup_adj"/>
 		<def-var n="v_temps"/>
-		<def-var n="v_temps1"/>
 		<def-var n="v_cas"/>
 		<def-var n="v_gen"/>
 		<def-var n="v_nbr"/>
@@ -531,6 +530,14 @@
 			<list-item v="heute"/>
 			<list-item v="morgen"/>
 			<list-item v="übermorgen"/>
+		</def-list>
+
+		<def-list n="ltl_box_of">
+			<list-item v="box"/>
+			<list-item v="cup"/>
+			<list-item v="glass"/>
+			<list-item v="bottle"/>
+			<list-item v="piece"/>
 		</def-list>
 
 	</section-def-lists>
@@ -1166,39 +1173,18 @@
 
 		<!-- (det) / OUT: v_pers_det, v_gen_det, v_nbr_det -->
 		<def-macro n="set_pers_gen_nbr_det" npar="1">
-<!--
-			<choose>
-				<when>  <!-#- det.pos with gen and pers -#->
-					<test>
-						<equal>
-							<clip pos="1" side="tl" part="a_det"/>
-							<lit-tag v="det.pos"/>
-						</equal>
-					</test>
--->
-					<call-macro n="set_pers">
-						<with-param pos="1"/>
-					</call-macro>
-					<call-macro n="set_gen">
-						<with-param pos="1"/>
-					</call-macro>
-					<call-macro n="set_nbr">
-						<with-param pos="1"/>
-					</call-macro>
-					<call-macro n="chg_det_pos_gen">
-						<with-param pos="1"/>
-					</call-macro>
-<!--
-				</when>
-				<otherwise>
-					<call-macro n="set_nbr">
-						<with-param pos="1"/>
-					</call-macro>
-					<let><var n="v_gen"/><lit v=""/></let>
-					<let><var n="v_pers"/><lit v=""/></let>
-				</otherwise>
-			</choose>
--->
+			<call-macro n="set_pers">
+				<with-param pos="1"/>
+			</call-macro>
+			<call-macro n="set_gen">
+				<with-param pos="1"/>
+			</call-macro>
+			<call-macro n="set_nbr">
+				<with-param pos="1"/>
+			</call-macro>
+			<call-macro n="chg_det_pos_gen"> <!-- => "mf" -->
+				<with-param pos="1"/>
+			</call-macro>
 			<let><var n="v_pers_det"/><var n="v_pers"/></let>
 			<let><var n="v_gen_det"/><var n="v_gen"/></let>
 			<let><var n="v_nbr_det"/><var n="v_nbr"/></let>
@@ -1300,20 +1286,6 @@
 							<let><var n="v_pers_verb"/><var n="v_pers"/></let>
 							<let><var n="v_nbr_verb"/><var n="v_nbr"/></let>
 						</when>
-<!--
-						<when>
-							<test>
-								<equal>
-									<var n="v_temps"/>
-									<lit-tag v="imp"/>
-								</equal>
-							</test>
-							<call-macro n="set_nbr">
-								<with-param pos="1"/>
-							</call-macro>
-							<let><var n="v_nbr_verb"/><var n="v_nbr"/></let>
-						</when>
--->
 					</choose>
 				</otherwise>
 			</choose>
@@ -1325,9 +1297,6 @@
 			<call-macro n="set_pers_gen_nbr_det">
 				<with-param pos="1"/>
 			</call-macro>
-			<!-- <let> <clip pos="1" side="tl" part="a_pers"/> <var n="v_pers_det"/> </let> <!-#-(for prn only, else null)-#->
-			<let> <clip pos="1" side="tl" part="a_gen"/> <var n="v_gen_det"/> </let>  <!-#-(for prn only, else null)-#->
-			<let> <clip pos="1" side="tl" part="a_nbr"/> <var n="v_nbr_det"/> </let> -->
 			<choose>
 				<when>  <!-- "det.pos" with pers and gen -->
 					<test>
@@ -1392,7 +1361,6 @@
 				<clip pos="1" side="tl" part="a_cas"/>
 				<var n="v_cas_nom"/>
 			</let>
-
 			<choose>
 				<when>  <!-- cog without gender -->
 					<test>
@@ -1415,6 +1383,17 @@
 			<call-macro n="set_tipus_pers_gen_nbr_prn">  <!-- convert iobj/dobj to obj -->
 				<with-param pos="1"/>
 			</call-macro>
+			<choose>
+				<when>  <!-- "prn.itg" -->
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_tipus_prn"/>
+							<lit-tag v="prn.itg"/>
+						</equal>
+					</test>
+					<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let>
+				</when>
+			</choose>
 			<choose>
 				<when>  <!-- with pers -->
 					<test>
@@ -1466,52 +1445,44 @@
 					</let>
 				</otherwise>
 			</choose>
+		</def-macro>
 
-<!--
+
+		<!-- (prn / np.ant) / OUT: v_pers_prn, v_nbr_prn, v_cas_prn -->
+		<def-macro n="proc_itg" npar="1">
 			<choose>
-				<when>  <!-#- "np.ant", set variables v...prn and v...nom -#->
+				<when>  <!-- "adv.itg" -->
 					<test>
 						<equal>
-							<clip pos="1" side="tl" part="a_nom"/>
-							<lit-tag v="np.ant"/>
+							<clip pos="1" side="tl" part="a_adv"/>
+							<lit-tag v="adv.itg"/>
 						</equal>
 					</test>
-					<call-macro n="set_pers_gen_nbr_cas_nom">
-						<with-param pos="1"/>
-					</call-macro>
-					<let>
-						<var n="v_tipus_prn"/>
-						<clip pos="1" side="tl" part="a_nom"/>
-					</let>
-					<let><var n="v_pers_prn"/><lit-tag v="p3"/></let>
-					<let><var n="v_nbr_prn"/><var n="v_nbr_nom"/></let>
-					<let><var n="v_cas_prn"/><var n="v_cas_nom"/></let>
+					<!-- <let>
+						<clip pos="1" side="tl" part="tags"/>
+						<concat>
+							<clip pos="1" side="tl" part="a_adv"/>
+							<lit-tag v="mf"/>
+							<lit-tag v="sp"/>
+						</concat>
+					</let> -->
+					<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
+					<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let>
 				</when>
-				<otherwise>  <!-#- set variables v...prn -#->
-					<call-macro n="set_tipus_pers_gen_nbr_prn">
+				<otherwise>
+					<call-macro n="proc_prn">  <!-- convert iobj/dobj to obj -->
 						<with-param pos="1"/>
 					</call-macro>
 				</otherwise>
 			</choose>
-			<choose>
-				<when>  <!-#- proper noun: clear v_pers_prn only -#->
-					<test>
-						<equal>
-							<clip pos="1" side="tl" part="a_nom"/>
-							<lit-tag v="np.ant"/>
-						</equal>
-					</test>
-					<let><var n="v_pers_prn"/><lit v=""/></let>
-				</when>
-			</choose>
--->
 		</def-macro>
 
 
 		<!-- (rel.nn / rel.an) / OUT: v_pers_prn, v_nbr_prn, v_cas_prn -->
 		<def-macro n="proc_rel" npar="1">
 			<let><var n="v_pers_prn"/><lit-tag v="p3"/></let>
-			<!--<call-macro n="set_tipus_pers_gen_nbr_prn">  <!-#- convert iobj/dobj to obj -#->
+			<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
+			<!--<call-macro n="set_tipus_pers_gen_nbr_prn">
 				<with-param pos="1"/>
 			</call-macro>-->
 			<choose>
@@ -1522,14 +1493,11 @@
 							<lit-tag v="rel.nn"/>
 						</equal>
 					</test>
-					<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
 					<let><var n="v_nbr_prn"/><lit-tag v="sg"/></let> <!-- "sg" -->
 					<let>
 						<clip pos="1" side="tl" part="tags"/>
 						<concat>
 							<clip pos="1" side="tl" part="a_rel"/>
-							<!--<var n="v_tipus_prn"/>
-							<var n="v_pers_prn"/>-->
 							<var n="v_gen_prn"/>
 							<var n="v_nbr_prn"/>
 						</concat>
@@ -1537,13 +1505,11 @@
 					<let><var n="v_chunk_tag"/><lit-tag v="REL"/></let>
 				</when>
 				<otherwise>  <!-- "rel.an" -->
-					<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
 					<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let> <!-- "sp" -->
 					<let>
 						<clip pos="1" side="tl" part="tags"/>
 						<concat>
 							<clip pos="1" side="tl" part="a_rel"/>
-							<!--<var n="v_tipus_prn"/>-->
 							<lit-tag v="an"/>
 							<var n="v_gen_prn"/>
 							<var n="v_nbr_prn"/>
@@ -1560,17 +1526,6 @@
 			<call-macro n="set_temp_pers_nbr_verb">
 				<with-param pos="1"/>
 			</call-macro>
-<!--
-			<let>
-				<clip pos="1" side="tl" part="tags"/>
-				<concat>
-					<clip pos="1" side="tl" part="a_verb"/>
-					<var n="v_temp_verb"/>  <!-#- converted tense tag -#->
-					<var n="v_pers_verb"/>  <!-#-(empty if not pres/past)-#->
-					<var n="v_nbr_verb"/>   <!-#-(empty if not pres/past)-#->
-				</concat>
-			</let>
--->
 			<let>
 				<clip pos="1" side="tl" part="a_temps"/>
 				<var n="v_temp_verb"/>
@@ -1849,7 +1804,7 @@
 					<with-param pos="2"/>
 				</call-macro>
 				<out>
-					<chunk name="det_nom" case="caseFirstWord">
+					<chunk name="nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
 							<tag><var n="v_pers_nom"/></tag>
@@ -2592,10 +2547,6 @@
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="tags"/>
-							<!--<var n="v_tipus1_prn"/>
-							<var n="v_pers_nom"/>
-							<var n="v_gen_nom"/>
-							<var n="v_nbr_nom"/>-->
 						</lu>
 						<b pos="1"/>
 						<lu>
@@ -2606,10 +2557,6 @@
 						<lu>
 							<clip pos="3" side="tl" part="lem"/>
 							<clip pos="3" side="tl" part="tags"/>
-							<!--<var n="v_tipus_prn"/>
-							<var n="v_pers_prn"/>
-							<var n="v_gen_prn"/>
-							<var n="v_nbr_prn"/>-->
 						</lu>
 					</chunk>
 				</out>
@@ -2828,36 +2775,181 @@
 				<call-macro n="chg_ADV_chunk_tag">  <!-- "SN"/"ADV" -->
 					<with-param pos="3"/>
 				</call-macro>
-				<out>
-					<chunk name="det_nom_nom" case="caseFirstWord">
-						<tags>
-							<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
-							<tag><var n="v_pers_nom"/></tag>
-							<tag><var n="v_gen_nom"/></tag>
-							<tag><var n="v_nbr_nom"/></tag>
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="lem"/>
-							<clip pos="1" side="tl" part="tags"/> <!-- "a_det" -->
-						</lu>
-						<b pos="1"/>
-						<lu>
-							<clip pos="2" side="tl" part="lemh"/>
-							<clip pos="2" side="tl" part="a_nom"/>
-							<clip pos="2" side="tl" part="a_nbr"/>
-							<clip pos="2" side="tl" part="a_cas"/>
-							<clip pos="2" side="tl" part="lemq"/>
-						</lu>
-						<b pos="2"/>
-						<lu>
-							<clip pos="3" side="tl" part="lemh"/>
-							<clip pos="3" side="tl" part="a_nom"/>
-							<clip pos="3" side="tl" part="a_nbr"/>
-							<clip pos="3" side="tl" part="a_cas"/>
-							<clip pos="3" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
+				<choose>
+					<when>
+						<test>
+							<in caseless="yes">
+								<clip pos="2" side="tl" part="lem"/>
+								<list n="ltl_box_of"/>
+							</in>
+						</test>
+						<out>
+							<chunk name="det_nom_nom" case="caseFirstWord">
+								<tags>
+									<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="tags"/> <!-- "a_det" -->
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_nom"/>
+									<clip pos="2" side="tl" part="a_nbr"/>
+									<clip pos="2" side="tl" part="a_cas"/>
+									<clip pos="2" side="tl" part="lemq"/>
+								</lu>
+								<b/>
+								<lu>
+									<lit v="of"/>
+									<lit-tag v="pr"/>
+								</lu>
+								<b pos="2"/>
+								<lu>
+									<clip pos="3" side="tl" part="lemh"/>
+									<clip pos="3" side="tl" part="a_nom"/>
+									<clip pos="3" side="tl" part="a_nbr"/>
+									<clip pos="3" side="tl" part="a_cas"/>
+									<clip pos="3" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+					<otherwise>
+						<out>
+							<chunk name="det_nom_nom" case="caseFirstWord">
+								<tags>
+									<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="tags"/> <!-- "a_det" -->
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_nom"/>
+									<clip pos="2" side="tl" part="a_nbr"/>
+									<clip pos="2" side="tl" part="a_cas"/>
+									<clip pos="2" side="tl" part="lemq"/>
+								</lu>
+								<b pos="2"/>
+								<lu>
+									<clip pos="3" side="tl" part="lemh"/>
+									<clip pos="3" side="tl" part="a_nom"/>
+									<clip pos="3" side="tl" part="a_nbr"/>
+									<clip pos="3" side="tl" part="a_cas"/>
+									<clip pos="3" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: NUM NOM NOM">
+			<pattern>
+				<pattern-item n="num"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="proc_num_nom">
+					<with-param pos="1"/>
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="proc_nom"> <!-- OUT: v...nom -->
+					<with-param pos="3"/>
+				</call-macro>
+				<choose>
+					<when>
+						<test>
+							<in caseless="yes">
+								<clip pos="2" side="tl" part="lem"/>
+								<list n="ltl_box_of"/>
+							</in>
+						</test>
+						<out>
+							<chunk name="num_nom_nom" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SN"/></tag>
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="tags"/> <!-- "a_det" -->
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_nom"/>
+									<clip pos="2" side="tl" part="a_nbr"/>
+									<clip pos="2" side="tl" part="a_cas"/>
+									<clip pos="2" side="tl" part="lemq"/>
+								</lu>
+								<b/>
+								<lu>
+									<lit v="of"/>
+									<lit-tag v="pr"/>
+								</lu>
+								<b pos="2"/>
+								<lu>
+									<clip pos="3" side="tl" part="lemh"/>
+									<clip pos="3" side="tl" part="a_nom"/>
+									<clip pos="3" side="tl" part="a_nbr"/>
+									<clip pos="3" side="tl" part="a_cas"/>
+									<clip pos="3" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+					<otherwise>
+						<out>
+							<chunk name="num_nom_nom" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SN"/></tag>
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="tags"/> <!-- "a_det" -->
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_nom"/>
+									<clip pos="2" side="tl" part="a_nbr"/>
+									<clip pos="2" side="tl" part="a_cas"/>
+									<clip pos="2" side="tl" part="lemq"/>
+								</lu>
+								<b pos="2"/>
+								<lu>
+									<clip pos="3" side="tl" part="lemh"/>
+									<clip pos="3" side="tl" part="a_nom"/>
+									<clip pos="3" side="tl" part="a_nbr"/>
+									<clip pos="3" side="tl" part="a_cas"/>
+									<clip pos="3" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -3352,10 +3444,6 @@
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="tags"/>
-							<!--<var n="v_tipus_prn"/>
-							<var n="v_pers_prn"/>
-							<var n="v_gen_prn"/>
-							<var n="v_nbr_prn"/>-->
 						</lu>
 					</chunk>
 				</out>
@@ -3372,7 +3460,7 @@
 				<pattern-item n="itg"/>
 			</pattern>
 			<action>
-				<call-macro n="proc_prn">  <!-- convert iobj/dobj to obj -->
+				<call-macro n="proc_itg">  <!-- convert iobj/dobj to obj -->
 					<with-param pos="1"/>
 				</call-macro>
 				<out>
@@ -3395,8 +3483,8 @@
 			</action>
 		</rule>
 
-		
-		<!-- "this" <r>is<s n="prn"/><s n="dem"/><s n="mf"/><s n="sg"/></r> -->
+
+		<!-- (prn) convert iobj/dobj to obj-->
 		<rule comment="RULE: PRN">
 			<pattern>
 				<pattern-item n="prn"/>
