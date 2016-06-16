@@ -13,6 +13,10 @@
 			<cat-item name="prn"/>
 		</def-cat>
 
+		<def-cat n="verb">
+			<cat-item name="verb"/>
+		</def-cat>
+
 			<!-- <cat-item name="nom_nom"/> -->
 			<!-- <cat-item name="nom_cnj_nom"/> -->
 			<!-- <cat-item name="nom_cnj_nom_nom"/> -->
@@ -44,7 +48,7 @@
 
 	<section-rules>
 
-		<rule comment="CHUNK: regla que no fa res">
+		<rule comment="CHUNK: det_nom">
 			<pattern>
 				<pattern-item n="det_nom"/>
 			</pattern>
@@ -61,7 +65,7 @@
 			</action>
 		</rule>
 
-		<rule comment="CHUNK:">
+		<rule comment="CHUNK: nom">
 			<pattern>
 				<pattern-item n="nom"/>
 			</pattern>
@@ -74,9 +78,22 @@
 			</action>
 		</rule>
 
-		<rule comment="CHUNK:">
+		<rule comment="CHUNK: prn">
 			<pattern>
 				<pattern-item n="prn"/>
+			</pattern>
+			<action>
+				<out>
+					<lu>
+						<clip pos="1" part="whole"/>
+					</lu>
+				</out>
+			</action>
+		</rule>
+
+		<rule comment="CHUNK: verb">
+			<pattern>
+				<pattern-item n="verb"/>
 			</pattern>
 			<action>
 				<out>
