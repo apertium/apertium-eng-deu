@@ -176,8 +176,7 @@
 		<def-cat n="cog_np">
 			<cat-item tags="np.cog"/>
 			<cat-item tags="np.cog.*"/>
-			<cat-item tags="cog"/>
-			<cat-item tags="adj"/>
+			<!--<cat-item tags="adj"/>-->
 		</def-cat>
 		<def-cat n="ant_np">
 			<cat-item tags="np.ant.*"/>
@@ -366,12 +365,14 @@
 			<attr-item tags="vbdo"/>
 			<attr-item tags="vbmod"/>
 			<attr-item tags="vaux"/>
+			<attr-item tags="vblex.sep"/>
 		</def-attr>
 		<def-attr n="a_verbnm">
 			<attr-item tags="vblex"/>
 			<attr-item tags="vbser"/>
 			<attr-item tags="vbhaver"/>
 			<attr-item tags="vbdo"/>
+			<attr-item tags="vblex.sep"/>
 		</def-attr>
 		<def-attr n="a_atp">
 			<attr-item tags="pr.atp"/>
@@ -1303,7 +1304,30 @@
 				<with-param pos="1"/>
 			</call-macro>
 			<choose>
-				<when>  <!-- "det.pos" with pers and gen -->
+				<when>  <!-- "prpers det.pos" with pers and gen -->
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" side="tl" part="a_det"/>
+								<lit-tag v="det.pos"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="lem"/>
+								<lit v="prpers"/>
+							</equal>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" side="tl" part="tags"/>
+						<concat>
+							<clip pos="1" side="tl" part="a_det"/>
+							<var n="v_pers_det"/>
+							<var n="v_gen_det"/>
+							<var n="v_nbr_det"/>
+						</concat>
+					</let>
+				</when>
+				<when>  <!-- "det.pos" with gen -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_det"/>
@@ -1314,7 +1338,6 @@
 						<clip pos="1" side="tl" part="tags"/>
 						<concat>
 							<clip pos="1" side="tl" part="a_det"/>
-							<var n="v_pers_det"/>
 							<var n="v_gen_det"/>
 							<var n="v_nbr_det"/>
 						</concat>

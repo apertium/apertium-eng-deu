@@ -2221,10 +2221,16 @@
 				<choose>
 					<when>
 						<test>
-							<equal>
-								<clip pos="1" part="lem"/>
-								<lit v="vbser"/>  <!-- chunk name -->
-							</equal>
+							<or>
+								<equal>
+									<clip pos="1" part="lem"/>
+									<lit v="vbser"/>  <!-- chunk name! -->
+								</equal>
+								<equal>
+									<clip pos="1" part="lem"/>
+									<lit v="Vbser"/>  <!-- chunk name! -->
+								</equal>
+							</or>
 						</test>
 						<out>
 							<chunk>
@@ -2253,7 +2259,7 @@
 						</out>
 					</when>
 
-					<otherwise>
+					<otherwise>  <!-- question with "do" -->
 						<out>
 							<chunk>
 								<lit v="vbdo"/>

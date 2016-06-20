@@ -27,7 +27,7 @@
 			<cat-item tags="np.cog.*"/>
 			<cat-item tags="np.ant"/>
 			<cat-item tags="np.ant.*"/>
-			<cat-item tags="adj.*"/>
+			<!--<cat-item tags="adj.*"/>-->
 		</def-cat>
 		<def-cat n="location">
 			<cat-item tags="np.loc.*"/>
@@ -2239,7 +2239,10 @@
 			<let><var n="v_nbr_det"/><var n="v_nbr_nom"/></let>
 			<let><var n="v_cas_det"/><var n="v_cas_nom"/></let>
 
-			<call-macro n="chg_pl_m_f_nt__mfn_gen">  <!-- m/f/nt => mfn -->
+			<call-macro n="chg_pl_m_f_nt__mfn_gen">  <!-- "pl": m/f/nt => mfn -->
+				<with-param pos="0"/>                <!-- OUT: v_gen -->
+			</call-macro>
+			<call-macro n="chg_sg_mf__m_gen">        <!-- "sg": mf => m -->
 				<with-param pos="0"/>                <!-- OUT: v_gen -->
 			</call-macro>
 			<let><var n="v_gen_det"/><var n="v_gen"/></let>
@@ -3682,13 +3685,13 @@
 				<call-macro n="proc_nom">
 					<with-param pos="3"/>
 				</call-macro>
-				<call-macro n="proc_det_adj_nom">
+				<call-macro n="proc_det_adj_nom">  <!-- OUT: v...nom -->
 					<with-param pos="1"/>
 					<with-param pos="2"/>
 					<with-param pos="4"/>
 				</call-macro>
 				<out>
-					<chunk name="det_adj_nom" case="caseFirstWord">
+					<chunk name="det_adj_nom_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
 							<tag><var n="v_pers_nom"/></tag>
