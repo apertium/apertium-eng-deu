@@ -1311,7 +1311,7 @@
 								<clip pos="1" side="tl" part="a_det"/>
 								<lit-tag v="det.pos"/>
 							</equal>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="tl" part="lem"/>
 								<lit v="prpers"/>
 							</equal>
