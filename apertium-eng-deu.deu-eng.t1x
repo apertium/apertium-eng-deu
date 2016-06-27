@@ -345,7 +345,6 @@
 			<attr-item tags="prn.dobj"/>
 			<attr-item tags="prn.pers"/>
 			<attr-item tags="prn.dem"/>
-			<!--<attr-item tags="det.pos"/>-->
 		</def-attr>
 		<def-attr n="a_pr_prn">
 			<attr-item tags="prn.subj"/>
@@ -1304,7 +1303,7 @@
 				<with-param pos="1"/>
 			</call-macro>
 			<choose>
-				<when>  <!-- "prpers det.pos" with pers and gen -->
+				<when>  <!-- "prpers.det.pos" with pers and gen -->
 					<test>
 						<and>
 							<equal>
@@ -1327,7 +1326,7 @@
 						</concat>
 					</let>
 				</when>
-				<when>  <!-- "det.pos" with gen -->
+				<!-- <when>  <!-#- "det.pos" with gen -#->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_det"/>
@@ -1342,7 +1341,7 @@
 							<var n="v_nbr_det"/>
 						</concat>
 					</let>
-				</when>
+				</when> -->
 				<otherwise>  <!-- only nbr -->
 					<let>
 						<clip pos="1" side="tl" part="tags"/>
@@ -3700,8 +3699,7 @@
 							<tag><lit-tag v="ADV"/></tag>
 						</tags>
 						<lu>
-							<clip pos="1" side="tl" part="lem"/>
-							<clip pos="1" side="tl" part="a_preadv"/>
+							<clip pos="1" side="tl" part="whole"/>  <!--"a_preadv"-->
 						</lu>
 					</chunk>
 				</out>
@@ -3724,8 +3722,7 @@
 							<tag><lit-tag v="ADV"/></tag>
 						</tags>
 						<lu>
-							<clip pos="1" side="tl" part="lem"/>
-							<clip pos="1" side="tl" part="a_adv"/>
+							<clip pos="1" side="tl" part="whole"/>  <!--"a_adv" / (PoS can change)-->
 						</lu>
 					</chunk>
 				</out>
@@ -4004,6 +4001,7 @@
 
 
 		<!-- "(Ich) mag keine (Katzen)" => "(I) don't like (cats)" -->
+		<!-- "(Ich) kann nicht (springen)" => "(I) can't (jump)" -->
 		<rule comment="RULE: VERBS NO">
 			<pattern>
 				<pattern-item n="verbnh"/> <!-- any verb but "have" -->
@@ -4016,10 +4014,20 @@
 				<choose>
 					<when>
 						<test>
+							<or>
+								<equal>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<lit-tag v="vbser"/>
+								</equal>
 							<equal>
 								<clip pos="1" side="tl" part="a_verb"/>
-								<lit-tag v="vbser"/>
+								<lit-tag v="vbmod"/>
 							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="a_verb"/>
+								<lit-tag v="vaux"/>
+							</equal>
+							</or>
 						</test>
 						<out>
 							<chunk name="verb_adv" case="caseFirstWord">

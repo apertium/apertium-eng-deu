@@ -2959,16 +2959,10 @@
 			<choose>
 				<when>
 					<test>
-						<or>
-							<equal>
-								<clip pos="1" side="sl" part="lem"/>
-								<lit v="Do"/>
-							</equal>
-							<equal>
-								<clip pos="1" side="sl" part="lem"/>
-								<lit v="do"/>
-							</equal>
-						</or>
+						<equal caseless="yes">
+							<clip pos="1" side="sl" part="lem"/>
+							<lit v="do"/>
+						</equal>
 					</test>
 					<let>
 						<var n="v_chunk_tag"/>
