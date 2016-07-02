@@ -338,6 +338,7 @@
 			<attr-item tags="prn.subj"/>
 			<attr-item tags="prn.obj"/>
 			<attr-item tags="prn.itg"/>
+			<attr-item tags="prn.ind"/>
 			<attr-item tags="prn.tn"/>
 			<attr-item tags="prn.pos"/>
 			<attr-item tags="prn.det"/>
@@ -345,6 +346,7 @@
 			<attr-item tags="prn.dobj"/>
 			<attr-item tags="prn.pers"/>
 			<attr-item tags="prn.dem"/>
+			<attr-item tags="prn.ref"/>
 		</def-attr>
 		<def-attr n="a_pr_prn">
 			<attr-item tags="prn.subj"/>
@@ -967,6 +969,31 @@
 		</def-macro>
 
 
+		<!-- (TL) change "m" or "f" to "mf" / OUT: v_gen -->
+		<def-macro n="chg_m_f__mf_gen" npar="1">
+			<choose>
+				<when>
+					<test>
+						<or>
+							<equal>
+								<var n="v_gen"/>
+								<lit-tag v="m"/>
+							</equal>
+							<equal>
+								<var n="v_gen"/>
+								<lit-tag v="f"/>
+							</equal>
+						</or>
+					</test>
+					<let>
+						<var n="v_gen"/>
+						<lit-tag v="mf"/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+
 		<!-- (TL) gender of det.pos / OUT: v_gen -->
 		<def-macro n="chg_det_pos_gen" npar="1">
 			<choose>
@@ -1260,11 +1287,26 @@
 							<call-macro n="set_nbr">
 								<with-param pos="1"/>
 							</call-macro>
-							
 							<let><var n="v_pers_verb"/><var n="v_pers"/></let>
 							<let><var n="v_nbr_verb"/><var n="v_nbr"/></let>
 						</when>
 					</choose>
+				</when>
+
+				<when>  <!-- mod/aux without "pers" -->
+					<test>
+						<or>
+							<equal>
+								<clip pos="1" side="tl" part="a_verb"/>
+								<lit-tag v="vbmod"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="a_verb"/>
+								<lit-tag v="vaux"/>
+							</equal>
+						</or>
+					</test>
+					<let><var n="v_pers_verb"/><lit v=""/></let>
 				</when>
 
 				<otherwise>
@@ -1414,7 +1456,7 @@
 				<with-param pos="1"/>
 			</call-macro>
 			<choose>
-				<when>  <!-- "prn.itg" -->
+				<when>  <!-- "prn.itg" (gen="mf", num="sp") -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_tipus_prn"/>
@@ -1422,10 +1464,47 @@
 						</equal>
 					</test>
 					<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let>
+					<call-macro n="chg_m_f__mf_gen">  <!-- "m"/"f" to "mf"  -->
+						<with-param pos="1"/>
+					</call-macro>
+					<let><var n="v_gen_prn"/><var n="v_gen"/></let>
+				</when>
+				<when>  <!-- "prn.ind" (gen="mf", num="sg") -->
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_tipus_prn"/>
+							<lit-tag v="prn.ind"/>
+						</equal>
+					</test>
+					<let><var n="v_nbr_prn"/><lit-tag v="sg"/></let>
+					<call-macro n="chg_m_f__mf_gen">  <!-- "m"/"f" to "mf"  -->
+						<with-param pos="1"/>
+					</call-macro>
+					<let><var n="v_gen_prn"/><var n="v_gen"/></let>
+				</when>
+				<when>  <!-- "prn.ref" -->
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" side="tl" part="a_tipus_prn"/>
+								<lit-tag v="prn.ref"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="a_num"/>
+								<lit-tag v="pl"/>
+							</equal>
+						</and>
+					</test>
+					<call-macro n="chg_m_f__mf_gen">  <!-- "m"/"f" to "mf"  -->
+						<with-param pos="1"/>
+					</call-macro>
+					<let><var n="v_gen_prn"/><var n="v_gen"/></let>
 				</when>
 			</choose>
+			
+			<!-- build output -->
 			<choose>
-				<when>  <!-- with pers -->
+				<when>  <!-- prn with pers (prn,pers,gen,num)-->
 					<test>
 						<or>
 							<equal>
@@ -1452,6 +1531,10 @@
 								<clip pos="1" side="tl" part="a_tipus_prn"/>
 								<lit-tag v="prn.dobj"/>
 							</equal>
+							<equal>
+								<clip pos="1" side="tl" part="a_tipus_prn"/>
+								<lit-tag v="prn.ref"/>
+							</equal>
 						</or>
 					</test>
 					<let>
@@ -1464,7 +1547,7 @@
 						</concat>
 					</let>
 				</when>
-				<otherwise>  <!-- without pers -->
+				<otherwise>  <!-- prn without pers (prn,gen,num)-->
 					<let>
 						<clip pos="1" side="tl" part="tags"/>
 						<concat>
@@ -1488,16 +1571,18 @@
 							<lit-tag v="adv.itg"/>
 						</equal>
 					</test>
-					<!-- <let>
+					<!--<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
+					<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let> -->
+					<let><var n="v_gen_prn"/><lit v=""/></let>
+					<let><var n="v_nbr_prn"/><lit v=""/></let>
+					<let>
 						<clip pos="1" side="tl" part="tags"/>
 						<concat>
 							<clip pos="1" side="tl" part="a_adv"/>
-							<lit-tag v="mf"/>
-							<lit-tag v="sp"/>
+							<var n="v_gen_prn"/>
+							<var n="v_nbr_prn"/>
 						</concat>
-					</let> -->
-					<let><var n="v_gen_prn"/><lit-tag v="mf"/></let>
-					<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let>
+					</let>
 				</when>
 				<otherwise>
 					<call-macro n="proc_prn">  <!-- convert iobj/dobj to obj -->
@@ -4019,14 +4104,14 @@
 									<clip pos="1" side="tl" part="a_verb"/>
 									<lit-tag v="vbser"/>
 								</equal>
-							<equal>
-								<clip pos="1" side="tl" part="a_verb"/>
-								<lit-tag v="vbmod"/>
-							</equal>
-							<equal>
-								<clip pos="1" side="tl" part="a_verb"/>
-								<lit-tag v="vaux"/>
-							</equal>
+								<equal>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<lit-tag v="vbmod"/>
+								</equal>
+								<equal>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<lit-tag v="vaux"/>
+								</equal>
 							</or>
 						</test>
 						<out>
