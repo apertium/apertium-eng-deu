@@ -804,7 +804,9 @@
 					</chunk>
 					<b pos="1"/>
 					<chunk>
-						<lit v="vbdo"/>
+						<get-case-from pos="1">
+							<lit v="vbdo"/>
+						</get-case-from>
 						<!--<lit-tag v="SV"/>
 						<clip pos="2" part="a_temps"/>-->
 						<clip pos="2" part="tags"/>
@@ -2148,7 +2150,9 @@
 					<otherwise>
 						<out>
 							<chunk>
-								<lit v="vbdo"/>
+								<get-case-from pos="1">
+									<lit v="vbdo"/>
+								</get-case-from>
 								<!--<lit-tag v="SV"/>
 								<lit-tag v="pres"/>-->
 								<clip pos="1" part="tags"/>
@@ -2262,7 +2266,9 @@
 					<otherwise>  <!-- question with "do" -->
 						<out>
 							<chunk>
-								<lit v="vbdo"/>
+								<get-case-from pos="1">
+									<lit v="vbdo"/>
+								</get-case-from>
 								<clip pos="1" part="tags"/>
 								<lit v="{^"/>
 								<get-case-from pos="1">
