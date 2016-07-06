@@ -96,7 +96,7 @@
     <e><p><l>agency<s n="pr"/></l><r>kraft<s n="pr"/></r></p></e>
     <e r="LR"><p><l>ago<s n="pr"/></l><r>vor<s n="pr"/></r></p></e>
     <e><p><l>ahead<s n="pr"/></l><r>voraus<s n="pr"/></r></p></e>
-    <e><p><l>ahead<b/>of<s n="pr"/></l><r>im<b/>Vorfeld<b/>von<s n="pr"/></r></p></e>
+    <e r="LR"><p><l>ahead<b/>of<s n="pr"/></l><r>vor<s n="pr"/></r></p></e>
     <e><p><l>all<s n="pr"/></l><r>zeit<s n="pr"/></r></p></e>
     <e><p><l>along<s n="pr"/></l><r>entlang<s n="pr"/></r></p></e>
     <e r="RL"><p><l>along<s n="pr"/></l><r>weiter<s n="pr"/></r></p></e>
@@ -107,21 +107,17 @@
     <e><p><l>amongst<s n="pr"/></l><r>inmitten<s n="pr"/></r></p></e>
     <e><p><l>apart<s n="pr"/></l><r>abseits<s n="pr"/></r></p></e>
     <e><p><l>around<s n="pr"/></l><r>um<s n="pr"/></r></p></e>
-    <e><p><l>around<b/>the<b/>middle<b/>of<s n="pr"/></l><r>um<b/>die<b/>Mitte<b/>des<s n="pr"/></r></p></e>
     <e><p><l>as<s n="pr"/></l><r>da<s n="pr"/></r></p></e>
-    <e><p><l>as<b/>a<s n="pr"/></l><r>in<b/>Form<b/>einer<s n="pr"/></r></p></e>
     <e><p><l>as<b/>a<b/>result<b/>of<s n="pr"/></l><r>infolge<s n="pr"/></r></p></e>
     <e r="RL"><p><l>as<b/>a<b/>result<b/>of<s n="pr"/></l><r>zufolge<s n="pr"/></r></p></e>
     <e><p><l>as<b/>for<s n="pr"/></l><r>was<s n="pr"/></r></p></e>
-    <e><p><l>as<b/>regards<s n="pr"/></l><r>bezüglich,<b/>hinsichtlich<s n="pr"/></r></p></e>
+    <e><p><l>as<b/>regards<s n="pr"/></l><r>bezüglich<s n="pr"/></r></p></e>
     <e r="LR"><p><l>at<s n="pr"/></l><r>bei<s n="pr"/></r></p></e>
     <e r="RL"><p><l>at<s n="pr"/></l><r>an<s n="pr"/></r></p></e>
     <e r="RL"><p><l>at<s n="pr"/></l><r>auf<s n="pr"/></r></p></e>
     <e r="LR"><p><l>at<b/>about<s n="pr"/></l><r>um<s n="pr"/></r></p></e>
     <e><p><l>at<b/>home<s n="pr"/></l><r>zu<b/>Hause<s n="pr"/></r></p></e>
     <e><p><l>at<b/>the<s n="pr"/></l><r>ans<s n="pr"/></r></p></e>
-    <e><p><l>at<b/>the<b/>expense<b/>of<s n="pr"/></l><r>auf<b/>Kosten<b/>von<s n="pr"/></r></p></e>
-    <e><p><l>at<b/>the<b/>time<b/>of<s n="pr"/></l><r>zum<b/>Zeitpunkt<s n="pr"/></r></p></e>
     <e><p><l>based<b/>on<s n="pr"/></l><r>anhand<s n="pr"/></r></p></e>
     <e><p><l>because<b/>of<s n="pr"/></l><r>punkto<s n="pr"/></r></p></e>
     <e r="LR"><p><l>because<b/>of<s n="pr"/></l><r>wegen<s n="pr"/></r></p></e>
@@ -182,7 +178,6 @@
     <e><p><l>in<b/>connection<b/>with<s n="pr"/></l><r>im<b/>Zusammenhang<b/>mit<s n="pr"/></r></p></e>
     <e><p><l>in<b/>excess<b/>of<s n="pr"/></l><r>mehr<b/>als<s n="pr"/></r></p></e>
     <e><p><l>in<b/>front<b/>of<s n="pr"/></l><r>vor<s n="pr"/></r></p></e>
-    <e><p><l>in<b/>order<b/>to<s n="pr"/></l><r>um<b/>zu,<b/>zwecks<s n="pr"/></r></p></e>
     <e><p><l>in<b/>regard<b/>to<s n="pr"/></l><r>mit<b/>Bezug<b/>auf<s n="pr"/></r></p></e>
     <e><p><l>in<b/>relation<b/>to<s n="pr"/></l><r>im<b/>Verhältnis<b/>zu<s n="pr"/></r></p></e>
     <e r="LR"><p><l>in<b/>spite<b/>of<s n="pr"/></l><r>trotz<s n="pr"/></r></p></e>
@@ -358,7 +353,6 @@
     <e r="LR"><p><l>thou<s n="prn"/></l><r>du<s n="prn"/></r></p></e>
     <e r="LR"><p><l>thyself<s n="prn"/></l><r>dich<s n="prn"/></r></p></e>
     <e r="LR"><p><l>twain<s n="prn"/></l><r>beide<s n="prn"/></r></p></e>
-    <e><p><l>various<s n="prn"/></l><r>verschiedene<s n="prn"/></r></p></e>
     <e><p><l>what<s n="prn"/></l><r>was<s n="prn"/></r></p></e>
     <e r="LR"><p><l>whatever<s n="prn"/></l><r>was<s n="prn"/></r></p></e>
     <e r="RL"><p><l>whatever<s n="prn"/></l><r>was<b/>auch<b/>immer<s n="prn"/></r></p></e>
@@ -905,6 +899,7 @@
     <e r="LR"><p><l>air<b/>flow<s n="n"/></l><r>Luftströmung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>air<b/>force<s n="n"/></l><r>Luftwaffe<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>air<b/>hammer<s n="n"/></l><r>Drucklufthammer<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>air<b/>hostess<s n="n"/></l><r>Flugbegleiterin<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>air<b/>hostess<s n="n"/></l><r>Stewardeß<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>air<b/>lock<s n="n"/></l><r>Luftschleuse<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>air<b/>pirate<s n="n"/></l><r>Luftpirat<s n="n"/><s n="m"/></r></p></e>
@@ -1754,7 +1749,6 @@
     <e r="RL"><p><l>athlete<s n="n"/></l><r>Leichtathlet<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>athleticism<s n="n"/></l><r>Athletik<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>athletics<s n="n"/></l><r>Leichtathletik<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>Atlantic<s n="n"/></l><r>Atlantik<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Atlantic<b/>coast<s n="n"/></l><r>Atlantikküste<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>atlas<s n="n"/></l><r>Atlas<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>ATM<s n="n"/></l><r>ATM<s n="n"/></r></p></e>
@@ -4160,11 +4154,12 @@
     <e><p><l>charity<b/>performance<s n="n"/></l><r>Wohltätigkeitsveranstaltung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>charlatan<s n="n"/></l><r>Scharlatan<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>charlatanism<s n="n"/></l><r>Scharlatanerie<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>charm<s n="n"/></l><r>Amulett<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>charm<s n="n"/></l><r>Glücksbringer<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>charm<s n="n"/></l><r>Charm<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>charm<s n="n"/></l><r>Zauber<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>charm<s n="n"/></l><r>Zauberkraft<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>charm<s n="n"/></l><r>Amulett<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>charm<s n="n"/></l><r>Charme<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>charm<s n="n"/></l><r>Glücksbringer<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>charm<s n="n"/></l><r>Zauberkraft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>charmer<s n="n"/></l><r>Charmeur<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chart<s n="n"/></l><r>Chart<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>charter<s n="n"/></l><r>Charta<s n="n"/><s n="f"/></r></p></e>
@@ -4873,6 +4868,7 @@
     <e><p><l>colossus<s n="n"/></l><r>Koloss<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>colossus<s n="n"/></l><r>Riese<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>colour<s n="n"/></l><r>Farbe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>colour<b/>brochure<s n="n"/></l><r>Farbprospekt<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>colour<b/>film<s n="n"/></l><r>Farbfilm<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>colour<g><b/>of<b/>the<b/>hair</g><s n="n"/></l><r>Haarfarbe<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>colour<g><b/>of<b/>the<b/>skin</g><s n="n"/></l><r>Hautfarbe<s n="n"/><s n="f"/></r></p></e>
@@ -7861,9 +7857,10 @@
     <e><p><l>English<b/>book<s n="n"/></l><r>Englischbuch<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>English<b/>Channel<s n="n"/></l><r>Ärmelkanal<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>English<b/>class<s n="n"/></l><r>Englischkurs<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>English<b/>class<s n="n"/></l><r>Englischkursus<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>English<b/>class<s n="n"/></l><r>Englischstunde<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>English<b/>horn<s n="n"/></l><r>Englischhorn<s n="n"/><s n="nt"/></r></p></e>
-    <e r="RL"><p><l>English<b/>lessons<s n="n"/></l><r>Englischunterricht<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>English<b/>lessons<s n="n"/></l><r>Englischunterricht<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>English<b/>speaker<s n="n"/></l><r>Englischsprachiger<s n="n"/></r></p></e>
     <e><p><l>English<b/>teacher<s n="n"/></l><r>Englischlehrer<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>English<b/>teacher<s n="n"/></l><r>Englischlehrerin<s n="n"/><s n="f"/></r></p></e>
@@ -8572,6 +8569,7 @@
     <e><p><l>favourite<b/>book<s n="n"/></l><r>Lieblingsbuch<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>favourite<b/>brand<g><b/>of<b/>cigarettes</g><s n="n"/></l><r>Lieblingszigarettenmarke<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>favourite<b/>day<s n="n"/></l><r>Lieblingstag<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>favourite<b/>day<g><b/>of<b/>the<b/>week</g><s n="n"/></l><r>Lieblingswochentag<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>favourite<b/>dish<s n="n"/></l><r>Lieblingsessen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>favourite<b/>dish<s n="n"/></l><r>Lieblingsgericht<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>favourite<b/>drink<s n="n"/></l><r>Lieblingsgetränk<s n="n"/><s n="nt"/></r></p></e>
@@ -19314,8 +19312,8 @@
     <e><p><l>Scotch<b/>whisky<s n="n"/></l><r>schottischer<b/>Whisky<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Scots<b/>pine<s n="n"/></l><r>Waldkiefer<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Scotsman<s n="n"/></l><r>Schotte<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>Scotswoman<s n="n"/></l><r>Schottin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Scottish<s n="n"/></l><r>Schotten<s n="n"/></r></p></e>
-    <e><p><l>Scottish<b/>woman<s n="n"/></l><r>Schottin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>scoundrel<s n="n"/></l><r>Halunke<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>scout<s n="n"/></l><r>Scout<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>scoutmaster<s n="n"/></l><r>Führer<s n="n"/><s n="m"/></r></p></e>
@@ -19452,6 +19450,7 @@
     <e><p><l>secondary<b/>aim<s n="n"/></l><r>Nebenzweck<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>secondary<b/>modern<b/>school<s n="n"/></l><r>Realschule<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>secondary<b/>school<s n="n"/></l><r>Gymnasium<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>secondary<b/>school<s n="n"/></l><r>Oberschule<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>secondary-school<b/>teacher<s n="n"/></l><r>Gymnasiallehrer<s n="n"/></r></p></e>
     <e><p><l>seconds<s n="n"/></l><r>Sekunden<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>secrecy<s n="n"/></l><r>Geheimhaltung<s n="n"/><s n="f"/></r></p></e>
@@ -21490,6 +21489,7 @@
     <e><p><l>subversiveness<s n="n"/></l><r>Sturz<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>subway<s n="n"/></l><r>U-Bahn<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>subway<b/>station<s n="n"/></l><r>U-Bahnhaltestelle<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>subway<b/>station<s n="n"/></l><r>U-Bahn-Haltestelle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>success<s n="n"/></l><r>Erfolg<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>success<b/>rate<s n="n"/></l><r>Erfolgsrate<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>succession<s n="n"/></l><r>Aufeinanderfolge<s n="n"/><s n="f"/></r></p></e>
@@ -21895,6 +21895,7 @@
     <e r="RL"><p><l>talker<s n="n"/></l><r>Sprechender<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>talking<s n="n"/></l><r>Reden<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>talking<b/>book<s n="n"/></l><r>Hörbuch<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>tall<b/>story<s n="n"/></l><r>Lügenmärchen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>tamer<s n="n"/></l><r>Tierbändiger<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>tamer<s n="n"/></l><r>Dompteur<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Tamil<s n="n"/></l><r>Tamil<s n="n"/><s n="nt"/></r></p></e>
@@ -23290,6 +23291,7 @@
     <e r="LR"><p><l>undergraduate<s n="n"/></l><r>Student<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>underground<s n="n"/></l><r>U-Bahn<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>underground<s n="n"/></l><r>Untergrund<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>underground<b/>station<s n="n"/></l><r>U-Bahn-Haltestelle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>underground<b/>station<s n="n"/></l><r>U-Bahn-Station<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>underpants<s n="n"/></l><r>Unterhose<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>underpass<s n="n"/></l><r>Unterführung<s n="n"/><s n="f"/></r></p></e>
@@ -31619,7 +31621,7 @@
     <e><p><l>Arctic<b/>Ocean<s n="np"/></l><r>Nordpolarmeer<s n="np"/></r></p></e>
     <e><p><l>Asturias<s n="np"/></l><r>Asturias<s n="np"/></r></p></e>
     <e><p><l>Atlantic<s n="np"/></l><r>Atlantik<s n="np"/></r></p></e>
-    <e><p><l>Atlantic<b/>Ocean<s n="np"/></l><r>Atlantic<b/>Ocean<s n="np"/></r></p></e>
+    <e><p><l>Atlantic<b/>Ocean<s n="np"/></l><r>Atlantik<s n="np"/></r></p></e>
     <e><p><l>Atlantic<b/>Ocean<s n="np"/></l><r>Atlantischer<b/>Ozean<s n="np"/></r></p></e>
     <e r="RL"><p><l>Atlantic<b/>Ocean<s n="np"/></l><r>Atlantische<b/>Ozean<s n="np"/></r></p></e>
     <e><p><l>Australasia<s n="np"/></l><r>Australasien<s n="np"/></r></p></e>
@@ -31679,6 +31681,7 @@
     <e><p><l>East<b/>Siberian<b/>Sea<s n="np"/></l><r>Ostsibirische<b/>See<s n="np"/></r></p></e>
     <e><p><l>Edmonton<s n="np"/></l><r>Edmonton<s n="np"/></r></p></e>
     <e><p><l>Empire<b/>State<b/>Building<s n="np"/></l><r>Empire<b/>State<b/>Building<s n="np"/></r></p></e>
+    <e r="LR"><p><l>Empire-State-Building<s n="np"/></l><r>Empire<b/>State<b/>Building<s n="np"/></r></p></e>
     <e><p><l>English<b/>Channel<s n="np"/></l><r>Ärmelkanal<s n="np"/></r></p></e>
     <e><p><l>Etrurien<s n="np"/></l><r>Etrurien<s n="np"/></r></p></e>
     <e><p><l>European<b/>Union<s n="np"/></l><r>European<b/>Union<s n="np"/></r></p></e>
@@ -31794,12 +31797,12 @@
     <e><p><l>Slovenien<s n="np"/></l><r>Slovenien<s n="np"/></r></p></e>
     <e><p><l>Soho<s n="np"/></l><r>Soho<s n="np"/></r></p></e>
     <e><p><l>South<b/>London<s n="np"/></l><r>Süd-London<s n="np"/></r></p></e>
-    <e><p><l>South-Korea<s n="np"/></l><r>South-Korea<s n="np"/></r></p></e>
+    <e><p><l>South-Korea<s n="np"/></l><r>Südkorea<s n="np"/></r></p></e>
     <e><p><l>south-western<b/>Iceland<s n="np"/></l><r>Süd-West-Island<s n="np"/></r></p></e>
     <e><p><l>Sparta<s n="np"/></l><r>Sparta<s n="np"/></r></p></e>
     <e><p><l>Stansbury<s n="np"/></l><r>Stansbury<s n="np"/></r></p></e>
     <e><p><l>Stonehenge<s n="np"/></l><r>Stonehenge<s n="np"/></r></p></e>
-    <e><p><l>Strasbourg<s n="np"/></l><r>Strasbourg<s n="np"/></r></p></e>
+    <e><p><l>Strasbourg<s n="np"/></l><r>Straßburg<s n="np"/></r></p></e>
     <e><p><l>Sunderland<s n="np"/></l><r>Sunderland<s n="np"/></r></p></e>
     <e><p><l>Tansania<s n="np"/></l><r>Tansania<s n="np"/></r></p></e>
     <e><p><l>Tanzania<s n="np"/></l><r>Tanzania<s n="np"/></r></p></e>
@@ -32113,8 +32116,8 @@
     <e><i>Sierra<s n="np"/></i></e>
     <e><i>Siôn<s n="np"/></i></e>
     <e><i>Sioned<s n="np"/></i></e>
-    <e><i>Social<b/>Democratic<b/>Alliance<s n="np"/></i></e>
-    <e><i>Social<b/>Democratic<b/>Party<s n="np"/></i></e>
+    <e><p><l>Social<b/>Democratic<b/>Alliance<s n="np"/></l><r>Sozialdemokratische<b/>Allianz<s n="np"/></r></p></e>
+    <e><p><l>Social<b/>Democratic<b/>Party<s n="np"/></l><r>Sozialdemokratische<b/>Partei<s n="np"/></r></p></e>
     <e><i>Sol<s n="np"/></i></e>
     <e><i>Solange<s n="np"/></i></e>
     <e><i>Somerset<s n="np"/></i></e>
@@ -32137,7 +32140,7 @@
     <e><i>The<b/>Times<s n="np"/></i></e>
     <e r="LR"><p><l>the<b/>UK<s n="np"/></l><r>das<b/>Vereinigte<b/>Königreich<s n="np"/></r></p></e>
     <e><p><l>the<b/>United<b/>Kingdom<s n="np"/></l><r>das<b/>Vereinigte<b/>Königreich<s n="np"/></r></p></e>
-    <e><i>the<b/>United<b/>States<s n="np"/></i></e>
+    <e><p><l>the<b/>United<b/>States<s n="np"/></l><r>die<b/>Vereinigten<b/>Staaten<s n="np"/></r></p></e>
     <e><p><l>the<b/>United<b/>States<b/>of<b/>America<s n="np"/></l><r>die<b/>Vereinigten<b/>Staaten<b/>von<b/>Amerika<s n="np"/></r></p></e>
     <e><i>Tolstoy<s n="np"/></i></e>
     <e><i>Tomaso<s n="np"/></i></e>
@@ -33296,6 +33299,7 @@
     <e><p><l>criminal<s n="adj"/></l><r>verbrecherisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>crisp<s n="adj"/></l><r>knusprig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>crispy<s n="adj"/></l><r>knusprig<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>crispy<s n="adj"/></l><r>kross<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>critical<s n="adj"/></l><r>kritisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>croaky<s n="adj"/></l><r>heiser<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Croatian<s n="adj"/></l><r>kroatisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -34133,8 +34137,8 @@
     <e r="RL"><p><l>foggy<s n="adj"/><s n="sint"/></l><r>nebelig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>folksy<s n="adj"/></l><r>volkstümlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>follicular<s n="adj"/></l><r>follikelartig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>following<s n="adj"/></l><r>darauffolgend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>following<s n="adj"/></l><r>folgend<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>following<s n="adj"/></l><r>darauffolgend<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>fond<s n="adj"/><s n="sint"/></l><r>lieb<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>foolhardy<s n="adj"/></l><r>tollkühn<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>foolish<s n="adj"/></l><r>närrisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -38129,7 +38133,7 @@
     <e><p><l>variable<s n="adj"/></l><r>variabel<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>varicose<s n="adj"/></l><r>varikös<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>varied<s n="adj"/></l><r>verschieden<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>various<s n="adj"/></l><r>verschiedene<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>various<s n="adj"/></l><r>verschieden<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>varying<s n="adj"/></l><r>verschieden<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>vast<s n="adj"/><s n="sint"/></l><r>unermesslich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>vegan<s n="adj"/></l><r>vegan<s n="adj"/><s n="sint"/></r></p></e>
@@ -38383,15 +38387,8 @@
     <!-- Adverbs -->
 
     <e r="LR"><p><l>'cause<s n="adv"/></l><r>nämlich<s n="adv"/></r></p></e>
-    <e><p><l>a<b/>bit<s n="adv"/></l><r>leicht<s n="adv"/></r></p></e>
-    <e><p><l>a<b/>hundred<b/>times<s n="adv"/></l><r>hundertmal<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>a<b/>little<s n="adv"/></l><r>bisschen<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>a<b/>little<s n="adv"/></l><r>bißchen<s n="adv"/></r></p></e>
-    <e><p><l>a<b/>long<b/>time<b/>ago<s n="adv"/></l><r>vorzeiten<s n="adv"/></r></p></e>
-    <e><p><l>a<b/>lot<s n="adv"/></l><r>viel<s n="adv"/></r></p></e>
-    <e><p><l>a<b/>priori<s n="adv"/></l><r>vorneherein<s n="adv"/></r></p></e>
-    <e><p><l>a<b/>time<s n="adv"/></l><r>jedesmal<s n="adv"/></r></p></e>
     <e r="LR"><p><l>a.m.<s n="adv"/></l><r>morgens<s n="adv"/></r></p></e>
+    <e><p><l>aback<s n="adv"/></l><r>zurück<s n="preadv"/></r></p></e>
     <e r="LR"><p><l>ably<s n="adv"/></l><r>geschickt<s n="adv"/></r></p></e>
     <e><p><l>abnormal<s n="adv"/></l><r>abnormal<s n="adv"/></r></p></e>
     <e><p><l>abnormal<s n="adv"/></l><r>unnormal<s n="adv"/></r></p></e>
@@ -38399,33 +38396,29 @@
     <e><p><l>about<s n="adv"/></l><r>etwa<s n="adv"/></r></p></e>
     <e r="RL"><p><l>about<s n="adv"/></l><r>circa<s n="adv"/></r></p></e>
     <e r="RL"><p><l>about<s n="adv"/></l><r>ungefähr<s n="adv"/></r></p></e>
-    <e><p><l>about<b/>this<s n="adv"/></l><r>hierüber<s n="adv"/></r></p></e>
-    <e><p><l>about<b/>what<s n="adv"/></l><r>worum<s n="adv"/></r></p></e>
     <e><p><l>above<s n="adv"/></l><r>droben<s n="adv"/></r></p></e>
-    <e><p><l>above<b/>ground<s n="adv"/></l><r>oberirdisch<s n="adv"/></r></p></e>
     <e><p><l>abreast<s n="adv"/></l><r>nebeneinander<s n="adv"/></r></p></e>
     <e><p><l>abroad<s n="adv"/></l><r>im<b/>Ausland<s n="adv"/></r></p></e>
     <e r="RL"><p><l>abroad<s n="adv"/></l><r>überallhin<s n="adv"/></r></p></e>
     <e><p><l>abruptly<s n="adv"/></l><r>jählings<s n="adv"/></r></p></e>
+    <e><p><l>absolutely<s n="adv"/></l><r>partout<s n="preadv"/></r></p></e>
     <e><p><l>absolutely<s n="adv"/></l><r>schlechthin<s n="adv"/></r></p></e>
     <e><p><l>absolutely<s n="adv"/></l><r>unbedingt<s n="adv"/></r></p></e>
-    <e><p><l>absolutely<b/>no<s n="adv"/></l><r>keinerlei<s n="adv"/></r></p></e>
     <e><p><l>absurdly<s n="adv"/></l><r>sinnwidrig<s n="adv"/></r></p></e>
     <e><p><l>abundantly<s n="adv"/></l><r>reichlich<s n="adv"/></r></p></e>
     <e><p><l>accidentally<s n="adv"/></l><r>zufällig<s n="adv"/></r></p></e>
     <e><p><l>accidentally<s n="adv"/></l><r>zufälligerweise<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>according<b/>to<s n="adv"/></l><r>nach<s n="adv"/></r></p></e>
     <e><p><l>accordingly<s n="adv"/></l><r>demzufolge<s n="adv"/></r></p></e>
+    <e><p><l>accordingly<s n="adv"/></l><r>demzufolge<s n="preadv"/></r></p></e>
     <e r="LR"><p><l>accurately<s n="adv"/></l><r>genau<s n="adv"/></r></p></e>
     <e><p><l>across<s n="adv"/></l><r>darüber<s n="adv"/></r></p></e>
     <e r="RL"><p><l>across<s n="adv"/></l><r>hinüber<s n="adv"/></r></p></e>
-    <e><p><l>across<b/>the<b/>country<s n="adv"/></l><r>landesweit<s n="adv"/></r></p></e>
-    <e><p><l>across<b/>the<b/>globe<s n="adv"/></l><r>weltweit<s n="adv"/></r></p></e>
     <e><p><l>actively<s n="adv"/></l><r>aktiv<s n="adv"/></r></p></e>
     <e r="LR"><p><l>actually<s n="adv"/></l><r>eigentlich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>actually<s n="adv"/></l><r>eigtl.<s n="abbr"/></r></p></e>
     <e r="RL"><p><l>actually<s n="adv"/></l><r>sogar<s n="adv"/></r></p></e>
     <e><p><l>acutely<s n="adv"/></l><r>akut<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>acutely<s n="adv"/></l><r>äußerst<s n="adv"/></r></p></e>
     <e><p><l>additionally<s n="adv"/></l><r>außerdem<s n="adv"/></r></p></e>
     <e><p><l>adequate<s n="adv"/></l><r>adäquat<s n="adv"/></r></p></e>
     <e><p><l>adequately<s n="adv"/></l><r>angemessen<s n="adv"/></r></p></e>
@@ -38437,12 +38430,6 @@
     <e><p><l>aft<s n="adv"/></l><r>hinten<s n="adv"/></r></p></e>
     <e><p><l>after<s n="adv"/></l><r>nachdem<s n="adv"/></r></p></e>
     <e r="RL"><p><l>after<s n="adv"/></l><r>hinterher<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>after<b/>all<s n="adv"/></l><r>schließlich<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>after<b/>all<s n="adv"/></l><r>immerhin<s n="adv"/></r></p></e>
-    <e><p><l>after<b/>date<s n="adv"/></l><r>dato<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>after<b/>noon<s n="adv"/></l><r>nachmittags<s n="adv"/></r></p></e>
-    <e><p><l>after<b/>this<s n="adv"/></l><r>hiernach<s n="adv"/></r></p></e>
-    <e><p><l>after<b/>which<s n="adv"/></l><r>wonach<s n="adv"/></r></p></e>
     <e><p><l>afterwards<s n="adv"/></l><r>danach<s n="adv"/></r></p></e>
     <e r="RL"><p><l>afterwards<s n="adv"/></l><r>hierauf<s n="adv"/></r></p></e>
     <e><p><l>again<s n="adv"/></l><r>abermals<s n="adv"/></r></p></e>
@@ -38452,10 +38439,6 @@
     <e r="RL"><p><l>again<s n="adv"/></l><r>nochmals<s n="adv"/></r></p></e>
     <e r="RL"><p><l>again<s n="adv"/></l><r>wieder<s n="adv"/></r></p></e>
     <e><p><l>against<s n="adv"/></l><r>wider<s n="adv"/></r></p></e>
-    <e><p><l>against<b/>each<b/>other<s n="adv"/></l><r>gegeneinander<s n="adv"/></r></p></e>
-    <e><p><l>against<b/>one<b/>another<s n="adv"/></l><r>widereinander<s n="adv"/></r></p></e>
-    <e><p><l>against<b/>orders<s n="adv"/></l><r>verbotenerweise<s n="adv"/></r></p></e>
-    <e><p><l>against<b/>what<s n="adv"/></l><r>wogegen<s n="adv"/></r></p></e>
     <e><p><l>ago<s n="adv"/></l><r>vor<s n="adv"/></r></p></e>
     <e><p><l>agree<s n="adv"/></l><r>überein<s n="adv"/></r></p></e>
     <e><p><l>ahead<s n="adv"/></l><r>vorn<s n="adv"/></r></p></e>
@@ -38465,15 +38448,6 @@
     <e><p><l>alias<s n="adv"/></l><r>alias<s n="adv"/></r></p></e>
     <e><p><l>alike<s n="adv"/></l><r>gleichartig<s n="adv"/></r></p></e>
     <e><p><l>all<s n="adv"/></l><r>alle<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>along<s n="adv"/></l><r>ständig<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>around<s n="adv"/></l><r>rings<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>of<b/>them<s n="adv"/></l><r>allesamt<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>one's<b/>life<s n="adv"/></l><r>zeitlebens<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>over<s n="adv"/></l><r>vorüber<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>over<b/>Europe<s n="adv"/></l><r>europaweit<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>over<b/>the<b/>place<s n="adv"/></l><r>querbeet<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>the<b/>more<s n="adv"/></l><r>umso<s n="adv"/></r></p></e>
-    <e><p><l>all<b/>the<b/>same<s n="adv"/></l><r>genauso<s n="adv"/></r></p></e>
     <e><p><l>all-around<s n="adv"/></l><r>ringsum<s n="adv"/></r></p></e>
     <e><p><l>allegedly<s n="adv"/></l><r>angeblich<s n="adv"/></r></p></e>
     <e><p><l>almost<s n="adv"/></l><r>fast<s n="adv"/></r></p></e>
@@ -38499,11 +38473,8 @@
     <e r="RL"><p><l>always<s n="adv"/></l><r>prinzipiell<s n="adv"/></r></p></e>
     <e r="RL"><p><l>always<s n="adv"/></l><r>schon<b/>immer<s n="adv"/></r></p></e>
     <e r="RL"><p><l>always<s n="adv"/></l><r>stets<s n="adv"/></r></p></e>
-    <e><p><l>am<b/>of<b/>use<s n="adv"/></l><r>nütze<s n="adv"/></r></p></e>
     <e><p><l>amazedly<s n="adv"/></l><r>verwundert<s n="adv"/></r></p></e>
     <e><p><l>amidst<s n="adv"/></l><r>inmitten<s n="adv"/></r></p></e>
-    <e><p><l>among<b/>each<b/>other<s n="adv"/></l><r>untereinander<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>among<b/>others<s n="adv"/></l><r>u.a.<s n="abbr"/></r></p></e>
     <e><p><l>amongst<s n="adv"/></l><r>inmitten<s n="adv"/></r></p></e>
     <e><p><l>angrily<s n="adv"/></l><r>ärgerlich<s n="adv"/></r></p></e>
     <e><p><l>annoyingly<s n="adv"/></l><r>ärgerlicherweise<s n="adv"/></r></p></e>
@@ -38512,8 +38483,6 @@
     <e><p><l>anti<s n="adv"/></l><r>anti<s n="adv"/></r></p></e>
     <e><p><l>anti-clockwise<s n="adv"/></l><r>entgegen<b/>dem<b/>Uhrzeigersinn<s n="adv"/></r></p></e>
     <e><p><l>anxiously<s n="adv"/></l><r>unruhig<s n="adv"/></r></p></e>
-    <e><p><l>any<b/>longer<s n="adv"/></l><r>weiterhin<s n="adv"/></r></p></e>
-    <e><p><l>any<b/>more<s n="adv"/></l><r>mehr<s n="adv"/></r></p></e>
     <e><p><l>anyhow<s n="adv"/></l><r>gleichwohl<s n="adv"/></r></p></e>
     <e><p><l>anyhow<s n="adv"/></l><r>ohnedies<s n="adv"/></r></p></e>
     <e><p><l>anyhow<s n="adv"/></l><r>sowieso<s n="adv"/></r></p></e>
@@ -38525,7 +38494,6 @@
     <e r="LR"><p><l>anywhere<s n="adv"/></l><r>irgendwo<s n="adv"/></r></p></e>
     <e><p><l>apart<s n="adv"/></l><r>extra<s n="adv"/></r></p></e>
     <e r="RL"><p><l>apart<s n="adv"/></l><r>auseinander<s n="adv"/></r></p></e>
-    <e><p><l>apart<b/>from<b/>that<s n="adv"/></l><r>ansonsten<s n="adv"/></r></p></e>
     <e><p><l>apparently<s n="adv"/></l><r>scheinbar<s n="adv"/></r></p></e>
     <e r="LR"><p><l>apparently<s n="adv"/></l><r>offensichtlich<s n="adv"/></r></p></e>
     <e><p><l>approximately<s n="adv"/></l><r>zirka<s n="adv"/></r></p></e>
@@ -38533,22 +38501,6 @@
     <e><p><l>around<s n="adv"/></l><r>herum<s n="adv"/></r></p></e>
     <e><p><l>around<s n="adv"/></l><r>umher<s n="adv"/></r></p></e>
     <e><p><l>artificially<s n="adv"/></l><r>gekünstelt<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>a<b/>consequence<s n="adv"/></l><r>somit<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>a<b/>matter<b/>of<b/>fact<s n="adv"/></l><r>tatsächlich<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>a<b/>precaution<s n="adv"/></l><r>vorsichtshalber<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>a<b/>sideline<s n="adv"/></l><r>nebenbei<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>far<b/>as<s n="adv"/></l><r>soweit<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>as<b/>far<b/>as<b/>I<b/>know<s n="adv"/></l><r>m.W.<s n="abbr"/></r></p></e>
-    <e><p><l>as<b/>far<b/>as<b/>possible<s n="adv"/></l><r>möglichst<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>far<b/>as<b/>possible<s n="adv"/></l><r>weitestgehend<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>follows<s n="adv"/></l><r>folgendermaßen<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>is<b/>well<b/>known<s n="adv"/></l><r>bekanntlich<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>long<b/>as<s n="adv"/></l><r>ebensolange<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>often<s n="adv"/></l><r>ebensooft<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>soon<b/>as<s n="adv"/></l><r>sowie<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>soon<b/>as<b/>possible<s n="adv"/></l><r>baldmöglichst<s n="adv"/></r></p></e>
-    <e><p><l>as<b/>well<s n="adv"/></l><r>ebenso<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>as<b/>well<s n="adv"/></l><r>sowie<s n="adv"/></r></p></e>
     <e><p><l>ashore<s n="adv"/></l><r>an<b/>Land<s n="adv"/></r></p></e>
     <e><p><l>aside<s n="adv"/></l><r>beiseite<s n="adv"/></r></p></e>
     <e r="LR"><p><l>askance<s n="adv"/></l><r>seitwärts<s n="adv"/></r></p></e>
@@ -38556,41 +38508,6 @@
     <e><p><l>astonishingly<s n="adv"/></l><r>erstaunlicherweise<s n="adv"/></r></p></e>
     <e><p><l>astride<s n="adv"/></l><r>rittlings<s n="adv"/></r></p></e>
     <e><p><l>asymmetrically<s n="adv"/></l><r>asymmetrisch<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>a<b/>guess<s n="adv"/></l><r>schätzungsweise<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>a<b/>time<s n="adv"/></l><r>jeweils<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>all<s n="adv"/></l><r>überhaupt<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>all<b/>events<s n="adv"/></l><r>allenfalls<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>at<b/>all<b/>times<s n="adv"/></l><r>jederzeit<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>best<s n="adv"/></l><r>bestenfalls<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>first<s n="adv"/></l><r>anfangs<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>at<b/>home<s n="adv"/></l><r>daheim<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>at<b/>home<s n="adv"/></l><r>zuhause<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>it<s n="adv"/></l><r>daran<s n="preadv"/></r></p></e>
-    <e><p><l>at<b/>last<s n="adv"/></l><r>schließlich<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>least<s n="adv"/></l><r>mindestens<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>at<b/>least<s n="adv"/></l><r>zumindest<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>at<b/>long<b/>last<s n="adv"/></l><r>endlich<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>most<s n="adv"/></l><r>höchstens<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>night<s n="adv"/></l><r>nachts<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>once<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>at<b/>once<s n="adv"/></l><r>alsbald<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>one<b/>time<s n="adv"/></l><r>einstmals<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>present<s n="adv"/></l><r>derzeit<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>random<s n="adv"/></l><r>blindlings<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>that<b/>time<s n="adv"/></l><r>dazumal<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>that<b/>time<s n="adv"/></l><r>seinerzeit<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>beginning<s n="adv"/></l><r>eingangs<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>drop<b/>of<b/>a<b/>hat<s n="adv"/></l><r>sogleich<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>front<s n="adv"/></l><r>vorne<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>latest<s n="adv"/></l><r>spätestens<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>longest<s n="adv"/></l><r>längstens<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>maximum<s n="adv"/></l><r>maximal<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>same<b/>time<s n="adv"/></l><r>zugleich<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>time<s n="adv"/></l><r>damals<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>top<b/>of<b/>one's<b/>voice<s n="adv"/></l><r>lauthals<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>the<b/>very<b/>most<s n="adv"/></l><r>allerhöchstens<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>times<s n="adv"/></l><r>zeitweise<s n="adv"/></r></p></e>
-    <e><p><l>at<b/>which<s n="adv"/></l><r>worauf<s n="adv"/></r></p></e>
     <e><p><l>attentively<s n="adv"/></l><r>bedacht<s n="adv"/></r></p></e>
     <e><p><l>automatically<s n="adv"/></l><r>automatisch<s n="adv"/></r></p></e>
     <e><p><l>averagely<s n="adv"/></l><r>durchschnittlich<s n="adv"/></r></p></e>
@@ -38598,13 +38515,11 @@
     <e><p><l>away<s n="adv"/></l><r>fort<s n="adv"/></r></p></e>
     <e r="RL"><p><l>away<s n="adv"/></l><r>hinweg<s n="adv"/></r></p></e>
     <e r="RL"><p><l>away<s n="adv"/></l><r>weg<s n="adv"/></r></p></e>
-    <e><p><l>away<b/>from<b/>home<s n="adv"/></l><r>auswärts<s n="adv"/></r></p></e>
     <e><p><l>awfully<s n="adv"/></l><r>furchtbar<s n="adv"/></r></p></e>
     <e><p><l>awhile<s n="adv"/></l><r>eine<b/>Weile<s n="adv"/></r></p></e>
     <e><p><l>aye<s n="adv"/></l><r>allzeit<s n="adv"/></r></p></e>
     <e><p><l>b.c.<s n="adv"/></l><r>v.Chr.<s n="adv"/></r></p></e>
     <e><p><l>back<s n="adv"/></l><r>zurück<s n="adv"/></r></p></e>
-    <e><p><l>back<b/>then<s n="adv"/></l><r>damals<s n="adv"/></r></p></e>
     <e><p><l>backstage<s n="adv"/></l><r>backstage<s n="adv"/></r></p></e>
     <e r="RL"><p><l>backstage<s n="adv"/></l><r>hinter<b/>den<b/>Kulissen<s n="adv"/></r></p></e>
     <e><p><l>backwards<s n="adv"/></l><r>rückwärts<s n="adv"/></r></p></e>
@@ -38614,12 +38529,8 @@
     <e><p><l>bareback<s n="adv"/></l><r>ungeschützter<b/>Geschlechtsverkehr<s n="adv"/></r></p></e>
     <e><p><l>barefooted<s n="adv"/></l><r>barfüßig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>barely<s n="adv"/></l><r>kaum<s n="adv"/></r></p></e>
-    <e><p><l>based<b/>on<s n="adv"/></l><r>zugrunde<s n="adv"/></r></p></e>
     <e><p><l>basically<s n="adv"/></l><r>grundlegend<s n="adv"/></r></p></e>
-    <e><p><l>be<b/>granted<s n="adv"/></l><r>zuteil<s n="adv"/></r></p></e>
     <e><p><l>beautifully<s n="adv"/></l><r>erfreulich<s n="adv"/></r></p></e>
-    <e><p><l>because<b/>of<b/>them<s n="adv"/></l><r>ihretwegen<s n="adv"/></r></p></e>
-    <e><p><l>because<b/>of<b/>you<s n="adv"/></l><r>euretwegen<s n="adv"/></r></p></e>
     <e><p><l>before<s n="adv"/></l><r>bevor<s n="adv"/></r></p></e>
     <e><p><l>before<s n="adv"/></l><r>ehe<s n="adv"/></r></p></e>
     <e><p><l>beforehand<s n="adv"/></l><r>davor<s n="adv"/></r></p></e>
@@ -38628,14 +38539,11 @@
     <e><p><l>behind<s n="adv"/></l><r>dahinter<s n="adv"/></r></p></e>
     <e><p><l>below<s n="adv"/></l><r>stromab<s n="adv"/></r></p></e>
     <e r="LR"><p><l>below<s n="adv"/></l><r>unten<s n="adv"/></r></p></e>
-    <e><p><l>below<b/>ground<s n="adv"/></l><r>tot<s n="adv"/></r></p></e>
     <e><p><l>beneath<s n="adv"/></l><r>unterhalb<s n="adv"/></r></p></e>
     <e r="RL"><p><l>beneath<s n="adv"/></l><r>drunter<s n="adv"/></r></p></e>
     <e><p><l>benefit<s n="adv"/></l><r>zugute<s n="adv"/></r></p></e>
     <e><p><l>benevolently<s n="adv"/></l><r>wohlwollend<s n="adv"/></r></p></e>
-    <e><p><l>beside<b/>it<s n="adv"/></l><r>daneben<s n="adv"/></r></p></e>
     <e><p><l>besides<s n="adv"/></l><r>zudem<s n="adv"/></r></p></e>
-    <e><p><l>between<b/>then<b/>and<b/>now<s n="adv"/></l><r>seitdem<s n="adv"/></r></p></e>
     <e><p><l>beyond<s n="adv"/></l><r>weiterhin<s n="adv"/></r></p></e>
     <e><p><l>biologically<s n="adv"/></l><r>biologisch<s n="adv"/></r></p></e>
     <e><p><l>bit<s n="adv"/></l><r>bisschen<s n="adv"/></r></p></e>
@@ -38654,34 +38562,15 @@
     <e><p><l>brutally<s n="adv"/></l><r>brutal<s n="adv"/></r></p></e>
     <e><p><l>busily<s n="adv"/></l><r>beschäftigt<s n="adv"/></r></p></e>
     <e><p><l>but<s n="adv"/></l><r>dennoch<s n="adv"/></r></p></e>
-    <e><p><l>but<b/>then<b/>again<s n="adv"/></l><r>andrerseits<s n="adv"/></r></p></e>
     <e><p><l>by<s n="adv"/></l><r>mal<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>by<b/>and<b/>by<s n="adv"/></l><r>allmählich<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>by<b/>chance<s n="adv"/></l><r>zufällig<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>by<b/>degrees<s n="adv"/></l><r>allmählich<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>by<b/>far<s n="adv"/></l><r>weit<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>fits<b/>and<b/>starts<s n="adv"/></l><r>sporadisch<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>force<s n="adv"/></l><r>zwangsweise<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>heart<s n="adv"/></l><r>auswendig<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>mistake<s n="adv"/></l><r>irrtümlich<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>no<b/>means<s n="adv"/></l><r>beileibe<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>by<b/>no<b/>means<s n="adv"/></l><r>mitnichten<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>now<s n="adv"/></l><r>mittlerweile<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>return<s n="adv"/></l><r>postwendend<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>the<b/>hundred<s n="adv"/></l><r>hundertweise<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>the<b/>same<b/>token<s n="adv"/></l><r>ebenfalls<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>the<b/>way<s n="adv"/></l><r>apropos<s n="adv"/></r></p></e>
-    <e><p><l>by<b/>the<b/>way<s n="adv"/></l><r>übrigens<s n="adv"/></r></p></e>
     <e><p><l>calmly<s n="adv"/></l><r>ruhig<s n="adv"/></r></p></e>
     <e><p><l>capable<s n="adv"/></l><r>fähig<s n="adv"/></r></p></e>
-    <e><p><l>capable<b/>of<s n="adv"/></l><r>imstande<s n="adv"/></r></p></e>
     <e><p><l>capaciously<s n="adv"/></l><r>geräumig<s n="adv"/></r></p></e>
     <e><p><l>carefully<s n="adv"/></l><r>vorsichtig<s n="adv"/></r></p></e>
     <e><p><l>careless<s n="adv"/></l><r>leichtsinnig<s n="adv"/></r></p></e>
     <e><p><l>carelessly<s n="adv"/></l><r>nachlässig<s n="adv"/></r></p></e>
     <e><p><l>caring<s n="adv"/></l><r>sozial<s n="adv"/></r></p></e>
     <e><p><l>casually<s n="adv"/></l><r>beiläufig<s n="adv"/></r></p></e>
-    <e><p><l>catch<b/>sight<s n="adv"/></l><r>ansichtig<s n="adv"/></r></p></e>
     <e><p><l>categorically<s n="adv"/></l><r>kategorisch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>cautiously<s n="adv"/></l><r>vorsichtig<s n="adv"/></r></p></e>
     <e><p><l>ceaselessly<s n="adv"/></l><r>unaufhörlich<s n="adv"/></r></p></e>
@@ -38710,10 +38599,8 @@
     <e><p><l>comfortably<s n="adv"/></l><r>behaglich<s n="adv"/></r></p></e>
     <e><p><l>commercially<s n="adv"/></l><r>gewerblich<s n="adv"/></r></p></e>
     <e r="LR"><p><l>commonly<s n="adv"/></l><r>gewöhnlich<s n="adv"/></r></p></e>
-    <e><p><l>commonly<b/>called<s n="adv"/></l><r>vulgo<s n="adv"/></r></p></e>
     <e><p><l>comparatively<s n="adv"/></l><r>vergleichsweise<s n="adv"/></r></p></e>
     <e r="RL"><p><l>comparatively<s n="adv"/></l><r>verhältnismäßig<s n="adv"/></r></p></e>
-    <e><p><l>compelled<b/>to<s n="adv"/></l><r>gezwungenermaßen<s n="adv"/></r></p></e>
     <e><p><l>competently<s n="adv"/></l><r>sachkundig<s n="adv"/></r></p></e>
     <e><p><l>completely<s n="adv"/></l><r>völlig<s n="adv"/></r></p></e>
     <e r="RL"><p><l>completely<s n="adv"/></l><r>komplett<s n="adv"/></r></p></e>
@@ -38760,7 +38647,6 @@
     <e r="LR"><p><l>customary<s n="adv"/></l><r>üblich<s n="adv"/></r></p></e>
     <e><p><l>daily<s n="adv"/></l><r>täglich<s n="adv"/></r></p></e>
     <e><p><l>dangerously<s n="adv"/></l><r>gefährlich<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>de<b/>facto<s n="adv"/></l><r>tatsächlich<s n="adv"/></r></p></e>
     <e><p><l>deadly<s n="adv"/></l><r>tödlich<s n="adv"/></r></p></e>
     <e><p><l>dear<s n="adv"/></l><r>lieber<s n="adv"/></r></p></e>
     <e><p><l>dearly<s n="adv"/></l><r>von<b/>ganzem<b/>Herzen<s n="adv"/></r></p></e>
@@ -38799,8 +38685,6 @@
     <e r="RL"><p><l>down<s n="adv"/></l><r>hinab<s n="adv"/></r></p></e>
     <e r="RL"><p><l>down<s n="adv"/></l><r>hinunter<s n="adv"/></r></p></e>
     <e r="RL"><p><l>down<s n="adv"/></l><r>runter<s n="adv"/></r></p></e>
-    <e><p><l>down<b/>the<b/>country<s n="adv"/></l><r>landab<s n="adv"/></r></p></e>
-    <e><p><l>down<b/>there<s n="adv"/></l><r>drunten<s n="adv"/></r></p></e>
     <e><p><l>down-hill<s n="adv"/></l><r>abwärts<s n="adv"/></r></p></e>
     <e><p><l>down-stream<s n="adv"/></l><r>stromabwärts<s n="adv"/></r></p></e>
     <e><p><l>downhill<s n="adv"/></l><r>bergab<s n="adv"/></r></p></e>
@@ -38818,10 +38702,7 @@
     <e><p><l>drily<s n="adv"/></l><r>trocken<s n="adv"/></r></p></e>
     <e r="LR"><p><l>dryly<s n="adv"/></l><r>trocken<s n="adv"/></r></p></e>
     <e><p><l>duly<s n="adv"/></l><r>ordnungsgemäß<s n="adv"/></r></p></e>
-    <e><p><l>during<b/>the<b/>day<s n="adv"/></l><r>tagsüber<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>during<b/>the<b/>night<s n="adv"/></l><r>nachts<s n="adv"/></r></p></e>
     <e r="LR"><p><l>each<s n="adv"/></l><r>jeweils<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>each<b/>Saturday<s n="adv"/></l><r>samstags<s n="adv"/></r></p></e>
     <e><p><l>eagerly<s n="adv"/></l><r>eifrig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>earlier<s n="adv"/></l><r>eher<s n="adv"/></r></p></e>
     <e><p><l>early<s n="adv"/></l><r>früh<s n="adv"/></r></p></e>
@@ -38836,7 +38717,6 @@
     <e r="LR"><p><l>eastwardly<s n="adv"/></l><r>östlich<s n="adv"/></r></p></e>
     <e><p><l>economically<s n="adv"/></l><r>betriebswirtschaftlich<s n="adv"/></r></p></e>
     <e><p><l>edgewise<s n="adv"/></l><r>seitlich<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>edited<b/>by<s n="adv"/></l><r>Hrsg.<s n="abbr"/></r></p></e>
     <e><p><l>effectively<s n="adv"/></l><r>effektiv<s n="adv"/></r></p></e>
     <e><p><l>effortlessly<s n="adv"/></l><r>mühelos<s n="adv"/></r></p></e>
     <e><p><l>eight-thirty<s n="adv"/></l><r>acht<b/>dreissig<s n="adv"/></r></p></e>
@@ -38845,7 +38725,6 @@
     <e><p><l>electrically<s n="adv"/></l><r>elektrisch<s n="adv"/></r></p></e>
     <e><p><l>electronically<s n="adv"/></l><r>elektronisch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>elegantly<s n="adv"/></l><r>elegant<s n="adv"/></r></p></e>
-    <e><p><l>eleven<b/>times<s n="adv"/></l><r>elfmal<s n="adv"/></r></p></e>
     <e><p><l>eleven-thirty<s n="adv"/></l><r>11<b/>Uhr<b/>dreißig<s n="adv"/></r></p></e>
     <e><p><l>elliptically<s n="adv"/></l><r>elliptisch<s n="adv"/></r></p></e>
     <e><p><l>else<s n="adv"/></l><r>sonst<s n="adv"/></r></p></e>
@@ -38886,7 +38765,6 @@
     <e r="RL"><p><l>ever<s n="adv"/></l><r>je<s n="adv"/></r></p></e>
     <e><p><l>evermore<s n="adv"/></l><r>immerfort<s n="adv"/></r></p></e>
     <e><p><l>every<s n="adv"/></l><r>jede<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>every<b/>day<s n="adv"/></l><r>tagtäglich<s n="adv"/></r></p></e>
     <e><p><l>everyday<s n="adv"/></l><r>tagtäglich<s n="adv"/></r></p></e>
     <e><p><l>everywhere<s n="adv"/></l><r>überall<s n="adv"/></r></p></e>
     <e r="RL"><p><l>everywhere<s n="adv"/></l><r>allenthalben<s n="adv"/></r></p></e>
@@ -38919,12 +38797,8 @@
     <e r="RL"><p><l>faithfully<s n="adv"/></l><r>hochachtungsvoll<s n="adv"/></r></p></e>
     <e><p><l>falsely<s n="adv"/></l><r>falsch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>far<s n="adv"/></l><r>weit<s n="adv"/></r></p></e>
-    <e><p><l>far<b/>away<s n="adv"/></l><r>fernab<s n="adv"/></r></p></e>
-    <e><p><l>far<b/>too<s n="adv"/></l><r>allzu<s n="adv"/></r></p></e>
-    <e><p><l>farther<b/>north<s n="adv"/></l><r>nördlicher<s n="adv"/></r></p></e>
     <e><p><l>fast<s n="adv"/></l><r>zügig<s n="adv"/></r></p></e>
     <e><p><l>favourably<s n="adv"/></l><r>gefällig<s n="adv"/></r></p></e>
-    <e><p><l>felt<b/>like<s n="adv"/></l><r>zumute<s n="adv"/></r></p></e>
     <e r="LR"><p><l>fiercely<s n="adv"/></l><r>wild<s n="adv"/></r></p></e>
     <e><p><l>finally<s n="adv"/></l><r>endlich<s n="adv"/></r></p></e>
     <e><p><l>financially<s n="adv"/></l><r>finanziell<s n="adv"/></r></p></e>
@@ -38937,11 +38811,8 @@
     <e r="RL"><p><l>first<s n="adv"/></l><r>erst<s n="adv"/></r></p></e>
     <e r="RL"><p><l>first<s n="adv"/></l><r>erstmal<s n="adv"/></r></p></e>
     <e r="RL"><p><l>first<s n="adv"/></l><r>zunächst<s n="adv"/></r></p></e>
-    <e><p><l>first<b/>and<b/>foremost<s n="adv"/></l><r>zuallererst<s n="adv"/></r></p></e>
-    <e><p><l>first<b/>of<b/>all<s n="adv"/></l><r>zunächst<s n="adv"/></r></p></e>
     <e><p><l>first-hand<s n="adv"/></l><r>unmittelbar<s n="adv"/></r></p></e>
     <e><p><l>firstly<s n="adv"/></l><r>anfänglich<s n="adv"/></r></p></e>
-    <e><p><l>five<b/>times<s n="adv"/></l><r>fünfmal<s n="adv"/></r></p></e>
     <e><p><l>five-thirty<s n="adv"/></l><r>fünf<b/>dreissig<s n="adv"/></r></p></e>
     <e><p><l>flat<s n="adv"/></l><r>flach<s n="adv"/></r></p></e>
     <e><p><l>flatly<s n="adv"/></l><r>rundweg<s n="adv"/></r></p></e>
@@ -38950,30 +38821,6 @@
     <e><p><l>fondly<s n="adv"/></l><r>zärtlich<s n="adv"/></r></p></e>
     <e><p><l>foolishly<s n="adv"/></l><r>albern<s n="adv"/></r></p></e>
     <e r="RL"><p><l>for<s n="adv"/></l><r>herbei<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>for<b/>a<b/>long<b/>time<s n="adv"/></l><r>lange<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>ever<s n="adv"/></l><r>ewig<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>example<s n="adv"/></l><r>beispielsweise<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>hours<s n="adv"/></l><r>stundenlang<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>it<s n="adv"/></l><r>dafür<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>life<s n="adv"/></l><r>lebenslang<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>many<b/>years<s n="adv"/></l><r>langjährig<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>miles<b/>around<s n="adv"/></l><r>weithin<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>my<b/>part<s n="adv"/></l><r>meinerseits<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>nothing<s n="adv"/></l><r>umsonst<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>nothing<s n="adv"/></l><r>vergebens<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>now<s n="adv"/></l><r>vorerst<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>one<b/>another<s n="adv"/></l><r>füreinander<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>for<b/>our<b/>sake<s n="adv"/></l><r>unsretwegen<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>several<b/>hours<s n="adv"/></l><r>mehrstündig<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>for<b/>sure<s n="adv"/></l><r>sicher<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>that<b/>reason<s n="adv"/></l><r>drum<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>that<b/>very<b/>reason<s n="adv"/></l><r>ebendarum<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>the<b/>first<b/>time<s n="adv"/></l><r>erstmals<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>for<b/>the<b/>most<b/>part<s n="adv"/></l><r>größtenteils<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>the<b/>sake<b/>of<s n="adv"/></l><r>zuliebe<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>what<s n="adv"/></l><r>wofür<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>years<s n="adv"/></l><r>jahrelang<s n="adv"/></r></p></e>
-    <e><p><l>for<b/>your<b/>part<s n="adv"/></l><r>eurerseits<s n="adv"/></r></p></e>
     <e><p><l>formally<s n="adv"/></l><r>formell<s n="adv"/></r></p></e>
     <e><p><l>former<s n="adv"/></l><r>früher<s n="adv"/></r></p></e>
     <e><p><l>formerly<s n="adv"/></l><r>ehedem<s n="adv"/></r></p></e>
@@ -38986,13 +38833,11 @@
     <e r="LR"><p><l>fortunately<s n="adv"/></l><r>glücklicherweise<s n="adv"/></r></p></e>
     <e><p><l>forward<s n="adv"/></l><r>vorwärts<s n="adv"/></r></p></e>
     <e r="RL"><p><l>forward<s n="adv"/></l><r>nachschicken<s n="adv"/></r></p></e>
-    <e><p><l>four<b/>times<s n="adv"/></l><r>viermal<s n="adv"/></r></p></e>
     <e><p><l>four-thirty<s n="adv"/></l><r>4<b/>Uhr<b/>dreißig<s n="adv"/></r></p></e>
     <e><p><l>fourthly<s n="adv"/></l><r>viertens<s n="adv"/></r></p></e>
     <e><p><l>frankly<s n="adv"/></l><r>freimütig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>frantically<s n="adv"/></l><r>wild<s n="adv"/></r></p></e>
     <e r="LR"><p><l>free<s n="adv"/></l><r>frei<s n="adv"/></r></p></e>
-    <e><p><l>free<b/>of<b/>charge<s n="adv"/></l><r>gratis<s n="adv"/></r></p></e>
     <e><p><l>freehand<s n="adv"/></l><r>freihändig<s n="adv"/></r></p></e>
     <e><p><l>freely<s n="adv"/></l><r>frei<s n="adv"/></r></p></e>
     <e><p><l>frequently<s n="adv"/></l><r>häufig<s n="adv"/></r></p></e>
@@ -39000,21 +38845,12 @@
     <e><p><l>friendly<s n="adv"/></l><r>freundlich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>friendly<s n="adv"/></l><r>freundschaftlich<s n="adv"/></r></p></e>
     <e><p><l>frightfully<s n="adv"/></l><r>verheerend<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>each<b/>other<s n="adv"/></l><r>voneinander<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>it<s n="adv"/></l><r>hieraus<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>outside<s n="adv"/></l><r>auswärtig<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>somewhere<s n="adv"/></l><r>irgendwoher<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>the<b/>first<s n="adv"/></l><r>vornherein<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>there<s n="adv"/></l><r>daher<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>time<b/>to<b/>time<s n="adv"/></l><r>bisweilen<s n="adv"/></r></p></e>
-    <e><p><l>from<b/>where<s n="adv"/></l><r>woher<s n="adv"/></r></p></e>
     <e><p><l>front<s n="adv"/></l><r>Front<s n="adv"/></r></p></e>
     <e><p><l>fully<s n="adv"/></l><r>vollauf<s n="adv"/></r></p></e>
     <e><p><l>fully<s n="adv"/></l><r>vollständig<s n="adv"/></r></p></e>
     <e><p><l>fundamentally<s n="adv"/></l><r>grundsätzlich<s n="adv"/></r></p></e>
     <e r="LR"><p><l>furiously<s n="adv"/></l><r>wild<s n="adv"/></r></p></e>
     <e><p><l>further<s n="adv"/></l><r>sonst<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>further<b/>in<s n="adv"/></l><r>weiter<s n="adv"/></r></p></e>
     <e><p><l>furthermore<s n="adv"/></l><r>darüberhinaus<s n="adv"/></r></p></e>
     <e><p><l>furthermore<s n="adv"/></l><r>ferner<s n="adv"/></r></p></e>
     <e><p><l>furthermore<s n="adv"/></l><r>überdies<s n="adv"/></r></p></e>
@@ -39031,7 +38867,6 @@
     <e><p><l>genuinely<s n="adv"/></l><r>echt<s n="adv"/></r></p></e>
     <e><p><l>geographically<s n="adv"/></l><r>geographisch<s n="adv"/></r></p></e>
     <e><p><l>geostrategically<s n="adv"/></l><r>geostrategisch<s n="adv"/></r></p></e>
-    <e><p><l>get<b/>lost<s n="adv"/></l><r>abhanden<s n="adv"/></r></p></e>
     <e><p><l>gingerly<s n="adv"/></l><r>behutsam<s n="adv"/></r></p></e>
     <e><p><l>gladly<s n="adv"/></l><r>gern<s n="adv"/></r></p></e>
     <e><p><l>godly<s n="adv"/></l><r>fromm<s n="adv"/></r></p></e>
@@ -39064,9 +38899,13 @@
     <e><p><l>henceforward<s n="adv"/></l><r>von<b/>nun<b/>an<s n="adv"/></r></p></e>
     <e><p><l>here<s n="adv"/></l><r>hier<s n="adv"/></r></p></e>
     <e><p><l>here<s n="adv"/></l><r>hierher<s n="adv"/></r></p></e>
-    <e><p><l>here<b/>and<b/>there<s n="adv"/></l><r>stellenweise<s n="adv"/></r></p></e>
     <e><p><l>hereafter<s n="adv"/></l><r>hernach<s n="adv"/></r></p></e>
+    <e><p><l>hereby<s n="adv"/></l><r>hierdurch<s n="preadv"/></r></p></e>
+    <e><p><l>hereby<s n="adv"/></l><r>hiermit<s n="preadv"/></r></p></e>
+    <e><p><l>herein<s n="adv"/></l><r>hierin<s n="preadv"/></r></p></e>
+    <e><p><l>hereof<s n="adv"/></l><r>hiervon<s n="preadv"/></r></p></e>
     <e><p><l>heretofore<s n="adv"/></l><r>vordem<s n="adv"/></r></p></e>
+    <e><p><l>hereunto<s n="adv"/></l><r>hierauf<s n="preadv"/></r></p></e>
     <e><p><l>herewith<s n="adv"/></l><r>hiermit<s n="adv"/></r></p></e>
     <e><p><l>hermetically<s n="adv"/></l><r>hermetisch<s n="adv"/></r></p></e>
     <e><p><l>hermetically<s n="adv"/></l><r>luftdicht<s n="adv"/></r></p></e>
@@ -39076,6 +38915,7 @@
     <e><p><l>highly<s n="adv"/></l><r>hoch<s n="adv"/></r></p></e>
     <e><p><l>hindsight<s n="adv"/></l><r>nachhinein<s n="adv"/></r></p></e>
     <e><p><l>historically<s n="adv"/></l><r>historisch<s n="adv"/></r></p></e>
+    <e><p><l>hither<s n="adv"/></l><r>hie<s n="preadv"/></r></p></e>
     <e><p><l>hitherto<s n="adv"/></l><r>bisher<s n="adv"/></r></p></e>
     <e><p><l>hollowly<s n="adv"/></l><r>hohl<s n="adv"/></r></p></e>
     <e><p><l>home<s n="adv"/></l><r>daheim<s n="adv"/></r></p></e>
@@ -39091,24 +38931,15 @@
     <e><p><l>how<s n="adv"/></l><r>wie<s n="adv"/></r></p></e>
     <e r="RL"><p><l>how<s n="adv"/></l><r>inwiefern<s n="adv"/></r></p></e>
     <e r="RL"><p><l>how<s n="adv"/></l><r>wie<s n="preadv"/></r></p></e>
-    <e><p><l>how<b/>far<s n="adv"/></l><r>inwieweit<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>how<b/>many<s n="adv"/></l><r>wievielte<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>how<b/>much<s n="adv"/></l><r>wieviel<s n="adv"/></r></p></e>
     <e><p><l>however<s n="adv"/></l><r>indes<s n="adv"/></r></p></e>
     <e><p><l>however<s n="adv"/></l><r>jedoch<s n="adv"/></r></p></e>
     <e r="RL"><p><l>however<s n="adv"/></l><r>hinwiederum<s n="adv"/></r></p></e>
-    <e><p><l>however<b/>much<s n="adv"/></l><r>sosehr<s n="adv"/></r></p></e>
     <e><p><l>hugely<s n="adv"/></l><r>ungeheuer<s n="adv"/></r></p></e>
     <e><p><l>humbly<s n="adv"/></l><r>bescheiden<s n="adv"/></r></p></e>
     <e><p><l>hungrily<s n="adv"/></l><r>hungrig<s n="adv"/></r></p></e>
     <e><p><l>ibidem<s n="adv"/></l><r>ebenda<s n="adv"/></r></p></e>
     <e><p><l>ideally<s n="adv"/></l><r>idealerweise<s n="adv"/></r></p></e>
     <e><p><l>idiosyncratic<s n="adv"/></l><r>spezifisch<s n="adv"/></r></p></e>
-    <e><p><l>if<b/>necessary<s n="adv"/></l><r>gegebenenfalls<s n="adv"/></r></p></e>
-    <e><p><l>if<b/>necessary<s n="adv"/></l><r>notfalls<s n="adv"/></r></p></e>
-    <e><p><l>if<b/>necessary<s n="adv"/></l><r>nötigenfalls<s n="adv"/></r></p></e>
-    <e><p><l>if<b/>possible<s n="adv"/></l><r>womöglich<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>if<b/>you<b/>please<s n="adv"/></l><r>bitte<s n="adv"/></r></p></e>
     <e><p><l>illegally<s n="adv"/></l><r>illegal<s n="adv"/></r></p></e>
     <e><p><l>imaginatively<s n="adv"/></l><r>schöpferisch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>immediately<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
@@ -39120,68 +38951,6 @@
     <e><p><l>impossibly<s n="adv"/></l><r>ausgeschlossen<s n="adv"/></r></p></e>
     <e><p><l>improvident<s n="adv"/></l><r>unvorsichtig<s n="adv"/></r></p></e>
     <e><p><l>in<s n="adv"/></l><r>herein<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>in<b/>a<b/>jiffy<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>a<b/>low<b/>voice<s n="adv"/></l><r>halblaut<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>a<b/>sudden<b/>way<s n="adv"/></l><r>plötzlich<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>addition<s n="adv"/></l><r>hinzu<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>advance<s n="adv"/></l><r>vorab<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>agreement<s n="adv"/></l><r>handelseinig<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>behind<s n="adv"/></l><r>hinterdrein<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>bulk<s n="adv"/></l><r>abschnittweise<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>in<b/>conjunction<s n="adv"/></l><r>gemeinsam<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>depth<s n="adv"/></l><r>eingehenden<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>detail<s n="adv"/></l><r>ausführlich<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>every<b/>respect<s n="adv"/></l><r>allseits<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>fact<s n="adv"/></l><r>eigentlich<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>fairness<s n="adv"/></l><r>fairerweise<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>fairness<s n="adv"/></l><r>gerechterweise<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>favour<s n="adv"/></l><r>dafür<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>front<s n="adv"/></l><r>vorn<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>in<b/>front<b/>of<s n="adv"/></l><r>vor<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>full<s n="adv"/></l><r>vollständig<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>good<b/>time<s n="adv"/></l><r>beizeiten<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>half<s n="adv"/></l><r>entzwei<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>hindsight<s n="adv"/></l><r>hinterher<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>it<b/>/<b/>them<s n="adv"/></l><r>darein<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>it<b/>/<b/>them<s n="adv"/></l><r>drein<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>kind<s n="adv"/></l><r>Naturallohnwages<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>many<b/>places<s n="adv"/></l><r>vielerorts<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>other<b/>ways<s n="adv"/></l><r>anderswie<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>pairs<s n="adv"/></l><r>paarweise<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>in<b/>particular<s n="adv"/></l><r>i.b.<s n="abbr"/></r></p></e>
-    <e><p><l>in<b/>person<s n="adv"/></l><r>höchstselbst<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>reality<s n="adv"/></l><r>realiter<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>secret<s n="adv"/></l><r>insgeheim<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>short<s n="adv"/></l><r>kurzum<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>in<b/>so<b/>doing<s n="adv"/></l><r>hierbei<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>so<b/>much<b/>as<s n="adv"/></l><r>sofern<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>some<b/>places<s n="adv"/></l><r>mancherorts<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>style<s n="adv"/></l><r>modisch<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>such<b/>a<b/>way<s n="adv"/></l><r>dergestalt<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>such<b/>a<b/>way<s n="adv"/></l><r>solchermaßen<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>afternoon<s n="adv"/></l><r>nachmittags<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>beginning<s n="adv"/></l><r>anfangs<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>evening<s n="adv"/></l><r>abends<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>first<b/>place<s n="adv"/></l><r>erstens<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>future<s n="adv"/></l><r>künftig<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>interim<s n="adv"/></l><r>einstweilen<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>meantime<s n="adv"/></l><r>währenddessen<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>morning<s n="adv"/></l><r>morgens<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>in<b/>the<b/>morning<s n="adv"/></l><r>vormittags<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>in<b/>the<b/>mornings<s n="adv"/></l><r>morgens<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>in<b/>the<b/>near<b/>future<s n="adv"/></l><r>demnächst<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>the<b/>short<b/>term<s n="adv"/></l><r>kurzfristig<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>in<b/>the<b/>year<s n="adv"/></l><r>i.J.<s n="abbr"/></r></p></e>
-    <e><p><l>in<b/>the<b/>year<b/>of<s n="adv"/></l><r>anno<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>these<b/>parts<s n="adv"/></l><r>hierzulande<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>in<b/>this<b/>country<s n="adv"/></l><r>hierzulande<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>in<b/>this<b/>place<s n="adv"/></l><r>hier<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>this<b/>respect<s n="adv"/></l><r>insoweit<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>those<b/>days<s n="adv"/></l><r>damals<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>turn<s n="adv"/></l><r>nacheinander<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>in<b/>turn<s n="adv"/></l><r>seinerseits<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>in<b/>turn<s n="adv"/></l><r>wiederum<s n="adv"/></r></p></e>
-    <e><p><l>in<b/>which<s n="adv"/></l><r>worin<s n="adv"/></r></p></e>
     <e><p><l>inalienably<s n="adv"/></l><r>unveräußerlich<s n="adv"/></r></p></e>
     <e><p><l>incapable<s n="adv"/></l><r>außerstande<s n="adv"/></r></p></e>
     <e><p><l>incautiously<s n="adv"/></l><r>unvorsichtig<s n="adv"/></r></p></e>
@@ -39212,7 +38981,6 @@
     <e r="RL"><p><l>inside<s n="adv"/></l><r>drin<s n="adv"/></r></p></e>
     <e r="RL"><p><l>inside<s n="adv"/></l><r>drinnen<s n="adv"/></r></p></e>
     <e><p><l>insofar<s n="adv"/></l><r>insofern<s n="adv"/></r></p></e>
-    <e><p><l>insomuch<b/>as<s n="adv"/></l><r>insofern<s n="adv"/></r></p></e>
     <e><p><l>instantly<s n="adv"/></l><r>auf<b/>Anhieb<s n="adv"/></r></p></e>
     <e><p><l>instantly<s n="adv"/></l><r>augenblicklich<s n="adv"/></r></p></e>
     <e><p><l>instead<s n="adv"/></l><r>stattdessen<s n="adv"/></r></p></e>
@@ -39223,14 +38991,10 @@
     <e><p><l>intelligently<s n="adv"/></l><r>verständnisvoll<s n="adv"/></r></p></e>
     <e><p><l>intentionally<s n="adv"/></l><r>absichtlich<s n="adv"/></r></p></e>
     <e><p><l>interestingly<s n="adv"/></l><r>interessant<s n="adv"/></r></p></e>
-    <e><p><l>interestingly<b/>enough<s n="adv"/></l><r>interessanterweise<s n="adv"/></r></p></e>
     <e><p><l>internally<s n="adv"/></l><r>intern<s n="adv"/></r></p></e>
     <e><p><l>internationally<s n="adv"/></l><r>international<s n="adv"/></r></p></e>
     <e><p><l>intimately<s n="adv"/></l><r>vertraut<s n="adv"/></r></p></e>
     <e><p><l>into<s n="adv"/></l><r>hinein<s n="adv"/></r></p></e>
-    <e><p><l>into<b/>being<s n="adv"/></l><r>zustande<s n="adv"/></r></p></e>
-    <e><p><l>into<b/>each<b/>other<s n="adv"/></l><r>ineinander<s n="adv"/></r></p></e>
-    <e><p><l>into<b/>the<b/>bargain<s n="adv"/></l><r>obendrein<s n="adv"/></r></p></e>
     <e><p><l>intolerably<s n="adv"/></l><r>unerträglich<s n="adv"/></r></p></e>
     <e><p><l>invariably<s n="adv"/></l><r>ausnahmslos<s n="adv"/></r></p></e>
     <e><p><l>involuntarily<s n="adv"/></l><r>unfreiwillig<s n="adv"/></r></p></e>
@@ -39239,7 +39003,6 @@
     <e><p><l>ironically<s n="adv"/></l><r>ironisch<s n="adv"/></r></p></e>
     <e><p><l>irreparably<s n="adv"/></l><r>irreparabel<s n="adv"/></r></p></e>
     <e><p><l>irrespective<s n="adv"/></l><r>ungeachtet<s n="adv"/></r></p></e>
-    <e><p><l>irrespective<b/>of<s n="adv"/></l><r>unbeschadet<s n="adv"/></r></p></e>
     <e><p><l>irritating<s n="adv"/></l><r>ärgerlich<s n="adv"/></r></p></e>
     <e><p><l>jauntily<s n="adv"/></l><r>flott<s n="adv"/></r></p></e>
     <e><p><l>jealously<s n="adv"/></l><r>eifersüchtig<s n="adv"/></r></p></e>
@@ -39253,12 +39016,6 @@
     <e r="RL"><p><l>just<s n="adv"/></l><r>halt<s n="adv"/></r></p></e>
     <e r="RL"><p><l>just<s n="adv"/></l><r>just<s n="adv"/></r></p></e>
     <e r="RL"><p><l>just<s n="adv"/></l><r>soeben<s n="adv"/></r></p></e>
-    <e><p><l>just<b/>as<s n="adv"/></l><r>ebenso<s n="adv"/></r></p></e>
-    <e><p><l>just<b/>as<b/>far<s n="adv"/></l><r>ebensoweit<s n="adv"/></r></p></e>
-    <e><p><l>just<b/>as<b/>little<s n="adv"/></l><r>ebensowenig<s n="adv"/></r></p></e>
-    <e><p><l>just<b/>as<b/>well<s n="adv"/></l><r>ebensogut<s n="adv"/></r></p></e>
-    <e><p><l>just<b/>now<s n="adv"/></l><r>vorhin<s n="adv"/></r></p></e>
-    <e><p><l>just<b/>right<s n="adv"/></l><r>goldrichtig<s n="adv"/></r></p></e>
     <e><p><l>justifiably<s n="adv"/></l><r>berechtigterweise<s n="adv"/></r></p></e>
     <e><p><l>kindly<s n="adv"/></l><r>dankenswerterweise<s n="adv"/></r></p></e>
     <e><p><l>kindly<s n="adv"/></l><r>freundlicherweise<s n="adv"/></r></p></e>
@@ -39274,7 +39031,6 @@
     <e r="RL"><p><l>lately<s n="adv"/></l><r>unlängst<s n="adv"/></r></p></e>
     <e r="RL"><p><l>lately<s n="adv"/></l><r>vor<b/>kurzem<s n="adv"/></r></p></e>
     <e><p><l>later<s n="adv"/></l><r>nachher<s n="adv"/></r></p></e>
-    <e><p><l>later<b/>on<s n="adv"/></l><r>späterhin<s n="adv"/></r></p></e>
     <e><p><l>lazily<s n="adv"/></l><r>faul<s n="adv"/></r></p></e>
     <e><p><l>least<s n="adv"/></l><r>das<b/>wenigste<s n="adv"/></r></p></e>
     <e><p><l>leastwise<s n="adv"/></l><r>wenigstens<s n="adv"/></r></p></e>
@@ -39287,13 +39043,9 @@
     <e><p><l>legitimately<s n="adv"/></l><r>legitim<s n="adv"/></r></p></e>
     <e><p><l>lengthwise<s n="adv"/></l><r>längs<s n="adv"/></r></p></e>
     <e><p><l>less<s n="adv"/></l><r>wenig<s n="adv"/></r></p></e>
-    <e><p><l>let<b/>alone<s n="adv"/></l><r>geschweige<s n="adv"/></r></p></e>
-    <e><p><l>let's<b/>go<s n="adv"/></l><r>los<s n="adv"/></r></p></e>
     <e><p><l>lewdly<s n="adv"/></l><r>anzüglich<s n="adv"/></r></p></e>
     <e><p><l>light<s n="adv"/></l><r>hell<s n="adv"/></r></p></e>
     <e><p><l>lightly<s n="adv"/></l><r>leicht<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>like<b/>that<s n="adv"/></l><r>so<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>like<b/>this<s n="adv"/></l><r>so<s n="adv"/></r></p></e>
     <e r="LR"><p><l>likely<s n="adv"/></l><r>wahrscheinlich<s n="adv"/></r></p></e>
     <e><p><l>likewise<s n="adv"/></l><r>desgleichen<s n="adv"/></r></p></e>
     <e><p><l>likewise<s n="adv"/></l><r>ebenso<s n="adv"/></r></p></e>
@@ -39308,7 +39060,6 @@
     <e><p><l>logically<s n="adv"/></l><r>logischerweise<s n="adv"/></r></p></e>
     <e><p><l>lonely<s n="adv"/></l><r>einsam<s n="adv"/></r></p></e>
     <e><p><l>long<s n="adv"/></l><r>lang<s n="adv"/></r></p></e>
-    <e><p><l>long<b/>ago<s n="adv"/></l><r>längst<s n="adv"/></r></p></e>
     <e><p><l>longhand<s n="adv"/></l><r>Langschrift<s n="adv"/></r></p></e>
     <e><p><l>look<s n="adv"/></l><r>Blick<s n="adv"/></r></p></e>
     <e><p><l>loosely<s n="adv"/></l><r>locker<s n="adv"/></r></p></e>
@@ -39328,7 +39079,6 @@
     <e r="RL"><p><l>mainly<s n="adv"/></l><r>größtenteils<s n="adv"/></r></p></e>
     <e><p><l>majestically<s n="adv"/></l><r>majestätisch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>major<s n="adv"/></l><r>hauptsächlich<s n="adv"/></r></p></e>
-    <e><p><l>make<b/>sure<s n="adv"/></l><r>sichergehen<s n="adv"/></r></p></e>
     <e><p><l>malicious<s n="adv"/></l><r>bösartig<s n="adv"/></r></p></e>
     <e><p><l>manifestly<s n="adv"/></l><r>offenbar<s n="adv"/></r></p></e>
     <e><p><l>manually<s n="adv"/></l><r>manuell<s n="adv"/></r></p></e>
@@ -39344,6 +39094,8 @@
     <e><p><l>meantime<s n="adv"/></l><r>Zwischenzeit<s n="adv"/></r></p></e>
     <e><p><l>meanwhile<s n="adv"/></l><r>inzwischen<s n="adv"/></r></p></e>
     <e r="RL"><p><l>meanwhile<s n="adv"/></l><r>derweil<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>meanwhile<s n="adv"/></l><r>unterdessen<s n="preadv"/></r></p></e>
+    <e r="RL"><p><l>meanwhile<s n="adv"/></l><r>währenddessen<s n="preadv"/></r></p></e>
     <e><p><l>mechanically<s n="adv"/></l><r>mechanisch<s n="adv"/></r></p></e>
     <e><p><l>memorably<s n="adv"/></l><r>denkwürdig<s n="adv"/></r></p></e>
     <e><p><l>menacingly<s n="adv"/></l><r>bedrohend<s n="adv"/></r></p></e>
@@ -39356,7 +39108,6 @@
     <e r="LR"><p><l>mild<s n="adv"/></l><r>sanft<s n="adv"/></r></p></e>
     <e><p><l>mildly<s n="adv"/></l><r>gelinde<s n="adv"/></r></p></e>
     <e><p><l>militarily<s n="adv"/></l><r>militärisch<s n="adv"/></r></p></e>
-    <e><p><l>mind<b/>you<s n="adv"/></l><r>wohlgemerkt<s n="adv"/></r></p></e>
     <e><p><l>miraculously<s n="adv"/></l><r>wunderbar<s n="adv"/></r></p></e>
     <e><p><l>miserably<s n="adv"/></l><r>elend<s n="adv"/></r></p></e>
     <e><p><l>mistakenly<s n="adv"/></l><r>irrtümlicherweise<s n="adv"/></r></p></e>
@@ -39368,12 +39119,9 @@
     <e><p><l>monumentally<s n="adv"/></l><r>monumental<s n="adv"/></r></p></e>
     <e><p><l>morally<s n="adv"/></l><r>moralisch<s n="adv"/></r></p></e>
     <e><p><l>more<s n="adv"/></l><r>weiter<s n="adv"/></r></p></e>
-    <e><p><l>more<b/>than<b/>enough<s n="adv"/></l><r>übergenug<s n="adv"/></r></p></e>
     <e><p><l>moreover<s n="adv"/></l><r>außerdem<s n="adv"/></r></p></e>
     <e><p><l>mortally<s n="adv"/></l><r>sterblich<s n="adv"/></r></p></e>
     <e><p><l>most<s n="adv"/></l><r>meist<s n="adv"/></r></p></e>
-    <e><p><l>most<b/>likely<s n="adv"/></l><r>höchstwahrscheinlich<s n="adv"/></r></p></e>
-    <e><p><l>most<b/>of<b/>the<b/>time<s n="adv"/></l><r>zumeist<s n="adv"/></r></p></e>
     <e r="LR"><p><l>mostly<s n="adv"/></l><r>größtenteils<s n="adv"/></r></p></e>
     <e r="RL"><p><l>mostly<s n="adv"/></l><r>großenteils<s n="adv"/></r></p></e>
     <e><p><l>much<s n="adv"/></l><r>weitaus<s n="adv"/></r></p></e>
@@ -39403,7 +39151,6 @@
     <e><p><l>never<s n="adv"/></l><r>nie<s n="adv"/></r></p></e>
     <e r="RL"><p><l>never<s n="adv"/></l><r>niemals<s n="adv"/></r></p></e>
     <e r="RL"><p><l>never<s n="adv"/></l><r>noch<b/>nie<s n="adv"/></r></p></e>
-    <e><p><l>never<b/>mind<s n="adv"/></l><r>egal<s n="adv"/></r></p></e>
     <e><p><l>nevertheless<s n="adv"/></l><r>trotzdem<s n="adv"/></r></p></e>
     <e r="RL"><p><l>nevertheless<s n="adv"/></l><r>desungeachtet<s n="adv"/></r></p></e>
     <e r="RL"><p><l>nevertheless<s n="adv"/></l><r>nichtsdestotrotz<s n="adv"/></r></p></e>
@@ -39411,11 +39158,8 @@
     <e><p><l>newly<s n="adv"/></l><r>neulich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>newly<s n="adv"/></l><r>neu<s n="adv"/></r></p></e>
     <e><p><l>next<s n="adv"/></l><r>nächste<s n="adv"/></r></p></e>
-    <e><p><l>next<b/>day<s n="adv"/></l><r>anderntags<s n="adv"/></r></p></e>
-    <e><p><l>next<b/>door<s n="adv"/></l><r>nebenan<s n="adv"/></r></p></e>
     <e><p><l>nicely<s n="adv"/></l><r>nett<s n="adv"/></r></p></e>
     <e><p><l>nimbly<s n="adv"/></l><r>flink<s n="adv"/></r></p></e>
-    <e><p><l>nine<b/>times<s n="adv"/></l><r>neunmal<s n="adv"/></r></p></e>
     <e><p><l>nine-thirty<s n="adv"/></l><r>9<b/>Uhr<b/>dreißig<s n="adv"/></r></p></e>
     <e><p><l>no<s n="adv"/></l><r>nein<s n="adv"/></r></p></e>
     <e><p><l>noisily<s n="adv"/></l><r>lärmig<s n="adv"/></r></p></e>
@@ -39433,13 +39177,12 @@
     <e><p><l>northwest<s n="adv"/></l><r>Nordwesten<s n="adv"/></r></p></e>
     <e><p><l>northwesterly<s n="adv"/></l><r>nordwestlich<s n="adv"/></r></p></e>
     <e><p><l>not<s n="adv"/></l><r>nicht<s n="adv"/></r></p></e>
-    <e><p><l>not<b/>at<b/>all<s n="adv"/></l><r>keinesfalls<s n="adv"/></r></p></e>
     <e><p><l>notably<s n="adv"/></l><r>bemerkenswert<s n="adv"/></r></p></e>
     <e r="LR"><p><l>noticeably<s n="adv"/></l><r>bemerkenswert<s n="adv"/></r></p></e>
+    <e><p><l>notwithstanding<s n="adv"/></l><r>trotzdem<s n="preadv"/></r></p></e>
     <e><p><l>now<s n="adv"/></l><r>jetzt<s n="adv"/></r></p></e>
     <e r="RL"><p><l>now<s n="adv"/></l><r>nun<s n="adv"/></r></p></e>
     <e r="RL"><p><l>now<s n="adv"/></l><r>nunmehr<s n="adv"/></r></p></e>
-    <e><p><l>now<b/>and<b/>then<s n="adv"/></l><r>zwischendurch<s n="adv"/></r></p></e>
     <e><p><l>nowadays<s n="adv"/></l><r>heutzutage<s n="adv"/></r></p></e>
     <e><p><l>noway<s n="adv"/></l><r>keineswegs<s n="adv"/></r></p></e>
     <e><p><l>nowhere<s n="adv"/></l><r>nirgendwo<s n="adv"/></r></p></e>
@@ -39451,70 +39194,14 @@
     <e><p><l>obliquely<s n="adv"/></l><r>schräg<s n="adv"/></r></p></e>
     <e><p><l>obviously<s n="adv"/></l><r>offensichtlich<s n="adv"/></r></p></e>
     <e><p><l>occasionally<s n="adv"/></l><r>bisweilen<s n="adv"/></r></p></e>
-    <e><p><l>oddly<b/>enough<s n="adv"/></l><r>sonderbarerweise<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>of<b/>course<s n="adv"/></l><r>natürlich<s n="adv"/></r></p></e>
-    <e><p><l>of<b/>such<b/>a<b/>kind<s n="adv"/></l><r>solcherart<s n="adv"/></r></p></e>
     <e><p><l>off<s n="adv"/></l><r>ab<s n="adv"/></r></p></e>
     <e><p><l>offhand<s n="adv"/></l><r>ohne<b/>weiteres<s n="adv"/></r></p></e>
     <e><p><l>officially<s n="adv"/></l><r>offiziell<s n="adv"/></r></p></e>
     <e><p><l>often<s n="adv"/></l><r>oft<s n="adv"/></r></p></e>
     <e r="RL"><p><l>often<s n="adv"/></l><r>oftmals<s n="adv"/></r></p></e>
     <e><p><l>okay<s n="adv"/></l><r>Zustimmung<s n="adv"/></r></p></e>
-    <e><p><l>old<b/>age's<s n="adv"/></l><r>alters<s n="adv"/></r></p></e>
     <e r="LR"><p><l>on<s n="adv"/></l><r>auf<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>a<b/>day-to-day<b/>basis<s n="adv"/></l><r>tageweise<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>a<b/>mass<b/>scale<s n="adv"/></l><r>massenhaft<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>a<b/>short-term<b/>basis<s n="adv"/></l><r>kurzfristig<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>all<b/>sides<s n="adv"/></l><r>allerseits<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>behalf<b/>of<b/>which<s n="adv"/></l><r>deretwegen<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>both<b/>sides<b/>of<s n="adv"/></l><r>beidseits<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>business<s n="adv"/></l><r>beruflich<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>edge<s n="adv"/></l><r>hochkant<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>Fridays<s n="adv"/></l><r>freitags<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>hand<s n="adv"/></l><r>vorrätig<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>her<b/>behalf<s n="adv"/></l><r>ihretwegen<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>her<b/>part<s n="adv"/></l><r>ihrerseits<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>his<b/>behalf<s n="adv"/></l><r>seinetwegen<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>it<s n="adv"/></l><r>darauf<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>Mondays<s n="adv"/></l><r>montags<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>my<b/>behalf<s n="adv"/></l><r>meinetwegen<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>my<b/>part<s n="adv"/></l><r>meinesteils<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>occasion<s n="adv"/></l><r>öfter<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>one<b/>side<s n="adv"/></l><r>einseitig<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>our<b/>behalf<s n="adv"/></l><r>unseretwegen<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>our<b/>part<s n="adv"/></l><r>unsererseits<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>purpose<s n="adv"/></l><r>willentlich<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>record<s n="adv"/></l><r>aktenkundig<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>Saturdays<s n="adv"/></l><r>samstags<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>on<b/>Saturdays<s n="adv"/></l><r>sonnabends<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>Sundays<s n="adv"/></l><r>sonntags<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>the<b/>contrary<s n="adv"/></l><r>vielmehr<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>on<b/>the<b/>left<s n="adv"/></l><r>links<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>the<b/>one<b/>hand<s n="adv"/></l><r>einerseits<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>the<b/>other<b/>hand<s n="adv"/></l><r>andererseits<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>the<b/>other<b/>side<s n="adv"/></l><r>jenseits<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>the<b/>quiet<s n="adv"/></l><r>klammheimlich<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>the<b/>sly<s n="adv"/></l><r>heimlich<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>the<b/>way<s n="adv"/></l><r>unterwegs<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>their<b/>behalf<s n="adv"/></l><r>ihretwegen<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>Thursdays<s n="adv"/></l><r>donnerstags<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>time<s n="adv"/></l><r>pünktlich<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>top<s n="adv"/></l><r>obenauf<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>trial<s n="adv"/></l><r>versuchsweise<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>Tuesdays<s n="adv"/></l><r>dienstags<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>Wednesdays<s n="adv"/></l><r>mittwochs<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>on<b/>week-days<s n="adv"/></l><r>werktags<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>workdays<s n="adv"/></l><r>werktags<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>your<b/>behalf<s n="adv"/></l><r>deinetwegen<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>your<b/>own<s n="adv"/></l><r>alleine<s n="adv"/></r></p></e>
-    <e><p><l>on<b/>your<b/>part<s n="adv"/></l><r>deinerseits<s n="adv"/></r></p></e>
     <e><p><l>once<s n="adv"/></l><r>einmal<s n="adv"/></r></p></e>
-    <e><p><l>once<b/>again<s n="adv"/></l><r>erneut<s n="adv"/></r></p></e>
-    <e><p><l>once<b/>and<b/>for<b/>all<s n="adv"/></l><r>endgültig<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>once<b/>in<b/>a<b/>blue<b/>moon<s n="adv"/></l><r>selten<s n="adv"/></r></p></e>
-    <e><p><l>once<b/>in<b/>a<b/>while<s n="adv"/></l><r>öfters<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>once<b/>more<s n="adv"/></l><r>nochmal<s n="adv"/></r></p></e>
-    <e><p><l>one<b/>upon<b/>the<b/>other<s n="adv"/></l><r>übereinander<s n="adv"/></r></p></e>
     <e><p><l>one-sided<s n="adv"/></l><r>einseitig<s n="adv"/></r></p></e>
     <e><p><l>one-thirty<s n="adv"/></l><r>1<b/>Uhr<b/>dreißig<s n="adv"/></r></p></e>
     <e><p><l>only<s n="adv"/></l><r>nur<s n="adv"/></r></p></e>
@@ -39540,14 +39227,6 @@
     <e r="RL"><p><l>out<s n="adv"/></l><r>heraus<s n="adv"/></r></p></e>
     <e r="RL"><p><l>out<s n="adv"/></l><r>hinaus<s n="adv"/></r></p></e>
     <e r="RL"><p><l>out<s n="adv"/></l><r>raus<s n="adv"/></r></p></e>
-    <e><p><l>out<b/>and<b/>about<s n="adv"/></l><r>unterwegs<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>out<b/>front<s n="adv"/></l><r>draußen<s n="adv"/></r></p></e>
-    <e><p><l>out<b/>of<b/>it<s n="adv"/></l><r>daraus<s n="adv"/></r></p></e>
-    <e><p><l>out<b/>of<b/>place<s n="adv"/></l><r>unangebracht<s n="adv"/></r></p></e>
-    <e><p><l>out<b/>of<b/>politeness<s n="adv"/></l><r>anstandshalber<s n="adv"/></r></p></e>
-    <e><p><l>out<b/>of<b/>position<s n="adv"/></l><r>Fehlstellung<s n="adv"/></r></p></e>
-    <e><p><l>out<b/>of<b/>sorts<s n="adv"/></l><r>indisponiert<s n="adv"/></r></p></e>
-    <e><p><l>out<b/>of<b/>turn<s n="adv"/></l><r>außertourlich<s n="adv"/></r></p></e>
     <e><p><l>outboard<s n="adv"/></l><r>außenbords<s n="adv"/></r></p></e>
     <e><p><l>outdoor<s n="adv"/></l><r>draußen<s n="adv"/></r></p></e>
     <e><p><l>outer<s n="adv"/></l><r>äußere<s n="adv"/></r></p></e>
@@ -39561,7 +39240,6 @@
     <e r="RL"><p><l>over<s n="adv"/></l><r>drüben<s n="adv"/></r></p></e>
     <e r="RL"><p><l>over<s n="adv"/></l><r>rüber<s n="adv"/></r></p></e>
     <e r="RL"><p><l>over<s n="adv"/></l><r>vorüber<s n="adv"/></r></p></e>
-    <e><p><l>over<b/>here<s n="adv"/></l><r>herüber<s n="adv"/></r></p></e>
     <e><p><l>overboard<s n="adv"/></l><r>über<b/>Bord<s n="adv"/></r></p></e>
     <e><p><l>overnight<s n="adv"/></l><r>die<b/>Nacht<b/>über<s n="adv"/></r></p></e>
     <e r="RL"><p><l>overnight<s n="adv"/></l><r>am<b/>Vorabend<s n="adv"/></r></p></e>
@@ -39585,7 +39263,6 @@
     <e><p><l>paternal<s n="adv"/></l><r>väterlicherseits<s n="adv"/></r></p></e>
     <e><p><l>pathologically<s n="adv"/></l><r>pathologisch<s n="adv"/></r></p></e>
     <e><p><l>patiently<s n="adv"/></l><r>geduldig<s n="adv"/></r></p></e>
-    <e><p><l>paying<b/>attention<s n="adv"/></l><r>achtgebend<s n="adv"/></r></p></e>
     <e><p><l>peacefully<s n="adv"/></l><r>friedlich<s n="adv"/></r></p></e>
     <e><p><l>penitent<s n="adv"/></l><r>reuevoll<s n="adv"/></r></p></e>
     <e><p><l>percent<s n="adv"/></l><r>Prozent<s n="adv"/></r></p></e>
@@ -39657,11 +39334,13 @@
     <e><p><l>purely<s n="adv"/></l><r>rein<s n="adv"/></r></p></e>
     <e><p><l>purportedly<s n="adv"/></l><r>behauptend<s n="adv"/></r></p></e>
     <e><p><l>purposely<s n="adv"/></l><r>absichtlich<s n="adv"/></r></p></e>
+    <e><p><l>qua<s n="adv"/></l><r>qua<s n="preadv"/></r></p></e>
     <e><p><l>quarterly<s n="adv"/></l><r>vierteljährlich<s n="adv"/></r></p></e>
     <e><p><l>quasi<s n="adv"/></l><r>quasi<s n="adv"/></r></p></e>
     <e><p><l>questionably<s n="adv"/></l><r>fragwürdig<s n="adv"/></r></p></e>
     <e><p><l>quick<s n="adv"/></l><r>schnell<s n="adv"/></r></p></e>
     <e><p><l>quickly<s n="adv"/></l><r>schnell<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>quickly<s n="adv"/></l><r>flugs<s n="preadv"/></r></p></e>
     <e r="LR"><p><l>quietly<s n="adv"/></l><r>ruhig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>quite<s n="adv"/></l><r>ziemlich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>quite<s n="adv"/></l><r>durchaus<s n="adv"/></r></p></e>
@@ -39677,6 +39356,7 @@
     <e r="RL"><p><l>really<s n="adv"/></l><r>tatsächlich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>really<s n="adv"/></l><r>wirklich<s n="adv"/></r></p></e>
     <e><p><l>reasonably<s n="adv"/></l><r>vernünftig<s n="adv"/></r></p></e>
+    <e><p><l>recently<s n="adv"/></l><r>neuerdings<s n="preadv"/></r></p></e>
     <e><p><l>recently<s n="adv"/></l><r>neulich<s n="adv"/></r></p></e>
     <e><p><l>reflex<s n="adv"/></l><r>Reflex<s n="adv"/></r></p></e>
     <e><p><l>reflexively<s n="adv"/></l><r>reflexiv<s n="adv"/></r></p></e>
@@ -39698,9 +39378,6 @@
     <e><p><l>responsibly<s n="adv"/></l><r>verantwortlich<s n="adv"/></r></p></e>
     <e><p><l>return<s n="adv"/></l><r>zurückgeben<s n="adv"/></r></p></e>
     <e><p><l>right<s n="adv"/></l><r>rechts<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>right<b/>away<s n="adv"/></l><r>gleich<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>right<b/>off<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>right<b/>there<s n="adv"/></l><r>alldort<s n="adv"/></r></p></e>
     <e><p><l>rightly<s n="adv"/></l><r>zurecht<s n="adv"/></r></p></e>
     <e><p><l>rightwards<s n="adv"/></l><r>nach<b/>rechts<s n="adv"/></r></p></e>
     <e><p><l>roughly<s n="adv"/></l><r>ungefähr<s n="adv"/></r></p></e>
@@ -39712,18 +39389,15 @@
     <e><p><l>ruin<s n="adv"/></l><r>zuschanden<s n="adv"/></r></p></e>
     <e><p><l>ruins<s n="adv"/></l><r>zunichte<s n="adv"/></r></p></e>
     <e><p><l>sadly<s n="adv"/></l><r>traurig<s n="adv"/></r></p></e>
-    <e><p><l>safe<b/>and<b/>sound<s n="adv"/></l><r>wohlbehalten<s n="adv"/></r></p></e>
     <e r="LR"><p><l>safely<s n="adv"/></l><r>sicher<s n="adv"/></r></p></e>
     <e><p><l>sake<s n="adv"/></l><r>seinetwegen<s n="adv"/></r></p></e>
     <e><p><l>sarcastically<s n="adv"/></l><r>sarkastisch<s n="adv"/></r></p></e>
     <e><p><l>satisfactorily<s n="adv"/></l><r>zufrieden<b/>stellend<s n="adv"/></r></p></e>
     <e r="LR"><p><l>scarcely<s n="adv"/></l><r>kaum<s n="adv"/></r></p></e>
     <e><p><l>second<s n="adv"/></l><r>zweitens<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>second<b/>time<s n="adv"/></l><r>zweitenmal<s n="adv"/></r></p></e>
     <e><p><l>secondarily<s n="adv"/></l><r>zweitrangig<s n="adv"/></r></p></e>
     <e><p><l>secondly<s n="adv"/></l><r>zweitens<s n="adv"/></r></p></e>
     <e><p><l>secretly<s n="adv"/></l><r>unter<b/>der<b/>Hand<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>see<b/>below<s n="adv"/></l><r>s.u.<s n="abbr"/></r></p></e>
     <e><p><l>seemingly<s n="adv"/></l><r>anscheinend<s n="adv"/></r></p></e>
     <e><p><l>seldom<s n="adv"/></l><r>selten<s n="adv"/></r></p></e>
     <e><p><l>selectively<s n="adv"/></l><r>ausgewählt<s n="adv"/></r></p></e>
@@ -39733,9 +39407,7 @@
     <e><p><l>separately<s n="adv"/></l><r>gesondert<s n="adv"/></r></p></e>
     <e><p><l>seperately<s n="adv"/></l><r>getrennt<s n="adv"/></r></p></e>
     <e><p><l>seriously<s n="adv"/></l><r>ernst<s n="adv"/></r></p></e>
-    <e><p><l>seven<b/>times<s n="adv"/></l><r>siebenmal<s n="adv"/></r></p></e>
     <e><p><l>seven-thirty<s n="adv"/></l><r>sieben<b/>dreissig<s n="adv"/></r></p></e>
-    <e><p><l>several<b/>times<s n="adv"/></l><r>mehrmals<s n="adv"/></r></p></e>
     <e><p><l>severely<s n="adv"/></l><r>hart<s n="adv"/></r></p></e>
     <e><p><l>sexually<s n="adv"/></l><r>geschlechtlich<s n="adv"/></r></p></e>
     <e><p><l>sharply<s n="adv"/></l><r>scharf<s n="adv"/></r></p></e>
@@ -39743,7 +39415,6 @@
     <e r="LR"><p><l>shortly<s n="adv"/></l><r>gleich<s n="adv"/></r></p></e>
     <e><p><l>shyly<s n="adv"/></l><r>schüchtern<s n="adv"/></r></p></e>
     <e><p><l>side<s n="adv"/></l><r>Seite<s n="adv"/></r></p></e>
-    <e><p><l>side<b/>by<b/>side<s n="adv"/></l><r>nebeneinander<s n="adv"/></r></p></e>
     <e><p><l>sideways<s n="adv"/></l><r>seitwärts<s n="adv"/></r></p></e>
     <e><p><l>significantly<s n="adv"/></l><r>bedeutsam<s n="adv"/></r></p></e>
     <e><p><l>silently<s n="adv"/></l><r>schweigend<s n="adv"/></r></p></e>
@@ -39755,12 +39426,9 @@
     <e><p><l>since<s n="adv"/></l><r>seit<s n="adv"/></r></p></e>
     <e r="RL"><p><l>since<s n="adv"/></l><r>da<s n="adv"/></r></p></e>
     <e r="RL"><p><l>since<s n="adv"/></l><r>denn<s n="adv"/></r></p></e>
-    <e><p><l>since<b/>then<s n="adv"/></l><r>seither<s n="adv"/></r></p></e>
     <e><p><l>sincerely<s n="adv"/></l><r>aufrichtig<s n="adv"/></r></p></e>
-    <e><p><l>single<b/>file<s n="adv"/></l><r>Einerreihe<s n="adv"/></r></p></e>
     <e><p><l>singly<s n="adv"/></l><r>einzeln<s n="adv"/></r></p></e>
     <e><p><l>singular<s n="adv"/></l><r>besonder<s n="adv"/></r></p></e>
-    <e><p><l>six<b/>times<s n="adv"/></l><r>sechsmal<s n="adv"/></r></p></e>
     <e><p><l>six-thirty<s n="adv"/></l><r>sechs<b/>dreissig<s n="adv"/></r></p></e>
     <e><p><l>sleepily<s n="adv"/></l><r>schläfrig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>slightly<s n="adv"/></l><r>etwas<s n="adv"/></r></p></e>
@@ -39774,11 +39442,6 @@
     <e r="LR"><p><l>smoothly<s n="adv"/></l><r>ruhig<s n="adv"/></r></p></e>
     <e><p><l>so<s n="adv"/></l><r>also<s n="adv"/></r></p></e>
     <e r="RL"><p><l>so<s n="adv"/></l><r>daher<s n="adv"/></r></p></e>
-    <e><p><l>so<b/>heavily<s n="adv"/></l><r>dermaßen<s n="adv"/></r></p></e>
-    <e><p><l>so<b/>much<s n="adv"/></l><r>derart<s n="adv"/></r></p></e>
-    <e><p><l>so<b/>much<s n="adv"/></l><r>lauter<s n="adv"/></r></p></e>
-    <e><p><l>so<b/>that<s n="adv"/></l><r>damit<s n="adv"/></r></p></e>
-    <e><p><l>so<b/>to<b/>speak<s n="adv"/></l><r>sozusagen<s n="adv"/></r></p></e>
     <e><p><l>so-called<s n="adv"/></l><r>so<b/>genannt<s n="adv"/></r></p></e>
     <e><p><l>soberly<s n="adv"/></l><r>nüchtern<s n="adv"/></r></p></e>
     <e><p><l>socially<s n="adv"/></l><r>gesellschaftlich<s n="adv"/></r></p></e>
@@ -39788,10 +39451,8 @@
     <e><p><l>solidly<s n="adv"/></l><r>solidarisch<s n="adv"/></r></p></e>
     <e><p><l>some<s n="adv"/></l><r>etwas<s n="adv"/></r></p></e>
     <e r="RL"><p><l>some<s n="adv"/></l><r>irgend<s n="adv"/></r></p></e>
-    <e><p><l>some<b/>other<b/>time<s n="adv"/></l><r>andermal<s n="adv"/></r></p></e>
     <e><p><l>somehow<s n="adv"/></l><r>irgendwie<s n="adv"/></r></p></e>
     <e r="RL"><p><l>something<s n="adv"/></l><r>irgendwas<s n="adv"/></r></p></e>
-    <e><p><l>something<b/>else<s n="adv"/></l><r>sonstwas<s n="adv"/></r></p></e>
     <e><p><l>sometime<s n="adv"/></l><r>irgendwann<s n="adv"/></r></p></e>
     <e><p><l>sometimes<s n="adv"/></l><r>manchmal<s n="adv"/></r></p></e>
     <e r="RL"><p><l>sometimes<s n="adv"/></l><r>mitunter<s n="adv"/></r></p></e>
@@ -39827,14 +39488,12 @@
     <e r="RL"><p><l>still<s n="adv"/></l><r>dennoch<s n="adv"/></r></p></e>
     <e><p><l>straight<s n="adv"/></l><r>geradeaus<s n="adv"/></r></p></e>
     <e><p><l>straight<s n="adv"/></l><r>geradewegs<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>straight<b/>ahead<s n="adv"/></l><r>geradeaus<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>straight<b/>away<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
-    <e><p><l>straight<b/>through<s n="adv"/></l><r>querdurch<s n="adv"/></r></p></e>
     <e><p><l>straightway<s n="adv"/></l><r>schnurstracks<s n="adv"/></r></p></e>
     <e><p><l>strangely<s n="adv"/></l><r>seltsam<s n="adv"/></r></p></e>
     <e><p><l>strategically<s n="adv"/></l><r>strategisch<s n="adv"/></r></p></e>
     <e><p><l>strenuously<s n="adv"/></l><r>tüchtig<s n="adv"/></r></p></e>
     <e><p><l>strictly<s n="adv"/></l><r>strikt<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>strictly<s n="adv"/></l><r>genauestens<s n="preadv"/></r></p></e>
     <e><p><l>strikingly<s n="adv"/></l><r>auffallend<s n="adv"/></r></p></e>
     <e><p><l>strikingly<s n="adv"/></l><r>auffälligerweise<s n="adv"/></r></p></e>
     <e><p><l>strongly<s n="adv"/></l><r>kräftig<s n="adv"/></r></p></e>
@@ -39847,7 +39506,6 @@
     <e><p><l>successfully<s n="adv"/></l><r>erfolgreich<s n="adv"/></r></p></e>
     <e><p><l>such<s n="adv"/></l><r>so<s n="adv"/></r></p></e>
     <e r="RL"><p><l>such<s n="adv"/></l><r>solch<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>such<b/>as<s n="adv"/></l><r>wie<s n="adv"/></r></p></e>
     <e r="LR"><p><l>sudden<s n="adv"/></l><r>plötzlich<s n="adv"/></r></p></e>
     <e><p><l>suddenly<s n="adv"/></l><r>plötzlich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>suddenly<s n="adv"/></l><r>abrupt<s n="adv"/></r></p></e>
@@ -39859,7 +39517,6 @@
     <e r="LR"><p><l>supposedly<s n="adv"/></l><r>angeblich<s n="adv"/></r></p></e>
     <e><p><l>supremely<s n="adv"/></l><r>höchst<s n="adv"/></r></p></e>
     <e r="LR"><p><l>sure<s n="adv"/></l><r>sicher<s n="adv"/></r></p></e>
-    <e><p><l>sure<b/>enough<s n="adv"/></l><r>wirklich<s n="adv"/></r></p></e>
     <e><p><l>surely<s n="adv"/></l><r>sicher<s n="adv"/></r></p></e>
     <e><p><l>surgically<s n="adv"/></l><r>chirurgisch<s n="adv"/></r></p></e>
     <e><p><l>surprisingly<s n="adv"/></l><r>überraschenderweise<s n="adv"/></r></p></e>
@@ -39875,35 +39532,24 @@
     <e><p><l>technically<s n="adv"/></l><r>technisch<s n="adv"/></r></p></e>
     <e><p><l>temporarily<s n="adv"/></l><r>vorübergehend<s n="adv"/></r></p></e>
     <e><p><l>temporarily<s n="adv"/></l><r>zeitweilig<s n="adv"/></r></p></e>
-    <e><p><l>ten<b/>times<s n="adv"/></l><r>zehnmal<s n="adv"/></r></p></e>
     <e><p><l>ten-thirty<s n="adv"/></l><r>10<b/>Uhr<b/>dreißig<s n="adv"/></r></p></e>
     <e><p><l>tenfold<s n="adv"/></l><r>um<b/>das<b/>Zehnfache<s n="adv"/></r></p></e>
-    <e><p><l>terms<b/>of<s n="adv"/></l><r>puncto<s n="adv"/></r></p></e>
     <e><p><l>terribly<s n="adv"/></l><r>erbärmlich<s n="adv"/></r></p></e>
     <e r="LR"><p><l>terrifically<s n="adv"/></l><r>wunderbar<s n="adv"/></r></p></e>
-    <e><p><l>thank<b/>God<s n="adv"/></l><r>gottlob<s n="adv"/></r></p></e>
     <e><p><l>thankfully<s n="adv"/></l><r>dankbar<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>that<b/>way<s n="adv"/></l><r>so<s n="adv"/></r></p></e>
-    <e><p><l>the<b/>day<b/>after<b/>tomorrow<s n="adv"/></l><r>übermorgen<s n="adv"/></r></p></e>
-    <e><p><l>the<b/>day<b/>before<b/>yesterday<s n="adv"/></l><r>vorgestern<s n="adv"/></r></p></e>
-    <e><p><l>the<b/>more<b/>so<b/>as<s n="adv"/></l><r>zumal<s n="adv"/></r></p></e>
-    <e><p><l>the<b/>same<s n="adv"/></l><r>dieselbe<s n="adv"/></r></p></e>
-    <e><p><l>the<b/>while<s n="adv"/></l><r>derweilen<s n="adv"/></r></p></e>
     <e><p><l>then<s n="adv"/></l><r>dann<s n="adv"/></r></p></e>
     <e r="RL"><p><l>then<s n="adv"/></l><r>sodann<s n="adv"/></r></p></e>
-    <e><p><l>then<b/>again<s n="adv"/></l><r>wiederum<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>then<b/>and<b/>there<s n="adv"/></l><r>sogleich<s n="adv"/></r></p></e>
     <e><p><l>theoretically<s n="adv"/></l><r>theoretisch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>theoreticly<s n="adv"/></l><r>theoretisch<s n="adv"/></r></p></e>
     <e><p><l>there<s n="adv"/></l><r>dort<s n="adv"/></r></p></e>
     <e r="RL"><p><l>there<s n="adv"/></l><r>dahin<s n="adv"/></r></p></e>
     <e r="RL"><p><l>there<s n="adv"/></l><r>dorthin<s n="adv"/></r></p></e>
-    <e><p><l>there<b/>again<s n="adv"/></l><r>andererseits<s n="adv"/></r></p></e>
     <e><p><l>thereabouts<s n="adv"/></l><r>daherum<s n="adv"/></r></p></e>
     <e r="LR"><p><l>thereafter<s n="adv"/></l><r>danach<s n="adv"/></r></p></e>
     <e><p><l>thereby<s n="adv"/></l><r>dadurch<s n="adv"/></r></p></e>
     <e><p><l>therefor<s n="adv"/></l><r>hierfür<s n="adv"/></r></p></e>
     <e><p><l>therefore<s n="adv"/></l><r>darob<s n="adv"/></r></p></e>
+    <e><p><l>therefore<s n="adv"/></l><r>demnach<s n="preadv"/></r></p></e>
     <e><p><l>therefore<s n="adv"/></l><r>deswegen<s n="adv"/></r></p></e>
     <e r="RL"><p><l>therefore<s n="adv"/></l><r>darum<s n="adv"/></r></p></e>
     <e r="RL"><p><l>therefore<s n="adv"/></l><r>mithin<s n="adv"/></r></p></e>
@@ -39912,17 +39558,12 @@
     <e><p><l>thereon<s n="adv"/></l><r>daran<s n="adv"/></r></p></e>
     <e><p><l>thereto<s n="adv"/></l><r>dazu<s n="adv"/></r></p></e>
     <e><p><l>thereupon<s n="adv"/></l><r>daraufhin<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>these<b/>days<s n="adv"/></l><r>heutzutage<s n="adv"/></r></p></e>
     <e><p><l>thickly<s n="adv"/></l><r>dick<s n="adv"/></r></p></e>
     <e><p><l>thinly<s n="adv"/></l><r>dünn<s n="adv"/></r></p></e>
     <e><p><l>thirdly<s n="adv"/></l><r>drittens<s n="adv"/></r></p></e>
-    <e><p><l>this<b/>time<s n="adv"/></l><r>diesmal<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>this<b/>way<s n="adv"/></l><r>hier<s n="adv"/></r></p></e>
-    <e><p><l>this<b/>week<s n="adv"/></l><r>dieswöchig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>thoroughly<s n="adv"/></l><r>völlig<s n="adv"/></r></p></e>
     <e><p><l>though<s n="adv"/></l><r>doch<s n="adv"/></r></p></e>
     <e><p><l>thoughtlessly<s n="adv"/></l><r>gedankenlos<s n="adv"/></r></p></e>
-    <e><p><l>three<b/>times<s n="adv"/></l><r>dreimal<s n="adv"/></r></p></e>
     <e><p><l>three-monthly<s n="adv"/></l><r>dreimonatig<s n="adv"/></r></p></e>
     <e><p><l>three-thirty<s n="adv"/></l><r>drei<b/>dreissig<s n="adv"/></r></p></e>
     <e><p><l>thrice<s n="adv"/></l><r>dreimal<s n="adv"/></r></p></e>
@@ -39937,13 +39578,6 @@
     <e><p><l>tiny<s n="adv"/></l><r>winzig<s n="adv"/></r></p></e>
     <e><p><l>tirelessly<s n="adv"/></l><r>unermüdlich<s n="adv"/></r></p></e>
     <e><p><l>to<s n="adv"/></l><r>nach<s n="adv"/></r></p></e>
-    <e><p><l>to<b/>begin<b/>with<s n="adv"/></l><r>anfangs<s n="adv"/></r></p></e>
-    <e><p><l>to<b/>impinge<s n="adv"/></l><r>eingreifen<s n="adv"/></r></p></e>
-    <e><p><l>to<b/>mind<s n="adv"/></l><r>beachten<s n="adv"/></r></p></e>
-    <e><p><l>to<b/>no<b/>effect<s n="adv"/></l><r>ergebnislos<s n="adv"/></r></p></e>
-    <e><p><l>to<b/>scale<s n="adv"/></l><r>anpassen<s n="adv"/></r></p></e>
-    <e><p><l>to<b/>the<b/>front<s n="adv"/></l><r>voraus<s n="adv"/></r></p></e>
-    <e><p><l>to<b/>the<b/>right<s n="adv"/></l><r>rechtsherum<s n="adv"/></r></p></e>
     <e><p><l>today<s n="adv"/></l><r>heute<s n="adv"/></r></p></e>
     <e><p><l>together<s n="adv"/></l><r>miteinander<s n="adv"/></r></p></e>
     <e r="RL"><p><l>together<s n="adv"/></l><r>aneinander<s n="adv"/></r></p></e>
@@ -39956,9 +39590,6 @@
     <e r="RL"><p><l>tonight<s n="adv"/></l><r>heute<b/>Nacht<s n="adv"/></r></p></e>
     <e r="LR"><p><l>too<s n="adv"/></l><r>auch<s n="adv"/></r></p></e>
     <e r="RL"><p><l>too<s n="adv"/></l><r>ebenfalls<s n="adv"/></r></p></e>
-    <e><p><l>too<b/>little<s n="adv"/></l><r>zuwenig<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>too<b/>much<s n="adv"/></l><r>zuviel<s n="adv"/></r></p></e>
-    <e><p><l>too<b/>often<s n="adv"/></l><r>allzuoft<s n="adv"/></r></p></e>
     <e><p><l>topologically<s n="adv"/></l><r>topologisch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>total<s n="adv"/></l><r>völlig<s n="adv"/></r></p></e>
     <e><p><l>totally<s n="adv"/></l><r>vollkommen<s n="adv"/></r></p></e>
@@ -39967,6 +39598,7 @@
     <e><p><l>traditionally<s n="adv"/></l><r>traditionell<s n="adv"/></r></p></e>
     <e><p><l>tragically<s n="adv"/></l><r>tragisch<s n="adv"/></r></p></e>
     <e><p><l>trappings<s n="adv"/></l><r>drumherum<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>trappings<s n="adv"/></l><r>drumherum<s n="preadv"/></r></p></e>
     <e r="LR"><p><l>tremendously<s n="adv"/></l><r>schrecklich<s n="adv"/></r></p></e>
     <e><p><l>truly<s n="adv"/></l><r>wahrlich<s n="adv"/></r></p></e>
     <e><p><l>trustworthily<s n="adv"/></l><r>vertrauenswürdig<s n="adv"/></r></p></e>
@@ -39991,7 +39623,6 @@
     <e><p><l>undeniably<s n="adv"/></l><r>unbestreitbar<s n="adv"/></r></p></e>
     <e><p><l>under<s n="adv"/></l><r>hinunter<s n="adv"/></r></p></e>
     <e><p><l>under<s n="adv"/></l><r>unter<s n="adv"/></r></p></e>
-    <e><p><l>under<b/>which<s n="adv"/></l><r>worunter<s n="adv"/></r></p></e>
     <e><p><l>underground<s n="adv"/></l><r>U-Bahn<s n="adv"/></r></p></e>
     <e><p><l>underneath<s n="adv"/></l><r>darunter<s n="adv"/></r></p></e>
     <e><p><l>undersea<s n="adv"/></l><r>unterseeisch<s n="adv"/></r></p></e>
@@ -40036,13 +39667,10 @@
     <e><p><l>unwisely<s n="adv"/></l><r>unklug<s n="adv"/></r></p></e>
     <e><p><l>up<s n="adv"/></l><r>hin<s n="adv"/></r></p></e>
     <e><p><l>up<s n="adv"/></l><r>rauf<s n="adv"/></r></p></e>
-    <e><p><l>up<b/>the<b/>country<s n="adv"/></l><r>landauf<s n="adv"/></r></p></e>
-    <e><p><l>up<b/>to<b/>the<b/>present<s n="adv"/></l><r>bislang<s n="adv"/></r></p></e>
     <e><p><l>uphill<s n="adv"/></l><r>bergan<s n="adv"/></r></p></e>
     <e><p><l>uphill<s n="adv"/></l><r>bergauf<s n="adv"/></r></p></e>
     <e><p><l>uppermost<s n="adv"/></l><r>höchstes<s n="adv"/></r></p></e>
     <e><p><l>upriver<s n="adv"/></l><r>stromauf<s n="adv"/></r></p></e>
-    <e><p><l>upside<b/>down<s n="adv"/></l><r>kopfstehend<s n="adv"/></r></p></e>
     <e><p><l>upstairs<s n="adv"/></l><r>hinauf<s n="adv"/></r></p></e>
     <e r="RL"><p><l>upstairs<s n="adv"/></l><r>herauf<s n="adv"/></r></p></e>
     <e r="RL"><p><l>upstairs<s n="adv"/></l><r>oben<s n="adv"/></r></p></e>
@@ -40066,10 +39694,6 @@
     <e><p><l>verbatim<s n="adv"/></l><r>wortwörtlich<s n="adv"/></r></p></e>
     <e><p><l>vertically<s n="adv"/></l><r>senkrecht<s n="adv"/></r></p></e>
     <e><p><l>very<s n="adv"/></l><r>sehr<s n="adv"/></r></p></e>
-    <e><p><l>very<b/>first<s n="adv"/></l><r>allererst<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>very<b/>much<s n="adv"/></l><r>sehr<s n="adv"/></r></p></e>
-    <e><p><l>vice<b/>versa<s n="adv"/></l><r>andersherum<s n="adv"/></r></p></e>
-    <e><p><l>vice<b/>versa<s n="adv"/></l><r>umgekehrt<s n="adv"/></r></p></e>
     <e r="LR"><p><l>vide<s n="adv"/></l><r>siehe<s n="adv"/></r></p></e>
     <e><p><l>violently<s n="adv"/></l><r>heftig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>virtually<s n="adv"/></l><r>eigentlich<s n="adv"/></r></p></e>
@@ -40092,9 +39716,6 @@
     <e><p><l>well-dressed<s n="adv"/></l><r>gut<b/>angezogen<s n="adv"/></r></p></e>
     <e><p><l>west<s n="adv"/></l><r>westlich<s n="adv"/></r></p></e>
     <e><p><l>westward<s n="adv"/></l><r>westwärts<s n="adv"/></r></p></e>
-    <e><p><l>what<b/>for<s n="adv"/></l><r>wozu<s n="adv"/></r></p></e>
-    <e><p><l>what<b/>kind<b/>of<s n="adv"/></l><r>welcherlei<s n="adv"/></r></p></e>
-    <e><p><l>what<b/>of<s n="adv"/></l><r>wovor<s n="adv"/></r></p></e>
     <e><p><l>whatever<s n="adv"/></l><r>was<b/>immer<s n="adv"/></r></p></e>
     <e><p><l>when<s n="adv"/></l><r>wann<s n="adv"/></r></p></e>
     <e r="RL"><p><l>when<s n="adv"/></l><r>als<s n="adv"/></r></p></e>
@@ -40124,22 +39745,13 @@
     <e><p><l>willingly<s n="adv"/></l><r>bereitwillig<s n="adv"/></r></p></e>
     <e><p><l>wisely<s n="adv"/></l><r>klugerweise<s n="adv"/></r></p></e>
     <e r="RL"><p><l>wisely<s n="adv"/></l><r>weise<s n="adv"/></r></p></e>
-    <e><p><l>with<b/>impunity<s n="adv"/></l><r>ungestraft<s n="adv"/></r></p></e>
-    <e><p><l>with<b/>two<b/>hands<s n="adv"/></l><r>beidhändig<s n="adv"/></r></p></e>
     <e><p><l>within<s n="adv"/></l><r>innerhalb<s n="adv"/></r></p></e>
-    <e><p><l>within<b/>reason<s n="adv"/></l><r>angemessen<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>within<s n="adv"/></l><r>drin<s n="preadv"/></r></p></e>
     <e><p><l>without<s n="adv"/></l><r>ohne<s n="adv"/></r></p></e>
-    <e><p><l>without<b/>a<b/>trace<s n="adv"/></l><r>spurlos<s n="adv"/></r></p></e>
-    <e><p><l>without<b/>delay<s n="adv"/></l><r>umgehend<s n="adv"/></r></p></e>
-    <e><p><l>without<b/>doubt<s n="adv"/></l><r>zweifelsohne<s n="adv"/></r></p></e>
-    <e><p><l>without<b/>objection<s n="adv"/></l><r>anstandslos<s n="adv"/></r></p></e>
-    <e><p><l>without<b/>respite<s n="adv"/></l><r>fristenlos<s n="adv"/></r></p></e>
-    <e><p><l>without<b/>saying<b/>a<b/>word<s n="adv"/></l><r>wortlos<s n="adv"/></r></p></e>
     <e><p><l>woefully<s n="adv"/></l><r>traurig<s n="adv"/></r></p></e>
     <e><p><l>wonderfully<s n="adv"/></l><r>wundervoll<s n="adv"/></r></p></e>
     <e><p><l>worldwide<s n="adv"/></l><r>weltumspannend<s n="adv"/></r></p></e>
     <e><p><l>worryingly<s n="adv"/></l><r>beunruhigend<s n="adv"/></r></p></e>
-    <e><p><l>worth<b/>mentioning<s n="adv"/></l><r>erwähnenswert<s n="adv"/></r></p></e>
     <e><p><l>wrong<s n="adv"/></l><r>falsch<s n="adv"/></r></p></e>
     <e><p><l>wrongly<s n="adv"/></l><r>fälschlicherweise<s n="adv"/></r></p></e>
     <e><p><l>wryly<s n="adv"/></l><r>verdreht<s n="adv"/></r></p></e>
@@ -40152,32 +39764,25 @@
 
     <e><p><l>aback<s n="preadv"/></l><r>zurück<s n="preadv"/></r></p></e>
     <e><p><l>about<s n="preadv"/></l><r>herum<s n="preadv"/></r></p></e>
-    <e><p><l>about<b/>that<s n="preadv"/></l><r>darüber<s n="preadv"/></r></p></e>
-    <e><p><l>about<b/>this<s n="preadv"/></l><r>hierüber<s n="preadv"/></r></p></e>
     <e><p><l>above<b/>all<s n="preadv"/></l><r>zuallererst<s n="preadv"/></r></p></e>
-    <e><p><l>absolutely<s n="preadv"/></l><r>partout<s n="preadv"/></r></p></e>
-    <e><p><l>accordingly<s n="preadv"/></l><r>demzufolge<s n="preadv"/></r></p></e>
     <e><p><l>across<s n="preadv"/></l><r>rüber<s n="preadv"/></r></p></e>
-    <e><p><l>acutely<s n="preadv"/></l><r>äußerst<s n="preadv"/></r></p></e>
-    <e><p><l>after<b/>that<s n="preadv"/></l><r>danach<s n="preadv"/></r></p></e>
     <e><p><l>against<b/>it<s n="preadv"/></l><r>dagegen<s n="preadv"/></r></p></e>
     <e><p><l>ahead<s n="preadv"/></l><r>vorneweg<s n="preadv"/></r></p></e>
     <e><p><l>all<b/>one's<b/>life<s n="preadv"/></l><r>zeitlebens<s n="preadv"/></r></p></e>
     <e><p><l>along<s n="preadv"/></l><r>daher<s n="preadv"/></r></p></e>
-    <e><p><l>any<s n="preadv"/></l><r>irgendein<s n="preadv"/></r></p></e>
+    <e><p><l>any<s n="preadv"/></l><r>etwas<s n="preadv"/></r></p></e>
     <e><p><l>as<s n="preadv"/></l><r>da<s n="preadv"/></r></p></e>
     <e><p><l>as<b/>a<b/>result<s n="preadv"/></l><r>dadurch<s n="preadv"/></r></p></e>
     <e><p><l>as<b/>a<b/>result<s n="preadv"/></l><r>daraufhin<s n="preadv"/></r></p></e>
-    <e><p><l>as<b/>is<b/>known<s n="preadv"/></l><r>bekanntermaßen<s n="preadv"/></r></p></e>
     <e><p><l>as<b/>to<b/>that<s n="preadv"/></l><r>hierzu<s n="preadv"/></r></p></e>
     <e><p><l>at<b/>best<s n="preadv"/></l><r>bestens<s n="preadv"/></r></p></e>
     <e><p><l>at<b/>that<s n="preadv"/></l><r>dabei<s n="preadv"/></r></p></e>
     <e><p><l>at<b/>this<s n="preadv"/></l><r>hierbei<s n="preadv"/></r></p></e>
     <e><p><l>before<s n="preadv"/></l><r>bevor<s n="preadv"/></r></p></e>
+    <e><p><l>before<s n="preadv"/></l><r>bevor<s n="preadv"/></r></p></e>
     <e><p><l>beneath<s n="preadv"/></l><r>drunter<s n="preadv"/></r></p></e>
     <e><p><l>between<s n="preadv"/></l><r>darunter<s n="preadv"/></r></p></e>
     <e><p><l>by<b/>day<s n="preadv"/></l><r>tags<s n="preadv"/></r></p></e>
-    <e><p><l>dead<b/>level<s n="preadv"/></l><r>gleichauf<s n="preadv"/></r></p></e>
     <e><p><l>each<b/>other<s n="preadv"/></l><r>zueinander<s n="preadv"/></r></p></e>
     <e><p><l>for<b/>it<s n="preadv"/></l><r>dafür<s n="preadv"/></r></p></e>
     <e><p><l>for<b/>this<s n="preadv"/></l><r>hierfür<s n="preadv"/></r></p></e>
@@ -40187,168 +39792,310 @@
     <e><p><l>hence<s n="preadv"/></l><r>deshalb<s n="preadv"/></r></p></e>
     <e><p><l>here<s n="preadv"/></l><r>hieran<s n="preadv"/></r></p></e>
     <e><p><l>here<s n="preadv"/></l><r>hierher<s n="preadv"/></r></p></e>
-    <e><p><l>hereby<s n="preadv"/></l><r>hierdurch<s n="preadv"/></r></p></e>
-    <e><p><l>hereby<s n="preadv"/></l><r>hiermit<s n="preadv"/></r></p></e>
-    <e><p><l>herein<s n="preadv"/></l><r>hierin<s n="preadv"/></r></p></e>
-    <e><p><l>hereof<s n="preadv"/></l><r>hiervon<s n="preadv"/></r></p></e>
-    <e><p><l>hereunto<s n="preadv"/></l><r>hierauf<s n="preadv"/></r></p></e>
-    <e><p><l>hither<s n="preadv"/></l><r>hie<s n="preadv"/></r></p></e>
     <e><p><l>how<s n="preadv"/></l><r>wie<s n="preadv"/></r></p></e>
     <e><p><l>however<s n="preadv"/></l><r>indessen<s n="preadv"/></r></p></e>
-    <e><p><l>in<b/>contrast<s n="preadv"/></l><r>demgegenüber<s n="preadv"/></r></p></e>
-    <e><p><l>in<b/>front<s n="preadv"/></l><r>davor<s n="preadv"/></r></p></e>
-    <e><p><l>in<b/>it<s n="preadv"/></l><r>darin<s n="preadv"/></r></p></e>
     <e><p><l>incessantly<s n="preadv"/></l><r>immerzu<s n="preadv"/></r></p></e>
     <e><p><l>instead<s n="preadv"/></l><r>stattdessen<s n="preadv"/></r></p></e>
     <e><p><l>interjacent<s n="preadv"/></l><r>dazwischen<s n="preadv"/></r></p></e>
-    <e><p><l>into<b/>town<s n="preadv"/></l><r>stadteinwärts<s n="preadv"/></r></p></e>
     <e><p><l>just<b/>as<b/>little<s n="preadv"/></l><r>genausowenig<s n="preadv"/></r></p></e>
-    <e><p><l>just<b/>as<b/>much<s n="preadv"/></l><r>ebensoviel<s n="preadv"/></r></p></e>
     <e><p><l>just<b/>as<b/>well<s n="preadv"/></l><r>genausogut<s n="preadv"/></r></p></e>
     <e><p><l>just<b/>now<s n="preadv"/></l><r>soeben<s n="preadv"/></r></p></e>
     <e><p><l>lost<s n="preadv"/></l><r>dahin<s n="preadv"/></r></p></e>
-    <e><p><l>meanwhile<s n="preadv"/></l><r>unterdessen<s n="preadv"/></r></p></e>
-    <e><p><l>meanwhile<s n="preadv"/></l><r>währenddessen<s n="preadv"/></r></p></e>
     <e><p><l>more<s n="preadv"/></l><r>mehr<s n="preadv"/></r></p></e>
     <e><p><l>most<s n="preadv"/></l><r>meist<s n="preadv"/></r></p></e>
     <e><p><l>next<b/>to<s n="preadv"/></l><r>daneben<s n="preadv"/></r></p></e>
-    <e><p><l>notwithstanding<s n="preadv"/></l><r>trotzdem<s n="preadv"/></r></p></e>
-    <e><p><l>on<b/>both<b/>sides<s n="preadv"/></l><r>beiderseits<s n="preadv"/></r></p></e>
     <e><p><l>on<b/>it<s n="preadv"/></l><r>darauf<s n="preadv"/></r></p></e>
     <e><p><l>on<b/>it<s n="preadv"/></l><r>drauf<s n="preadv"/></r></p></e>
     <e><p><l>on<b/>this<b/>side<b/>of<s n="preadv"/></l><r>diesseits<s n="preadv"/></r></p></e>
-    <e><p><l>on<b/>weekdays<s n="preadv"/></l><r>werktags<s n="preadv"/></r></p></e>
-    <e><p><l>one<b/>day<s n="preadv"/></l><r>dereinst<s n="preadv"/></r></p></e>
     <e><p><l>over<s n="preadv"/></l><r>drüber<s n="preadv"/></r></p></e>
     <e><p><l>overmuch<s n="preadv"/></l><r>allzusehr<s n="preadv"/></r></p></e>
     <e><p><l>overmuch<s n="preadv"/></l><r>allzuviel<s n="preadv"/></r></p></e>
     <e><p><l>post<s n="preadv"/></l><r>dahinter<s n="preadv"/></r></p></e>
     <e><p><l>pretty<s n="preadv"/></l><r>ziemlich<s n="preadv"/></r></p></e>
     <e><p><l>primary<s n="preadv"/></l><r>zuerst<s n="preadv"/></r></p></e>
-    <e><p><l>qua<s n="preadv"/></l><r>qua<s n="preadv"/></r></p></e>
-    <e><p><l>quickly<s n="preadv"/></l><r>flugs<s n="preadv"/></r></p></e>
     <e><p><l>quite<s n="preadv"/></l><r>ziemlich<s n="preadv"/></r></p></e>
     <e><p><l>really<s n="preadv"/></l><r>eigentlich<s n="preadv"/></r></p></e>
-    <e><p><l>recently<s n="preadv"/></l><r>neuerdings<s n="preadv"/></r></p></e>
-    <e><p><l>right<b/>in<b/>the<b/>middle<s n="preadv"/></l><r>mittendrin<s n="preadv"/></r></p></e>
     <e><p><l>round<s n="preadv"/></l><r>rundherum<s n="preadv"/></r></p></e>
     <e><p><l>second<b/>time<s n="preadv"/></l><r>zweitenmal<s n="preadv"/></r></p></e>
     <e><p><l>since<b/>then<s n="preadv"/></l><r>seitdem<s n="preadv"/></r></p></e>
     <e><p><l>so<s n="preadv"/></l><r>so<s n="preadv"/></r></p></e>
-    <e><p><l>strictly<s n="preadv"/></l><r>genauestens<s n="preadv"/></r></p></e>
-    <e><p><l>thats<b/>why<s n="preadv"/></l><r>darum<s n="preadv"/></r></p></e>
     <e><p><l>thats<b/>why<s n="preadv"/></l><r>deswegen<s n="preadv"/></r></p></e>
-    <e><p><l>the<b/>last<b/>time<s n="preadv"/></l><r>letztmals<s n="preadv"/></r></p></e>
-    <e><p><l>therefore<s n="preadv"/></l><r>demnach<s n="preadv"/></r></p></e>
     <e><p><l>thereof<s n="preadv"/></l><r>davon<s n="preadv"/></r></p></e>
-    <e><p><l>to<b/>that<s n="preadv"/></l><r>dazu<s n="preadv"/></r></p></e>
     <e><p><l>too<s n="preadv"/></l><r>zu<s n="preadv"/></r></p></e>
+    <e r="LR"><p><l>too<s n="preadv"/></l><r>zu<s n="preadv"/></r></p></e>
     <e r="RL"><p><l>too<s n="preadv"/></l><r>allzu<s n="preadv"/></r></p></e>
-    <e><p><l>trappings<s n="preadv"/></l><r>drumherum<s n="preadv"/></r></p></e>
     <e><p><l>very<s n="preadv"/></l><r>sehr<s n="adv"/></r></p></e>
     <e><p><l>virtual<s n="preadv"/></l><r>gewissermaßen<s n="preadv"/></r></p></e>
     <e><p><l>weekdays<s n="preadv"/></l><r>wochentags<s n="preadv"/></r></p></e>
     <e><p><l>willing<s n="preadv"/></l><r>willens<s n="preadv"/></r></p></e>
-    <e><p><l>with<b/>that<s n="preadv"/></l><r>damit<s n="preadv"/></r></p></e>
-    <e><p><l>within<s n="preadv"/></l><r>drin<s n="preadv"/></r></p></e>
 
     <e><p><l>3<b/>o'clock<s n="adv"/></l><r>3<b/>Uhr<s n="adv"/></r></p></e>
-    <e><p><l>a<b/>little<b/>bit<s n="adv"/></l><r>ein<b/>kleines<b/>bisschen,<b/>ein<b/>wenig<s n="adv"/></r></p></e>
+    <e><p><l>a<b/>bit<s n="adv"/></l><r>leicht<s n="adv"/></r></p></e>
+    <e><p><l>a<b/>hundred<b/>times<s n="adv"/></l><r>hundertmal<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>a<b/>little<s n="adv"/></l><r>bisschen<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>a<b/>little<s n="adv"/></l><r>bißchen<s n="adv"/></r></p></e>
+    <e><p><l>a<b/>little<b/>bit<s n="adv"/></l><r>ein<b/>kleines<b/>bisschen<s n="adv"/></r></p></e>
+    <e><p><l>a<b/>long<b/>time<b/>ago<s n="adv"/></l><r>vorzeiten<s n="adv"/></r></p></e>
+    <e><p><l>a<b/>lot<s n="adv"/></l><r>viel<s n="adv"/></r></p></e>
+    <e><p><l>a<b/>priori<s n="adv"/></l><r>vorneherein<s n="adv"/></r></p></e>
     <e><p><l>a<b/>quarter<b/>past<s n="adv"/></l><r>viertel<b/>nach<s n="adv"/></r></p></e>
     <e><p><l>a<b/>quarter<b/>to<s n="adv"/></l><r>viertel<b/>vor<s n="adv"/></r></p></e>
+    <e><p><l>a<b/>time<s n="adv"/></l><r>jedesmal<s n="adv"/></r></p></e>
     <e><p><l>about<b/>as<s n="adv"/></l><r>etwa<b/>so<s n="adv"/></r></p></e>
+    <e><p><l>about<b/>that<s n="adv"/></l><r>darüber<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>about<b/>that<s n="adv"/></l><r>darüber<s n="preadv"/></r></p></e>
+    <e><p><l>about<b/>this<s n="adv"/></l><r>hierüber<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>about<b/>this<s n="adv"/></l><r>hierüber<s n="preadv"/></r></p></e>
     <e><p><l>about<b/>time<s n="adv"/></l><r>an<b/>der<b/>Zeit<s n="adv"/></r></p></e>
+    <e><p><l>about<b/>what<s n="adv"/></l><r>worum<s n="adv"/></r></p></e>
     <e><p><l>above<b/>all<s n="adv"/></l><r>zuallererst<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>above<b/>all<s n="adv"/></l><r>zuallererst<s n="preadv"/></r></p></e>
+    <e><p><l>above<b/>ground<s n="adv"/></l><r>oberirdisch<s n="adv"/></r></p></e>
+    <e><p><l>absolutely<b/>no<s n="adv"/></l><r>keinerlei<s n="adv"/></r></p></e>
     <e><p><l>absolutely<b/>not<s n="adv"/></l><r>unter<b/>keinen<b/>Umständen<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>according<b/>to<s n="adv"/></l><r>nach<s n="adv"/></r></p></e>
     <e><p><l>according<b/>to<b/>that<s n="adv"/></l><r>demnach<s n="adv"/></r></p></e>
+    <e><p><l>across<b/>the<b/>country<s n="adv"/></l><r>landesweit<s n="adv"/></r></p></e>
+    <e><p><l>across<b/>the<b/>globe<s n="adv"/></l><r>weltweit<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>after<b/>all<s n="adv"/></l><r>schließlich<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>after<b/>all<s n="adv"/></l><r>immerhin<s n="adv"/></r></p></e>
+    <e><p><l>after<b/>date<s n="adv"/></l><r>dato<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>after<b/>noon<s n="adv"/></l><r>nachmittags<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>after<b/>that<s n="adv"/></l><r>danach<s n="preadv"/></r></p></e>
     <e><p><l>after<b/>the<b/>weekend<s n="adv"/></l><r>nach<b/>dem<b/>Wochenende<s n="adv"/></r></p></e>
+    <e><p><l>after<b/>this<s n="adv"/></l><r>hiernach<s n="adv"/></r></p></e>
     <e><p><l>after<b/>this<b/>manner<s n="adv"/></l><r>auf<b/>diese<b/>Art<s n="adv"/></r></p></e>
+    <e><p><l>after<b/>which<s n="adv"/></l><r>wonach<s n="adv"/></r></p></e>
     <e><p><l>again<b/>and<b/>again<s n="adv"/></l><r>aber<b/>und<b/>abermals<s n="adv"/></r></p></e>
+    <e><p><l>against<b/>each<b/>other<s n="adv"/></l><r>gegeneinander<s n="adv"/></r></p></e>
     <e><p><l>against<b/>it<s n="adv"/></l><r>dagegen<s n="adv"/></r></p></e>
     <e><p><l>against<b/>my<b/>will<s n="adv"/></l><r>wider<b/>meinen<b/>Willen<s n="adv"/></r></p></e>
+    <e><p><l>against<b/>one<b/>another<s n="adv"/></l><r>widereinander<s n="adv"/></r></p></e>
+    <e><p><l>against<b/>orders<s n="adv"/></l><r>verbotenerweise<s n="adv"/></r></p></e>
+    <e><p><l>against<b/>what<s n="adv"/></l><r>wogegen<s n="adv"/></r></p></e>
+    <e><p><l>ahead<b/>of<s n="adv"/></l><r>im<b/>Vorfeld<b/>von<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>along<s n="adv"/></l><r>ständig<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>around<s n="adv"/></l><r>rings<s n="adv"/></r></p></e>
     <e><p><l>all<b/>at<b/>once<s n="adv"/></l><r>ganz<b/>plötzlich<s n="adv"/></r></p></e>
     <e><p><l>all<b/>day<s n="adv"/></l><r>den<b/>ganzen<b/>Tag<s n="adv"/></r></p></e>
     <e r="LR"><p><l>all<b/>day<b/>long<s n="adv"/></l><r>den<b/>ganzen<b/>Tag<s n="adv"/></r></p></e>
     <e><p><l>all<b/>in<b/>one<b/>breath<s n="adv"/></l><r>alles<b/>auf<b/>einmal<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>of<b/>them<s n="adv"/></l><r>allesamt<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>one's<b/>life<s n="adv"/></l><r>zeitlebens<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>over<s n="adv"/></l><r>vorüber<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>over<b/>Europe<s n="adv"/></l><r>europaweit<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>over<b/>the<b/>place<s n="adv"/></l><r>querbeet<s n="adv"/></r></p></e>
     <e><p><l>all<b/>right<s n="adv"/></l><r>in<b/>Ordnung<s n="adv"/></r></p></e>
     <e><p><l>all<b/>the<b/>better<s n="adv"/></l><r>desto<b/>besser<s n="adv"/></r></p></e>
     <e><p><l>all<b/>the<b/>less<s n="adv"/></l><r>um<b/>so<b/>weniger<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>the<b/>more<s n="adv"/></l><r>umso<s n="adv"/></r></p></e>
+    <e><p><l>all<b/>the<b/>same<s n="adv"/></l><r>genauso<s n="adv"/></r></p></e>
     <e><p><l>all<b/>the<b/>way<s n="adv"/></l><r>bis<b/>zum<b/>Anschlag<s n="adv"/></r></p></e>
     <e><p><l>almost<b/>exclusively<s n="adv"/></l><r>fast<b/>ausschließlich<s n="adv"/></r></p></e>
+    <e><p><l>am<b/>of<b/>use<s n="adv"/></l><r>nütze<s n="adv"/></r></p></e>
     <e><p><l>amid<b/>a<b/>lot<b/>of<b/>hype<s n="adv"/></l><r>inmitten<b/>eines<b/>großen<b/>Rummels<s n="adv"/></r></p></e>
+    <e><p><l>among<b/>each<b/>other<s n="adv"/></l><r>untereinander<s n="adv"/></r></p></e>
     <e><p><l>among<b/>others<s n="adv"/></l><r>unter<b/>anderem<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>among<b/>others<s n="adv"/></l><r>u.a.<s n="abbr"/></r></p></e>
     <e><p><l>and<b/>so<b/>on<s n="adv"/></l><r>und<b/>so<b/>weiter<s n="adv"/></r></p></e>
+    <e><p><l>any<b/>longer<s n="adv"/></l><r>weiterhin<s n="adv"/></r></p></e>
     <e><p><l>any<b/>moment<s n="adv"/></l><r>jeden<b/>Augenblick<s n="adv"/></r></p></e>
+    <e><p><l>any<b/>more<s n="adv"/></l><r>mehr<s n="adv"/></r></p></e>
     <e><p><l>any<b/>sort<b/>of<s n="adv"/></l><r>jeder<b/>Art<s n="adv"/></r></p></e>
     <e><p><l>any<b/>way<s n="adv"/></l><r>in<b/>jeglicher<b/>Richtung<s n="adv"/></r></p></e>
+    <e><p><l>apart<b/>from<b/>that<s n="adv"/></l><r>ansonsten<s n="adv"/></r></p></e>
+    <e><p><l>around<b/>the<b/>middle<b/>of<s n="adv"/></l><r>um<b/>die<b/>Mitte<b/>des<s n="adv"/></r></p></e>
     <e><p><l>around<b/>the<b/>world<s n="adv"/></l><r>rund<b/>um<b/>die<b/>Welt<s n="adv"/></r></p></e>
     <e><p><l>around<b/>this<b/>time<s n="adv"/></l><r>um<b/>diese<b/>Zeit<b/>herum<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>a<s n="adv"/></l><r>in<b/>Form<b/>einer<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>a<b/>consequence<s n="adv"/></l><r>somit<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>a<b/>matter<b/>of<b/>fact<s n="adv"/></l><r>tatsächlich<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>a<b/>precaution<s n="adv"/></l><r>vorsichtshalber<s n="adv"/></r></p></e>
     <e><p><l>as<b/>a<b/>result<s n="adv"/></l><r>daraufhin<s n="adv"/></r></p></e>
     <e r="LR"><p><l>as<b/>a<b/>result<s n="adv"/></l><r>dadurch<s n="adv"/></r></p></e>
     <e><p><l>as<b/>a<b/>result<b/>of<b/>this<s n="adv"/></l><r>hierdurch<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>a<b/>sideline<s n="adv"/></l><r>nebenbei<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>far<b/>as<s n="adv"/></l><r>soweit<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>as<b/>far<b/>as<b/>I<b/>know<s n="adv"/></l><r>m.W.<s n="abbr"/></r></p></e>
+    <e><p><l>as<b/>far<b/>as<b/>possible<s n="adv"/></l><r>möglichst<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>far<b/>as<b/>possible<s n="adv"/></l><r>weitestgehend<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>follows<s n="adv"/></l><r>folgendermaßen<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>is<b/>known<s n="adv"/></l><r>bekanntermaßen<s n="preadv"/></r></p></e>
+    <e><p><l>as<b/>is<b/>well<b/>known<s n="adv"/></l><r>bekanntlich<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>long<b/>as<s n="adv"/></l><r>ebensolange<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>often<s n="adv"/></l><r>ebensooft<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>soon<b/>as<s n="adv"/></l><r>sowie<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>soon<b/>as<b/>possible<s n="adv"/></l><r>baldmöglichst<s n="adv"/></r></p></e>
     <e><p><l>as<b/>to<b/>that<s n="adv"/></l><r>hierzu<s n="adv"/></r></p></e>
+    <e><p><l>as<b/>well<s n="adv"/></l><r>ebenso<s n="adv"/></r></p></e>
     <e r="LR"><p><l>as<b/>well<s n="adv"/></l><r>dazu<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>as<b/>well<s n="adv"/></l><r>sowie<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>a<b/>guess<s n="adv"/></l><r>schätzungsweise<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>a<b/>time<s n="adv"/></l><r>jeweils<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>all<s n="adv"/></l><r>überhaupt<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>all<b/>events<s n="adv"/></l><r>allenfalls<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>at<b/>all<b/>times<s n="adv"/></l><r>jederzeit<s n="adv"/></r></p></e>
     <e><p><l>at<b/>best<s n="adv"/></l><r>am<b/>besten<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>best<s n="adv"/></l><r>bestenfalls<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>first<s n="adv"/></l><r>anfangs<s n="adv"/></r></p></e>
     <e><p><l>at<b/>full<b/>speed<s n="adv"/></l><r>mit<b/>Höchstgeschwindigkeit<s n="adv"/></r></p></e>
     <e><p><l>at<b/>hand<s n="adv"/></l><r>bei<b/>der<b/>Hand<s n="adv"/></r></p></e>
     <e><p><l>at<b/>home<s n="adv"/></l><r>zu<b/>Hause<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>at<b/>home<s n="adv"/></l><r>daheim<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>at<b/>home<s n="adv"/></l><r>zuhause<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>it<s n="adv"/></l><r>daran<s n="preadv"/></r></p></e>
     <e r="LR"><p><l>at<b/>it<s n="adv"/></l><r>daran<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>last<s n="adv"/></l><r>schließlich<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>least<s n="adv"/></l><r>mindestens<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>at<b/>least<s n="adv"/></l><r>zumindest<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>at<b/>long<b/>last<s n="adv"/></l><r>endlich<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>most<s n="adv"/></l><r>höchstens<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>night<s n="adv"/></l><r>nachts<s n="adv"/></r></p></e>
     <e><p><l>at<b/>noon<b/>today<s n="adv"/></l><r>heute<b/>Mittag<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>once<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>at<b/>once<s n="adv"/></l><r>alsbald<s n="adv"/></r></p></e>
     <e><p><l>at<b/>one<b/>stroke<s n="adv"/></l><r>auf<b/>einen<b/>Streich<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>one<b/>time<s n="adv"/></l><r>einstmals<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>present<s n="adv"/></l><r>derzeit<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>random<s n="adv"/></l><r>blindlings<s n="adv"/></r></p></e>
     <e><p><l>at<b/>school<s n="adv"/></l><r>in<b/>der<b/>Schule<s n="adv"/></r></p></e>
     <e><p><l>at<b/>that<s n="adv"/></l><r>dabei<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>that<b/>time<s n="adv"/></l><r>dazumal<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>that<b/>time<s n="adv"/></l><r>seinerzeit<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>beginning<s n="adv"/></l><r>eingangs<s n="adv"/></r></p></e>
     <e><p><l>at<b/>the<b/>double<s n="adv"/></l><r>im<b/>Laufschritt<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>drop<b/>of<b/>a<b/>hat<s n="adv"/></l><r>sogleich<s n="adv"/></r></p></e>
     <e><p><l>at<b/>the<b/>end<s n="adv"/></l><r>am<b/>Ende<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>expense<b/>of<s n="adv"/></l><r>auf<b/>Kosten<b/>von<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>front<s n="adv"/></l><r>vorne<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>latest<s n="adv"/></l><r>spätestens<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>longest<s n="adv"/></l><r>längstens<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>maximum<s n="adv"/></l><r>maximal<s n="adv"/></r></p></e>
     <e><p><l>at<b/>the<b/>moment<s n="adv"/></l><r>im<b/>Moment<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>same<b/>time<s n="adv"/></l><r>zugleich<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>time<s n="adv"/></l><r>damals<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>time<b/>of<s n="adv"/></l><r>zum<b/>Zeitpunkt<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>top<b/>of<b/>one's<b/>voice<s n="adv"/></l><r>lauthals<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>the<b/>very<b/>most<s n="adv"/></l><r>allerhöchstens<s n="adv"/></r></p></e>
     <e><p><l>at<b/>this<s n="adv"/></l><r>hierbei<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>times<s n="adv"/></l><r>zeitweise<s n="adv"/></r></p></e>
+    <e><p><l>at<b/>which<s n="adv"/></l><r>worauf<s n="adv"/></r></p></e>
+    <e><p><l>away<b/>from<b/>home<s n="adv"/></l><r>auswärts<s n="adv"/></r></p></e>
     <e><p><l>back<b/>and<b/>forth<s n="adv"/></l><r>auf<b/>und<b/>ab<s n="adv"/></r></p></e>
     <e><p><l>back<b/>once<b/>more<s n="adv"/></l><r>wieder<b/>da<s n="adv"/></r></p></e>
+    <e><p><l>back<b/>then<s n="adv"/></l><r>damals<s n="adv"/></r></p></e>
+    <e><p><l>based<b/>on<s n="adv"/></l><r>zugrunde<s n="adv"/></r></p></e>
     <e><p><l>based<b/>on<b/>facts<s n="adv"/></l><r>auf<b/>Tatsachen<b/>beruhend<s n="adv"/></r></p></e>
+    <e><p><l>be<b/>granted<s n="adv"/></l><r>zuteil<s n="adv"/></r></p></e>
+    <e><p><l>because<b/>of<b/>them<s n="adv"/></l><r>ihretwegen<s n="adv"/></r></p></e>
+    <e><p><l>because<b/>of<b/>you<s n="adv"/></l><r>euretwegen<s n="adv"/></r></p></e>
     <e><p><l>before<b/>noon<s n="adv"/></l><r>am<b/>Vormittag<s n="adv"/></r></p></e>
+    <e><p><l>below<b/>ground<s n="adv"/></l><r>tot<s n="adv"/></r></p></e>
+    <e><p><l>beside<b/>it<s n="adv"/></l><r>daneben<s n="adv"/></r></p></e>
+    <e><p><l>between<b/>then<b/>and<b/>now<s n="adv"/></l><r>seitdem<s n="adv"/></r></p></e>
     <e><p><l>beyond<b/>all<b/>doubt<s n="adv"/></l><r>ohne<b/>jeden<b/>Zweifel<s n="adv"/></r></p></e>
     <e><p><l>bit<b/>by<b/>bit<s n="adv"/></l><r>nach<b/>und<b/>nach<s n="adv"/></r></p></e>
     <e><p><l>bright<b/>and<b/>early<s n="adv"/></l><r>in<b/>aller<b/>Frühe<s n="adv"/></r></p></e>
+    <e><p><l>but<b/>then<b/>again<s n="adv"/></l><r>andrerseits<s n="adv"/></r></p></e>
     <e><p><l>by<b/>airmail<s n="adv"/></l><r>per<b/>Luftpost<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>by<b/>and<b/>by<s n="adv"/></l><r>allmählich<s n="adv"/></r></p></e>
     <e><p><l>by<b/>car<s n="adv"/></l><r>mit<b/>dem<b/>Auto<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>by<b/>chance<s n="adv"/></l><r>zufällig<s n="adv"/></r></p></e>
     <e><p><l>by<b/>day<s n="adv"/></l><r>tags<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>by<b/>degrees<s n="adv"/></l><r>allmählich<s n="adv"/></r></p></e>
     <e><p><l>by<b/>fair<b/>means<b/>or<b/>foul<s n="adv"/></l><r>egal<b/>mit<b/>welchen<b/>Mitteln<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>by<b/>far<s n="adv"/></l><r>weit<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>fits<b/>and<b/>starts<s n="adv"/></l><r>sporadisch<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>force<s n="adv"/></l><r>zwangsweise<s n="adv"/></r></p></e>
     <e><p><l>by<b/>forced<b/>marches<s n="adv"/></l><r>durch<b/>Gewaltmärsche<s n="adv"/></r></p></e>
     <e><p><l>by<b/>hand<s n="adv"/></l><r>mit<b/>der<b/>Hand<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>heart<s n="adv"/></l><r>auswendig<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>mistake<s n="adv"/></l><r>irrtümlich<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>no<b/>means<s n="adv"/></l><r>beileibe<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>by<b/>no<b/>means<s n="adv"/></l><r>mitnichten<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>now<s n="adv"/></l><r>mittlerweile<s n="adv"/></r></p></e>
     <e><p><l>by<b/>plane<s n="adv"/></l><r>mit<b/>dem<b/>Flugzeug<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>return<s n="adv"/></l><r>postwendend<s n="adv"/></r></p></e>
     <e><p><l>by<b/>sea<s n="adv"/></l><r>auf<b/>dem<b/>Seeweg<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>the<b/>hundred<s n="adv"/></l><r>hundertweise<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>the<b/>same<b/>token<s n="adv"/></l><r>ebenfalls<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>the<b/>way<s n="adv"/></l><r>apropos<s n="adv"/></r></p></e>
+    <e><p><l>by<b/>the<b/>way<s n="adv"/></l><r>übrigens<s n="adv"/></r></p></e>
     <e><p><l>by<b/>train<s n="adv"/></l><r>mit<b/>dem<b/>Zug<s n="adv"/></r></p></e>
+    <e><p><l>capable<b/>of<s n="adv"/></l><r>imstande<s n="adv"/></r></p></e>
+    <e><p><l>catch<b/>sight<s n="adv"/></l><r>ansichtig<s n="adv"/></r></p></e>
     <e><p><l>close<b/>at<b/>hand<s n="adv"/></l><r>nahe<b/>bei<s n="adv"/></r></p></e>
+    <e><p><l>commonly<b/>called<s n="adv"/></l><r>vulgo<s n="adv"/></r></p></e>
+    <e><p><l>compelled<b/>to<s n="adv"/></l><r>gezwungenermaßen<s n="adv"/></r></p></e>
     <e><p><l>could<b/>say<s n="adv"/></l><r>könnte<b/>man<b/>sagen<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>de<b/>facto<s n="adv"/></l><r>tatsächlich<s n="adv"/></r></p></e>
+    <e><p><l>dead<b/>level<s n="adv"/></l><r>gleichauf<s n="preadv"/></r></p></e>
     <e><p><l>deep<b/>down<s n="adv"/></l><r>tief<b/>drunten<s n="adv"/></r></p></e>
     <e><p><l>definitely<b/>not<s n="adv"/></l><r>bestimmt<b/>nicht<s n="adv"/></r></p></e>
     <e><p><l>depending<b/>on<b/>who<s n="adv"/></l><r>je<b/>nachdem<b/>,<b/>wer<s n="adv"/></r></p></e>
     <e><p><l>down<b/>below<s n="adv"/></l><r>unten<b/>rum<s n="adv"/></r></p></e>
+    <e><p><l>down<b/>the<b/>country<s n="adv"/></l><r>landab<s n="adv"/></r></p></e>
+    <e><p><l>down<b/>there<s n="adv"/></l><r>drunten<s n="adv"/></r></p></e>
+    <e><p><l>during<b/>the<b/>day<s n="adv"/></l><r>tagsüber<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>during<b/>the<b/>night<s n="adv"/></l><r>nachts<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>each<b/>Saturday<s n="adv"/></l><r>samstags<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>edited<b/>by<s n="adv"/></l><r>Hrsg.<s n="abbr"/></r></p></e>
     <e><p><l>eight<b/>o'clock<s n="adv"/></l><r>acht<b/>Uhr<s n="adv"/></r></p></e>
     <e><p><l>either<b/>way<s n="adv"/></l><r>auf<b/>die<b/>eine<b/>oder<b/>andere<b/>Art<s n="adv"/></r></p></e>
     <e><p><l>eleven<b/>o'clock<s n="adv"/></l><r>elf<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>eleven<b/>times<s n="adv"/></l><r>elfmal<s n="adv"/></r></p></e>
     <e><p><l>enough<b/>and<b/>to<b/>spare<s n="adv"/></l><r>mehr<b/>als<b/>genug<s n="adv"/></r></p></e>
     <e><p><l>every<b/>day<s n="adv"/></l><r>jeden<b/>Tag<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>every<b/>day<s n="adv"/></l><r>tagtäglich<s n="adv"/></r></p></e>
     <e><p><l>every<b/>morning<s n="adv"/></l><r>jeden<b/>Morgen<s n="adv"/></r></p></e>
     <e><p><l>every<b/>now<b/>and<b/>again<s n="adv"/></l><r>hin<b/>und<b/>wieder<s n="adv"/></r></p></e>
     <e><p><l>every<b/>time<s n="adv"/></l><r>jedes<b/>Mal<s n="adv"/></r></p></e>
     <e><p><l>far<b/>and<b/>wide<s n="adv"/></l><r>weit<b/>und<b/>breit<s n="adv"/></r></p></e>
+    <e><p><l>far<b/>away<s n="adv"/></l><r>fernab<s n="adv"/></r></p></e>
+    <e><p><l>far<b/>too<s n="adv"/></l><r>allzu<s n="adv"/></r></p></e>
+    <e><p><l>farther<b/>north<s n="adv"/></l><r>nördlicher<s n="adv"/></r></p></e>
+    <e><p><l>felt<b/>like<s n="adv"/></l><r>zumute<s n="adv"/></r></p></e>
     <e><p><l>fifteen<b/>minutes<b/>before<s n="adv"/></l><r>fünfzehn<b/>Minuten<b/>vor<s n="adv"/></r></p></e>
     <e><p><l>fifteen<b/>minutes<b/>past<s n="adv"/></l><r>fünfzehn<b/>Minuten<b/>nach<s n="adv"/></r></p></e>
+    <e><p><l>first<b/>and<b/>foremost<s n="adv"/></l><r>zuallererst<s n="adv"/></r></p></e>
     <e><p><l>first<b/>come,<b/>first<b/>served<s n="adv"/></l><r>wer<b/>zuerst<b/>kommt,<b/>mahlt<b/>zuerst<s n="adv"/></r></p></e>
+    <e><p><l>first<b/>of<b/>all<s n="adv"/></l><r>zunächst<s n="adv"/></r></p></e>
     <e><p><l>five<b/>o'clock<s n="adv"/></l><r>fünf<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>five<b/>times<s n="adv"/></l><r>fünfmal<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>for<b/>a<b/>long<b/>time<s n="adv"/></l><r>lange<s n="adv"/></r></p></e>
     <e><p><l>for<b/>a<b/>minute<s n="adv"/></l><r>eine<b/>Minute<b/>lang<s n="adv"/></r></p></e>
     <e><p><l>for<b/>a<b/>very<b/>long<b/>time<s n="adv"/></l><r>für<b/>eine<b/>sehr<b/>lange<b/>Zeit<s n="adv"/></r></p></e>
     <e><p><l>for<b/>dear<b/>life<s n="adv"/></l><r>als<b/>ob<b/>es<b/>ums<b/>Leben<b/>ginge<s n="adv"/></r></p></e>
     <e><p><l>for<b/>dinner<s n="adv"/></l><r>zum<b/>Essen<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>ever<s n="adv"/></l><r>ewig<s n="adv"/></r></p></e>
     <e><p><l>for<b/>ever<b/>and<b/>ever<s n="adv"/></l><r>für<b/>alle<b/>Zeiten<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>example<s n="adv"/></l><r>beispielsweise<s n="adv"/></r></p></e>
     <e r="RL"><p><l>for<b/>example<s n="adv"/></l><r>zum<b/>Beispiel<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>hours<s n="adv"/></l><r>stundenlang<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>it<s n="adv"/></l><r>dafür<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>life<s n="adv"/></l><r>lebenslang<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>many<b/>years<s n="adv"/></l><r>langjährig<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>miles<b/>around<s n="adv"/></l><r>weithin<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>my<b/>part<s n="adv"/></l><r>meinerseits<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>nothing<s n="adv"/></l><r>umsonst<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>nothing<s n="adv"/></l><r>vergebens<s n="adv"/></r></p></e>
     <e><p><l>for<b/>now<s n="adv"/></l><r>im<b/>Augenglick<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>now<s n="adv"/></l><r>vorerst<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>one<b/>another<s n="adv"/></l><r>füreinander<s n="adv"/></r></p></e>
     <e><p><l>for<b/>one<b/>reason<b/>or<b/>another<s n="adv"/></l><r>aus<b/>irgendeinem<b/>Grund<s n="adv"/></r></p></e>
     <e><p><l>for<b/>one<b/>year<s n="adv"/></l><r>um<b/>ein<b/>Jahr<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>for<b/>our<b/>sake<s n="adv"/></l><r>unsretwegen<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>several<b/>hours<s n="adv"/></l><r>mehrstündig<s n="adv"/></r></p></e>
     <e><p><l>for<b/>some<b/>time<b/>now<s n="adv"/></l><r>schon<b/>seit<b/>einiger<b/>Zeit<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>for<b/>sure<s n="adv"/></l><r>sicher<s n="adv"/></r></p></e>
     <e><p><l>for<b/>that<b/>reason<s n="adv"/></l><r>aus<b/>diesem<b/>Grund<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>that<b/>reason<s n="adv"/></l><r>drum<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>that<b/>very<b/>reason<s n="adv"/></l><r>ebendarum<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>the<b/>first<b/>time<s n="adv"/></l><r>erstmals<s n="adv"/></r></p></e>
     <e><p><l>for<b/>the<b/>future<s n="adv"/></l><r>in<b/>Zukunft<s n="adv"/></r></p></e>
     <e><p><l>for<b/>the<b/>moment<s n="adv"/></l><r>für<b/>den<b/>Moment<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>for<b/>the<b/>most<b/>part<s n="adv"/></l><r>größtenteils<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>the<b/>sake<b/>of<s n="adv"/></l><r>zuliebe<s n="adv"/></r></p></e>
     <e><p><l>for<b/>the<b/>sake<b/>of<b/>God<s n="adv"/></l><r>um<b/>Gottes<b/>willen<s n="adv"/></r></p></e>
     <e><p><l>for<b/>the<b/>second<b/>time<s n="adv"/></l><r>zum<b/>zweiten<b/>Mal<s n="adv"/></r></p></e>
     <e><p><l>for<b/>these<b/>reasons<s n="adv"/></l><r>aus<b/>diesen<b/>Gründen<s n="adv"/></r></p></e>
@@ -40356,90 +40103,196 @@
     <e><p><l>for<b/>those<b/>reasons<s n="adv"/></l><r>aus<b/>diesen<b/>Gründen<s n="adv"/></r></p></e>
     <e><p><l>for<b/>two<b/>reasons<s n="adv"/></l><r>aus<b/>zwei<b/>Gründen<s n="adv"/></r></p></e>
     <e><p><l>for<b/>weeks<s n="adv"/></l><r>seit<b/>Wochen<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>what<s n="adv"/></l><r>wofür<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>years<s n="adv"/></l><r>jahrelang<s n="adv"/></r></p></e>
+    <e><p><l>for<b/>your<b/>part<s n="adv"/></l><r>eurerseits<s n="adv"/></r></p></e>
     <e><p><l>four<b/>o'clock<s n="adv"/></l><r>vier<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>four<b/>times<s n="adv"/></l><r>viermal<s n="adv"/></r></p></e>
+    <e><p><l>free<b/>of<b/>charge<s n="adv"/></l><r>gratis<s n="adv"/></r></p></e>
     <e><p><l>from<b/>above<s n="adv"/></l><r>von<b/>oben<s n="adv"/></r></p></e>
     <e><p><l>from<b/>bad<b/>to<b/>worse<s n="adv"/></l><r>immer<b/>schlechter<s n="adv"/></r></p></e>
     <e><p><l>from<b/>beginning<b/>to<b/>end<s n="adv"/></l><r>A<b/>bis<b/>Z<s n="adv"/></r></p></e>
     <e><p><l>from<b/>below<s n="adv"/></l><r>von<b/>unten<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>each<b/>other<s n="adv"/></l><r>voneinander<s n="adv"/></r></p></e>
     <e><p><l>from<b/>everywhere<s n="adv"/></l><r>aus<b/>allen<b/>Himmelsrichtungen<s n="adv"/></r></p></e>
     <e><p><l>from<b/>here<s n="adv"/></l><r>von<b/>hier<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>it<s n="adv"/></l><r>hieraus<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>outside<s n="adv"/></l><r>auswärtig<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>somewhere<s n="adv"/></l><r>irgendwoher<s n="adv"/></r></p></e>
     <e><p><l>from<b/>the<b/>beginning<s n="adv"/></l><r>seit<b/>Anbeginn<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>the<b/>first<s n="adv"/></l><r>vornherein<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>there<s n="adv"/></l><r>daher<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>time<b/>to<b/>time<s n="adv"/></l><r>bisweilen<s n="adv"/></r></p></e>
+    <e><p><l>from<b/>where<s n="adv"/></l><r>woher<s n="adv"/></r></p></e>
     <e><p><l>full<b/>blast<s n="adv"/></l><r>in<b/>voller<b/>Lautstärke<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>further<b/>in<s n="adv"/></l><r>weiter<s n="adv"/></r></p></e>
+    <e><p><l>get<b/>lost<s n="adv"/></l><r>abhanden<s n="adv"/></r></p></e>
     <e><p><l>God<b/>willing<s n="adv"/></l><r>so<b/>Gott<b/>will<s n="adv"/></r></p></e>
     <e><p><l>hand<b/>over<b/>fist<s n="adv"/></l><r>sehr<b/>schell<s n="adv"/></r></p></e>
     <e><p><l>hard<b/>to<b/>tell<s n="adv"/></l><r>schwer<b/>zu<b/>sagen<s n="adv"/></r></p></e>
     <e><p><l>headed<b/>by<s n="adv"/></l><r>angeführt<b/>von<s n="adv"/></r></p></e>
+    <e><p><l>here<b/>and<b/>there<s n="adv"/></l><r>stellenweise<s n="adv"/></r></p></e>
     <e><p><l>high<b/>up<s n="adv"/></l><r>hoch<b/>oben<s n="adv"/></r></p></e>
+    <e><p><l>how<b/>far<s n="adv"/></l><r>inwieweit<s n="adv"/></r></p></e>
     <e><p><l>how<b/>many<s n="adv"/></l><r>wie<b/>viele<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>how<b/>many<s n="adv"/></l><r>wievielte<s n="adv"/></r></p></e>
     <e><p><l>how<b/>much<s n="adv"/></l><r>wie<b/>viel<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>how<b/>much<s n="adv"/></l><r>wieviel<s n="adv"/></r></p></e>
     <e><p><l>how<b/>very<s n="adv"/></l><r>wie<b/>sehr<s n="adv"/></r></p></e>
+    <e><p><l>however<b/>much<s n="adv"/></l><r>sosehr<s n="adv"/></r></p></e>
+    <e><p><l>if<b/>necessary<s n="adv"/></l><r>gegebenenfalls<s n="adv"/></r></p></e>
+    <e><p><l>if<b/>necessary<s n="adv"/></l><r>notfalls<s n="adv"/></r></p></e>
+    <e><p><l>if<b/>necessary<s n="adv"/></l><r>nötigenfalls<s n="adv"/></r></p></e>
+    <e><p><l>if<b/>possible<s n="adv"/></l><r>womöglich<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>if<b/>you<b/>please<s n="adv"/></l><r>bitte<s n="adv"/></r></p></e>
     <e><p><l>in<b/>a<b/>big<b/>way<s n="adv"/></l><r>im<b/>großen<s n="adv"/></r></p></e>
     <e><p><l>in<b/>a<b/>blink<b/>of<b/>the<b/>eye<s n="adv"/></l><r>in<b/>einem<b/>Augenblick<s n="adv"/></r></p></e>
     <e><p><l>in<b/>a<b/>crazy<b/>way<s n="adv"/></l><r>in<b/>einer<b/>verrückten<b/>Art<b/>und<b/>Weise<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>a<b/>jiffy<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
     <e><p><l>in<b/>a<b/>little<b/>while<s n="adv"/></l><r>in<b/>kurzer<b/>Zeit<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>a<b/>low<b/>voice<s n="adv"/></l><r>halblaut<s n="adv"/></r></p></e>
     <e><p><l>in<b/>a<b/>small<b/>way<s n="adv"/></l><r>in<b/>kleinem<b/>Ausmass<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>a<b/>sudden<b/>way<s n="adv"/></l><r>plötzlich<s n="adv"/></r></p></e>
     <e><p><l>in<b/>a<b/>trice<s n="adv"/></l><r>im<b/>Nu<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>addition<s n="adv"/></l><r>hinzu<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>advance<s n="adv"/></l><r>vorab<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>agreement<s n="adv"/></l><r>handelseinig<s n="adv"/></r></p></e>
     <e><p><l>in<b/>all<b/>conscience<s n="adv"/></l><r>nach<b/>bestem<b/>Wissen<b/>und<b/>Gewissen<s n="adv"/></r></p></e>
     <e><p><l>in<b/>any<b/>way<s n="adv"/></l><r>in<b/>irgendeiner<b/>Form<s n="adv"/></r></p></e>
     <e><p><l>in<b/>bad<b/>faith<s n="adv"/></l><r>in<b/>böser<b/>Absicht<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>behind<s n="adv"/></l><r>hinterdrein<s n="adv"/></r></p></e>
     <e><p><l>in<b/>bold<b/>strokes<s n="adv"/></l><r>in<b/>dicken<b/>Strichen<s n="adv"/></r></p></e>
     <e><p><l>in<b/>brief<s n="adv"/></l><r>in<b/>Kürze<s n="adv"/></r></p></e>
     <e><p><l>in<b/>broad<b/>day<b/>light<s n="adv"/></l><r>am<b/>helllichten<b/>Tag<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>bulk<s n="adv"/></l><r>abschnittweise<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>conjunction<s n="adv"/></l><r>gemeinsam<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>contrast<s n="adv"/></l><r>demgegenüber<s n="preadv"/></r></p></e>
+    <e><p><l>in<b/>depth<s n="adv"/></l><r>eingehenden<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>detail<s n="adv"/></l><r>ausführlich<s n="adv"/></r></p></e>
     <e><p><l>in<b/>earnest<s n="adv"/></l><r>im<b/>Ernst,<b/>in<b/>der<b/>Tat,<b/>tatsächlich<s n="adv"/></r></p></e>
     <e><p><l>in<b/>Eastern<b/>Europe<s n="adv"/></l><r>in<b/>Osteuropa<s n="adv"/></r></p></e>
     <e><p><l>in<b/>English<s n="adv"/></l><r>auf<b/>Englisch<s n="adv"/></r></p></e>
     <e><p><l>in<b/>every<b/>direction<s n="adv"/></l><r>in<b/>jede<b/>Richtung<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>every<b/>respect<s n="adv"/></l><r>allseits<s n="adv"/></r></p></e>
     <e><p><l>in<b/>excess<s n="adv"/></l><r>im<b/>Übermaß<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>fact<s n="adv"/></l><r>eigentlich<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>fairness<s n="adv"/></l><r>fairerweise<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>fairness<s n="adv"/></l><r>gerechterweise<s n="adv"/></r></p></e>
     <e><p><l>in<b/>favor<s n="adv"/></l><r>zu<b/>Gunsten<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>favour<s n="adv"/></l><r>dafür<s n="adv"/></r></p></e>
     <e><p><l>in<b/>for<b/>a<b/>penny<s n="adv"/></l><r>wer<b/>A<b/>sagt<b/>,<b/>muß<b/>auch<b/>B<b/>sagen<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>front<s n="adv"/></l><r>davor<s n="preadv"/></r></p></e>
+    <e><p><l>in<b/>front<s n="adv"/></l><r>vorn<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>front<b/>of<s n="adv"/></l><r>vor<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>full<s n="adv"/></l><r>vollständig<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>good<b/>time<s n="adv"/></l><r>beizeiten<s n="adv"/></r></p></e>
     <e><p><l>in<b/>great<b/>detail<s n="adv"/></l><r>sehr<b/>ausführlich<s n="adv"/></r></p></e>
     <e><p><l>in<b/>great<b/>quantity<s n="adv"/></l><r>in<b/>großer<b/>Menge<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>half<s n="adv"/></l><r>entzwei<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>hindsight<s n="adv"/></l><r>hinterher<s n="adv"/></r></p></e>
     <e><p><l>in<b/>Indian<b/>file<s n="adv"/></l><r>im<b/>Gänsemarsch<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>it<s n="adv"/></l><r>dadrin<s n="adv"/></r></p></e>
     <e r="LR"><p><l>in<b/>it<s n="adv"/></l><r>darin<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>in<b/>it<s n="adv"/></l><r>darin<s n="preadv"/></r></p></e>
     <e><p><l>in<b/>its<b/>place<s n="adv"/></l><r>an<b/>seinem<b/>Platz<s n="adv"/></r></p></e>
     <e><p><l>in<b/>itself<s n="adv"/></l><r>an<b/>sich<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>kind<s n="adv"/></l><r>Naturallohnwages<s n="adv"/></r></p></e>
     <e><p><l>in<b/>large<b/>numbers<s n="adv"/></l><r>in<b/>großen<b/>Mengen<s n="adv"/></r></p></e>
     <e><p><l>in<b/>Latin<s n="adv"/></l><r>auf<b/>Lateinisch<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>many<b/>places<s n="adv"/></l><r>vielerorts<s n="adv"/></r></p></e>
     <e><p><l>in<b/>many<b/>ways<s n="adv"/></l><r>in<b/>vielem<s n="adv"/></r></p></e>
     <e><p><l>in<b/>no<b/>uncertain<b/>terms<s n="adv"/></l><r>sehr<b/>klar<b/>und<b/>deutlich<s n="adv"/></r></p></e>
     <e><p><l>in<b/>no<b/>way<s n="adv"/></l><r>in<b/>keiner<b/>Weise<s n="adv"/></r></p></e>
     <e><p><l>in<b/>North<b/>America<s n="adv"/></l><r>in<b/>Nordamerika<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>order<b/>to<s n="adv"/></l><r>um<b/>zu<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>other<b/>ways<s n="adv"/></l><r>anderswie<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>pairs<s n="adv"/></l><r>paarweise<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>in<b/>particular<s n="adv"/></l><r>i.b.<s n="abbr"/></r></p></e>
+    <e><p><l>in<b/>person<s n="adv"/></l><r>höchstselbst<s n="adv"/></r></p></e>
     <e><p><l>in<b/>place<s n="adv"/></l><r>am<b/>Platz<s n="adv"/></r></p></e>
     <e><p><l>in<b/>pursuit<b/>of<s n="adv"/></l><r>in<b/>Verfolgung<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>reality<s n="adv"/></l><r>realiter<s n="adv"/></r></p></e>
     <e><p><l>in<b/>recent<b/>days<s n="adv"/></l><r>in<b/>den<b/>letzten<b/>Tagen<s n="adv"/></r></p></e>
     <e><p><l>in<b/>recent<b/>times<s n="adv"/></l><r>neuerdings<s n="adv"/></r></p></e>
     <e><p><l>in<b/>recent<b/>years<s n="adv"/></l><r>in<b/>den<b/>letzten<b/>Jahren<s n="adv"/></r></p></e>
     <e><p><l>in<b/>return<s n="adv"/></l><r>als<b/>Gegenleistung<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>secret<s n="adv"/></l><r>insgeheim<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>short<s n="adv"/></l><r>kurzum<s n="adv"/></r></p></e>
     <e><p><l>in<b/>short<b/>order<s n="adv"/></l><r>in<b/>kurzer<b/>Zeit<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>in<b/>so<b/>doing<s n="adv"/></l><r>hierbei<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>so<b/>much<b/>as<s n="adv"/></l><r>sofern<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>some<b/>places<s n="adv"/></l><r>mancherorts<s n="adv"/></r></p></e>
     <e><p><l>in<b/>spite<b/>of<b/>everything<s n="adv"/></l><r>trotz<b/>allem<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>style<s n="adv"/></l><r>modisch<s n="adv"/></r></p></e>
     <e><p><l>in<b/>such<b/>a<b/>case<s n="adv"/></l><r>in<b/>einem<b/>solchen<b/>Fall<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>such<b/>a<b/>way<s n="adv"/></l><r>dergestalt<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>such<b/>a<b/>way<s n="adv"/></l><r>solchermaßen<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>afternoon<s n="adv"/></l><r>nachmittags<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>beginning<s n="adv"/></l><r>anfangs<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>bottom<b/>half<s n="adv"/></l><r>in<b/>der<b/>unteren<b/>Hälfte<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>coming<b/>months<s n="adv"/></l><r>in<b/>den<b/>kommenden<b/>Monaten<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>evening<s n="adv"/></l><r>abends<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>first<b/>place<s n="adv"/></l><r>erstens<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>future<s n="adv"/></l><r>künftig<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>interim<s n="adv"/></l><r>einstweilen<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>long<b/>run<s n="adv"/></l><r>auf<b/>die<b/>Dauer<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>meantime<s n="adv"/></l><r>währenddessen<s n="adv"/></r></p></e>
     <e r="RL"><p><l>in<b/>the<b/>meantime<s n="adv"/></l><r>unterdessen<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>meanwhile<s n="adv"/></l><r>in<b/>der<b/>Zwischenzeit<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>middle<b/>of<b/>nowhere<s n="adv"/></l><r>am<b/>Ende<b/>der<b/>Welt<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>morning<s n="adv"/></l><r>morgens<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>in<b/>the<b/>morning<s n="adv"/></l><r>vormittags<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>the<b/>mornings<s n="adv"/></l><r>morgens<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>the<b/>near<b/>future<s n="adv"/></l><r>demnächst<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>past<b/>year<s n="adv"/></l><r>im<b/>vergangenen<b/>Jahr<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>prime<b/>of<b/>life<s n="adv"/></l><r>in<b/>der<b/>Blüte<b/>der<b/>Jahre<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>the<b/>short<b/>term<s n="adv"/></l><r>kurzfristig<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>thick<b/>of<b/>it<s n="adv"/></l><r>mittendrin<s n="adv"/></r></p></e>
     <e><p><l>in<b/>the<b/>twinkling<b/>of<b/>an<b/>eye<s n="adv"/></l><r>im<b/>Handumdrehen<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>in<b/>the<b/>year<s n="adv"/></l><r>i.J.<s n="abbr"/></r></p></e>
+    <e><p><l>in<b/>the<b/>year<b/>of<s n="adv"/></l><r>anno<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>them<s n="adv"/></l><r>darein<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>them<s n="adv"/></l><r>drein<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>these<b/>parts<s n="adv"/></l><r>hierzulande<s n="adv"/></r></p></e>
     <e><p><l>in<b/>these<b/>years<s n="adv"/></l><r>in<b/>diesen<b/>Jahren<s n="adv"/></r></p></e>
     <e><p><l>in<b/>this<b/>area<s n="adv"/></l><r>hier<b/>in<b/>der<b/>Gegend<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>this<b/>country<s n="adv"/></l><r>hierzulande<s n="adv"/></r></p></e>
     <e><p><l>in<b/>this<b/>fashion<s n="adv"/></l><r>in<b/>diesem<b/>Stil<s n="adv"/></r></p></e>
     <e><p><l>in<b/>this<b/>field<s n="adv"/></l><r>auf<b/>diesem<b/>Gebiet<s n="adv"/></r></p></e>
     <e><p><l>in<b/>this<b/>manner<s n="adv"/></l><r>auf<b/>diese<b/>Weise<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>in<b/>this<b/>place<s n="adv"/></l><r>hier<s n="adv"/></r></p></e>
     <e><p><l>in<b/>this<b/>regard<s n="adv"/></l><r>in<b/>dieser<b/>Beziehung<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>this<b/>respect<s n="adv"/></l><r>insoweit<s n="adv"/></r></p></e>
     <e><p><l>in<b/>this<b/>way<s n="adv"/></l><r>auf<b/>diese<b/>Weise<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>those<b/>days<s n="adv"/></l><r>damals<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>turn<s n="adv"/></l><r>nacheinander<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>in<b/>turn<s n="adv"/></l><r>seinerseits<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>in<b/>turn<s n="adv"/></l><r>wiederum<s n="adv"/></r></p></e>
+    <e><p><l>in<b/>which<s n="adv"/></l><r>worin<s n="adv"/></r></p></e>
     <e><p><l>inside<b/>and<b/>out<s n="adv"/></l><r>innen<b/>und<b/>außen<s n="adv"/></r></p></e>
     <e><p><l>inside<b/>the<b/>house<s n="adv"/></l><r>im<b/>Hause<s n="adv"/></r></p></e>
+    <e><p><l>insomuch<b/>as<s n="adv"/></l><r>insofern<s n="adv"/></r></p></e>
     <e r="LR"><p><l>instead<b/>of<s n="adv"/></l><r>stattdessen<s n="adv"/></r></p></e>
+    <e><p><l>interestingly<b/>enough<s n="adv"/></l><r>interessanterweise<s n="adv"/></r></p></e>
     <e><p><l>into<b/>being<s n="adv"/></l><r>zu<b/>Stande<s n="adv"/></r></p></e>
+    <e><p><l>into<b/>being<s n="adv"/></l><r>zustande<s n="adv"/></r></p></e>
+    <e><p><l>into<b/>each<b/>other<s n="adv"/></l><r>ineinander<s n="adv"/></r></p></e>
+    <e><p><l>into<b/>the<b/>bargain<s n="adv"/></l><r>obendrein<s n="adv"/></r></p></e>
     <e><p><l>into<b/>the<b/>city<s n="adv"/></l><r>stadteinwärts<s n="adv"/></r></p></e>
+    <e><p><l>into<b/>town<s n="adv"/></l><r>stadteinwärts<s n="preadv"/></r></p></e>
+    <e><p><l>irrespective<b/>of<s n="adv"/></l><r>unbeschadet<s n="adv"/></r></p></e>
+    <e><p><l>just<b/>as<s n="adv"/></l><r>ebenso<s n="adv"/></r></p></e>
+    <e><p><l>just<b/>as<b/>far<s n="adv"/></l><r>ebensoweit<s n="adv"/></r></p></e>
     <e><p><l>just<b/>as<b/>little<s n="adv"/></l><r>ebenso<b/>wenig<s n="adv"/></r></p></e>
+    <e><p><l>just<b/>as<b/>little<s n="adv"/></l><r>ebensowenig<s n="adv"/></r></p></e>
     <e><p><l>just<b/>as<b/>little<s n="adv"/></l><r>genausowenig<s n="adv"/></r></p></e>
     <e><p><l>just<b/>as<b/>much<s n="adv"/></l><r>ebensoviel<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>just<b/>as<b/>much<s n="adv"/></l><r>ebensoviel<s n="preadv"/></r></p></e>
+    <e><p><l>just<b/>as<b/>well<s n="adv"/></l><r>ebensogut<s n="adv"/></r></p></e>
     <e><p><l>just<b/>in<b/>case<s n="adv"/></l><r>für<b/>alle<b/>Fälle<s n="adv"/></r></p></e>
     <e><p><l>just<b/>like<s n="adv"/></l><r>genau<b/>wie<s n="adv"/></r></p></e>
+    <e><p><l>just<b/>now<s n="adv"/></l><r>vorhin<s n="adv"/></r></p></e>
+    <e><p><l>just<b/>right<s n="adv"/></l><r>goldrichtig<s n="adv"/></r></p></e>
     <e><p><l>last<b/>autumn<s n="adv"/></l><r>im<b/>vergangenen<b/>Herbst<s n="adv"/></r></p></e>
     <e><p><l>last<b/>fall<s n="adv"/></l><r>letzter<b/>Herbst<s n="adv"/></r></p></e>
     <e><p><l>last<b/>night<s n="adv"/></l><r>gestern<b/>Abend<s n="adv"/></r></p></e>
@@ -40447,100 +40300,227 @@
     <e><p><l>last<b/>summer<s n="adv"/></l><r>im<b/>letzen<b/>Sommer<s n="adv"/></r></p></e>
     <e><p><l>last<b/>winter<s n="adv"/></l><r>letzten<b/>Winter<s n="adv"/></r></p></e>
     <e><p><l>last<b/>year<s n="adv"/></l><r>letztes<b/>Jahr<s n="adv"/></r></p></e>
+    <e><p><l>later<b/>on<s n="adv"/></l><r>späterhin<s n="adv"/></r></p></e>
+    <e><p><l>let<b/>alone<s n="adv"/></l><r>geschweige<s n="adv"/></r></p></e>
+    <e><p><l>let's<b/>go<s n="adv"/></l><r>los<s n="adv"/></r></p></e>
     <e><p><l>like<b/>always<s n="adv"/></l><r>wie<b/>immer<s n="adv"/></r></p></e>
     <e><p><l>like<b/>before<s n="adv"/></l><r>wie<b/>vorher<s n="adv"/></r></p></e>
     <e><p><l>like<b/>nothing<s n="adv"/></l><r>wie<b/>sonst<b/>nichts<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>like<b/>that<s n="adv"/></l><r>so<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>like<b/>this<s n="adv"/></l><r>so<s n="adv"/></r></p></e>
     <e><p><l>like<b/>this<b/>or<b/>like<b/>that<s n="adv"/></l><r>so<b/>oder<b/>so<s n="adv"/></r></p></e>
+    <e><p><l>long<b/>ago<s n="adv"/></l><r>längst<s n="adv"/></r></p></e>
+    <e><p><l>make<b/>sure<s n="adv"/></l><r>sichergehen<s n="adv"/></r></p></e>
+    <e><p><l>mind<b/>you<s n="adv"/></l><r>wohlgemerkt<s n="adv"/></r></p></e>
     <e><p><l>more<b/>or<b/>less<s n="adv"/></l><r>mehr<b/>oder<b/>weniger<s n="adv"/></r></p></e>
+    <e><p><l>more<b/>than<b/>enough<s n="adv"/></l><r>übergenug<s n="adv"/></r></p></e>
     <e><p><l>more<b/>than<b/>slightly<s n="adv"/></l><r>nur<b/>geringfügig<b/>mehr<s n="adv"/></r></p></e>
+    <e><p><l>most<b/>likely<s n="adv"/></l><r>höchstwahrscheinlich<s n="adv"/></r></p></e>
+    <e><p><l>most<b/>of<b/>the<b/>time<s n="adv"/></l><r>zumeist<s n="adv"/></r></p></e>
     <e><p><l>much<b/>better<s n="adv"/></l><r>viel<b/>besser<s n="adv"/></r></p></e>
     <e><p><l>much<b/>less<s n="adv"/></l><r>viel<b/>weniger<s n="adv"/></r></p></e>
     <e><p><l>much<b/>longer<s n="adv"/></l><r>viel<b/>länger<s n="adv"/></r></p></e>
     <e><p><l>much<b/>more<s n="adv"/></l><r>viel<b/>mehr<s n="adv"/></r></p></e>
     <e><p><l>near<b/>here<s n="adv"/></l><r>nicht<b/>weit<b/>von<b/>hier<s n="adv"/></r></p></e>
     <e><p><l>near<b/>the<b/>back<s n="adv"/></l><r>weit<b/>hinten<s n="adv"/></r></p></e>
+    <e><p><l>never<b/>mind<s n="adv"/></l><r>egal<s n="adv"/></r></p></e>
+    <e><p><l>next<b/>day<s n="adv"/></l><r>anderntags<s n="adv"/></r></p></e>
+    <e><p><l>next<b/>door<s n="adv"/></l><r>nebenan<s n="adv"/></r></p></e>
     <e><p><l>next<b/>to<s n="adv"/></l><r>daneben<s n="adv"/></r></p></e>
     <e><p><l>nine<b/>o'clock<s n="adv"/></l><r>neun<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>nine<b/>times<s n="adv"/></l><r>neunmal<s n="adv"/></r></p></e>
     <e><p><l>no<b/>doubt<s n="adv"/></l><r>ohne<b/>Zweifel<s n="adv"/></r></p></e>
     <e><p><l>no<b/>idea<s n="adv"/></l><r>keine<b/>Ahnung<s n="adv"/></r></p></e>
     <e><p><l>no<b/>longer<s n="adv"/></l><r>nicht<b/>mehr<s n="adv"/></r></p></e>
     <e><p><l>no<b/>matter<b/>what<s n="adv"/></l><r>in<b/>jedem<b/>Fall<s n="adv"/></r></p></e>
     <e><p><l>no<b/>sooner<s n="adv"/></l><r>kurz<b/>danach<s n="adv"/></r></p></e>
     <e><p><l>no<b/>time<s n="adv"/></l><r>keine<b/>Zeit<s n="adv"/></r></p></e>
+    <e><p><l>not<b/>at<b/>all<s n="adv"/></l><r>keinesfalls<s n="adv"/></r></p></e>
     <e><p><l>not<b/>either<s n="adv"/></l><r>ebenfalls<b/>nicht<s n="adv"/></r></p></e>
     <e><p><l>not<b/>even<s n="adv"/></l><r>nicht<b/>einmal<s n="adv"/></r></p></e>
     <e><p><l>not<b/>in<b/>your<b/>life<s n="adv"/></l><r>nicht<b/>im<b/>Leben<s n="adv"/></r></p></e>
     <e><p><l>nothing<b/>at<b/>all<s n="adv"/></l><r>gar<b/>nichts<s n="adv"/></r></p></e>
+    <e><p><l>now<b/>and<b/>then<s n="adv"/></l><r>zwischendurch<s n="adv"/></r></p></e>
     <e><p><l>nowhere<b/>near<s n="adv"/></l><r>auch<b/>nicht<b/>annähernd<s n="adv"/></r></p></e>
+    <e><p><l>oddly<b/>enough<s n="adv"/></l><r>sonderbarerweise<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>of<b/>course<s n="adv"/></l><r>natürlich<s n="adv"/></r></p></e>
     <e><p><l>of<b/>like<b/>mind<s n="adv"/></l><r>gleicher<b/>Gesinnung<s n="adv"/></r></p></e>
+    <e><p><l>of<b/>such<b/>a<b/>kind<s n="adv"/></l><r>solcherart<s n="adv"/></r></p></e>
     <e><p><l>of<b/>these<s n="adv"/></l><r>davon<s n="adv"/></r></p></e>
     <e><p><l>of<b/>this<b/>kind<s n="adv"/></l><r>dieser<b/>Art<s n="adv"/></r></p></e>
+    <e><p><l>old<b/>age's<s n="adv"/></l><r>alters<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>a<b/>day-to-day<b/>basis<s n="adv"/></l><r>tageweise<s n="adv"/></r></p></e>
     <e><p><l>on<b/>a<b/>large<b/>scale<s n="adv"/></l><r>im<b/>Großen<s n="adv"/></r></p></e>
     <e><p><l>on<b/>a<b/>large-scale<s n="adv"/></l><r>im<b/>großen<b/>Maßstab<s n="adv"/></r></p></e>
     <e><p><l>on<b/>a<b/>long-term<b/>basis<s n="adv"/></l><r>auf<b/>lange<b/>Sicht<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>a<b/>mass<b/>scale<s n="adv"/></l><r>massenhaft<s n="adv"/></r></p></e>
     <e><p><l>on<b/>a<b/>shoestring<s n="adv"/></l><r>mit<b/>ein<b/>paar<b/>Groschen<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>a<b/>short-term<b/>basis<s n="adv"/></l><r>kurzfristig<s n="adv"/></r></p></e>
     <e><p><l>on<b/>a<b/>small<b/>scale<s n="adv"/></l><r>in<b/>engem<b/>Rahmen<s n="adv"/></r></p></e>
     <e r="LR"><p><l>on<b/>a<b/>weekday<s n="adv"/></l><r>wochentags<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>all<b/>sides<s n="adv"/></l><r>allerseits<s n="adv"/></r></p></e>
     <e><p><l>on<b/>an<b/>individual<b/>basis<s n="adv"/></l><r>auf<b/>einer<b/>individuellen<b/>Basis<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>behalf<b/>of<b/>which<s n="adv"/></l><r>deretwegen<s n="adv"/></r></p></e>
     <e><p><l>on<b/>both<b/>sides<s n="adv"/></l><r>beiderseits<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>on<b/>both<b/>sides<s n="adv"/></l><r>beiderseits<s n="preadv"/></r></p></e>
+    <e r="RL"><p><l>on<b/>both<b/>sides<s n="adv"/></l><r>beiderseits<s n="preadv"/></r></p></e>
+    <e><p><l>on<b/>both<b/>sides<b/>of<s n="adv"/></l><r>beidseits<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>business<s n="adv"/></l><r>beruflich<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>edge<s n="adv"/></l><r>hochkant<s n="adv"/></r></p></e>
     <e><p><l>on<b/>foot<s n="adv"/></l><r>zu<b/>Fuß<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Friday<s n="adv"/></l><r>am<b/>Freitag<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Friday<b/>evening<s n="adv"/></l><r>am<b/>Freitagabend<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>Fridays<s n="adv"/></l><r>freitags<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>hand<s n="adv"/></l><r>vorrätig<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>her<b/>behalf<s n="adv"/></l><r>ihretwegen<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>her<b/>part<s n="adv"/></l><r>ihrerseits<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>his<b/>behalf<s n="adv"/></l><r>seinetwegen<s n="adv"/></r></p></e>
     <e><p><l>on<b/>holiday<s n="adv"/></l><r>in<b/>Ferien<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>it<s n="adv"/></l><r>darauf<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Monday<s n="adv"/></l><r>am<b/>Montag<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Monday<b/>evening<s n="adv"/></l><r>am<b/>Montagabend<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>Mondays<s n="adv"/></l><r>montags<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>my<b/>behalf<s n="adv"/></l><r>meinetwegen<s n="adv"/></r></p></e>
     <e><p><l>on<b/>my<b/>own<s n="adv"/></l><r>auf<b/>eigene<b/>Faust<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>my<b/>part<s n="adv"/></l><r>meinesteils<s n="adv"/></r></p></e>
     <e><p><l>on<b/>no<b/>account<s n="adv"/></l><r>unter<b/>keinen<b/>Umständen<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>occasion<s n="adv"/></l><r>öfter<s n="adv"/></r></p></e>
     <e><p><l>on<b/>one<b/>count<s n="adv"/></l><r>in<b/>einem<b/>Punkt<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>one<b/>side<s n="adv"/></l><r>einseitig<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>our<b/>behalf<s n="adv"/></l><r>unseretwegen<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>our<b/>part<s n="adv"/></l><r>unsererseits<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>purpose<s n="adv"/></l><r>willentlich<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>record<s n="adv"/></l><r>aktenkundig<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Saturday<s n="adv"/></l><r>am<b/>Samstag<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Saturday<b/>evening<s n="adv"/></l><r>am<b/>Samstagabend<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>Saturdays<s n="adv"/></l><r>samstags<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>on<b/>Saturdays<s n="adv"/></l><r>sonnabends<s n="adv"/></r></p></e>
     <e><p><l>on<b/>special<b/>occasions<s n="adv"/></l><r>bei<b/>besonderen<b/>Anlässen<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Sunday<s n="adv"/></l><r>am<b/>Sonntag<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Sunday<b/>evening<s n="adv"/></l><r>am<b/>Sonntagabend<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>Sundays<s n="adv"/></l><r>sonntags<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>contrary<s n="adv"/></l><r>vielmehr<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>defensive<s n="adv"/></l><r>in<b/>der<b/>Defensive<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>double<s n="adv"/></l><r>im<b/>Eilschritt<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>east<b/>side<s n="adv"/></l><r>auf<b/>der<b/>Ostseite<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>house<s n="adv"/></l><r>auf<b/>Kosten<b/>des<b/>Hauses<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>on<b/>the<b/>left<s n="adv"/></l><r>links<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>one<b/>hand<s n="adv"/></l><r>einerseits<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>other<b/>hand<s n="adv"/></l><r>andererseits<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>other<b/>side<s n="adv"/></l><r>jenseits<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>phone<s n="adv"/></l><r>am<b/>Telefon<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>quiet<s n="adv"/></l><r>klammheimlich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>on<b/>the<b/>right<s n="adv"/></l><r>auf<b/>der<b/>rechten<b/>Seite<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>same<b/>day<s n="adv"/></l><r>am<b/>gleichen<b/>Tag<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>sly<s n="adv"/></l><r>heimlich<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>surface<s n="adv"/></l><r>an<b/>der<b/>Oberfläche<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>way<s n="adv"/></l><r>unterwegs<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>way<b/>to<s n="adv"/></l><r>unterwegs<b/>nach<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>their<b/>behalf<s n="adv"/></l><r>ihretwegen<s n="adv"/></r></p></e>
     <e><p><l>on<b/>these<b/>shores<s n="adv"/></l><r>an<b/>diesen<b/>Stränden<s n="adv"/></r></p></e>
     <e><p><l>on<b/>this<b/>side<b/>of<s n="adv"/></l><r>diesseits<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Thursday<s n="adv"/></l><r>am<b/>Donnerstag<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Thursday<b/>evening<s n="adv"/></l><r>am<b/>Donnerstagabend<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>Thursdays<s n="adv"/></l><r>donnerstags<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>time<s n="adv"/></l><r>pünktlich<s n="adv"/></r></p></e>
     <e><p><l>on<b/>tiptoe<s n="adv"/></l><r>auf<b/>Zehenspitzen<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>top<s n="adv"/></l><r>obenauf<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>trial<s n="adv"/></l><r>versuchsweise<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Tuesday<s n="adv"/></l><r>am<b/>Dienstag<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Tuesday<b/>evening<s n="adv"/></l><r>am<b/>Dienstagabend<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>Tuesdays<s n="adv"/></l><r>dienstags<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Wednesday<s n="adv"/></l><r>am<b/>Mittwoch<s n="adv"/></r></p></e>
     <e><p><l>on<b/>Wednesday<b/>evening<s n="adv"/></l><r>am<b/>Mittwochabend<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>Wednesdays<s n="adv"/></l><r>mittwochs<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>on<b/>week-days<s n="adv"/></l><r>werktags<s n="adv"/></r></p></e>
     <e r="LR"><p><l>on<b/>weekdays<s n="adv"/></l><r>werktags<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>on<b/>weekdays<s n="adv"/></l><r>werktags<s n="preadv"/></r></p></e>
+    <e><p><l>on<b/>workdays<s n="adv"/></l><r>werktags<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>your<b/>behalf<s n="adv"/></l><r>deinetwegen<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>your<b/>own<s n="adv"/></l><r>alleine<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>your<b/>part<s n="adv"/></l><r>deinerseits<s n="adv"/></r></p></e>
+    <e><p><l>once<b/>again<s n="adv"/></l><r>erneut<s n="adv"/></r></p></e>
+    <e><p><l>once<b/>and<b/>for<b/>all<s n="adv"/></l><r>endgültig<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>once<b/>in<b/>a<b/>blue<b/>moon<s n="adv"/></l><r>selten<s n="adv"/></r></p></e>
+    <e><p><l>once<b/>in<b/>a<b/>while<s n="adv"/></l><r>öfters<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>once<b/>more<s n="adv"/></l><r>nochmal<s n="adv"/></r></p></e>
+    <e><p><l>one<b/>day<s n="adv"/></l><r>dereinst<s n="preadv"/></r></p></e>
     <e><p><l>one<b/>day<s n="adv"/></l><r>eines<b/>Tages<s n="adv"/></r></p></e>
     <e><p><l>one<b/>o'clock<s n="adv"/></l><r>ein<b/>Uhr<s n="adv"/></r></p></e>
     <e><p><l>one<b/>or<b/>the<b/>other<s n="adv"/></l><r>der<b/>eine<b/>oder<b/>andere<s n="adv"/></r></p></e>
+    <e><p><l>one<b/>upon<b/>the<b/>other<s n="adv"/></l><r>übereinander<s n="adv"/></r></p></e>
     <e><p><l>one's<b/>turn<s n="adv"/></l><r>dran<s n="adv"/></r></p></e>
     <e><p><l>other<b/>way<s n="adv"/></l><r>anderer<b/>Weg<s n="adv"/></r></p></e>
+    <e><p><l>out<b/>and<b/>about<s n="adv"/></l><r>unterwegs<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>out<b/>front<s n="adv"/></l><r>draußen<s n="adv"/></r></p></e>
+    <e><p><l>out<b/>of<b/>it<s n="adv"/></l><r>daraus<s n="adv"/></r></p></e>
+    <e><p><l>out<b/>of<b/>place<s n="adv"/></l><r>unangebracht<s n="adv"/></r></p></e>
+    <e><p><l>out<b/>of<b/>politeness<s n="adv"/></l><r>anstandshalber<s n="adv"/></r></p></e>
+    <e><p><l>out<b/>of<b/>position<s n="adv"/></l><r>Fehlstellung<s n="adv"/></r></p></e>
+    <e><p><l>out<b/>of<b/>sorts<s n="adv"/></l><r>indisponiert<s n="adv"/></r></p></e>
+    <e><p><l>out<b/>of<b/>turn<s n="adv"/></l><r>außertourlich<s n="adv"/></r></p></e>
     <e><p><l>out<b/>the<b/>window<s n="adv"/></l><r>zum<b/>Fenster<b/>heraus<s n="adv"/></r></p></e>
     <e><p><l>out<b/>there<s n="adv"/></l><r>da<b/>draußen<s n="adv"/></r></p></e>
+    <e><p><l>over<b/>here<s n="adv"/></l><r>herüber<s n="adv"/></r></p></e>
     <e><p><l>over<b/>the<b/>weekend<s n="adv"/></l><r>über<b/>das<b/>Wochenende<s n="adv"/></r></p></e>
     <e><p><l>over<b/>there<s n="adv"/></l><r>dort<b/>drüben<s n="adv"/></r></p></e>
+    <e><p><l>paying<b/>attention<s n="adv"/></l><r>achtgebend<s n="adv"/></r></p></e>
     <e><p><l>per<b/>person<s n="adv"/></l><r>pro<b/>Kopf<s n="adv"/></r></p></e>
     <e><p><l>put<b/>it<b/>like<b/>that<s n="adv"/></l><r>um<b/>es<b/>so<b/>zu<b/>formulieren<s n="adv"/></r></p></e>
     <e><p><l>quite<b/>a<b/>lot<s n="adv"/></l><r>eine<b/>ganze<b/>Menge,<b/>ziemlich<b/>viel<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>right<b/>away<s n="adv"/></l><r>gleich<s n="adv"/></r></p></e>
+    <e><p><l>right<b/>in<b/>the<b/>middle<s n="adv"/></l><r>mittendrin<s n="preadv"/></r></p></e>
     <e><p><l>right<b/>now<s n="adv"/></l><r>jetzt<b/>gleich<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>right<b/>off<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>right<b/>there<s n="adv"/></l><r>alldort<s n="adv"/></r></p></e>
     <e><p><l>right<b/>through<s n="adv"/></l><r>durch<b/>und<b/>durch<s n="adv"/></r></p></e>
+    <e><p><l>safe<b/>and<b/>sound<s n="adv"/></l><r>wohlbehalten<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>second<b/>time<s n="adv"/></l><r>zweitenmal<s n="adv"/></r></p></e>
     <e><p><l>see<b/>below<s n="adv"/></l><r>s.<b/>u.<s n="abbr"/></r></p></e>
+    <e r="RL"><p><l>see<b/>below<s n="adv"/></l><r>s.u.<s n="abbr"/></r></p></e>
     <e><p><l>seriously<b/>now<s n="adv"/></l><r>Spaß<b/>beiseite<s n="adv"/></r></p></e>
     <e><p><l>seven<b/>o'clock<s n="adv"/></l><r>sieben<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>seven<b/>times<s n="adv"/></l><r>siebenmal<s n="adv"/></r></p></e>
+    <e><p><l>several<b/>times<s n="adv"/></l><r>mehrmals<s n="adv"/></r></p></e>
+    <e><p><l>side<b/>by<b/>side<s n="adv"/></l><r>nebeneinander<s n="adv"/></r></p></e>
+    <e><p><l>since<b/>then<s n="adv"/></l><r>seither<s n="adv"/></r></p></e>
+    <e><p><l>single<b/>file<s n="adv"/></l><r>Einerreihe<s n="adv"/></r></p></e>
     <e><p><l>six<b/>o'clock<s n="adv"/></l><r>sechs<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>six<b/>times<s n="adv"/></l><r>sechsmal<s n="adv"/></r></p></e>
+    <e><p><l>so<b/>heavily<s n="adv"/></l><r>dermaßen<s n="adv"/></r></p></e>
+    <e><p><l>so<b/>much<s n="adv"/></l><r>derart<s n="adv"/></r></p></e>
+    <e><p><l>so<b/>much<s n="adv"/></l><r>lauter<s n="adv"/></r></p></e>
+    <e><p><l>so<b/>that<s n="adv"/></l><r>damit<s n="adv"/></r></p></e>
+    <e><p><l>so<b/>to<b/>speak<s n="adv"/></l><r>sozusagen<s n="adv"/></r></p></e>
     <e><p><l>some<b/>day<s n="adv"/></l><r>dereinst<s n="adv"/></r></p></e>
+    <e><p><l>some<b/>other<b/>time<s n="adv"/></l><r>andermal<s n="adv"/></r></p></e>
+    <e><p><l>something<b/>else<s n="adv"/></l><r>sonstwas<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>straight<b/>ahead<s n="adv"/></l><r>geradeaus<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>straight<b/>away<s n="adv"/></l><r>sofort<s n="adv"/></r></p></e>
+    <e><p><l>straight<b/>through<s n="adv"/></l><r>querdurch<s n="adv"/></r></p></e>
     <e><p><l>such<b/>a<b/>lot<b/>of<s n="adv"/></l><r>so<b/>viele<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>such<b/>as<s n="adv"/></l><r>wie<s n="adv"/></r></p></e>
+    <e><p><l>sure<b/>enough<s n="adv"/></l><r>wirklich<s n="adv"/></r></p></e>
     <e><p><l>ten<b/>o'clock<s n="adv"/></l><r>zehn<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>ten<b/>times<s n="adv"/></l><r>zehnmal<s n="adv"/></r></p></e>
+    <e><p><l>terms<b/>of<s n="adv"/></l><r>puncto<s n="adv"/></r></p></e>
+    <e><p><l>thank<b/>God<s n="adv"/></l><r>gottlob<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>that<b/>way<s n="adv"/></l><r>so<s n="adv"/></r></p></e>
+    <e><p><l>thats<b/>why<s n="adv"/></l><r>darum<s n="preadv"/></r></p></e>
+    <e><p><l>the<b/>day<b/>after<b/>tomorrow<s n="adv"/></l><r>übermorgen<s n="adv"/></r></p></e>
+    <e><p><l>the<b/>day<b/>before<b/>yesterday<s n="adv"/></l><r>vorgestern<s n="adv"/></r></p></e>
     <e><p><l>the<b/>last<b/>time<s n="adv"/></l><r>letztmals<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>the<b/>last<b/>time<s n="adv"/></l><r>letztmals<s n="preadv"/></r></p></e>
+    <e><p><l>the<b/>more<b/>so<b/>as<s n="adv"/></l><r>zumal<s n="adv"/></r></p></e>
     <e><p><l>the<b/>other<b/>way<b/>around<s n="adv"/></l><r>anders<b/>rum<s n="adv"/></r></p></e>
+    <e><p><l>the<b/>same<s n="adv"/></l><r>dieselbe<s n="adv"/></r></p></e>
     <e><p><l>the<b/>same<b/>way<s n="adv"/></l><r>der<b/>gleiche<b/>Weg<s n="adv"/></r></p></e>
+    <e><p><l>the<b/>while<s n="adv"/></l><r>derweilen<s n="adv"/></r></p></e>
+    <e><p><l>then<b/>again<s n="adv"/></l><r>wiederum<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>then<b/>and<b/>there<s n="adv"/></l><r>sogleich<s n="adv"/></r></p></e>
+    <e><p><l>there<b/>again<s n="adv"/></l><r>andererseits<s n="adv"/></r></p></e>
     <e><p><l>there<b/>and<b/>then<s n="adv"/></l><r>auf<b/>der<b/>Stelle<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>these<b/>days<s n="adv"/></l><r>heutzutage<s n="adv"/></r></p></e>
     <e><p><l>this<b/>afternoon<s n="adv"/></l><r>heute<b/>Nachmittag<s n="adv"/></r></p></e>
     <e><p><l>this<b/>autumn<s n="adv"/></l><r>dieser<b/>Herbst<s n="adv"/></r></p></e>
     <e r="LR"><p><l>this<b/>evening<s n="adv"/></l><r>heute<b/>Abend<s n="adv"/></r></p></e>
@@ -40548,9 +40528,13 @@
     <e><p><l>this<b/>morning<s n="adv"/></l><r>heute<b/>Morgen<s n="adv"/></r></p></e>
     <e><p><l>this<b/>spring<s n="adv"/></l><r>dieser<b/>Frühling<s n="adv"/></r></p></e>
     <e><p><l>this<b/>summer<s n="adv"/></l><r>dieser<b/>Sommer<s n="adv"/></r></p></e>
+    <e><p><l>this<b/>time<s n="adv"/></l><r>diesmal<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>this<b/>way<s n="adv"/></l><r>hier<s n="adv"/></r></p></e>
+    <e><p><l>this<b/>week<s n="adv"/></l><r>dieswöchig<s n="adv"/></r></p></e>
     <e><p><l>this<b/>winter<s n="adv"/></l><r>dieser<b/>Winter<s n="adv"/></r></p></e>
     <e><p><l>this<b/>year<s n="adv"/></l><r>dieses<b/>Jahr<s n="adv"/></r></p></e>
     <e><p><l>three<b/>o'clock<s n="adv"/></l><r>drei<b/>Uhr<s n="adv"/></r></p></e>
+    <e><p><l>three<b/>times<s n="adv"/></l><r>dreimal<s n="adv"/></r></p></e>
     <e><p><l>through<b/>thick<b/>and<b/>thin<s n="adv"/></l><r>durch<b/>dick<b/>und<b/>dünn<s n="adv"/></r></p></e>
     <e><p><l>thus<b/>far<s n="adv"/></l><r>so<b/>weit<s n="adv"/></r></p></e>
     <e><p><l>time<b/>after<b/>time<s n="adv"/></l><r>wieder<b/>und<b/>wieder<s n="adv"/></r></p></e>
@@ -40559,38 +40543,60 @@
     <e><p><l>to<b/>a<b/>large<b/>extent<s n="adv"/></l><r>in<b/>großem<b/>Ausmaß<s n="adv"/></r></p></e>
     <e><p><l>to<b/>a<b/>very<b/>small<b/>degree<s n="adv"/></l><r>zu<b/>einem<b/>ganz<b/>kleinen<b/>Teil<s n="adv"/></r></p></e>
     <e><p><l>to<b/>be<b/>serious<s n="adv"/></l><r>es<b/>ernst<b/>meinen<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>begin<b/>with<s n="adv"/></l><r>anfangs<s n="adv"/></r></p></e>
     <e><p><l>to<b/>capacity<s n="adv"/></l><r>im<b/>vollen<b/>Ausmass<s n="adv"/></r></p></e>
     <e><p><l>to<b/>capacity<s n="adv"/></l><r>im<b/>vollsten<b/>Ausmass<s n="adv"/></r></p></e>
     <e><p><l>to<b/>each<b/>other<s n="adv"/></l><r>zueinander<s n="adv"/></r></p></e>
     <e><p><l>to<b/>herself<s n="adv"/></l><r>sich<b/>selbst<b/>gegenüber<s n="adv"/></r></p></e>
     <e><p><l>to<b/>himself<s n="adv"/></l><r>sich<b/>selbst<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>impinge<s n="adv"/></l><r>eingreifen<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>mind<s n="adv"/></l><r>beachten<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>no<b/>effect<s n="adv"/></l><r>ergebnislos<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>scale<s n="adv"/></l><r>anpassen<s n="adv"/></r></p></e>
     <e><p><l>to<b/>tell<b/>the<b/>truth<s n="adv"/></l><r>offen<b/>gestanden<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>that<s n="adv"/></l><r>dazu<s n="preadv"/></r></p></e>
     <e><p><l>to<b/>the<b/>best<b/>of<b/>my<b/>knowledge<s n="adv"/></l><r>meines<b/>Wissens<s n="adv"/></r></p></e>
     <e><p><l>to<b/>the<b/>contrary<s n="adv"/></l><r>zum<b/>Gegenteil<s n="adv"/></r></p></e>
     <e><p><l>to<b/>the<b/>end<s n="adv"/></l><r>bis<b/>zum<b/>Ende<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>the<b/>front<s n="adv"/></l><r>voraus<s n="adv"/></r></p></e>
     <e><p><l>to<b/>the<b/>ground<s n="adv"/></l><r>zu<b/>Boden<s n="adv"/></r></p></e>
     <e><p><l>to<b/>the<b/>left<s n="adv"/></l><r>auf<b/>der<b/>linken<b/>Seite<s n="adv"/></r></p></e>
     <e><p><l>to<b/>the<b/>letter<s n="adv"/></l><r>auf<b/>den<b/>Buchstaben<b/>genau<s n="adv"/></r></p></e>
+    <e><p><l>to<b/>the<b/>right<s n="adv"/></l><r>rechtsherum<s n="adv"/></r></p></e>
     <e><p><l>to<b/>the<b/>utmost<s n="adv"/></l><r>bis<b/>zum<b/>Äußersten<s n="adv"/></r></p></e>
     <e><p><l>tomorrow<b/>morning<s n="adv"/></l><r>morgen<b/>früh<s n="adv"/></r></p></e>
     <e><p><l>tomorrow<b/>night<s n="adv"/></l><r>morgen<b/>Abend<s n="adv"/></r></p></e>
     <e><p><l>too<b/>fast<s n="adv"/></l><r>zu<b/>schnell<s n="adv"/></r></p></e>
+    <e><p><l>too<b/>little<s n="adv"/></l><r>zuwenig<s n="adv"/></r></p></e>
     <e><p><l>too<b/>much<s n="adv"/></l><r>zu<b/>viel<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>too<b/>much<s n="adv"/></l><r>zuviel<s n="adv"/></r></p></e>
+    <e><p><l>too<b/>often<s n="adv"/></l><r>allzuoft<s n="adv"/></r></p></e>
     <e><p><l>towards<b/>the<b/>end<s n="adv"/></l><r>gegen<b/>Ende<s n="adv"/></r></p></e>
     <e><p><l>twelve<b/>o'clock<s n="adv"/></l><r>zwölf<b/>Uhr<s n="adv"/></r></p></e>
     <e><p><l>two<b/>o'clock<s n="adv"/></l><r>zwei<b/>Uhr<s n="adv"/></r></p></e>
     <e><p><l>under<b/>control<s n="adv"/></l><r>unter<b/>Kontrolle<s n="adv"/></r></p></e>
     <e><p><l>under<b/>cover<s n="adv"/></l><r>in<b/>Deckung<s n="adv"/></r></p></e>
     <e><p><l>under<b/>the<b/>counter<s n="adv"/></l><r>unterm<b/>Ladentisch<s n="adv"/></r></p></e>
+    <e><p><l>under<b/>which<s n="adv"/></l><r>worunter<s n="adv"/></r></p></e>
     <e><p><l>until<b/>no<b/>more<b/>is<b/>needed<b/>nor<b/>desired<s n="adv"/></l><r>bis<b/>nicht<b/>mehr<b/>benötigt<b/>oder<b/>gewünscht<b/>wird<s n="adv"/></r></p></e>
     <e><p><l>up<b/>and<b/>down<b/>the<b/>country<s n="adv"/></l><r>landauf<b/>,<b/>landab<s n="adv"/></r></p></e>
     <e><p><l>up<b/>for<b/>grabs<s n="adv"/></l><r>für<b/>jedermann<b/>zu<b/>haben<s n="adv"/></r></p></e>
+    <e><p><l>up<b/>the<b/>country<s n="adv"/></l><r>landauf<s n="adv"/></r></p></e>
+    <e><p><l>up<b/>to<b/>the<b/>present<s n="adv"/></l><r>bislang<s n="adv"/></r></p></e>
+    <e><p><l>upside<b/>down<s n="adv"/></l><r>kopfstehend<s n="adv"/></r></p></e>
     <e><p><l>upside<b/>down<s n="adv"/></l><r>verkehrt<b/>herum<s n="adv"/></r></p></e>
+    <e><p><l>very<b/>first<s n="adv"/></l><r>allererst<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>very<b/>much<s n="adv"/></l><r>sehr<s n="adv"/></r></p></e>
     <e><p><l>very<b/>rarely<s n="adv"/></l><r>nur<b/>selten<s n="adv"/></r></p></e>
     <e><p><l>very<b/>well<s n="adv"/></l><r>also<b/>gut<s n="adv"/></r></p></e>
     <e><p><l>very<b/>well<s n="adv"/></l><r>sehr<b/>wohl<s n="adv"/></r></p></e>
+    <e><p><l>vice<b/>versa<s n="adv"/></l><r>andersherum<s n="adv"/></r></p></e>
+    <e><p><l>vice<b/>versa<s n="adv"/></l><r>umgekehrt<s n="adv"/></r></p></e>
     <e><p><l>week<b/>in<b/>week<b/>out<s n="adv"/></l><r>Woche<b/>für<b/>Woche<s n="adv"/></r></p></e>
     <e><p><l>what<b/>about<s n="adv"/></l><r>wie<b/>wäre<b/>es<b/>mit<s n="adv"/></r></p></e>
+    <e><p><l>what<b/>for<s n="adv"/></l><r>wozu<s n="adv"/></r></p></e>
+    <e><p><l>what<b/>kind<b/>of<s n="adv"/></l><r>welcherlei<s n="adv"/></r></p></e>
+    <e><p><l>what<b/>of<s n="adv"/></l><r>wovor<s n="adv"/></r></p></e>
     <e><p><l>whatever<b/>happens<s n="adv"/></l><r>unter<b/>allen<b/>Umständen<s n="adv"/></r></p></e>
     <e><p><l>when<b/>the<b/>time<b/>came<s n="adv"/></l><r>als<b/>es<b/>darum<b/>ging<s n="adv"/></r></p></e>
     <e><p><l>when<b/>the<b/>time<b/>comes<s n="adv"/></l><r>wenn<b/>es<b/>so<b/>weit<b/>ist<s n="adv"/></r></p></e>
@@ -40603,15 +40609,26 @@
     <e><p><l>with<b/>great<b/>difficulty<s n="adv"/></l><r>mit<b/>großer<b/>Mühe<s n="adv"/></r></p></e>
     <e><p><l>with<b/>great<b/>pain<s n="adv"/></l><r>mit<b/>großen<b/>Schmerzen<s n="adv"/></r></p></e>
     <e><p><l>with<b/>great<b/>pomp<b/>and<b/>ceremony<s n="adv"/></l><r>mit<b/>großem<b/>Pomp<b/>und<b/>Getöse<s n="adv"/></r></p></e>
+    <e><p><l>with<b/>impunity<s n="adv"/></l><r>ungestraft<s n="adv"/></r></p></e>
     <e><p><l>with<b/>one<b/>mind<s n="adv"/></l><r>wie<b/>ein<b/>Mann<s n="adv"/></r></p></e>
     <e><p><l>with<b/>that<s n="adv"/></l><r>damit<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>with<b/>that<s n="adv"/></l><r>damit<s n="preadv"/></r></p></e>
+    <e><p><l>with<b/>two<b/>hands<s n="adv"/></l><r>beidhändig<s n="adv"/></r></p></e>
     <e><p><l>with<b/>utmost<b/>difficulty<s n="adv"/></l><r>mit<b/>äußerster<b/>Schwierigkeit<s n="adv"/></r></p></e>
     <e><p><l>with<b/>utmost<b/>importance<s n="adv"/></l><r>von<b/>größter<b/>Bedeutung<s n="adv"/></r></p></e>
+    <e><p><l>within<b/>reason<s n="adv"/></l><r>angemessen<s n="adv"/></r></p></e>
     <e><p><l>within<b/>sight<b/>distance<s n="adv"/></l><r>in<b/>Sichtweite<s n="adv"/></r></p></e>
     <e><p><l>without<b/>a<b/>doubt<s n="adv"/></l><r>ohne<b/>Zweifel<s n="adv"/></r></p></e>
     <e><p><l>without<b/>a<b/>purpose<s n="adv"/></l><r>ohne<b/>Absicht<s n="adv"/></r></p></e>
+    <e><p><l>without<b/>a<b/>trace<s n="adv"/></l><r>spurlos<s n="adv"/></r></p></e>
+    <e><p><l>without<b/>delay<s n="adv"/></l><r>umgehend<s n="adv"/></r></p></e>
+    <e><p><l>without<b/>doubt<s n="adv"/></l><r>zweifelsohne<s n="adv"/></r></p></e>
     <e><p><l>without<b/>hesitation<s n="adv"/></l><r>ohne<b/>zu<b/>zögern<s n="adv"/></r></p></e>
+    <e><p><l>without<b/>objection<s n="adv"/></l><r>anstandslos<s n="adv"/></r></p></e>
     <e><p><l>without<b/>paying<s n="adv"/></l><r>ohne<b/>zu<b/>bezahlen<s n="adv"/></r></p></e>
+    <e><p><l>without<b/>respite<s n="adv"/></l><r>fristenlos<s n="adv"/></r></p></e>
+    <e><p><l>without<b/>saying<b/>a<b/>word<s n="adv"/></l><r>wortlos<s n="adv"/></r></p></e>
+    <e><p><l>worth<b/>mentioning<s n="adv"/></l><r>erwähnenswert<s n="adv"/></r></p></e>
     <e><p><l>yesterday<b/>afternoon<s n="adv"/></l><r>gestern<b/>Nachmittag<s n="adv"/></r></p></e>
     <e><p><l>yesterday<b/>evening<s n="adv"/></l><r>gestern<b/>Abend<s n="adv"/></r></p></e>
     <e><p><l>yesterday<b/>morning<s n="adv"/></l><r>gestern<b/>früh<s n="adv"/></r></p></e>
@@ -40636,8 +40653,8 @@
     <e><p><l>may<s n="vbmod"/></l><r>dürfen<s n="vbmod"/></r></p></e>
     <e r="LR"><p><l>might<s n="vbmod"/></l><r>dürfen<s n="vbmod"/></r></p></e>
     <e><p><l>must<s n="vbmod"/></l><r>müssen<s n="vbmod"/></r></p></e>
+    <e><p><l>shall<s n="vbmod"/></l><r>sollen<s n="vbmod"/></r></p></e>
     <e r="LR"><p><l>shall<s n="vbmod"/></l><r>werden<s n="vbmod"/></r></p></e>
-    <e><p><l>should<s n="vbmod"/></l><r>sollen<s n="vbmod"/></r></p></e>
     <e r="LR"><p><l>wanna<s n="vbmod"/></l><r>wollen<s n="vbmod"/></r></p></e>
     <e><p><l>want<s n="vbmod"/></l><r>wollen<s n="vbmod"/></r></p></e>
     <e><p><l>want<g><b/>to</g><s n="vbmod"/></l><r>möchten<s n="vbmod"/></r></p></e>
@@ -42191,7 +42208,9 @@
     <e><p><l>farrow<s n="vblex"/></l><r>ferkeln<s n="vblex"/></r></p></e>
     <e><p><l>fart<s n="vblex"/></l><r>pupsen<s n="vblex"/></r></p></e>
     <e><p><l>fasten<s n="vblex"/></l><r>anschnallen<s n="vblex"/></r></p></e>
-    <e><p><l>fasten<s n="vblex"/></l><r>fasten<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>fasten<s n="vblex"/></l><r>befestigen<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>fasten<s n="vblex"/></l><r>fasten<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>fasten<s n="vblex"/></l><r>festschnallen<s n="vblex"/></r></p></e>
     <e><p><l>fathom<b/>out<s n="vblex"/></l><r>ermessen<s n="vblex"/></r></p></e>
     <e><p><l>fatten<s n="vblex"/></l><r>mästen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>favor<s n="vblex"/></l><r>bevorzugen<s n="vblex"/></r></p></e>
@@ -42488,9 +42507,10 @@
     <e><p><l>go<b/>back<s n="vblex"/></l><r>zurückgehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>go<g><b/>berserk</g><s n="vblex"/></l><r>durchdrehen<s n="vblex"/></r></p></e>
     <e><p><l>go<g><b/>by</g><s n="vblex"/></l><r>vorbeifahren<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>go<g><b/>by<b/>bike</g><s n="vblex"/></l><r>mit<g><b/>dem<b/>Fahrrad<b/>fahren</g><s n="vblex"/></r></p></e>
+    <e><p><l>go<g><b/>by<b/>bike</g><s n="vblex"/></l><r>fahren<g><b/>mit<b/>dem<b/>Fahrrad</g><s n="vblex"/></r></p></e>
     <e><p><l>go<g><b/>by<b/>bus</g><s n="vblex"/></l><r>fahren<g><b/>mit<b/>dem<b/>Bus</g><s n="vblex"/></r></p></e>
-    <e><p><l>go<g><b/>by<b/>car</g><s n="vblex"/></l><r>mit<g><b/>dem<b/>Auto<b/>fahren</g><s n="vblex"/></r></p></e>
+    <e><p><l>go<g><b/>by<b/>car</g><s n="vblex"/></l><r>fahren<g><b/>mit<b/>dem<b/>Auto</g><s n="vblex"/></r></p></e>
+    <e><p><l>go<g><b/>by<b/>plane</g><s n="vblex"/></l><r>fliegen<g><b/>mit<b/>dem<b/>Flugzeug</g><s n="vblex"/></r></p></e>
     <e><p><l>go<g><b/>by<b/>train</g><s n="vblex"/></l><r>fahren<g><b/>mit<b/>dem<b/>Zug</g><s n="vblex"/></r></p></e>
     <e><p><l>go<g><b/>camping</g><s n="vblex"/></l><r>zelten<s n="vblex"/></r></p></e>
     <e><p><l>go<g><b/>down</g><s n="vblex"/></l><r>gehen<g><b/>hinunter</g><s n="vblex"/></r></p></e>
@@ -43086,10 +43106,10 @@
     <e r="RL"><p><l>look<s n="vblex"/></l><r>hinsehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>look<s n="vblex"/></l><r>kucken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<s n="vblex"/></l><r>schauen<s n="vblex"/></r></p></e>
-    <e><p><l>look<g><b/>after</g><s n="vblex"/></l><r>betreuen<s n="vblex"/></r></p></e>
     <e><p><l>look<b/>after<s n="vblex"/></l><r>sorgen<b/>für<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>look<b/>after<s n="vblex"/></l><r>hüten<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>look<b/>after<s n="vblex"/></l><r>versorgen<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>look<g><b/>after</g><s n="vblex"/></l><r>betreuen<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>look<b/>after<s n="vblex"/></l><r>hüten<s n="vblex"/></r></p></e>
     <e><p><l>look<g><b/>at</g><s n="vblex"/></l><r>sehen<g><b/>an</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>at</g><s n="vblex"/></l><r>anschauen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>at</g><s n="vblex"/></l><r>ansehen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -44895,7 +44915,8 @@
     <e><p><l>televise<s n="vblex"/></l><r>im<b/>Fernsehen<b/>übertragen<s n="vblex"/></r></p></e>
     <e><p><l>tell<s n="vblex"/></l><r>erzählen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>tell<s n="vblex"/></l><r>anweisen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>tell<b/>corny<b/>jokes<s n="vblex"/></l><r>kalauern<s n="vblex"/></r></p></e>
+    <e><p><l>tell<g><b/>corny<b/>jokes</g><s n="vblex"/></l><r>kalauern<s n="vblex"/></r></p></e>
+    <e><p><l>tell<g><b/>the<b/>future</g><s n="vblex"/></l><r>voraussagen<s n="vblex"/></r></p></e>
     <e><p><l>temper<s n="vblex"/></l><r>mildern<s n="vblex"/></r></p></e>
     <e><p><l>tempt<s n="vblex"/></l><r>verlocken<s n="vblex"/></r></p></e>
     <e><p><l>tend<s n="vblex"/></l><r>abzielen<s n="vblex"/></r></p></e>
@@ -45918,6 +45939,7 @@
     <e><p><l>gosh<s n="ij"/></l><r>Donnerwetter<s n="ij"/></r></p></e>
     <e><p><l>ha<s n="ij"/></l><r>ha<s n="ij"/></r></p></e>
     <e><p><l>hello<s n="ij"/></l><r>hallo<s n="ij"/></r></p></e>
+    <e r="RL"><p><l>Hello<s n="ij"/></l><r>Hallöchen<s n="ij"/></r></p></e>
     <e><p><l>hey<s n="ij"/></l><r>he<s n="ij"/></r></p></e>
     <e><p><l>hi<s n="ij"/></l><r>hi<s n="ij"/></r></p></e>
     <e r="LR"><p><l>hi<s n="ij"/></l><r>hallo<s n="ij"/></r></p></e>
@@ -46016,7 +46038,7 @@
     <e><p><l>see<b/>you<b/>later<s n="ij"/></l><r>bis<b/>später<s n="ij"/></r></p></e>
     <e><p><l>thank<b/>you<b/>very<b/>much<s n="ij"/></l><r>vielen<b/>Dank<s n="ij"/></r></p></e>
     <e><p><l>thanks<b/>anyway<s n="ij"/></l><r>trotzdem<b/>danke<s n="ij"/></r></p></e>
-    <e><p><l>the<b/>early<b/>bird<b/>gets<b/>the<b/>worm<s n="ij"/></l><r>der<b/>fühe<b/>Vogel<b/>fängt<b/>den<b/>Wurm<s n="ij"/></r></p></e>
+    <e><p><l>the<b/>early<b/>bird<b/>gets<b/>the<b/>worm<s n="ij"/></l><r>der<b/>frühe<b/>Vogel<b/>fängt<b/>den<b/>Wurm<s n="ij"/></r></p></e>
     <e><p><l>the<b/>end<b/>justifies<b/>the<b/>means<s n="ij"/></l><r>der<b/>Zweck<b/>heiligt<b/>die<b/>Mittel<s n="ij"/></r></p></e>
     <e><p><l>the<b/>grass<b/>is<b/>always<b/>greener<b/>on<b/>the<b/>other<b/>side<s n="ij"/></l><r>die<b/>Kirschen<b/>in<b/>Nachbars<b/>Garten<b/>schmecken<b/>immer<b/>süßer<s n="ij"/></r></p></e>
     <e><p><l>there's<b/>no<b/>time<b/>like<b/>the<b/>present<s n="ij"/></l><r>was<b/>du<b/>heute<b/>kannst<b/>besorgen<b/>,<b/>das<b/>verschiebe<b/>nicht<b/>auf<b/>morgen<s n="ij"/></r></p></e>
@@ -46117,6 +46139,7 @@
     <e r="LR"><p><l>no.<s n="abbr"/></l><r>Nr.<s n="abbr"/></r></p></e>
     <e><p><l>Nov<s n="abbr"/></l><r>Nov<s n="abbr"/></r></p></e>
     <e><p><l>Nov.<s n="abbr"/></l><r>Nov.<s n="abbr"/></r></p></e>
+    <e r="LR"><p><l>O.K.<s n="abbr"/></l><r>OK<s n="abbr"/></r></p></e>
     <e><p><l>ob.<s n="abbr"/></l><r>gest.<s n="abbr"/></r></p></e>
     <e><p><l>Oct.<s n="abbr"/></l><r>Okt.<s n="abbr"/></r></p></e>
     <e><p><l>Orth.<s n="abbr"/></l><r>orth.<s n="abbr"/></r></p></e>
@@ -46127,7 +46150,7 @@
     <e><p><l>Prof.<s n="abbr"/></l><r>Prof.<s n="abbr"/></r></p></e>
     <e><p><l>QE2<s n="abbr"/></l><r>QE2<s n="abbr"/></r></p></e>
     <e r="RL"><p><l>Rd.<s n="abbr"/></l><r>Str.<s n="abbr"/></r></p></e>
-    <e><p><l>ref.<s n="abbr"/></l><r>mit<b/>Bezug<b/>auf<s n="abbr"/></r></p></e>
+    <e><p><l>ref.<s n="abbr"/></l><r>mit<b/>Bezug<b/>auf<s n="pr"/></r></p></e>
     <e><p><l>resp.<s n="abbr"/></l><r>bzw.<s n="abbr"/></r></p></e>
     <e><p><l>Rev.<s n="abbr"/></l><r>REV<s n="abbr"/></r></p></e>
     <e><p><l>S.E.<s n="abbr"/></l><r>SO<s n="abbr"/></r></p></e>
