@@ -641,6 +641,99 @@
 
 
 		<!-- separable verb -->
+		<!-- "V ~ATP N N N" => "V N N N ~ATP" -->
+		<rule comment="RULE: V ATP NP NP NP">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="ATP"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SNP"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+					<b pos="4"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- separable verb -->
+		<!-- "V ~ATP N N" => "V N N ~ATP" -->
+		<rule comment="RULE: V ATP NP NP">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="ATP"/>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SNP"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- separable verb -->
 		<!-- "V ~ATP N" => "V N ~ATP" -->
 		<rule comment="RULE: V ATP NP">
 			<pattern>
