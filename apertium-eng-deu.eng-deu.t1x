@@ -195,6 +195,7 @@
 			<cat-item lemma="from" tags="pr"/>
 			<cat-item lemma="in" tags="pr"/>
 			<cat-item lemma="in front of" tags="pr"/>
+			<cat-item lemma="near" tags="pr"/>
 			<cat-item lemma="of" tags="pr"/>
 			<cat-item lemma="out of" tags="pr"/>
 			<cat-item lemma="on" tags="pr"/>
@@ -1938,6 +1939,24 @@
 				</when>
 				<when>
 					<test>
+						<or>
+							<equal>
+								<var n="v_temp_verb"/>
+								<lit-tag v="ger"/>
+							</equal>
+							<equal>
+								<var n="v_temp_verb"/>
+								<lit-tag v="subs"/>
+							</equal>
+						</or>
+					</test>
+					<let><var n="v_pers_verb"/><lit v=""/></let>
+					<!--(temporarily change to "inf" because "ger"/"subs" tags not avaiable in German)--> <!-- FIXME -->
+					<let><var n="v_temp_verb"/><lit-tag v="inf"/></let>
+					<let><var n="v_nbr_verb"/><lit v=""/></let>
+				</when>
+				<when>
+					<test>
 						<equal>
 							<var n="v_temp_verb"/>
 							<lit-tag v="imp"/>
@@ -2743,7 +2762,7 @@
 
 			<!-- verb gets person and number from noun -->
 			<choose>
-				<when>  <!--"prn"-->
+				<when>  <!-- previous noun is "prn" -->
 					<test>
 						<equal>
 							<var n="v_subject"/>
@@ -2753,7 +2772,7 @@
 					<let><var n="v_pers_verb"/><var n="v_pers_prn"/></let>
 					<let><var n="v_nbr_verb"/><var n="v_nbr_prn"/></let>
 				</when>
-				<when>  <!--"nom"-->
+				<when>  <!-- previous noun is "nom" -->
 					<test>
 						<equal>
 							<var n="v_subject"/>
@@ -3278,11 +3297,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3334,11 +3354,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3376,11 +3397,12 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3663,19 +3685,21 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3736,11 +3760,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3804,11 +3829,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3862,11 +3888,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3927,11 +3954,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3980,11 +4008,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4023,11 +4052,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4073,11 +4103,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4119,11 +4150,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4162,21 +4194,23 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 						<lu>
 							<clip pos="3" side="tl" part="whole"/>
 						</lu>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4215,11 +4249,12 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4255,11 +4290,12 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 						<b pos="2"/>
 						<lu>
@@ -4312,11 +4348,12 @@
 									<tag><var n="v_nbr_nom"/></tag>
 								</tags>
 								<lu>
-									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="lemh"/>
 									<clip pos="1" side="tl" part="a_nom"/>
 									<clip pos="1" side="tl" part="a_gen"/>
 									<clip pos="1" side="tl" part="a_nbr"/>
 									<clip pos="1" side="tl" part="a_cas"/>
+									<clip pos="1" side="tl" part="lemq"/>
 								</lu>
 								<b pos="1"/>
 								<lu>
@@ -4413,11 +4450,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4474,11 +4512,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4530,11 +4569,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4578,11 +4618,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4619,19 +4660,21 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4670,11 +4713,12 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4707,11 +4751,12 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -4743,19 +4788,21 @@
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
-							<clip pos="1" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="lemh"/>
 							<clip pos="1" side="tl" part="a_nom"/>
 							<clip pos="1" side="tl" part="a_gen"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
 							<clip pos="1" side="tl" part="a_cas"/>
+							<clip pos="1" side="tl" part="lemq"/>
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5143,11 +5190,12 @@
 						</lu>
 						<b pos="4"/>
 						<lu>
-							<clip pos="5" side="tl" part="lem"/>
+							<clip pos="5" side="tl" part="lemh"/>
 							<clip pos="5" side="tl" part="a_nom"/>
 							<clip pos="5" side="tl" part="a_gen"/>
 							<clip pos="5" side="tl" part="a_nbr"/>
 							<clip pos="5" side="tl" part="a_cas"/>
+							<clip pos="5" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5216,11 +5264,12 @@
 						</lu>
 						<b pos="4"/>
 						<lu>
-							<clip pos="5" side="tl" part="lem"/>
+							<clip pos="5" side="tl" part="lemh"/>
 							<clip pos="5" side="tl" part="a_nom"/>
 							<clip pos="5" side="tl" part="a_gen"/>
 							<clip pos="5" side="tl" part="a_nbr"/>
 							<clip pos="5" side="tl" part="a_cas"/>
+							<clip pos="5" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5279,11 +5328,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5342,11 +5392,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5392,11 +5443,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5437,11 +5489,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5482,11 +5535,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5531,11 +5585,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5580,11 +5635,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5707,11 +5763,12 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5770,11 +5827,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -5826,11 +5884,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_gen"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
 							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
