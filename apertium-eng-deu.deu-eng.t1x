@@ -32,8 +32,8 @@
 			<cat-item lemma="prpers" tags="prn.det.*"/>
 		</def-cat>
 		<def-cat n="rel">
-			<cat-item tags="rel"/>
-			<cat-item tags="rel.*"/>
+			<cat-item tags="prn.rel"/>
+			<cat-item tags="prn.rel.*"/>
 		</def-cat>
 		<def-cat n="itg">
 			<cat-item tags="prn.itg"/>
@@ -58,7 +58,6 @@
 			<cat-item tags="det.qnt.*"/>
 			<cat-item tags="det.dem.*"/>
 			<cat-item tags="prn.dem.*"/>
-			<cat-item tags="rel.*"/>
 		</def-cat>
 		<def-cat n="adj">
 			<cat-item tags="adj"/>
@@ -355,9 +354,9 @@
 			<attr-item tags="prn.dobj"/>
 		</def-attr>
 		<def-attr n="a_rel">
-			<attr-item tags="rel"/>
-			<attr-item tags="rel.an"/>
-			<attr-item tags="rel.nn"/>
+			<attr-item tags="prn.rel"/>
+			<attr-item tags="prn.rel.an"/>
+			<attr-item tags="prn.rel.nn"/>
 		</def-attr>
 		<def-attr n="a_verb">
 			<attr-item tags="vblex"/>
@@ -1601,11 +1600,11 @@
 				<with-param pos="1"/>
 			</call-macro>-->
 			<choose>
-				<when>  <!-- "rel.nn" -->
+				<when>  <!-- "prn.rel.nn" -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_rel"/>
-							<lit-tag v="rel.nn"/>
+							<lit-tag v="prn.rel.nn"/>
 						</equal>
 					</test>
 					<let><var n="v_nbr_prn"/><lit-tag v="sg"/></let> <!-- "sg" -->
@@ -1619,7 +1618,7 @@
 					</let>
 					<let><var n="v_chunk_tag"/><lit-tag v="REL"/></let>
 				</when>
-				<otherwise>  <!-- "rel.an" -->
+				<otherwise>  <!-- "prn.rel.an" -->
 					<let><var n="v_nbr_prn"/><lit-tag v="sp"/></let> <!-- "sp" -->
 					<let>
 						<clip pos="1" side="tl" part="tags"/>
