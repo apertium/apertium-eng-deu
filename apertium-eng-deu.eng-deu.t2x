@@ -519,7 +519,9 @@
 				</call-macro>
 				<out>
 					<chunk>
-						<clip pos="3" part="lem"/>
+						<get-case-from pos="1">
+							<clip pos="3" part="lem"/>
+						</get-case-from>
 						<clip pos="1" part="tags"/>  <!-- "do" -->
 						<clip pos="3" part="chcontent"/>
 					</chunk>
@@ -560,7 +562,9 @@
 				</call-macro>
 				<out>
 					<chunk>
-						<clip pos="4" part="lem"/>
+						<get-case-from pos="1">
+							<clip pos="4" part="lem"/>
+						</get-case-from>
 						<clip pos="1" part="tags"/>  <!-- "do" -->
 						<clip pos="4" part="chcontent"/>
 					</chunk>
@@ -1638,7 +1642,9 @@
 			<action>
 				<out>
 					<chunk>
-						<clip pos="3" part="lem"/>
+						<get-case-from pos="1">
+							<clip pos="3" part="lem"/>
+						</get-case-from>
 						<clip pos="3" part="tags"/>
 						<clip pos="3" part="chcontent"/>
 					</chunk>
