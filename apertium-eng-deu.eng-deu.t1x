@@ -90,6 +90,9 @@
 			<cat-item tags="prn.tn.*"/>
 			<!--<cat-item tags="prn.itg.*"/>-->
 		</def-cat>
+		<def-cat n="rel_prn">
+			<cat-item tags="prn.rel.*"/>
+		</def-cat>
 		<def-cat n="prpers">
 			<cat-item lemma="prpers" tags="prn.*"/>
 			<cat-item tags="prn.pos.*"/>
@@ -115,9 +118,6 @@
 			<cat-item tags="prn.det"/>
 			<cat-item tags="prn.det.*"/>
 			<cat-item tags="prn.pos.*"/>
-		</def-cat>
-		<def-cat n="rel_prn">
-			<cat-item tags="rel.*"/>
 		</def-cat>
 		<def-cat n="nouns">
 			<!--<cat-item lemma="prpers" tags="prn.*"/>-->
@@ -463,9 +463,9 @@
 			<attr-item tags="det.pos"/>
 		</def-attr>
 		<def-attr n="a_rel">
-			<attr-item tags="rel"/>
-			<attr-item tags="rel.nn"/>
-			<attr-item tags="rel.an"/>
+			<attr-item tags="prn.rel"/>
+			<attr-item tags="prn.rel.nn"/>
+			<attr-item tags="prn.rel.an"/>
 		</def-attr>
 		<def-attr n="a_any_prn">
 			<attr-item tags="prn.pers"/>
@@ -480,15 +480,18 @@
 			<attr-item tags="prn.iobj"/>
 			<attr-item tags="prn.dobj"/>
 			<attr-item tags="prn.ref"/>
+			<attr-item tags="prn.rel"/>
 		</def-attr>
 		<def-attr n="a_verb">
 			<attr-item tags="vblex"/>
-			<attr-item tags="vblex.sep"/>
 			<attr-item tags="vbser"/>
 			<attr-item tags="vbhaver"/>
 			<attr-item tags="vbdo"/>
 			<attr-item tags="vbmod"/>
 			<attr-item tags="vaux"/>
+			<attr-item tags="vblex.sep"/>
+			<attr-item tags="vblex.sep.fm"/>
+			<attr-item tags="vblex.sep.fs"/>
 		</def-attr>
 		<def-attr n="a_verb1">
 			<attr-item tags="vblex"/>
@@ -540,7 +543,6 @@
 			<attr-item tags="num"/>
 			<attr-item tags="adv"/>
 			<attr-item tags="prn"/>
-			<attr-item tags="rel"/>
 			<attr-item tags="vblex"/>
 			<attr-item tags="vbmod"/>
 			<attr-item tags="vaux"/>
@@ -602,6 +604,7 @@
 		<def-var n="v_subject"/>
 		<def-var n="v_predicate"/>
 		<def-var n="v_firstWord"/>
+		<def-var n="v_firstWord_PoS"/>
 		<def-var n="v_chunk_tag"/>
 	</section-def-vars>
 
@@ -681,8 +684,12 @@
 						</equal>
 					</test>
 					<let>
+						<var n="v_firstWord_PoS"/>
+						<clip pos="1" side="tl" part="a_PoS"/>
+					</let>
+					<let>
 						<var n="v_firstWord"/>
-						<clip pos="1" side="tl" part="a_verb"/>
+						<clip pos="1" side="tl" part="lemh"/>
 					</let>
 				</when>
 			</choose>
@@ -4221,6 +4228,58 @@
 		</rule>
 
 
+		<rule comment="RULE: DET NOM NOM">
+			<pattern>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="proc_nom">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="proc_det_nom">  <!-- OUT: v...nom -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>
+				</call-macro>
+				<out>
+					<chunk name="det_nom_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="a_nom"/>
+							<clip pos="2" side="tl" part="a_gen"/>
+							<clip pos="2" side="tl" part="a_nbr"/>
+							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="lemh"/>
+							<clip pos="3" side="tl" part="a_nom"/>
+							<clip pos="3" side="tl" part="a_gen"/>
+							<clip pos="3" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<rule comment="RULE: DET NOM">
 			<pattern>
 				<pattern-item n="det"/>
@@ -6748,7 +6807,7 @@
 				</call-macro>
 				
 				<choose>
-					<when>  <!-- Brit.E: have got => have -->
+					<when>  <!-- GB: have got => have -->
 						<test>
 							<and>
 								<equal>
@@ -6775,7 +6834,20 @@
 							</chunk>
 						</out>
 					</when>
-					<otherwise>
+
+					<when>  <!-- change order -->
+						<test>
+							<or>
+								<equal>
+									<var n="v_firstWord_PoS"/>
+									<lit-tag v="vblex"/>
+								</equal>
+								<equal>
+									<var n="v_firstWord_PoS"/>
+									<lit-tag v="adv"/>
+								</equal>
+							</or>
+						</test>
 						<out>
 							<chunk name="verb_verb" case="caseFirstWord">
 								<tags>
@@ -6800,6 +6872,34 @@
 									<clip pos="1" side="tl" part="a_pers"/>
 									<clip pos="1" side="tl" part="a_nbr"/>
 									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+
+					<otherwise>
+						<out>
+							<chunk name="verb_verb" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SV"/></tag>
+									<tag><var n="v_temp_verb"/></tag>
+									<tag><var n="v_pers_verb"/></tag>
+									<tag><var n="v_nbr_verb"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_verb"/>
+									<clip pos="1" side="tl" part="a_temps"/>
+									<clip pos="1" side="tl" part="a_pers"/>
+									<clip pos="1" side="tl" part="a_nbr"/>
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_verb"/>
+									<lit-tag v="pp"/>
+									<clip pos="2" side="tl" part="lemq"/>
 								</lu>
 							</chunk>
 						</out>
