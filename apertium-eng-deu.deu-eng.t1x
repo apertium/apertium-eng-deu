@@ -280,6 +280,7 @@
 			<attr-item tags="np.cog"/>
 			<attr-item tags="np.loc"/>
 			<attr-item tags="np.top"/>
+			<attr-item tags="np.org"/>
 		</def-attr>
 		<def-attr n="a_cog">
 			<attr-item tags="np.cog"/>
@@ -390,6 +391,7 @@
 			<attr-item tags="imp"/>
 			<attr-item tags="pprs"/>
 			<attr-item tags="pp"/>
+			<attr-item tags="ito"/>
 		</def-attr>
 		<def-attr n="a_cas">
 			<attr-item tags="nom"/>
@@ -628,6 +630,18 @@
 						<lit-tag v="inf"/>
 					</let>
 				</when>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_temps"/>
+							<lit-tag v="ito"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_temps"/>
+						<lit-tag v="inf"/>
+					</let>
+				</when>
 				<otherwise>
 					<let>
 						<var n="v_temps"/>
@@ -677,6 +691,32 @@
 						<var n="v_tipus_prn"/>
 						<lit-tag v="det.pos"/>
 						<!--<lit-tag v="prn.pos"/>-->
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+
+		<!-- (TL) <dat>/<acc> to obj  / OUT: v_tipus_prn -->
+		<def-macro n="set_obj_prn" npar="1">
+			<choose>
+				<when>
+					<test>
+						<and>
+							<equal>
+								<!--<clip pos="1" side="tl" part="a_tipus_prn"/>-->
+								<var n="v_tipus_prn"/>
+								<lit-tag v="prn.pers"/>
+							</equal>
+							<equal>
+								<clip pos="1" side="sl" part="a_cas"/>
+								<lit-tag v="dat"/>
+							</equal>
+						</and>
+					</test>
+					<let>
+						<var n="v_tipus_prn"/>
+						<lit-tag v="prn.obj"/>
 					</let>
 				</when>
 			</choose>
@@ -1310,7 +1350,7 @@
 
 				<otherwise>
 					<choose>
-						<when>  <!-- "p3 of pres verbs" with "pers" and "nbr" -->
+						<when>  <!--  verbs pres.p3.sg with "pers" and "nbr" -->
 							<test>
 								<and>
 									<equal>
@@ -1320,6 +1360,10 @@
 									<equal>
 										<clip pos="1" side="tl" part="a_pers"/>
 										<lit-tag v="p3"/>
+									</equal>
+									<equal>
+										<clip pos="1" side="tl" part="a_nbr"/>
+										<lit-tag v="sg"/>
 									</equal>
 								</and>
 							</test>
@@ -1454,6 +1498,9 @@
 			<call-macro n="set_tipus_pers_gen_nbr_prn">  <!-- convert iobj/dobj to obj -->
 				<with-param pos="1"/>
 			</call-macro>
+			<call-macro n="set_obj_prn">  <!-- SL:<dat>/<acc> to obj -->
+				<with-param pos="1"/>
+			</call-macro>
 			<choose>
 				<when>  <!-- "prn.itg" (gen="mf", num="sp") -->
 					<test>
@@ -1481,7 +1528,7 @@
 					</call-macro>
 					<let><var n="v_gen_prn"/><var n="v_gen"/></let>
 				</when>
-				<when>  <!-- "prn.ref" -->
+				<when>  <!-- "prn.ref" (gen="mf") -->
 					<test>
 						<and>
 							<equal>
@@ -3887,7 +3934,7 @@
 				<modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
 
 				<choose>
-					<when> <!-- translate with present participle -->
+					<when> <!-- translate with present participle (if v_use_participle="true") -->
 						<test>
 							<and>
 								<equal>

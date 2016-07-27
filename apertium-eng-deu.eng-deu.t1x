@@ -21,6 +21,8 @@
 			<cat-item tags="np.cog.*"/>
 			<cat-item tags="np.ant"/>
 			<cat-item tags="np.ant.*"/>
+			<cat-item tags="np.org"/>
+			<cat-item tags="np.org.*"/>
 		</def-cat>
 		<def-cat n="cog_names"> <!-- after Mr/Ms -->
 			<cat-item tags="np.cog"/>
@@ -341,6 +343,7 @@
 			<attr-item tags="np.cog"/>
 			<attr-item tags="np.loc"/>
 			<attr-item tags="np.top"/>
+			<attr-item tags="np.org"/>
 		</def-attr>
 		<def-attr n="a_nouns">
 			<attr-item tags="n"/>
@@ -1672,10 +1675,10 @@
 		</def-macro>
 
 
-		<!-- (verb) change tag fs to fm -->
+		<!-- (sep verb) change tag fs to fm -->
 		<def-macro n="chg_fs__fm_verb" npar="1">
 			<choose>
-				<when>
+				<when>  <!-- "fs" to "fm" -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_sep_verb"/>
@@ -1688,6 +1691,7 @@
 					</let>
 				</when>
 			</choose>
+
 			<choose>  <!-- remove fm/fs -->
 				<when>
 					<test>
@@ -1729,6 +1733,48 @@
 				</when>
 			</choose>
 		</def-macro>
+
+
+		<!-- (sep verb) add tag fm -->
+		<def-macro n="upd_fm_verb" npar="1">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_sep_verb"/>
+							<lit-tag v="vblex.sep"/>
+						</equal>
+					</test>
+					<choose>
+						<when>
+							<test>
+								<not>
+									<or>
+										<equal>
+											<clip pos="1" side="tl" part="a_temps"/>
+											<lit-tag v="imp"/>
+										</equal>
+										<equal>
+											<clip pos="1" side="tl" part="a_temps"/>
+											<lit-tag v="inf"/>
+										</equal>
+										<equal>
+											<clip pos="1" side="tl" part="a_temps"/>
+											<lit-tag v="ger"/>
+										</equal>
+									</or>
+								</not>
+							</test>
+							<let>
+								<clip pos="1" side="tl" part="a_sep_verb"/>  <!-- a_sep_verb! -->
+								<lit-tag v="vblex.sep.fm"/>
+							</let>
+						</when>
+					</choose>
+				</when>
+			</choose>
+		</def-macro>
+
 
 		<!-- (verb) remove "sep" tag -->
 		<def-macro n="rm_sep_a_verb" npar="1">
@@ -2166,7 +2212,7 @@
 		</def-macro>
 
 
-		<!-- (verb) change "inf" to "pri" (pres) / OUT: v_temp_verb -->
+		<!-- (verb) if empty set link / OUT: v_temp_verb -->
 		<def-macro n="chg_empty_to_link_verb" npar="1">
 			<choose>
 				<when>
@@ -2869,6 +2915,9 @@
 				<with-param pos="1"/>
 			</call-macro>
 
+			<call-macro n="upd_fm_verb">  <!-- add fm if missing -->
+				<with-param pos="1"/>
+			</call-macro>
 			<call-macro n="chg_fs__fm_verb"> <!-- separable verbs only -->
 				<with-param pos="1"/>
 			</call-macro>
@@ -2898,15 +2947,19 @@
 			</call-macro>
 			<let><var n="v_temp_verb"/><var n="v_temps"/></let>
 -->
+			<!-- temporary workaround for separable verbs (only output <fm> form) -->
 			<choose>
-				<when>
+				<when>  <!-- for separable verbs only -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="a_sep_verb1"/>
 							<lit-tag v="vblex.sep"/>
 						</equal>
 					</test>
-					<call-macro n="chg_fs__fm_verb"> <!-- separable verbs only -->
+					<call-macro n="upd_fm_verb">  <!-- add fm if missing -->
+						<with-param pos="1"/>
+					</call-macro>
+					<call-macro n="chg_fs__fm_verb">  <!-- change fs to fm -->
 						<with-param pos="1"/>
 					</call-macro>
 				</when>
@@ -3538,11 +3591,12 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3577,11 +3631,12 @@
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
-							<clip pos="1" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="lemh"/>
 							<clip pos="1" side="tl" part="a_nom"/>
 							<clip pos="1" side="tl" part="a_gen"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/> <!-- same case for both nouns -->
+							<clip pos="1" side="tl" part="lemq"/>
 						</lu>
 						<b pos="1"/>
 						<lu>
@@ -3589,11 +3644,71 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- (plural): "Betty and her husband" => "Betty and ihr Ehemann" -->
+		<rule comment="RULE: NOUNS AND DET NOUNS">
+			<pattern>
+				<pattern-item n="nouns"/>
+				<pattern-item n="cnjcoo"/>  <!-- "and"/"or" -->
+				<pattern-item n="any_det"/>
+				<pattern-item n="nouns"/>
+			</pattern>
+			<action>
+				<call-macro n="proc_nom">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="proc_det_nom"> <!-- OUT: v...nom -->
+					<with-param pos="3"/>
+					<with-param pos="4"/>
+				</call-macro>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to next verb -->
+				<out>
+					<chunk name="nom_cnj_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lemh"/>
+							<clip pos="1" side="tl" part="a_nom"/>
+							<clip pos="1" side="tl" part="a_gen"/>
+							<clip pos="1" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="a_cas"/> <!-- same case for both nouns -->
+							<clip pos="1" side="tl" part="lemq"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="4" side="tl" part="lemh"/>
+							<clip pos="4" side="tl" part="a_nom"/>
+							<clip pos="4" side="tl" part="a_gen"/>
+							<clip pos="4" side="tl" part="a_nbr"/>
+							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -6585,18 +6700,18 @@
 				<choose>
 					<when>  <!-- attachable prefix was separated -->
 						<test>
-							<!-- <and> -->
+							<and>
 								<not>
 									<equal>
 										<var n="v_lemq_verb"/>
 										<lit v=""/>
 									</equal>
 								</not>
-								<!-- <equal>
-									<clip pos="1" side="tl" part="a_sep_verb"/>
+								<equal>
+									<clip pos="1" side="tl" part="a_sep_verb1"/>
 									<lit-tag v="vblex.sep"/>
 								</equal>
-							</and> -->
+							</and>
 						</test>
 						<call-macro n="rm_sep_a_verb">  <!-- remove <sep> tag from verb -->
 							<with-param pos="1"/>
@@ -6681,18 +6796,18 @@
 				<choose>
 					<when>
 						<test>
-							<!-- <and> -->
+							<and>
 								<not>
 									<equal>
 										<var n="v_lemq_verb"/>
 										<lit v=""/>
 									</equal>
 								</not>
-								<!-- <equal>
-									<clip pos="2" side="tl" part="a_sep_verb"/>
+								<equal>
+									<clip pos="2" side="tl" part="a_sep_verb1"/>
 									<lit-tag v="vblex.sep"/>
 								</equal>
-							</and> -->
+							</and>
 						</test>
 						<call-macro n="rm_sep_a_verb">  <!-- remove <sep> tag from verb -->
 							<with-param pos="2"/>
@@ -6805,6 +6920,10 @@
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
 					<with-param pos="1"/>
 				</call-macro>
+				<let><clip pos="4" side="tl" part="a_temps"/><lit-tag v="inf"/></let>
+				<call-macro n="proc_verb2">
+					<with-param pos="4"/>
+				</call-macro>
 				<out>
 					<chunk name="verbm" case="caseFirstWord">
 						<tags>
@@ -6851,6 +6970,7 @@
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
 					<with-param pos="1"/>
 				</call-macro>
+				<let><clip pos="2" side="tl" part="a_temps"/><lit-tag v="inf"/></let>
 				<call-macro n="proc_verb2">
 					<with-param pos="2"/>
 				</call-macro>
@@ -7182,13 +7302,14 @@
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<!--<var n="v_a_nom"/>    <!-#- prn/np/n -#->
 							<var n="v_pers_nom"/>-->
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 
@@ -7238,11 +7359,12 @@
 							<tag><var n="v_nbr_verb"/></tag>
 						</tags>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_verb"/>
 							<clip pos="1" side="tl" part="a_temps"/>  <!-- temp/pers/nbr from first verb -->
 							<clip pos="1" side="tl" part="a_pers"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 					<b pos="1"/>
@@ -7255,12 +7377,13 @@
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="lemh"/>
 							<var n="v_a_nom"/>    <!-- prn/np/n -->
 							<var n="v_pers_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
 							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -7298,11 +7421,12 @@
 							<tag><var n="v_nbr_verb"/></tag>
 						</tags>
 						<lu>
-							<clip pos="4" side="tl" part="lem"/>
+							<clip pos="4" side="tl" part="lemh"/>
 							<clip pos="4" side="tl" part="a_verb"/>
 							<clip pos="1" side="tl" part="a_temps"/>  <!-- temp/pers/nbr from first verb -->
 							<clip pos="1" side="tl" part="a_pers"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 					<b pos="1"/>
@@ -7319,12 +7443,13 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<var n="v_a_nom"/>    <!-- prn/np/n -->
 							<var n="v_pers_nom"/>
 							<clip pos="3" side="tl" part="a_gen"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -7348,6 +7473,9 @@
 					<with-param pos="1"/>
 				</call-macro>
 				<let><var n="v_predicate"/><clip pos="3" side="tl" part="a_verb1"/></let>
+				<call-macro n="proc_verb2">
+					<with-param pos="3"/>
+				</call-macro>
 				<out>
 					<chunk name="verb_adv" case="caseFirstWord">
 						<tags>
@@ -7357,11 +7485,12 @@
 							<tag><var n="v_nbr_verb"/></tag>
 						</tags>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="3" side="tl" part="lemh"/>
 							<clip pos="3" side="tl" part="a_verb"/>
-							<clip pos="1" side="tl" part="a_temps"/>  <!-- from first verb -->
-							<clip pos="1" side="tl" part="a_pers"/>
-							<clip pos="1" side="tl" part="a_nbr"/>
+							<clip pos="1" side="tl" part="a_temps" link-to="2"/>  <!-- from first verb -->
+							<clip pos="1" side="tl" part="a_pers" link-to="3"/>
+							<clip pos="1" side="tl" part="a_nbr" link-to="4"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 						<b/>
 						<lu>
@@ -7387,6 +7516,11 @@
 				<call-macro n="proc_verb"> <!-- OUT: v...verb -->
 					<with-param pos="1"/>
 				</call-macro>
+				<let><clip pos="3" side="tl" part="a_temps"/><lit-tag v="inf"/></let>
+				<call-macro n="proc_verb2">
+					<with-param pos="3"/>
+				</call-macro>
+				<let><var n="v_predicate"/><clip pos="3" side="tl" part="a_verb1"/></let>
 				<out>
 					<chunk name="verb_adv" case="caseFirstWord">
 						<tags>
