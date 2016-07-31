@@ -2052,7 +2052,7 @@
 					<chunk name="pr_num_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><lit v="p3"/></tag>
+							<tag><lit-tag v="p3"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -2097,7 +2097,7 @@
 					<chunk name="nom_det_num" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><lit v="p3"/></tag>
+							<tag><lit-tag v="p3"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -2145,7 +2145,7 @@
 					<chunk name="nom_cm_nom_num" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><lit v="p3"/></tag>
+							<tag><lit-tag v="p3"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -2195,7 +2195,7 @@
 					<chunk name="nom_cm_nom_num" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><lit v="p3"/></tag>
+							<tag><lit-tag v="p3"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -2248,7 +2248,7 @@
 					<chunk name="nom_cm_num_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<tag><lit v="p3"/></tag>
+							<tag><lit-tag v="p3"/></tag>
 							<tag><clip pos="1" side="tl" part="a_gen"/></tag>
 							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
 						</tags>
@@ -4376,8 +4376,8 @@
 			<action>
 				<let><var n="v_subject"/><lit v=""/></let>
 				<let><var n="v_predicate"/><lit v=""/></let>
-				<let><var n="v_gen"/><lit v="GD"/></let>
-				<let><var n="v_nbr"/><lit v="ND"/></let>
+				<let><var n="v_gen"/><lit-tag v="GD"/></let>
+				<let><var n="v_nbr"/><lit-tag v="ND"/></let>
 				<let><var n="v_cas"/><lit v=""/></let>
 				<let><var n="v_pers"/><lit v=""/></let>
 
