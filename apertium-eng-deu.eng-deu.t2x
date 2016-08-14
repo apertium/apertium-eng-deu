@@ -13,6 +13,14 @@
 			<cat-item tags="ADJ"/>
 			<cat-item tags="ADJ.*"/>
 		</def-cat>
+		<def-cat n="SN_ad">
+			<cat-item tags="SN"/>
+			<cat-item tags="SN.*"/>
+			<cat-item tags="ADJ"/>
+			<cat-item tags="ADJ.*"/>
+			<cat-item tags="ADV"/>
+			<cat-item tags="ADV.*"/>
+		</def-cat>
 		<def-cat n="SNP">
 			<cat-item tags="SN"/>
 			<cat-item tags="SN.*"/>
@@ -83,12 +91,21 @@
 			<cat-item tags="CNJ"/>
 			<cat-item tags="CNJ.*"/>
 		</def-cat>
+		<def-cat n="CNJCOO">
+			<cat-item tags="CNJ.cnjcoo"/>
+		</def-cat>
 		<def-cat n="ADV">
 			<cat-item tags="ADV"/>
 			<cat-item tags="ADV.*"/>
 		</def-cat>
+		<def-cat n="ADV1">
+			<cat-item tags="ADV"/>
+		</def-cat>
+		<def-cat n="TIME_ADV">
+			<cat-item tags="ADV.TIME"/>
+		</def-cat>
 		<def-cat n="CM_ADV">
-			<cat-item tags="CM_ADV"/>
+			<cat-item tags="CM_ADV"/> <!-- coma removed in t1x -->
 		</def-cat>
 		<def-cat n="PR">
 			<cat-item tags="PR"/>
@@ -889,11 +906,10 @@
 
 
 		<!-- update nbr/ND -->
-		<!-- "look at your calendar" => "sieh auf deinen Kalender" -->
 		<rule comment="RULE: V N , ADV">
 			<pattern>
 				<pattern-item n="SV"/>
-				<pattern-item n="SN_adj"/>
+				<pattern-item n="SN_ad"/>
 				<pattern-item n="CM_ADV"/>
 			</pattern>
 			<action>
@@ -961,7 +977,7 @@
 				<pattern-item n="SV_aux"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="CNJ"/>
+				<pattern-item n="CNJCOO"/>
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
@@ -1082,7 +1098,7 @@
 				<pattern-item n="SV"/>
 				<pattern-item n="VPART"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="CNJ"/>
+				<pattern-item n="CNJCOO"/>
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
@@ -1351,14 +1367,14 @@
 		</rule>
 
 
-		<!-- N/PRN/PRPERS V ~V N CNJ N -->
+		<!-- N/PRN/PRPERS V ~V N CNJ N =>  N V N CNJ N ~V -->
 		<rule comment="RULE: NP Vx V N CNJ N">
 			<pattern>
 				<pattern-item n="SNP"/>
 				<pattern-item n="SV_aux"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="CNJ"/>
+				<pattern-item n="CNJCOO"/>
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
@@ -1716,12 +1732,39 @@
 		</rule>
 
 
+		<!-- (time befor other adverbs) -->
+		<!-- "ADV1 ~ADV2" => "~ADV2 ADV1" -->
+		<rule comment="RULE: ADV N ADV">
+			<pattern>
+				<pattern-item n="ADV1"/>
+				<pattern-item n="TIME_ADV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<get-case-from pos="1">
+							<clip pos="2" part="lem"/>
+						</get-case-from>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- (,too): "N N N , ~ADV" => "~ADV N N N" -->
 		<rule comment="RULE: NP NP NP , ADV">
 			<pattern>
-				<pattern-item n="SN_adj"/>
-				<pattern-item n="SN_adj"/>
-				<pattern-item n="SN_adj"/>
+				<pattern-item n="SN_ad"/>
+				<pattern-item n="SN_ad"/>
+				<pattern-item n="SN_ad"/>
 				<pattern-item n="CM_ADV"/>
 			</pattern>
 			<action>
@@ -1757,8 +1800,8 @@
 		<!-- (,too): "N N , ~ADV" => "~ADV N N" -->
 		<rule comment="RULE: NP NP , ADV">
 			<pattern>
-				<pattern-item n="SN_adj"/>
-				<pattern-item n="SN_adj"/>
+				<pattern-item n="SN_ad"/>
+				<pattern-item n="SN_ad"/>
 				<pattern-item n="CM_ADV"/>
 			</pattern>
 			<action>
@@ -1788,7 +1831,7 @@
 		<!-- (,too): "N , ~ADV" => "~ADV N" -->
 		<rule comment="RULE: NP , ADV">
 			<pattern>
-				<pattern-item n="SN_adj"/>
+				<pattern-item n="SN_ad"/>
 				<pattern-item n="CM_ADV"/>
 			</pattern>
 			<action>
