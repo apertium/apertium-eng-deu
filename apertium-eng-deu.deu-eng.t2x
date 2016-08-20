@@ -324,7 +324,7 @@
 		</def-macro>
 
 		<!-- (verb) (to be determined) -->
-		<!--(only necessary for rules that start with Verbs)-->
+		<!--(only necessary for sentences that start with erbs)-->
 		<def-macro n="upd_PD_ND_GD" npar="2">
 			<call-macro n="upd_PD_pers">  <!-- PD to "pers" -->
 				<with-param pos="1"/>
@@ -807,9 +807,7 @@
 						<get-case-from pos="1">
 							<lit v="vbdo"/>
 						</get-case-from>
-						<!--<lit-tag v="SV"/>
-						<clip pos="2" part="a_temps"/>-->
-						<clip pos="2" part="tags"/>
+						<clip pos="2" part="tags"/>  <!-- "SV" -->
 						<lit v="{^"/>
 						<get-case-from pos="2">
 							<lit v="do"/>
@@ -2153,16 +2151,13 @@
 								<get-case-from pos="1">
 									<lit v="vbdo"/>
 								</get-case-from>
-								<!--<lit-tag v="SV"/>
-								<lit-tag v="pres"/>-->
-								<clip pos="1" part="tags"/>
+								<clip pos="1" part="tags"/>  <!-- "SV" -->
 								<lit v="{^"/>
 								<get-case-from pos="1">
 									<lit v="do"/>
 								</get-case-from>
 								<lit-tag v="vaux"/>
-								<!--<clip pos="1" part="a_temps"/>-->
-								<lit-tag v="2"/>
+								<lit-tag v="2"/>  <!-- "a_temps" -->
 								<lit-tag v="3"/>
 								<lit-tag v="4"/>
 								<lit v="$}"/>
