@@ -12,21 +12,22 @@
 		<def-cat n="prn">
 			<cat-item name="prn"/>
 		</def-cat>
-
 		<def-cat n="verb">
 			<cat-item name="verb"/>
 		</def-cat>
 
-			<!-- <cat-item name="nom_nom"/> -->
-			<!-- <cat-item name="nom_cnj_nom"/> -->
-			<!-- <cat-item name="nom_cnj_nom_nom"/> -->
-			<!-- <cat-item name="det_nom_nom"/> -->
-			<!-- <cat-item name="det_adj_nom"/> -->
-			<!-- <cat-item name="det_num_nom"/> -->
 	</section-def-cats>
 
 	<section-def-attrs>
-		<def-attr n="nbr">
+		<def-attr n="a_gen">			<!-- Gender -->
+			<attr-item tags="m"/>
+			<attr-item tags="f"/>
+			<attr-item tags="nt"/>
+			<attr-item tags="mf"/>
+			<attr-item tags="mfn"/>
+			<attr-item tags="GD"/>
+		</def-attr>
+		<def-attr n="a_nbr">			<!-- Number -->
 			<attr-item tags="sg"/>
 			<attr-item tags="pl"/>
 			<attr-item tags="sp"/>
@@ -42,7 +43,8 @@
 	</section-def-attrs>
 
 	<section-def-vars>
-		<def-var n="paraula"/>
+		<def-var n="v_gen"/>
+		<def-var n="v_nbr"/>
 	</section-def-vars>
 
 

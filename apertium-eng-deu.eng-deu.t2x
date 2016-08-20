@@ -66,6 +66,8 @@
 		<def-cat n="SV_aux">
 			<cat-item tags="SV_aux"/>
 			<cat-item tags="SV_aux.*"/>
+			<cat-item tags="SV_adv"/>
+			<cat-item tags="SV_adv.*"/>
 		</def-cat>
 		<def-cat n="SV_ser">
 			<cat-item tags="SV_ser"/>
@@ -81,6 +83,10 @@
 		</def-cat>
 		<def-cat n="VPART">
 			<cat-item tags="V.PART"/>
+		</def-cat>
+		<def-cat n="SV_ADV">
+			<cat-item tags="SV_adv"/>
+			<cat-item tags="SV_adv.*"/>
 		</def-cat>
 
 		<def-cat n="ADJ">
@@ -170,8 +176,8 @@
 	</section-def-attrs>
 
 	<section-def-vars>
-		<def-var n="v_nombre"/>
-		<def-var n="v_genere"/>
+		<def-var n="v_gen"/>
+		<def-var n="v_nbr"/>
 	</section-def-vars>
 
 
@@ -323,7 +329,6 @@
 					<let>
 						<clip pos="1" part="a_gen"/>
 						<lit-tag v="nt"/>
-						<!--<lit-tag v="mf"/>-->
 					</let>
 				</when>
 			</choose>
@@ -332,7 +337,7 @@
 		<!-- (verb) (to be determined) -->
 		<!--(only necessary for rules that start with Verbs)-->
 		<def-macro n="upd_PD_ND_GD" npar="2">
-			<call-macro n="upd_PD_pers">  <!-- PD to "pers" -->
+			<call-macro n="upd_PD_pers"> <!-- PD to "pers" -->
 				<with-param pos="1"/>
 				<with-param pos="2"/>    <!-- "pers" from noun -->
 			</call-macro>
@@ -825,7 +830,7 @@
 		</rule>
 
 
-		<!-- (pl): "(he) has just played football" => "(er) hat gerade Fußball gespielt " -->
+		<!-- "(he) has just played football" => "(er) hat gerade Fußball gespielt  -->
 		<!-- V ADV ~V N => V ADV N ~V --> <!-- update nbr/ND -->
 		<rule comment="RULE: V ADV V N">
 			<pattern>
@@ -870,6 +875,138 @@
 			</action>
 		</rule>
 
+
+		<!-- "(he) was very worried yesterday " => "(er) war gestern sehr besorgt" -->
+		<!-- V ADV ~V ~TADV => V ~TADV ADV ~V --> <!-- update nbr/ND -->
+		<rule comment="RULE: V ADV V TADV">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="TIME_ADV"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="4"/>  <!-- from noun -->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="3"/>
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "(he) can not go to school" => "(er) kann nicht zur Schule gehen" -->
+		<!-- V ADV ~V ADV => V ADV ADV ~V --> <!-- update nbr/ND -->
+		<rule comment="RULE: V ADV V ADV">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="ADV"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="4"/>  <!-- from noun -->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="3"/>
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<!-- "(he) can't go to school" => "(er) kann nicht zur Schule gehen" -->
+		<!-- V+ADV ~V ADV => V+ADV ADV ~V --> <!-- update nbr/ND -->
+		<rule comment="RULE: Vadv V ADV">
+			<pattern>
+				<pattern-item n="SV_ADV"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="ADV"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>  <!-- from noun -->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="2"/>
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- "V ~N ADV" => "V ADV ~N" -->
 		<rule comment="RULE: V N ADV">
 			<pattern>
@@ -906,6 +1043,7 @@
 
 
 		<!-- update nbr/ND -->
+		<!-- "V N ~ADV" => "V ~ADV N" -->
 		<rule comment="RULE: V N , ADV">
 			<pattern>
 				<pattern-item n="SV"/>
@@ -1162,7 +1300,6 @@
 		</rule>
 
 
-
 		<!-- "N V ~V N N REL" => "N V N N ~V REL" -->
 		<rule comment="RULE: N V V N N REL">
 			<pattern>
@@ -1272,7 +1409,7 @@
 		</rule>
 
 
-		<!-- N/PRN/PRPERS V ~V N => NPR V N ~V -->
+		<!-- N/PRN/PRPERS V ~V N => N V N ~V -->
 		<rule comment="RULE: NP Vx V N">
 			<pattern>
 				<pattern-item n="SNP"/>
@@ -1316,7 +1453,7 @@
 		</rule>
 
 
-		<!-- N/PRN/PRPERS V ~V N N -->
+		<!-- N/PRN/PRPERS V ~V N N => N V N N ~V -->
 		<rule comment="RULE: NP Vx V N N">
 			<pattern>
 				<pattern-item n="SNP"/>
