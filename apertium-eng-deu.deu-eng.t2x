@@ -29,6 +29,9 @@
 			<cat-item tags="PRPERS.*"/>
 			<cat-item tags="DET"/>  <!-- determinder added by rule -->
 		</def-cat>
+		<def-cat n="DET">
+			<cat-item tags="DET"/>
+		</def-cat>
 		<def-cat n="ITG">
 			<cat-item tags="ITG"/>
 		</def-cat>
@@ -544,8 +547,57 @@
 		</rule>
 
 
+		<!-- "er kann kein Auto zeichnen" => "he can not draw a car" -->
+		<!-- "N V DET N ~V" => "N V ~V DET N" -->  <!-- move verb -->
+		<rule comment="RULE: NP V DET N V">
+			<pattern>
+				<pattern-item n="SNP"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="DET"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="5" part="lem"/>
+						<clip pos="5" part="tags"/>
+						<clip pos="5" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="4"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "er wird seine Hände waschen" => "he is going to wash his hands" -->
-		<!-- "N V N ~V" => "N V ~V N" -->  <!-- move verb -->
+		<!-- "N V N ~V" => "N V (to) ~V N" -->  <!-- move verb -->
 		<rule comment="RULE: NP V N V">
 			<pattern>
 				<pattern-item n="SNP"/>
@@ -560,11 +612,19 @@
 							<or>
 								<equal>
 									<clip pos="2" part="lem"/>
+									<lit v="vbmod"/>  <!-- chunk name -->
+								</equal>
+								<equal>
+									<clip pos="2" part="lem"/>
 									<lit v="vaux"/>  <!-- chunk name -->
 								</equal>
 								<equal>
 									<clip pos="2" part="lem"/>
 									<lit v="vbhaver"/>  <!-- chunk name -->
+								</equal>
+								<equal>
+									<clip pos="2" part="lem"/>
+									<lit v="verb_adv"/>  <!-- chunk name -->
 								</equal>
 							</or>
 						</test>

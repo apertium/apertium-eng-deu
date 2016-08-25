@@ -811,6 +811,18 @@
 				<when>
 					<test>
 						<equal>
+							<clip pos="1" side="tl" part="lem"/>
+							<lit v="1"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_nbr"/>
+						<lit-tag v="sg"/>
+					</let>
+				</when>
+				<when>
+					<test>
+						<equal>
 							<var n="v_nbr"/>
 							<lit v=""/>
 						</equal>
@@ -3595,6 +3607,7 @@
 					<with-param pos="2"/>
 				</call-macro>
 				<out>
+					<!--<chunk namefrom="v_chunk_name" case="caseFirstWord">-->
 					<chunk name="adj_nom" case="caseFirstWord">
 						<tags>
 							<tag><var n="v_chunk_tag"/></tag>  <!--"SN"/"ADV"-->
@@ -4395,7 +4408,9 @@
 								</lu>
 								<b pos="1"/>
 								<lu>
-									<clip pos="2" side="tl" part="whole"/>
+									<!--<clip pos="2" side="tl" part="whole"/>-->
+									<lit v="not"/>
+									<lit-tag v="adv"/>
 								</lu>
 							</chunk>
 						</out>
@@ -4407,7 +4422,7 @@
 							<var n="caseOtherWord"/>
 						</modify-case>
 						<out>
-							<chunk name="verb_adv" case="caseFirstWord">
+							<chunk name="verb_adv_verb" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SV"/></tag>
 									<tag><var n="v_temp_verb"/></tag>
@@ -4437,6 +4452,40 @@
 						</out>
 					</otherwise>
 				</choose>
+
+				<choose>
+					<when>  <!-- "kein"/"nicht ein" => "not a" -->
+						<test>
+							<and>
+								<equal>
+									<clip pos="1" side="tl" part="lem"/>
+									<lit v="can"/>
+								</equal>
+								<equal>
+									<clip pos="2" side="tl" part="a_PoS"/>
+									<lit-tag v="det"/>
+								</equal>
+							</and>
+						</test>
+						<out>
+							<b/>
+							<chunk name="det" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="DET"/></tag>
+									<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+									<tag><clip pos="1" side="tl" part="a_gen"/></tag>
+									<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+								</tags>
+								<lu>
+									<lit v="a"/>
+									<clip pos="2" side="tl" part="a_det"/>
+									<clip pos="2" side="tl" part="a_nbr"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+				</choose>
+
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
