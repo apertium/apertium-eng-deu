@@ -62,6 +62,8 @@
 			<cat-item tags="SV_haver.*"/>
 			<cat-item tags="SV_do"/>
 			<cat-item tags="SV_do.*"/>
+			<cat-item tags="SV_adv"/>
+			<cat-item tags="SV_adv.*"/>
 		</def-cat>
 		<def-cat n="SV_aux">
 			<cat-item tags="SV_aux"/>
