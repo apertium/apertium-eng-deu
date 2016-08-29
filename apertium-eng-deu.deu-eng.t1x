@@ -291,6 +291,7 @@
 			<attr-item tags="np.loc"/>
 			<attr-item tags="np.top"/>
 			<attr-item tags="np.org"/>
+			<attr-item tags="np.al"/>
 		</def-attr>
 		<def-attr n="a_cog">
 			<attr-item tags="np.cog"/>
@@ -717,7 +718,6 @@
 								<lit-tag v="prn.pers"/>
 							</equal>
 							<equal>
-								<!--<clip pos="1" side="sl" part="a_cas"/>-->
 								<var n="v_cas_prn"/>
 								<lit-tag v="dat"/>
 							</equal>
