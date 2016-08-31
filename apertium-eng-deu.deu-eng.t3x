@@ -48,7 +48,7 @@
 			<attr-item tags="sp"/>
 			<attr-item tags="ND"/>
 		</def-attr>
-		<def-attr n="a_temps">
+		<def-attr n="a_tense">
 			<attr-item tags="pri"/>
 			<attr-item tags="pii"/>
 			<attr-item tags="prs"/>
@@ -79,7 +79,7 @@
 					<when>
 						<test>
 							<equal>
-								<clip pos="0" part="a_temps"/>
+								<clip pos="0" part="a_tense"/>
 								<lit-tag v="inf"/>
 							</equal>
 						</test>
@@ -89,7 +89,7 @@
 									<clip pos="1" part="lemh"/>
 								</get-case-from>
 								<clip pos="1" part="a_verb"/>
-								<clip pos="0" part="a_temps"/>
+								<clip pos="0" part="a_tense"/>
 								<clip pos="1" part="lemq"/>
 							</lu>
 						</out>

@@ -162,7 +162,7 @@
 			<attr-item tags="PD"/>
 			<attr-item tags="3"/>  <!-- link-to="3" -->
 		</def-attr>
-		<def-attr n="a_temps">
+		<def-attr n="a_tense">
 			<attr-item tags="pp"/>
 			<attr-item tags="ger"/>
 			<attr-item tags="pii"/>
@@ -193,11 +193,11 @@
 					<test>
 						<or>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="pprs"/>
 							</equal>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="inf"/>
 							</equal>
 						</or>
@@ -243,11 +243,11 @@
 					<test>
 						<or>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="pprs"/>
 							</equal>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="inf"/>
 							</equal>
 						</or>
@@ -294,11 +294,11 @@
 					<test>
 						<or>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="pprs"/>
 							</equal>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="inf"/>
 							</equal>
 						</or>
@@ -362,11 +362,11 @@
 					<test>
 						<or>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="pprs"/>
 							</equal>
 							<equal>
-								<clip pos="1" part="a_temps"/>
+								<clip pos="1" part="a_tense"/>
 								<lit-tag v="inf"/>
 							</equal>
 						</or>
