@@ -810,7 +810,7 @@
 
 
 		<!-- (verb) convert "pres" to "pri", "past" to "pii" / OUT: v_tense -->
-		<def-macro n="set_temps" npar="1">
+		<def-macro n="set_tense" npar="1">
 			<choose>
 				<when>
 					<test>
@@ -1695,7 +1695,7 @@
 			<choose>
 				<when>
 					<test>
-						<equal>
+						<equal caseless="yes">
 							<clip pos="1" side="sl" part="lem"/>
 							<lit v="more"/>
 						</equal>
@@ -1711,11 +1711,11 @@
 				<when>
 					<test>
 						<or>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="sl" part="lem"/>
 								<lit v="most"/>
 							</equal>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="sl" part="lem"/>
 								<lit v="the most"/>
 							</equal>
@@ -1747,15 +1747,15 @@
 				<when>
 					<test>
 						<or>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="sl" part="lem"/>
 								<lit v="more"/>
 							</equal>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="sl" part="lem"/>
 								<lit v="most"/>
 							</equal>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="sl" part="lem"/>
 								<lit v="the most"/>
 							</equal>
@@ -2146,7 +2146,7 @@
 
 
 		<!-- (verb) if "inf" change it to pri (pres) / (correction of tagging)-->
-		<def-macro n="upd_inf_pri_temp" npar="1">
+		<def-macro n="upd_inf_pri_tense" npar="1">
 			<choose>
 				<when>
 					<test>
@@ -2165,7 +2165,7 @@
 
 
 		<!-- (verb) change "inf" to "pri" (pres) / OUT: v_tense_verb -->
-		<def-macro n="chg_inf_temp_verb" npar="1">
+		<def-macro n="chg_inf_tense_verb" npar="1">
 			<choose>
 				<when>
 					<test>
@@ -2246,7 +2246,7 @@
 
 
 		<!-- (verb) / OUT: v_tense, v_pers_verb, v_nbr_verb -->
-		<def-macro n="set_temp_pers_nbr_verb" npar="1">
+		<def-macro n="set_tense_pers_nbr_verb" npar="1">
 			<choose>
 				<when>
 					<test>
@@ -2294,7 +2294,7 @@
 				</when>
 
 				<otherwise>	 <!-- all variables with values -->
-					<call-macro n="set_temps">
+					<call-macro n="set_tense">
 						<with-param pos="1"/>
 					</call-macro>
 					<call-macro n="set_pers_verb">
@@ -2583,7 +2583,7 @@
 			<choose>
 				<when>  <!-- "andere" then add type -->
 					<test>
-						<equal>
+						<equal caseless="yes">
 							<clip pos="1" side="tl" part="lem"/>
 							<lit v="andere"/>
 						</equal>
@@ -2602,6 +2602,11 @@
 
 		<!-- (num) -->
 		<def-macro n="build_num" npar="1">
+			<let>
+				<var n="v_nbr"/>
+				<clip pos="1" side="tl" part="a_nbr"/>
+			</let>
+<!--
 			<choose>
 				<when>
 					<test>
@@ -2619,6 +2624,7 @@
 					</let>
 				</when>
 			</choose>
+-->
 		</def-macro>
 
 
@@ -2844,7 +2850,7 @@
 			<choose>
 				<when>  <!-- "andere" then add type -->
 					<test>
-						<equal>
+						<equal caseless="yes">
 							<clip pos="1" side="tl" part="lem"/>
 							<lit v="andere"/>
 						</equal>
@@ -3082,7 +3088,7 @@
 
 		<!-- (VERB) / IN: v...nom / OUT: v...verb -->
 		<def-macro n="build_verb" npar="1">
-			<call-macro n="set_temp_pers_nbr_verb">
+			<call-macro n="set_tense_pers_nbr_verb">
 				<with-param pos="1"/>
 			</call-macro>
 
@@ -3153,8 +3159,8 @@
 		<!-- (VERB) called for the second verb  -->
 		<def-macro n="build_verb2" npar="1">
 <!--
-			<call-macro n="set_temp_pers_nbr_verb">
-			<call-macro n="set_temps">
+			<call-macro n="set_tense_pers_nbr_verb">
+			<call-macro n="set_tense">
 				<with-param pos="1"/>
 			</call-macro>
 			<let><var n="v_tense_verb"/><var n="v_tense"/></let>
@@ -3189,7 +3195,7 @@
 			<call-macro n="set_pers_gen_nbr_cas_nom">
 				<with-param pos="1"/>
 			</call-macro>
-			<call-macro n="set_temp_pers_nbr_verb">
+			<call-macro n="set_tense_pers_nbr_verb">
 				<with-param pos="2"/>
 			</call-macro>
 
@@ -3447,7 +3453,7 @@
 				<choose>
 					<when>  <!-- "andere" then add type -->
 						<test>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="tl" part="lem"/>
 								<lit v="andere"/>
 							</equal>
@@ -5642,6 +5648,65 @@
 							<clip pos="3" side="tl" part="a_nbr"/>
 							<clip pos="3" side="tl" part="a_cas"/>
 							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: NUM NOM-NOM">
+			<pattern>
+				<pattern-item n="num"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="hyphen"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="build_num">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="build_nom">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="build_nom">
+					<with-param pos="4"/>
+				</call-macro>
+				<out>
+					<chunk name="num_nom_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="a_nom"/>
+							<clip pos="2" side="tl" part="a_gen"/>
+							<clip pos="2" side="tl" part="a_nbr"/>
+							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="4" side="tl" part="lemh"/>
+							<clip pos="4" side="tl" part="a_nom"/>
+							<clip pos="4" side="tl" part="a_gen"/>
+							<clip pos="4" side="tl" part="a_nbr"/>
+							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
@@ -7890,11 +7955,11 @@
 					<when>
 						<test>
 							<and>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="1" side="sl" part="lem"/>
 									<lit v="do"/>
 								</equal>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="2" side="sl" part="lem"/>
 									<lit v="have"/>
 								</equal>
@@ -8142,11 +8207,11 @@
 				<pattern-item n="got"/>
 			</pattern>
 			<action>
-				<call-macro n="upd_inf_pri_temp"> <!-- if "inf" change to "pri" -->
+				<call-macro n="upd_inf_pri_tense"> <!-- if "inf" change to "pri" -->
 					<with-param pos="1"/>
 				</call-macro>
 				<!--<call-macro n="build_verb">-->
-				<call-macro n="set_temp_pers_nbr_verb">
+				<call-macro n="set_tense_pers_nbr_verb">
 					<with-param pos="1"/>
 				</call-macro>
 				<!--<call-macro n="build_prn">-->
@@ -8234,11 +8299,11 @@
 					<when>  <!-- (GB:) have got => have -->
 						<test>
 							<and>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="1" side="sl" part="lem"/>
 									<lit v="have"/>
 								</equal>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="2" side="sl" part="lem"/>
 									<lit v="got"/>
 								</equal>
@@ -8345,7 +8410,7 @@
 				<choose>
 					<when>  <!-- (GB:) have got => have -->
 						<test>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="sl" part="lem"/>
 								<lit v="have# got"/>
 							</equal>
@@ -8370,7 +8435,7 @@
 					</when>
 					<when>  <!-- (GB:) have got => have (don't use lemq!)-->
 						<test>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" side="sl" part="lem"/>
 								<lit v="have got"/>
 							</equal>

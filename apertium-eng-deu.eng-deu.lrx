@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <rules>
 
   <rule>
@@ -7,6 +8,7 @@
 	<or>
       <match lemma="a"/>
       <match lemma="my"/>
+      <match lemma="the"/>
 	</or>
     <match lemma="bike"/>
   </rule>
@@ -16,8 +18,8 @@
       <select lemma="beantworten" tags="vblex.*"/>
     </match>
 	<or>
-      <match lemma="the"/>
       <match lemma="a"/>
+      <match lemma="the"/>
 	</or>
     <match lemma="question"/>
   </rule>
@@ -38,8 +40,8 @@
       <select lemma="anzünden" tags="vblex.*"/>
     </match>
 	<or>
-      <match lemma="the"/>
       <match lemma="a"/>
+      <match lemma="the"/>
 	</or>
     <match lemma="candle"/>
   </rule>
