@@ -610,19 +610,19 @@
 					<when>  <!-- without "to" -->
 						<test>
 							<or>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="2" part="lem"/>
 									<lit v="vbmod"/>  <!-- chunk name -->
 								</equal>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="2" part="lem"/>
 									<lit v="vaux"/>  <!-- chunk name -->
 								</equal>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="2" part="lem"/>
 									<lit v="vbhaver"/>  <!-- chunk name -->
 								</equal>
-								<equal>
+								<equal caseless="yes">
 									<clip pos="2" part="lem"/>
 									<lit v="verb_adv"/>  <!-- chunk name -->
 								</equal>
@@ -2167,7 +2167,7 @@
 				<choose>
 					<when>
 						<test>
-							<equal>
+							<equal caseless="yes">
 								<clip pos="1" part="lem"/>
 								<lit v="vbser"/>  <!-- chunk name -->
 							</equal>
@@ -2280,16 +2280,10 @@
 				<choose>
 					<when>
 						<test>
-							<or>
-								<equal>
-									<clip pos="1" part="lem"/>
-									<lit v="vbser"/>  <!-- chunk name! -->
-								</equal>
-								<equal>
-									<clip pos="1" part="lem"/>
-									<lit v="Vbser"/>  <!-- chunk name! -->
-								</equal>
-							</or>
+							<equal caseless="yes">
+								<clip pos="1" part="lem"/>
+								<lit v="vbser"/>  <!-- chunk name! -->
+							</equal>
 						</test>
 						<out>
 							<chunk>
@@ -2356,6 +2350,7 @@
 								<clip pos="3" part="tags"/>
 								<clip pos="3" part="chcontent"/>
 							</chunk>
+							<b pos="3"/>
 							<chunk>
 								<clip pos="4" part="lem"/>
 								<clip pos="4" part="tags"/>
