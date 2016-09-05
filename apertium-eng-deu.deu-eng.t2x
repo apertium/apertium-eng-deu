@@ -29,6 +29,9 @@
 			<cat-item tags="PRPERS.*"/>
 			<cat-item tags="DET"/>  <!-- determinder added by rule -->
 		</def-cat>
+		<def-cat n="PRN_dem">
+			<cat-item lemma="prn_dem" tags="PRN.*"/>
+		</def-cat>
 		<def-cat n="DET">
 			<cat-item tags="DET"/>
 		</def-cat>
@@ -49,6 +52,9 @@
 		</def-cat>
 		<def-cat n="SV_have">
 			<cat-item lemma="vbhaver" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_be">
+			<cat-item lemma="vbser" tags="SV.*"/>
 		</def-cat>
 		<def-cat n="SV_pp">
 			<cat-item tags="SV.pp"/>
@@ -138,12 +144,43 @@
 			<attr-item tags="pprs"/>
 			<attr-item tags="pp"/>
 		</def-attr>
+
+		<def-attr n="a_prn_dem">
+			<attr-item tags="prn.dem"/>
+		</def-attr>
+
+		<def-attr n="a_PoS">
+			<attr-item tags="n"/>
+			<attr-item tags="np"/>
+			<attr-item tags="det"/>
+			<attr-item tags="adj"/>
+			<attr-item tags="num"/>
+			<attr-item tags="adv"/>
+			<attr-item tags="prn"/>
+			<attr-item tags="vblex"/>
+			<attr-item tags="vbmod"/>
+			<attr-item tags="vaux"/>
+			<attr-item tags="vbdo"/>
+			<attr-item tags="vbhaver"/>
+			<attr-item tags="vbser"/>
+			<attr-item tags="pr"/>
+			<attr-item tags="cnjcoo"/>
+			<attr-item tags="cnjsub"/>
+			<attr-item tags="cnjadv"/>
+			<attr-item tags="ij"/>
+			<attr-item tags="cm"/>
+			<attr-item tags="sent"/>
+		</def-attr> 
 	</section-def-attrs>
 
 	<section-def-vars>
 		<def-var n="v_tense"/>
 		<def-var n="v_gen_nom"/>
 		<def-var n="v_nbr_nom"/>
+		<def-var n="v_pers_nom"/>
+		<def-var n="v_gen"/>
+		<def-var n="v_nbr"/>
+		<def-var n="v_pers"/>
 	</section-def-vars>
 
 	
@@ -204,8 +241,27 @@
 					<let><var n="v_gen_nom"/><lit-tag v="nt"/></let>
 				</when>
 				<otherwise>
-					<let><var n="v_gen_nom"/><lit-tag v="sg"/></let>
+					<let><var n="v_gen_nom"/><lit-tag v="nt"/></let>
 				</otherwise>
+			</choose>
+		</def-macro>
+
+
+		<!-- (noun) if "ND" set default value "sg" -->
+		<def-macro n="upd_ND_sg" npar="2">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_nbr"/>
+							<lit-tag v="ND"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_nbr"/>
+						<lit-tag v="sg"/>
+					</let>
+				</when>
 			</choose>
 		</def-macro>
 
@@ -215,10 +271,18 @@
 			<choose>
 				<when>
 					<test>
-						<equal>
-							<clip pos="1" part="a_nbr"/>
-							<lit-tag v="ND"/>
-						</equal>
+						<and>
+							<equal>
+								<clip pos="1" part="a_nbr"/>
+								<lit-tag v="ND"/>
+							</equal>
+							<not>
+								<equal>
+									<clip pos="2" part="a_nbr"/>
+									<lit v=""/>
+								</equal>
+							</not>
+						</and>
 					</test>
 					<let>
 						<clip pos="1" part="a_nbr"/>
@@ -243,33 +307,24 @@
 			</choose>
 		</def-macro>
 
-		<!-- (noun) if "ND" set default value "sg" -->
-		<def-macro n="upd_ND_sg" npar="2">
-			<choose>
-				<when>
-					<test>
-						<equal>
-							<clip pos="1" part="a_nbr"/>
-							<lit-tag v="ND"/>
-						</equal>
-					</test>
-					<let>
-						<clip pos="1" part="a_nbr"/>
-						<lit-tag v="sg"/>
-					</let>
-				</when>
-			</choose>
-		</def-macro>
 
 		<!-- (verb) if "GD" get gender from next word -->
 		<def-macro n="upd_GD_gen" npar="2">
 			<choose>
 				<when>
 					<test>
-						<equal>
-							<clip pos="1" part="a_gen"/>
-							<lit-tag v="GD"/>
-						</equal>
+						<and>
+							<equal>
+								<clip pos="1" part="a_gen"/>
+								<lit-tag v="GD"/>
+							</equal>
+							<not>
+								<equal>
+									<clip pos="2" part="a_gen"/>
+									<lit v=""/>
+								</equal>
+							</not>
+						</and>
 					</test>
 					<let>
 						<clip pos="1" part="a_gen"/>
@@ -299,10 +354,18 @@
 			<choose>
 				<when>
 					<test>
-						<equal>
-							<clip pos="1" part="a_pers"/>
-							<lit-tag v="PD"/>
-						</equal>
+						<and>
+							<equal>
+								<clip pos="1" part="a_pers"/>
+								<lit-tag v="PD"/>
+							</equal>
+							<not>
+								<equal>
+									<clip pos="2" part="a_pers"/>
+									<lit v=""/>
+								</equal>
+							</not>
+						</and>
 					</test>
 					<let>
 						<clip pos="1" part="a_pers"/>
@@ -327,9 +390,9 @@
 		</def-macro>
 
 		<!-- (verb) (to be determined) -->
-		<!--(only necessary for sentences that start with erbs)-->
+		<!--(only necessary for sentences that start with verbs)-->
 		<def-macro n="upd_PD_ND_GD" npar="2">
-			<call-macro n="upd_PD_pers">  <!-- PD to "pers" -->
+			<call-macro n="upd_PD_pers"> <!-- PD to "pers" -->
 				<with-param pos="1"/>
 				<with-param pos="2"/>    <!-- "pers" from noun -->
 			</call-macro>
@@ -341,6 +404,271 @@
 				<with-param pos="1"/>
 				<with-param pos="2"/>    <!-- "gen" from noun -->
 			</call-macro>
+
+			<choose>
+				<when>
+					<test>
+						<equal caseless="yes">
+							<clip pos="1" part="a_PoS"/>
+							<lit-tag v="PRN"/>
+						</equal>
+					</test>
+					<call-macro n="chg_gen_prn">
+						<with-param pos="1"/>
+					</call-macro>
+				</when>
+			</choose>
+			<call-macro n="rm_PD_ND_GD">
+				<with-param pos="1"/>
+			</call-macro>
+		</def-macro>
+
+		<!-- (verb) remove all tags not necessary for "inf" (not only PD/ND/GD)
+			 if "inf" is not used to replace another word  (e.g.: "do not go" -> "geht nicht") -->
+		<def-macro n="rm_PD_ND_GD" npar="2">
+			<choose>
+				<when>
+					<test>
+						<or>
+							<equal>
+								<clip pos="1" part="a_tense"/>
+								<lit-tag v="pprs"/>
+							</equal>
+							<equal>
+								<clip pos="1" part="a_tense"/>
+								<lit-tag v="inf"/>
+							</equal>
+						</or>
+					</test>
+					<let>
+						<clip pos="1" part="a_pers"/>  <!-- remove PD -->
+						<lit v=""/>
+					</let>
+					<let>
+						<clip pos="1" part="a_nbr"/>  <!-- remove ND -->
+						<lit v=""/>
+					</let>
+					<let>
+						<clip pos="1" part="a_gen"/>  <!-- remove GD -->
+						<lit v=""/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+
+		<!-- (if not replaced set values of last noun) -->
+		<def-macro n="chg_PD_ND_GD" npar="1">
+			<choose>
+				<when>
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" part="a_nbr"/>
+								<lit-tag v="ND"/>
+							</equal>
+							<not>
+								<equal>
+									<var n="v_nbr_nom"/>
+									<lit v=""/>
+								</equal>
+							</not>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" part="a_nbr"/>
+						<var n="v_nbr_nom"/>
+					</let>
+				</when>
+			</choose>
+			<choose>
+				<when>
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" part="a_gen"/>
+								<lit-tag v="GD"/>
+							</equal>
+							<not>
+								<equal>
+									<var n="v_gen_nom"/>
+									<lit v=""/>
+								</equal>
+							</not>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" part="a_gen"/>
+						<var n="v_gen_nom"/>
+					</let>
+				</when>
+			</choose>
+			<choose>
+				<when>
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" part="a_pers"/>
+								<lit-tag v="PD"/>
+							</equal>
+							<not>
+								<equal>
+									<var n="v_pers_nom"/>
+									<lit v=""/>
+								</equal>
+							</not>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" part="a_pers"/>
+						<var n="v_pers_nom"/>
+					</let>
+				</when>
+			</choose>
+
+			<choose>
+				<when>
+					<test>
+						<equal caseless="yes">
+							<clip pos="1" part="a_PoS"/>
+							<lit-tag v="PRN"/>
+						</equal>
+					</test>
+					<call-macro n="chg_gen_prn">
+						<with-param pos="1"/>
+					</call-macro>
+				</when>
+			</choose>
+		</def-macro>
+
+
+		<!-- (if not replaced set default values) -->
+		<def-macro n="default_PD_ND_GD" npar="1">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_nbr"/>
+							<lit-tag v="ND"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_nbr"/>
+						<lit-tag v="sg"/>
+						<!--<lit-tag v="pl"/>-->
+					</let>
+				</when>
+			</choose>
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_gen"/>
+							<lit-tag v="GD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_gen"/>
+						<lit-tag v="nt"/>
+						<!--<lit-tag v="mf"/>-->
+					</let>
+				</when>
+			</choose>
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_pers"/>
+							<lit-tag v="PD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_pers"/>
+						<lit-tag v="p3"/>
+					</let>
+				</when>
+			</choose>
+
+			<choose>
+				<when>
+					<test>
+						<equal caseless="yes">
+							<clip pos="1" part="a_PoS"/>
+							<lit-tag v="PRN"/>
+						</equal>
+					</test>
+					<call-macro n="chg_gen_prn">
+						<with-param pos="1"/>
+					</call-macro>
+				</when>
+			</choose>
+		</def-macro>
+
+
+		<!-- (prn) if "pl" set "m" or "f" to "mf" / OUT: v_gen -->
+		<def-macro n="chg_gen_prn" npar="1">
+			<choose>
+				<when>  <!-- if "pl" set "mf" -->
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" part="a_nbr"/>
+								<lit-tag v="pl"/>
+							</equal>
+							<or>
+								<equal>
+									<clip pos="1" part="a_gen"/>
+									<lit-tag v="m"/>
+								</equal>
+								<equal>
+									<clip pos="1" part="a_gen"/>
+									<lit-tag v="f"/>
+								</equal>
+							</or>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" part="a_gen"/>
+						<lit-tag v="mf"/>
+					</let>
+				</when>
+				<when>  <!-- if "prn.dem" set "mf" -->
+					<test>
+						<equal caseless="yes">
+							<!-- <clip pos="1" part="a_prn_dem"/>
+							<lit-tag v="prn.dem"/> -->
+							<clip pos="1" part="lem"/>
+							<lit v="prn_dem"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_gen"/>
+						<lit-tag v="mf"/>
+					</let>
+				</when>
+				<when>  <!-- if "sg"+"mf" set "m" -->
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" part="a_pers"/>
+								<lit-tag v="sg"/>
+							</equal>
+							<equal>
+								<clip pos="1" part="a_nbr"/>
+								<lit-tag v="p3"/>
+							</equal>
+							<equal>
+								<clip pos="1" part="a_gen"/>
+								<lit-tag v="mf"/>
+							</equal>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" part="a_gen"/>
+						<lit-tag v="m"/>
+					</let>
+				</when>
+			</choose>
 		</def-macro>
 
 	</section-def-macros>
@@ -907,6 +1235,107 @@
 		</rule>
 
 
+		<!-- "This is ..." / "These are ..." -->
+		<!-- "DEM V N" => "DEM V N" -->
+		<rule comment="RULE: DEM Vs N">
+			<pattern>
+				<pattern-item n="PRN_dem"/>
+				<pattern-item n="SV_be"/>
+				<pattern-item n="SNP"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>      <!-- from noun -->
+				</call-macro>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="2"/>
+					<with-param pos="3"/>      <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "This is" / "These are" -->
+		<!-- "DEM V" => "DEM V" -->
+		<rule comment="RULE: DEM Vs">
+			<pattern>
+				<pattern-item n="PRN_dem"/>
+				<pattern-item n="SV_be"/>
+			</pattern>
+			<action>
+				<call-macro n="default_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="2"/>
+					<with-param pos="1"/>      <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "DEM" => "DEM" -->  <!--(PD/ND/GD for prn.dem only)-->
+		<rule comment="RULE: DEM">
+			<pattern>
+				<pattern-item n="PRN_dem"/>
+			</pattern>
+			<action>
+				<call-macro n="default_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "CNJ ADV PR N ~V" => "CNJ ADV ~V PR N" -->  <!-- move verb -->
 		<rule comment="RULE: CNJ ADV PR N V">
 			<pattern>
@@ -1288,6 +1717,8 @@
 		</rule>
 
 
+		<!-- "Gestern war ich" => "Yesterday I was" -->
+		<!-- "hier ist der..." => "here is the..." -->
 		<!-- "ADV ~V N" => "ADV N ~V" -->  <!-- move verb -->
 		<rule comment="RULE: ADV V NP">
 			<pattern>
@@ -1296,25 +1727,83 @@
 				<pattern-item n="SNP"/> <!--"SN"/"PRN"/"PRPERS" -->
 			</pattern>
 			<action>
-				<out>
-					<chunk>
-						<clip pos="1" part="lem"/>
-						<clip pos="1" part="tags"/>
-						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b pos="1"/>
-					<chunk>
-						<clip pos="3" part="lem"/>
-						<clip pos="3" part="tags"/>
-						<clip pos="3" part="chcontent"/>
-					</chunk>
-					<b pos="2"/>
-					<chunk>
-						<clip pos="2" part="lem"/>
-						<clip pos="2" part="tags"/>
-						<clip pos="2" part="chcontent"/>
-					</chunk>
-				</out>
+				<choose>
+					<when>  <!-- => "ADV N ~V" -->
+						<test>
+							<equal caseless="yes">
+								<clip pos="1" part="lem"/>
+								<lit v="adv_time"/>
+							</equal>
+						</test>
+						<out>
+							<chunk>
+								<clip pos="1" part="lem"/>
+								<clip pos="1" part="tags"/>
+								<clip pos="1" part="chcontent"/>
+							</chunk>
+							<b pos="1"/>
+							<chunk>
+								<clip pos="3" part="lem"/>
+								<clip pos="3" part="tags"/>
+								<clip pos="3" part="chcontent"/>
+							</chunk>
+							<b pos="2"/>
+							<chunk>
+								<clip pos="2" part="lem"/>
+								<clip pos="2" part="tags"/>
+								<clip pos="2" part="chcontent"/>
+							</chunk>
+						</out>
+					</when>
+					<when>  <!-- => "ADV V N" -->
+						<test>
+							<equal caseless="yes">
+								<clip pos="2" part="lem"/>
+								<lit v="vbser"/>  <!-- chunk name! -->
+							</equal>
+						</test>
+						<out>
+							<chunk>
+								<clip pos="1" part="lem"/>
+								<clip pos="1" part="tags"/>
+								<clip pos="1" part="chcontent"/>
+							</chunk>
+							<b pos="1"/>
+							<chunk>
+								<clip pos="2" part="lem"/>
+								<clip pos="2" part="tags"/>
+								<clip pos="2" part="chcontent"/>
+							</chunk>
+							<b pos="2"/>
+							<chunk>
+								<clip pos="3" part="lem"/>
+								<clip pos="3" part="tags"/>
+								<clip pos="3" part="chcontent"/>
+							</chunk>
+						</out>
+					</when>
+					<otherwise>  <!-- => "ADV N ~V" -->
+						<out>
+							<chunk>
+								<clip pos="1" part="lem"/>
+								<clip pos="1" part="tags"/>
+								<clip pos="1" part="chcontent"/>
+							</chunk>
+							<b pos="1"/>
+							<chunk>
+								<clip pos="3" part="lem"/>
+								<clip pos="3" part="tags"/>
+								<clip pos="3" part="chcontent"/>
+							</chunk>
+							<b pos="2"/>
+							<chunk>
+								<clip pos="2" part="lem"/>
+								<clip pos="2" part="tags"/>
+								<clip pos="2" part="chcontent"/>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
 			</action>
 		</rule>
 
@@ -1867,6 +2356,10 @@
 				<pattern-item n="SN"/>
 			</pattern>
 			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>      <!-- from noun -->
+				</call-macro>
 				<out>
 					<chunk>
 						<clip pos="1" part="lem"/>
@@ -2361,6 +2854,101 @@
 				</choose>
 				<call-macro n="set_gen_nbr_nom">
 					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "Is this"/"Are these" -->
+		<!-- "V PRN" => "V PRN" -->
+		<rule comment="RULE: Vs PRN">
+			<pattern>
+				<pattern-item n="SV_be"/>
+				<pattern-item n="PRN_dem"/>
+			</pattern>
+			<action>
+				<call-macro n="default_PD_ND_GD">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="2"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "V N" => "V N" -->
+		<rule comment="RULE: Vs N">
+			<pattern>
+				<pattern-item n="SV_be"/>
+				<pattern-item n="SNP"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="2"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- (verb) (to be determined) -->
+		<rule comment="RULE: V">
+			<pattern>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<call-macro n="chg_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="default_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="2"/>
 				</call-macro>
 			</action>
 		</rule>

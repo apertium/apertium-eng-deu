@@ -7202,7 +7202,7 @@
 				<pattern-item n="det"/>
 				<pattern-item n="num"/>
 				<pattern-item n="hyphen"/>
-				<pattern-item n="num"/>
+				<pattern-item n="ord_num"/>
 			</pattern>
 			<action>
 				<let><var n="v_cas_prep"/><lit-tag v="dat"/></let> <!-- dative -->
@@ -7263,7 +7263,7 @@
 				<pattern-item n="prep"/>
 				<pattern-item n="months"/>
 				<pattern-item n="det"/>
-				<pattern-item n="num"/>
+				<pattern-item n="ord_num"/>
 			</pattern>
 			<action>
 				<let><var n="v_cas_prep"/><lit-tag v="dat"/></let> <!-- dative -->
@@ -7393,10 +7393,11 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<concat>
+							<!-- <concat>
 								<clip pos="4" side="tl" part="lem"/>
 								<lit v="."/>
-							</concat>
+							</concat> -->
+							<clip pos="4" side="tl" part="lem"/>
 							<clip pos="4" side="tl" part="a_ord_num"/>
 						</lu>
 						<b pos="3"/>
@@ -7418,7 +7419,7 @@
 			<pattern>
 				<pattern-item n="on"/>
 				<pattern-item n="months"/>
-				<pattern-item n="num"/>
+				<pattern-item n="ord_num"/>
 			</pattern>
 			<action>
 				<call-macro n="build_nom">
@@ -7455,9 +7456,9 @@
 
 		<!-- "3rd of June"  =>  "3. Juni" -->
 		<!-- NUM OF MONTHS  =>  NUM MONTHS -->
-		<rule comment="RULE: ON MONTHS NUM">
+		<rule comment="RULE: NUM OF MONTHS">
 			<pattern>
-				<pattern-item n="num"/>
+				<pattern-item n="ord_num"/>
 				<pattern-item n="of"/>
 				<pattern-item n="months"/>
 			</pattern>
@@ -7479,6 +7480,41 @@
 						<b pos="1"/>
 						<lu>
 							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "August 24th"  =>  "24. August" -->
+		<!-- ~MONTHS NUM  =>  NUM ~MONTHS -->
+		<rule comment="RULE: MONTHS NUM">
+			<pattern>
+				<pattern-item n="months"/>
+				<pattern-item n="ord_num"/>
+			</pattern>
+			<action>
+				<call-macro n="build_nom">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="build_num">
+					<with-param pos="2"/>
+				</call-macro>
+				<out>
+					<chunk name="num_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+						</tags>
+						<lu>
+							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
 						</lu>
 					</chunk>
 				</out>
@@ -8203,7 +8239,8 @@
 		<rule comment="RULE: HAVE NOUNS GOT">
 			<pattern>
 				<pattern-item n="verbhave"/>
-				<pattern-item n="noun"/>
+				<!--<pattern-item n="nouns"/>-->  <!-- prn/np/n -->
+				<pattern-item n="noun"/>  <!-- n/np -->
 				<pattern-item n="got"/>
 			</pattern>
 			<action>
@@ -8214,7 +8251,6 @@
 				<call-macro n="set_tense_pers_nbr_verb">
 					<with-param pos="1"/>
 				</call-macro>
-				<!--<call-macro n="build_prn">-->
 				<call-macro n="build_nom">
 					<with-param pos="2"/>
 				</call-macro>
@@ -8245,8 +8281,6 @@
 						</tags>
 						<lu>
 							<clip pos="2" side="tl" part="lemh"/>
-							<!--<var n="v_a_nom"/>    <!-#- prn/np/n -#->
-							<var n="v_pers_nom"/>-->
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_gen"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
@@ -8254,23 +8288,6 @@
 							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
-
-					<!-- <chunk name="prn" case="caseOtherWord">
-						<tags>
-							<tag><lit-tag v="PRN"/></tag>
-							<tag><var n="v_pers_prn"/></tag>
-							<tag><var n="v_gen_prn"/></tag>
-							<tag><var n="v_nbr_prn"/></tag>
-						</tags>
-						<lu>
-							<clip pos="2" side="tl" part="lem"/>
-							<clip pos="2" side="tl" part="a_tipus_prn"/>
-							<clip pos="2" side="tl" part="a_pers"/>
-							<clip pos="2" side="tl" part="a_gen"/>
-							<clip pos="2" side="tl" part="a_nbr"/>
-							<clip pos="2" side="tl" part="a_cas"/>
-						</lu>
-					</chunk> -->
 				</out>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
@@ -8279,14 +8296,25 @@
 		</rule>
 
 
-		<!-- "had worked"    => "gearbeitet hatte" -->
-		<!--("had travelled" => "gereist war") -->
+		<!-- "had worked"    => "gearbeitet hatte" / "hatte ... gearbeitet" -->
+		<!--("had travelled" => "gereist war" / "war ... gereist" -->
 		<rule comment="RULE: HAVE VERBS">
 			<pattern>
 				<pattern-item n="verbhave"/>  <!-- vbhaver -->
 				<pattern-item n="verbs"/>
 			</pattern>
 			<action>
+				<choose>
+					<when>
+						<test>
+							<equal>
+								<clip pos="1" side="tl" part="a_tense"/>
+								<lit-tag v="inf"/>
+							</equal>
+						</test>
+						<let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pri"/></let>
+					</when>
+				</choose>
 				<call-macro n="build_verb"> <!-- OUT: v...verb -->
 					<with-param pos="1"/>
 				</call-macro>

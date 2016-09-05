@@ -21,6 +21,7 @@
 			<cat-item name="verb"/>
 			<cat-item name="vaux"/>
 			<cat-item name="vbdo"/>
+			<cat-item name="vbhaver"/>
 		</def-cat>
 		<def-cat n="adv">
 			<cat-item name="adv"/>
@@ -70,6 +71,7 @@
 
 	<section-rules>
 
+		<!-- if verb was moved/inserted use upper/lower case from chunk -->
 		<rule comment="CHUNK: verb">
 			<pattern>
 				<pattern-item n="verbs"/>
@@ -90,6 +92,23 @@
 								</get-case-from>
 								<clip pos="1" part="a_verb"/>
 								<clip pos="0" part="a_tense"/>
+								<clip pos="1" part="lemq"/>
+							</lu>
+						</out>
+					</when>
+					<when>
+						<test>
+							<equal>
+								<case-of pos="0" part="lemh"/>
+								<lit v="aa"/>
+							</equal>
+						</test>
+						<out>
+							<lu>
+								<get-case-from pos="0">
+									<clip pos="1" part="lemh"/>
+								</get-case-from>
+								<clip pos="1" part="tags"/>
 								<clip pos="1" part="lemq"/>
 							</lu>
 						</out>
