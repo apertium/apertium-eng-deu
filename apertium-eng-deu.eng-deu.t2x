@@ -47,6 +47,10 @@
 			<cat-item tags="REL"/>
 			<cat-item tags="REL.*"/>
 		</def-cat>
+		<def-cat n="DET">
+			<cat-item tags="DET"/>
+			<cat-item tags="DET.*"/>
+		</def-cat>
 
 		<def-cat n="SV">  <!-- any verb phrase -->
 			<cat-item tags="SV"/>
@@ -161,6 +165,14 @@
 			<attr-item tags="p3"/>
 			<attr-item tags="PD"/>
 			<attr-item tags="3"/>  <!-- link-to="3" -->
+		</def-attr>
+		<def-attr n="a_cas">			<!-- Case -->
+			<attr-item tags="nom"/>
+			<attr-item tags="gen"/>
+			<attr-item tags="dat"/>
+			<attr-item tags="acc"/>
+			<attr-item tags="CD"/>
+			<attr-item tags="5"/>  <!-- link-to="5" -->
 		</def-attr>
 		<def-attr n="a_tense">
 			<attr-item tags="pp"/>
@@ -337,6 +349,40 @@
 			</choose>
 		</def-macro>
 
+
+		<!-- (det) if "CD" get case from next word -->
+		<def-macro n="upd_CD_cas" npar="2">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_cas"/>
+							<lit-tag v="CD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_cas"/>
+						<clip pos="2" part="a_cas"/>
+					</let>
+				</when>
+			</choose>
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="1" part="a_cas"/>
+							<lit-tag v="CD"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_cas"/>
+						<lit-tag v="nom"/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+
 		<!-- (verb) (to be determined) -->
 		<!--(only necessary for rules that start with Verbs)-->
 		<def-macro n="upd_PD_ND_GD" npar="2">
@@ -351,6 +397,10 @@
 			<call-macro n="upd_GD_gen">  <!-- GD to "gen" -->
 				<with-param pos="1"/>
 				<with-param pos="2"/>    <!-- "gen" from noun -->
+			</call-macro>
+			<call-macro n="upd_CD_cas">  <!-- CD to "case" -->
+				<with-param pos="1"/>
+				<with-param pos="2"/>    <!-- "cas" from noun -->
 			</call-macro>
 		</def-macro>
 
@@ -2050,6 +2100,33 @@
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: DET NP">
+			<pattern>
+				<pattern-item n="DET"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
 					</chunk>
 				</out>
 			</action>
