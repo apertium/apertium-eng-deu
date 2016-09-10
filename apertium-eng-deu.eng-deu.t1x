@@ -446,6 +446,9 @@
 			<attr-item tags="adj.sint.comp"/>
 			<attr-item tags="adj.sint.sup"/>
 		</def-attr>
+		<def-attr n="a_sint_adj1">
+			<attr-item tags="adj.sint"/>
+		</def-attr>
 		<def-attr n="a_det">
 			<attr-item tags="det.def"/>
 			<attr-item tags="det.ind"/>
@@ -793,7 +796,7 @@
 				<when>
 					<test>
 						<equal>
-							<clip pos="1" side="tl" part="a_sint_adj"/>
+							<clip pos="1" side="tl" part="a_sint_adj1"/>
 							<lit-tag v="adj.sint"/>
 						</equal>
 					</test>
@@ -6997,6 +7000,69 @@
 		</rule>
 
 
+		<!-- PR with accusative (if not already dative) -->
+		<rule comment="RULE: PR DET NOM NOM">
+			<pattern>
+				<pattern-item n="prep"/>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="build_nom">
+					<with-param pos="3"/>
+				</call-macro>
+				<call-macro n="set_acc_cas_nom">  <!--set accusative -->
+					<with-param pos="4"/>
+				</call-macro>
+				<let><var n="v_cas_prep"/><var n="v_cas_nom"/></let> 
+				<call-macro n="build_det_nom">
+					<with-param pos="2"/>
+					<with-param pos="4"/>
+				</call-macro>
+				<out>
+					<chunk name="pr_det_nom_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+							<tag><var n="v_cas_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="lemh"/>
+							<clip pos="3" side="tl" part="a_nom"/>
+							<clip pos="3" side="tl" part="a_gen"/>
+							<clip pos="3" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="4" side="tl" part="lemh"/>
+							<clip pos="4" side="tl" part="a_nom"/>
+							<clip pos="4" side="tl" part="a_gen"/>
+							<clip pos="4" side="tl" part="a_nbr"/>
+							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<rule comment="RULE: PR DET ADJ NOM">
 			<pattern>
 				<pattern-item n="prep"/>
@@ -7185,6 +7251,38 @@
 						<b pos="1"/>
 						<lu>
 							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "until half" => "bis halb" -->
+		<rule comment="RULE: PR ADJ">
+			<pattern>
+				<pattern-item n="prep"/>
+				<pattern-item n="adj"/>
+			</pattern>
+			<action>
+				<call-macro n="build_adj">
+					<with-param pos="2"/>
+				</call-macro>
+				<out>
+					<chunk name="pr_adj" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="ADJ"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_adj"/>
 						</lu>
 					</chunk>
 				</out>

@@ -2,6 +2,35 @@
 <rules>
 
   <rule>
+    <match lemma="tragen" tags="vblex.*">
+      <select lemma="wear" tags="vblex.*"/>
+    </match>
+    <match lemma="ein" tags="det.*"/>
+    <or>
+      <match lemma="Mantel" tags="n.*"/>
+      <match lemma="Anzug" tags="n.*"/>
+      <match lemma="Rock" tags="n.*"/>
+      <match lemma="Pelzmantel" tags="n.*"/>
+      <match lemma="Pelzumhang" tags="n.*"/>
+    </or>
+  </rule>
+
+  <rule weight="1.2">
+    <match lemma="fahren" tags="vblex.*">
+      <select lemma="ride" tags="vblex.*"/>
+    </match>
+    <match lemma="Fahrrad" tags="n.*"/>
+  </rule>
+
+  <rule weight="1.2">
+    <match lemma="fahren" tags="vblex.*">
+      <select lemma="ride" tags="vblex.*"/>
+    </match>
+    <match/>
+    <match lemma="Fahrrad" tags="n.*"/>
+  </rule>
+
+  <rule>
     <or>
       <match lemma="der" tags="det.*"/>
       <match lemma="ein" tags="det.*"/>

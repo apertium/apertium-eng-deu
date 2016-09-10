@@ -34,6 +34,7 @@
 		</def-cat>
 		<def-cat n="DET">
 			<cat-item tags="DET"/>
+			<cat-item tags="DET.*"/>
 		</def-cat>
 		<def-cat n="ITG">
 			<cat-item tags="ITG"/>
@@ -170,6 +171,13 @@
 			<attr-item tags="ij"/>
 			<attr-item tags="cm"/>
 			<attr-item tags="sent"/>
+		</def-attr> 
+
+		<def-attr n="a_snp">
+			<attr-item tags="SN"/>
+			<attr-item tags="PRN"/>
+			<attr-item tags="PRPERS"/>
+			<!--<attr-item tags="DET"/>-->
 		</def-attr> 
 	</section-def-attrs>
 
@@ -875,8 +883,8 @@
 		</rule>
 
 
-		<!-- "er kann kein Auto zeichnen" => "he can not draw a car" -->
-		<!-- "N V DET N ~V" => "N V ~V DET N" -->  <!-- move verb -->
+		<!-- "er kann kein(=nicht ein) Auto zeichnen" => "he can not draw a car" -->
+		<!-- "N V DET N ~V" => "N V (not) ~V DET N" -->  <!-- move verb -->
 		<rule comment="RULE: NP V DET N V">
 			<pattern>
 				<pattern-item n="SNP"/>
@@ -1728,12 +1736,22 @@
 			</pattern>
 			<action>
 				<choose>
-					<when>  <!-- => "ADV N ~V" -->
+					<when>  <!-- (move) => "ADV N ~V" -->
 						<test>
-							<equal caseless="yes">
-								<clip pos="1" part="lem"/>
-								<lit v="adv_time"/>
-							</equal>
+							<or>
+								<equal caseless="yes">
+									<clip pos="1" part="lem"/>
+									<lit v="adv_time"/>
+								</equal>
+								<equal>
+									<clip pos="3" part="a_snp"/>
+									<lit-tag v="PRN"/>
+								</equal>
+								<equal>
+									<clip pos="3" part="a_snp"/>
+									<lit-tag v="PRPERS"/>
+								</equal>
+							</or>
 						</test>
 						<out>
 							<chunk>
@@ -1755,13 +1773,7 @@
 							</chunk>
 						</out>
 					</when>
-					<when>  <!-- => "ADV V N" -->
-						<test>
-							<equal caseless="yes">
-								<clip pos="2" part="lem"/>
-								<lit v="vbser"/>  <!-- chunk name! -->
-							</equal>
-						</test>
+					<otherwise>  <!-- (don't move) => "ADV V N" -->
 						<out>
 							<chunk>
 								<clip pos="1" part="lem"/>
@@ -1779,27 +1791,6 @@
 								<clip pos="3" part="lem"/>
 								<clip pos="3" part="tags"/>
 								<clip pos="3" part="chcontent"/>
-							</chunk>
-						</out>
-					</when>
-					<otherwise>  <!-- => "ADV N ~V" -->
-						<out>
-							<chunk>
-								<clip pos="1" part="lem"/>
-								<clip pos="1" part="tags"/>
-								<clip pos="1" part="chcontent"/>
-							</chunk>
-							<b pos="1"/>
-							<chunk>
-								<clip pos="3" part="lem"/>
-								<clip pos="3" part="tags"/>
-								<clip pos="3" part="chcontent"/>
-							</chunk>
-							<b pos="2"/>
-							<chunk>
-								<clip pos="2" part="lem"/>
-								<clip pos="2" part="tags"/>
-								<clip pos="2" part="chcontent"/>
 							</chunk>
 						</out>
 					</otherwise>
@@ -2971,7 +2962,7 @@
 						<lit-tag v="adv"/>
 						<lit v="$}"/>
 					</chunk>
-					<b pos="1"/>
+					<b/>
 					<chunk>
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>
@@ -2999,7 +2990,7 @@
 						<lit-tag v="adv"/>
 						<lit v="$}"/>
 					</chunk>
-					<b pos="1"/>
+					<b/>
 					<chunk>
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>
