@@ -121,7 +121,10 @@
 		<def-cat n="prpers">
 			<cat-item lemma="prpers" tags="prn.*"/>
 			<cat-item tags="prn.pos.*"/>
-			<!--<cat-item tags="prn.pers.*"/>-->
+		</def-cat>
+		<def-cat n="prpers_pers">
+			<cat-item lemma="prpers" tags="prn.subj.*"/>
+			<cat-item tags="prn.pers.*"/>
 		</def-cat>
 		<def-cat n="prpers_subj">
 			<cat-item lemma="prpers" tags="prn.subj.*"/>
@@ -1494,7 +1497,7 @@
 		</def-macro>
 
 
-		<!-- (adj) if "pl" set "mf" / OUT: v_gen -->
+		<!-- (nom) if "pl" set "mf" / OUT: v_gen -->
 		<def-macro n="chg_pl__mf_gen" npar="1">
 			<choose>
 				<when>
@@ -1506,6 +1509,25 @@
 					</test>
 					<let>
 						<var n="v_gen"/>
+						<lit-tag v="mf"/>
+					</let>
+				</when>
+			</choose>
+		</def-macro>
+
+
+		<!-- (adj) if "pl" set "mf" / OUT: v_gen -->
+		<def-macro n="chg_pl__mf_gen_adj" npar="1">
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<var n="v_nbr_adj"/>
+							<lit-tag v="pl"/>
+						</equal>
+					</test>
+					<let>
+						<var n="v_gen_adj"/>
 						<lit-tag v="mf"/>
 					</let>
 				</when>
@@ -2554,7 +2576,7 @@
 					<call-macro n="set_cas">
 						<with-param pos="1"/>
 					</call-macro>
-					<let><var n="v_subject"/><lit-tag v="prn"/></let>
+					<!--<let><var n="v_subject"/><lit-tag v="prn"/></let>-->
 				</when>
 				<otherwise>
 					<let><var n="v_pers"/><lit v=""/></let>
@@ -2563,7 +2585,21 @@
 					<let><var n="v_cas"/><lit v=""/></let>
 				</otherwise>
 			</choose>
-			
+
+			<choose>
+				<when>
+					<test>
+						<not>
+							<equal caseless="yes">
+								<clip pos="1" side="tl" part="lem"/>
+								<lit v="was"/>
+							</equal>
+						</not>
+					</test>
+					<let><var n="v_subject"/><lit-tag v="prn"/></let>
+				</when>
+			</choose>
+
 			<!-- propagate to verb -->
 			<let><var n="v_pers_prn"/><var n="v_pers"/></let>
 			<let><var n="v_gen_prn"/><var n="v_gen"/></let>
@@ -2740,10 +2776,13 @@
 			<let><var n="v_cas_adj"/><var n="v_cas_nom"/></let>
 
 			<call-macro n="chg_sg_mf__m_gen_adj">  <!-- sg: "mf" => "m" -->
-				<with-param pos="1"/>              <!-- OUT: v_gen -->
+				<with-param pos="1"/>              <!-- OUT: v_gen_adj -->
+			</call-macro>
+			<call-macro n="chg_pl__mf_gen_adj">    <!-- pl: => "mf" -->
+				<with-param pos="1"/>              <!-- OUT: v_gen_adj -->
 			</call-macro>
 			<call-macro n="chg_mfn__mf_gen_adj">  <!-- "mfn" => "mf" -->
-				<with-param pos="1"/>             <!-- IN/OUT: v_gen -->
+				<with-param pos="1"/>             <!-- IN/OUT: v_gen_adj -->
 			</call-macro>
 			<call-macro n="set_decl_typ_a_adj">
 				<with-param pos="1"/>
@@ -3099,7 +3138,7 @@
 					</let>
 				</when>
 			</choose>
-			<let>  <!-- only first nom could be subj -->
+			<let>  <!-- only first nom could be subj (clear variable) -->
 				<var n="v_firstWord_qst"/>
 				<lit v=""/>
 			</let>
@@ -7782,8 +7821,98 @@
 		</rule>
 
 
+		<!--  "Are you going to buy" ==> "Werden Sie (...) kaufen" -->
+		<!--  "BE PRPERS GO TO VERB" => "+werden PRPERS VERB" -->
+		<rule comment="RULE: BE PRPERS GO TO VERB">
+			<pattern>
+				<pattern-item n="verbbe"/>
+				<pattern-item n="prpers_pers"/>
+				<pattern-item n="go"/>
+				<pattern-item n="to"/>
+				<pattern-item n="verbs"/>
+			</pattern>
+			<action>
+				<call-macro n="build_verb"> <!-- OUT: v...verb -->
+					<with-param pos="1"/>
+				</call-macro>
+				<let><clip pos="5" side="tl" part="a_tense"/><lit-tag v="inf"/></let>
+				<call-macro n="build_verb2">
+					<with-param pos="5"/>
+				</call-macro>
+				<choose>
+					<when>
+						<test>
+							<equal caseless="yes">
+								<clip pos="2" side="tl" part="lem"/>
+								<lit v="prpers"/>
+							</equal>
+						</test>
+						<call-macro n="build_prpers">  <!-- OUT: v_..._prn -->
+							<with-param pos="2"/>
+						</call-macro>
+					</when>
+					<otherwise>
+						<call-macro n="build_prn">  <!-- OUT: v_..._prn -->
+							<with-param pos="2"/>
+						</call-macro>
+					</otherwise>
+				</choose>
+				<out>
+					<chunk name="verbm" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SV_aux"/></tag>
+							<tag><var n="v_tense_verb"/></tag>
+							<tag><var n="v_pers_verb"/></tag>
+							<tag><var n="v_nbr_verb"/></tag>
+						</tags>
+						<lu>
+							<lit v="werden"/>  <!-- "will" -->
+							<lit-tag v="vaux"/>
+							<clip pos="1" side="tl" part="a_tense" link-to="2"/>
+							<clip pos="1" side="tl" part="a_pers" link-to="3"/>
+							<clip pos="1" side="tl" part="a_nbr" link-to="4"/>
+						</lu>
+					</chunk>
+					<b pos="1"/>
+					<chunk name="prpers" case="caseOtherWord">
+						<tags>
+							<tag><lit-tag v="PRPERS"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
+						</tags>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_any_prn"/>
+							<clip pos="2" side="tl" part="a_pers"/>
+							<clip pos="2" side="tl" part="a_gen"/>
+							<clip pos="2" side="tl" part="a_nbr"/>
+							<clip pos="2" side="tl" part="a_cas"/>
+						</lu>
+					</chunk>
+					<b pos="4"/>
+					<chunk name="verb" case="caseOtherWord">
+						<tags>
+							<tag><lit-tag v="SV"/></tag>
+							<tag><lit-tag v="inf"/></tag>
+						</tags>
+						<lu>
+							<clip pos="5" side="tl" part="lemh"/>
+							<clip pos="5" side="tl" part="a_verb"/>
+							<lit-tag v="inf"/>
+							<clip pos="5" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!--  "(he) is going to do" ==> "(er) will tun" -->
-		<!--  "BE GO TO VERB" => "will VERB" -->
+		<!--  "BE GO TO VERB" => "+wollen VERB" -->
 		<rule comment="RULE: BE GO TO VERB">
 			<pattern>
 				<pattern-item n="verbbe"/>
