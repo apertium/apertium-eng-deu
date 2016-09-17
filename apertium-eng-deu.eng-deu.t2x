@@ -191,6 +191,7 @@
 	</section-def-attrs>
 
 	<section-def-vars>
+		<def-var n="v_pers"/>
 		<def-var n="v_gen"/>
 		<def-var n="v_nbr"/>
 	</section-def-vars>
@@ -404,7 +405,7 @@
 			</call-macro>
 		</def-macro>
 
-		<!-- (verb) remove all tags not necessary for "inf" (not only PD/ND/GD)
+		<!-- (verb) remove all tags not necessary for "inf"/"imp" (not only PD/ND/GD)
 			 if "inf" is not used to replace another word  (e.g.: "do not go" -> "geht nicht") -->
 		<def-macro n="rm_PD_ND_GD" npar="2">
 			<choose>
@@ -413,11 +414,11 @@
 						<or>
 							<equal>
 								<clip pos="1" part="a_tense"/>
-								<lit-tag v="pprs"/>
+								<lit-tag v="inf"/>
 							</equal>
 							<equal>
 								<clip pos="1" part="a_tense"/>
-								<lit-tag v="inf"/>
+								<lit-tag v="pprs"/>
 							</equal>
 						</or>
 					</test>
@@ -427,6 +428,22 @@
 					</let>
 					<let>
 						<clip pos="1" part="a_nbr"/>  <!-- remove ND -->
+						<lit v=""/>
+					</let>
+					<let>
+						<clip pos="1" part="a_gen"/>  <!-- remove GD -->
+						<lit v=""/>
+					</let>
+				</when>
+				<when>  <!-- "imp" -->
+					<test>
+						<equal>
+							<clip pos="1" part="a_tense"/>
+							<lit-tag v="imp"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" part="a_pers"/>  <!-- remove PD -->
 						<lit v=""/>
 					</let>
 					<let>
@@ -895,6 +912,9 @@
 					<with-param pos="1"/>
 					<with-param pos="3"/>  <!-- from noun -->
 				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
 				<out>
 					<chunk>
 						<clip pos="1" part="lem"/>
@@ -1107,6 +1127,9 @@
 					<with-param pos="1"/>
 					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
 				<out>
 					<chunk>
 						<clip pos="1" part="lem"/>
@@ -1143,6 +1166,9 @@
 					<with-param pos="1"/>
 					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
 				<out>
 					<chunk>
 						<clip pos="1" part="lem"/>
@@ -1166,7 +1192,7 @@
 		</rule>
 
 
-		<!-- update nbr/ND -->  <!--(this rule can block rules that start with SN and have only 2 chunks!)-->
+		<!-- update nbr/ND -->  <!--(this rule can block rules that start with NP and have only 2 chunks!)-->
 		<!-- "look at your calendar" => "sieh auf deinen Kalender" -->
 		<rule comment="RULE: V NP">
 			<pattern>
@@ -1177,6 +1203,9 @@
 				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
 					<with-param pos="2"/>  <!-- from noun -->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
 				</call-macro>
 				<out>
 					<chunk>
@@ -1261,6 +1290,9 @@
 					<with-param pos="1"/>
 					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
 				<out>
 					<chunk>
 						<clip pos="1" part="lem"/>
@@ -1294,6 +1326,9 @@
 				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
 					<with-param pos="3"/>  <!-- from noun -->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
 				</call-macro>
 				<out>
 					<chunk>
@@ -1331,6 +1366,9 @@
 				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
 					<with-param pos="3"/>  <!-- from noun -->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
 				</call-macro>
 				<out>
 					<chunk>
@@ -1376,6 +1414,9 @@
 				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
 					<with-param pos="1"/>  <!--(need second parameter)-->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
 				</call-macro>
 				<out>
 					<chunk>
