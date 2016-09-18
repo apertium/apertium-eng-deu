@@ -741,6 +741,27 @@
 
 	<section-def-macros>
 
+		<!-- reset variables / set default at end of sentence -->
+		<def-macro n="reset_variables" npar="0">
+			<let><var n="v_subject"/><lit v=""/></let>
+			<let><var n="v_predicate"/><lit v=""/></let>
+			<let><var n="v_gen_nom"/><lit v=""/></let>
+			<let><var n="v_nbr_nom"/><lit-tag v="sg"/></let>  <!-- see <section-def-vars> -->
+			<let><var n="v_cas_nom"/><lit v=""/></let>
+			<let><var n="v_pers_nom"/><lit-tag v="p3"/></let>
+			<let><var n="v_gen_prn"/><lit v=""/></let>
+			<let><var n="v_nbr_prn"/><lit-tag v="sg"/></let>
+			<let><var n="v_cas_prn"/><lit v=""/></let>
+			<let><var n="v_pers_prn"/><lit-tag v="p3"/></let>
+			<let><var n="v_gen"/><lit-tag v="GD"/></let>
+			<let><var n="v_nbr"/><lit-tag v="ND"/></let>
+			<let><var n="v_cas"/><lit-tag v="nom"/></let>
+			<let><var n="v_pers"/><lit-tag v="p3"/></let>
+			<let><var n="v_pers_noun"/><lit v=""/></let>
+			<let><var n="v_nbr_noun"/><lit v=""/></let>
+		</def-macro>
+
+
 		<!-- set to true in "RULE: SENT", after the first word set EOS to false -->
 		<def-macro n="firstWord" npar="1">
 			<let><var n="caseFirstWord"/><lit v="aa"/></let>
@@ -2653,7 +2674,6 @@
 					<call-macro n="set_cas">
 						<with-param pos="1"/>
 					</call-macro>
-					<!--<let><var n="v_subject"/><lit-tag v="prn"/></let>-->
 				</when>
 				<otherwise>
 					<let><var n="v_pers"/><lit v=""/></let>
@@ -3228,16 +3248,38 @@
 				<with-param pos="1"/>
 			</call-macro>
 
-			<let>
-				<clip pos="1" side="tl" part="tags"/>
-				<concat>
-					<clip pos="1" side="tl" part="a_any_prn"/>
-					<var n="v_pers_prn"/>
-					<var n="v_gen_prn"/>
-					<var n="v_nbr_prn"/>
-					<var n="v_cas_prn"/>
-				</concat>
-			</let>
+			<choose>
+				<when>  <!-- "prn.det" without <obj> tag -->
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_prpos"/>
+							<lit-tag v="prn.det"/>
+						</equal>
+					</test>
+					<let>
+						<clip pos="1" side="tl" part="tags"/>
+						<concat>
+							<clip pos="1" side="tl" part="a_any_prn"/>
+							<var n="v_pers_prn"/>
+							<var n="v_gen_prn"/>
+							<var n="v_nbr_prn"/>
+							<var n="v_cas_prn"/>
+						</concat>
+					</let>
+				</when>
+				<otherwise>  <!-- "prn" with <obj> tag -->
+					<let>
+						<clip pos="1" side="tl" part="tags"/>
+						<concat>
+							<var n="v_obj_prn"/>    <!-- obj to iobj -->
+							<var n="v_pers_prn"/>
+							<var n="v_gen_prn"/>
+							<var n="v_nbr_prn"/>
+							<var n="v_cas_prn"/>
+						</concat>
+					</let>
+				</otherwise>
+			</choose>
 		</def-macro>
 
 
@@ -3272,27 +3314,13 @@
 					<let><var n="v_pers_verb"/><var n="v_pers_nom"/></let>
 					<let><var n="v_nbr_verb"/><var n="v_nbr_nom"/></let>
 				</when>
-				<!--<when>  <!-#- not "vbser" -#->
-					<test>
-						<not>
-							<equal>
-								<var n="v_predicate"/>
-								<lit-tag v="vbser"/>
-							</equal>
-						</not>
-					</test>-->
 				<otherwise>
 					<call-macro n="chg_sp__sg_nbr">  <!-- "sp" to "sg" -->
 						<with-param pos="1"/>
 					</call-macro>
-					<!-- <let><var n="v_pers"/><lit-tag v="PD"/></let>
-					<let><var n="v_nbr"/><lit-tag v="ND"/></let>
-					<let><var n="v_pers_verb"/><var n="v_pers"/></let>
-					<let><var n="v_nbr_verb"/><var n="v_nbr"/></let> -->
 					<let><var n="v_pers_verb"/><lit-tag v="PD"/></let>  <!-- "p1"/"p2"/"p3" -->
 					<let><var n="v_nbr_verb"/><lit-tag v="ND"/></let>  <!-- "sg"/"pl" -->
 				</otherwise>
-				<!--</when>-->
 			</choose>
 
 			<call-macro n="chg_pers_nbr_verb">  <!-- if "inf" clear variables -->
@@ -3782,56 +3810,24 @@
 				<call-macro n="build_prpers">  <!-- OUT: v_..._prn -->
 					<with-param pos="1"/>
 				</call-macro>
-				<choose>
-					<when>  <!-- "prn.det" without <obj> tag -->
-						<test>
-							<equal>
-								<clip pos="1" side="tl" part="a_prpos"/>
-								<lit-tag v="prn.det"/>
-							</equal>
-						</test>
-						<out>
-							<chunk name="prpers" case="caseFirstWord">
-								<tags>
-									<tag><lit-tag v="PRPERS"/></tag>
-									<tag><var n="v_pers_prn"/></tag>
-									<tag><var n="v_gen_prn"/></tag>
-									<tag><var n="v_nbr_prn"/></tag>
-								</tags>
-								<lu>
-									<clip pos="1" side="tl" part="lem"/>
-									<clip pos="1" side="tl" part="a_prpos"/>
-									<clip pos="1" side="tl" part="a_pers"/>
-									<clip pos="1" side="tl" part="a_gen"/>
-									<clip pos="1" side="tl" part="a_nbr"/>
-									<clip pos="1" side="tl" part="a_cas"/>
-								</lu>
-							</chunk>
-						</out>
-					</when>
-
-					<otherwise>  <!-- "prn" with <obj> tag -->
-						<out>
-							<chunk name="prpers" case="caseFirstWord">
-								<tags>
-									<tag><lit-tag v="PRPERS"/></tag>
-									<tag><var n="v_pers_prn"/></tag>
-									<tag><var n="v_gen_prn"/></tag>
-									<tag><var n="v_nbr_prn"/></tag>
-								</tags>
-								<lu>
-									<clip pos="1" side="tl" part="lem"/>
-									<!--<clip pos="1" side="tl" part="a_any_prn"/>-->
-									<var n="v_obj_prn"/>    <!-- obj to iobj -->
-									<clip pos="1" side="tl" part="a_pers"/>
-									<clip pos="1" side="tl" part="a_gen"/>
-									<clip pos="1" side="tl" part="a_nbr"/>
-									<clip pos="1" side="tl" part="a_cas"/>
-								</lu>
-							</chunk>
-						</out>
-					</otherwise>
-				</choose>
+				<out>
+					<chunk name="prpers" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="PRPERS"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="a_any_prn"/>
+							<clip pos="1" side="tl" part="a_pers"/>
+							<clip pos="1" side="tl" part="a_gen"/>
+							<clip pos="1" side="tl" part="a_nbr"/>
+							<clip pos="1" side="tl" part="a_cas"/>
+						</lu>
+					</chunk>
+				</out>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -4871,7 +4867,7 @@
 					<with-param pos="3"/>
 					<with-param pos="4"/>
 				</call-macro>
-				<call-macro n="build2_det"> <!-- IN: v...nom (pos="4") -->
+				<call-macro n="build2_det"> <!-- IN: v...nom (of pos="4") -->
 					<with-param pos="1"/>
 				</call-macro>
 				<out>
@@ -5315,15 +5311,6 @@
 							<clip pos="3" side="tl" part="whole"/>
 							<lit-tag v="pred"/>
 						</lu>
-						<!-- <lu>
-							<lit v="am"/>
-							<lit-tag v="pr"/>
-						</lu>
-						<b/>
-						<lu>
-							<clip pos="3" side="tl" part="lem"/>
-							<lit-tag v="adj.sint.sup.nt.sg.dat.mix"/>
-						</lu> -->
 					</chunk>
 				</out>
 				<call-macro n="firstWord">
@@ -7394,6 +7381,54 @@
 		</rule>
 
 
+		<!-- "for four hours" => "für vier Stunden" -->
+		<rule comment="RULE: PR NUM NOM">
+			<pattern>
+				<pattern-item n="prep"/>
+				<pattern-item n="num"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="build_num">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="build_nom">  <!-- OUT: v...nom -->
+					<with-param pos="3"/>
+				</call-macro>
+				<out>
+					<chunk name="pr_num_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+							<tag><var n="v_cas_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="whole"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="lemh"/>
+							<clip pos="3" side="tl" part="a_nom"/>
+							<clip pos="3" side="tl" part="a_gen"/>
+							<clip pos="3" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "at ten past nine" => "um zehn nach neun" -->
 		<rule comment="RULE: PR NUM PR NUM">
 			<pattern>
@@ -7789,8 +7824,6 @@
 					<chunk name="nom_det_num_nom" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
-							<!--<tag><clip pos="1" side="tl" part="a_gen"/></tag>
-							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>-->
 							<tag><var n="v_pers_nom"/></tag>
 							<tag><var n="v_gen_nom"/></tag>
 							<tag><var n="v_nbr_nom"/></tag>
@@ -7810,10 +7843,6 @@
 						</lu>
 						<b pos="2"/>
 						<lu>
-							<!-- <concat>
-								<clip pos="4" side="tl" part="lem"/>
-								<lit v="."/>
-							</concat> -->
 							<clip pos="4" side="tl" part="lem"/>
 							<clip pos="4" side="tl" part="a_ord_num"/>
 						</lu>
@@ -9309,7 +9338,6 @@
 							<tag><lit-tag v="CD"/></tag>
 						</tags>
 						<lu>
-							<!--<clip pos="2" side="tl" part="whole"/>-->
 							<lit v="kein"/>
 							<clip pos="4" side="tl" part="a_det"/>
 							<lit-tag v="3"/>  <!--"a_gen" / link-to="3"-->
@@ -9344,7 +9372,6 @@
 				<out>
 					<chunk name="verb_adv" case="caseFirstWord">
 						<tags>
-							<!--<tag><lit-tag v="SV_aux"/></tag>-->
 							<tag><lit-tag v="SV_adv"/></tag>
 							<tag><var n="v_tense_verb"/></tag>
 							<tag><var n="v_pers_verb"/></tag>
@@ -9532,25 +9559,18 @@
 		<rule comment="RULE: SENT">
 			<pattern>
 				<pattern-item n="sent"/>
-			</pattern>
+			</pattern> 
 			<action>
-				<let><var n="v_subject"/><lit v=""/></let>
-				<let><var n="v_predicate"/><lit v=""/></let>
-				<let><var n="v_gen_nom"/><lit v=""/></let>
-				<let><var n="v_nbr_nom"/><lit-tag v="sg"/></let>  <!-- see <section-def-vars> -->
-				<let><var n="v_cas_nom"/><lit v=""/></let>
-				<let><var n="v_pers_nom"/><lit-tag v="p3"/></let>
-				<let><var n="v_gen_prn"/><lit v=""/></let>
-				<let><var n="v_nbr_prn"/><lit-tag v="sg"/></let>
-				<let><var n="v_cas_prn"/><lit v=""/></let>
-				<let><var n="v_pers_prn"/><lit-tag v="p3"/></let>
-				<let><var n="v_gen"/><lit-tag v="GD"/></let>
-				<let><var n="v_nbr"/><lit-tag v="ND"/></let>
-				<let><var n="v_cas"/><lit-tag v="nom"/></let>
-				<let><var n="v_pers"/><lit-tag v="p3"/></let>
-				<let><var n="v_pers_noun"/><lit v=""/></let>
-				<let><var n="v_nbr_noun"/><lit v=""/></let>
-
+				<call-macro n="reset_variables">
+				</call-macro>
+				<let>
+					<var n="EOS"/>
+					<lit v="true"/>
+				</let>
+				<let>
+					<var n="caseFirstWord"/>
+					<lit v="Aa"/>
+				</let>
 				<choose>
 					<when>
 						<test>
@@ -9583,15 +9603,6 @@
 						</out>
 					</otherwise>
 				</choose>
-
-				<let>
-					<var n="EOS"/>
-					<lit v="true"/>
-				</let>
-				<let>
-					<var n="caseFirstWord"/>
-					<lit v="Aa"/>
-				</let>
 			</action>
 		</rule>
 
