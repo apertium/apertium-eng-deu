@@ -38,6 +38,7 @@
 		</def-cat>
 		<def-cat n="ITG">
 			<cat-item tags="ITG"/>
+			<cat-item tags="ITG.*"/>
 		</def-cat>
 		<def-cat n="REL">
 			<cat-item tags="REL"/>
@@ -48,6 +49,9 @@
 			<cat-item tags="SV"/>
 			<cat-item tags="SV.*"/>
 		</def-cat>
+		<def-cat n="SV_lex">
+			<cat-item lemma="verb" tags="SV.*"/>
+		</def-cat>
 		<def-cat n="SV_aux">
 			<cat-item lemma="vaux" tags="SV.*"/>
 		</def-cat>
@@ -56,6 +60,9 @@
 		</def-cat>
 		<def-cat n="SV_be">
 			<cat-item lemma="vbser" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_do">
+			<cat-item lemma="vbdo" tags="SV.*"/>
 		</def-cat>
 		<def-cat n="SV_pp">
 			<cat-item tags="SV.pp"/>
@@ -643,8 +650,6 @@
 				<when>  <!-- if "prn.dem" set "mf" -->
 					<test>
 						<equal caseless="yes">
-							<!-- <clip pos="1" part="a_prn_dem"/>
-							<lit-tag v="prn.dem"/> -->
 							<clip pos="1" part="lem"/>
 							<lit v="prn_dem"/>
 						</equal>
@@ -980,6 +985,8 @@
 							<chunk>
 								<clip pos="4" part="lem"/>
 								<clip pos="4" part="tags"/>
+								<!--<lit-tag v="SV"/>
+								<lit-tag v="pp"/>-->
 								<clip pos="4" part="chcontent"/>
 							</chunk>
 							<b pos="3"/>
@@ -1186,6 +1193,7 @@
 		<!-- "-ITG ~V N ADV" => "+DO N ~V ADV" -->    <!-- move verb / add "do" -->
 		<rule comment="RULE: ITG V PRPERS ADV">
 			<pattern>
+<pattern-item n="xxxx"/>  <!-- TODO: this rule needs an additional condition to be clear -->
 				<pattern-item n="ITG"/>
 				<pattern-item n="SV"/>
 				<pattern-item n="PRPERS"/>
@@ -1193,12 +1201,11 @@
 			</pattern>
 			<action>
 				<out>
-					<chunk>
+					<!--<chunk>
 						<clip pos="1" part="lem"/>
 						<clip pos="1" part="tags"/>
 						<clip pos="1" part="chcontent"/>
-					</chunk>
-					<b pos="1"/>
+					</chunk> -->
 					<chunk>
 						<get-case-from pos="1">
 							<lit v="vbdo"/>
@@ -1214,7 +1221,7 @@
 						<lit-tag v="4"/>
 						<lit v="$}"/>
 					</chunk>
-					<b/>
+					<b pos="1"/>
 					<chunk>
 						<clip pos="3" part="lem"/>
 						<clip pos="3" part="tags"/>
@@ -1225,6 +1232,61 @@
 						<get-case-from pos="3"> <!-- "aa" -->
 							<clip pos="2" part="lem"/>
 						</get-case-from>
+						<lit-tag v="SV"/>
+						<lit-tag v="inf"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "Was sagt dein Vater ?" => "What does your father say ?" -->
+		<!-- "ITG ~V N ?" => "ITG +DO N ~V ?" -->    <!-- move verb / add "do" -->
+		<rule comment="RULE: ITG V SN QST">
+			<pattern>
+				<pattern-item n="ITG"/>
+				<pattern-item n="SV_lex"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="QST"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<lit v="vbdo"/>
+						<clip pos="2" part="tags"/>  <!-- "SV" -->
+						<lit v="{^"/>
+						<lit v="do"/>
+						<lit-tag v="vaux"/>
+						<lit-tag v="2"/>  <!-- link to 2 / "a_tense" -->
+						<lit-tag v="3"/>
+						<lit-tag v="4"/>
+						<lit v="$}"/>
+					</chunk>
+					<b/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
 						<lit-tag v="SV"/>
 						<lit-tag v="inf"/>
 						<clip pos="2" part="chcontent"/>
@@ -2637,6 +2699,44 @@
 		</rule>
 
 
+		<!-- "V PRN ADV ~V" => "V PRN ~V ADV" -->  <!-- move verb -->
+		<rule comment="RULE: V PRPERS ADV V">
+			<pattern>
+				<pattern-item n="SV"/>
+				<pattern-item n="PRPERS"/>
+				<pattern-item n="ADV"/>
+				<pattern-item n="SV"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- "~V PRN ~ADV N ?" => "+DO PRN ~V N ~ADV ?" -->  <!-- move verb and adverb / add "do" -->
 		<!-- "V PRN ~ADV N ?" => "V PRN N ~ADV ?" -->        <!-- move adverb -->
 		<rule comment="RULE: V PRPERS ADV N ?">
@@ -2749,7 +2849,7 @@
 		</rule>
 
 
-		<!-- "Magst du Katzen ?" => "(+Do) you like cats ?" -->
+		<!-- "Magst du Katzen ?" => "+Do you like cats ?" -->
 		<!-- "~V PRN N ?" => "+DO PRN ~V N ?" -->  <!-- move verb / add "do" -->
 		<!-- "Bist du Betty ?"   => "Are you Betty ?" -->
 		<!-- "V PRN N ?" => "V PRN N ?" -->

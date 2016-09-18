@@ -209,9 +209,22 @@
 			<cat-item lemma="zu" tags="pr"/>
 			<cat-item lemma="zu" tags="pr.*"/>
 		</def-cat>
+		<def-cat n="than">
+			<cat-item lemma="als" tags="adv"/>
+			<cat-item lemma="als" tags="adv.*"/>
+		</def-cat>
+		<def-cat n="as">
+			<cat-item lemma="so" tags="adv"/>
+			<cat-item lemma="wie" tags="adv"/>
+		</def-cat>
 
 		<def-cat n="ing">
 			<cat-item lemma="gerade" tags="adv"/>
+		</def-cat>
+
+		<def-cat n="street">
+			<cat-item lemma="straße" tags="n"/>
+			<cat-item lemma="straße" tags="n.*"/>
 		</def-cat>
 
 		<def-cat n="periods">
@@ -234,7 +247,7 @@
 		<def-cat n="months">
 			<cat-item lemma="januar" tags="n.*"/>
 			<cat-item lemma="februar" tags="n.*"/>
-			<cat-item lemma="maärz" tags="n.*"/>
+			<cat-item lemma="märz" tags="n.*"/>
 			<cat-item lemma="april" tags="n.*"/>
 			<cat-item lemma="april" tags="np.*"/>  <!--(if bad PoS tagging)--> 
 			<cat-item lemma="mai" tags="n.*"/>
@@ -574,6 +587,11 @@
 			<list-item v="bottle"/>
 			<list-item v="piece"/>
 			<list-item v="pound"/>
+		</def-list>
+
+		<def-list n="l_TL_det_deletion">
+			<list-item v="summer"/>
+			<list-item v="winter"/>
 		</def-list>
 
 	</section-def-lists>
@@ -950,7 +968,7 @@
 				<clip pos="1" side="tl" part="a_nbr"/>
 			</let>
 			<choose>
-				<when>  <!-- digit "1" -->
+				<when>  <!-- digit "1" => "sg" -->
 					<test>
 						<equal>
 							<clip pos="1" side="tl" part="lem"/>
@@ -1642,8 +1660,7 @@
 					</test>
 					<let>
 						<var n="v_nbr"/>
-						<!--<lit-tag v="sg"/>-->
-						<var n="v_nbr_nom"/>
+						<var n="v_nbr_nom"/>  <!-- "sg" -->
 					</let>
 				</when>
 				<when>
@@ -2236,8 +2253,8 @@
 						</lu>
 					</chunk>
 				</out>
-				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
-				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -2295,8 +2312,8 @@
 						</lu>
 					</chunk>
 				</out>
-				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
-				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -2354,8 +2371,8 @@
 						</lu>
 					</chunk>
 				</out>
-				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
-				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -2408,8 +2425,8 @@
 						</lu>
 					</chunk>
 				</out>
-				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
-				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -2835,6 +2852,257 @@
 		</rule>
 
 
+		<!-- "in der König Straße 19" => "at 19 King Street" -->
+		<rule comment="RULE: PR DET NOM NOM NUM">
+			<pattern>
+				<pattern-item n="prep"/>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="num"/>
+			</pattern>
+			<action>
+				<call-macro n="build_det">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="build_nom">
+					<with-param pos="3"/>
+				</call-macro>
+				<call-macro n="build_nom"> <!-- OUT: v...nom -->
+					<with-param pos="4"/>
+				</call-macro>
+				<let><var n="v_chunk_tag"/><lit-tag v="SN"/></let>
+				<call-macro n="chg_ADV_chunk_tag">  <!-- "SN"/"ADV" -->
+					<with-param pos="4"/>
+				</call-macro>
+				<!-- <modify-case><clip pos="3" side="tl" part="lem"/><lit v="Aa"/></modify-case>
+				<modify-case><clip pos="4" side="tl" part="lem"/><lit v="Aa"/></modify-case> -->
+				<out>
+					<chunk name="num_nom_nom" case="caseFirstWord">
+						<tags>
+							<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<!--<clip pos="1" side="tl" part="lem"/>-->
+							<lit v="at"/>
+							<clip pos="1" side="tl" part="a_prep"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="5" side="tl" part="whole"/> <!-- "a_nbr" -->
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="lemh"/>
+							<clip pos="3" side="tl" part="a_nom"/>
+							<clip pos="3" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="4" side="tl" part="lemh"/>
+							<clip pos="4" side="tl" part="a_nom"/>
+							<clip pos="4" side="tl" part="a_nbr"/>
+							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "(die) König Straße 19" => "19 King Street" / (det deletion) -->
+		<rule comment="RULE: DET NOM NOM NUM">
+			<pattern>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="num"/>
+			</pattern>
+			<action>
+				<call-macro n="build_nom">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="build_nom"> <!-- OUT: v...nom -->
+					<with-param pos="3"/>
+				</call-macro>
+				<let><var n="v_chunk_tag"/><lit-tag v="SN"/></let>
+				<call-macro n="chg_ADV_chunk_tag">  <!-- "SN"/"ADV" -->
+					<with-param pos="3"/>
+				</call-macro>
+				<modify-case><clip pos="2" side="tl" part="lem"/><lit v="Aa"/></modify-case>
+				<modify-case><clip pos="3" side="tl" part="lem"/><lit v="Aa"/></modify-case>
+				<out>
+					<chunk name="num_nom_nom" case="caseFirstWord">
+						<tags>
+							<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<lit v="at"/>
+							<clip pos="1" side="tl" part="a_prep"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="a_nom"/>
+							<clip pos="2" side="tl" part="a_nbr"/>
+							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="lemh"/>
+							<clip pos="3" side="tl" part="a_nom"/>
+							<clip pos="3" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: DET NOM CNJ DET NOM">
+			<pattern>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="cnjcoo"/>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="build_det">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="build_nom">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="build_det">
+					<with-param pos="4"/>
+				</call-macro>
+				<call-macro n="build_nom"> <!-- OUT: v...nom -->
+					<with-param pos="5"/>
+				</call-macro>
+				<out>
+					<chunk name="det_nom_cnj_det_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="a_nom"/>
+							<clip pos="2" side="tl" part="a_nbr"/>
+							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="4" side="tl" part="whole"/> <!-- "a_det" -->
+						</lu>
+						<b pos="4"/>
+						<lu>
+							<clip pos="5" side="tl" part="lemh"/>
+							<clip pos="5" side="tl" part="a_nom"/>
+							<clip pos="5" side="tl" part="a_nbr"/>
+							<clip pos="5" side="tl" part="a_cas"/>
+							<clip pos="5" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: DET NOM CNJ NOM">
+			<pattern>
+				<pattern-item n="det"/>
+				<pattern-item n="nom"/>
+				<pattern-item n="cnjcoo"/>
+				<pattern-item n="nom"/>
+			</pattern>
+			<action>
+				<call-macro n="build_det">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="build_nom">
+					<with-param pos="2"/>
+				</call-macro>
+				<call-macro n="build_nom"> <!-- OUT: v...nom -->
+					<with-param pos="4"/>
+				</call-macro>
+				<out>
+					<chunk name="det_nom_cnj_nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="a_nom"/>
+							<clip pos="2" side="tl" part="a_nbr"/>
+							<clip pos="2" side="tl" part="a_cas"/>
+							<clip pos="2" side="tl" part="lemq"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<clip pos="3" side="tl" part="whole"/>
+						</lu>
+						<b pos="3"/>
+						<lu>
+							<clip pos="4" side="tl" part="lemh"/>
+							<clip pos="4" side="tl" part="a_nom"/>
+							<clip pos="4" side="tl" part="a_nbr"/>
+							<clip pos="4" side="tl" part="a_cas"/>
+							<clip pos="4" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+				</out>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<rule comment="RULE: DET NOM GUIO NOM">
 			<pattern>
 				<pattern-item n="det"/>
@@ -3085,8 +3353,8 @@
 						</lu>
 					</chunk>
 				</out>
-				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
-				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_nom"/><lit-tag v="pl"/></let>
+				<let><var n="v_nbr_noun"/><lit-tag v="pl"/></let> <!-- propagate "pl" to verb -->
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -3340,32 +3608,72 @@
 				<call-macro n="build_nom"> <!-- OUT: v...nom -->
 					<with-param pos="3"/>
 				</call-macro>
-				<out>
-					<chunk name="pr_det_nom" case="caseFirstWord">
-						<tags>
-							<tag><lit-tag v="SN"/></tag>
-							<tag><var n="v_pers_nom"/></tag>
-							<tag><var n="v_gen_nom"/></tag>
-							<tag><var n="v_nbr_nom"/></tag>
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="lem"/>
-							<clip pos="1" side="tl" part="a_prep"/>
-						</lu>
-						<b pos="1"/>
-						<lu>
-							<clip pos="2" side="tl" part="whole"/> <!-- "a_det" -->
-						</lu>
-						<b pos="2"/>
-						<lu>
-							<clip pos="3" side="tl" part="lemh"/>
-							<clip pos="3" side="tl" part="a_nom"/>
-							<clip pos="3" side="tl" part="a_nbr"/>
-							<clip pos="3" side="tl" part="a_cas"/>
-							<clip pos="3" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
+				<choose>
+					<when>  <!-- det deletion -->
+						<test>
+							<and>
+								<equal caseless="yes">
+									<clip pos="2" side="tl" part="lem"/>
+									<lit v="the"/>
+								</equal>
+								<in caseless="yes">
+									<clip pos="3" side="tl" part="lem"/>
+									<list n="l_TL_det_deletion"/>
+								</in>
+							</and>
+						</test>
+						<out>
+							<chunk name="pr_nom" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SN"/></tag>
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="a_prep"/>
+								</lu>
+								<b pos="2"/>
+								<lu>
+									<clip pos="3" side="tl" part="lemh"/>
+									<clip pos="3" side="tl" part="a_nom"/>
+									<clip pos="3" side="tl" part="a_nbr"/>
+									<clip pos="3" side="tl" part="a_cas"/>
+									<clip pos="3" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+					<otherwise>
+						<out>
+							<chunk name="pr_nom" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SN"/></tag>
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lem"/>
+									<clip pos="1" side="tl" part="a_prep"/>
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="whole"/> <!-- "a_det" -->
+								</lu>
+								<b pos="2"/>
+								<lu>
+									<clip pos="3" side="tl" part="lemh"/>
+									<clip pos="3" side="tl" part="a_nom"/>
+									<clip pos="3" side="tl" part="a_nbr"/>
+									<clip pos="3" side="tl" part="a_cas"/>
+									<clip pos="3" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -4313,6 +4621,78 @@
 		</rule>
 
 
+		<!-- "so lang wie" => "as long as" -->
+		<rule comment="RULE: as ADJ as">
+			<pattern>
+				<pattern-item n="as"/>
+				<pattern-item n="adj"/>
+				<pattern-item n="as"/>
+			</pattern>
+			<action>
+				<call-macro n="build_adj">
+					<with-param pos="2"/>
+				</call-macro>
+				<out>
+					<chunk name="adv_adj_adv" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SA"/></tag>
+						</tags>
+						<lu>
+							<lit v="as"/>
+							<clip pos="1" side="tl" part="a_adv"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_adj"/>
+						</lu>
+						<b pos="2"/>
+						<lu>
+							<lit v="as"/>
+							<clip pos="3" side="tl" part="a_adv"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: ADJ than">
+			<pattern>
+				<pattern-item n="adj"/>
+				<pattern-item n="than"/>
+			</pattern>
+			<action>
+				<call-macro n="build_adj">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="adj_adv" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SA"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="a_adj"/>
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<lit v="than"/>
+							<lit-tag v="cnjsub"/>
+							<!--<clip pos="2" side="tl" part="a_adv"/>-->
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<rule comment="RULE: ADJ">
 			<pattern>
 				<pattern-item n="adj"/>
@@ -4728,8 +5108,7 @@
 				</choose>
 				<modify-case><clip pos="1" side="tl" part="lem"/><lit v="aa"/></modify-case>
 				<out>
-					<!--<chunk name="adv" case="caseFirstWord">-->
-					<chunk namefrom="v_chunk_name" case="caseFirstWord">
+					<chunk namefrom="v_chunk_name" case="caseFirstWord">  <!-- "adv"/"adv_time" -->
 						<tags>
 							<tag><lit-tag v="ADV"/></tag>
 						</tags>
