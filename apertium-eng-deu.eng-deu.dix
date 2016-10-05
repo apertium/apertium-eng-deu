@@ -46,7 +46,7 @@
     <sdef n="vblex"  	c="lexical verb"/>
     <sdef n="vbmod"  	c="modal verb"/>
     <sdef n="vaux"      c="auxiliary verbs"/>
-    <sdef n="vbdo"      c="the verb 'to do'"/>	
+    <sdef n="vbdo"      c="the verb 'to do'"/>
     <sdef n="p1"        c="first person"/>
     <sdef n="p2"        c="second person"/>
     <sdef n="p3"        c="third person"/>
@@ -61,9 +61,9 @@
     <sdef n="pers"      c="Personal (pronoun)"/>
     <sdef n="dem"  	    c="Demonstrative"/>
     <sdef n="rel"  	    c="Relative"/>
-    <sdef n="pos"       c="Possessive"/> 
+    <sdef n="pos"       c="Possessive"/>
     <sdef n="sint"      c="Synthetic (adjective)"/>
-    <sdef n="sep" 	    c="Separable (verb)"/> 
+    <sdef n="sep" 	    c="Separable (verb)"/>
     <sdef n="ito"       c="(German) Infinitive with 'to'"/>
     <sdef n="inf"       c="Infinitive"/>
     <sdef n="pred"      c="Predicative"/>
@@ -39748,6 +39748,7 @@
     <e><p><l>suspect<s n="adj"/></l><r>suspekt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>suspicious<s n="adj"/></l><r>argwöhnisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sustainable<s n="adj"/></l><r>tragfähig<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>sustainable<s n="adj"/></l><r>nachhaltig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>svelte<s n="adj"/></l><r>schlank<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Swabian<s n="adj"/></l><r>schwäbisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>swarthy<s n="adj"/></l><r>dunkelhäutig<s n="adj"/><s n="sint"/></r></p></e>
@@ -40990,7 +40991,7 @@
     <e><p><l>carefully<s n="adv"/></l><r>vorsichtig<s n="adv"/></r></p></e>
     <e><p><l>careless<s n="adv"/></l><r>leichtsinnig<s n="adv"/></r></p></e>
     <e><p><l>carelessly<s n="adv"/></l><r>nachlässig<s n="adv"/></r></p></e>
-    <e><p><l>caring<s n="adv"/></l><r>sozial<s n="adv"/></r></p></e>
+    <e><p><l>caring<s n="adv"/></l><r>fürsoglich<s n="adv"/></r></p></e>
     <e><p><l>casually<s n="adv"/></l><r>beiläufig<s n="adv"/></r></p></e>
     <e><p><l>categorically<s n="adv"/></l><r>kategorisch<s n="adv"/></r></p></e>
     <e r="LR"><p><l>cautiously<s n="adv"/></l><r>vorsichtig<s n="adv"/></r></p></e>
@@ -41876,6 +41877,7 @@
     <e><p><l>so-called<s n="adv"/></l><r>so<b/>genannt<s n="adv"/></r></p></e>
     <e><p><l>soberly<s n="adv"/></l><r>nüchtern<s n="adv"/></r></p></e>
     <e><p><l>socially<s n="adv"/></l><r>gesellschaftlich<s n="adv"/></r></p></e>
+    <e><p><l>socially<s n="adv"/></l><r>social<s n="adv"/></r></p></e>
     <e><p><l>softly<s n="adv"/></l><r>weich<s n="adv"/></r></p></e>
     <e><p><l>solely<s n="adv"/></l><r>einzig<s n="adv"/></r></p></e>
     <e><p><l>solemnly<s n="adv"/></l><r>feierlich<s n="adv"/></r></p></e>
@@ -41954,6 +41956,7 @@
     <e><p><l>surgically<s n="adv"/></l><r>chirurgisch<s n="adv"/></r></p></e>
     <e><p><l>surprisingly<s n="adv"/></l><r>überraschenderweise<s n="adv"/></r></p></e>
     <e><p><l>suspiciously<s n="adv"/></l><r>misstrauisch<s n="adv"/></r></p></e>
+    <e><p><l>sustainably<s n="adv"/></l><r>nachhaltig<s n="adv"/></r></p></e>
     <e><p><l>sweetly<s n="adv"/></l><r>possierlich<s n="adv"/></r></p></e>
     <e r="LR"><p><l>swiftly<s n="adv"/></l><r>schnell<s n="adv"/></r></p></e>
     <e><p><l>symbolically<s n="adv"/></l><r>symbolisch<s n="adv"/></r></p></e>
@@ -44800,7 +44803,6 @@
     <e r="RL"><p><l>escape<s n="vblex"/></l><r>entgehen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>escape<s n="vblex"/></l><r>entkommen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>escape<s n="vblex"/></l><r>entweichen<s n="vblex"/></r></p></e>
-    <e><p><l>espouse<s n="vblex"/></l><r>unterstützen<s n="vblex"/></r></p></e>
     <e><p><l>establish<s n="vblex"/></l><r>etablieren<s n="vblex"/></r></p></e>
     <e><p><l>estimate<s n="vblex"/></l><r>abschätzen<s n="vblex"/></r></p></e>
     <e><p><l>estimate<s n="vblex"/></l><r>schätzen<s n="vblex"/></r></p></e>
@@ -47998,7 +48000,7 @@
     <e><p><l>supervise<s n="vblex"/></l><r>beaufsichtigen<s n="vblex"/></r></p></e>
     <e><p><l>supplied<s n="vblex"/></l><r>beliefern<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>supply<s n="vblex"/></l><r>beliefern<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>support<s n="vblex"/></l><r>unterstützen<s n="vblex"/></r></p></e>
+    <e><p><l>support<s n="vblex"/></l><r>unterstützen<s n="vblex"/></r></p></e>
     <e><p><l>suppose<s n="vblex"/></l><r>vermuten<s n="vblex"/></r></p></e>
     <e><p><l>suppress<s n="vblex"/></l><r>verbeißen<s n="vblex"/></r></p></e>
     <e><p><l>surf<s n="vblex"/></l><r>surfen<s n="vblex"/></r></p></e>
@@ -49531,7 +49533,7 @@
     <e><p><l>–<s n="guio"/></l><r>–<s n="guio"/></r></p></e>
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
     <e><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
-    
+
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
     <e><re>[.\?;:!]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
     <e><re>[¿¡]</re><p><l><s n="lquest"/></l><r><s n="lquest"/></r></p></e>
