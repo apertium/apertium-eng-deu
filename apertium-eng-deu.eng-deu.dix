@@ -2106,11 +2106,11 @@
     <e r="LR"><p><l>back<b/>garden<s n="n"/></l><r>Garten<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>back<g><b/>of<b/>the<b/>head</g><s n="n"/></l><r>Hinterkopf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>back<b/>orders<s n="n"/></l><r>Auftragsrückstand<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>back<b/>pain<s n="n"/></l><r>Rückenschmerz<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e><p><l>back<b/>pain<s n="n"/><s n="sg"/></l><r>Rückenschmerz<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e r="LR"><p><l>back<b/>stroke<s n="n"/></l><r>Rückenschwimmen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>back-breaking<b/>work<s n="n"/></l><r>Knochenarbeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>back-street<b/>abortionist<s n="n"/></l><r>Engelmacherin<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>backache<s n="n"/></l><r>Rückenschmerz<s n="n"/><s n="m"/><s n="pl"/></r></p></e> <!-- German pl -->
+    <e><p><l>backache<s n="n"/><s n="sg"/></l><r>Rückenschmerz<s n="n"/><s n="m"/><s n="pl"/></r></p></e> <!-- German pl -->
     <e><p><l>backbone<s n="n"/></l><r>Rückgrat<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>backdoor<s n="n"/></l><r>Hintertür<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>backdrop<s n="n"/></l><r>Hintergrund<s n="n"/><s n="m"/></r></p></e>
@@ -41877,7 +41877,7 @@
     <e><p><l>so-called<s n="adv"/></l><r>so<b/>genannt<s n="adv"/></r></p></e>
     <e><p><l>soberly<s n="adv"/></l><r>nüchtern<s n="adv"/></r></p></e>
     <e><p><l>socially<s n="adv"/></l><r>gesellschaftlich<s n="adv"/></r></p></e>
-    <e><p><l>socially<s n="adv"/></l><r>social<s n="adv"/></r></p></e>
+    <e><p><l>socially<s n="adv"/></l><r>sozial<s n="adv"/></r></p></e>
     <e><p><l>softly<s n="adv"/></l><r>weich<s n="adv"/></r></p></e>
     <e><p><l>solely<s n="adv"/></l><r>einzig<s n="adv"/></r></p></e>
     <e><p><l>solemnly<s n="adv"/></l><r>feierlich<s n="adv"/></r></p></e>
