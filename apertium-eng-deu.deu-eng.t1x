@@ -581,6 +581,19 @@
 			<list-item v="übermorgen"/>
 		</def-list>
 
+		<def-list n="l_TL_det_deletion">
+			<list-item v="summer"/>
+			<list-item v="winter"/>
+		</def-list>
+
+		<def-list n="l_TL_det_addition">
+			<list-item v="guitar"/>
+			<list-item v="piano"/>
+			<list-item v="saxophone"/>
+			<list-item v="trumpet"/>
+			<list-item v="drum"/>
+		</def-list>
+
 		<def-list n="l_TL_box_of">
 			<list-item v="box"/>
 			<list-item v="cup"/>
@@ -588,11 +601,6 @@
 			<list-item v="bottle"/>
 			<list-item v="piece"/>
 			<list-item v="pound"/>
-		</def-list>
-
-		<def-list n="l_TL_det_deletion">
-			<list-item v="summer"/>
-			<list-item v="winter"/>
 		</def-list>
 
 	</section-def-lists>
@@ -4675,23 +4683,58 @@
 				<call-macro n="build_nom"> <!-- OUT: v...nom -->
 					<with-param pos="1"/>
 				</call-macro>
-				<out>
-					<chunk name="nom" case="caseFirstWord">
-						<tags>
-							<tag><lit-tag v="SN"/></tag>
-							<tag><var n="v_pers_nom"/></tag>
-							<tag><var n="v_gen_nom"/></tag>
-							<tag><var n="v_nbr_nom"/></tag>
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="lemh"/>
-							<clip pos="1" side="tl" part="a_nom"/>
-							<clip pos="1" side="tl" part="a_nbr"/>
-							<clip pos="1" side="tl" part="a_cas"/>  <!-- null or "gen" -->
-							<clip pos="1" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
+				<choose>
+					<when>  <!-- det addition -->
+						<test>
+							<in caseless="yes">
+								<clip pos="1" side="tl" part="lem"/>
+								<list n="l_TL_det_addition"/>
+							</in>
+						</test>
+						<out>
+							<chunk name="det_nom" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SN"/></tag>
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<lit v="the"/>
+									<lit-tag v="det.def"/>
+									<var n="v_nbr_nom"/>
+								</lu>
+								<b/>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_nom"/>
+									<clip pos="1" side="tl" part="a_nbr"/>
+									<clip pos="1" side="tl" part="a_cas"/>  <!-- null or "gen" -->
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+					<otherwise>
+						<out>
+							<chunk name="nom" case="caseFirstWord">
+								<tags>
+									<tag><lit-tag v="SN"/></tag>
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="lemh"/>
+									<clip pos="1" side="tl" part="a_nom"/>
+									<clip pos="1" side="tl" part="a_nbr"/>
+									<clip pos="1" side="tl" part="a_cas"/>  <!-- null or "gen" -->
+									<clip pos="1" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
