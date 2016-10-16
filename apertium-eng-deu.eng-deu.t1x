@@ -260,6 +260,9 @@
 		<def-cat n="go">
 			<cat-item lemma="go" tags="vblex.*"/>
 		</def-cat>
+		<def-cat n="play">
+			<cat-item lemma="play" tags="vblex.*"/>
+		</def-cat>
 		<def-cat n="to">
 			<cat-item lemma="to" tags="pr"/>
 			<cat-item lemma="to" tags="pr.*"/>
@@ -348,6 +351,14 @@
 			<cat-item lemma="october" tags="n.*"/>
 			<cat-item lemma="november" tags="n.*"/>
 			<cat-item lemma="december" tags="n.*"/>
+		</def-cat>
+
+		<def-cat n="nom_det_deletion">
+			<cat-item lemma="guitar" tags="n.*"/>
+			<cat-item lemma="piano" tags="n.*"/>
+			<cat-item lemma="saxophone" tags="n.*"/>
+			<cat-item lemma="trumpet" tags="n.*"/>
+			<cat-item lemma="drum" tags="n.*"/>
 		</def-cat>
 
 		<def-cat n="any_tag">
@@ -726,6 +737,14 @@
 			<list-item v="yesterday"/>
 			<list-item v="today"/>
 			<list-item v="tomorrow"/>
+		</def-list>
+
+		<def-list n="l_det_deletion">
+			<list-item v="guitar"/>
+			<list-item v="piano"/>
+			<list-item v="saxophone"/>
+			<list-item v="trumpet"/>
+			<list-item v="drum"/>
 		</def-list>
 
 	</section-def-lists>
@@ -7973,6 +7992,63 @@
 						<b pos="1"/>
 						<lu>
 							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<rule comment="RULE: PLAY DET NOM">
+			<pattern>
+				<pattern-item n="play"/>
+				<pattern-item n="det"/>
+				<pattern-item n="nom_det_deletion"/>
+			</pattern>
+			<action>
+				<call-macro n="build_verb"> <!-- OUT: v...verb -->
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="build_det_nom">
+					<with-param pos="2"/>
+					<with-param pos="3"/>
+				</call-macro>
+				<out>
+					<chunk name="verb" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SV"/></tag>
+							<tag><var n="v_tense_verb"/></tag>
+							<tag><var n="v_pers_verb"/></tag>
+							<tag><var n="v_nbr_verb"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lemh"/>
+							<clip pos="1" side="tl" part="a_verb"/>
+							<clip pos="1" side="tl" part="a_tense" link-to="2"/>
+							<clip pos="1" side="tl" part="a_pers" link-to="3"/>
+							<clip pos="1" side="tl" part="a_nbr" link-to="4"/>
+							<clip pos="1" side="tl" part="lemq"/>
+						</lu>
+					</chunk>
+					<b pos="2"/>
+					<chunk name="nom" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="SN"/></tag>
+							<tag><var n="v_pers_nom"/></tag>
+							<tag><var n="v_gen_nom"/></tag>
+							<tag><var n="v_nbr_nom"/></tag>
+							<tag><var n="v_cas_nom"/></tag>
+						</tags>
+						<lu>
+							<clip pos="3" side="tl" part="lemh"/>
+							<clip pos="3" side="tl" part="a_nom"/>
+							<clip pos="3" side="tl" part="a_gen"/>
+							<clip pos="3" side="tl" part="a_nbr"/>
+							<clip pos="3" side="tl" part="a_cas"/>
+							<clip pos="3" side="tl" part="lemq"/>
 						</lu>
 					</chunk>
 				</out>
