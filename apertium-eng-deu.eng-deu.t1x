@@ -1203,10 +1203,18 @@
 			<choose>
 				<when>
 					<test>
-						<equal>
-							<var n="v_nbr_nom"/>
-							<lit-tag v="sp"/>
-						</equal>
+						<and>
+							<equal>
+								<var n="v_nbr_nom"/>
+								<lit-tag v="sp"/>
+							</equal>
+							<not>
+								<equal>
+									<var n="v_nbr_verb"/>
+									<lit v=""/>
+								</equal>
+							</not>
+						</and>
 					</test>
 					<let>
 						<var n="v_nbr_nom"/>
