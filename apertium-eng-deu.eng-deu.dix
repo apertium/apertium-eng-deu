@@ -43204,7 +43204,7 @@
     <e><p><l>act<s n="vblex"/></l><r>handeln<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>act<s n="vblex"/></l><r>agieren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>act<s n="vblex"/></l><r>auftreten<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>act<b/>out<s n="vblex"/></l><r>mimen<s n="vblex"/></r></p></e>
+    <e><p><l>act<g><b/>out</g><s n="vblex"/></l><r>ausspielen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="LR"><p><l>actuate<s n="vblex"/></l><r>drücken<s n="vblex"/></r></p></e>
     <e><p><l>adapt<s n="vblex"/></l><r>adaptieren<s n="vblex"/></r></p></e>
     <e><p><l>add<s n="vblex"/></l><r>zufügen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -43214,7 +43214,7 @@
     <e r="RL"><p><l>add<s n="vblex"/></l><r>fügen<g><b/>hinzu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>add<s n="vblex"/></l><r>fügen<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>add<s n="vblex"/></l><r>tun<g><b/>dazu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>add<b/>rennet<s n="vblex"/></l><r>laben<s n="vblex"/></r></p></e>
+    <e><p><l>add<g><b/>rennet</g><s n="vblex"/></l><r>laben<s n="vblex"/></r></p></e>
     <e><p><l>add<g><b/>together</g><s n="vblex"/></l><r>addieren<s n="vblex"/></r></p></e>
     <e><p><l>add<g><b/>up</g><s n="vblex"/></l><r>summieren<s n="vblex"/></r></p></e>
     <e><p><l>add<g><b/>up</g><s n="vblex"/></l><r>zusammenzählen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -43293,7 +43293,7 @@
     <e><p><l>allow<s n="vblex"/></l><r>erlauben<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>allow<s n="vblex"/></l><r>ermöglichen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>allow<s n="vblex"/></l><r>gestatten<s n="vblex"/></r></p></e>
-    <e><p><l>allow<b/>for<s n="vblex"/></l><r>berücksichtigen<s n="vblex"/></r></p></e>
+    <e><p><l>allow<g><b/>for</g><s n="vblex"/></l><r>berücksichtigen<s n="vblex"/></r></p></e>
     <e><p><l>alter<s n="vblex"/></l><r>ändern<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>alter<s n="vblex"/></l><r>abändern<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>alter<s n="vblex"/></l><r>ändern<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -43302,7 +43302,7 @@
     <e><p><l>amend<s n="vblex"/></l><r>ändern<s n="vblex"/></r></p></e>
     <e><p><l>amortise<s n="vblex"/></l><r>amortisieren<s n="vblex"/></r></p></e>
     <e><p><l>amount<s n="vblex"/></l><r>betragen<s n="vblex"/></r></p></e>
-    <e><p><l>amount<b/>to<s n="vblex"/></l><r>belaufen<s n="vblex"/></r></p></e>
+    <e><p><l>amount<g><b/>to</g><s n="vblex"/></l><r>belaufen<s n="vblex"/></r></p></e>
     <e><p><l>amplify<s n="vblex"/></l><r>verstärken<s n="vblex"/></r></p></e>
     <e><p><l>amputate<s n="vblex"/></l><r>amputieren<s n="vblex"/></r></p></e>
     <e><p><l>amuse<s n="vblex"/></l><r>vergnügen<s n="vblex"/></r></p></e>
@@ -43322,7 +43322,7 @@
     <e><p><l>annul<s n="vblex"/></l><r>suspendieren<s n="vblex"/></r></p></e>
     <e><p><l>answer<s n="vblex"/></l><r>antworten<s n="vblex"/></r></p></e>
     <e><p><l>answer<s n="vblex"/></l><r>beantworten<s n="vblex"/></r></p></e>
-    <e><p><l>answer<b/>for<s n="vblex"/></l><r>verantworten<s n="vblex"/></r></p></e>
+    <e><p><l>answer<g><b/>for</g><s n="vblex"/></l><r>verantworten<s n="vblex"/></r></p></e>
     <e><p><l>anticipate<s n="vblex"/></l><r>vorwegnehmen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>anticipate<s n="vblex"/></l><r>nehmen<g><b/>vorweg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="LR"><p><l>apologize<s n="vblex"/></l><r>entschuldigen<s n="vblex"/></r></p></e>
@@ -43478,49 +43478,49 @@
     <e><p><l>bawl<s n="vblex"/></l><r>grölen<s n="vblex"/></r></p></e>
     <e><p><l>be<s n="vblex"/></l><r>sein<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>a<b/>member<b/>of</g><s n="vblex"/></l><r>Mitglied<b/>sein<b/>von<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>be<b/>absent<s n="vblex"/></l><r>fehlen<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>be<g><b/>absent</g><s n="vblex"/></l><r>fehlen<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>adequate</g><s n="vblex"/></l><r>ausreichen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>be<g><b/>adrift</g><s n="vblex"/></l><r>treiben<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>afflicted<b/>with<s n="vblex"/></l><r>laborieren<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>afraid<s n="vblex"/></l><r>fürchten<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>afflicted<b/>with</g><s n="vblex"/></l><r>laborieren<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>afraid</g><s n="vblex"/></l><r>fürchten<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>be<g><b/>allowed<b/>to</g><s n="vblex"/></l><r>dürfen<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>bleeding<b/>to<b/>death</g><s n="vblex"/></l><r>verbluten<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>born</g><s n="vblex"/></l><r>geboren<b/>werden<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>busy<s n="vblex"/></l><r>werken<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>busy</g><s n="vblex"/></l><r>werken<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>be<g><b/>called</g><s n="vblex"/></l><r>heißen<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>consistent</g><s n="vblex"/></l><r>eine<b/>klare<b/>Linie<b/>einhalten<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>content<b/>with</g><s n="vblex"/></l><r>zufriedengeben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>be<g><b/>content<b/>with</g><s n="vblex"/></l><r>geben<g><b/>zufrieden</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>be<g><b/>damned</g><s n="vblex"/></l><r>sein<g><b/>verdammt</g><s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>descended</g><s n="vblex"/></l><r>stammen<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>descended<b/>from<s n="vblex"/></l><r>entstammen<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>be<b/>enacted<s n="vblex"/></l><r>ergehen<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>enthroned<s n="vblex"/></l><r>thronen<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>good<b/>for<s n="vblex"/></l><r>taugen<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>happy<s n="vblex"/></l><r>freuen<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>happy<s n="vblex"/></l><r>sich<b/>freuen<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>descended<b/>from</g><s n="vblex"/></l><r>entstammen<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>be<g><b/>enacted</g><s n="vblex"/></l><r>ergehen<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>enthroned</g><s n="vblex"/></l><r>thronen<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>good<b/>for</g><s n="vblex"/></l><r>taugen<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>happy</g><s n="vblex"/></l><r>freuen<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>happy</g><s n="vblex"/></l><r>sich<b/>freuen<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>hungry</g><s n="vblex"/></l><r>sein<g><b/>hungrig</g><s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>in<b/>office<s n="vblex"/></l><r>amten<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>late<s n="vblex"/></l><r>verspäten<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>in<b/>office</g><s n="vblex"/></l><r>amten<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>late</g><s n="vblex"/></l><r>verspäten<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>left</g><s n="vblex"/></l><r>übrig<b/>sein<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>be<g><b/>missing</g><s n="vblex"/></l><r>fehlen<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>of<b/>use<b/>/<b/>avail<s n="vblex"/></l><r>fruchten<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>of<b/>use<b/>/<b/>avail</g><s n="vblex"/></l><r>fruchten<s n="vblex"/></r></p></e> <!-- TODO: fix this crap. Identify and anihilate the originator -->
     <e><p><l>be<g><b/>permitted</g><s n="vblex"/></l><r>dürfen<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>shocked</g><s n="vblex"/></l><r>empört<b/>sein<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>stingy<s n="vblex"/></l><r>geizen<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>stingy</g><s n="vblex"/></l><r>geizen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>be<g><b/>stuck</g><s n="vblex"/></l><r>sitzen<g><b/>fest</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>be<b/>tangent<b/>to<s n="vblex"/></l><r>tangieren<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>tangent<b/>to</g><s n="vblex"/></l><r>tangieren<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>worth</g><s n="vblex"/></l><r>sich<b/>lohnen<s n="vblex"/></r></p></e>
-    <e><p><l>be<b/>worthwhile<s n="vblex"/></l><r>rentieren<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>worthwhile</g><s n="vblex"/></l><r>rentieren<s n="vblex"/></r></p></e>
     <e><p><l>beam<s n="vblex"/></l><r>beamen<s n="vblex"/></r></p></e>
     <e><p><l>bear<s n="vblex"/></l><r>gebären<s n="vblex"/></r></p></e>
     <e><p><l>bear<s n="vblex"/></l><r>leiden<s n="vblex"/></r></p></e>
     <e><p><l>beat<s n="vblex"/></l><r>schlagen<s n="vblex"/></r></p></e>
-    <e><p><l>beat<b/>time<s n="vblex"/></l><r>taktieren<s n="vblex"/></r></p></e>
+    <e><p><l>beat<g><b/>time</g><s n="vblex"/></l><r>taktieren<s n="vblex"/></r></p></e>
     <e><p><l>become<s n="vblex"/></l><r>werden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>become<s n="vblex"/></l><r>arten<s n="vblex"/></r></p></e>
     <e><p><l>become<g><b/>acquainted</g><s n="vblex"/></l><r>werden<g><b/>bekannt</g><s n="vblex"/></r></p></e>
-    <e><p><l>become<b/>an<b/>orphan<s n="vblex"/></l><r>verwaisen<s n="vblex"/></r></p></e>
+    <e><p><l>become<g><b/>an<b/>orphan</g><s n="vblex"/></l><r>verwaisen<s n="vblex"/></r></p></e>
     <e><p><l>bed<s n="vblex"/></l><r>betten<s n="vblex"/></r></p></e>
     <e><p><l>bedevil<s n="vblex"/></l><r>verhexen<s n="vblex"/></r></p></e>
     <e><p><l>beep<s n="vblex"/></l><r>piepen<s n="vblex"/></r></p></e>
@@ -43598,10 +43598,10 @@
     <e r="RL"><p><l>blow<s n="vblex"/></l><r>wehen<s n="vblex"/></r></p></e>
     <e><p><l>blow<g><b/>down</g><s n="vblex"/></l><r>umwehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>blow<g><b/>down</g><s n="vblex"/></l><r>wehen<g><b/>um</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>blow<b/>ones<b/>nose<s n="vblex"/></l><r>schnäuzen<s n="vblex"/></r></p></e>
+    <e><p><l>blow<g><b/>ones<b/>nose</g><s n="vblex"/></l><r>schnäuzen<s n="vblex"/></r></p></e>
     <e><p><l>blow<g><b/>out</g><s n="vblex"/></l><r>ausblasen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>blow<g><b/>out</g><s n="vblex"/></l><r>blasen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>blow<b/>the<b/>cover<b/>of<s n="vblex"/></l><r>enttarnen<s n="vblex"/></r></p></e>
+    <e><p><l>blow<g><b/>the<b/>cover<b/>of</g><s n="vblex"/></l><r>enttarnen<s n="vblex"/></r></p></e>
     <e><p><l>blow<g><b/>up</g><s n="vblex"/></l><r>aufblasen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="LR"><p><l>blow<g><b/>up</g><s n="vblex"/></l><r>zerstören<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>blow<g><b/>up</g><s n="vblex"/></l><r>blasen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -43612,7 +43612,7 @@
     <e><p><l>blush<s n="vblex"/></l><r>erröten<s n="vblex"/></r></p></e>
     <e><p><l>board<s n="vblex"/></l><r>entern<s n="vblex"/></r></p></e>
     <e><p><l>boast<s n="vblex"/></l><r>prahlen<s n="vblex"/></r></p></e>
-    <e><p><l>bob<b/>up<b/>and<b/>down<s n="vblex"/></l><r>dümpeln<s n="vblex"/></r></p></e>
+    <e><p><l>bob<g><b/>up<b/>and<b/>down</g><s n="vblex"/></l><r>dümpeln<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>boil<s n="vblex"/></l><r>kochen<s n="vblex"/></r></p></e>
     <e><p><l>bolster<s n="vblex"/></l><r>stützen<s n="vblex"/></r></p></e>
     <e><p><l>bolt<s n="vblex"/></l><r>verriegeln<s n="vblex"/></r></p></e>
@@ -43637,7 +43637,7 @@
     <e><p><l>bow<s n="vblex"/></l><r>biegen<s n="vblex"/></r></p></e>
     <e><p><l>bowl<s n="vblex"/></l><r>kegeln<s n="vblex"/></r></p></e>
     <e><p><l>box<s n="vblex"/></l><r>boxen<s n="vblex"/></r></p></e>
-    <e><p><l>box<b/>the<b/>ears<s n="vblex"/></l><r>ohrfeigen<s n="vblex"/></r></p></e>
+    <e><p><l>box<g><b/>the<b/>ears</g><s n="vblex"/></l><r>ohrfeigen<s n="vblex"/></r></p></e>
     <e><p><l>boycot<s n="vblex"/></l><r>boykottieren<s n="vblex"/></r></p></e>
     <e><p><l>boycott<s n="vblex"/></l><r>bestreiken<s n="vblex"/></r></p></e>
     <e><p><l>brace<s n="vblex"/></l><r>brassen<s n="vblex"/></r></p></e>
@@ -43671,10 +43671,10 @@
     <e r="RL"><p><l>bring<s n="vblex"/></l><r>mitbringen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>bring<s n="vblex"/></l><r>bringen<g><b/>mit</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>bring<g><b/>in</g><s n="vblex"/></l><r>reinbringen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>bring<b/>mind<s n="vblex"/></l><r>vergegenwärtigen<s n="vblex"/></r></p></e>
+    <e><p><l>bring<g><b/>to<b/>mind</g><s n="vblex"/></l><r>vergegenwärtigen<s n="vblex"/></r></p></e>
     <e><p><l>bring<g><b/>out</g><s n="vblex"/></l><r>herausbringen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>bring<g><b/>over</g><s n="vblex"/></l><r>tragen<g><b/>heran</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>bring<g><b/>together</g><s n="vblex"/></l><r>zusammenbringen<s n="vblex"/><s n="sep"/></r></p></e>
+    <e><p><l>bring<g><b/>together</g><s n="vblex"/><s n="sep"/></l><r>zusammenbringen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="LR"><p><l>broaden<s n="vblex"/></l><r>erweitern<s n="vblex"/></r></p></e>
     <e><p><l>bronze<s n="vblex"/></l><r>bronzen<s n="vblex"/></r></p></e>
     <e><p><l>browse<s n="vblex"/></l><r>durchsuchen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -43688,7 +43688,7 @@
     <e r="RL"><p><l>build<s n="vblex"/></l><r>basteln<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>build<s n="vblex"/></l><r>errichten<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>build<s n="vblex"/></l><r>mauern<s n="vblex"/></r></p></e>
-    <e><p><l>build<b/>a<b/>wall<b/>around<s n="vblex"/></l><r>ummauern<s n="vblex"/></r></p></e>
+    <e><p><l>build<g><b/>a<b/>wall<b/>around</g><s n="vblex"/></l><r>ummauern<s n="vblex"/></r></p></e>
     <e><p><l>bulkheads<s n="vblex"/></l><r>schotten<s n="vblex"/></r></p></e>
     <e><p><l>bumble<s n="vblex"/></l><r>summen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>bump<s n="vblex"/></l><r>stoßen<s n="vblex"/></r></p></e>
@@ -43718,10 +43718,10 @@
     <e><p><l>but<s n="vblex"/></l><r>sondern<s n="vblex"/></r></p></e>
     <e><p><l>butcher<s n="vblex"/></l><r>schlachten<s n="vblex"/></r></p></e>
     <e><p><l>butter<s n="vblex"/></l><r>mit<b/>Butter<b/>bestreichen<s n="vblex"/></r></p></e>
-    <e><p><l>button<b/>up<s n="vblex"/></l><r>knöpfen<s n="vblex"/></r></p></e>
+    <e><p><l>button<g><b/>up</g><s n="vblex"/></l><r>knöpfen<s n="vblex"/></r></p></e>
     <e><p><l>buy<s n="vblex"/></l><r>kaufen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>buy<s n="vblex"/></l><r>erkaufen<s n="vblex"/></r></p></e>
-    <e><p><l>buy<b/>at<b/>an<b/>auction<s n="vblex"/></l><r>ersteigern<s n="vblex"/></r></p></e>
+    <e><p><l>buy<g><b/>at<b/>an<b/>auction</g><s n="vblex"/></l><r>ersteigern<s n="vblex"/></r></p></e>
     <e><p><l>buy<g><b/>from</g><s n="vblex"/></l><r>abkaufen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>buy<g><b/>from</g><s n="vblex"/></l><r>kaufen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>buy<g><b/>up</g><s n="vblex"/></l><r>kaufen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -43764,7 +43764,7 @@
     <e><p><l>carpenter<s n="vblex"/></l><r>zimmern<s n="vblex"/></r></p></e>
     <e><p><l>carry<s n="vblex"/></l><r>tragen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>carry<s n="vblex"/></l><r>transportieren<s n="vblex"/></r></p></e>
-    <e><p><l>carry<b/>away<s n="vblex"/></l><r>entrücken<s n="vblex"/></r></p></e>
+    <e><p><l>carry<g><b/>away</g><s n="vblex"/></l><r>entrücken<s n="vblex"/></r></p></e>
     <e><p><l>carry<g><b/>into</g><s n="vblex"/></l><r>hineintragen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>carry<g><b/>on</g><s n="vblex"/></l><r>weitermachen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>carry<g><b/>out</g><s n="vblex"/></l><r>durchführen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -43792,7 +43792,7 @@
     <e r="RL"><p><l>catch<s n="vblex"/></l><r>haschen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>catch<s n="vblex"/></l><r>kapieren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>catch<s n="vblex"/></l><r>kriegen<s n="vblex"/></r></p></e>
-    <e><p><l>catch<b/>up<s n="vblex"/></l><r>aufholen<s n="vblex"/><s n="sep"/></r></p></e>
+    <e><p><l>catch<g><b/>up</g><s n="vblex"/></l><r>aufholen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="LR"><p><l>catechise<s n="vblex"/></l><r>befragen<s n="vblex"/></r></p></e>
     <e><p><l>categorise<s n="vblex"/></l><r>kategorisieren<s n="vblex"/></r></p></e>
     <e><p><l>categorize<s n="vblex"/></l><r>kategorisieren<s n="vblex"/></r></p></e>
@@ -43805,7 +43805,7 @@
     <e r="LR"><p><l>caw<s n="vblex"/></l><r>krächzen<s n="vblex"/></r></p></e>
     <e><p><l>celebrate<s n="vblex"/></l><r>feiern<s n="vblex"/></r></p></e>
     <e><p><l>celebrate<s n="vblex"/></l><r>zelebrieren<s n="vblex"/></r></p></e>
-    <e><p><l>celebrate<b/>in<b/>song<s n="vblex"/></l><r>besingen<s n="vblex"/></r></p></e>
+    <e><p><l>celebrate<g><b/>in<b/>song</g><s n="vblex"/></l><r>besingen<s n="vblex"/></r></p></e>
     <e><p><l>cement<s n="vblex"/></l><r>zementieren<s n="vblex"/></r></p></e>
     <e><p><l>center<s n="vblex"/></l><r>zentrieren<s n="vblex"/></r></p></e>
     <e><p><l>centralise<s n="vblex"/></l><r>zentralisieren<s n="vblex"/></r></p></e>
@@ -43903,7 +43903,7 @@
     <e><p><l>clatter<s n="vblex"/></l><r>rattern<s n="vblex"/></r></p></e>
     <e><p><l>clean<s n="vblex"/></l><r>putzen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>clean<s n="vblex"/></l><r>säubern<s n="vblex"/></r></p></e>
-    <e><p><l>clean<b/>up<s n="vblex"/></l><r>reinigen<s n="vblex"/></r></p></e>
+    <e><p><l>clean<g><b/>up</g><s n="vblex"/></l><r>reinigen<s n="vblex"/></r></p></e>
     <e><p><l>cleanse<s n="vblex"/></l><r>reinigen<s n="vblex"/></r></p></e>
     <e><p><l>clear<s n="vblex"/></l><r>räumen<s n="vblex"/></r></p></e>
     <e><p><l>clear<s n="vblex"/></l><r>wegräumen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -43968,7 +43968,7 @@
     <e><p><l>colonize<s n="vblex"/></l><r>siedeln<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>colonize<s n="vblex"/></l><r>besiedeln<s n="vblex"/></r></p></e>
     <e><p><l>colour<s n="vblex"/></l><r>färben<s n="vblex"/></r></p></e>
-    <e><p><l>colour<b/>run<s n="vblex"/></l><r>ausfärben<s n="vblex"/></r></p></e>
+    <e><p><l>colour<g><b/>run</g><s n="vblex"/></l><r>ausfärben<s n="vblex"/></r></p></e>
     <e><p><l>comb<s n="vblex"/></l><r>kämmen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>comb<s n="vblex"/></l><r>durchkämmen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>comb<s n="vblex"/></l><r>kämmen<g><b/>durch</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -44017,7 +44017,7 @@
     <e r="RL"><p><l>come<g><b/>round</g><s n="vblex"/></l><r>kommen<g><b/>herum</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>come<g><b/>to</g><s n="vblex"/></l><r>ankommen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>come<g><b/>true</g><s n="vblex"/></l><r>bewahrheiten<s n="vblex"/></r></p></e>
-    <e><p><l>come<b/>under<s n="vblex"/></l><r>unterstehen<s n="vblex"/></r></p></e>
+    <e><p><l>come<g><b/>under</g><s n="vblex"/></l><r>unterstehen<s n="vblex"/></r></p></e>
     <e><p><l>come<g><b/>undone</g><s n="vblex"/></l><r>aufgehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>come<g><b/>undone</g><s n="vblex"/></l><r>gehen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>come<g><b/>up</g><s n="vblex"/></l><r>aufkommen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -44033,7 +44033,7 @@
     <e r="RL"><p><l>commission<s n="vblex"/></l><r>in<b/>Dienst<b/>stellen<s n="vblex"/></r></p></e>
     <e><p><l>commit<s n="vblex"/></l><r>begehen<s n="vblex"/></r></p></e>
     <e><p><l>commit<s n="vblex"/></l><r>verüben<s n="vblex"/></r></p></e>
-    <e><p><l>commit<b/>arson<s n="vblex"/></l><r>brandstiften<s n="vblex"/></r></p></e>
+    <e><p><l>commit<g><b/>arson</g><s n="vblex"/></l><r>brandstiften<s n="vblex"/></r></p></e>
     <e><p><l>communicate<s n="vblex"/></l><r>kommunizieren<s n="vblex"/></r></p></e>
     <e><p><l>commutate<s n="vblex"/></l><r>gleichrichten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>commutate<s n="vblex"/></l><r>richten<g><b/>gleich</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -44097,7 +44097,7 @@
     <e><p><l>confine<s n="vblex"/></l><r>begrenzen<s n="vblex"/></r></p></e>
     <e><p><l>confirm<s n="vblex"/></l><r>bestätigen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>confirm<s n="vblex"/></l><r>bekräftigen<s n="vblex"/></r></p></e>
-    <e><p><l>confirm<b/>by<b/>documents<s n="vblex"/></l><r>verbriefen<s n="vblex"/></r></p></e>
+    <e><p><l>confirm<g><b/>by<b/>documents</g><s n="vblex"/></l><r>verbriefen<s n="vblex"/></r></p></e>
     <e><p><l>confiscate<s n="vblex"/></l><r>konfiszieren<s n="vblex"/></r></p></e>
     <e><p><l>confront<s n="vblex"/></l><r>entgegentreten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>confront<s n="vblex"/></l><r>konfrontieren<s n="vblex"/></r></p></e>
@@ -44261,8 +44261,8 @@
     <e><p><l>cut<g><b/>away</g><s n="vblex"/></l><r>wegschneiden<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>cut<g><b/>away</g><s n="vblex"/></l><r>schneiden<g><b/>weg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>cut<g><b/>back</g><s n="vblex"/></l><r>schneiden<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>cut<b/>down<s n="vblex"/></l><r>fällen<s n="vblex"/></r></p></e>
-    <e><p><l>cut<b/>in<b/>halves<s n="vblex"/></l><r>halbieren<s n="vblex"/></r></p></e>
+    <e><p><l>cut<g><b/>down</g><s n="vblex"/></l><r>fällen<s n="vblex"/></r></p></e>
+    <e><p><l>cut<g><b/>in<b/>halves</g><s n="vblex"/></l><r>halbieren<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>cut<g><b/>short</g><s n="vblex"/></l><r>abschneiden<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>cycle<s n="vblex"/></l><r>Rad<b/>fahren<s n="vblex"/></r></p></e>
     <e><p><l>dam<s n="vblex"/></l><r>dämmen<s n="vblex"/></r></p></e>
@@ -44278,7 +44278,7 @@
     <e><p><l>date<s n="vblex"/></l><r>zurückreichen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>date<s n="vblex"/></l><r>reichen<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>date<g><b/>back</g><s n="vblex"/></l><r>datieren<g><b/>rück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e r="LR"><p><l>date<b/>from<s n="vblex"/></l><r>stammen<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>date<g><b/>from</g><s n="vblex"/></l><r>stammen<s n="vblex"/></r></p></e>
     <e><p><l>daunt<s n="vblex"/></l><r>schrecken<s n="vblex"/></r></p></e>
     <e><p><l>dawdle<s n="vblex"/></l><r>trödeln<s n="vblex"/></r></p></e>
     <e><p><l>dawn<s n="vblex"/></l><r>dämmern<s n="vblex"/></r></p></e>
@@ -44414,13 +44414,13 @@
     <e r="RL"><p><l>depreciate<s n="vblex"/></l><r>setzen<g><b/>herab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>depress<s n="vblex"/></l><r>deprimieren<s n="vblex"/></r></p></e>
     <e><p><l>deprive<s n="vblex"/></l><r>berauben<s n="vblex"/></r></p></e>
-    <e><p><l>deprive<b/>of<b/>power<s n="vblex"/></l><r>entmachten<s n="vblex"/></r></p></e>
+    <e><p><l>deprive<g><b/>of<b/>power</g><s n="vblex"/></l><r>entmachten<s n="vblex"/></r></p></e>
     <e><p><l>depute<s n="vblex"/></l><r>deputieren<s n="vblex"/></r></p></e>
     <e><p><l>derail<s n="vblex"/></l><r>entgleisen<s n="vblex"/></r></p></e>
     <e><p><l>deregulate<s n="vblex"/></l><r>deregulieren<s n="vblex"/></r></p></e>
     <e><p><l>deride<s n="vblex"/></l><r>belächeln<s n="vblex"/></r></p></e>
     <e><p><l>derogate<s n="vblex"/></l><r>vermindern<s n="vblex"/></r></p></e>
-    <e><p><l>derogate<b/>from<s n="vblex"/></l><r>gereichen<s n="vblex"/></r></p></e>
+    <e><p><l>derogate<g><b/>from</g><s n="vblex"/></l><r>gereichen<s n="vblex"/></r></p></e>
     <e><p><l>descend<s n="vblex"/></l><r>abstammen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>descend<s n="vblex"/></l><r>stammen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>describe<s n="vblex"/></l><r>beschreiben<s n="vblex"/></r></p></e>
@@ -44575,7 +44575,7 @@
     <e><p><l>divide<s n="vblex"/></l><r>aufteilen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>divide<s n="vblex"/></l><r>teilen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>divide<s n="vblex"/></l><r>teilen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>divide<b/>by<b/>four<s n="vblex"/></l><r>vierteln<s n="vblex"/></r></p></e>
+    <e><p><l>divide<g><b/>by<b/>four</g><s n="vblex"/></l><r>vierteln<s n="vblex"/></r></p></e>
     <e><p><l>divide<g><b/>into</g><s n="vblex"/></l><r>einteilen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>divine<s n="vblex"/></l><r>erahnen<s n="vblex"/></r></p></e>
     <e><p><l>divorce<s n="vblex"/></l><r>scheiden<s n="vblex"/></r></p></e>
@@ -44610,7 +44610,7 @@
     <e r="RL"><p><l>draw<s n="vblex"/></l><r>ziehen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>draw<s n="vblex"/></l><r>zücken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>draw<s n="vblex"/></l><r>herausziehen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>draw<b/>lots<s n="vblex"/></l><r>losen<s n="vblex"/></r></p></e>
+    <e><p><l>draw<g><b/>lots</g><s n="vblex"/></l><r>losen<s n="vblex"/></r></p></e>
     <e><p><l>drawl<s n="vblex"/></l><r>affektiert<b/>sprechen<s n="vblex"/></r></p></e>
     <e><p><l>dream<s n="vblex"/></l><r>träumen<s n="vblex"/></r></p></e>
     <e><p><l>dress<s n="vblex"/></l><r>anziehen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -44640,7 +44640,7 @@
     <e r="RL"><p><l>drive<g><b/>away</g><s n="vblex"/></l><r>fahren<g><b/>davon</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>drive<g><b/>back</g><s n="vblex"/></l><r>zurückfahren<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>drive<g><b/>back</g><s n="vblex"/></l><r>fahren<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>drive<b/>in<b/>a<b/>coach<s n="vblex"/></l><r>kutschieren<s n="vblex"/></r></p></e>
+    <e><p><l>drive<g><b/>in<b/>a<b/>coach</g><s n="vblex"/></l><r>kutschieren<s n="vblex"/></r></p></e>
     <e><p><l>drive<g><b/>on</g><s n="vblex"/></l><r>weiterfahren<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>drive<g><b/>on</g><s n="vblex"/></l><r>fahren<g><b/>weiter</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>drive<g><b/>out</g><s n="vblex"/></l><r>vertreiben<s n="vblex"/></r></p></e>
@@ -44655,10 +44655,10 @@
     <e r="RL"><p><l>drop<s n="vblex"/></l><r>lassen<g><b/>fallen</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>drop<s n="vblex"/></l><r>hineinfallen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>drop<s n="vblex"/></l><r>fallen<g><b/>hinein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>drop<b/>out<s n="vblex"/></l><r>kneifen<s n="vblex"/></r></p></e>
+    <e><p><l>drop<g><b/>out</g><s n="vblex"/></l><r>kneifen<s n="vblex"/></r></p></e>
     <e><p><l>drown<s n="vblex"/></l><r>ertränken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>drown<s n="vblex"/></l><r>ertrinken<s n="vblex"/></r></p></e>
-    <e><p><l>drown<b/>out<s n="vblex"/></l><r>übertönen<s n="vblex"/></r></p></e>
+    <e><p><l>drown<g><b/>out</g><s n="vblex"/></l><r>übertönen<s n="vblex"/></r></p></e>
     <e><p><l>dry<s n="vblex"/></l><r>trocknen<s n="vblex"/></r></p></e>
     <e><p><l>dry<g><b/>up</g><s n="vblex"/></l><r>abtrocknen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>dry<g><b/>up</g><s n="vblex"/></l><r>trocknen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -44921,7 +44921,7 @@
     <e r="LR"><p><l>fade<s n="vblex"/></l><r>verschwinden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fade<s n="vblex"/></l><r>verklingen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fade<s n="vblex"/></l><r>lassen<g><b/>nach</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>fade<b/>away<s n="vblex"/></l><r>verhallen<s n="vblex"/></r></p></e>
+    <e><p><l>fade<g><b/>away</g><s n="vblex"/></l><r>verhallen<s n="vblex"/></r></p></e>
     <e><p><l>fail<s n="vblex"/></l><r>scheitern<s n="vblex"/></r></p></e>
     <e><p><l>fail<s n="vblex"/></l><r>fehlschlagen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="LR"><p><l>fail<s n="vblex"/></l><r>misslingen<s n="vblex"/></r></p></e>
@@ -44947,7 +44947,7 @@
     <e r="LR"><p><l>fall<g><b/>on</g><s n="vblex"/></l><r>treffen<s n="vblex"/></r></p></e>
     <e><p><l>fall<g><b/>out</g><s n="vblex"/></l><r>herausfallen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>fall<g><b/>out</g><s n="vblex"/></l><r>fallen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>falling<b/>in<b/>love<s n="vblex"/></l><r>verlieben<s n="vblex"/></r></p></e>
+    <e><p><l>falling<g><b/>in<b/>love</g><s n="vblex"/></l><r>verlieben<s n="vblex"/></r></p></e>
     <e><p><l>falsify<s n="vblex"/></l><r>verfälschen<s n="vblex"/></r></p></e>
     <e><p><l>falter<s n="vblex"/></l><r>schwächeln<s n="vblex"/></r></p></e>
     <e><p><l>fan<s n="vblex"/></l><r>fächeln<s n="vblex"/></r></p></e>
@@ -44962,7 +44962,7 @@
     <e r="RL"><p><l>fasten<s n="vblex"/></l><r>fasten<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fasten<s n="vblex"/></l><r>schnallen<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>fasten<s n="vblex"/></l><r>festschnallen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>fathom<b/>out<s n="vblex"/></l><r>ermessen<s n="vblex"/></r></p></e>
+    <e><p><l>fathom<g><b/>out</g><s n="vblex"/></l><r>ermessen<s n="vblex"/></r></p></e>
     <e><p><l>fatten<s n="vblex"/></l><r>mästen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>favor<s n="vblex"/></l><r>bevorzugen<s n="vblex"/></r></p></e>
     <e><p><l>favour<s n="vblex"/></l><r>begünstigen<s n="vblex"/></r></p></e>
@@ -44976,14 +44976,14 @@
     <e r="RL"><p><l>feed<s n="vblex"/></l><r>verpflegen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>feed<s n="vblex"/></l><r>weiden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>feed<s n="vblex"/></l><r>zuführen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>feed<b/>up<s n="vblex"/></l><r>päppeln<s n="vblex"/></r></p></e>
+    <e><p><l>feed<g><b/>up</g><s n="vblex"/></l><r>päppeln<s n="vblex"/></r></p></e>
     <e><p><l>feel<s n="vblex"/></l><r>fühlen<s n="vblex"/></r></p></e>
     <e><p><l>feel<s n="vblex"/></l><r>spüren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>feel<s n="vblex"/></l><r>empfinden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>feel<s n="vblex"/></l><r>verspüren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>feel<s n="vblex"/></l><r>abtasten<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>feel<b/>ashamed<s n="vblex"/></l><r>schämen<s n="vblex"/></r></p></e>
-    <e><p><l>feel<b/>chilly<s n="vblex"/></l><r>frösteln<s n="vblex"/></r></p></e>
+    <e><p><l>feel<g><b/>ashamed</g><s n="vblex"/></l><r>schämen<s n="vblex"/></r></p></e>
+    <e><p><l>feel<g><b/>chilly</g><s n="vblex"/></l><r>frösteln<s n="vblex"/></r></p></e>
     <e><p><l>feel<g><b/>like</g><s n="vblex"/></l><r>mir<b/>ist<b/>danach<s n="vblex"/></r></p></e>
     <e><p><l>feel<g><b/>sorry</g><s n="vblex"/></l><r>leidtun<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>feel<g><b/>sorry</g><s n="vblex"/></l><r>tun<g><b/>leid</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -44996,7 +44996,7 @@
     <e r="RL"><p><l>fight<s n="vblex"/></l><r>bekämpfen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fight<s n="vblex"/></l><r>fechten<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fight<s n="vblex"/></l><r>fighten<s n="vblex"/></r></p></e>
-    <e><p><l>fight<b/>for<s n="vblex"/></l><r>umkämpfen<s n="vblex"/></r></p></e>
+    <e><p><l>fight<g><b/>for</g><s n="vblex"/></l><r>umkämpfen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>figure<s n="vblex"/></l><r>erscheinen<s n="vblex"/></r></p></e>
     <e><p><l>file<s n="vblex"/></l><r>feilen<s n="vblex"/></r></p></e>
     <e><p><l>file<s n="vblex"/></l><r>einordnen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -45027,7 +45027,7 @@
     <e r="RL"><p><l>finish<s n="vblex"/></l><r>vollenden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>finish<s n="vblex"/></l><r>fertigstellen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>finish<s n="vblex"/></l><r>stellen<g><b/>fertig</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>finish<b/>speaking<s n="vblex"/></l><r>ausreden<s n="vblex"/></r></p></e>
+    <e><p><l>finish<g><b/>speaking</g><s n="vblex"/></l><r>ausreden<s n="vblex"/></r></p></e>
     <e><p><l>fire<s n="vblex"/></l><r>feuern<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fire<s n="vblex"/></l><r>verschießen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>fire<s n="vblex"/></l><r>abfeuern<s n="vblex"/><s n="sep"/></r></p></e>
@@ -45109,9 +45109,9 @@
     <e><p><l>forgive<s n="vblex"/></l><r>vergeben<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>forgive<s n="vblex"/></l><r>verzeihen<s n="vblex"/></r></p></e>
     <e><p><l>forgo<s n="vblex"/></l><r>verzichten<b/>auf<s n="vblex"/></r></p></e>
-    <e><p><l>fork<b/>out<s n="vblex"/></l><r>berappen<s n="vblex"/></r></p></e>
+    <e><p><l>fork<g><b/>out</g><s n="vblex"/></l><r>berappen<s n="vblex"/></r></p></e>
     <e><p><l>form<s n="vblex"/></l><r>formen<s n="vblex"/></r></p></e>
-    <e><p><l>form<b/>a<b/>coalition<s n="vblex"/></l><r>koalieren<s n="vblex"/></r></p></e>
+    <e><p><l>form<g><b/>a<b/>coalition</g><s n="vblex"/></l><r>koalieren<s n="vblex"/></r></p></e>
     <e><p><l>formalise<s n="vblex"/></l><r>formalisieren<s n="vblex"/></r></p></e>
     <e><p><l>formulate<s n="vblex"/></l><r>formulieren<s n="vblex"/></r></p></e>
     <e><p><l>fortify<s n="vblex"/></l><r>befestigen<s n="vblex"/></r></p></e>
@@ -45138,7 +45138,7 @@
     <e><p><l>freshen<s n="vblex"/></l><r>auffrischen<s n="vblex"/></r></p></e>
     <e><p><l>frighten<s n="vblex"/></l><r>erschrecken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>frighten<s n="vblex"/></l><r>beängstigen<s n="vblex"/></r></p></e>
-    <e><p><l>frighten<b/>off<s n="vblex"/></l><r>vergraulen<s n="vblex"/></r></p></e>
+    <e><p><l>frighten<g><b/>off</g><s n="vblex"/></l><r>vergraulen<s n="vblex"/></r></p></e>
     <e><p><l>frill<s n="vblex"/></l><r>kräuseln<s n="vblex"/></r></p></e>
     <e><p><l>frisk<s n="vblex"/></l><r>herumtanzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>frisk<s n="vblex"/></l><r>tanzen<g><b/>herum</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -45162,7 +45162,7 @@
     <e><p><l>gallop<s n="vblex"/></l><r>galoppieren<s n="vblex"/></r></p></e>
     <e><p><l>gamble<s n="vblex"/></l><r>pokern<s n="vblex"/></r></p></e>
     <e><p><l>gamble<s n="vblex"/></l><r>zocken<s n="vblex"/></r></p></e>
-    <e><p><l>gamble<b/>away<s n="vblex"/></l><r>verspielen<s n="vblex"/></r></p></e>
+    <e><p><l>gamble<g><b/>away</g><s n="vblex"/></l><r>verspielen<s n="vblex"/></r></p></e>
     <e><p><l>gape<s n="vblex"/></l><r>gaffen<s n="vblex"/></r></p></e>
     <e><p><l>gargle<s n="vblex"/></l><r>gurgeln<s n="vblex"/></r></p></e>
     <e><p><l>garnish<s n="vblex"/></l><r>garnieren<s n="vblex"/></r></p></e>
@@ -45202,13 +45202,13 @@
     <e><p><l>get<g><b/>down</g><s n="vblex"/></l><r>unterkriegen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>down</g><s n="vblex"/></l><r>absteigen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>down</g><s n="vblex"/></l><r>steigen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>get<b/>drunk<s n="vblex"/></l><r>betrinken<s n="vblex"/></r></p></e>
+    <e><p><l>get<g><b/>drunk</g><s n="vblex"/></l><r>betrinken<s n="vblex"/></r></p></e>
     <e><p><l>get<g><b/>hold<b/>of</g><s n="vblex"/></l><r>erwischen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>get<g><b/>in</g><s n="vblex"/></l><r>hineingehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>in</g><s n="vblex"/></l><r>einsteigen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>in</g><s n="vblex"/></l><r>hineinsteigen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>in</g><s n="vblex"/></l><r>steigen<g><b/>hinein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>get<b/>in<b/>touch<b/>with<s n="vblex"/></l><r>kontaktieren<s n="vblex"/></r></p></e>
+    <e><p><l>get<g><b/>in<b/>touch<b/>with</g><s n="vblex"/></l><r>kontaktieren<s n="vblex"/></r></p></e>
     <e><p><l>get<g><b/>into</g><s n="vblex"/></l><r>hereinkommen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>get<g><b/>longer</g><s n="vblex"/></l><r>zunehmen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>longer</g><s n="vblex"/></l><r>nehmen<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -45237,10 +45237,10 @@
     <e><p><l>get<g><b/>over</g><s n="vblex"/></l><r>verwinden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>over</g><s n="vblex"/></l><r>hinwegkommen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>over</g><s n="vblex"/></l><r>kommen<g><b/>hinweg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>get<b/>stuck<s n="vblex"/></l><r>steckenbleiben<s n="vblex"/></r></p></e>
+    <e><p><l>get<g><b/>stuck</g><s n="vblex"/></l><r>steckenbleiben<s n="vblex"/></r></p></e>
     <e><p><l>get<g><b/>there</g><s n="vblex"/></l><r>hingeraten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>there</g><s n="vblex"/></l><r>geraten<g><b/>hin</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>get<b/>together<s n="vblex"/></l><r>zusammenfinden<s n="vblex"/></r></p></e>
+    <e><p><l>get<g><b/>together</g><s n="vblex"/></l><r>zusammenfinden<s n="vblex"/></r></p></e>
     <e><p><l>get<g><b/>up</g><s n="vblex"/></l><r>aufstehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>get<g><b/>up</g><s n="vblex"/></l><r>stehen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>get<g><b/>windy</g><s n="vblex"/></l><r>windig<b/>werden<s n="vblex"/></r></p></e>
@@ -45253,22 +45253,22 @@
     <e><p><l>give<s n="vblex"/></l><r>geben<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>give<s n="vblex"/></l><r>angeben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>give<s n="vblex"/></l><r>zollen<s n="vblex"/></r></p></e>
-    <e><p><l>give<b/>a<b/>concert<s n="vblex"/></l><r>konzertieren<s n="vblex"/></r></p></e>
-    <e><p><l>give<b/>away<s n="vblex"/></l><r>hergeben<s n="vblex"/><s n="sep"/></r></p></e>
+    <e><p><l>give<g><b/>a<b/>concert</g><s n="vblex"/></l><r>konzertieren<s n="vblex"/></r></p></e>
+    <e><p><l>give<g><b/>away</g><s n="vblex"/></l><r>hergeben<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>give<g><b/>away</g><s n="vblex"/></l><r>weggeben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>give<g><b/>away</g><s n="vblex"/></l><r>verschenken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>give<g><b/>away</g><s n="vblex"/></l><r>geben<g><b/>weg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>give<g><b/>back</g><s n="vblex"/></l><r>zurückgeben<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>give<b/>emeritus<b/>status<s n="vblex"/></l><r>emeritieren<s n="vblex"/></r></p></e>
+    <e><p><l>give<g><b/>emeritus<b/>status</g><s n="vblex"/></l><r>emeritieren<s n="vblex"/></r></p></e>
     <e><p><l>give<g><b/>in<b/>marriage</g><s n="vblex"/></l><r>zum<b/>Weibe<b/>gehen<s n="vblex"/></r></p></e>
     <e><p><l>give<g><b/>notice</g><s n="vblex"/></l><r>kündigen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>give<g><b/>notice</g><s n="vblex"/></l><r>abmelden<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>give<g><b/>notice</g><s n="vblex"/></l><r>melden<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>give<b/>off<b/>clouds<b/>of<b/>smoke<s n="vblex"/></l><r>qualmen<s n="vblex"/></r></p></e>
+    <e><p><l>give<g><b/>off<b/>clouds<b/>of<b/>smoke</g><s n="vblex"/></l><r>qualmen<s n="vblex"/></r></p></e>
     <e><p><l>give<g><b/>out</g><s n="vblex"/></l><r>ausgeben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>give<g><b/>out</g><s n="vblex"/></l><r>geben<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>give<b/>reasons<b/>for<s n="vblex"/></l><r>begründen<s n="vblex"/></r></p></e>
-    <e><p><l>give<b/>therapy<b/>to<s n="vblex"/></l><r>therapieren<s n="vblex"/></r></p></e>
+    <e><p><l>give<g><b/>reasons<b/>for</g><s n="vblex"/></l><r>begründen<s n="vblex"/></r></p></e>
+    <e><p><l>give<g><b/>therapy<b/>to</g><s n="vblex"/></l><r>therapieren<s n="vblex"/></r></p></e>
     <e><p><l>give<g><b/>up</g><s n="vblex"/></l><r>abgeben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>give<g><b/>up</g><s n="vblex"/></l><r>geben<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>give<g><b/>up</g><s n="vblex"/></l><r>abgewöhnen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -45299,7 +45299,7 @@
     <e r="RL"><p><l>go<g><b/>along</g><s n="vblex"/></l><r>fahren<g><b/>entlang</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>along</g><s n="vblex"/></l><r>gehen<g><b/>mit</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>go<g><b/>and<b/>get<b/>drunk</g><s n="vblex"/></l><r>sich<b/>einen<b/>Rausch<b/>antrinken<s n="vblex"/></r></p></e>
-    <e><p><l>go<b/>and<b/>see<s n="vblex"/></l><r>nachsehen<s n="vblex"/><s n="sep"/></r></p></e>
+    <e><p><l>go<g><b/>and<b/>see</g><s n="vblex"/></l><r>nachsehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>go<g><b/>back</g><s n="vblex"/></l><r>zurückgehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>back</g><s n="vblex"/></l><r>gehen<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>go<g><b/>berserk</g><s n="vblex"/></l><r>durchdrehen<s n="vblex"/></r></p></e>
@@ -45328,7 +45328,7 @@
     <e r="RL"><p><l>go<g><b/>on</g><s n="vblex"/></l><r>fortsetzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>on</g><s n="vblex"/></l><r>setzen<g><b/>fort</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>on</g><s n="vblex"/></l><r>gehen<g><b/>weiter</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>go<b/>on<b/>a<b/>pilgrimage<s n="vblex"/></l><r>pilgern<s n="vblex"/></r></p></e>
+    <e><p><l>go<g><b/>on<b/>a<b/>pilgrimage</g><s n="vblex"/></l><r>pilgern<s n="vblex"/></r></p></e>
     <e><p><l>go<g><b/>on<b/>strike</g><s n="vblex"/></l><r>streiken<s n="vblex"/></r></p></e>
     <e><p><l>go<g><b/>out</g><s n="vblex"/></l><r>ausgehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>out</g><s n="vblex"/></l><r>gehen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -45353,7 +45353,7 @@
     <e r="RL"><p><l>go<g><b/>through</g><s n="vblex"/></l><r>gehen<g><b/>durch</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>through</g><s n="vblex"/></l><r>durchsprechen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>through</g><s n="vblex"/></l><r>sprechen<g><b/>durch</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>go<b/>through<b/>a<b/>crisis<s n="vblex"/></l><r>kriseln<s n="vblex"/></r></p></e>
+    <e><p><l>go<g><b/>through<b/>a<b/>crisis</g><s n="vblex"/></l><r>kriseln<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>to</g><s n="vblex"/></l><r>zugehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>go<g><b/>to</g><s n="vblex"/></l><r>fahren<g><b/>nach</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>go<g><b/>to<b/>bed</g><s n="vblex"/></l><r>gehen<g><b/>ins<b/>Bett</g><s n="vblex"/></r></p></e>
@@ -45369,7 +45369,7 @@
     <e r="RL"><p><l>go<g><b/>wrong</g><s n="vblex"/></l><r>gehen<g><b/>schief</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>gonna<s n="vblex"/></l><r>dabei<b/>sein,<b/>etw.<b/>zu<b/>tun<s n="vblex"/></r></p></e>
     <e><p><l>gossip<s n="vblex"/></l><r>lästern<s n="vblex"/></r></p></e>
-    <e><p><l>got<b/>caught<s n="vblex"/></l><r>verfangen<s n="vblex"/></r></p></e>
+    <e><p><l>got<g><b/>caught</g><s n="vblex"/></l><r>verfangen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>govern<s n="vblex"/></l><r>regieren<s n="vblex"/></r></p></e>
     <e><p><l>grab<s n="vblex"/></l><r>fassen<s n="vblex"/></r></p></e>
     <e><p><l>grab<s n="vblex"/></l><r>schnappen<s n="vblex"/></r></p></e>
@@ -45379,7 +45379,7 @@
     <e><p><l>grant<s n="vblex"/></l><r>gewähren<s n="vblex"/></r></p></e>
     <e><p><l>grant<s n="vblex"/></l><r>vergönnen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>grant<s n="vblex"/></l><r>zugestehen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>grant<b/>a<b/>loan<s n="vblex"/></l><r>beleihen<s n="vblex"/></r></p></e>
+    <e><p><l>grant<g><b/>a<b/>loan</g><s n="vblex"/></l><r>beleihen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>grasp<s n="vblex"/></l><r>verstehen<s n="vblex"/></r></p></e>
     <e><p><l>grate<s n="vblex"/></l><r>knirschen<s n="vblex"/></r></p></e>
     <e><p><l>grate<s n="vblex"/></l><r>reiben<s n="vblex"/></r></p></e>
@@ -45388,7 +45388,7 @@
     <e><p><l>gravitate<s n="vblex"/></l><r>streben<s n="vblex"/></r></p></e>
     <e><p><l>graze<s n="vblex"/></l><r>grasen<s n="vblex"/></r></p></e>
     <e><p><l>grease<s n="vblex"/></l><r>fetten<s n="vblex"/></r></p></e>
-    <e><p><l>greatly<b/>increase<s n="vblex"/></l><r>erheblich<b/>steigern<s n="vblex"/></r></p></e>
+    <e><p><l>greatly<g><b/>increase</g><s n="vblex"/></l><r>erheblich<b/>steigern<s n="vblex"/></r></p></e>
     <e><p><l>green<s n="vblex"/></l><r>begrünen<s n="vblex"/></r></p></e>
     <e><p><l>green<s n="vblex"/></l><r>grünen<s n="vblex"/></r></p></e>
     <e><p><l>greet<s n="vblex"/></l><r>grüßen<s n="vblex"/></r></p></e>
@@ -45401,7 +45401,7 @@
     <e><p><l>grind<s n="vblex"/></l><r>schärfen<s n="vblex"/></r></p></e>
     <e><p><l>grind<s n="vblex"/></l><r>schleifen<s n="vblex"/></r></p></e>
     <e><p><l>grind<s n="vblex"/></l><r>wetzen<s n="vblex"/></r></p></e>
-    <e><p><l>grind<b/>in<s n="vblex"/></l><r>einschleifen<s n="vblex"/></r></p></e>
+    <e><p><l>grind<g><b/>in</g><s n="vblex"/></l><r>einschleifen<s n="vblex"/></r></p></e>
     <e><p><l>grip<s n="vblex"/></l><r>ergreifen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>grip<s n="vblex"/></l><r>faszinieren<s n="vblex"/></r></p></e>
     <e><p><l>groan<s n="vblex"/></l><r>stöhnen<s n="vblex"/></r></p></e>
@@ -45415,11 +45415,11 @@
     <e r="RL"><p><l>grow<s n="vblex"/></l><r>bauen<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>grow<g><b/>again</g><s n="vblex"/></l><r>nachwachsen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>grow<g><b/>again</g><s n="vblex"/></l><r>wachsen<g><b/>nach</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>grow<b/>dark<s n="vblex"/></l><r>nachten<s n="vblex"/></r></p></e>
+    <e><p><l>grow<g><b/>dark</g><s n="vblex"/></l><r>nachten<s n="vblex"/></r></p></e>
     <e><p><l>grow<g><b/>up</g><s n="vblex"/></l><r>aufwachsen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>grow<g><b/>up</g><s n="vblex"/></l><r>wachsen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>growl<s n="vblex"/></l><r>knurren<s n="vblex"/></r></p></e>
-    <e><p><l>grown<b/>up<s n="vblex"/></l><r>erwachsen<s n="vblex"/></r></p></e>
+    <e><p><l>grown<g><b/>up</g><s n="vblex"/></l><r>erwachsen<s n="vblex"/></r></p></e>
     <e><p><l>grumble<s n="vblex"/></l><r>brummen<s n="vblex"/></r></p></e>
     <e><p><l>grumble<s n="vblex"/></l><r>maulen<s n="vblex"/></r></p></e>
     <e><p><l>grumble<s n="vblex"/></l><r>motzen<s n="vblex"/></r></p></e>
@@ -45442,7 +45442,7 @@
     <e><p><l>haggle<s n="vblex"/></l><r>feilschen<s n="vblex"/></r></p></e>
     <e><p><l>hail<s n="vblex"/></l><r>bejubeln<s n="vblex"/></r></p></e>
     <e><p><l>hail<s n="vblex"/></l><r>hageln<s n="vblex"/></r></p></e>
-    <e><p><l>half<b/>a<b/>pint<s n="vblex"/></l><r>schoppen<s n="vblex"/></r></p></e>
+    <e><p><l>half<g><b/>a<b/>pint</g><s n="vblex"/></l><r>schoppen<s n="vblex"/></r></p></e>
     <e><p><l>halt<s n="vblex"/></l><r>anhalten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>halt<s n="vblex"/></l><r>halten<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>halve<s n="vblex"/></l><r>halbieren<s n="vblex"/></r></p></e>
@@ -45451,7 +45451,7 @@
     <e><p><l>hand<s n="vblex"/></l><r>reichen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>hand<s n="vblex"/></l><r>anreichen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>hand<s n="vblex"/></l><r>händigen<s n="vblex"/></r></p></e>
-    <e><p><l>hand<b/>down<s n="vblex"/></l><r>überliefern<s n="vblex"/></r></p></e>
+    <e><p><l>hand<g><b/>down</g><s n="vblex"/></l><r>überliefern<s n="vblex"/></r></p></e>
     <e><p><l>handicap<s n="vblex"/></l><r>behindern<s n="vblex"/></r></p></e>
     <e><p><l>handle<s n="vblex"/></l><r>bedienen<s n="vblex"/></r></p></e>
     <e><p><l>hang<s n="vblex"/></l><r>hängen<s n="vblex"/></r></p></e>
@@ -45506,7 +45506,7 @@
     <e r="RL"><p><l>help<g><b/>on</g><s n="vblex"/></l><r>bringen<g><b/>weiter</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>help<g><b/>out</g><s n="vblex"/></l><r>aushelfen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>help<g><b/>out</g><s n="vblex"/></l><r>helfen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>help<b/>with<s n="vblex"/></l><r>verhelfen<s n="vblex"/></r></p></e>
+    <e><p><l>help<g><b/>with</g><s n="vblex"/></l><r>verhelfen<s n="vblex"/></r></p></e>
     <e><p><l>hem<s n="vblex"/></l><r>einsäumen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>hem<s n="vblex"/></l><r>säumen<g><b/>ein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>hesitant<s n="vblex"/></l><r>zögernd<s n="vblex"/></r></p></e>
@@ -45551,17 +45551,17 @@
     <e><p><l>honour<s n="vblex"/></l><r>ehren<s n="vblex"/></r></p></e>
     <e><p><l>honour<s n="vblex"/></l><r>honorieren<s n="vblex"/></r></p></e>
     <e><p><l>hook<s n="vblex"/></l><r>haken<s n="vblex"/></r></p></e>
-    <e><p><l>hook<b/>up<s n="vblex"/></l><r>liieren<s n="vblex"/></r></p></e>
+    <e><p><l>hook<g><b/>up</g><s n="vblex"/></l><r>liieren<s n="vblex"/></r></p></e>
     <e><p><l>hoot<s n="vblex"/></l><r>hupen<s n="vblex"/></r></p></e>
     <e><p><l>hoot<s n="vblex"/></l><r>johlen<s n="vblex"/></r></p></e>
     <e><p><l>hope<s n="vblex"/></l><r>hoffen<s n="vblex"/></r></p></e>
-    <e><p><l>hope<b/>for<s n="vblex"/></l><r>erhoffen<s n="vblex"/></r></p></e>
+    <e><p><l>hope<g><b/>for</g><s n="vblex"/></l><r>erhoffen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>host<s n="vblex"/></l><r>unterbringen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>house<s n="vblex"/></l><r>beherbergen<s n="vblex"/></r></p></e>
     <e><p><l>hover<s n="vblex"/></l><r>schweben<s n="vblex"/></r></p></e>
-    <e><p><l>how<b/>much<b/>are<s n="vblex"/></l><r>wie<b/>viel<b/>kosten<s n="vblex"/></r></p></e>
+    <e><p><l>how<g><b/>much<b/>are</g><s n="vblex"/></l><r>wie<b/>viel<b/>kosten<s n="vblex"/></r></p></e>
     <e><p><l>howl<s n="vblex"/></l><r>heulen<s n="vblex"/></r></p></e>
-    <e><p><l>huddle<b/>together<s n="vblex"/></l><r>zusammenrücken<s n="vblex"/></r></p></e>
+    <e><p><l>huddle<g><b/>together</g><s n="vblex"/></l><r>zusammenrücken<s n="vblex"/></r></p></e>
     <e><p><l>humanize<s n="vblex"/></l><r>vermenschlichen<s n="vblex"/></r></p></e>
     <e><p><l>humiliate<s n="vblex"/></l><r>erniedrigen<s n="vblex"/></r></p></e>
     <e><p><l>hump<s n="vblex"/></l><r>vögeln<s n="vblex"/></r></p></e>
@@ -45775,7 +45775,7 @@
     <e><p><l>join<s n="vblex"/></l><r>zusammenfügen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>join<s n="vblex"/></l><r>treten<g><b/>bei</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>join<s n="vblex"/></l><r>fügen<g><b/>zusammen</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>join<b/>the<b/>game<s n="vblex"/></l><r>mitspielen<s n="vblex"/></r></p></e>
+    <e><p><l>join<g><b/>the<b/>game</g><s n="vblex"/></l><r>mitspielen<s n="vblex"/></r></p></e>
     <e><p><l>joint<s n="vblex"/></l><r>ausfugen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>joint<s n="vblex"/></l><r>fugen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>joke<s n="vblex"/></l><r>scherzen<s n="vblex"/></r></p></e>
@@ -45803,10 +45803,10 @@
     <e r="RL"><p><l>keep<g><b/>it<b/>here</g><s n="vblex"/></l><r>behalten<g><b/>hier</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>keep<g><b/>on</g><s n="vblex"/></l><r>anbehalten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>keep<g><b/>on</g><s n="vblex"/></l><r>behalten<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>keep<b/>one's<b/>distance<s n="vblex"/></l><r>distanzieren<s n="vblex"/></r></p></e>
+    <e><p><l>keep<g><b/>one's<b/>distance</g><s n="vblex"/></l><r>distanzieren<s n="vblex"/></r></p></e>
     <e><p><l>keep<g><b/>out</g><s n="vblex"/></l><r>fernhalten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>keep<g><b/>out</g><s n="vblex"/></l><r>halten<g><b/>fern</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>keep<b/>secret<s n="vblex"/></l><r>verschweigen<s n="vblex"/></r></p></e>
+    <e><p><l>keep<g><b/>secret</g><s n="vblex"/></l><r>verschweigen<s n="vblex"/></r></p></e>
     <e><p><l>keep<g><b/>shut</g><s n="vblex"/></l><r>zuhalten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>keep<g><b/>shut</g><s n="vblex"/></l><r>halten<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>keep<g><b/>together</g><s n="vblex"/></l><r>zusammenhalten<s n="vblex"/><s n="sep"/></r></p></e>
@@ -45814,7 +45814,7 @@
     <e r="RL"><p><l>keep<g><b/>up</g><s n="vblex"/></l><r>halten<g><b/>mit</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>keep<g><b/>warm</g><s n="vblex"/></l><r>warmhalten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>keep<g><b/>warm</g><s n="vblex"/></l><r>halten<g><b/>warm</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>keep<b/>watch<s n="vblex"/></l><r>wachen<s n="vblex"/></r></p></e>
+    <e><p><l>keep<g><b/>watch</g><s n="vblex"/></l><r>wachen<s n="vblex"/></r></p></e>
     <e><p><l>keys<s n="vblex"/></l><r>schlüsseln<s n="vblex"/></r></p></e>
     <e><p><l>kick<s n="vblex"/></l><r>kicken<s n="vblex"/></r></p></e>
     <e><p><l>kick<s n="vblex"/></l><r>strampeln<s n="vblex"/></r></p></e>
@@ -45863,12 +45863,12 @@
     <e><p><l>launch<s n="vblex"/></l><r>ausstoßen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>launch<s n="vblex"/></l><r>stoßen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="LR"><p><l>lay<s n="vblex"/></l><r>legen<s n="vblex"/></r></p></e>
-    <e><p><l>lay<b/>down<s n="vblex"/></l><r>statuieren<s n="vblex"/></r></p></e>
+    <e><p><l>lay<g><b/>down</g><s n="vblex"/></l><r>statuieren<s n="vblex"/></r></p></e>
     <e><p><l>lay<g><b/>off</g><s n="vblex"/></l><r>freistellen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>lay<g><b/>off</g><s n="vblex"/></l><r>stellen<g><b/>frei</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>leach<s n="vblex"/></l><r>laugen<s n="vblex"/></r></p></e>
     <e><p><l>lead<s n="vblex"/></l><r>führen<s n="vblex"/></r></p></e>
-    <e><p><l>lead<b/>to<s n="vblex"/></l><r>zeitigen<s n="vblex"/></r></p></e>
+    <e><p><l>lead<g><b/>to</g><s n="vblex"/></l><r>zeitigen<s n="vblex"/></r></p></e>
     <e><p><l>leak<s n="vblex"/></l><r>auslaufen<s n="vblex"/></r></p></e>
     <e><p><l>lean<s n="vblex"/></l><r>lehnen<s n="vblex"/></r></p></e>
     <e><p><l>lean<s n="vblex"/></l><r>anlehnen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -45881,7 +45881,7 @@
     <e r="RL"><p><l>learn<g><b/>something<b/>from<b/>someone</g><s n="vblex"/></l><r>gucken<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>lease<s n="vblex"/></l><r>pachten<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>lease<s n="vblex"/></l><r>leasen<s n="vblex"/></r></p></e>
-    <e><p><l>lease<b/>out<s n="vblex"/></l><r>verpachten<s n="vblex"/></r></p></e>
+    <e><p><l>lease<g><b/>out</g><s n="vblex"/></l><r>verpachten<s n="vblex"/></r></p></e>
     <e><p><l>leave<s n="vblex"/></l><r>verlassen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>leave<s n="vblex"/></l><r>ausreisen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>leave<s n="vblex"/></l><r>belassen<s n="vblex"/></r></p></e>
@@ -45932,7 +45932,7 @@
     <e r="RL"><p><l>lie<g><b/>down</g><s n="vblex"/></l><r>legen<g><b/>hin</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>lie<g><b/>down</g><s n="vblex"/></l><r>niederlegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>lie<g><b/>down</g><s n="vblex"/></l><r>legen<g><b/>nieder</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>lie<b/>to<s n="vblex"/></l><r>belügen<s n="vblex"/></r></p></e>
+    <e><p><l>lie<g><b/>to</g><s n="vblex"/></l><r>belügen<s n="vblex"/></r></p></e>
     <e><p><l>lift<s n="vblex"/></l><r>anheben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>lift<s n="vblex"/></l><r>heben<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>lift<s n="vblex"/></l><r>abheben<s n="vblex"/><s n="sep"/></r></p></e>
@@ -45949,7 +45949,7 @@
     <e r="RL"><p><l>light<s n="vblex"/></l><r>hellen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>light<s n="vblex"/></l><r>zünden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>light<s n="vblex"/></l><r>zünden<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>light<b/>up<s n="vblex"/></l><r>bescheinen<s n="vblex"/></r></p></e>
+    <e><p><l>light<g><b/>up</g><s n="vblex"/></l><r>bescheinen<s n="vblex"/></r></p></e>
     <e><p><l>like<s n="vblex"/></l><r>mögen<s n="vbmod"/></r></p></e>
     <e r="RL"><p><l>like<s n="vblex"/></l><r>mögen<s n="vblex"/></r></p></e>
     <e><p><l>limit<s n="vblex"/></l><r>befristen<s n="vblex"/></r></p></e>
@@ -45961,7 +45961,7 @@
     <e r="LR"><p><l>line<s n="vblex"/></l><r>füttern<s n="vblex"/></r></p></e>
     <e><p><l>line<g><b/>up</g><s n="vblex"/></l><r>einreihen<s n="vblex"/></r></p></e>
     <e><p><l>link<s n="vblex"/></l><r>verbinden<s n="vblex"/></r></p></e>
-    <e><p><l>liquid<b/>manures<s n="vblex"/></l><r>jauchen<s n="vblex"/></r></p></e>
+    <e><p><l>liquid<g><b/>manures</g><s n="vblex"/></l><r>jauchen<s n="vblex"/></r></p></e>
     <e><p><l>liquidate<s n="vblex"/></l><r>liquidieren<s n="vblex"/></r></p></e>
     <e><p><l>lisp<s n="vblex"/></l><r>lispeln<s n="vblex"/></r></p></e>
     <e><p><l>list<s n="vblex"/></l><r>listen<s n="vblex"/></r></p></e>
@@ -46002,10 +46002,10 @@
     <e r="RL"><p><l>look<s n="vblex"/></l><r>schauen<g><b/>hin</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>look<s n="vblex"/></l><r>hinsehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>look<s n="vblex"/></l><r>sehen<g><b/>hin</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>look<b/>after<s n="vblex"/></l><r>sorgen<b/>für<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>look<b/>after<s n="vblex"/></l><r>versorgen<s n="vblex"/></r></p></e>
+    <e><p><l>look<g><b/>after</g><s n="vblex"/></l><r>sorgen<b/>für<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>look<g><b/>after</g><s n="vblex"/></l><r>versorgen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>after</g><s n="vblex"/></l><r>betreuen<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>look<b/>after<s n="vblex"/></l><r>hüten<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>look<g><b/>after</g><s n="vblex"/></l><r>hüten<s n="vblex"/></r></p></e>
     <e><p><l>look<g><b/>at</g><s n="vblex"/></l><r>ansehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>at</g><s n="vblex"/></l><r>besehen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>at</g><s n="vblex"/></l><r>betrachten<s n="vblex"/></r></p></e>
@@ -46035,8 +46035,8 @@
     <e r="RL"><p><l>look<g><b/>round</g><s n="vblex"/></l><r>umschauen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>round</g><s n="vblex"/></l><r>schauen<g><b/>um</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>round</g><s n="vblex"/></l><r>sehen<g><b/>um</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>look<b/>through<s n="vblex"/></l><r>sehen<b/>durch<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>look<b/>through<s n="vblex"/></l><r>durchblicken<s n="vblex"/></r></p></e>
+    <e><p><l>look<g><b/>through</g><s n="vblex"/></l><r>sehen<b/>durch<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>look<g><b/>through</g><s n="vblex"/></l><r>durchblicken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>through</g><s n="vblex"/></l><r>durchlesen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>through</g><s n="vblex"/></l><r>lesen<g><b/>durch</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>through</g><s n="vblex"/></l><r>durchsehen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -46097,8 +46097,8 @@
     <e r="RL"><p><l>make<g><b/>up</g><s n="vblex"/></l><r>machen<g><b/>wiedergut</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>make<g><b/>up<b/>for</g><s n="vblex"/></l><r>nachholen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>make<g><b/>up<b/>for</g><s n="vblex"/></l><r>holen<g><b/>nach</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>make<b/>up<b/>the<b/>balance<s n="vblex"/></l><r>bilanzieren<s n="vblex"/></r></p></e>
-    <e><p><l>make<b/>use<s n="vblex"/></l><r>nützen<s n="vblex"/></r></p></e>
+    <e><p><l>make<g><b/>up<b/>the<b/>balance</g><s n="vblex"/></l><r>bilanzieren<s n="vblex"/></r></p></e>
+    <e><p><l>make<g><b/>use</g><s n="vblex"/></l><r>nützen<s n="vblex"/></r></p></e>
     <e><p><l>maltreat<s n="vblex"/></l><r>traktieren<s n="vblex"/></r></p></e>
     <e><p><l>manacle<s n="vblex"/></l><r>Handfesseln<b/>anlegen<s n="vblex"/></r></p></e>
     <e><p><l>manage<s n="vblex"/></l><r>fertigbringen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -46122,7 +46122,7 @@
     <e><p><l>marginalize<s n="vblex"/></l><r>ausgrenzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>marginalize<s n="vblex"/></l><r>grenzen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>mark<s n="vblex"/></l><r>zensieren<s n="vblex"/></r></p></e>
-    <e><p><l>mark<b/>off<s n="vblex"/></l><r>kennzeichnen<s n="vblex"/></r></p></e>
+    <e><p><l>mark<g><b/>off</g><s n="vblex"/></l><r>kennzeichnen<s n="vblex"/></r></p></e>
     <e><p><l>mark<g><b/>up</g><s n="vblex"/></l><r>heraufsetzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>mark<g><b/>up</g><s n="vblex"/></l><r>setzen<g><b/>herauf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>marry<s n="vblex"/></l><r>heiraten<s n="vblex"/></r></p></e>
@@ -46178,7 +46178,7 @@
     <e><p><l>minimize<s n="vblex"/></l><r>minimieren<s n="vblex"/></r></p></e>
     <e><p><l>mint<s n="vblex"/></l><r>ausprägen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>mint<s n="vblex"/></l><r>prägen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>minutes<b/>pass<s n="vblex"/></l><r>verstreichen<s n="vblex"/></r></p></e>
+    <e><p><l>minutes<g><b/>pass</g><s n="vblex"/></l><r>verstreichen<s n="vblex"/></r></p></e>
     <e><p><l>mirror<s n="vblex"/></l><r>spiegeln<s n="vblex"/></r></p></e>
     <e><p><l>miscarry<s n="vblex"/></l><r>misslingen<s n="vblex"/></r></p></e>
     <e><p><l>mishandle<s n="vblex"/></l><r>misshandeln<s n="vblex"/></r></p></e>
@@ -46201,7 +46201,7 @@
     <e><p><l>mix<s n="vblex"/></l><r>vermischen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>mix<s n="vblex"/></l><r>anrühren<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>mix<s n="vblex"/></l><r>rühren<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>mix<b/>up<s n="vblex"/></l><r>vermengen<s n="vblex"/></r></p></e>
+    <e><p><l>mix<g><b/>up</g><s n="vblex"/></l><r>vermengen<s n="vblex"/></r></p></e>
     <e><p><l>moan<s n="vblex"/></l><r>herumnörgeln<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>moan<s n="vblex"/></l><r>nörgeln<g><b/>herum</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>mobilise<s n="vblex"/></l><r>mobilisieren<s n="vblex"/></r></p></e>
@@ -46231,7 +46231,7 @@
     <e r="RL"><p><l>move<s n="vblex"/></l><r>übersiedeln<s n="vblex"/></r></p></e>
     <e><p><l>move<g><b/>away</g><s n="vblex"/></l><r>wegziehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>move<g><b/>away</g><s n="vblex"/></l><r>ziehen<g><b/>weg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>move<b/>hand<b/>over<b/>hand<s n="vblex"/></l><r>hangeln<s n="vblex"/></r></p></e>
+    <e><p><l>move<g><b/>hand<b/>over<b/>hand</g><s n="vblex"/></l><r>hangeln<s n="vblex"/></r></p></e>
     <e><p><l>move<g><b/>in</g><s n="vblex"/></l><r>einziehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>move<g><b/>in</g><s n="vblex"/></l><r>ziehen<g><b/>ein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>move<g><b/>on</g><s n="vblex"/></l><r>fortbewegen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -46313,12 +46313,12 @@
     <e><p><l>obstruct<s n="vblex"/></l><r>verbauen<s n="vblex"/></r></p></e>
     <e><p><l>obtain<s n="vblex"/></l><r>erwirtschaften<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>obtain<s n="vblex"/></l><r>bekommen<s n="vblex"/></r></p></e>
-    <e><p><l>obtain<b/>by<b/>fraud<s n="vblex"/></l><r>erschleichen<s n="vblex"/></r></p></e>
+    <e><p><l>obtain<g><b/>by<b/>fraud</g><s n="vblex"/></l><r>erschleichen<s n="vblex"/></r></p></e>
     <e><p><l>obtrude<s n="vblex"/></l><r>aufdrängen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>obtrude<s n="vblex"/></l><r>drängen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>occupy<s n="vblex"/></l><r>belegen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>occupy<s n="vblex"/></l><r>besetzen<s n="vblex"/></r></p></e>
-    <e><p><l>occupy<b/>with<s n="vblex"/></l><r>befassen<s n="vblex"/></r></p></e>
+    <e><p><l>occupy<g><b/>with</g><s n="vblex"/></l><r>befassen<s n="vblex"/></r></p></e>
     <e><p><l>occur<s n="vblex"/></l><r>geschehen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>occur<s n="vblex"/></l><r>ereignen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>occur<s n="vblex"/></l><r>unterlaufen<s n="vblex"/></r></p></e>
@@ -46326,7 +46326,7 @@
     <e r="RL"><p><l>occur<s n="vblex"/></l><r>fallen<g><b/>ein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>occur<s n="vblex"/></l><r>vorfallen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>occur<s n="vblex"/></l><r>fallen<g><b/>vor</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>of<b/>the<b/>interior<s n="vblex"/></l><r>innern<s n="vblex"/></r></p></e>
+    <e><p><l>of<g><b/>the<b/>interior</g><s n="vblex"/></l><r>innern<s n="vblex"/></r></p></e>
     <e><p><l>offend<s n="vblex"/></l><r>beleidigen<s n="vblex"/></r></p></e>
     <e><p><l>offer<s n="vblex"/></l><r>anbieten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>offer<s n="vblex"/></l><r>bieten<s n="vblex"/></r></p></e>
@@ -46338,12 +46338,12 @@
     <e><p><l>omit<s n="vblex"/></l><r>weglassen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>omit<s n="vblex"/></l><r>lassen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>omit<s n="vblex"/></l><r>lassen<g><b/>weg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>on<b/>the<b/>left<s n="vblex"/></l><r>auf<b/>der<b/>linken<b/>Seite<s n="vblex"/></r></p></e>
-    <e><p><l>on<b/>the<b/>phone<s n="vblex"/></l><r>telefonieren<b/>mit<s n="vblex"/></r></p></e>
+    <e><p><l>on<g><b/>the<b/>left</g><s n="vblex"/></l><r>auf<b/>der<b/>linken<b/>Seite<s n="vblex"/></r></p></e>
+    <e><p><l>on<g><b/>the<b/>phone</g><s n="vblex"/></l><r>telefonieren<b/>mit<s n="vblex"/></r></p></e>
     <e><p><l>open<s n="vblex"/></l><r>öffnen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>open<s n="vblex"/></l><r>eröffnen<s n="vblex"/></r></p></e>
     <e><p><l>operate<s n="vblex"/></l><r>operieren<s n="vblex"/></r></p></e>
-    <e><p><l>operate<b/>under<b/>a<b/>certain<b/>name<s n="vblex"/></l><r>firmieren<s n="vblex"/></r></p></e>
+    <e><p><l>operate<g><b/>under<b/>a<b/>certain<b/>name</g><s n="vblex"/></l><r>firmieren<s n="vblex"/></r></p></e>
     <e><p><l>opine<s n="vblex"/></l><r>meinen<s n="vblex"/></r></p></e>
     <e><p><l>oppose<s n="vblex"/></l><r>opponieren<s n="vblex"/></r></p></e>
     <e><p><l>oppose<s n="vblex"/></l><r>widersetzen<s n="vblex"/></r></p></e>
@@ -46361,7 +46361,7 @@
     <e><p><l>organize<s n="vblex"/></l><r>organisieren<s n="vblex"/></r></p></e>
     <e><p><l>orientate<s n="vblex"/></l><r>orientieren<s n="vblex"/></r></p></e>
     <e><p><l>originate<s n="vblex"/></l><r>entstehen<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>ought<b/>to<s n="vblex"/></l><r>sollten<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>ought<g><b/>to</g><s n="vblex"/></l><r>sollten<s n="vblex"/></r></p></e>
     <e><p><l>outbid<s n="vblex"/></l><r>überbieten<s n="vblex"/></r></p></e>
     <e><p><l>outgrow<s n="vblex"/></l><r>hinauswachsen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>outgrow<s n="vblex"/></l><r>wachsen<g><b/>hinaus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -46447,10 +46447,10 @@
     <e r="RL"><p><l>pass<s n="vblex"/></l><r>vorbeikommen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>pass<s n="vblex"/></l><r>kommen<g><b/>vorbei</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>pass<g><b/>back</g><s n="vblex"/></l><r>geben<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e r="RL"><p><l>pass<b/>back<s n="vblex"/></l><r>zurückgeben<s n="vblex"/><s n="sep"/></r></p></e>
-    <e r="RL"><p><l>pass<b/>on<s n="vblex"/></l><r>weitersagen<s n="vblex"/><s n="sep"/></r></p></e>
+    <e r="RL"><p><l>pass<g><b/>back</g><s n="vblex"/></l><r>zurückgeben<s n="vblex"/><s n="sep"/></r></p></e>
+    <e r="RL"><p><l>pass<g><b/>on</g><s n="vblex"/></l><r>weitersagen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>pass<g><b/>on</g><s n="vblex"/></l><r>sagen<g><b/>weiter</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>pass<b/>the<b/>night<s n="vblex"/></l><r>nächtigen<s n="vblex"/></r></p></e>
+    <e><p><l>pass<g><b/>the<b/>night</g><s n="vblex"/></l><r>nächtigen<s n="vblex"/></r></p></e>
     <e><p><l>pass<g><b/>through</g><s n="vblex"/></l><r>durchfahren<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>pass<g><b/>through</g><s n="vblex"/></l><r>fahren<g><b/>durch</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>pasteurise<s n="vblex"/></l><r>pasteurisieren<s n="vblex"/></r></p></e>
@@ -46460,7 +46460,7 @@
     <e><p><l>patrol<s n="vblex"/></l><r>patrouillieren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>patrol<s n="vblex"/></l><r>überwachen<s n="vblex"/></r></p></e>
     <e><p><l>pause<s n="vblex"/></l><r>pausieren<s n="vblex"/></r></p></e>
-    <e><p><l>pause<b/>for<b/>breath<s n="vblex"/></l><r>verschnaufen<s n="vblex"/></r></p></e>
+    <e><p><l>pause<g><b/>for<b/>breath</g><s n="vblex"/></l><r>verschnaufen<s n="vblex"/></r></p></e>
     <e><p><l>pave<s n="vblex"/></l><r>pflastern<s n="vblex"/></r></p></e>
     <e><p><l>pay<s n="vblex"/></l><r>bezahlen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>pay<s n="vblex"/></l><r>entrichten<s n="vblex"/></r></p></e>
@@ -46470,10 +46470,10 @@
     <e r="RL"><p><l>pay<g><b/>attention</g><s n="vblex"/></l><r>passen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>pay<g><b/>back<b/>in<b/>the<b/>same<b/>coin</g><s n="vblex"/></l><r>zahlen<g><b/>zurück<b/>mit<b/>gleicher<b/>Münze</g><s n="vblex"/></r></p></e>
     <e><p><l>pay<g><b/>cash</g><s n="vblex"/></l><r>bar<b/>bezahlen<s n="vblex"/></r></p></e>
-    <e><p><l>pay<b/>court<b/>to<s n="vblex"/></l><r>hofieren<s n="vblex"/></r></p></e>
+    <e><p><l>pay<g><b/>court<b/>to</g><s n="vblex"/></l><r>hofieren<s n="vblex"/></r></p></e>
     <e><p><l>pay<g><b/>for</g><s n="vblex"/></l><r>ausbaden<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>pay<g><b/>for</g><s n="vblex"/></l><r>baden<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>pay<b/>interest<b/>on<s n="vblex"/></l><r>verzinsen<s n="vblex"/></r></p></e>
+    <e><p><l>pay<g><b/>interest<b/>on</g><s n="vblex"/></l><r>verzinsen<s n="vblex"/></r></p></e>
     <e><p><l>pay<g><b/>on<b/>account</g><s n="vblex"/></l><r>anzahlen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>pay<g><b/>on<b/>account</g><s n="vblex"/></l><r>zahlen<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>peck<s n="vblex"/></l><r>hacken<s n="vblex"/></r></p></e>
@@ -46534,8 +46534,8 @@
     <e><p><l>pin<s n="vblex"/></l><r>pinnen<s n="vblex"/></r></p></e>
     <e><p><l>pin<s n="vblex"/></l><r>anheften<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>pin<s n="vblex"/></l><r>heften<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e r="LR"><p><l>pin<b/>on<s n="vblex"/></l><r>anstecken<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>pin<b/>up<s n="vblex"/></l><r>anstecken<s n="vblex"/><s n="sep"/></r></p></e>
+    <e r="LR"><p><l>pin<g><b/>on</g><s n="vblex"/></l><r>anstecken<s n="vblex"/><s n="sep"/></r></p></e>
+    <e><p><l>pin<g><b/>up</g><s n="vblex"/></l><r>anstecken<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>pinch<s n="vblex"/></l><r>beklemmen<s n="vblex"/></r></p></e>
     <e><p><l>pinch<s n="vblex"/></l><r>zwicken<s n="vblex"/></r></p></e>
     <e><p><l>pinch<g><b/>off</g><s n="vblex"/></l><r>abklemmen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -46608,7 +46608,7 @@
     <e r="RL"><p><l>post<s n="vblex"/></l><r>zusenden<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>post<s n="vblex"/></l><r>senden<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>postpone<s n="vblex"/></l><r>verschieben<s n="vblex"/></r></p></e>
-    <e><p><l>potter<b/>about<s n="vblex"/></l><r>werkeln<s n="vblex"/></r></p></e>
+    <e><p><l>potter<g><b/>about</g><s n="vblex"/></l><r>werkeln<s n="vblex"/></r></p></e>
     <e><p><l>pour<s n="vblex"/></l><r>einschenken<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>pour<s n="vblex"/></l><r>fließen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>pour<s n="vblex"/></l><r>schütten<s n="vblex"/></r></p></e>
@@ -46699,7 +46699,7 @@
     <e><p><l>prick<s n="vblex"/></l><r>prickeln<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>prick<s n="vblex"/></l><r>stechen<s n="vblex"/></r></p></e>
     <e><p><l>print<s n="vblex"/></l><r>drucken<s n="vblex"/></r></p></e>
-    <e><p><l>print<b/>out<s n="vblex"/></l><r>ausdrucken<s n="vblex"/></r></p></e>
+    <e><p><l>print<g><b/>out</g><s n="vblex"/></l><r>ausdrucken<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>prioritise<s n="vblex"/></l><r>priorisieren<s n="vblex"/></r></p></e>
     <e><p><l>privatize<s n="vblex"/></l><r>privatisieren<s n="vblex"/></r></p></e>
     <e><p><l>privilege<s n="vblex"/></l><r>privilegieren<s n="vblex"/></r></p></e>
@@ -46809,14 +46809,14 @@
     <e><p><l>put<g><b/>before</g><s n="vblex"/></l><r>vortragen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>before</g><s n="vblex"/></l><r>legen<g><b/>vor</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>before</g><s n="vblex"/></l><r>tragen<g><b/>vor</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>put<b/>crosswise<s n="vblex"/></l><r>schränken<s n="vblex"/></r></p></e>
-    <e><p><l>put<b/>in<s n="vblex"/></l><r>gesteckt<s n="vblex"/></r></p></e>
+    <e><p><l>put<g><b/>crosswise</g><s n="vblex"/></l><r>schränken<s n="vblex"/></r></p></e>
+    <e><p><l>put<g><b/>in</g><s n="vblex"/></l><r>gesteckt<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>in</g><s n="vblex"/></l><r>einschieben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>in</g><s n="vblex"/></l><r>schieben<g><b/>ein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>put<g><b/>inside</g><s n="vblex"/></l><r>hineinlegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>inside</g><s n="vblex"/></l><r>legen<g><b/>hinein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>put<b/>off<s n="vblex"/></l><r>verschoben<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>put<b/>off<s n="vblex"/></l><r>vertrösten<s n="vblex"/></r></p></e>
+    <e><p><l>put<g><b/>off</g><s n="vblex"/></l><r>verschoben<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>put<g><b/>off</g><s n="vblex"/></l><r>vertrösten<s n="vblex"/></r></p></e>
     <e><p><l>put<g><b/>on</g><s n="vblex"/></l><r>aufsetzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>on</g><s n="vblex"/></l><r>ansetzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>on</g><s n="vblex"/></l><r>setzen<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -46824,7 +46824,7 @@
     <e r="RL"><p><l>put<g><b/>on</g><s n="vblex"/></l><r>setzen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>put<g><b/>out</g><s n="vblex"/></l><r>rauslegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>out</g><s n="vblex"/></l><r>legen<g><b/>raus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>put<b/>over<s n="vblex"/></l><r>stülpen<s n="vblex"/></r></p></e>
+    <e><p><l>put<g><b/>over</g><s n="vblex"/></l><r>stülpen<s n="vblex"/></r></p></e>
     <e><p><l>put<g><b/>through</g><s n="vblex"/></l><r>durchstellen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>through</g><s n="vblex"/></l><r>verbinden<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>through</g><s n="vblex"/></l><r>vermittelt<s n="vblex"/></r></p></e>
@@ -46833,8 +46833,8 @@
     <e r="RL"><p><l>put<g><b/>to</g><s n="vblex"/></l><r>setzen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>put<g><b/>together</g><s n="vblex"/></l><r>zusammenstecken<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>together</g><s n="vblex"/></l><r>stecken<g><b/>zusammen</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>put<b/>too<b/>much<b/>salt<b/>in<s n="vblex"/></l><r>versalzen<s n="vblex"/></r></p></e>
-    <e><p><l>put<b/>up<s n="vblex"/></l><r>errichten<s n="vblex"/></r></p></e>
+    <e><p><l>put<g><b/>too<b/>much<b/>salt<b/>in</g><s n="vblex"/></l><r>versalzen<s n="vblex"/></r></p></e>
+    <e><p><l>put<g><b/>up</g><s n="vblex"/></l><r>errichten<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>up</g><s n="vblex"/></l><r>auflegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>put<g><b/>up</g><s n="vblex"/></l><r>legen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>put<g><b/>up<b/>with</g><s n="vblex"/></l><r>hinnehmen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -46957,7 +46957,7 @@
     <e><p><l>recap<s n="vblex"/></l><r>rekapitulieren<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>recapture<s n="vblex"/></l><r>zurückgewinnen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>receive<s n="vblex"/></l><r>empfangen<s n="vblex"/></r></p></e>
-    <e><p><l>receive<b/>stolen<b/>goods<s n="vblex"/></l><r>hehlen<s n="vblex"/></r></p></e>
+    <e><p><l>receive<g><b/>stolen<b/>goods</g><s n="vblex"/></l><r>hehlen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>recess<s n="vblex"/></l><r>einbauen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>recharge<s n="vblex"/></l><r>wiederaufladen<s n="vblex"/></r></p></e>
     <e><p><l>reciprocate<s n="vblex"/></l><r>revanchieren<s n="vblex"/></r></p></e>
@@ -46994,7 +46994,7 @@
     <e r="RL"><p><l>record<s n="vblex"/></l><r>registrieren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>record<s n="vblex"/></l><r>verzeichnen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>record<s n="vblex"/></l><r>zeichnen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>record<b/>on<s n="vblex"/></l><r>bespielen<s n="vblex"/></r></p></e>
+    <e><p><l>record<g><b/>on</g><s n="vblex"/></l><r>bespielen<s n="vblex"/></r></p></e>
     <e><p><l>recoup<s n="vblex"/></l><r>entschädigen<s n="vblex"/></r></p></e>
     <e><p><l>recover<s n="vblex"/></l><r>erholen<s n="vblex"/></r></p></e>
     <e><p><l>recover<s n="vblex"/></l><r>genesen<s n="vblex"/></r></p></e>
@@ -47040,7 +47040,7 @@
     <e r="RL"><p><l>refuse<s n="vblex"/></l><r>ablehnen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>refuse<s n="vblex"/></l><r>abschlagen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>refuse<s n="vblex"/></l><r>schlagen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>refuse<b/>tolerate<s n="vblex"/></l><r>verbitten<s n="vblex"/></r></p></e>
+    <e><p><l>refuse<g><b/>tolerate</g><s n="vblex"/></l><r>verbitten<s n="vblex"/></r></p></e>
     <e><p><l>refute<s n="vblex"/></l><r>widerlegen<s n="vblex"/></r></p></e>
     <e><p><l>regain<s n="vblex"/></l><r>zurückgewinnen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>regain<s n="vblex"/></l><r>gewinnen<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -47059,7 +47059,7 @@
     <e><p><l>reinstate<s n="vblex"/></l><r>wiedereinsetzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>reinstate<s n="vblex"/></l><r>einsetzen<g><b/>wieder</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>reintegrate<s n="vblex"/></l><r>reintegrieren<s n="vblex"/></r></p></e>
-    <e><p><l>reintegrate<b/>inthe<b/>society<s n="vblex"/></l><r>resozialisieren<s n="vblex"/></r></p></e>
+    <e><p><l>reintegrate<g><b/>inthe<b/>society</g><s n="vblex"/></l><r>resozialisieren<s n="vblex"/></r></p></e>
     <e><p><l>reintroduce<s n="vblex"/></l><r>wiedereinführen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>reintroduce<s n="vblex"/></l><r>einführen<g><b/>wieder</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="LR"><p><l>reiterate<s n="vblex"/></l><r>wiederholen<s n="vblex"/></r></p></e>
@@ -47079,7 +47079,7 @@
     <e><p><l>remain<s n="vblex"/></l><r>verharren<s n="vblex"/></r></p></e>
     <e><p><l>remain<s n="vblex"/></l><r>übrigbleiben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>remain<s n="vblex"/></l><r>bleiben<g><b/>übrig</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>remain<b/>undone<s n="vblex"/></l><r>unterbleiben<s n="vblex"/></r></p></e>
+    <e><p><l>remain<g><b/>undone</g><s n="vblex"/></l><r>unterbleiben<s n="vblex"/></r></p></e>
     <e><p><l>remark<s n="vblex"/></l><r>bemerken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>remark<s n="vblex"/></l><r>äußern<s n="vblex"/></r></p></e>
     <e><p><l>remedy<s n="vblex"/></l><r>bessern<s n="vblex"/></r></p></e>
@@ -47263,7 +47263,7 @@
     <e r="RL"><p><l>rise<s n="vblex"/></l><r>steigen<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>rise<s n="vblex"/></l><r>aufsteigen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>rise<s n="vblex"/></l><r>steigen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>rise<b/>up<b/>from<s n="vblex"/></l><r>entsteigen<s n="vblex"/></r></p></e>
+    <e><p><l>rise<g><b/>up<b/>from</g><s n="vblex"/></l><r>entsteigen<s n="vblex"/></r></p></e>
     <e><p><l>risk<s n="vblex"/></l><r>riskieren<s n="vblex"/></r></p></e>
     <e><p><l>rival<s n="vblex"/></l><r>rivalisieren<s n="vblex"/></r></p></e>
     <e><p><l>roar<s n="vblex"/></l><r>brüllen<s n="vblex"/></r></p></e>
@@ -47287,7 +47287,7 @@
     <e r="RL"><p><l>roll<g><b/>past</g><s n="vblex"/></l><r>rollen<g><b/>vorbei</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>roll<g><b/>up</g><s n="vblex"/></l><r>aufrollen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>romanticize<s n="vblex"/></l><r>schwärmen<s n="vblex"/></r></p></e>
-    <e><p><l>romp<b/>about<s n="vblex"/></l><r>tummeln<s n="vblex"/></r></p></e>
+    <e><p><l>romp<g><b/>about</g><s n="vblex"/></l><r>tummeln<s n="vblex"/></r></p></e>
     <e><p><l>root<s n="vblex"/></l><r>wurzeln<s n="vblex"/></r></p></e>
     <e><p><l>rooting<s n="vblex"/></l><r>verwurzeln<s n="vblex"/></r></p></e>
     <e><p><l>ropes<s n="vblex"/></l><r>seilen<s n="vblex"/></r></p></e>
@@ -47312,7 +47312,7 @@
     <e><p><l>rumble<s n="vblex"/></l><r>rumoren<s n="vblex"/></r></p></e>
     <e><p><l>ruminate<s n="vblex"/></l><r>wiederkäuen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>ruminate<s n="vblex"/></l><r>käuen<g><b/>wieder</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>rummage<b/>about<s n="vblex"/></l><r>kramen<s n="vblex"/></r></p></e>
+    <e><p><l>rummage<g><b/>about</g><s n="vblex"/></l><r>kramen<s n="vblex"/></r></p></e>
     <e><p><l>run<s n="vblex"/></l><r>rennen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>run<s n="vblex"/></l><r>betreiben<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>run<s n="vblex"/></l><r>kandidieren<s n="vblex"/></r></p></e>
@@ -47322,12 +47322,12 @@
     <e r="RL"><p><l>run<g><b/>after</g><s n="vblex"/></l><r>laufen<g><b/>hinterher</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>run<g><b/>around</g><s n="vblex"/></l><r>herumrennen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>around</g><s n="vblex"/></l><r>rennen<g><b/>herum</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>run<b/>away<s n="vblex"/></l><r>entlaufen<s n="vblex"/></r></p></e>
+    <e><p><l>run<g><b/>away</g><s n="vblex"/></l><r>entlaufen<s n="vblex"/></r></p></e>
     <e><p><l>run<g><b/>away</g><s n="vblex"/></l><r>weglaufen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>run<g><b/>down</g><s n="vblex"/></l><r>ablaufen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>down</g><s n="vblex"/></l><r>laufen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>down</g><s n="vblex"/></l><r>rennen<g><b/>hinunter</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>run<b/>dry<s n="vblex"/></l><r>versiegen<s n="vblex"/></r></p></e>
+    <e><p><l>run<g><b/>dry</g><s n="vblex"/></l><r>versiegen<s n="vblex"/></r></p></e>
     <e><p><l>run<g><b/>off</g><s n="vblex"/></l><r>davongelaufen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>off</g><s n="vblex"/></l><r>laufen<g><b/>weg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>run<g><b/>out</g><s n="vblex"/></l><r>hinauslaufen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -47337,14 +47337,14 @@
     <e><p><l>run<g><b/>over</g><s n="vblex"/></l><r>überlaufen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>over</g><s n="vblex"/></l><r>überfahren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>over</g><s n="vblex"/></l><r>laufen<g><b/>über</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>run<b/>short<s n="vblex"/></l><r>verknappen<s n="vblex"/></r></p></e>
-    <e><p><l>run<b/>through<s n="vblex"/></l><r>überfliegen<s n="vblex"/></r></p></e>
+    <e><p><l>run<g><b/>short</g><s n="vblex"/></l><r>verknappen<s n="vblex"/></r></p></e>
+    <e><p><l>run<g><b/>through</g><s n="vblex"/></l><r>überfliegen<s n="vblex"/></r></p></e>
     <e><p><l>run<g><b/>up</g><s n="vblex"/></l><r>hochfahren<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>up</g><s n="vblex"/></l><r>fahren<g><b/>hoch</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>up</g><s n="vblex"/></l><r>zulaufen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>up</g><s n="vblex"/></l><r>laufen<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>run<g><b/>up</g><s n="vblex"/></l><r>bringen<g><b/>zusammen</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>run<b/>wild<s n="vblex"/></l><r>verwildern<s n="vblex"/></r></p></e>
+    <e><p><l>run<g><b/>wild</g><s n="vblex"/></l><r>verwildern<s n="vblex"/></r></p></e>
     <e><p><l>rush<s n="vblex"/></l><r>eilen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>rush<s n="vblex"/></l><r>sausen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>rush<s n="vblex"/></l><r>stürmen<s n="vblex"/></r></p></e>
@@ -47359,7 +47359,7 @@
     <e><p><l>salt<s n="vblex"/></l><r>salzen<s n="vblex"/></r></p></e>
     <e><p><l>sample<s n="vblex"/></l><r>sampeln<s n="vblex"/></r></p></e>
     <e><p><l>sanitize<s n="vblex"/></l><r>keimfrei<b/>machen<s n="vblex"/></r></p></e>
-    <e><p><l>sap<b/>ones<b/>energy<s n="vblex"/></l><r>zehren<s n="vblex"/></r></p></e>
+    <e><p><l>sap<g><b/>ones<b/>energy</g><s n="vblex"/></l><r>zehren<s n="vblex"/></r></p></e>
     <e><p><l>satiate<s n="vblex"/></l><r>befriedigen<s n="vblex"/></r></p></e>
     <e><p><l>satirise<s n="vblex"/></l><r>parodieren<s n="vblex"/></r></p></e>
     <e><p><l>satisfy<s n="vblex"/></l><r>befriedigen<s n="vblex"/></r></p></e>
@@ -47374,8 +47374,8 @@
     <e><p><l>say<s n="vblex"/></l><r>sagen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>say<s n="vblex"/></l><r>besagen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>say<s n="vblex"/></l><r>lauten<s n="vblex"/></r></p></e>
-    <e><p><l>say<b/>cheers<s n="vblex"/></l><r>prosten<s n="vblex"/></r></p></e>
-    <e><p><l>say<b/>good<b/>bye<s n="vblex"/></l><r>verabschieden<s n="vblex"/></r></p></e>
+    <e><p><l>say<g><b/>cheers</g><s n="vblex"/></l><r>prosten<s n="vblex"/></r></p></e>
+    <e><p><l>say<g><b/>good<b/>bye</g><s n="vblex"/></l><r>verabschieden<s n="vblex"/></r></p></e>
     <e><p><l>say<g><b/>to</g><s n="vblex"/></l><r>vorsagen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>say<g><b/>to</g><s n="vblex"/></l><r>sagen<g><b/>vor</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>scald<s n="vblex"/></l><r>abkochen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -47449,7 +47449,7 @@
     <e r="RL"><p><l>see<s n="vblex"/></l><r>suchen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>see<g><b/>through</g><s n="vblex"/></l><r>hindurchsehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>see<g><b/>through</g><s n="vblex"/></l><r>sehen<g><b/>hindurch</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>see<b/>to<s n="vblex"/></l><r>umsorgen<s n="vblex"/></r></p></e>
+    <e><p><l>see<g><b/>to</g><s n="vblex"/></l><r>umsorgen<s n="vblex"/></r></p></e>
     <e><p><l>seek<s n="vblex"/></l><r>streben<s n="vblex"/></r></p></e>
     <e><p><l>seek<s n="vblex"/></l><r>trachten<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>seek<s n="vblex"/></l><r>suchen<s n="vblex"/></r></p></e>
@@ -47469,7 +47469,7 @@
     <e r="RL"><p><l>send<s n="vblex"/></l><r>schicken<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>send<g><b/>back</g><s n="vblex"/></l><r>zurücksenden<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>send<g><b/>back</g><s n="vblex"/></l><r>senden<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>send<b/>by<b/>fax<s n="vblex"/></l><r>faxen<s n="vblex"/></r></p></e>
+    <e><p><l>send<g><b/>by<b/>fax</g><s n="vblex"/></l><r>faxen<s n="vblex"/></r></p></e>
     <e><p><l>send<g><b/>forward</g><s n="vblex"/></l><r>nachsenden<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>send<g><b/>forward</g><s n="vblex"/></l><r>senden<g><b/>nach</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>send<g><b/>in</g><s n="vblex"/></l><r>einschicken<s n="vblex"/><s n="sep"/></r></p></e>
@@ -47493,10 +47493,10 @@
     <e r="RL"><p><l>serve<s n="vblex"/></l><r>kredenzen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>serve<s n="vblex"/></l><r>auftragen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>serve<s n="vblex"/></l><r>tragen<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>serve<b/>a<b/>sentence<s n="vblex"/></l><r>verbüßen<s n="vblex"/></r></p></e>
+    <e><p><l>serve<g><b/>a<b/>sentence</g><s n="vblex"/></l><r>verbüßen<s n="vblex"/></r></p></e>
     <e><p><l>set<s n="vblex"/></l><r>setzen<s n="vblex"/></r></p></e>
     <e><p><l>set<g><b/>about</g><s n="vblex"/></l><r>daranmachen<s n="vblex"/></r></p></e>
-    <e><p><l>set<b/>music<s n="vblex"/></l><r>vertonen<s n="vblex"/></r></p></e>
+    <e><p><l>set<g><b/>music</g><s n="vblex"/></l><r>vertonen<s n="vblex"/></r></p></e>
     <e><p><l>set<g><b/>off</g><s n="vblex"/></l><r>losgehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>set<g><b/>off</g><s n="vblex"/></l><r>gehen<g><b/>los</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>set<g><b/>out</g><s n="vblex"/></l><r>aufmachen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -47614,7 +47614,7 @@
     <e><p><l>sit<s n="vblex"/></l><r>sitzen<s n="vblex"/></r></p></e>
     <e><p><l>sit<g><b/>down</g><s n="vblex"/></l><r>hinsetzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>sit<g><b/>down</g><s n="vblex"/></l><r>setzen<g><b/>hin</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>sit<b/>pretty<s n="vblex"/></l><r>schönmachen<s n="vblex"/></r></p></e>
+    <e><p><l>sit<g><b/>pretty</g><s n="vblex"/></l><r>schönmachen<s n="vblex"/></r></p></e>
     <e><p><l>sit<g><b/>up</g><s n="vblex"/></l><r>aufrichten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>sit<g><b/>up</g><s n="vblex"/></l><r>aufbleiben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>sit<g><b/>up</g><s n="vblex"/></l><r>bleiben<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -47645,7 +47645,7 @@
     <e><p><l>slay<s n="vblex"/></l><r>erschlagen<s n="vblex"/></r></p></e>
     <e><p><l>sled<s n="vblex"/></l><r>schlittern<s n="vblex"/></r></p></e>
     <e><p><l>sleep<s n="vblex"/></l><r>schlafen<s n="vblex"/></r></p></e>
-    <e><p><l>sleep<b/>on<s n="vblex"/></l><r>überschlafen<s n="vblex"/></r></p></e>
+    <e><p><l>sleep<g><b/>on</g><s n="vblex"/></l><r>überschlafen<s n="vblex"/></r></p></e>
     <e><p><l>sleepers<s n="vblex"/></l><r>schläfern<s n="vblex"/></r></p></e>
     <e><p><l>slice<s n="vblex"/></l><r>hobeln<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>slice<s n="vblex"/></l><r>schnetzeln<s n="vblex"/></r></p></e>
@@ -47659,8 +47659,8 @@
     <e r="RL"><p><l>slip<s n="vblex"/></l><r>gleiten<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>slip<s n="vblex"/></l><r>ausrutschen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>slip<s n="vblex"/></l><r>rutschen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>slip<b/>over<s n="vblex"/></l><r>überstreifen<s n="vblex"/></r></p></e>
-    <e><p><l>slips<b/>of<b/>paper<s n="vblex"/></l><r>zetteln<s n="vblex"/></r></p></e>
+    <e><p><l>slip<g><b/>over</g><s n="vblex"/></l><r>überstreifen<s n="vblex"/></r></p></e>
+    <e><p><l>slips<g><b/>of<b/>paper</g><s n="vblex"/></l><r>zetteln<s n="vblex"/></r></p></e>
     <e><p><l>slit<s n="vblex"/></l><r>schlitzen<s n="vblex"/></r></p></e>
     <e><p><l>slither<s n="vblex"/></l><r>schlittern<s n="vblex"/></r></p></e>
     <e><p><l>slobber<s n="vblex"/></l><r>geifern<s n="vblex"/></r></p></e>
@@ -47685,7 +47685,7 @@
     <e><p><l>smite<s n="vblex"/></l><r>befallen<s n="vblex"/></r></p></e>
     <e><p><l>smoke<s n="vblex"/></l><r>rauchen<s n="vblex"/></r></p></e>
     <e><p><l>smolder<s n="vblex"/></l><r>schwelen<s n="vblex"/></r></p></e>
-    <e><p><l>smooth<b/>out<s n="vblex"/></l><r>glätten<s n="vblex"/></r></p></e>
+    <e><p><l>smooth<g><b/>out</g><s n="vblex"/></l><r>glätten<s n="vblex"/></r></p></e>
     <e><p><l>smother<s n="vblex"/></l><r>ersticken<s n="vblex"/></r></p></e>
     <e><p><l>smother<g><b/>with<b/>kisses</g><s n="vblex"/></l><r>abküssen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>smother<g><b/>with<b/>kisses</g><s n="vblex"/></l><r>küssen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -47759,7 +47759,7 @@
     <e><p><l>splash<s n="vblex"/></l><r>bespritzen<s n="vblex"/></r></p></e>
     <e><p><l>splint<s n="vblex"/></l><r>schienen<s n="vblex"/></r></p></e>
     <e><p><l>split<s n="vblex"/></l><r>teilen<s n="vblex"/></r></p></e>
-    <e><p><l>split<b/>off<s n="vblex"/></l><r>abspalten<s n="vblex"/><s n="sep"/></r></p></e>
+    <e><p><l>split<g><b/>off</g><s n="vblex"/></l><r>abspalten<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>split<g><b/>up</g><s n="vblex"/></l><r>aufspalten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>split<g><b/>up</g><s n="vblex"/></l><r>spalten<g><b/>auf</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>spoil<s n="vblex"/></l><r>plündern<s n="vblex"/></r></p></e>
@@ -47779,7 +47779,7 @@
     <e r="RL"><p><l>spread<s n="vblex"/></l><r>kolportieren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>spread<s n="vblex"/></l><r>ausbreiten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>spread<s n="vblex"/></l><r>breiten<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>spread<b/>over<s n="vblex"/></l><r>bestreichen<s n="vblex"/></r></p></e>
+    <e><p><l>spread<g><b/>over</g><s n="vblex"/></l><r>bestreichen<s n="vblex"/></r></p></e>
     <e><p><l>spring<s n="vblex"/></l><r>federn<s n="vblex"/></r></p></e>
     <e><p><l>spring<s n="vblex"/></l><r>schnellen<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>spring<s n="vblex"/></l><r>springen<s n="vblex"/></r></p></e>
@@ -47787,9 +47787,9 @@
     <e><p><l>sprint<s n="vblex"/></l><r>sprinten<s n="vblex"/></r></p></e>
     <e><p><l>spritz<s n="vblex"/></l><r>spritzen<s n="vblex"/></r></p></e>
     <e><p><l>sprout<s n="vblex"/></l><r>sprießen<s n="vblex"/></r></p></e>
-    <e><p><l>sprout<b/>from<s n="vblex"/></l><r>entsprießen<s n="vblex"/></r></p></e>
+    <e><p><l>sprout<g><b/>from</g><s n="vblex"/></l><r>entsprießen<s n="vblex"/></r></p></e>
     <e><p><l>spur<s n="vblex"/></l><r>spornen<s n="vblex"/></r></p></e>
-    <e><p><l>spur<b/>on<s n="vblex"/></l><r>beflügeln<s n="vblex"/></r></p></e>
+    <e><p><l>spur<g><b/>on</g><s n="vblex"/></l><r>beflügeln<s n="vblex"/></r></p></e>
     <e><p><l>spurn<s n="vblex"/></l><r>verschmähen<s n="vblex"/></r></p></e>
     <e><p><l>spy<s n="vblex"/></l><r>erspähen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>spy<s n="vblex"/></l><r>spionieren<s n="vblex"/></r></p></e>
@@ -47827,7 +47827,7 @@
     <e><p><l>stand<g><b/>back</g><s n="vblex"/></l><r>zurückbleiben<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>stand<g><b/>back</g><s n="vblex"/></l><r>bleiben<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>stand<g><b/>in<b/>front<b/>of</g><s n="vblex"/></l><r>stehen<g><b/>vor</g><s n="vblex"/></r></p></e>
-    <e><p><l>stand<b/>the<b/>test<s n="vblex"/></l><r>bewähren<s n="vblex"/></r></p></e>
+    <e><p><l>stand<g><b/>the<b/>test</g><s n="vblex"/></l><r>bewähren<s n="vblex"/></r></p></e>
     <e><p><l>stand<g><b/>there</g><s n="vblex"/></l><r>dastehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>stand<g><b/>there</g><s n="vblex"/></l><r>stehen<g><b/>da</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>star<s n="vblex"/></l><r>spielen<b/>eine<b/>Hauptrolle<s n="vblex"/></r></p></e>
@@ -48010,7 +48010,7 @@
     <e r="RL"><p><l>suggest<s n="vblex"/></l><r>geben<g><b/>ein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>suit<s n="vblex"/></l><r>passen<s n="vblex"/></r></p></e>
     <e><p><l>sully<s n="vblex"/></l><r>beflecken<s n="vblex"/></r></p></e>
-    <e><p><l>sum<b/>up<s n="vblex"/></l><r>resümieren<s n="vblex"/></r></p></e>
+    <e><p><l>sum<g><b/>up</g><s n="vblex"/></l><r>resümieren<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>summarise<s n="vblex"/></l><r>zusammenfassen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>summarize<s n="vblex"/></l><r>zusammenfassen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>summarize<s n="vblex"/></l><r>fassen<g><b/>zusammen</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -48054,7 +48054,7 @@
     <e><p><l>sway<s n="vblex"/></l><r>taumeln<s n="vblex"/></r></p></e>
     <e><p><l>swear<s n="vblex"/></l><r>schwören<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>swear<s n="vblex"/></l><r>pöbeln<s n="vblex"/></r></p></e>
-    <e><p><l>swear<b/>in<s n="vblex"/></l><r>vereidigen<s n="vblex"/></r></p></e>
+    <e><p><l>swear<g><b/>in</g><s n="vblex"/></l><r>vereidigen<s n="vblex"/></r></p></e>
     <e><p><l>sweat<s n="vblex"/></l><r>schwitzen<s n="vblex"/></r></p></e>
     <e><p><l>sweep<s n="vblex"/></l><r>fegen<s n="vblex"/></r></p></e>
     <e><p><l>sweeten<s n="vblex"/></l><r>versüßen<s n="vblex"/></r></p></e>
@@ -48101,7 +48101,7 @@
     <e r="RL"><p><l>take<s n="vblex"/></l><r>bringen<g><b/>hin</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>take<s n="vblex"/></l><r>mitnehmen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<s n="vblex"/></l><r>nehmen<g><b/>mit</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e r="LR"><p><l>take<b/>a<b/>picture<s n="vblex"/></l><r>fotografieren<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>take<g><b/>a<b/>picture</g><s n="vblex"/></l><r>fotografieren<s n="vblex"/></r></p></e>
     <e><p><l>take<g><b/>advantage<b/>of</g><s n="vblex"/></l><r>ausnutzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>advantage<b/>of</g><s n="vblex"/></l><r>nutzen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>take<g><b/>away</g><s n="vblex"/></l><r>abräumen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -48119,7 +48119,7 @@
     <e r="LR"><p><l>take<g><b/>for<b/>granted</g><s n="vblex"/></l><r>voraussetzen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>take<g><b/>in</g><s n="vblex"/></l><r>hineinbringen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>in</g><s n="vblex"/></l><r>bringen<g><b/>hinein</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>take<b/>incustody<s n="vblex"/></l><r>inhaftieren<s n="vblex"/></r></p></e>
+    <e><p><l>take<g><b/>into<b/>custody</g><s n="vblex"/></l><r>inhaftieren<s n="vblex"/></r></p></e>
     <e><p><l>take<g><b/>off</g><s n="vblex"/></l><r>ausziehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>off</g><s n="vblex"/></l><r>ablegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>off</g><s n="vblex"/></l><r>legen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -48129,7 +48129,7 @@
     <e r="RL"><p><l>take<g><b/>off</g><s n="vblex"/></l><r>wegnehmen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>off</g><s n="vblex"/></l><r>nehmen<g><b/>weg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>take<g><b/>out</g><s n="vblex"/></l><r>ausführen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e r="RL"><p><l>take<b/>out<s n="vblex"/></l><r>hinausnehmen<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>take<g><b/>out</g><s n="vblex"/></l><r>hinausnehmen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>out</g><s n="vblex"/></l><r>ausfahren<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>out</g><s n="vblex"/></l><r>bringen<g><b/>heraus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>out</g><s n="vblex"/></l><r>führen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -48140,11 +48140,11 @@
     <e r="RL"><p><l>take<g><b/>part</g><s n="vblex"/></l><r>nehmen<g><b/>teil</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>take<g><b/>place</g><s n="vblex"/></l><r>stattfinden<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>place</g><s n="vblex"/></l><r>finden<g><b/>statt</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>take<b/>possession<b/>of<s n="vblex"/></l><r>bemächtigen<s n="vblex"/></r></p></e>
+    <e><p><l>take<g><b/>possession<b/>of</g><s n="vblex"/></l><r>bemächtigen<s n="vblex"/></r></p></e>
     <e><p><l>take<g><b/>round</g><s n="vblex"/></l><r>herumführen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>take<g><b/>seriously</g><s n="vblex"/></l><r>ernstnehmen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>seriously</g><s n="vblex"/></l><r>nehmen<g><b/>ernst</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>take<b/>the<b/>money<s n="vblex"/></l><r>kassieren<s n="vblex"/></r></p></e>
+    <e><p><l>take<g><b/>the<b/>money</g><s n="vblex"/></l><r>kassieren<s n="vblex"/></r></p></e>
     <e><p><l>take<g><b/>turns</g><s n="vblex"/></l><r>abwechseln<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>turns</g><s n="vblex"/></l><r>wechseln<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>take<g><b/>up</g><s n="vblex"/></l><r>aufnehmen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -48153,7 +48153,7 @@
     <e r="RL"><p><l>take<g><b/>up</g><s n="vblex"/></l><r>anbändeln<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>up</g><s n="vblex"/></l><r>bändeln<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>talk<s n="vblex"/></l><r>reden<s n="vblex"/></r></p></e>
-    <e><p><l>talk<b/>on<b/>the<b/>phone<s n="vblex"/></l><r>telephonieren<s n="vblex"/></r></p></e>
+    <e><p><l>talk<g><b/>on<b/>the<b/>phone</g><s n="vblex"/></l><r>telephonieren<s n="vblex"/></r></p></e>
     <e><p><l>tame<s n="vblex"/></l><r>bändigen<s n="vblex"/></r></p></e>
     <e><p><l>tan<s n="vblex"/></l><r>gerben<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>tangle<s n="vblex"/></l><r>verwirren<s n="vblex"/></r></p></e>
@@ -48165,7 +48165,7 @@
     <e r="RL"><p><l>target<s n="vblex"/></l><r>richten<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>taste<s n="vblex"/></l><r>schmecken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>taste<s n="vblex"/></l><r>verkosten<s n="vblex"/></r></p></e>
-    <e><p><l>taste<b/>good<s n="vblex"/></l><r>munden<s n="vblex"/></r></p></e>
+    <e><p><l>taste<g><b/>good</g><s n="vblex"/></l><r>munden<s n="vblex"/></r></p></e>
     <e><p><l>tattoo<s n="vblex"/></l><r>tätowieren<s n="vblex"/></r></p></e>
     <e><p><l>tax<s n="vblex"/></l><r>besteuern<s n="vblex"/></r></p></e>
     <e><p><l>teach<s n="vblex"/></l><r>beibringen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -48199,13 +48199,13 @@
     <e><p><l>thanking<s n="vblex"/></l><r>bedanken<s n="vblex"/></r></p></e>
     <e><p><l>thaw<s n="vblex"/></l><r>tauen<s n="vblex"/></r></p></e>
     <e><p><l>thematise<s n="vblex"/></l><r>thematisieren<s n="vblex"/></r></p></e>
-    <e><p><l>there<b/>be<s n="vblex"/></l><r>es<b/>geben<s n="vblex"/></r></p></e>
+    <e><p><l>there<g><b/>be</g><s n="vblex"/></l><r>es<b/>geben<s n="vblex"/></r></p></e>
     <e><p><l>thin<s n="vblex"/></l><r>dünnen<s n="vblex"/></r></p></e>
     <e><p><l>think<s n="vblex"/></l><r>denken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>think<s n="vblex"/></l><r>meinen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>think<s n="vblex"/></l><r>sinnen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>think<s n="vblex"/></l><r>überlegen<s n="vblex"/></r></p></e>
-    <e><p><l>think<b/>over<s n="vblex"/></l><r>überdenken<s n="vblex"/></r></p></e>
+    <e><p><l>think<g><b/>over</g><s n="vblex"/></l><r>überdenken<s n="vblex"/></r></p></e>
     <e><p><l>thrash<s n="vblex"/></l><r>prügeln<s n="vblex"/></r></p></e>
     <e><p><l>thread<s n="vblex"/></l><r>fädeln<s n="vblex"/></r></p></e>
     <e><p><l>threaten<s n="vblex"/></l><r>drohen<s n="vblex"/></r></p></e>
@@ -48219,7 +48219,7 @@
     <e r="RL"><p><l>throw<g><b/>away</g><s n="vblex"/></l><r>werfen<g><b/>weg</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>throw<g><b/>out</g><s n="vblex"/></l><r>rauswerfen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>throw<g><b/>out</g><s n="vblex"/></l><r>werfen<g><b/>raus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>throw<b/>over<s n="vblex"/></l><r>überwerfen<s n="vblex"/></r></p></e>
+    <e><p><l>throw<g><b/>over</g><s n="vblex"/></l><r>überwerfen<s n="vblex"/></r></p></e>
     <e><p><l>thrust<s n="vblex"/></l><r>stoßen<s n="vblex"/></r></p></e>
     <e><p><l>thunder<s n="vblex"/></l><r>donnern<s n="vblex"/></r></p></e>
     <e><p><l>thwart<s n="vblex"/></l><r>vereiteln<s n="vblex"/></r></p></e>
@@ -48244,7 +48244,7 @@
     <e><p><l>tipple<s n="vblex"/></l><r>picheln<s n="vblex"/></r></p></e>
     <e><p><l>tire<s n="vblex"/></l><r>ermüden<s n="vblex"/></r></p></e>
     <e><p><l>title<s n="vblex"/></l><r>benennen<s n="vblex"/></r></p></e>
-    <e><p><l>to<b/>go<b/>out<b/>on<b/>the<b/>tiles<s n="vblex"/></l><r>lumpen<s n="vblex"/></r></p></e>
+    <e><p><l>to<g><b/>go<b/>out<b/>on<b/>the<b/>tiles</g><s n="vblex"/></l><r>lumpen<s n="vblex"/></r></p></e>
     <e><p><l>toboggan<s n="vblex"/></l><r>rodeln<s n="vblex"/></r></p></e>
     <e><p><l>toddle<s n="vblex"/></l><r>tappen<s n="vblex"/></r></p></e>
     <e><p><l>toil<s n="vblex"/></l><r>mühen<s n="vblex"/></r></p></e>
@@ -48264,7 +48264,7 @@
     <e><p><l>tow<s n="vblex"/></l><r>abschleppen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>tow<s n="vblex"/></l><r>schleppen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>tower<s n="vblex"/></l><r>ragen<s n="vblex"/></r></p></e>
-    <e><p><l>tower<b/>above<s n="vblex"/></l><r>überragen<s n="vblex"/></r></p></e>
+    <e><p><l>tower<g><b/>above</g><s n="vblex"/></l><r>überragen<s n="vblex"/></r></p></e>
     <e><p><l>trace<s n="vblex"/></l><r>pausen<s n="vblex"/></r></p></e>
     <e><p><l>trace<g><b/>back</g><s n="vblex"/></l><r>zurückverfolgen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>trace<g><b/>back</g><s n="vblex"/></l><r>verfolgen<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -48312,7 +48312,7 @@
     <e><p><l>tremble<s n="vblex"/></l><r>bangen<s n="vblex"/></r></p></e>
     <e><p><l>tremble<s n="vblex"/></l><r>zittern<s n="vblex"/></r></p></e>
     <e><p><l>trend<s n="vblex"/></l><r>verlaufen<s n="vblex"/></r></p></e>
-    <e><p><l>trickle<b/>away<s n="vblex"/></l><r>rieseln<s n="vblex"/></r></p></e>
+    <e><p><l>trickle<g><b/>away</g><s n="vblex"/></l><r>rieseln<s n="vblex"/></r></p></e>
     <e><p><l>trigger<s n="vblex"/></l><r>auslösen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>trigger<s n="vblex"/></l><r>lösen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>trim<s n="vblex"/></l><r>kürzen<s n="vblex"/></r></p></e>
@@ -48342,7 +48342,7 @@
     <e r="RL"><p><l>turn<s n="vblex"/></l><r>kehren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>turn<s n="vblex"/></l><r>rotieren<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>turn<s n="vblex"/></l><r>umdrehen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>turn<b/>grey<s n="vblex"/></l><r>ergrauen<s n="vblex"/></r></p></e>
+    <e><p><l>turn<g><b/>grey</g><s n="vblex"/></l><r>ergrauen<s n="vblex"/></r></p></e>
     <e><p><l>turn<g><b/>into</g><s n="vblex"/></l><r>einbiegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>turn<g><b/>into</g><s n="vblex"/></l><r>abbiegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>turn<g><b/>into</g><s n="vblex"/></l><r>biegen<g><b/>ab</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -48471,7 +48471,7 @@
     <e><p><l>wag<s n="vblex"/></l><r>schwänzeln<s n="vblex"/></r></p></e>
     <e><p><l>wait<s n="vblex"/></l><r>warten<s n="vblex"/></r></p></e>
     <e><p><l>wait<g><b/>for</g><s n="vblex"/></l><r>warten<g><b/>auf</g><s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>wait<b/>for<s n="vblex"/></l><r>erwarten<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>wait<g><b/>for</g><s n="vblex"/></l><r>erwarten<s n="vblex"/></r></p></e>
     <e><p><l>waive<s n="vblex"/></l><r>verzichten<s n="vblex"/></r></p></e>
     <e><p><l>wake<s n="vblex"/></l><r>wecken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>wake<s n="vblex"/></l><r>aufwecken<s n="vblex"/><s n="sep"/></r></p></e>
@@ -48482,15 +48482,15 @@
     <e r="RL"><p><l>walk<s n="vblex"/></l><r>spazierengehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>walk<g><b/>down</g><s n="vblex"/></l><r>hinabgehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>walk<g><b/>into</g><s n="vblex"/></l><r>hereingehen<s n="vblex"/><s n="sep"/></r></p></e>
-    <e><p><l>walk<b/>with<b/>a<b/>limp<s n="vblex"/></l><r>lahmen<s n="vblex"/></r></p></e>
-    <e><p><l>wall<b/>up<s n="vblex"/></l><r>vermauern<s n="vblex"/></r></p></e>
+    <e><p><l>walk<g><b/>with<b/>a<b/>limp</g><s n="vblex"/></l><r>lahmen<s n="vblex"/></r></p></e>
+    <e><p><l>wall<g><b/>up</g><s n="vblex"/></l><r>vermauern<s n="vblex"/></r></p></e>
     <e><p><l>wallop<s n="vblex"/></l><r>verprügeln<s n="vblex"/></r></p></e>
     <e><p><l>wallow<s n="vblex"/></l><r>suhlen<s n="vblex"/></r></p></e>
     <e><p><l>wander<s n="vblex"/></l><r>schlendern<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>wander<s n="vblex"/></l><r>streifen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>wander<s n="vblex"/></l><r>herumlaufen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>wander<s n="vblex"/></l><r>laufen<g><b/>herum</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
-    <e><p><l>wander<b/>like<b/>a<b/>ghost<s n="vblex"/></l><r>geistern<s n="vblex"/></r></p></e>
+    <e><p><l>wander<g><b/>like<b/>a<b/>ghost</g><s n="vblex"/></l><r>geistern<s n="vblex"/></r></p></e>
     <e><p><l>wangle<s n="vblex"/></l><r>hinbekommen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>wangle<s n="vblex"/></l><r>hinkriegen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>wangle<s n="vblex"/></l><r>bekommen<g><b/>hin</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -48536,7 +48536,7 @@
     <e r="LR"><p><l>watch<g><b/>TV</g><s n="vblex"/></l><r>fernsehen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>water<s n="vblex"/></l><r>gießen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>water<s n="vblex"/></l><r>bewässern<s n="vblex"/></r></p></e>
-    <e><p><l>water<b/>down<s n="vblex"/></l><r>verwässern<s n="vblex"/></r></p></e>
+    <e><p><l>water<g><b/>down</g><s n="vblex"/></l><r>verwässern<s n="vblex"/></r></p></e>
     <e><p><l>wave<s n="vblex"/></l><r>winken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>wave<s n="vblex"/></l><r>schwenken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>wave<s n="vblex"/></l><r>schwingen<s n="vblex"/></r></p></e>
@@ -48561,17 +48561,17 @@
     <e><p><l>wellness<s n="vblex"/></l><r>wohlfühlen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>wellness<s n="vblex"/></l><r>fühlen<g><b/>wohl</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>wet<s n="vblex"/></l><r>befeuchten<s n="vblex"/></r></p></e>
-    <e><p><l>what<b/>colour<b/>be<s n="vblex"/></l><r>welche<b/>Farbe<b/>haben<s n="vblex"/></r></p></e>
+    <e><p><l>what<g><b/>colour<b/>be</g><s n="vblex"/></l><r>welche<b/>Farbe<b/>haben<s n="vblex"/></r></p></e>
     <e><p><l>whimper<s n="vblex"/></l><r>winseln<s n="vblex"/></r></p></e>
     <e><p><l>whine<s n="vblex"/></l><r>greinen<s n="vblex"/></r></p></e>
     <e><p><l>whip<s n="vblex"/></l><r>auspeitschen<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>whip<b/>up<s n="vblex"/></l><r>erregen<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>whip<g><b/>up</g><s n="vblex"/></l><r>erregen<s n="vblex"/></r></p></e>
     <e><p><l>whir<s n="vblex"/></l><r>schwirren<s n="vblex"/></r></p></e>
     <e><p><l>whirl<s n="vblex"/></l><r>wirbeln<s n="vblex"/></r></p></e>
     <e><p><l>whisk<s n="vblex"/></l><r>quirlen<s n="vblex"/></r></p></e>
     <e><p><l>whisper<s n="vblex"/></l><r>flüstern<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>whisper<s n="vblex"/></l><r>rauschen<s n="vblex"/></r></p></e>
-    <e><p><l>whisper<b/>secretly<s n="vblex"/></l><r>tuscheln<s n="vblex"/></r></p></e>
+    <e><p><l>whisper<g><b/>secretly</g><s n="vblex"/></l><r>tuscheln<s n="vblex"/></r></p></e>
     <e><p><l>whiz<s n="vblex"/></l><r>schleudern<s n="vblex"/></r></p></e>
     <e><p><l>whore<s n="vblex"/></l><r>huren<s n="vblex"/></r></p></e>
     <e><p><l>wibble<s n="vblex"/></l><r>labern<s n="vblex"/></r></p></e>
@@ -48587,7 +48587,7 @@
     <e><p><l>wind-sucking<s n="vblex"/></l><r>koppen<s n="vblex"/></r></p></e>
     <e><p><l>wipe<s n="vblex"/></l><r>abtreten<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>wipe<s n="vblex"/></l><r>wischen<s n="vblex"/></r></p></e>
-    <e><p><l>wipe<b/>out<s n="vblex"/></l><r>tilgen<s n="vblex"/></r></p></e>
+    <e><p><l>wipe<g><b/>out</g><s n="vblex"/></l><r>vernichten<s n="vblex"/></r></p></e>
     <e><p><l>wire<s n="vblex"/></l><r>telegrafieren<s n="vblex"/></r></p></e>
     <e><p><l>wish<s n="vblex"/></l><r>wünschen<s n="vblex"/></r></p></e>
     <e><p><l>withdraw<s n="vblex"/></l><r>zurückziehen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -48596,7 +48596,7 @@
     <e r="RL"><p><l>withdraw<s n="vblex"/></l><r>scheiden<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>withdraw<s n="vblex"/></l><r>ziehen<g><b/>zurück</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>wither<s n="vblex"/></l><r>verdorren<s n="vblex"/></r></p></e>
-    <e><p><l>without<b/>thinking<s n="vblex"/></l><r>ohne<b/>nachzudenken<s n="vblex"/></r></p></e>
+    <e><p><l>without<g><b/>thinking</g><s n="vblex"/></l><r>ohne<b/>nachzudenken<s n="vblex"/></r></p></e>
     <e><p><l>witness<s n="vblex"/></l><r>mitmachen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="LR"><p><l>witness<s n="vblex"/></l><r>beglaubigen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>witness<s n="vblex"/></l><r>machen<g><b/>mit</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -48607,7 +48607,7 @@
     <e><p><l>work<g><b/>for</g><s n="vblex"/></l><r>arbeiten<g><b/>für</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>work<g><b/>for</g><s n="vblex"/></l><r>sein<g><b/>angestellt<b/>bei</g><s n="vblex"/></r></p></e>
     <e><p><l>work<g><b/>hard</g><s n="vblex"/></l><r>arbeiten<g><b/>schwer</g><s n="vblex"/></r></p></e>
-    <e><p><l>work<b/>meticulously<s n="vblex"/></l><r>tüfteln<s n="vblex"/></r></p></e>
+    <e><p><l>work<g><b/>meticulously</g><s n="vblex"/></l><r>tüfteln<s n="vblex"/></r></p></e>
     <e><p><l>work<g><b/>out</g><s n="vblex"/></l><r>ausarbeiten<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>work<g><b/>out</g><s n="vblex"/></l><r>arbeiten<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>work<g><b/>shifts</g><s n="vblex"/></l><r>Schicht<b/>arbeiten<s n="vblex"/></r></p></e>
