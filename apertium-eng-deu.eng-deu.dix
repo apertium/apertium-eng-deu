@@ -42873,6 +42873,7 @@
     <e><p><l>on<b/>the<b/>double<s n="adv"/></l><r>im<b/>Eilschritt<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>east<b/>side<s n="adv"/></l><r>auf<b/>der<b/>Ostseite<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>house<s n="adv"/></l><r>auf<b/>Kosten<b/>des<b/>Hauses<s n="adv"/></r></p></e>
+    <e><p><l>on<b/>the<b/>left<s n="adv"/></l><r>auf<b/>der<b/>linken<b/>Seite<s n="adv"/></r></p></e>
     <e r="LR"><p><l>on<b/>the<b/>left<s n="adv"/></l><r>links<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>one<b/>hand<s n="adv"/></l><r>einerseits<s n="adv"/></r></p></e>
     <e><p><l>on<b/>the<b/>other<b/>hand<s n="adv"/></l><r>andererseits<s n="adv"/></r></p></e>
@@ -43482,7 +43483,7 @@
     <e><p><l>be<g><b/>adequate</g><s n="vblex"/></l><r>ausreichen<s n="vblex"/><s n="sep"/></r></p></e>
     <e><p><l>be<g><b/>adrift</g><s n="vblex"/></l><r>treiben<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>afflicted<b/>with</g><s n="vblex"/></l><r>laborieren<s n="vblex"/></r></p></e>
-    <e><p><l>be<g><b/>afraid</g><s n="vblex"/></l><r>fürchten<s n="vblex"/></r></p></e>
+    <e><p><l>be<g><b/>afraid</g><s n="vblex"/></l><r>fürchten<g><b/>sich</g><s n="vblex"/></r></p></e>
     <e r="LR"><p><l>be<g><b/>allowed<b/>to</g><s n="vblex"/></l><r>dürfen<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>bleeding<b/>to<b/>death</g><s n="vblex"/></l><r>verbluten<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>born</g><s n="vblex"/></l><r>geboren<b/>werden<s n="vblex"/></r></p></e>
@@ -43504,7 +43505,7 @@
     <e><p><l>be<g><b/>late</g><s n="vblex"/></l><r>verspäten<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>left</g><s n="vblex"/></l><r>übrig<b/>sein<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>be<g><b/>missing</g><s n="vblex"/></l><r>fehlen<s n="vblex"/></r></p></e>
-    <e><p><l>be<g><b/>of<b/>use<b/>/<b/>avail</g><s n="vblex"/></l><r>fruchten<s n="vblex"/></r></p></e> <!-- TODO: fix this crap. Identify and anihilate the originator -->
+    <e><p><l>be<g><b/>of<b/>use</g><s n="vblex"/></l><r>fruchten<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>permitted</g><s n="vblex"/></l><r>dürfen<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>shocked</g><s n="vblex"/></l><r>empört<b/>sein<s n="vblex"/></r></p></e>
     <e><p><l>be<g><b/>stingy</g><s n="vblex"/></l><r>geizen<s n="vblex"/></r></p></e>
@@ -48153,7 +48154,7 @@
     <e r="RL"><p><l>take<g><b/>up</g><s n="vblex"/></l><r>anbändeln<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>take<g><b/>up</g><s n="vblex"/></l><r>bändeln<g><b/>an</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>talk<s n="vblex"/></l><r>reden<s n="vblex"/></r></p></e>
-    <e><p><l>talk<g><b/>on<b/>the<b/>phone</g><s n="vblex"/></l><r>telephonieren<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>talk<g><b/>on<b/>the<b/>phone</g><s n="vblex"/></l><r>telefonieren<b/>mit<s n="vblex"/></r></p></e>
     <e><p><l>tame<s n="vblex"/></l><r>bändigen<s n="vblex"/></r></p></e>
     <e><p><l>tan<s n="vblex"/></l><r>gerben<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>tangle<s n="vblex"/></l><r>verwirren<s n="vblex"/></r></p></e>
@@ -48199,7 +48200,7 @@
     <e><p><l>thanking<s n="vblex"/></l><r>bedanken<s n="vblex"/></r></p></e>
     <e><p><l>thaw<s n="vblex"/></l><r>tauen<s n="vblex"/></r></p></e>
     <e><p><l>thematise<s n="vblex"/></l><r>thematisieren<s n="vblex"/></r></p></e>
-    <e><p><l>there<g><b/>be</g><s n="vblex"/></l><r>es<b/>geben<s n="vblex"/></r></p></e>
+    <e><p><l>there<b/>be<s n="vblex"/></l><r>es<b/>geben<s n="vblex"/></r></p></e>
     <e><p><l>thin<s n="vblex"/></l><r>dünnen<s n="vblex"/></r></p></e>
     <e><p><l>think<s n="vblex"/></l><r>denken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>think<s n="vblex"/></l><r>meinen<s n="vblex"/></r></p></e>
@@ -48561,7 +48562,7 @@
     <e><p><l>wellness<s n="vblex"/></l><r>wohlfühlen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>wellness<s n="vblex"/></l><r>fühlen<g><b/>wohl</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>wet<s n="vblex"/></l><r>befeuchten<s n="vblex"/></r></p></e>
-    <e><p><l>what<g><b/>colour<b/>be</g><s n="vblex"/></l><r>welche<b/>Farbe<b/>haben<s n="vblex"/></r></p></e>
+    <e><p><l>what<b/>colour<b/>be<s n="vblex"/></l><r>welche<b/>Farbe<b/>haben<s n="vblex"/></r></p></e>
     <e><p><l>whimper<s n="vblex"/></l><r>winseln<s n="vblex"/></r></p></e>
     <e><p><l>whine<s n="vblex"/></l><r>greinen<s n="vblex"/></r></p></e>
     <e><p><l>whip<s n="vblex"/></l><r>auspeitschen<s n="vblex"/></r></p></e>
