@@ -1295,7 +1295,7 @@
     <e><p><l>ankle<s n="n"/></l><r>Knöchel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>ankle<b/>boots<s n="n"/></l><r>Stiefeletten<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>anklet<s n="n"/></l><r>Fußring<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>annals<s n="n"/></l><r>Annalen<s n="n"/><s n="mfn"/></r></p></e>
+    <e><p><l>annals<s n="n"/><s n="pl"/></l><r>Annalen<s n="n"/><s n="mfn"/></r></p></e>
     <e><p><l>annex<s n="n"/></l><r>Zubau<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>annexationist<s n="n"/></l><r>Annektierer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>annihilation<s n="n"/></l><r>Vernichtung<s n="n"/><s n="f"/></r></p></e>
@@ -1734,7 +1734,7 @@
     <e r="RL"><p><l>artist<s n="n"/></l><r>Künstlerin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>artiste<s n="n"/></l><r>Artist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>artistic<b/>impression<s n="n"/></l><r>Impression<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>artistries<s n="n"/></l><r>Kunstsinn<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>artistry<s n="n"/></l><r>Kunstsinn<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>arts<b/>section<s n="n"/></l><r>Kulturteil<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>Aryan<s n="n"/></l><r>Arier<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>asbestos<s n="n"/></l><r>Asbest<s n="n"/><s n="m"/></r></p></e>
@@ -1937,7 +1937,7 @@
     <e><p><l>auction<s n="n"/></l><r>Auktion<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>auction<s n="n"/></l><r>Versteigerung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>auctioneer<s n="n"/></l><r>Auktionator<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>auctioneers<s n="n"/></l><r>Auktionshaus<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>auctioneer<s n="n"/><s n="pl"/></l><r>Auktionshaus<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>audacity<s n="n"/></l><r>Dreistigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>audibility<s n="n"/></l><r>Hörbarkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>audience<s n="n"/></l><r>Auditorium<s n="n"/><s n="nt"/></r></p></e>
@@ -2592,7 +2592,8 @@
     <e><p><l>bed<b/>table<s n="n"/></l><r>Nachttisch<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bed-and-breakfast<s n="n"/></l><r>Frühstückspension<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>bed-sit<b/>room<s n="n"/></l><r>Wohnschlafraum<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>bed-socks<s n="n"/></l><r>Bettsocken<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>bedsocks<s n="n"/><s n="pl"/></l><r>Bettsocken<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>bed-socks<s n="n"/><s n="pl"/></l><r>Bettsocken<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bedbug<s n="n"/></l><r>Bettwanze<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>bedclothes<s n="n"/></l><r>Bettwäsche<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>bedevilment<s n="n"/></l><r>Besessenheit<s n="n"/><s n="f"/></r></p></e>
@@ -2701,7 +2702,7 @@
     <e><p><l>benzene<s n="n"/></l><r>Benzol<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>benzine<s n="n"/></l><r>Benzin<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>bequest<s n="n"/></l><r>Vermächtnis<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>Berbers<s n="n"/></l><r>Berber<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>Berber<s n="n"/></l><r>Berber<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>beret<s n="n"/></l><r>Barett<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>beret<s n="n"/></l><r>Baskenmütze<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>bergamot<s n="n"/></l><r>Bergamotte<s n="n"/><s n="f"/></r></p></e>
@@ -3366,7 +3367,7 @@
     <e><p><l>brassiere<s n="n"/></l><r>Büstenhalter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>brat<s n="n"/></l><r>Fratz<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bravery<s n="n"/></l><r>Mut<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>bravos<s n="n"/></l><r>Bravo<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>bravo<s n="n"/><s n="pl"/></l><r>Bravo<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>bravura<s n="n"/></l><r>Bravour<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>brawl<s n="n"/></l><r>Handgemenge<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>brawl<s n="n"/></l><r>Schlägerei<s n="n"/><s n="f"/></r></p></e>
@@ -3467,7 +3468,7 @@
     <e><p><l>briefcase<s n="n"/></l><r>Aktentasche<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>briefing<s n="n"/></l><r>Einweisung<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>briefing<s n="n"/></l><r>Einsatzbesprechung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>briefs<s n="n"/></l><r>Slip<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>brief<s n="n"/><s n="pl"/></l><r>Slip<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>brigade<s n="n"/></l><r>Brigade<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>brightening<s n="n"/></l><r>Aufhellung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>brightness<s n="n"/></l><r>Helligkeit<s n="n"/><s n="f"/></r></p></e>
@@ -3832,7 +3833,8 @@
     <e><p><l>calibre<s n="n"/></l><r>Kaliber<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>calico<s n="n"/></l><r>Kattun<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Californian<s n="n"/></l><r>Kalifornier<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>calipers<s n="n"/></l><r>Greifzirkel<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>caliper<s n="n"/></l><r>Messschieber<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>caliper<s n="n"/></l><r>Greifzirkel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>caliph<s n="n"/></l><r>Kalif<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>call<s n="n"/></l><r>Anruf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>call<b/>girl<s n="n"/></l><r>Callgirl<s n="n"/><s n="nt"/></r></p></e>
@@ -5414,7 +5416,7 @@
     <e><p><l>comic<b/>cartoon<s n="n"/></l><r>Comicstrip<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>comic<b/>character<s n="n"/></l><r>Comicfigur<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>comic<b/>strip<s n="n"/></l><r>Bildergeschichte<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>comings<s n="n"/></l><r>Einkünfte<s n="n"/><s n="mfn"/></r></p></e>
+    <e><p><l>coming<s n="n"/><s n="pl"/></l><r>Einkünfte<s n="n"/><s n="mfn"/></r></p></e>
     <e><p><l>comitative<b/>case<s n="n"/></l><r>Komitativ<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>comity<s n="n"/></l><r>Höflichkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>comma<s n="n"/></l><r>Komma<s n="n"/><s n="nt"/></r></p></e>
@@ -6501,7 +6503,7 @@
     <e><p><l>cry<g><b/>for<b/>help</g><s n="n"/></l><r>Hilferuf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>crying<b/>shame<s n="n"/></l><r>Affenschande<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>cryptanalysis<s n="n"/></l><r>Geheimschriftanalyse<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>cryptograms<s n="n"/></l><r>Kryptogamen<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>cryptogram<s n="n"/></l><r>Kryptogramm<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>cryptography<s n="n"/></l><r>Geheimcode<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>cryptography<s n="n"/></l><r>Kryptographie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>crystal<s n="n"/></l><r>Kristall<s n="n"/><s n="m"/></r></p></e>
@@ -7070,7 +7072,7 @@
     <e><p><l>dendrochronology<s n="n"/></l><r>Dendrochronologie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>denial<s n="n"/></l><r>Verweigerung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>denigration<s n="n"/></l><r>Anschwärzung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>denims<s n="n"/></l><r>Jeanshose<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>denim<s n="n"/><s n="pl"/></l><r>Jeanshose<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>denomination<s n="n"/></l><r>Benennung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>denomination<s n="n"/></l><r>Nennwert<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>denomination<s n="n"/></l><r>Religionsgemeinschaft<s n="n"/><s n="f"/></r></p></e>
@@ -7765,7 +7767,7 @@
     <e><p><l>dogs'<b/>cemetery<s n="n"/></l><r>Hundefriedhof<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>dogs'<b/>waiting-room<s n="n"/></l><r>Hundewartezimmer<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>doily<s n="n"/></l><r>Deckchen<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>doings<s n="n"/></l><r>Machenschaft<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>doing<s n="n"/><s n="pl"/></l><r>Machenschaft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>dole<s n="n"/></l><r>Arbeitslosengeld<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>doll<s n="n"/></l><r>Puppe<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>doll<b/>house<s n="n"/></l><r>Puppenstube<s n="n"/><s n="f"/></r></p></e>
@@ -7803,7 +7805,7 @@
     <e><p><l>dominion<s n="n"/></l><r>Herrschaft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>dominion<s n="n"/></l><r>Herrschaftsgebiet<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>domino<s n="n"/></l><r>Domino<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>dominoes<s n="n"/></l><r>Domino<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>domino<s n="n"/><s n="pl"/></l><r>Domino<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>donation<s n="n"/></l><r>Schenkung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>donkey<s n="n"/></l><r>Esel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>donkey<b/>foal<s n="n"/></l><r>Eselfohlen<s n="n"/><s n="nt"/></r></p></e>
@@ -8086,7 +8088,7 @@
     <e><p><l>dune<s n="n"/></l><r>Düne<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>dung<s n="n"/></l><r>Mist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>dung<b/>beetle<s n="n"/></l><r>Mistkäfer<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>dungarees<s n="n"/></l><r>Latzhose<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>dungaree<s n="n"/><s n="pl"/></l><r>Latzhose<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>dunghill<s n="n"/></l><r>Misthaufen<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>duo<s n="n"/></l><r>Duo<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>duodenum<s n="n"/></l><r>Zwölffingerdarm<s n="n"/><s n="m"/></r></p></e>
@@ -8173,7 +8175,7 @@
     <e><p><l>early<b/>warning<b/>system<s n="n"/></l><r>Frühwarnsystem<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>early<b/>work<s n="n"/></l><r>Frühwerk<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>earnings<s n="n"/></l><r>Einkommen<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>earphones<s n="n"/></l><r>Kopfhörer<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>earphone<s n="n"/></l><r>Kopfhörer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>earring<s n="n"/></l><r>Ohrring<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>earth<s n="n"/></l><r>Erde<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Earth<b/>sign<s n="n"/></l><r>Erdzeichen<s n="n"/><s n="nt"/></r></p></e>
@@ -12250,10 +12252,10 @@
     <e><p><l>humanism<s n="n"/></l><r>Humanismus<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>humanist<s n="n"/></l><r>Humanist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>humanitarian<b/>issue<s n="n"/></l><r>humanitäre<b/>Belange<s n="n"/></r></p></e>
-    <e><p><l>humanities<s n="n"/></l><r>Geisteswissenschaft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>humanities<b/>book<s n="n"/></l><r>Geisteswissenschaftsbuch<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>humanity<s n="n"/></l><r>Humanität<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>humanity<s n="n"/></l><r>Menschlichkeit<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>humanity<s n="n"/><s n="pl"/></l><r>Geisteswissenschaft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>humbleness<s n="n"/></l><r>Demut<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>humidity<s n="n"/></l><r>Luftfeuchtigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>humiliation<s n="n"/></l><r>Beschämung<s n="n"/><s n="f"/></r></p></e>
@@ -12376,6 +12378,7 @@
     <e><p><l>IC<s n="n"/><s n="acr"/></l><r>IC<s n="n"/><s n="acr"/><s n="nt"/></r></p></e>
     <e><p><l>ice<s n="n"/></l><r>Eis<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>ice<b/>age<s n="n"/></l><r>Eiszeit<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>Ice<b/>Age<s n="n"/></l><r>Eiszeitalter<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>ice<b/>barrier<s n="n"/></l><r>Eisbarriere<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>ice<b/>cream<s n="n"/></l><r>Speiseeis<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>ice<b/>cream<b/>shop<s n="n"/></l><r>Eisladen<s n="n"/><s n="m"/></r></p></e>
@@ -12855,7 +12858,7 @@
     <e><p><l>inn<s n="n"/></l><r>Gasthof<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>innards<s n="n"/></l><r>Innenleben<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>inner<b/>edge<s n="n"/></l><r>Innenrand<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>innings<s n="n"/></l><r>Durchgang<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>inning<s n="n"/></l><r>Durchgang<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>innkeeper<s n="n"/></l><r>Gastwirt<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>innocence<s n="n"/></l><r>Arglosigkeit<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>innocence<s n="n"/></l><r>Unschuld<s n="n"/><s n="f"/></r></p></e>
@@ -14564,7 +14567,7 @@
     <e><p><l>machinist<s n="n"/></l><r>Maschinist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>macho<s n="n"/></l><r>Macho<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mackerel<s n="n"/></l><r>Makrele<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>mackerels<s n="n"/></l><r>Makrelen<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>mackerel<s n="n"/><s n="pl"/></l><r>Makrelen<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>mackintosh<s n="n"/></l><r>Regenmantel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>macrobiotics<s n="n"/></l><r>Makrobiotik<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>macroeconomy<s n="n"/></l><r>Gesamtwirtschaft<s n="n"/><s n="f"/></r></p></e>
@@ -15597,7 +15600,6 @@
     <e><p><l>molar<s n="n"/></l><r>Backenzahn<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>molasses<s n="n"/></l><r>Melasse<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>mold<s n="n"/></l><r>Moder<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>molders<s n="n"/></l><r>Bildner<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mole<s n="n"/></l><r>Maulwurf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mole<s n="n"/></l><r>Mol<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>molecule<s n="n"/></l><r>Molekül<s n="n"/><s n="nt"/></r></p></e>
@@ -15803,6 +15805,7 @@
     <e><p><l>mould<s n="n"/></l><r>Mall<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>mould<s n="n"/></l><r>Schimmel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>moulding<s n="n"/></l><r>Formen<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>moulder<s n="n"/></l><r>Gießer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mound<s n="n"/></l><r>Hügel<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>mount<s n="n"/></l><r>Berg<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Mount<b/>Etna<s n="n"/></l><r>Ätna<s n="n"/><s n="m"/></r></p></e>
@@ -16799,7 +16802,7 @@
     <e><p><l>old-earth<b/>creationist<s n="n"/></l><r>Alte-Erde-Kreationist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>old-timer<s n="n"/></l><r>Oldie<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Oldenburg<b/>horse<s n="n"/></l><r>Oldenburger<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>oleanders<s n="n"/></l><r>Oleander<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>oleander<s n="n"/></l><r>Oleander<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>oleic<b/>acid<s n="n"/></l><r>Ölsäure<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>oleic<b/>acid<s n="n"/></l><r>Oleinsäure<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>oligarchy<s n="n"/></l><r>Oligarchie<s n="n"/><s n="f"/></r></p></e>
@@ -18272,7 +18275,7 @@
     <e><p><l>plebiscite<s n="n"/></l><r>Plebiszit<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>pledge<s n="n"/></l><r>Pfand<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>pledging<s n="n"/></l><r>Verpfändung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>pleistocenes<s n="n"/></l><r>Eiszeitalter<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>Pleistocene<s n="n"/></l><r>Pleistozän<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>plenary<s n="n"/></l><r>Voll-<s n="n"/></r></p></e>
     <e><p><l>plenary<b/>session<s n="n"/></l><r>Plenarsitzung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>plenty<s n="n"/></l><r>Überfluss<s n="n"/><s n="m"/></r></p></e>
@@ -19646,7 +19649,7 @@
     <e r="RL"><p><l>ranger<s n="n"/></l><r>Ranger<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>rank<s n="n"/></l><r>Rang<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>rank<s n="n"/></l><r>Stand<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>rankings<s n="n"/></l><r>Ranking<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>ranking<s n="n"/></l><r>Ranking<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>ransom<s n="n"/></l><r>Lösegeld<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>rap<s n="n"/></l><r>Rap<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>rape<s n="n"/></l><r>Raps<s n="n"/><s n="m"/></r></p></e>
@@ -22095,7 +22098,8 @@
     <e><p><l>skirt<s n="n"/></l><r>Rock<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>skirt<s n="n"/></l><r>Damenrock<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>skittishness<s n="n"/></l><r>Ungebärdigkeit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>skittles<s n="n"/></l><r>Kegeln<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>skittle<s n="n"/></l><r>Kegel<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>skittle<s n="n"/><s n="pl"/></l><r>Kegeln<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>skittles<s n="n"/></l><r>Kegelspiel<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>skull<s n="n"/></l><r>Schädel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>skull<s n="n"/></l><r>Totenkopf<s n="n"/><s n="m"/></r></p></e>
@@ -22337,6 +22341,7 @@
     <e><p><l>soap<b/>boiler<s n="n"/></l><r>Seifensieder<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>soap<b/>bubble<s n="n"/></l><r>Seifenblase<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>soap<b/>opera<s n="n"/></l><r>Familienserie<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>soap<b/>works<s n="n"/></l><r>Seifensiederei<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>soap-works<s n="n"/></l><r>Seifenfabrik<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sob<s n="n"/></l><r>Schluchzen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>soberness<s n="n"/></l><r>Nüchternheit<s n="n"/><s n="f"/></r></p></e>
@@ -23405,7 +23410,7 @@
     <e r="RL"><p><l>stylist<s n="n"/></l><r>Stylistin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>stylistic<b/>sense<s n="n"/></l><r>Stilgefühl<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>stylistics<s n="n"/></l><r>Stilistik<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>stylites<s n="n"/></l><r>Säulenheilige<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>stylite<s n="n"/></l><r>Säulenheilige<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>stylus<s n="n"/></l><r>Griffel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Styrian<s n="n"/></l><r>Steirer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>suaveness<s n="n"/></l><r>Lieblichkeit<s n="n"/><s n="f"/></r></p></e>
@@ -23919,7 +23924,8 @@
     <e><p><l>tail<b/>feather<s n="n"/></l><r>Schwanzfeder<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tailback<s n="n"/></l><r>Stau<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>tailcoat<s n="n"/></l><r>Frack<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>tailings<s n="n"/></l><r>Abfallerz<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>tailing<s n="n"/></l><r>Tailing<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>tailing<s n="n"/><s n="pl"/></l><r>Abfallerz<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>tailor<s n="n"/></l><r>Schneider<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>tailor<s n="n"/></l><r>Zuschnitt<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>tailor-made<b/>suit<s n="n"/></l><r>Maßanzug<s n="n"/><s n="m"/></r></p></e>
@@ -26093,7 +26099,7 @@
     <e><p><l>wake<s n="n"/></l><r>Kielwasser<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>wake-up<b/>call<s n="n"/></l><r>Weckruf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>wakefulness<s n="n"/></l><r>Wachsamkeit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>wakens<s n="n"/></l><r>Wacht<s n="n"/><s n="f"/></r></p></e>
+    <!-- <e><p><l>wakens<s n="n"/></l><r>Wacht<s n="n"/><s n="f"/></r></p></e> -->
     <e><p><l>Waldorf<b/>school<s n="n"/></l><r>Waldorfschule<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wale<s n="n"/></l><r>Strieme<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>walk<s n="n"/></l><r>Spaziergang<s n="n"/><s n="m"/></r></p></e>
