@@ -3,7 +3,6 @@
 # # #
 # TODO
 # 1. use mktemp for generating tmp file names and clean up on exit
-# 2. inconsistency-summary.sh writes a file! get rid of it
 #
 
 TMPDIR=/tmp
@@ -40,7 +39,7 @@ process() {
 	return 1
     fi
 
-    bash $SCRIPTDIR/inconsistency-summary.sh "$tmpfile" "$langpair"
+    bash $SCRIPTDIR/inconsistency-summary.sh "$tmpfile"
 }
 
 if [ $# -eq 0 ]; then
