@@ -1,97 +1,128 @@
-INC=$1
-PAIR=$2
-OUT=testvoc-summary.$PAIR.txt
-POS="abbr adj adv cm cnjadv cnjcoo cnjsub det guio ij n np num pr preadv prn rel vaux vbhaver vblex vbser vbmod"
+#!/bin/bash
 
-# for macs / computers without 'apcalc'
-which calc > /dev/null
-CALC=calc
-if [[ $? -eq 1 ]]; then
-	CALC=bc
+# # #
+# --help
+#
+
+ALL_POS="abbr adj adv cm cnjadv cnjcoo cnjsub det guio ij n np num pr preadv prn rel vaux vbhaver vblex vbser vbmod"
+
+show_help() {
+    cat <<EOF
+
+  Summarize results of running testvoc/inconsistency.sh script on per part-of-speech
+basis, computing for each PoS the number and percentage of translated, untranslated and
+partially translated items.
+USAGE: `basename $0` [OPTIONS] file_generated_by_inconsistency.sh
+OPTIONS:
+  -h|--help    display this message and exit
+
+EOF
+}
+
+while [ $# -ne 0 ]; do
+    case $1 in
+	-h|--help)
+	    show_help
+	    exit
+	    ;;
+	*)
+	    break
+	    ;;
+    esac
+    shift
+done
+
+if [ $# -ne 1 ]; then
+    echo "ERROR: The script accepts exactly one command line argument." >&2
+    exit 1
 fi
 
-echo -n "" > $OUT;
+INFILE=$1
 
-date >> $OUT
-echo -e "===============================================" >> $OUT
-echo -e "POS\tTotal\tClean\tWith @\tWith #\tClean %" >> $OUT
-for i in $POS; do
-	if [ "$i" = "det" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<n>' -e '<np>' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<n>' -e '<np>'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<n>' -e '<np>' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "preadv" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<adj>' -e '<adv>' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<adj>' -e '<adv>'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<adj>' -e '<adv>' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "adv" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<adj>' -e '<v' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<adj>' -e '<v' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<adj>' -e '<v' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "cnjsub" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<v' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<v' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<v' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "prn" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<v' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<v' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<v' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "vbser" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<pp' -e '<vbm' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<pp' -e '<vbm' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<pp' -e '<vbm' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "vbhaver" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<pp' -e '<vbm' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<pp' -e '<vbm' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<pp' -e '<vbm' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "pr" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<prn' -e '<ger' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<prn' -e '<ger' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<prn' -e '<ger' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "rel" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<pr' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<pr' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<pr' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "adj" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<np' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<np' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<np' | grep -v REGEX |  wc -l`;
-	elif [ "$i" = "vbmod" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<vbl' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v  -e '<vbl' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v -e '<vbl' | grep -v REGEX |  wc -l`;
-	else
-		TOTAL=`cat $INC | grep "<$i>" | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" | grep '>  *#' | grep -v REGEX |  wc -l`;
-	fi
+# for macs / computers without 'apcalc'
+which calc >/dev/null
+if [ $? -eq 0 ]; then
+    CALC="calc -p | sed 's/~//g'"
+else
+    CALC="bc -l 2>/dev/null | sed 's/^\./0./g'"
+fi
 
+subsetfile=`mktemp --tmpdir $(basename $0).XXXXXX`
+trap "rm -f $subsetfile" EXIT
 
-	if [[ $CALC == "bc" ]]; then
-		UNCLEAN=`echo $AT+$HASH | bc -l`;
-		CLEAN=`echo $TOTAL-$UNCLEAN | bc -l`;
-		PERCLEAN=`echo $UNCLEAN/$TOTAL*100 | bc -l 2>/dev/null | sed 's/^\./0./g' | head -c 5`;
-	else
-		UNCLEAN=`calc $AT+$HASH`;
-		CLEAN=`calc $TOTAL-$UNCLEAN`;
-		PERCLEAN=`calc $UNCLEAN/$TOTAL*100 |sed 's/^\W*//g' | sed 's/~//g' | head -c 5`;
-	fi
+echo -n ""
+date
+echo -e "==============================================="
+echo -e "POS\tTotal\tClean\tWith @\tWith #\tClean %"
+for pos in $ALL_POS; do
+    case $pos in
+	det)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<n>' -e '<np>' | grep -v REGEX >$subsetfile
+	    ;;
 
-	echo $PERCLEAN | grep "Err" > /dev/null;
-	if [ $? -eq 0 ]; then
-		TOTPERCLEAN="100";
-	elif [[ $PERCLEAN == "" ]]; then
-		TOTPERCLEAN="100";
-	else
-		if [[ $CALC == "bc" ]]; then
-			TOTPERCLEAN=`echo 100-$PERCLEAN | bc -l | sed 's/^\./0./g' | head -c 5`;
-		else
-			TOTPERCLEAN=`calc 100-$PERCLEAN | sed 's/^\W*//g' | sed 's/~//g' | head -c 5`;
-		fi
-	fi
+	preadv)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<adj>' -e '<adv>' | grep -v REGEX >$subsetfile
+	    ;;
 
-	echo -e $TOTAL";"$i";"$CLEAN";"$AT";"$HASH";"$TOTPERCLEAN;
-done | sort -gr | awk -F';' '{print $2"\t"$1"\t"$3"\t"$4"\t"$5"\t"$6}' >> $OUT
+	adv)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<adj>' -e '<v' | grep -v REGEX >$subsetfile
+	    ;;
 
-echo -e "===============================================" >> $OUT
-cat $OUT;
+	cnjsub)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<v' | grep -v REGEX >$subsetfile
+	    ;;
+
+	prn)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<v' | grep -v REGEX >$subsetfile
+	    ;;
+
+	vbser)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<pp' -e '<vbm' | grep -v REGEX >$subsetfile
+	    ;;
+
+	vbhaver)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<pp' -e '<vbm' | grep -v REGEX >$subsetfile
+	    ;;
+
+	pr)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<prn' -e '<ger' | grep -v REGEX >$subsetfile
+	    ;;
+
+	rel)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<pr' | grep -v REGEX >$subsetfile
+	    ;;
+
+	adj)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<np' | grep -v REGEX >$subsetfile
+	    ;;
+
+	vbmod)
+	    cat $INFILE | grep "<$pos>" | grep -v -e '<vbl' | grep -v REGEX >$subsetfile
+	    ;;
+
+	*)
+	    cat $INFILE | grep "<$pos>" | grep -v REGEX >$subsetfile
+	    ;;
+    esac
+
+    TOTAL=`cat $subsetfile |                wc -l`
+    AT=`cat $subsetfile    | grep '@'     | wc -l`
+    HASH=`cat $subsetfile  | grep '>  *#' | wc -l`
+
+    UNCLEAN=`echo $AT+$HASH | sh -c "$CALC"`
+    CLEAN=`echo $TOTAL-$UNCLEAN | sh -c "$CALC"`
+    PERCLEAN=`echo $UNCLEAN/$TOTAL*100 | sh -c "$CALC" | head -c 5`
+
+    echo $PERCLEAN | grep "Err" >/dev/null
+    if [ $? -eq 0 ]; then
+	TOTPERCLEAN="100"
+    elif [ -z "$PERCLEAN" ]; then
+	TOTPERCLEAN="100"
+    else
+	TOTPERCLEAN=`echo 100-$PERCLEAN | sh -c "$CALC" | head -c 5`
+    fi
+
+    echo -e "$TOTAL;$pos;$CLEAN;$AT;$HASH;$TOTPERCLEAN"
+done | sort -gr | awk 'BEGIN {FS=";"; OFS="\t"} {print $2, $1, $3, $4, $5, $6}'
+
+echo -e "==============================================="
