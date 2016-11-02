@@ -3354,6 +3354,7 @@
     <e><p><l>branch<b/>establishment<s n="n"/></l><r>Zweiggeschäft<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>branch<b/>manager<s n="n"/></l><r>Filialleiter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>branch<g><b/>of<b/>industry</g><s n="n"/></l><r>Industriezweig<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>branch<b/>office<s n="n"/></l><r>Niederlassung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>brand<s n="n"/></l><r>Brandzeichen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>brand<b/>name<s n="n"/></l><r>Markenname<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Brandenburgian<s n="n"/></l><r>Brandenburger<s n="n"/><s n="m"/></r></p></e>
@@ -24304,6 +24305,8 @@
     <e><p><l>terminal<b/>board<s n="n"/></l><r>Klemmbrett<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>terminal<b/>equipment<s n="n"/></l><r>Endgerät<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>termination<s n="n"/></l><r>Schwangerschaftsunterbrechung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>termination<s n="n"/></l><r>Beendung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>termination<s n="n"/></l><r>Kündigung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>termination<b/>pay<s n="n"/></l><r>Abfindung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>terminology<s n="n"/></l><r>Terminologie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>terminus<s n="n"/></l><r>Endhaltestelle<s n="n"/><s n="f"/></r></p></e>
@@ -41570,12 +41573,11 @@
     <e><p><l>lively<s n="adv"/></l><r>lebhaft<s n="adv"/></r></p></e>
     <e><p><l>locally<s n="adv"/></l><r>örtlich<s n="adv"/></r></p></e>
     <e><p><l>logically<s n="adv"/></l><r>logischerweise<s n="adv"/></r></p></e>
-    <e><p><l>lonely<s n="adv"/></l><r>einsam<s n="adv"/></r></p></e>
+    <e><p><l>lonesomely<s n="adv"/></l><r>einsam<s n="adv"/></r></p></e>
     <e><p><l>long<s n="adv"/></l><r>lang<s n="adv"/></r></p></e>
     <e><p><l>loosely<s n="adv"/></l><r>locker<s n="adv"/></r></p></e>
     <e r="LR"><p><l>loudly<s n="adv"/></l><r>laut<s n="adv"/></r></p></e>
-    <e><p><l>lovely<s n="adv"/></l><r>hold<s n="adv"/></r></p></e>
-    <e><p><l>lovely<s n="adv"/></l><r>hübsch<s n="adv"/></r></p></e>
+    <!-- <e><p><l>lovely<s n="adv"/></l><r>hold<s n="adv"/></r></p></e> -->
     <e><p><l>lovingly<s n="adv"/></l><r>liebend<s n="adv"/></r></p></e>
     <e><p><l>low<s n="adv"/></l><r>blöken<s n="adv"/></r></p></e>
     <e><p><l>lower<s n="adv"/></l><r>kleiner<s n="adv"/></r></p></e>
@@ -41818,10 +41820,11 @@
     <e><p><l>presently<s n="adv"/></l><r>gegenwärtig<s n="adv"/></r></p></e>
     <e r="LR"><p><l>presently<s n="adv"/></l><r>bald<s n="adv"/></r></p></e>
     <e><p><l>presumably<s n="adv"/></l><r>vermutlich<s n="adv"/></r></p></e>
+    <e><p><l>prettily<s n="adv"/></l><r>hübsch<s n="adv"/></r></p></e>
     <e><p><l>pretty<s n="adv"/></l><r>ziemlich<s n="adv"/></r></p></e>
     <e><p><l>prevent<s n="adv"/></l><r>zurückhalten<s n="adv"/></r></p></e>
     <e><p><l>previously<s n="adv"/></l><r>vorher<s n="adv"/></r></p></e>
-    <e><p><l>prickly<s n="adv"/></l><r>schmerzend<s n="adv"/></r></p></e>
+    <!-- <e><p><l>prickly<s n="adv"/></l><r>schmerzend<s n="adv"/></r></p></e> -->
     <e><p><l>primarily<s n="adv"/></l><r>primär<s n="adv"/></r></p></e>
     <e r="LR"><p><l>principally<s n="adv"/></l><r>hauptsächlich<s n="adv"/></r></p></e>
     <e><p><l>privately<s n="adv"/></l><r>privat<s n="adv"/></r></p></e>
@@ -41962,6 +41965,7 @@
     <e><p><l>solely<s n="adv"/></l><r>einzig<s n="adv"/></r></p></e>
     <e><p><l>solemnly<s n="adv"/></l><r>feierlich<s n="adv"/></r></p></e>
     <e><p><l>solidly<s n="adv"/></l><r>solidarisch<s n="adv"/></r></p></e>
+    <e><p><l>solitarily<s n="adv"/></l><r>einsam<s n="adv"/></r></p></e>
     <e><p><l>some<s n="adv"/></l><r>etwas<s n="adv"/></r></p></e>
     <e r="RL"><p><l>some<s n="adv"/></l><r>irgend<s n="adv"/></r></p></e>
     <e><p><l>somehow<s n="adv"/></l><r>irgendwie<s n="adv"/></r></p></e>
