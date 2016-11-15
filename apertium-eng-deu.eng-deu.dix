@@ -283,6 +283,7 @@
     <e><p><l>with<b/>a<b/>view<b/>to<s n="pr"/></l><r>in<b/>der<b/>Absicht<s n="pr"/></r></p></e>
     <e><p><l>with<b/>regard<b/>to<s n="pr"/></l><r>hinsichtlich<s n="pr"/></r></p></e>
     <e><p><l>with<b/>the<b/>aid<b/>of<s n="pr"/></l><r>mithilfe<s n="pr"/></r></p></e>
+    <e><p><l>with<b/>the<b/>help<b/>of<s n="pr"/></l><r>mithilfe<b/>von<s n="pr"/></r></p></e>
     <e><p><l>within<s n="pr"/></l><r>innerhalb<s n="pr"/></r></p></e>
     <e r="RL"><p><l>within<s n="pr"/></l><r>binnen<s n="pr"/></r></p></e>
     <e><p><l>without<s n="pr"/></l><r>ohne<s n="pr"/></r></p></e>
@@ -6277,7 +6278,7 @@
     <e r="RL"><p><l>cousin<s n="n"/></l><r>Cousine<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>cousin<s n="n"/></l><r>Vetter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>couture<s n="n"/></l><r>Couture<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>covenant<s n="n"/></l><r>Vertrag<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>contract<s n="n"/></l><r>Vertrag<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>cover<s n="n"/></l><r>Cover<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>cover<s n="n"/></l><r>Hülle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>cover<s n="n"/></l><r>Überzug<s n="n"/><s n="m"/></r></p></e>
