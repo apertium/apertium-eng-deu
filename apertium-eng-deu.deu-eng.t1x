@@ -460,7 +460,59 @@
 			<attr-item tags="adj"/>
 			<attr-item tags="num"/>
 			<attr-item tags="adv"/>
+			<attr-item tags="preadv"/>
 			<attr-item tags="prn"/>
+			<attr-item tags="vblex"/>
+			<attr-item tags="vbmod"/>
+			<attr-item tags="vaux"/>
+			<attr-item tags="vbdo"/>
+			<attr-item tags="vbhaver"/>
+			<attr-item tags="vbser"/>
+			<attr-item tags="pr"/>
+			<attr-item tags="cnjcoo"/>
+			<attr-item tags="cnjsub"/>
+			<attr-item tags="cnjadv"/>
+			<attr-item tags="ij"/>
+			<attr-item tags="cm"/>
+			<attr-item tags="sent"/>
+		</def-attr> 
+
+		<def-attr n="a_PoS2">
+			<attr-item tags="n"/>
+			<attr-item tags="np.ant"/>
+			<attr-item tags="np.cog"/>
+			<attr-item tags="np.loc"/>
+			<attr-item tags="np.top"/>
+			<attr-item tags="np.org"/>
+			<attr-item tags="np.al"/>
+			<attr-item tags="det.def"/>
+			<attr-item tags="det.ind"/>
+			<attr-item tags="det.qnt"/>
+			<attr-item tags="det.dem"/>
+			<attr-item tags="det.pos"/>
+			<attr-item tags="det.ord"/>
+			<attr-item tags="det.itg"/>
+			<attr-item tags="adj.sint"/>
+			<attr-item tags="adj.ord"/>
+			<attr-item tags="num.ord"/>
+			<attr-item tags="num"/>
+			<attr-item tags="adv.itg"/>
+			<attr-item tags="adv"/>
+			<attr-item tags="preadv"/>
+			<attr-item tags="prn.subj"/>
+			<attr-item tags="prn.obj"/>
+			<attr-item tags="prn.itg"/>
+			<attr-item tags="prn.ind"/>
+			<attr-item tags="prn.tn"/>
+			<attr-item tags="prn.pos"/>
+			<attr-item tags="prn.det"/>
+			<attr-item tags="prn.iobj"/>
+			<attr-item tags="prn.dobj"/>
+			<attr-item tags="prn.pers"/>
+			<attr-item tags="prn.dem"/>
+			<attr-item tags="prn.ref"/>
+			<attr-item tags="prn.rel"/>
+			<attr-item tags="prn.qnt"/>
 			<attr-item tags="vblex"/>
 			<attr-item tags="vbmod"/>
 			<attr-item tags="vaux"/>
@@ -1645,7 +1697,8 @@
 					<let>
 						<clip pos="1" side="tl" part="tags"/>
 						<concat>
-							<clip pos="1" side="tl" part="a_det"/>
+							<!--<clip pos="1" side="tl" part="a_det"/>-->
+							<clip pos="1" side="tl" part="a_PoS2"/>
 							<var n="v_nbr_det"/>
 						</concat>
 					</let>
@@ -3190,7 +3243,7 @@
 		</rule>
 
 
-		<rule comment="RULE: DET NOM GUIO NOM">
+		<rule comment="RULE: DET NOM-NOM">
 			<pattern>
 				<pattern-item n="det"/>
 				<pattern-item n="nom"/>
@@ -3222,13 +3275,13 @@
 						<lu>
 							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
-							<clip pos="2" side="tl" part="a_nbr"/>
+							<!--<clip pos="2" side="tl" part="a_nbr"/>-->
+							<lit-tag v="sg"/>
 							<clip pos="2" side="tl" part="a_cas"/>
 							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 						<lu>
-							<clip pos="3" side="tl" part="lem"/>
-							<lit-tag v="guio"/>
+							<clip pos="3" side="tl" part="whole"/> <!-- "guio" -->
 						</lu>
 						<lu>
 							<clip pos="4" side="tl" part="lemh"/>
@@ -3350,7 +3403,7 @@
 		</rule>
 
 
-		<rule comment="RULE: NOM GUIO NOM">
+		<rule comment="RULE: NOM-NOM">
 			<pattern>
 				<pattern-item n="nom"/>
 				<pattern-item n="hyphen"/>
@@ -3374,13 +3427,13 @@
 						<lu>
 							<clip pos="1" side="tl" part="lemh"/>
 							<clip pos="1" side="tl" part="a_nom"/>
-							<clip pos="1" side="tl" part="a_nbr"/>
+							<!--<clip pos="1" side="tl" part="a_nbr"/>-->
+							<lit-tag v="sg"/>
 							<clip pos="1" side="tl" part="a_cas"/>
 							<clip pos="1" side="tl" part="lemq"/>
 						</lu>
 						<lu>
-							<clip pos="2" side="tl" part="lem"/>
-							<lit-tag v="guio"/>
+							<clip pos="2" side="tl" part="whole"/> <!-- "guio" -->
 						</lu>
 						<lu>
 							<clip pos="3" side="tl" part="lemh"/>
@@ -4459,7 +4512,7 @@
 		</rule>
 
 
-		<rule comment="RULE: NUM NOM NOM">
+		<rule comment="RULE: NUM NOM-NOM">
 			<pattern>
 				<pattern-item n="num"/>
 				<pattern-item n="nom"/>
@@ -4491,12 +4544,13 @@
 						<lu>
 							<clip pos="2" side="tl" part="lemh"/>
 							<clip pos="2" side="tl" part="a_nom"/>
-							<clip pos="2" side="tl" part="a_nbr"/>
+							<!--<clip pos="2" side="tl" part="a_nbr"/>-->
+							<lit-tag v="sg"/>
 							<clip pos="2" side="tl" part="a_cas"/>
 							<clip pos="2" side="tl" part="lemq"/>
 						</lu>
 						<lu>
-							<clip pos="3" side="tl" part="whole"/>
+							<clip pos="3" side="tl" part="whole"/> <!-- "guio" -->
 						</lu>
 						<lu>
 							<clip pos="4" side="tl" part="lemh"/>
@@ -4735,6 +4789,41 @@
 						</out>
 					</otherwise>
 				</choose>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!-- "how old" -->
+		<rule comment="RULE: ITG ADJ">
+			<pattern>
+				<pattern-item n="itg"/>
+				<pattern-item n="adj"/>
+			</pattern>
+			<action>
+				<call-macro n="build_itg">  <!-- convert iobj/dobj to obj -->
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="itg_adj" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="ITG"/></tag>
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
+						</lu>
+						<b pos="1"/>
+						<lu>
+							<clip pos="2" side="tl" part="lem"/>
+							<clip pos="2" side="tl" part="a_adj"/>
+						</lu>
+					</chunk>
+				</out>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>

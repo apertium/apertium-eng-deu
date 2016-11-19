@@ -3107,6 +3107,51 @@
 		</rule>
 
 
+		<!-- "Wie alt bist du ?" => "How old are you ?" -->
+		<rule comment="RULE: ITG V PRPERS ?">
+			<pattern>
+				<pattern-item n="ITG"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="PRPERS"/>
+				<pattern-item n="QST"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="2"/>
+					<with-param pos="3"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "Schwimmst du ?" => "+Do you swim ?" -->
 		<!-- "~V PRN ?" => "+DO PRN ~V ?" -->  <!-- move verb / add "do" -->
 		<rule comment="RULE: V PRPERS ?">
@@ -3159,7 +3204,7 @@
 					</chunk>
 				</out>
 				<call-macro n="set_gen_nbr_nom">
-					<with-param pos="3"/>
+					<with-param pos="2"/>
 				</call-macro>
 			</action>
 		</rule>

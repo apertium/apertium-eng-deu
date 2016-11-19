@@ -26,6 +26,9 @@
 		<def-cat n="adv">
 			<cat-item name="adv"/>
 		</def-cat>
+		<def-cat n="qst">
+			<cat-item name="qst"/>
+		</def-cat>
 
 	</section-def-cats>
 
@@ -65,7 +68,7 @@
 
 
 	<section-def-vars>
-		<def-var n="paraula"/>
+		<def-var n="v_tense"/>
 	</section-def-vars>
 
 
