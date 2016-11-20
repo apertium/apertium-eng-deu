@@ -230,6 +230,10 @@
 			<cat-item lemma="straße" tags="n.*"/>
 		</def-cat>
 
+		<def-cat n="clock">
+			<cat-item lemma="uhr" tags="n.*"/>
+		</def-cat>
+
 		<def-cat n="periods">
 			<cat-item lemma="tag" tags="n.*"/>
 			<cat-item lemma="woche" tags="n.*"/>
@@ -541,6 +545,8 @@
 		<def-var n="EOS" v="true"/>
 		<def-var n="v_tipus_prn"/>
 		<def-var n="v_comp_sup_adj"/>
+		<def-var n="v_out_more_most_adj"/>
+		<def-var n="v_out_more_most_adj1"/>
 		<def-var n="v_tense"/>
 		<def-var n="v_cas"/>
 		<def-var n="v_gen"/>
@@ -1428,50 +1434,68 @@
 		</def-macro>
 
 
-		<!-- (adj) set if comp or sub, else clear variable / OUT: v_comp_sup_adj -->
+		<!-- (adj) set if comp or sup, else clear variable / OUT: v_comp_sup_adj,v_out_more_most_adj -->
 		<def-macro n="set_comp_sup_adj" npar="1">
 			<choose>
 				<when>
 					<test>
-						<or>
-							<equal>
-								<var n="v_a_adj"/>
-								<lit-tag v="adj.comp"/>
-							</equal>
 						<equal>
 							<var n="v_a_adj"/>
-							<lit-tag v="adj.sint.comp"/>
+							<lit-tag v="adj.comp"/>
 						</equal>
-						</or>
 					</test>
+					<let><var n="v_comp_sup_adj"/><lit-tag v="comp"/></let>
 					<let>
-						<var n="v_comp_sup_adj"/>
-						<lit-tag v="comp"/>
+						<var n="v_out_more_most_adj"/>
+						<concat>
+							<lit v="^more"/>
+							<lit-tag v="preadv"/>
+							<lit v="$ "/>
+						</concat>
 					</let>
 				</when>
 				<when>
 					<test>
-						<or>
-							<equal>
-								<var n="v_a_adj"/>
-								<lit-tag v="adj.sup"/>
-							</equal>
-							<equal>
-								<var n="v_a_adj"/>
-								<lit-tag v="adj.sint.sup"/>
-							</equal>
-						</or>
+						<equal>
+							<var n="v_a_adj"/>
+							<lit-tag v="adj.sint.comp"/>
+						</equal>
 					</test>
+					<let><var n="v_comp_sup_adj"/><lit-tag v="comp"/></let>
+					<let><var n="v_out_more_most_adj"/><lit v=""/></let>
+				</when>
+
+				<when>
+					<test>
+						<equal>
+							<var n="v_a_adj"/>
+							<lit-tag v="adj.sup"/>
+						</equal>
+					</test>
+					<let><var n="v_comp_sup_adj"/><lit-tag v="sup"/></let>
 					<let>
-						<var n="v_comp_sup_adj"/>
-						<lit-tag v="sup"/>
+						<var n="v_out_more_most_adj"/>
+						<concat>
+							<lit v="^most"/>
+							<lit-tag v="preadv"/>
+							<lit v="$ "/>
+						</concat>
 					</let>
 				</when>
+				<when>
+					<test>
+						<equal>
+							<var n="v_a_adj"/>
+							<lit-tag v="adj.sint.sup"/>
+						</equal>
+					</test>
+					<let><var n="v_comp_sup_adj"/><lit-tag v="sup"/></let>
+					<let><var n="v_out_more_most_adj"/><lit v=""/></let>
+				</when>
+
 				<otherwise>
-					<let>
-						<var n="v_comp_sup_adj"/>
-						<lit v=""/>
-					</let>
+					<let><var n="v_comp_sup_adj"/><lit v=""/></let>
+					<let><var n="v_out_more_most_adj"/><lit v=""/></let>
 				</otherwise>
 			</choose>
 		</def-macro>
@@ -1722,6 +1746,50 @@
 			<call-macro n="set_comp_sup_adj">
 				<with-param pos="1"/>
 			</call-macro>
+
+			<choose>    <!-- if more/most added  -->
+				<when>  <!-- remove SL <comp>/<sup> -->
+					<test>
+						<not><equal>
+							<var n="v_out_more_most_adj"/>
+							<lit v=""/>
+						</equal></not>
+					</test>
+					<let>
+						<clip pos="1" side="tl" part="tags"/>
+						<concat>
+							<lit-tag v="adj"/>
+							<var n="v_out_more_most_adj"/>
+						</concat>
+					</let>
+				</when>
+			</choose>
+
+			<choose>  <!-- (der Größte => the tallest) -->
+				<when>  <!-- <comp>/<sup> -->
+					<test>
+						<not><equal>
+							<var n="v_comp_sup_adj"/>
+							<lit v=""/>
+						</equal></not>
+					</test>
+					<choose>
+						<when>
+							<test>
+								<equal>
+									<case-of pos="1" side="tl" part="lem"/>
+									<lit v="Aa"/>
+								</equal>
+							</test>
+							<modify-case>
+								<clip pos="1" side="tl" part="lem"/>
+								<lit v="aa"/>
+							</modify-case>
+						</when>
+					</choose>
+				</when>
+			</choose>
+
 		</def-macro>
 
 
@@ -2970,7 +3038,7 @@
 					<with-param pos="2"/>
 				</call-macro>
 				<out>
-					<chunk name="nnom_num" case="caseFirstWord">
+					<chunk name="nom_num" case="caseFirstWord">
 						<tags>
 							<tag><lit-tag v="SN"/></tag>
 							<tag><lit-tag v="p3"/></tag>
@@ -2984,6 +3052,35 @@
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_ord"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
+		<!--  7 Uhr 30 =>  7:30 -->
+		<rule comment="RULE: NUM CLOCK NUM">
+			<pattern>
+				<pattern-item n="ord_num"/>
+				<pattern-item n="clock"/>
+				<pattern-item n="ord_num"/>
+			</pattern>
+			<action>
+				<out>
+					<chunk name="num" case="caseFirstWord">
+						<tags>
+							<tag><lit-tag v="NUM"/></tag>
+							<tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="lem"/>
+							<lit v=":"/>
+							<clip pos="3" side="tl" part="lem"/>
+							<clip pos="1" side="tl" part="tags"/>
 						</lu>
 					</chunk>
 				</out>
@@ -3980,6 +4077,13 @@
 				<call-macro n="build_det">
 					<with-param pos="1"/>
 				</call-macro>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="2"/>
+				</call-macro>
+				<let><var n="v_out_more_most_adj1"/><var n="v_out_more_most_adj"/></let>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="3"/>
+				</call-macro>
 				<call-macro n="build_nom"> <!-- OUT: v...nom -->
 					<with-param pos="4"/>
 				</call-macro>
@@ -3995,11 +4099,13 @@
 							<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
 						</lu>
 						<b pos="1"/>
+						<var n="v_out_more_most_adj1"/>  <!-- more/most -->
 						<lu>
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_adj"/>
 						</lu>
 						<b pos="2"/>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="3" side="tl" part="lem"/>
 							<clip pos="3" side="tl" part="a_adj"/>
@@ -4032,6 +4138,9 @@
 				<call-macro n="build_det">
 					<with-param pos="1"/>
 				</call-macro>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="3"/>
+				</call-macro>
 				<call-macro n="build_num_nom"> <!-- OUT: v...nom -->
 					<with-param pos="2"/>
 					<with-param pos="4"/>
@@ -4054,6 +4163,7 @@
 							<clip pos="2" side="tl" part="a_nbr"/>
 						</lu>
 						<b pos="2"/>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="3" side="tl" part="lem"/>
 							<clip pos="3" side="tl" part="a_adj"/>
@@ -4085,6 +4195,9 @@
 				<call-macro n="build_det">
 					<with-param pos="1"/>
 				</call-macro>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="2"/>
+				</call-macro>
 				<call-macro n="build_nom"> <!-- OUT: v...nom -->
 					<with-param pos="3"/>
 				</call-macro>
@@ -4100,6 +4213,7 @@
 							<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
 						</lu>
 						<b pos="1"/>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_adj"/>
@@ -4176,6 +4290,13 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="1"/>
+				</call-macro>
+				<let><var n="v_out_more_most_adj1"/><var n="v_out_more_most_adj"/></let>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="2"/>
+				</call-macro>
 				<call-macro n="build_nom"> <!-- OUT: v...nom -->
 					<with-param pos="3"/>
 				</call-macro>
@@ -4187,11 +4308,13 @@
 							<tag><var n="v_gen_nom"/></tag>
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
+						<var n="v_out_more_most_adj1"/>  <!-- more/most -->
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_adj"/>
 						</lu>
 						<b pos="1"/>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_adj"/>
@@ -4220,6 +4343,9 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="2"/>
+				</call-macro>
 				<call-macro n="build_num_nom"> <!-- OUT: v...nom -->
 					<with-param pos="1"/>
 					<with-param pos="3"/>
@@ -4238,6 +4364,7 @@
 							<clip pos="1" side="tl" part="a_nbr"/>
 						</lu>
 						<b pos="1"/>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_adj"/>
@@ -4369,6 +4496,9 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="1"/>
+				</call-macro>
 				<call-macro n="build_nom">
 					<with-param pos="2"/>
 				</call-macro>
@@ -4383,6 +4513,7 @@
 							<tag><var n="v_gen_nom"/></tag>
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_adj"/>
@@ -4574,6 +4705,9 @@
 				<pattern-item n="nom"/>
 			</pattern>
 			<action>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="1"/>
+				</call-macro>
 				<call-macro n="build_nom"> <!-- OUT: v...nom -->
 					<with-param pos="2"/>
 				</call-macro>
@@ -4589,6 +4723,7 @@
 							<tag><var n="v_gen_nom"/></tag>
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_adj"/>
@@ -4703,6 +4838,9 @@
 				<call-macro n="build_det">
 					<with-param pos="1"/>
 				</call-macro>
+				<call-macro n="build_adj"> <!-- OUT: v_out_more_most_adj -->
+					<with-param pos="2"/>
+				</call-macro>
 				<out>
 					<chunk name="det_adj" case="caseFirstWord">
 						<tags>
@@ -4715,6 +4853,7 @@
 							<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
 						</lu>
 						<b pos="1"/>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_adj"/>
@@ -4884,6 +5023,7 @@
 						<tags>
 							<tag><lit-tag v="SA"/></tag>
 						</tags>
+						<var n="v_out_more_most_adj"/>  <!-- more/most -->
 						<lu>
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_adj"/>
@@ -4908,25 +5048,11 @@
 				<pattern-item n="adj"/>
 			</pattern>
 			<action>
-				<call-macro n="build_adj">
+				<call-macro n="build_adj">  <!-- OUT: v_comp_sup_adj -->
 					<with-param pos="1"/>
 				</call-macro>
 				<choose>
-					<when>
-						<test>
-							<equal>
-								<case-of pos="1" side="tl" part="lem"/>
-								<lit v="Aa"/>
-							</equal>
-						</test>
-						<modify-case>
-							<clip pos="1" side="tl" part="lem"/>
-							<lit v="aa"/>
-						</modify-case>
-					</when>
-				</choose>
-				<choose>
-					<when>
+					<when>  <!-- is not sint -->
 						<test>
 							<equal>
 								<var n="v_sint_adj"/>
