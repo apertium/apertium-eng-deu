@@ -36393,6 +36393,7 @@
     <e><p><l>fecal<s n="adj"/></l><r>fäkal<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>feckless<s n="adj"/></l><r>schwach<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>federal<s n="adj"/></l><r>föderal<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="RL"><p><l>federal<s n="adj"/></l><r>bundesstaatlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>federalistic<s n="adj"/></l><r>föderalistisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>federally<b/>owned<s n="adj"/></l><r>bundeseigen<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>fee<b/>required<s n="adj"/></l><r>kostenpflichtig<s n="adj"/></r></p></e>
@@ -39286,7 +39287,6 @@
     <e r="LR"><p><l>secret<s n="adj"/></l><r>geheim<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>secretive<s n="adj"/></l><r>verschlossen<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sectional<s n="adj"/></l><r>partikular<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>sectorial<s n="adj"/></l><r>bundesstaatlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>secular<s n="adj"/></l><r>laizistisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>secular<s n="adj"/></l><r>säkular<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>secure<s n="adj"/></l><r>fest<s n="adj"/><s n="sint"/></r></p></e>
@@ -40393,6 +40393,7 @@
     <e><p><l>uninterrupted<s n="adj"/></l><r>pausenlos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>uninterruptible<s n="adj"/></l><r>unterbrechungsfrei<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>uninvited<s n="adj"/></l><r>ungebeten<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>unional<s n="adj"/></l><r>bundesstaatlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unique<s n="adj"/></l><r>einmalig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unique<s n="adj"/></l><r>einzigartig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unisex<s n="adj"/></l><r>eingeschlechtig<s n="adj"/><s n="sint"/></r></p></e>
