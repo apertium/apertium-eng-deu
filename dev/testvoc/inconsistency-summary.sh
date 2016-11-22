@@ -4,7 +4,7 @@
 # --help
 #
 
-ALL_POS="abbr adj adv cm cnjadv cnjcoo cnjsub det guio ij n np num pr preadv prn rel vaux vbhaver vblex vbser vbmod"
+ALL_POS="abbr adj adv cm cnjadv cnjcoo cnjsub det guio ij n np num pr preadv prn rel vaux vbhaver vblex vbser vbmod OVERALL"
 
 show_help() {
     cat <<EOF
@@ -98,6 +98,10 @@ for pos in $ALL_POS; do
 
 	vbmod)
 	    cat $INFILE | grep "<$pos>" | grep -v -e '<vbl' | grep -v REGEX >$subsetfile
+	    ;;
+
+	OVERALL)
+	    cat $INFILE | grep -v REGEX >$subsetfile
 	    ;;
 
 	*)
