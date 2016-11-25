@@ -7292,8 +7292,6 @@
     <e><p><l>diabetic<s n="n"/></l><r>Diabetiker<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>diabetic<s n="n"/></l><r>Diabetikerin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>diagnosis<s n="n"/></l><r>Diagnose<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>diagnostic<s n="n"/></l><r>diagnostisch<s n="n"/></r></p></e>
-
     <e><p><l>diagnostics<s n="n"/></l><r>Diagnostik<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>diagonal<s n="n"/></l><r>Diagonale<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>diagram<s n="n"/></l><r>Diagramm<s n="n"/><s n="nt"/></r></p></e>
@@ -12404,7 +12402,7 @@
     <e><p><l>icebreaker<s n="n"/></l><r>Eisbrecher<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>icecream-bar<s n="n"/></l><r>Eisdiele<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Icelander<s n="n"/></l><r>Isländer<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>Icelandic<s n="n"/></l><r>isländisch<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>Icelandic<s n="n"/></l><r>Isländisch<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>Icelandic<b/>speaker<s n="n"/></l><r>Isländisch-Sprechender<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>iceman<s n="n"/></l><r>Eisverkäufer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>icicle<s n="n"/></l><r>Eiszapfen<s n="n"/><s n="m"/></r></p></e>
@@ -15583,7 +15581,7 @@
     <e><p><l>modern<b/>time<s n="n"/><s n="pl"/></l><r>Neuzeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>modernisation<s n="n"/></l><r>Modernisierung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>modernism<s n="n"/></l><r>Modernismus<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>modernist<s n="n"/></l><r>Vertreter<b/>der<b/>Moderne<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>modernist<s n="n"/></l><r>Vertreter<g><b/>der<b/>Moderne</g><s n="n"/><s n="m"/></r></p></e>
     <e><p><l>modernity<s n="n"/></l><r>Modernität<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>modernness<s n="n"/></l><r>Modernität<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>modesty<s n="n"/></l><r>Bescheidenheit<s n="n"/><s n="f"/></r></p></e>
@@ -18321,7 +18319,7 @@
     <e><p><l>plural<s n="n"/></l><r>Mehrzahl<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>plural<s n="n"/></l><r>Plural<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>pluralism<s n="n"/></l><r>Pluralismus<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>pluralist<s n="n"/></l><r>pluralistisch<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>pluralist<s n="n"/></l><r>Pluralist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>plurality<s n="n"/></l><r>Vielzahl<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>plus<s n="n"/></l><r>Plus<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>plus<b/>sign<s n="n"/></l><r>Pluszeichen<s n="n"/><s n="nt"/></r></p></e>
