@@ -62,6 +62,7 @@ dev/testvoc/inconsistency-summary.sh -text
 dev/testvoc/inconsistency.sh -text
 dev/testvoc/testvoc.sh -text
 /eng-deu.prob -text
+/expand_bidix.xls -text
 /modes.xml -text
 t/README.org -text
 t/config.sh -text

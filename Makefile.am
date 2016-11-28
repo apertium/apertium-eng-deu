@@ -94,12 +94,17 @@ $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 ## Bilingual dictionaries
 ###############################################################################
 
-$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary $<
+.deps/$(BASENAME).$(PREFIX1).dix: .deps/.d
+
+.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix expand_bidix.xls
+	xsltproc expand_bidix.xls $< >$@ && \
+	grep -q ERROR $@ && echo "Errors in $@" && exit 11 || \
+	apertium-validate-dictionary $@
+
+$(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
 	lt-comp lr $< $@
 
-$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary $<
+$(PREFIX2).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
 	lt-comp rl $< $@
 
 ###############################################################################
@@ -208,4 +213,3 @@ test: all
 	@echo "house" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
-
