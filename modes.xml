@@ -273,7 +273,7 @@
 
   <mode name="deu-eng" install="yes">
     <pipeline>
-      <program name="lt-proc -w">
+      <program name="lt-proc -e -w">
         <file name="deu-eng.automorf.bin"/>
       </program>
 
