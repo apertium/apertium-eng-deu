@@ -1,3 +1,17 @@
+
+=== Status of this resource ===
+
+1) integration of apertium-en-de.en.dix into apertium-eng.eng.dix
+  + adv:   found 1104, not found 40
+  + adj:   found 2490, not found 102
+  + n:     found 8328, not found 116
+  + np:    found 5553, not found 84
+  + vblex: found 1735, not found 9
+  - other: not checked
+
+=== old README ===
+
+
 apertium-en-de
 Apertium English-German machine translation data.
 
@@ -29,3 +43,4 @@ Not all of the resources are under the GPL. Resources not under the GPL are
 used as a reference and not incorporated into this software.
 
 * http://www.canoo.net/services/Controller?dispatch=inflection&input=Arbeitsgemeinschaft&features=(Cat+N)&lang=en
+
