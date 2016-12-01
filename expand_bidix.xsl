@@ -64,7 +64,7 @@ Automatically add entries to eng-deu bidix
 	  </p>
 	</e>
 	<!-- add a comment to mark the added entry -->
-	<xsl:text disable-output-escaping="yes">&lt;!--</xsl:text> added by expand_bidix.xls <xsl:text disable-output-escaping="yes">--&gt;</xsl:text>
+	<xsl:text disable-output-escaping="yes">&lt;!--</xsl:text> added by expand_bidix.xsl <xsl:text disable-output-escaping="yes">--&gt;</xsl:text>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:if>

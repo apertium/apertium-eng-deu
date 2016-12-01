@@ -96,8 +96,8 @@ $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 
 .deps/$(BASENAME).$(PREFIX1).dix: .deps/.d
 
-.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix expand_bidix.xls
-	xsltproc expand_bidix.xls $< >$@ && \
+.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix expand_bidix.xsl
+	xsltproc expand_bidix.xsl $< >$@ && \
 	grep -q ERROR $@ && echo "Errors in $@" && exit 11 || \
 	apertium-validate-dictionary $@
 
