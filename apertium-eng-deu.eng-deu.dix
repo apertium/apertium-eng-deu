@@ -73,7 +73,7 @@
     <sdef n="fs"        c="Seperable verb in subordinate clause"/>
     <sdef n="fm"        c="Seperable verb in main clause"/>
     <sdef n="acr"       c="Acronym"/>
-
+    <sdef n="lower"     c="Lower case"/>
   </sdefs>
 
   <section id="main" type="standard">
@@ -561,10 +561,9 @@
     <e><p><l>acclimatisation<s n="n"/></l><r>Akklimatisation<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>acclivity<s n="n"/></l><r>Böschung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>accolade<s n="n"/></l><r>Auszeichnung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>accommodation<s n="n"/></l><r>Unterkunft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>accommodation<s n="n"/></l><r>Anpassung<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>accommodation<s n="n"/></l><r>Unterkunft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>accommodation<b/>unit<s n="n"/></l><r>Wohneinheit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>accomodation<s n="n"/></l><r>Unterkunft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>accompaniment<s n="n"/></l><r>Begleitung<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>accompanist<s n="n"/></l><r>Begleiter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>accomplice<s n="n"/></l><r>Komplice<s n="n"/><s n="m"/></r></p></e>
@@ -1788,8 +1787,8 @@
     <e><p><l>assessment<s n="n"/></l><r>Beurteilung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>assessment<s n="n"/></l><r>Einschätzung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>assessor<s n="n"/></l><r>Assessor<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>asset<s n="n"/></l><r>Aktivum<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>assets<s n="n"/></l><r>Aktiva<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>asset<s n="n"/></l><r>Vermögen<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>asset<s n="n"/><s n="pl"/></l><r>Aktivum<s n="n"/><s n="nt"/><s n="pl"/></r></p></e>
     <e><p><l>asshole<s n="n"/></l><r>Arschloch<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>assiduity<s n="n"/></l><r>Fleiß<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>assignation<s n="n"/></l><r>Zuweisung<s n="n"/><s n="f"/></r></p></e>
@@ -5874,7 +5873,9 @@
     <e><p><l>consultation<g><b/>of<b/>workers<b/>by<b/>management</g><s n="n"/></l><r>Mitsprache<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consulting<s n="n"/></l><r>Beratung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consumer<s n="n"/></l><r>Konsument<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>consumer<s n="n"/></l><r>Konsumentin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consumer<s n="n"/></l><r>Verbraucher<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>consumer<s n="n"/></l><r>Verbraucherin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consumer<b/>right<s n="n"/></l><r>Verbraucherrecht<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>consumer<b/>society<s n="n"/></l><r>Konsumgesellschaft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consumerism<s n="n"/></l><r>Verbraucherbewegung<s n="n"/><s n="f"/></r></p></e>
@@ -6454,7 +6455,7 @@
     <e><p><l>crossfire<s n="n"/></l><r>Kreuzfeuer<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>crosshead<s n="n"/></l><r>Kreuzkopf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>crossing<s n="n"/></l><r>Fußgängerüberweg<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>crossing<s n="n"/></l><r>Übergang<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>crossing<s n="n"/></l><r>Übergang<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>crossing<s n="n"/></l><r>Überquerung<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>crossroad<s n="n"/></l><r>Kreuzung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>crossroads<s n="n"/></l><r>Straßenkreuzung<s n="n"/><s n="f"/></r></p></e>
@@ -7678,6 +7679,7 @@
     <e><p><l>dive<s n="n"/></l><r>Bumslokal<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>dive<s n="n"/></l><r>Sprung<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>divergence<s n="n"/></l><r>Abweichung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>diversification<s n="n"/></l><r>Diversifikation<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>diversification<s n="n"/></l><r>Veränderung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>diversification<s n="n"/></l><r>Vielfalt<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>diversion<s n="n"/></l><r>Umleitung<s n="n"/><s n="f"/></r></p></e>
@@ -14040,7 +14042,7 @@
     <e><p><l>lexicography<s n="n"/></l><r>Lexikografie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>LF<s n="n"/><s n="acr"/></l><r>LF<s n="n"/><s n="acr"/><s n="nt"/></r></p></e>
     <e><p><l>liability<s n="n"/></l><r>Haftung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>liability<s n="n"/></l><r>Passiva<s n="n"/><s n="mfn"/></r></p></e>
+    <e><p><l>liability<s n="n"/><s n="pl"/></l><r>Passivum<s n="n"/><s n="nt"/><s n="pl"/></r></p></e>
     <e><p><l>liability<b/>insurance<g><b/>on<b/>property</g><s n="n"/></l><r>Grundstückshaftpflichtversicherung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>liaison<s n="n"/></l><r>Verbindungsmann<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>liana<s n="n"/></l><r>Liane<s n="n"/><s n="f"/></r></p></e>
@@ -21042,6 +21044,7 @@
     <e><p><l>scabbard<s n="n"/></l><r>Schwertscheide<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>scabies<s n="n"/></l><r>Krätze<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>scaffold<s n="n"/></l><r>Schafott<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>scale<s n="n"/></l><r>Skala<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>scale<s n="n"/></l><r>Umfang<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>scale<s n="n"/></l><r>Waage<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>scale<s n="n"/></l><r>Maßstab<s n="n"/><s n="m"/></r></p></e>
@@ -24316,7 +24319,8 @@
     <e><p><l>terms<s n="n"/></l><r>Frist<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>terms<s n="n"/></l><r>Bedingung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>term<g><b/>of<b/>guarantee</g><s n="n"/></l><r>Garantiebedingung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>tern<s n="n"/></l><r>Gruppe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tern<s n="n"/></l><r>Seeschwalbe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tern<s n="n"/></l><r>Meerschwalbe<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>terra<s n="n"/></l><r>Land<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>terrace<s n="n"/></l><r>Terrasse<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>terrace<b/>house<s n="n"/></l><r>Reihenhaus<s n="n"/><s n="nt"/></r></p></e>
