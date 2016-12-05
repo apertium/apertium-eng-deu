@@ -51,8 +51,8 @@ Automatically add entries to eng-deu bidix
 	    BH, CD, DDR, DJ, GI, GSoC, http, https, kg, BahnCard, SMS, TV
 	-->
 	<xsl:text>&#xa;    </xsl:text> <!-- insert \n and some indentation spaces -->
-	<e>
-	  <xsl:copy-of select="@*"/> <!-- copy attributes of the E element -->
+	<e r="RL"> <!-- TODO: temporarily for deu-eng only -->
+	  <!-- <xsl:copy-of select="@*"/>  --><!-- copy attributes of the E element -->
 	  <p>
 	    <xsl:copy-of select="p/@*"/> <!-- copy attributes of the P element -->
 	    <xsl:apply-templates select="p/l"/> <!-- copy L element -->
@@ -60,6 +60,7 @@ Automatically add entries to eng-deu bidix
 	      <xsl:copy-of select="p/r/@*"/> <!-- copy attributes of R element -->
 	      <xsl:copy-of select="translate(p/r/text(), $uppercase, $lowercase)"/>
 	      <xsl:apply-templates select="p/r/s"/>
+	      <!-- <s n="lower"/> TODO breaks deu-eng -->
 	    </r>
 	  </p>
 	</e>
