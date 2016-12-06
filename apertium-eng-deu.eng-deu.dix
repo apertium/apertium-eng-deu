@@ -1588,6 +1588,7 @@
     <e><p><l>archive<s n="n"/></l><r>Archiv<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>archive<s n="n"/></l><r>Aktensammlung<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>archive<s n="n"/></l><r>Urkundensammlung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>archiving<s n="n"/></l><r>Archivierung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>archivist<s n="n"/></l><r>Archivar<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>archness<s n="n"/></l><r>Durchtriebenheit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>archpriest<s n="n"/></l><r>Erzpriester<s n="n"/><s n="m"/></r></p></e>
@@ -6152,7 +6153,7 @@
     <e r="LR"><p><l>cot<s n="n"/></l><r>Hütte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>coterie<s n="n"/></l><r>Zirkel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>cottage<s n="n"/></l><r>Häuschen<s n="n"/><s n="nt"/></r></p></e>
-    <e r="LR"><p><l>cottage<s n="n"/></l><r>Dorf<s n="n"/><s n="nt"/></r></p></e>
+    <e r="LR"><p><l>cottage<s n="n"/></l><r>Hütte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>cottage<b/>cheese<s n="n"/></l><r>Hüttenkäse<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>cotton<s n="n"/></l><r>Baumwolle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>cotton<b/>cloth<s n="n"/></l><r>Baumwolltuch<s n="n"/><s n="nt"/></r></p></e>
@@ -6436,6 +6437,7 @@
     <e><p><l>crooner<s n="n"/></l><r>Schlagersänger<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>crop<s n="n"/></l><r>Ernte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>crop<g><b/>of<b/>fruit</g><s n="n"/></l><r>Obsternte<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>cropper<s n="n"/></l><r>Anbauer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>croquet<s n="n"/></l><r>Krocket<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>cross<s n="n"/></l><r>Kreuz<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>cross<b/>bow<s n="n"/></l><r>Armbrust<s n="n"/><s n="f"/></r></p></e>
@@ -7454,6 +7456,7 @@
     <e><p><l>directory<b/>enquiries<s n="n"/></l><r>Telefonauskunft<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>dirge<s n="n"/></l><r>Klagelied<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>dirk<s n="n"/></l><r>Dolch<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>dirndl<s n="n"/></l><r>Dirndl<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>dirt<s n="n"/></l><r>Dreck<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>dirt<s n="n"/></l><r>Schmutz<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>dirtiness<s n="n"/></l><r>Sauerei<s n="n"/><s n="f"/></r></p></e>
@@ -9313,6 +9316,7 @@
     <e><p><l>farm<b/>work<s n="n"/></l><r>Bauernhofarbeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>farm-product<s n="n"/></l><r>Farmprodukt<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>farm-worker<s n="n"/></l><r>Landarbeiter<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>farmer<s n="n"/></l><r>Anbauer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>farmer<s n="n"/></l><r>Bauer<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>farmer<s n="n"/></l><r>Bäuerin<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>farmer<s n="n"/></l><r>Farmer<s n="n"/><s n="m"/></r></p></e>
@@ -11259,6 +11263,7 @@
     <e><p><l>grout<s n="n"/></l><r>Grütze<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>grove<s n="n"/></l><r>Hain<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>grower<s n="n"/></l><r>Züchter<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>grower<s n="n"/></l><r>Anbauer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>growl<s n="n"/></l><r>Knurren<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>grown-up<s n="n"/></l><r>Erwachsener<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>growth<s n="n"/></l><r>Anwachsen<s n="n"/><s n="nt"/></r></p></e>
@@ -12423,6 +12428,7 @@
     <e><p><l>identification<s n="n"/></l><r>Identifikation<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>identification<s n="n"/></l><r>Indentifikation<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>identifier<s n="n"/></l><r>Bezeichnung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>identifying<b/>label<s n="n"/></l><r>Kennsatz<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>identity<s n="n"/></l><r>Identität<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>identity<b/>card<s n="n"/></l><r>Ausweis<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>identity<b/>card<s n="n"/></l><r>Personalausweis<s n="n"/><s n="m"/></r></p></e>
@@ -13649,6 +13655,7 @@
     <e><p><l>label<s n="n"/></l><r>Etikett<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>label<s n="n"/></l><r>Aufkleber<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>label<s n="n"/></l><r>Etikette<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>label<s n="n"/></l><r>Kennsatz<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>label<s n="n"/></l><r>Label<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>label<s n="n"/></l><r>Plattenfirma<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>labeling<s n="n"/></l><r>Markierung<s n="n"/><s n="f"/></r></p></e>
@@ -19730,6 +19737,7 @@
     <e><p><l>reader<s n="n"/></l><r>Leser<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>reader<s n="n"/></l><r>Vorleser<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>readiness<s n="n"/></l><r>Bereitschaft<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>reading<s n="n"/></l><r>Ablesung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>reading<s n="n"/></l><r>Lektüre<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>reading<s n="n"/></l><r>Lesen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>reading<s n="n"/></l><r>Lesung<s n="n"/><s n="f"/></r></p></e>
