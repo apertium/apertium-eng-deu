@@ -713,6 +713,7 @@
     <e><p><l>adjudicator<s n="n"/></l><r>Preisrichter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>adjunct<s n="n"/></l><r>Beigabe<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>adjunction<s n="n"/></l><r>Adjunktion<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>adjustment<s n="n"/></l><r>Anpassung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>administration<s n="n"/></l><r>Administration<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>administration<b/>employee<s n="n"/></l><r>Verwaltungsangestellte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>administrative<b/>offence<s n="n"/></l><r>Ordnungswidrigkeit<s n="n"/><s n="f"/></r></p></e>
@@ -24296,7 +24297,7 @@
     <e><p><l>tenpence<s n="n"/></l><r>Zehn-Pence-Münze<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tens<s n="n"/></l><r>Zehnerstelle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tense<s n="n"/></l><r>Zeitform<s n="n"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>tense<s n="n"/></l><r>Zeit<s n="n"/><s n="f"/></r></p></e>
+    <!-- <e r="RL"><p><l>tense<s n="n"/></l><r>Zeit<s n="n"/><s n="f"/></r></p></e> -->
     <e r="LR"><p><l>tension<s n="n"/></l><r>Spannung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tensor<b/>calculus<s n="n"/></l><r>Tensorrechnung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tent<s n="n"/></l><r>Zelt<s n="n"/><s n="nt"/></r></p></e>
