@@ -65,12 +65,12 @@ while [ $# -ne 0 ]; do
 	    exit 2
 	    ;;
 	eng-deu)
-	    echo "==English->German==========================="
+	    echo "==English->German=============================="
 	    process $1
 	    echo ""
 	    ;;
 	deu-eng)
-	    echo "==German->English==========================="
+	    echo "==German->English=============================="
 	    process $1
 	    echo ""
 	    ;;
