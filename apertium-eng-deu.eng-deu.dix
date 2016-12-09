@@ -74,6 +74,7 @@
     <sdef n="fm"        c="Seperable verb in main clause"/>
     <sdef n="acr"       c="Acronym"/>
     <sdef n="lower"     c="Lower case"/>
+    <sdef n="atp"       c="Attachable prefix"/>
   </sdefs>
 
   <section id="main" type="standard">
@@ -5389,6 +5390,7 @@
     <e><p><l>combination<s n="n"/></l><r>Kombination<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>combination<b/>pliers<s n="n"/></l><r>Kombinationszange<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>combine<s n="n"/></l><r>Konzern<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>concern<s n="n"/></l><r>Konzern<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>combo<s n="n"/></l><r>Combo<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>combustible<s n="n"/></l><r>Brennstoff<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>combustion<s n="n"/></l><r>Verbrennung<s n="n"/><s n="f"/></r></p></e>
@@ -17050,7 +17052,8 @@
     <e r="RL"><p><l>outback<s n="n"/></l><r>Hinterland<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>outboard<b/>motor<s n="n"/></l><r>Außenbordmotor<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>outbreak<s n="n"/></l><r>Ausbruch<s n="n"/><s n="m"/></r></p></e>
-    <e r="LR"><p><l>outcome<s n="n"/></l><r>Ergebnis<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>outcome<s n="n"/></l><r>Ergebnis<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>outcome<s n="n"/></l><r>Resultat<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>outcry<s n="n"/></l><r>Aufschrei<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>outdoor<s n="n"/></l><r>Outdoor<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>outdoor<b/>activity<s n="n"/></l><r>Freilufttätigkeit<s n="n"/><s n="f"/></r></p></e>
@@ -26664,8 +26667,9 @@
     <e><p><l>winning<b/>lottery<b/>ticket<s n="n"/></l><r>Gewinnerschein<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>winning<b/>streak<s n="n"/></l><r>Erfolgsserie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>winning<b/>streak<s n="n"/></l><r>Glückssträhne<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>winning-post<s n="n"/></l><r>Ziel<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>winnings<s n="n"/></l><r>Gewinn<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>winning<b/>post<s n="n"/></l><r>Zielpfosten<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>winning-post<s n="n"/></l><r>Zielpfosten<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>winning<s n="n"/><s n="pl"/></l><r>Gewinn<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>winter<s n="n"/></l><r>Winter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>winter<b/>coat<s n="n"/></l><r>Wintermantel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>winter<b/>food<s n="n"/></l><r>Winterfutter<s n="n"/><s n="nt"/></r></p></e>
@@ -49615,6 +49619,17 @@
     <e><p><l>VAT<s n="abbr"/></l><r>MwSt.<s n="abbr"/></r></p></e>
     <e><p><l>w.r.t.<s n="abbr"/></l><r>bzgl.<s n="abbr"/></r></p></e>
     <e><p><l>WSW<s n="abbr"/></l><r>WSW<s n="abbr"/></r></p></e>
+
+
+    <!-- SECTION: Elements that appear inside compounds -->
+    <!-- As of Dec 2016, by nkrot: just started working on it. Hence limited to deu-eng direction -->
+    <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>Neben<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>neben<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>private<s n="adj"/></l><r>Privat<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>private<s n="adj"/></l><r>privat<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>total<s n="adj"/></l><r>Gesamt<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>total<s n="adj"/></l><r>gesamt<s n="atp"/><s n="lower"/></r></p></e>
+
   </section>
 
   <section id="final" type="inconditional">
