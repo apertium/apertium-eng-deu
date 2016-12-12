@@ -3467,7 +3467,8 @@
     <e><p><l>bridle<s n="n"/></l><r>Zaum<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bridle<b/>path<s n="n"/></l><r>Reitweg<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Brie<s n="n"/></l><r>Brie<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>brief<s n="n"/></l><r>Auftrag<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>brief<s n="n"/></l><r>Kurzanweisung<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>brief<s n="n"/></l><r>Kurzdarstellung<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>brief<b/>instruction<s n="n"/></l><r>Kurzanleitung<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>brief-case<s n="n"/></l><r>Aktentasche<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>briefcase<s n="n"/></l><r>Aktentasche<s n="n"/><s n="f"/></r></p></e>
@@ -13864,6 +13865,7 @@
     <e><p><l>lawn<b/>mower<s n="n"/></l><r>Rasenmäher<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>lawnmower<s n="n"/></l><r>Rasenmäher<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>lawsuit<s n="n"/></l><r>Rechtsstreit<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>lawsuit<s n="n"/></l><r>Klage<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>lawyer<s n="n"/></l><r>Advokat<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>lawyer<s n="n"/></l><r>Jurist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>lawyer<s n="n"/></l><r>Rechtsanwalt<s n="n"/><s n="m"/></r></p></e>
@@ -16957,6 +16959,7 @@
     <e r="RL"><p><l>orchestra<s n="n"/></l><r>Parterre<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>orchid<s n="n"/></l><r>Orchidee<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>ordeal<s n="n"/></l><r>Prüfung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>order<s n="n"/></l><r>Auftrag<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>order<s n="n"/></l><r>Befehl<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>order<s n="n"/></l><r>Reihenfolge<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>order<b/>department<s n="n"/></l><r>Bestellabteilung<s n="n"/><s n="f"/></r></p></e>
@@ -18199,6 +18202,8 @@
     <e><p><l>plainness<s n="n"/></l><r>Schlichtheit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>plainsman<s n="n"/></l><r>Flachländer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>plaint<s n="n"/></l><r>Klage<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>plaint<s n="n"/></l><r>Klageschrift<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>plaint<s n="n"/></l><r>Beschwerde<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>plaintiff<s n="n"/></l><r>Kläger<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>plait<s n="n"/></l><r>Zopf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>plan<s n="n"/></l><r>Plan<s n="n"/><s n="m"/></r></p></e>
@@ -49625,6 +49630,8 @@
     <!-- As of Dec 2016, by nkrot: just started working on it. Hence limited to deu-eng direction -->
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>Neben<s n="atp"/></r></p></e>
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>neben<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>collective<s n="adj"/></l><r>Sammel<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>collective<s n="adj"/></l><r>sammel<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>Privat<s n="atp"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>privat<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>total<s n="adj"/></l><r>Gesamt<s n="atp"/></r></p></e>
