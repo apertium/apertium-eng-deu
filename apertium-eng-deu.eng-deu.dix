@@ -2313,7 +2313,7 @@
     <e><p><l>bank<g><b/>of<b/>the<b/>river</g><s n="n"/></l><r>Flussufer<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>bank<b/>robber<s n="n"/></l><r>Bankräuber<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bank<b/>robbery<s n="n"/></l><r>Banküberfall<s n="n"/><s n="m"/></r></p></e>
-    <e r="RL"><p><l>bank<b/>robbery<s n="n"/></l><r>Bankraub<s n="n"/></r></p></e>
+    <e r="RL"><p><l>bank<b/>robbery<s n="n"/></l><r>Bankraub<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bank<b/>transfer<s n="n"/></l><r>Banküberweisung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>bank<b/>vault<s n="n"/></l><r>Banktresor<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bank-account<s n="n"/></l><r>Bankkonto<s n="n"/><s n="nt"/></r></p></e>
@@ -3467,8 +3467,8 @@
     <e><p><l>bridle<s n="n"/></l><r>Zaum<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bridle<b/>path<s n="n"/></l><r>Reitweg<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Brie<s n="n"/></l><r>Brie<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>brief<s n="n"/></l><r>Kurzanweisung<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>brief<s n="n"/></l><r>Kurzdarstellung<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>brief<s n="n"/></l><r>Kurzanweisung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>brief<s n="n"/></l><r>Kurzdarstellung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>brief<b/>instruction<s n="n"/></l><r>Kurzanleitung<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>brief-case<s n="n"/></l><r>Aktentasche<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>briefcase<s n="n"/></l><r>Aktentasche<s n="n"/><s n="f"/></r></p></e>
@@ -6756,7 +6756,7 @@
     <e><p><l>dancing<b/>shoe<s n="n"/></l><r>Tanzschuh<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>dandelion<s n="n"/></l><r>Löwenzahn<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>dandruff<s n="n"/></l><r>Schuppen<s n="n"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>dandruff<s n="n"/></l><r>Hautschuppen<s n="n"/></r></p></e>
+    <e r="RL"><p><l>dandruff<s n="n"/></l><r>Hautschuppen<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>dandy<s n="n"/></l><r>Städter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Dane<s n="n"/></l><r>Däne<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>Dane<s n="n"/></l><r>Dänin<s n="n"/><s n="f"/></r></p></e>
@@ -9543,7 +9543,7 @@
     <e><p><l>fiat<s n="n"/></l><r>Erlass<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>fiber<s n="n"/></l><r>Faser<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>fiber<b/>optics<s n="n"/></l><r>Fiberoptik<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>fiber<b/>optics<s n="n"/></l><r>Glassfaser<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>fiber<b/>optics<s n="n"/></l><r>Glasfaser<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>fiberglass<s n="n"/></l><r>Glaswolle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Fibonacci<b/>number<s n="n"/></l><r>Fibonacci-Zahl<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>fibre<s n="n"/></l><r>Faser<s n="n"/><s n="f"/></r></p></e>
@@ -10825,7 +10825,7 @@
     <e><p><l>gibberish<s n="n"/></l><r>Geschnatter<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>gibbon<s n="n"/></l><r>Gibbon<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>gibe<s n="n"/></l><r>Stichelei<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>giblet<s n="n"/></l><r>Innerei<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>giblet<s n="n"/></l><r>Innerei<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>giblet<s n="n"/></l><r>Klein<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>Gibraltarian<s n="n"/></l><r>Gibraltarerin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>giddiness<s n="n"/></l><r>Leichtsinn<s n="n"/><s n="m"/></r></p></e>
@@ -12665,7 +12665,7 @@
     <e><p><l>inculturation<s n="n"/></l><r>Inkulturation<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>incumbent<s n="n"/></l><r>Amtsinhaber<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>indecision<s n="n"/></l><r>Unschlüssigkeit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>indecisiveness<s n="n"/></l><r>Unschlüssigkeiten<s n="n"/></r></p></e>
+    <e><p><l>indecisiveness<s n="n"/></l><r>Unschlüssigkeiten<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>indemnification<s n="n"/></l><r>Entschädigung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>indemnity<s n="n"/></l><r>Schadenersatz<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>indent<s n="n"/></l><r>Einrückung<s n="n"/><s n="f"/></r></p></e>
@@ -15189,7 +15189,7 @@
     <e><p><l>merchandising<s n="n"/></l><r>Merchandising<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>merchant<s n="n"/></l><r>Kaufmann<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>merchant<b/>fleet<s n="n"/></l><r>Handelsflotte<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>merchant<b/>sailor<s n="n"/></l><r>Seefahrer<b/>und<b/>Händler<s n="n"/></r></p></e>
+    <e><p><l>merchant<b/>sailor<s n="n"/></l><r>Seefahrer<b/>und<b/>Händler<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>merchant<b/>ship<s n="n"/></l><r>Handelsschiff<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>mercilessness<s n="n"/></l><r>Mitleidlosigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>mercury<s n="n"/></l><r>Quecksilber<s n="n"/><s n="nt"/></r></p></e>
@@ -15609,7 +15609,7 @@
     <e><p><l>modulus<s n="n"/></l><r>Modul<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mogul<s n="n"/></l><r>Mogul<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mogul<b/>slope<s n="n"/></l><r>Buckelpiste<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>moguls<b/>skiing<s n="n"/></l><r>Buckelpistenfahren<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>moguls<b/>skiing<s n="n"/></l><r>Buckelpistenfahren<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>mohair<s n="n"/></l><r>Mohair<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Mohawk<s n="n"/></l><r>Irokese<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>moisture<s n="n"/></l><r>Feuchte<s n="n"/><s n="f"/></r></p></e>
@@ -19408,7 +19408,7 @@
     <e><p><l>qualification<s n="n"/></l><r>Qualifizierung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>quality<s n="n"/></l><r>Qualität<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>quality<g><b/>of<b/>life</g><s n="n"/></l><r>Lebensqualität<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>qualm<s n="n"/></l><r>Bedenken<s n="n"/></r></p></e>
+    <e><p><l>qualm<s n="n"/></l><r>Bedenken<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>quandary<s n="n"/></l><r>Zwickmühle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>quantity<s n="n"/></l><r>Menge<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>quantity<s n="n"/></l><r>Quantität<s n="n"/><s n="f"/></r></p></e>
@@ -22066,7 +22066,7 @@
     <e><p><l>six-pence<s n="n"/></l><r>Sechspencestück<s n="n"/><s n="mfn"/></r></p></e>
     <e><p><l>sixpence<s n="n"/></l><r>Sechspencemünze<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sixpence<s n="n"/></l><r>Sechspencestück<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>sixpenny<s n="n"/></l><r>Sechspenny<s n="n"/></r></p></e>
+    <e><p><l>sixpenny<s n="n"/></l><r>Sechspenny<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>size<s n="n"/></l><r>Größe<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>size<s n="n"/></l><r>Maß<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>skat<s n="n"/></l><r>Skat<s n="n"/><s n="m"/></r></p></e>
@@ -23773,7 +23773,6 @@
     <e><p><l>swastika<s n="n"/></l><r>Hakenkreuz<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>swatch<s n="n"/></l><r>Musterabschnitt<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>swath<s n="n"/></l><r>Schwade<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>Swaziland<s n="n"/></l><r>Swasiland<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>swearing<s n="n"/></l><r>Fluchen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>sweat<s n="n"/></l><r>Schweiß<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>sweat<s n="n"/></l><r>Schwitze<s n="n"/><s n="f"/></r></p></e>
@@ -33880,6 +33879,7 @@
     <e><p><l>Spain<s n="np"/></l><r>Spanien<s n="np"/></r></p></e>
     <e><p><l>Sri<b/>Lanka<s n="np"/></l><r>Sri<b/>Lanka<s n="np"/></r></p></e>
     <e><p><l>Sudan<s n="np"/></l><r>Sudan<s n="np"/></r></p></e>
+    <e><p><l>Swaziland<s n="np"/></l><r>Swasiland<s n="np"/></r></p></e>
     <e><p><l>Sweden<s n="np"/></l><r>Schweden<s n="np"/></r></p></e>
     <e><p><l>Switzerland<s n="np"/></l><r>Schweiz<s n="np"/></r></p></e>
     <e><p><l>Syrakus<s n="np"/></l><r>Syrakus<s n="np"/></r></p></e>
@@ -34660,7 +34660,7 @@
     <e><p><l>alarming<s n="adj"/></l><r>bedenklich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Albanian<s n="adj"/></l><r>albanisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>alchemic<s n="adj"/></l><r>alchemisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>alchemistic<s n="adj"/></l><r>alchemistisch<s n="adj"/></r></p></e>
+    <e><p><l>alchemistic<s n="adj"/></l><r>alchemistisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>alcoholic<s n="adj"/></l><r>alkoholisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Alemannic<s n="adj"/></l><r>alemannisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Algerian<s n="adj"/></l><r>algerisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -34686,7 +34686,7 @@
     <e><p><l>almost<b/>impassable<s n="adj"/></l><r>unwegsam<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>alone<s n="adj"/></l><r>allein<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>alone<s n="adj"/></l><r>alleine<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>along<b/>in<b/>years<s n="adj"/></l><r>ältlich<s n="adj"/></r></p></e>
+    <e><p><l>along<b/>in<b/>years<s n="adj"/></l><r>ältlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>along<b/>with<s n="adj"/></l><r>samt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>alphabetic<s n="adj"/></l><r>alphabetisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>alphabetical<s n="adj"/></l><r>alphabetisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -34792,7 +34792,7 @@
     <e><p><l>apparent<s n="adj"/></l><r>ersichtlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>apparent<s n="adj"/></l><r>scheinbar<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>apparent<s n="adj"/></l><r>sichtbar<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>appellative<s n="adj"/></l><r>bittend<s n="adj"/></r></p></e>
+    <e><p><l>appellative<s n="adj"/></l><r>bittend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>appendant<s n="adj"/></l><r>dazugehörig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>appetiteless<s n="adj"/></l><r>appetitlos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>appetizing<s n="adj"/></l><r>appetitlich<s n="adj"/><s n="sint"/></r></p></e>
@@ -34873,7 +34873,7 @@
     <e><p><l>associated<s n="adj"/></l><r>zugehörig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>associated<b/>with<s n="adj"/></l><r>nahestehend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>associative<s n="adj"/></l><r>assoziativ<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>assured<s n="adj"/></l><r>sicher<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>assured<s n="adj"/></l><r>sicher<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>astonished<s n="adj"/></l><r>erstaunt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>astrological<s n="adj"/></l><r>astrologisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>astronomical<s n="adj"/></l><r>astronomisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -34907,7 +34907,7 @@
     <e><p><l>Australian<s n="adj"/></l><r>australisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Austrian<s n="adj"/></l><r>österreichisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>authentic<s n="adj"/></l><r>authentisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>authentic<s n="adj"/></l><r>glaubwürdig<s n="adj"/></r></p></e>
+    <e><p><l>authentic<s n="adj"/></l><r>glaubwürdig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>authoritarian<s n="adj"/></l><r>autoritär<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>authoritative<s n="adj"/></l><r>maßgebend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>autistic<s n="adj"/></l><r>autistisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -34966,7 +34966,7 @@
     <e><p><l>banal<s n="adj"/></l><r>banal<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>baneful<s n="adj"/></l><r>schädlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bankrupt<s n="adj"/></l><r>bankrott<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>bankrupt<s n="adj"/></l><r>pleite<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>bankrupt<s n="adj"/></l><r>pleite<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>barbaric<s n="adj"/></l><r>barbarisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bare<s n="adj"/></l><r>kahl<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>barefoot<s n="adj"/></l><r>barfuß<s n="adj"/><s n="sint"/></r></p></e>
@@ -34976,7 +34976,7 @@
     <e><p><l>baroque<s n="adj"/></l><r>barock<s n="adj"/><s n="sint"/></r></p></e>
     <!-- <e><p><l>barren<s n="adj"/><s n="sint"/></l><r>gelt<s n="adj"/><s n="sint"/></r></p></e> TODO: fix German -->
     <e><p><l>barren<s n="adj"/><s n="sint"/></l><r>kinderlos<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>based<s n="adj"/></l><r>basisbezogen<s n="adj"/></r></p></e>
+    <e><p><l>based<s n="adj"/></l><r>basisbezogen<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>baseless<s n="adj"/></l><r>grundlos<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>basic<s n="adj"/></l><r>einfach<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>basso<s n="adj"/></l><r>bass<s n="adj"/><s n="sint"/></r></p></e>
@@ -34987,9 +34987,9 @@
     <e><p><l>bearable<s n="adj"/></l><r>erträglich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bearded<s n="adj"/></l><r>bärtig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bearish<s n="adj"/></l><r>tölpelhaft<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>beaut<s n="adj"/></l><r>hervorragend<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>beaut<s n="adj"/></l><r>hervorragend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>beautiful<s n="adj"/></l><r>schön<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>beautifully<b/>behaved<s n="adj"/></l><r>artig<s n="adj"/></r></p></e>
+    <e><p><l>beautifully<b/>behaved<s n="adj"/></l><r>artig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>become<b/>friends<s n="adj"/></l><r>befreundet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bedraggled<s n="adj"/></l><r>verschmutzt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bedridden<s n="adj"/></l><r>bettlägerig<s n="adj"/><s n="sint"/></r></p></e>
@@ -35005,7 +35005,7 @@
     <e><p><l>bellicose<s n="adj"/></l><r>kriegerisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>belligerent<s n="adj"/></l><r>streitlustig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>belligerent<s n="adj"/></l><r>aggressiv<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>belonging<s n="adj"/></l><r>zugehörig<s n="adj"/></r></p></e>
+    <e><p><l>belonging<s n="adj"/></l><r>zugehörig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>beloved<s n="adj"/></l><r>geliebt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bendable<s n="adj"/></l><r>biegbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>beneficial<s n="adj"/></l><r>segensreich<s n="adj"/><s n="sint"/></r></p></e>
@@ -35077,8 +35077,8 @@
     <e><p><l>blowzy<s n="adj"/></l><r>schlampig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>blue<s n="adj"/><s n="sint"/></l><r>blau<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>blue-chip<s n="adj"/></l><r>erstklassig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>blue-eyed<s n="adj"/></l><r>blauäugig<s n="adj"/></r></p></e>
-    <e><p><l>blue-green<s n="adj"/></l><r>blaugrün<s n="adj"/></r></p></e>
+    <e><p><l>blue-eyed<s n="adj"/></l><r>blauäugig<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>blue-green<s n="adj"/></l><r>blaugrün<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bluesy<s n="adj"/></l><r>bluesartig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>bluish<s n="adj"/></l><r>bläulich<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>blunt<s n="adj"/></l><r>offen<s n="adj"/><s n="sint"/></r></p></e>
@@ -35381,7 +35381,7 @@
     <e><p><l>cloying<s n="adj"/></l><r>anwidernd<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>clueless<s n="adj"/></l><r>ratlos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>clumsy<s n="adj"/><s n="sint"/></l><r>schwerfällig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>clunky<s n="adj"/></l><r>klobig<s n="adj"/></r></p></e>
+    <e><p><l>clunky<s n="adj"/></l><r>klobig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>co-operative<s n="adj"/></l><r>entgegenkommend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>coarse<s n="adj"/></l><r>ungepflegt<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>coarse<s n="adj"/></l><r>grob<s n="adj"/><s n="sint"/></r></p></e>
@@ -35423,7 +35423,7 @@
     <e><p><l>commanding<s n="adj"/></l><r>befehlend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>commemorative<s n="adj"/></l><r>gedenkend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>commendable<s n="adj"/></l><r>lobenswert<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>commensal<s n="adj"/></l><r>zusammenlebend<s n="adj"/></r></p></e>
+    <e><p><l>commensal<s n="adj"/></l><r>zusammenlebend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>commensurate<s n="adj"/></l><r>angemessen<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>commercial<s n="adj"/></l><r>gewerblich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>commercial<s n="adj"/></l><r>kommerziell<s n="adj"/><s n="sint"/></r></p></e>
@@ -35450,7 +35450,7 @@
     <e><p><l>competent<s n="adj"/></l><r>sachkundig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>competitive<s n="adj"/></l><r>konkurrenzfähig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>competitive<s n="adj"/></l><r>wettbewerbsfähig<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>competitive<s n="adj"/></l><r>wettbewerbsorientiert<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>competitive<s n="adj"/></l><r>wettbewerbsorientiert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>complacent<s n="adj"/></l><r>selbstzufrieden<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>complementary<s n="adj"/></l><r>komplementär<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>complete<s n="adj"/></l><r>vollständig<s n="adj"/><s n="sint"/></r></p></e>
@@ -35523,7 +35523,7 @@
     <e><p><l>consequent<s n="adj"/></l><r>daraus<b/>folgend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>conservative<s n="adj"/></l><r>konservativ<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>considerable<s n="adj"/></l><r>beträchtlich<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>considerable<s n="adj"/></l><r>namhaft<s n="adj"/></r></p></e>
+    <e><p><l>considerable<s n="adj"/></l><r>namhaft<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>considerable<s n="adj"/></l><r>erklecklich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>consistent<s n="adj"/></l><r>konstant<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>consistent<s n="adj"/></l><r>unbeirrbar<s n="adj"/><s n="sint"/></r></p></e>
@@ -35566,7 +35566,7 @@
     <e><p><l>contractual<s n="adj"/></l><r>vertraglich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>contradictory<s n="adj"/></l><r>widersprüchlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>contrary<s n="adj"/></l><r>anderslautend<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>contrary<s n="adj"/></l><r>gegenläufig<s n="adj"/></r></p></e>
+    <e><p><l>contrary<s n="adj"/></l><r>gegenläufig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>contrary<s n="adj"/></l><r>konträr<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>contrite<s n="adj"/></l><r>zerknirscht<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>controversial<s n="adj"/></l><r>kontrovers<s n="adj"/><s n="sint"/></r></p></e>
@@ -36187,7 +36187,7 @@
     <e><p><l>enjoyable<s n="adj"/></l><r>unterhaltsam<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>enjoyable<s n="adj"/></l><r>angenehm<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>enlightening<s n="adj"/></l><r>aufschlussreich<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>Enlightenment<s n="adj"/></l><r>aufklärerisch<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>enlightenment<s n="adj"/></l><r>aufklärerisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>enormous<s n="adj"/></l><r>enorm<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>enraged<s n="adj"/></l><r>erzürnt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>ensuing<s n="adj"/></l><r>anschließend<s n="adj"/><s n="sint"/></r></p></e>
@@ -38439,8 +38439,8 @@
     <e><p><l>pale<s n="adj"/></l><r>bleich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pale<s n="adj"/></l><r>fahl<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>pale<s n="adj"/></l><r>blaß<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>paleographical<s n="adj"/></l><r>paläografisch<s n="adj"/></r></p></e>
-    <e><p><l>paleolithic<s n="adj"/></l><r>altsteinzeitlich<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>paleographical<s n="adj"/></l><r>paläografisch<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>paleolithic<s n="adj"/></l><r>altsteinzeitlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Palestinian<s n="adj"/></l><r>palästinensisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>palliative<s n="adj"/></l><r>lindernd<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>palpable<s n="adj"/></l><r>offensichtlich<s n="adj"/><s n="sint"/></r></p></e>
@@ -38471,18 +38471,18 @@
     <e r="RL"><p><l>particular<s n="adj"/></l><r>ausführlich<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>particular<s n="adj"/></l><r>wählerisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>partisan<s n="adj"/></l><r>parteiisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>partitive<s n="adj"/></l><r>partitiv<s n="adj"/></r></p></e>
+    <e><p><l>partitive<s n="adj"/></l><r>partitiv<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>partner-like<s n="adj"/></l><r>partnerschaftlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>party<b/>political<s n="adj"/></l><r>parteipolitisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>passable<s n="adj"/></l><r>gangbar<s n="adj"/></r></p></e>
+    <e><p><l>passable<s n="adj"/></l><r>gangbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>passable<s n="adj"/></l><r>passabel<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>passionate<s n="adj"/></l><r>heißblütig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>passionate<s n="adj"/></l><r>leidenschaftlich<s n="adj"/></r></p></e>
+    <e><p><l>passionate<s n="adj"/></l><r>leidenschaftlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>passive<s n="adj"/></l><r>passiv<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>passive<s n="adj"/></l><r>untätig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>past<s n="adj"/></l><r>einstig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pastoral<s n="adj"/></l><r>pastoral<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>pasty<s n="adj"/><s n="sint"/></l><r>breiig<s n="adj"/></r></p></e>
+    <e><p><l>pasty<s n="adj"/><s n="sint"/></l><r>breiig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pasty-faced<s n="adj"/></l><r>teiggesichtig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>paternal<s n="adj"/></l><r>väterlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>paternalistic<s n="adj"/></l><r>paternalistisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -38509,7 +38509,7 @@
     <e><p><l>pejorative<s n="adj"/></l><r>abschätzig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>penal<s n="adj"/></l><r>strafrechtlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pending<s n="adj"/></l><r>anhängig<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>pending<s n="adj"/></l><r>hängig<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>pending<s n="adj"/></l><r>hängig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>penetrable<s n="adj"/></l><r>durchdringbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>penniless<s n="adj"/></l><r>mittellos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>penniless<s n="adj"/></l><r>pleite<s n="adj"/><s n="sint"/></r></p></e>
@@ -38529,7 +38529,7 @@
     <e r="RL"><p><l>perfect<s n="adj"/></l><r>perfekt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>perfectionist<s n="adj"/></l><r>perfektionistisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>perfidious<s n="adj"/></l><r>perfid<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>perforated<s n="adj"/></l><r>perforierend<s n="adj"/></r></p></e>
+    <e><p><l>perforated<s n="adj"/></l><r>perforierend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>perforce<s n="adj"/></l><r>notgedrungen<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>perforce<s n="adj"/></l><r>zwangsläufig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>perfunctory<s n="adj"/></l><r>oberflächlich<s n="adj"/><s n="sint"/></r></p></e>
@@ -38606,13 +38606,13 @@
     <e r="LR"><p><l>pious<s n="adj"/></l><r>falsch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>piquant<s n="adj"/></l><r>pikant<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pissed<s n="adj"/></l><r>besoffen<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>pitch-dark<s n="adj"/></l><r>pechschwarz<s n="adj"/></r></p></e>
+    <e><p><l>pitch-dark<s n="adj"/></l><r>pechschwarz<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>piteous<s n="adj"/></l><r>jämmerlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pithy<s n="adj"/></l><r>markig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pity<s n="adj"/></l><r>schade<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pivotal<s n="adj"/></l><r>zentral<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>placed<s n="adj"/></l><r>gesetzt<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>plaid<s n="adj"/></l><r>kariert<s n="adj"/></r></p></e>
+    <e><p><l>plaid<s n="adj"/></l><r>kariert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plain<s n="adj"/><s n="sint"/></l><r>offensichtlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plaintive<s n="adj"/></l><r>traurig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>planetary<s n="adj"/></l><r>planetarisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -38631,7 +38631,7 @@
     <e><p><l>pleasing<s n="adj"/></l><r>erfreulich<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>pleasing<s n="adj"/></l><r>angenehm<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>pleasurable<s n="adj"/></l><r>angenehm<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>pleated<s n="adj"/></l><r>gefaltet<s n="adj"/></r></p></e>
+    <e><p><l>pleated<s n="adj"/></l><r>gefaltet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plebeian<s n="adj"/></l><r>plebejisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plebian<s n="adj"/></l><r>plebejisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plenary<s n="adj"/></l><r>vollkommen<s n="adj"/><s n="sint"/></r></p></e>
@@ -38639,7 +38639,7 @@
     <e><p><l>plenty<s n="adj"/></l><r>reichlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pliable<s n="adj"/></l><r>geschmeidig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pliant<s n="adj"/></l><r>nachgiebig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>plummeting<s n="adj"/></l><r>sinkend<s n="adj"/></r></p></e>
+    <e><p><l>plummeting<s n="adj"/></l><r>sinkend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plump<s n="adj"/></l><r>prall<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plump<s n="adj"/></l><r>unverblümt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>plural<s n="adj"/></l><r>mehrfach<s n="adj"/><s n="sint"/></r></p></e>
@@ -38670,7 +38670,7 @@
     <e r="RL"><p><l>polyglot<s n="adj"/></l><r>sprachkundig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>polygonal<s n="adj"/></l><r>vieleckig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Polynesian<s n="adj"/></l><r>polynesisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>polyphonic<s n="adj"/></l><r>mehrstimmig<s n="adj"/></r></p></e>
+    <e><p><l>polyphonic<s n="adj"/></l><r>mehrstimmig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>polytechnic<s n="adj"/></l><r>polytechnisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>polyvalent<s n="adj"/></l><r>mehrwertig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>pompous<s n="adj"/></l><r>prunkvoll<s n="adj"/><s n="sint"/></r></p></e>
@@ -38709,7 +38709,7 @@
     <e><p><l>potent<s n="adj"/></l><r>potent<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>potential<s n="adj"/></l><r>potentiell<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>potential<s n="adj"/></l><r>potenziell<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>potty<s n="adj"/></l><r>kinderleicht<s n="adj"/></r></p></e>
+    <e><p><l>potty<s n="adj"/></l><r>kinderleicht<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>power<b/>political<s n="adj"/></l><r>machtpolitisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>powerful<s n="adj"/></l><r>kraftvoll<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>powerful<s n="adj"/></l><r>machtvoll<s n="adj"/><s n="sint"/></r></p></e>
@@ -38893,7 +38893,7 @@
     <e r="RL"><p><l>purple<s n="adj"/></l><r>purpurrot<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>purple<s n="adj"/></l><r>violett<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>purplish<s n="adj"/></l><r>purpurfarbig<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>purported<s n="adj"/></l><r>angeblich<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>purported<s n="adj"/></l><r>angeblich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>purposeful<s n="adj"/></l><r>zielgerichtet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>purposeful<s n="adj"/></l><r>zielstrebig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>purposeless<s n="adj"/></l><r>zwecklos<s n="adj"/><s n="sint"/></r></p></e>
@@ -39019,7 +39019,7 @@
     <e><p><l>redoubtable<s n="adj"/></l><r>Respekt<b/>einflößend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>reduced<s n="adj"/></l><r>ermäßigt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>reduced<s n="adj"/></l><r>verbilligt<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>reductionistic<s n="adj"/></l><r>reduktionistisch<s n="adj"/></r></p></e>
+    <e><p><l>reductionistic<s n="adj"/></l><r>reduktionistisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>redundant<s n="adj"/></l><r>redundant<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>referring<b/>to<b/>this<s n="adj"/></l><r>diesbezüglich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>reflexive<s n="adj"/></l><r>reflexiv<s n="adj"/><s n="sint"/></r></p></e>
@@ -39064,13 +39064,13 @@
     <e><p><l>repayable<s n="adj"/></l><r>rückzahlbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>repeated<s n="adj"/></l><r>abermalig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>repeated<s n="adj"/></l><r>neuerlich<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>repeated<s n="adj"/></l><r>mehrmalig<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>repeated<s n="adj"/></l><r>mehrmalig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>repeated<s n="adj"/></l><r>nochmalig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>repeated<s n="adj"/></l><r>verschiedentlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>repellent<s n="adj"/></l><r>widerlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>repentant<s n="adj"/></l><r>reuig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>reprehensible<s n="adj"/></l><r>verwerflich<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>reprehensible<s n="adj"/></l><r>rügenswert<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>reprehensible<s n="adj"/></l><r>rügenswert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>representable<s n="adj"/></l><r>darstellbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>representational<s n="adj"/></l><r>darstellerisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>representative<s n="adj"/></l><r>typisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -39114,7 +39114,7 @@
     <e><p><l>restless<s n="adj"/></l><r>rastlos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>restrictive<s n="adj"/></l><r>restriktiv<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>resultant<s n="adj"/></l><r>resultierend<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>resurgent<s n="adj"/></l><r>wiederauflebend<s n="adj"/></r></p></e>
+    <e><p><l>resurgent<s n="adj"/></l><r>wiederauflebend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>retributory<s n="adj"/></l><r>vergeltend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>retroactive<s n="adj"/></l><r>rückwirkend<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>retrograde<s n="adj"/></l><r>umgekehrt<s n="adj"/><s n="sint"/></r></p></e>
@@ -39233,7 +39233,7 @@
     <e><p><l>salutary<s n="adj"/></l><r>heilbringend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>same<s n="adj"/></l><r>gleich<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>same<s n="adj"/></l><r>gleich<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>samey<s n="adj"/></l><r>egal<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>samey<s n="adj"/></l><r>egal<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Sámi-speaking<s n="adj"/></l><r>Sámi-sprachig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sanctimonious<s n="adj"/></l><r>scheinheilig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sandy<s n="adj"/><s n="sint"/></l><r>sandig<s n="adj"/><s n="sint"/></r></p></e>
@@ -39271,7 +39271,7 @@
     <e><p><l>scenic<s n="adj"/></l><r>landschaftlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>scenic<s n="adj"/></l><r>szenisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>scenographical<s n="adj"/></l><r>szenographisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>scented<s n="adj"/></l><r>duftend<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>scented<s n="adj"/></l><r>duftend<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>sceptical<s n="adj"/></l><r>skeptisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sceptred<s n="adj"/></l><r>zeptertragend<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>sceptred<s n="adj"/></l><r>herrschend<s n="adj"/><s n="sint"/></r></p></e>
@@ -39292,7 +39292,7 @@
     <e><p><l>scratchy<s n="adj"/></l><r>kratzig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>scrawny<s n="adj"/></l><r>schlank<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>screaming<s n="adj"/></l><r>brüllend<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>screw-like<s n="adj"/></l><r>schraubenartig<s n="adj"/></r></p></e>
+    <e><p><l>screw-like<s n="adj"/></l><r>schraubenartig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>screwed-up<s n="adj"/></l><r>verkorkst<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>scrollable<s n="adj"/></l><r>scrollfähig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>scrubby<s n="adj"/><s n="sint"/></l><r>struppig<s n="adj"/><s n="sint"/></r></p></e>
@@ -39323,7 +39323,7 @@
     <e><p><l>seedy<s n="adj"/><s n="sint"/></l><r>schäbig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>seemingly<b/>intact<s n="adj"/></l><r>scheinbar<b/>intakt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>seemly<s n="adj"/></l><r>schicklich<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>segmented<s n="adj"/></l><r>segmentkernig<s n="adj"/></r></p></e>
+    <e><p><l>segmented<s n="adj"/></l><r>segmentkernig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>seismological<s n="adj"/></l><r>seismologisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>selectable<s n="adj"/></l><r>auswählbar<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>selectable<s n="adj"/></l><r>wählbar<s n="adj"/><s n="sint"/></r></p></e>
@@ -39348,7 +39348,7 @@
     <e><p><l>semantic<s n="adj"/></l><r>semantisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>semi-annual<s n="adj"/></l><r>halbjährlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>semi-detached<s n="adj"/></l><r>halb<b/>frei<b/>stehend<s n="adj"/></r></p></e>
-    <e><p><l>semi-open<s n="adj"/></l><r>halboffen<s n="adj"/></r></p></e>
+    <e><p><l>semi-open<s n="adj"/></l><r>halboffen<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>semiannual<s n="adj"/></l><r>halbjährlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>semicircular<s n="adj"/></l><r>halbkreisförmig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>semidetached<s n="adj"/></l><r>halb<b/>freistehend<s n="adj"/></r></p></e>
@@ -39387,7 +39387,7 @@
     <e><p><l>serviceable<s n="adj"/></l><r>dienlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>servile<s n="adj"/></l><r>sklavisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>settled<s n="adj"/></l><r>beständig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>seven-year-old<s n="adj"/></l><r>siebenjährig<s n="adj"/></r></p></e>
+    <e><p><l>seven-year-old<s n="adj"/></l><r>siebenjährig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>seventeenth<s n="adj"/></l><r>siebzehnte<s n="adj"/></r></p></e>
     <e><p><l>seventh<s n="adj"/></l><r>siebte<s n="adj"/></r></p></e>
     <e r="RL"><p><l>seventh<s n="adj"/></l><r>siebente<s n="adj"/></r></p></e>
@@ -39433,7 +39433,7 @@
     <e><p><l>shy<s n="adj"/><s n="sint"/></l><r>scheu<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Siberian<s n="adj"/></l><r>sibirisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Sicilian<s n="adj"/></l><r>sizilianisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>sick<s n="adj"/></l><r>übel<s n="adj"/></r></p></e>
+    <e><p><l>sick<s n="adj"/></l><r>übel<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>sick<s n="adj"/><s n="sint"/></l><r>krank<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sick<b/>of<s n="adj"/></l><r>überdrüssig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sickly<s n="adj"/><s n="sint"/></l><r>kränklich<s n="adj"/><s n="sint"/></r></p></e>
@@ -39455,9 +39455,9 @@
     <e><p><l>simple<s n="adj"/><s n="sint"/></l><r>schlicht<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>simple<s n="adj"/><s n="sint"/></l><r>simpel<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>simple<s n="adj"/><s n="sint"/></l><r>einfach<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>simple<b/>minded<s n="adj"/></l><r>einfältig<s n="adj"/></r></p></e>
+    <e><p><l>simple<b/>minded<s n="adj"/></l><r>einfältig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>simultaneous<s n="adj"/></l><r>gleichzeitig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>simultaneous<s n="adj"/></l><r>zeitgleich<s n="adj"/></r></p></e>
+    <e><p><l>simultaneous<s n="adj"/></l><r>zeitgleich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sincere<s n="adj"/><s n="sint"/></l><r>herzlich<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>sincere<s n="adj"/><s n="sint"/></l><r>aufrichtig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sinewy<s n="adj"/></l><r>sehnig<s n="adj"/><s n="sint"/></r></p></e>
@@ -39469,7 +39469,7 @@
     <e r="RL"><p><l>single<s n="adj"/></l><r>einzig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>single<s n="adj"/></l><r>single<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>single<s n="adj"/></l><r>unverheiratet<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>single<b/>piece<s n="adj"/></l><r>einteilig<s n="adj"/></r></p></e>
+    <e><p><l>single<b/>piece<s n="adj"/></l><r>einteilig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>single-handed<s n="adj"/></l><r>eigenhändig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>single-handed<s n="adj"/></l><r>allein<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>single-lane<s n="adj"/></l><r>einspurig<s n="adj"/><s n="sint"/></r></p></e>
@@ -39787,7 +39787,7 @@
     <e><p><l>substantial<s n="adj"/></l><r>substantiell<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>substantial<s n="adj"/></l><r>substanziell<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>substantive<s n="adj"/></l><r>bedeutend<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>substantive<s n="adj"/></l><r>beträchtlich<s n="adj"/></r></p></e>
+    <e><p><l>substantive<s n="adj"/></l><r>beträchtlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>subsumable<s n="adj"/></l><r>fassbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>subtle<s n="adj"/><s n="sint"/></l><r>subtil<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>subtropical<s n="adj"/></l><r>subtropisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -39916,7 +39916,7 @@
     <e r="RL"><p><l>tame<s n="adj"/></l><r>lasch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Tamil<s n="adj"/></l><r>tamilisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>tangible<s n="adj"/></l><r>greifbar<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="LR"><p><l>targeted<s n="adj"/></l><r>zielgerichtet<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>targeted<s n="adj"/></l><r>zielgerichtet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>tasteful<s n="adj"/></l><r>geschmackvoll<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>tasteless<s n="adj"/></l><r>geschmacklos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>tasty<s n="adj"/><s n="sint"/></l><r>lecker<s n="adj"/><s n="sint"/></r></p></e>
@@ -40091,10 +40091,10 @@
     <e><p><l>touristic<s n="adj"/></l><r>touristisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>toxic<s n="adj"/></l><r>giftig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>toxic<s n="adj"/></l><r>toxisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>tracked<s n="adj"/></l><r>ausgespäht<s n="adj"/></r></p></e>
+    <e><p><l>tracked<s n="adj"/></l><r>ausgespäht<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>tractable<s n="adj"/></l><r>lenkbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>trade<b/>union<s n="adj"/></l><r>gewerkschaftlich<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>traded<s n="adj"/></l><r>gehandelt<s n="adj"/></r></p></e>
+    <e><p><l>traded<s n="adj"/></l><r>gehandelt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>traditional<s n="adj"/></l><r>herkömmlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>traditional<s n="adj"/></l><r>tradiert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>traditional<s n="adj"/></l><r>traditionell<s n="adj"/><s n="sint"/></r></p></e>
@@ -40189,7 +40189,7 @@
     <e><p><l>two-sided<s n="adj"/></l><r>doppelseitig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>two-sided<s n="adj"/></l><r>zweiseitig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>two-stage<s n="adj"/></l><r>zweistufig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>two-volume<s n="adj"/></l><r>zweibändig<s n="adj"/></r></p></e>
+    <e><p><l>two-volume<s n="adj"/></l><r>zweibändig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>two-way<s n="adj"/></l><r>zweiseitig<b/>gerichtet<s n="adj"/></r></p></e>
     <e><p><l>two-year-old<s n="adj"/></l><r>zweijährig<s n="adj"/></r></p></e>
     <e><p><l>twofold<s n="adj"/></l><r>zweifach<s n="adj"/><s n="sint"/></r></p></e>
@@ -40259,7 +40259,7 @@
     <e><p><l>unbecoming<s n="adj"/></l><r>unkleidsam<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unbelievable<s n="adj"/></l><r>unglaublich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unblessed<s n="adj"/></l><r>ungesegnet<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>unblinking<s n="adj"/></l><r>unerschrocken<s n="adj"/></r></p></e>
+    <e><p><l>unblinking<s n="adj"/></l><r>unerschrocken<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unborn<s n="adj"/></l><r>ungeboren<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unbreakable<s n="adj"/></l><r>unzerbrechlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unbridled<s n="adj"/></l><r>ungezügelt<s n="adj"/><s n="sint"/></r></p></e>
@@ -40276,7 +40276,7 @@
     <e><p><l>unchristian<s n="adj"/></l><r>unchristlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>uncivilised<s n="adj"/></l><r>unzivilisiert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unclaimed<s n="adj"/></l><r>unzustellbar<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>unclassified<s n="adj"/></l><r>ungeordnet<s n="adj"/></r></p></e>
+    <e><p><l>unclassified<s n="adj"/></l><r>ungeordnet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unclean<s n="adj"/></l><r>unsauber<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unclear<s n="adj"/></l><r>unklar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unclothed<s n="adj"/></l><r>unbekleidet<s n="adj"/><s n="sint"/></r></p></e>
@@ -40315,8 +40315,8 @@
     <e><p><l>under<b/>age<s n="adj"/></l><r>minderjährig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>under<b/>construction<s n="adj"/></l><r>im<b/>Bau<s n="adj"/></r></p></e>
     <e><p><l>under-age<s n="adj"/></l><r>unmündig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>under-qualified<s n="adj"/></l><r>unterqualifiziert<s n="adj"/></r></p></e>
-    <e><p><l>undercooked<s n="adj"/></l><r>halbgar<s n="adj"/></r></p></e>
+    <e><p><l>under-qualified<s n="adj"/></l><r>unterqualifiziert<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>undercooked<s n="adj"/></l><r>halbgar<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>undercover<s n="adj"/></l><r>geheim<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>underdeveloped<s n="adj"/></l><r>unterentwickelt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>underdone<s n="adj"/></l><r>halbgar<s n="adj"/><s n="sint"/></r></p></e>
@@ -40331,7 +40331,7 @@
     <e><p><l>undesirable<s n="adj"/></l><r>lästig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>undiplomatic<s n="adj"/></l><r>undiplomatisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>undisclosed<s n="adj"/></l><r>unveröffentlicht<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>undiscovered<s n="adj"/></l><r>unentdeckt<s n="adj"/></r></p></e>
+    <e><p><l>undiscovered<s n="adj"/></l><r>unentdeckt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>undistinguishable<s n="adj"/></l><r>undeutlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>undivided<s n="adj"/></l><r>ungeteilt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>undoubted<s n="adj"/></l><r>unbestritten<s n="adj"/><s n="sint"/></r></p></e>
@@ -40400,7 +40400,7 @@
     <e><p><l>unidirectional<s n="adj"/></l><r>unidirektional<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unified<s n="adj"/></l><r>vereinigt<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>uniform<s n="adj"/></l><r>einheitlich<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>uniformed<s n="adj"/></l><r>uniformiert<s n="adj"/></r></p></e>
+    <e><p><l>uniformed<s n="adj"/></l><r>uniformiert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unilateral<s n="adj"/></l><r>unilateral<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unimaginable<s n="adj"/></l><r>unvorstellbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unimaginative<s n="adj"/></l><r>einfallslos<s n="adj"/><s n="sint"/></r></p></e>
@@ -40545,11 +40545,11 @@
     <e><p><l>unshaven<s n="adj"/></l><r>unrasiert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unshorn<s n="adj"/></l><r>ungeschoren<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unsightly<s n="adj"/></l><r>hässlich<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>unsigned<s n="adj"/></l><r>ungekennzeichnet<s n="adj"/></r></p></e>
+    <e><p><l>unsigned<s n="adj"/></l><r>ungekennzeichnet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unsinkable<s n="adj"/></l><r>unsinkbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unskilled<s n="adj"/></l><r>ungelernt<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>unsmiling<s n="adj"/></l><r>ernst<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>unsolved<s n="adj"/></l><r>ungelöst<s n="adj"/></r></p></e>
+    <e><p><l>unsolved<s n="adj"/></l><r>ungelöst<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unspeakable<s n="adj"/></l><r>unsagbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unspoilt<s n="adj"/></l><r>unbeschädigt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>unspoken<s n="adj"/></l><r>unerwähnt<s n="adj"/><s n="sint"/></r></p></e>
@@ -40584,7 +40584,7 @@
     <e><p><l>untrained<s n="adj"/></l><r>ungeübt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>untransferable<s n="adj"/></l><r>nicht<b/>übertragbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>untranslatable<s n="adj"/></l><r>nicht<b/>übersetzbar<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>untranslatable<s n="adj"/></l><r>unübersetzbar<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>untranslatable<s n="adj"/></l><r>unübersetzbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>untreated<s n="adj"/></l><r>naturbelassen<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>untrue<s n="adj"/></l><r>unwahr<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>untrustworthy<s n="adj"/></l><r>unzuverlässig<s n="adj"/><s n="sint"/></r></p></e>
@@ -40622,7 +40622,7 @@
     <e r="RL"><p><l>urgent<s n="adj"/></l><r>vorrangig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Uruguayan<s n="adj"/></l><r>uruguayisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>usable<s n="adj"/></l><r>brauchbar<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>usable<s n="adj"/></l><r>nutzbar<s n="adj"/></r></p></e>
+    <e><p><l>usable<s n="adj"/></l><r>nutzbar<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>useable<s n="adj"/></l><r>verwendbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>used<b/>up<s n="adj"/></l><r>aufgebraucht<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>used<b/>up<s n="adj"/></l><r>verbraucht<s n="adj"/><s n="sint"/></r></p></e>
@@ -40778,7 +40778,7 @@
     <e r="RL"><p><l>weird<s n="adj"/><s n="sint"/></l><r>eigenartig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>welcome<s n="adj"/></l><r>willkommen<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>welfare<b/>and<b/>social<s n="adj"/></l><r>diakonisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e r="RL"><p><l>well<b/>done<s n="adj"/></l><r>durchgebraten<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>well<b/>done<s n="adj"/></l><r>durchgebraten<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>well<b/>made<s n="adj"/></l><r>gut<b/>gearbeitet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>well-built<s n="adj"/></l><r>kräftig<b/>gebaut<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>well-chosen<s n="adj"/></l><r>wohlgesetzt<s n="adj"/><s n="sint"/></r></p></e>
@@ -40827,7 +40827,7 @@
     <e><p><l>windproof<s n="adj"/></l><r>windundurchlässig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>windy<s n="adj"/><s n="sint"/></l><r>windig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>winged<s n="adj"/></l><r>geflügelt<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>wingless<s n="adj"/></l><r>flügellos<s n="adj"/></r></p></e>
+    <e><p><l>wingless<s n="adj"/></l><r>flügellos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>winning<s n="adj"/></l><r>siegreich<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>winning<s n="adj"/></l><r>gewinnend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>wintry<s n="adj"/><s n="sint"/></l><r>winterlich<s n="adj"/><s n="sint"/></r></p></e>
@@ -40856,7 +40856,7 @@
     <e><p><l>wordless<s n="adj"/></l><r>wortlos<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>workable<s n="adj"/></l><r>betriebsfähig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>working<s n="adj"/></l><r>werktätig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>world's<b/>largest<s n="adj"/></l><r>weltgrößte<s n="adj"/></r></p></e>
+    <e><p><l>world's<b/>largest<s n="adj"/></l><r>weltgrößte<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>world-famous<s n="adj"/></l><r>weltberühmt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>world-wide<s n="adj"/></l><r>weltweit<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>worldly<s n="adj"/><s n="sint"/></l><r>weltlich<s n="adj"/><s n="sint"/></r></p></e>
@@ -40878,7 +40878,7 @@
     <e><p><l>wounded<s n="adj"/></l><r>verwundet<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>wrathful<s n="adj"/></l><r>grimm<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>wretched<s n="adj"/></l><r>minderwertig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>writeable<s n="adj"/></l><r>beschreibbar<s n="adj"/></r></p></e>
+    <e><p><l>writeable<s n="adj"/></l><r>beschreibbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>written<s n="adj"/></l><r>schriftlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>wrong<s n="adj"/></l><r>falsch<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>wrong<s n="adj"/></l><r>unrecht<s n="adj"/><s n="sint"/></r></p></e>
@@ -40891,7 +40891,7 @@
     <e><p><l>yeasty<s n="adj"/><s n="sint"/></l><r>hefig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>yellow<s n="adj"/><s n="sint"/></l><r>gelb<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>yellow<s n="adj"/><s n="sint"/></l><r>feig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>yellow<b/>green<s n="adj"/></l><r>gelbgrün<s n="adj"/></r></p></e>
+    <e><p><l>yellow<b/>green<s n="adj"/></l><r>gelbgrün<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>yellowed<s n="adj"/></l><r>vergilbt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>yellowish<s n="adj"/></l><r>gelblich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Yemeni<s n="adj"/></l><r>jemenitisch<s n="adj"/><s n="sint"/></r></p></e>
@@ -49383,7 +49383,7 @@
     <e><p><l>ahoy<s n="ij"/></l><r>Ahoi<s n="ij"/></r></p></e>
     <e r="RL"><p><l>all<b/>right<s n="ij"/></l><r>okay<s n="ij"/></r></p></e>
     <e><p><l>Aloha<s n="ij"/></l><r>Aloha<s n="ij"/></r></p></e>
-    <e><p><l>ay<s n="ij"/></l><r>jawohl<s n="adv"/></r></p></e>
+    <e><p><l>ay<s n="ij"/></l><r>jawohl<s n="ij"/></r></p></e>
     <e><p><l>bang<s n="ij"/></l><r>bum<s n="ij"/></r></p></e>
     <e><p><l>bow-wow<s n="ij"/></l><r>wau-wau<s n="ij"/></r></p></e>
     <e r="RL"><p><l>bow-wow<s n="ij"/></l><r>wauwau<s n="ij"/></r></p></e>
