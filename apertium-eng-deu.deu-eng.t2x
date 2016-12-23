@@ -52,11 +52,11 @@
 		<def-cat n="SV_lex">
 			<cat-item lemma="verb" tags="SV.*"/>
 		</def-cat>
-		<def-cat n="SV_aux">
-			<cat-item lemma="vaux" tags="SV.*"/>
-		</def-cat>
 		<def-cat n="SV_have">
 			<cat-item lemma="vbhaver" tags="SV.*"/>
+		</def-cat>
+		<def-cat n="SV_aux">
+			<cat-item lemma="vaux" tags="SV.*"/>
 		</def-cat>
 		<def-cat n="SV_be">
 			<cat-item lemma="vbser" tags="SV.*"/>
@@ -2746,8 +2746,7 @@
 				<pattern-item n="SV_have"/>
 				<pattern-item n="PRPERS"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="SV"/>
-				<!--<pattern-item n="SV_pp"/>-->
+				<pattern-item n="SV"/>  <!--<pattern-item n="SV_pp"/>-->
 			</pattern>
 			<action>
 				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
@@ -2797,6 +2796,51 @@
 		</rule>
 
 
+		<!-- "Vx N N ~V" => "Vx N ~V N" -->  <!-- move verb -->
+		<rule comment="RULE: V N N V">
+			<pattern>
+				<pattern-item n="SV_aux"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SN"/>
+				<pattern-item n="SV"/>  <!--<pattern-item n="SV_pp"/>-->
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="2"/>  <!-- from noun -->
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="4" part="lem"/>
+						<clip pos="4" part="tags"/>
+						<clip pos="4" part="chcontent"/>
+					</chunk>
+					<b pos="3"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+				</out>
+				<call-macro n="set_gen_nbr_nom">
+					<with-param pos="3"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- "Hat er die Blumen gegossen (?)" => "Has he watered the flowers (?)" -->
 		<!-- "V PRN N ~V" => "V PRN ~V N" -->  <!-- move verb -->
 		<rule comment="RULE: V PRPERS N V">
@@ -2804,8 +2848,7 @@
 				<pattern-item n="SV"/>
 				<pattern-item n="PRPERS"/>
 				<pattern-item n="SN"/>
-				<pattern-item n="SV"/>
-				<!--<pattern-item n="SV_pp"/>-->
+				<pattern-item n="SV"/>  <!--<pattern-item n="SV_pp"/>-->
 			</pattern>
 			<action>
 				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->

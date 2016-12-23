@@ -223,6 +223,7 @@
 			<cat-item lemma="in" tags="pr"/>
 			<cat-item lemma="in front of" tags="pr"/>
 			<cat-item lemma="near" tags="pr"/>
+			<cat-item lemma="next to" tags="pr"/>
 			<cat-item lemma="of" tags="pr"/>
 			<cat-item lemma="out of" tags="pr"/>
 			<cat-item lemma="on" tags="pr"/>
@@ -456,7 +457,7 @@
 		</def-attr>
 		<def-attr n="a_num">
 			<attr-item tags="num"/>
-			<attr-item tags="num.*"/>
+			<attr-item tags="num.ord"/>
 		</def-attr>
 		<def-attr n="a_ord_num">
 			<attr-item tags="num.ord"/>
@@ -672,7 +673,6 @@
 		<def-var n="v_pers_tmp"/>
 		<def-var n="v_cas_prep"/>
 		<def-var n="v_info"/>
-
 		<def-var n="v_subject"/>
 		<def-var n="v_predicate"/>
 		<def-var n="v_firstWord"/>
@@ -2826,6 +2826,31 @@
 				<var n="v_nbr"/>
 				<clip pos="1" side="tl" part="a_nbr"/>
 			</let>
+			<choose>
+				<when>  <!-- "num.ord" with suffix "." -->
+					<test>
+						<and>
+							<equal>
+								<clip pos="1" side="tl" part="a_num"/>
+								<lit-tag v="num.ord"/>
+							</equal>
+							<not>
+								<ends-with>
+									<clip pos="1" side="tl" part="lem"/>
+									<lit v="."/>
+								</ends-with>
+							</not>
+						</and>
+					</test>
+					<let>
+						<clip pos="1" side="tl" part="lem"/>
+						<concat>
+							<clip pos="1" side="tl" part="lem"/>
+							<lit v="."/>
+						</concat>
+					</let>
+				</when>
+			</choose>
 		</def-macro>
 
 

@@ -697,6 +697,9 @@
 					<with-param pos="2"/>  <!-- from noun -->
 				</call-macro>
 				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
 					<with-param pos="3"/>
 				</call-macro>
 				<out>
@@ -1413,7 +1416,7 @@
 			<action>
 				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
 					<with-param pos="1"/>
-					<with-param pos="1"/>  <!--(need second parameter)-->
+					<with-param pos="1"/>  <!--(need second parameter (don't care))-->
 				</call-macro>
 				<call-macro n="rm_PD_ND_GD">
 					<with-param pos="1"/>
