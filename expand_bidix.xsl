@@ -44,6 +44,12 @@ Automatically add entries to eng-deu bidix
 	    Unfortunately, xsltproc does not support XPath v.2 with regexpressions
 	-->
       </xsl:when>
+      <xsl:when test="@r='LR'">
+	<!--
+	    skip entries with LR restriction (valid only for English to German):
+	    ex: eventuality/Möglichkeit
+	-->
+      </xsl:when>
       <xsl:otherwise>
 	<!--
 	    hopefully, here we have only words /^[[:upper:]][[:lower:]]+$/
