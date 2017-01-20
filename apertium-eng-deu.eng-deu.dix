@@ -11,6 +11,7 @@
     <sdef n="rpar"      c="right parenthesis"/>
     <sdef n="sent"      c="sentence (punctuation mark)"/>
     <sdef n="lquest"    c="left question mark"/>
+    <sdef n="cmp"       c="component of a compound word"/>
     <sdef n="prn"       c="pronoun"/>
     <sdef n="subj"      c="subject"/>
     <sdef n="obj"       c="object"/>
@@ -20,7 +21,7 @@
     <sdef n="ind"       c="indefinite"/>
     <sdef n="def"       c="definite"/>
     <sdef n="n"         c="noun"/>
-    <sdef n="np"  	    c="proper noun"/>
+    <sdef n="np"        c="proper noun"/>
     <sdef n="f"         c="feminine"/>
     <sdef n="m"         c="masculine"/>
     <sdef n="nt"        c="neuter"/>
@@ -28,19 +29,19 @@
     <sdef n="mfn"       c="masculine/feminine/neuter"/>
     <sdef n="sg"        c="singular"/>
     <sdef n="pl"        c="plural"/>
-    <sdef n="sp"  	    c="singular/plural"/>
-    <sdef n="unc"  	    c="uncountable"/>
-    <sdef n="adj"  	    c="adjective"/>
-    <sdef n="adv"  	    c="adverb"/>
-    <sdef n="sup"  	    c="superlative"/>
-    <sdef n="comp"  	c="comparative"/>
-    <sdef n="pr"  	    c="preposition"/>
+    <sdef n="sp"        c="singular/plural"/>
+    <sdef n="unc"       c="uncountable"/>
+    <sdef n="adj"       c="adjective"/>
+    <sdef n="adv"       c="adverb"/>
+    <sdef n="sup"       c="superlative"/>
+    <sdef n="comp"      c="comparative"/>
+    <sdef n="pr"        c="preposition"/>
     <sdef n="cnjcoo"  	c="co-ordinating conjunction"/>
     <sdef n="cnjsub"  	c="sub-ordinating conjunction"/>
-    <sdef n="nom"  	    c="nominative"/>
-    <sdef n="acc"  	    c="accusative"/>
-    <sdef n="dat"  	    c="dative"/>
-    <sdef n="gen"  	    c="genitive"/>
+    <sdef n="nom"       c="nominative"/>
+    <sdef n="acc"       c="accusative"/>
+    <sdef n="dat"       c="dative"/>
+    <sdef n="gen"       c="genitive"/>
     <sdef n="vbser"     c="the verb 'to be'"/>
     <sdef n="vbhaver"   c="the verb 'to have'"/>
     <sdef n="vblex"  	c="lexical verb"/>
@@ -51,7 +52,7 @@
     <sdef n="p2"        c="second person"/>
     <sdef n="p3"        c="third person"/>
     <sdef n="pri"       c="present indicative"/>
-    <sdef n="ij"  	    c="interjection"/>
+    <sdef n="ij"        c="interjection"/>
     <sdef n="abbr"      c="abbreviation"/>
     <sdef n="cnjadv"    c="adverbial conjunction"/>
     <sdef n="preadv"    c="Pre-adverb"/>
@@ -59,11 +60,11 @@
     <sdef n="ant"       c="Anthroponym (first name)"/>
     <sdef n="cog"       c="Cognomen (family name)"/>
     <sdef n="pers"      c="Personal (pronoun)"/>
-    <sdef n="dem"  	    c="Demonstrative"/>
-    <sdef n="rel"  	    c="Relative"/>
+    <sdef n="dem"       c="Demonstrative"/>
+    <sdef n="rel"       c="Relative"/>
     <sdef n="pos"       c="Possessive"/>
     <sdef n="sint"      c="Synthetic (adjective)"/>
-    <sdef n="sep" 	    c="Separable (verb)"/>
+    <sdef n="sep"       c="Separable (verb)"/>
     <sdef n="ito"       c="(German) Infinitive with 'to'"/>
     <sdef n="inf"       c="Infinitive"/>
     <sdef n="pred"      c="Predicative"/>
@@ -5950,6 +5951,7 @@
     <e><p><l>contrition<s n="n"/></l><r>Zerknirschung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>control<s n="n"/></l><r>Aufsicht<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>control<s n="n"/></l><r>Beherrschung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>control<s n="n"/></l><r>Kontrolle<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>control<s n="n"/></l><r>Steuerung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>control<b/>bit<s n="n"/></l><r>Steuerbit<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>control<b/>chart<s n="n"/></l><r>Kontrollkarte<s n="n"/><s n="f"/></r></p></e>
@@ -11922,7 +11924,6 @@
     <e><p><l>hire-purchase<s n="n"/></l><r>Ratenkauf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>hired<b/>car<s n="n"/></l><r>Mietwagen<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>hiring<s n="n"/></l><r>Verleih<s n="n"/><s n="m"/></r></p></e>
-    <e r="RL"><p><l>hiring<s n="n"/></l><r>Vermietung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Hispanic<s n="n"/></l><r>Spanisch<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>hispanics<s n="n"/></l><r>Hispanier<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>histamine<s n="n"/></l><r>Histamin<s n="n"/><s n="nt"/></r></p></e>
@@ -12796,7 +12797,7 @@
     <e><p><l>information<s n="n"/></l><r>Kunde<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>information<s n="n"/></l><r>Auskunft<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>information<s n="n"/></l><r>Aufschluss<s n="n"/><s n="m"/></r></p></e>
-    <e r="RL"><p><l>information<s n="n"/></l><r>Information<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>information<s n="n"/></l><r>Information<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>information<s n="n"/></l><r>Mitteilung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>information<b/>centre<s n="n"/></l><r>Beratungsstelle<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>information<b/>centre<s n="n"/></l><r>Informationszentrum<s n="n"/><s n="nt"/></r></p></e>
@@ -14034,6 +14035,7 @@
     <e r="LR"><p><l>letterbox<s n="n"/></l><r>Briefkasten<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>lettering<s n="n"/></l><r>Beschriftung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>letterpress<s n="n"/></l><r>Buchdruck<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>letting<s n="n"/></l><r>Vermietung<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>lettuce<s n="n"/></l><r>Salat<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>lettuce<s n="n"/></l><r>Kopfsalat<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>leukaemia<s n="n"/></l><r>bösartige<b/>Erkrankung<g><b/>der<b/>weißen<b/>Blutzellen</g><s n="n"/><s n="f"/></r></p></e>
@@ -14608,6 +14610,7 @@
     <e><p><l>magenta<s n="n"/></l><r>Violett<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>maggot<s n="n"/></l><r>Made<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>magic<s n="n"/></l><r>Magie<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>magic<s n="n"/></l><r>Zauber<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>magic<b/>art<s n="n"/></l><r>Zauberkunst<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>magic<b/>spell<s n="n"/></l><r>Zauberspruch<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>magic<b/>wand<s n="n"/></l><r>Zauberstab<s n="n"/><s n="m"/></r></p></e>
@@ -15578,6 +15581,7 @@
     <e><p><l>mode<g><b/>of<b/>payment</g><s n="n"/></l><r>Zahlungsweise<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>model<s n="n"/></l><r>Fotomodell<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>model<s n="n"/></l><r>Model<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>model<s n="n"/></l><r>Modell<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>model<b/>aeroplane<s n="n"/></l><r>Modellflugzeug<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>model<b/>aircraft<s n="n"/></l><r>Modellflugzeug<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>model<b/>factory<s n="n"/></l><r>Musterfabrik<s n="n"/><s n="f"/></r></p></e>
@@ -16862,7 +16866,7 @@
     <e><p><l>only<b/>child<s n="n"/></l><r>Einzelkind<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>onomatopoeia<s n="n"/></l><r>Lautmalerei<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>onslaught<s n="n"/></l><r>Angriff<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>onus<s n="n"/></l><r>Verpflichtung<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>onus<s n="n"/></l><r>Verpflichtung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>ooze<s n="n"/></l><r>Schlamm<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>opacity<s n="n"/></l><r>Undurchsichtigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>opal<s n="n"/></l><r>Opal<s n="n"/><s n="m"/></r></p></e>
@@ -25769,7 +25773,7 @@
     <e><p><l>vector<b/>product<s n="n"/></l><r>Vektorprodukt<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>vector<b/>space<s n="n"/></l><r>Vektorraum<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>vector<b/>subspace<s n="n"/></l><r>Untervektorraum<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>Veda<s n="n"/></l><r>Wissen<s n="n"/><s n="nt"/></r></p></e>
+    <e r="LR"><p><l>Veda<s n="n"/></l><r>Wissen<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>Veda<s n="n"/></l><r>Veda<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>vegan<s n="n"/></l><r>Veganer<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>vegan<s n="n"/></l><r>Veganerin<s n="n"/><s n="f"/></r></p></e>
@@ -49626,16 +49630,25 @@
     <e><p><l>WSW<s n="abbr"/></l><r>WSW<s n="abbr"/></r></p></e>
 
 
-    <!-- SECTION: Elements that appear inside compounds -->
+    <!-- SECTION: Non-nomminal elements that appear inside compounds -->
     <!-- As of Dec 2016, by nkrot: just started working on it. Hence limited to deu-eng direction -->
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>Neben<s n="atp"/></r></p></e>
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>neben<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>collective<s n="adj"/></l><r>Sammel<s n="atp"/></r></p></e>
     <e r="RL"><p><l>collective<s n="adj"/></l><r>sammel<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>downward<s n="adj"/></l><r>Abwärts<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>downward<s n="adj"/></l><r>abwärts<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>main<s n="adj"/></l><r>Haupt<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>main<s n="adj"/></l><r>haupt<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>principal<s n="adj"/></l><r>Haupt<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>principal<s n="adj"/></l><r>haupt<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>Privat<s n="atp"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>privat<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>total<s n="adj"/></l><r>Gesamt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>total<s n="adj"/></l><r>gesamt<s n="atp"/><s n="lower"/></r></p></e>
+
+    <e r="RL"><p><l>basic<s n="adj"/></l><r>Grund<s n="n"/><s n="m"/><s n="sg"/><s n="cmp"/></r></p></e>
+    <e r="RL"><p><l>basic<s n="adj"/></l><r>grund<s n="n"/><s n="m"/><s n="sg"/><s n="lower"/><s n="cmp"/></r></p></e>
 
   </section>
 
