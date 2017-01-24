@@ -5694,7 +5694,6 @@
     <e><p><l>condescension<s n="n"/></l><r>Herablassung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>condiment<s n="n"/></l><r>Zutat<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>condition<s n="n"/></l><r>Zustand<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>condition<s n="n"/></l><r>Zustand<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>condition<s n="n"/></l><r>Bedingung<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>condition<s n="n"/></l><r>Kondition<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>condition<b/>clause<s n="n"/></l><r>Konditionalsatz<s n="n"/><s n="m"/></r></p></e>
@@ -8031,7 +8030,6 @@
     <e r="RL"><p><l>drought<s n="n"/></l><r>Dürre<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>drove<s n="n"/></l><r>Schar<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>drowsiness<s n="n"/></l><r>Schläfrigkeit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>drug<s n="n"/></l><r>Droge<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>drug<s n="n"/></l><r>Droge<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>drug<s n="n"/></l><r>Rauschgift<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>drug<b/>abuse<s n="n"/></l><r>Drogenmissbrauch<s n="n"/><s n="m"/></r></p></e>
@@ -10379,7 +10377,6 @@
     <e><p><l>frog<s n="n"/></l><r>Frosch<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>frond<s n="n"/></l><r>Wedel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>front<s n="n"/></l><r>Front<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>front<s n="n"/></l><r>Front<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>front<b/>door<s n="n"/></l><r>Haustür<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>front<b/>door<s n="n"/></l><r>Eingangstür<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>front<b/>door<s n="n"/></l><r>Vordertür<s n="n"/><s n="f"/></r></p></e>
@@ -10710,7 +10707,6 @@
     <e><p><l>gene<b/>therapy<s n="n"/></l><r>Gentherapie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>genealogist<s n="n"/></l><r>Genealoge<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>genealogy<s n="n"/></l><r>Ahnenforschung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>general<s n="n"/></l><r>General<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>general<s n="n"/></l><r>General<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>general<b/>election<s n="n"/></l><r>Parlamentswahl<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>general<b/>manager<s n="n"/></l><r>Generaldirektor<s n="n"/><s n="m"/></r></p></e>
@@ -12953,7 +12949,6 @@
     <e><p><l>instructor<s n="n"/></l><r>Dozent<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>instructor<s n="n"/></l><r>Instrukteur<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>instrument<s n="n"/></l><r>Instrument<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>instrument<s n="n"/></l><r>Instrument<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>instrument<b/>panel<s n="n"/></l><r>Armaturentafel<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>instrumental<b/>case<s n="n"/></l><r>Instrumental<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>instrumental<b/>music<s n="n"/></l><r>Instrumentalmusik<s n="n"/><s n="f"/></r></p></e>
@@ -15039,6 +15034,7 @@
     <e><p><l>meantime<s n="n"/></l><r>Zwischenzeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>measles<s n="n"/></l><r>Masern<s n="n"/><s n="mfn"/></r></p></e>
     <e><p><l>measure<s n="n"/></l><r>Maßnahme<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>measure<s n="n"/></l><r>Massnahme<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>measure<b/>space<s n="n"/></l><r>Maßraum<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>measurement<s n="n"/></l><r>Messung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>measurement<b/>series<s n="n"/></l><r>Messreihe<s n="n"/><s n="f"/></r></p></e>
@@ -23548,6 +23544,7 @@
     <e><p><l>succession<s n="n"/></l><r>Aufeinanderfolge<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>succession<s n="n"/></l><r>Nachfolge<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>successor<s n="n"/></l><r>Nachfolger<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>successor<s n="n"/></l><r>Nachfolgerin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>succinctness<s n="n"/></l><r>Knappheit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sucker<s n="n"/></l><r>Sauger<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>sucker<s n="n"/></l><r>Trottel<s n="n"/><s n="m"/></r></p></e>
@@ -27064,6 +27061,116 @@
     <e><p><l>Zulu<s n="n"/></l><r>Zulu<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>zwieback<s n="n"/></l><r>Zwieback<s n="n"/><s n="m"/></r></p></e>
 
+    <!-- unsorted section -->
+    <e><p><l>abatement<s n="n"/></l><r>Abschlag<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>acquirer<s n="n"/></l><r>Erwerber<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>acquiring<b/>party<s n="n"/></l><r>Erwerber<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>advisor<s n="n"/></l><r>Betreuer<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>advisor<s n="n"/></l><r>Betreuerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>allocation<s n="n"/></l><r>Allokation<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>alumna<s n="n"/></l><r>Absolventin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>ascertainment<s n="n"/></l><r>Ermittlung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>borrower<s n="n"/></l><r>Entleiher<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>burial<b/>fund<s n="n"/></l><r>Sterbekasse<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>business<b/>area<s n="n"/></l><r>Geschäftsbereich<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>business<b/>domain<s n="n"/></l><r>Geschäftsbereich<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>buyer<s n="n"/></l><r>Erwerber<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>change<g><b/>for<b/>the<b/>worse</g><s n="n"/></l><r>Verschlechterung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>claimant<s n="n"/></l><r>Kläger<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>claimant<s n="n"/></l><r>Klägerin<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>competitor<s n="n"/></l><r>Mitbewerberin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>complainant<s n="n"/></l><r>Kläger<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>complainant<s n="n"/></l><r>Klägerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>complainer<s n="n"/></l><r>Kläger<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>complainer<s n="n"/></l><r>Klägerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>confidence<s n="n"/></l><r>Konfidenz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>contestant<s n="n"/></l><r>Mitbewerber<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>contestant<s n="n"/></l><r>Mitbewerberin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>counselor<s n="n"/></l><r>Betreuer<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>counselor<s n="n"/></l><r>Betreuerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>country<g><b/>of<b/>origin</g><s n="n"/></l><r>Herkunftsland<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>country<g><b/>of<b/>provenance</g><s n="n"/></l><r>Herkunftsland<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>death<b/>benefit<b/>fund<s n="n"/></l><r>Sterbekasse<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>default<s n="n"/></l><r>Verzug<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>degradation<s n="n"/></l><r>Verschlechterung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>degree<g><b/>of<b/>severity</g><s n="n"/></l><r>Schweregrad<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>delay<s n="n"/></l><r>Verzug<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>deterioration<s n="n"/></l><r>Verschlechterung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>discount<s n="n"/></l><r>Abschlag<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>disturbance<s n="n"/></l><r>Unruhe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>evidence<s n="n"/></l><r>Indiz<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>forerunner<s n="n"/></l><r>Vorreiter<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>forfeit<s n="n"/></l><r>Verwirkung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>forfeiture<s n="n"/></l><r>Verwirkung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>gap<s n="n"/></l><r>Inkongruenz<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>graduate<s n="n"/></l><r>Absolventin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>home<b/>country<s n="n"/></l><r>Herkunftsland<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>homeland<s n="n"/></l><r>Herkunftsland<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>homestead<s n="n"/></l><r>Heimstatt<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>homogeneity<s n="n"/></l><r>Homogenität<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>identify<s n="n"/></l><r>Selbstverständnis<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>illiquidity<s n="n"/></l><r>Illiquidität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>immateriality<s n="n"/></l><r>Immaterialität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>impairment<s n="n"/></l><r>Verschlechterung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>imprint<s n="n"/></l><r>Impressum<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>incongruency<s n="n"/></l><r>Inkongruenz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>incongruity<s n="n"/></l><r>Inkongruenz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>inconsistency<s n="n"/></l><r>Inkonsistenz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>indication<s n="n"/></l><r>Indiz<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>ineffectiveness<s n="n"/></l><r>Ineffektivität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>inefficiency<s n="n"/></l><r>Ineffektivität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>input<b/>tax<s n="n"/></l><r>Vorsteuer<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>inventory<s n="n"/></l><r>Inventur<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>investigation<s n="n"/></l><r>Ermittlung<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>investor<s n="n"/></l><r>Investorin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>legal<b/>information<s n="n"/></l><r>Impressum<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>lower<b/>bound<s n="n"/></l><r>Untergrenze<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>lower<b/>limit<s n="n"/></l><r>Untergrenze<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>masthead<s n="n"/></l><r>Impressum<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>materiality<s n="n"/></l><r>Materialität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>minimum<b/>level<s n="n"/></l><r>Untergrenze<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>occupier<s n="n"/></l><r>Nutzer<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>occupier<s n="n"/></l><r>Nutzerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>outline<s n="n"/></l><r>Aufriss<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>outline<s n="n"/></l><r>Aufriß<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>outrider<s n="n"/></l><r>Vorreiter<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>pejoration<s n="n"/></l><r>Verschlechterung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>perturbation<s n="n"/></l><r>Unruhe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>pioneer<s n="n"/></l><r>Vorreiter<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>plaintiff<s n="n"/></l><r>Klägerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>pre-tax<s n="n"/></l><r>Vorsteuer<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>presence<s n="n"/></l><r>Vorliegen<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>principal<b/>plaintiff<s n="n"/></l><r>Hauptkläger<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>principal<b/>plaintiff<s n="n"/></l><r>Hauptklägerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>prior<b/>period<s n="n"/></l><r>Vorperiode<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>profitability<s n="n"/></l><r>Profitabilität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>prolongation<s n="n"/></l><r>Prolongation<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>purchaser<s n="n"/></l><r>Erwerber<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>reduction<s n="n"/></l><r>Abschlag<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>redundance<s n="n"/></l><r>Redundanz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>redundancy<s n="n"/></l><r>Redundanz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>repository<s n="n"/></l><r>Verwahrort<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>riot<s n="n"/></l><r>Unruhe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>self-concept<s n="n"/></l><r>Selbstverständnis<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>self-conception<s n="n"/></l><r>Selbstverständnis<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>seniority<s n="n"/></l><r>Seniorität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sensitivity<s n="n"/></l><r>Sensitivität<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>severity<b/>degree<s n="n"/></l><r>Schweregrad<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>severity<s n="n"/></l><r>Schweregrad<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sign<s n="n"/></l><r>Indiz<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>state<g><b/>of<b/>origin</g><s n="n"/></l><r>Herkunftsland<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>stock-taking<s n="n"/></l><r>Inventur<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>stocktaking<s n="n"/></l><r>Inventur<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>subcommittee<s n="n"/></l><r>Unterkomitee<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>supremacy<s n="n"/></l><r>Höchstgeltung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>trendsetter<s n="n"/></l><r>Vorreiter<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>turmoil<s n="n"/></l><r>Unruhe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>upheaval<s n="n"/></l><r>Unruhe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>upper<b/>limit<s n="n"/></l><r>Höchstgrenze<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>user<s n="n"/></l><r>Nutzer<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>user<s n="n"/></l><r>Nutzerin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>vanguard<s n="n"/></l><r>Vorreiter<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>worsening<s n="n"/></l><r>Verschlechterung<s n="n"/><s n="f"/></r></p></e>
 
     <!-- SECTION: Proper Nouns -->
 
@@ -33691,6 +33798,7 @@
     <e><p><l>Bahrain<s n="np"/></l><r>Bahrain<s n="np"/></r></p></e>
     <e><p><l>Bangladesh<s n="np"/></l><r>Bangladesch<s n="np"/></r></p></e>
     <e><p><l>Bavaria<s n="np"/></l><r>Bayern<s n="np"/></r></p></e>
+    <e><p><l>South<b/>Bavaria<s n="np"/></l><r>Südbayern<s n="np"/></r></p></e>
     <e><p><l>Belgium<s n="np"/></l><r>Belgien<s n="np"/></r></p></e>
     <e><p><l>Benelux<s n="np"/></l><r>Benelux<s n="np"/></r></p></e>
     <e><p><l>Bolivia<s n="np"/></l><r>Bolivien<s n="np"/></r></p></e>
@@ -33833,6 +33941,7 @@
     <e><p><l>North<b/>Pole<s n="np"/></l><r>Nordpol<s n="np"/></r></p></e>
     <e><p><l>North<b/>Rhine-Westphalia<s n="np"/></l><r>Nordrhein-Westfalen<s n="np"/></r></p></e>
     <e><p><l>North-Korea<s n="np"/></l><r>North-Korea<s n="np"/></r></p></e>
+    <e><p><l>North<b/>Korea<s n="np"/></l><r>Nordkorea<s n="np"/></r></p></e>
     <e><p><l>Northern<b/>Canada<s n="np"/></l><r>Nordkanada<s n="np"/></r></p></e>
     <e><p><l>Northern<b/>Europe<s n="np"/></l><r>Nordeuropa<s n="np"/></r></p></e>
     <e><p><l>Northern<b/>Germany<s n="np"/></l><r>Norddeutschland<s n="np"/></r></p></e>
@@ -33850,7 +33959,6 @@
     <e><p><l>Pennsylvania<s n="np"/></l><r>Pennsylvania<s n="np"/></r></p></e>
     <e><p><l>Peru<s n="np"/></l><r>Peru<s n="np"/></r></p></e>
     <e><p><l>Philadelphia<s n="np"/></l><r>Philadelphia<s n="np"/></r></p></e>
-    <e><p><l>Philippines<s n="np"/></l><r>Philippinen<s n="np"/></r></p></e>
     <e><p><l>Philippines<s n="np"/></l><r>Philippinen<s n="np"/></r></p></e>
     <e><p><l>Poland<s n="np"/></l><r>Polen<s n="np"/></r></p></e>
     <e><p><l>Portugal<s n="np"/></l><r>Portugal<s n="np"/></r></p></e>
@@ -42335,7 +42443,6 @@
     <e><p><l>at<b/>that<s n="preadv"/></l><r>dabei<s n="preadv"/></r></p></e>
     <e><p><l>at<b/>this<s n="preadv"/></l><r>hierbei<s n="preadv"/></r></p></e>
     <e><p><l>before<s n="preadv"/></l><r>bevor<s n="preadv"/></r></p></e>
-    <e><p><l>before<s n="preadv"/></l><r>bevor<s n="preadv"/></r></p></e>
     <e><p><l>beneath<s n="preadv"/></l><r>drunter<s n="preadv"/></r></p></e>
     <e><p><l>between<s n="preadv"/></l><r>darunter<s n="preadv"/></r></p></e>
     <e><p><l>by<b/>day<s n="preadv"/></l><r>tags<s n="preadv"/></r></p></e>
@@ -49630,25 +49737,30 @@
     <e><p><l>WSW<s n="abbr"/></l><r>WSW<s n="abbr"/></r></p></e>
 
 
-    <!-- SECTION: Non-nomminal elements that appear inside compounds -->
+    <!-- SECTION: Non-nominal elements that appear inside compounds -->
     <!-- As of Dec 2016, by nkrot: just started working on it. Hence limited to deu-eng direction -->
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>Neben<s n="atp"/></r></p></e>
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>neben<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>basic<s n="adj"/></l><r>Grund<s n="n"/><s n="m"/><s n="sg"/><s n="cmp"/></r></p></e>
+    <e r="RL"><p><l>basic<s n="adj"/></l><r>grund<s n="n"/><s n="m"/><s n="sg"/><s n="lower"/><s n="cmp"/></r></p></e>
     <e r="RL"><p><l>collective<s n="adj"/></l><r>Sammel<s n="atp"/></r></p></e>
     <e r="RL"><p><l>collective<s n="adj"/></l><r>sammel<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>downward<s n="adj"/></l><r>Abwärts<s n="atp"/></r></p></e>
     <e r="RL"><p><l>downward<s n="adj"/></l><r>abwärts<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>high<s n="adj"/></l><r>Hoch<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>high<s n="adj"/></l><r>hoch<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>main<s n="adj"/></l><r>Haupt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>main<s n="adj"/></l><r>haupt<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>principal<s n="adj"/></l><r>Haupt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>principal<s n="adj"/></l><r>haupt<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>Privat<s n="atp"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>privat<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>top<s n="adj"/></l><r>Höchst<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>top<s n="adj"/></l><r>höchst<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>total<s n="adj"/></l><r>Gesamt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>total<s n="adj"/></l><r>gesamt<s n="atp"/><s n="lower"/></r></p></e>
-
-    <e r="RL"><p><l>basic<s n="adj"/></l><r>Grund<s n="n"/><s n="m"/><s n="sg"/><s n="cmp"/></r></p></e>
-    <e r="RL"><p><l>basic<s n="adj"/></l><r>grund<s n="n"/><s n="m"/><s n="sg"/><s n="lower"/><s n="cmp"/></r></p></e>
+    <e r="RL"><p><l>hybrid<s n="adj"/></l><r>Hybrid<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>hybrid<s n="adj"/></l><r>hybrid<s n="atp"/><s n="lower"/></r></p></e>
 
   </section>
 
