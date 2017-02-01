@@ -5529,7 +5529,7 @@
     <e><p><l>company's<b/>name<s n="n"/></l><r>Firmenname<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>comparative<s n="n"/></l><r>Komparativ<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>comparison<s n="n"/></l><r>Komparation<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>comparison<s n="n"/></l><r>Steigerung<s n="n"/><s n="f"/></r></p></e>
+    <!-- <e><p><l>comparison<s n="n"/></l><r>Steigerung<s n="n"/><s n="f"/></r></p></e> {ling} -->
     <e r="RL"><p><l>comparison<s n="n"/></l><r>Vergleich<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>compartment<s n="n"/></l><r>Abteil<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>compass<s n="n"/></l><r>Kompass<s n="n"/><s n="m"/></r></p></e>
@@ -5550,7 +5550,8 @@
     <e r="RL"><p><l>competition<s n="n"/></l><r>Preisausschreiben<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>competitiveness<s n="n"/></l><r>Wettbewerbsfähigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>competitor<s n="n"/></l><r>Mitbewerber<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>competitor<s n="n"/></l><r>Teilnehmer<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>competitor<s n="n"/></l><r>Mitbewerberin<s n="n"/><s n="f"/></r></p></e>
+    <!-- <e><p><l>competitor<s n="n"/></l><r>Teilnehmer<s n="n"/><s n="m"/></r></p></e> -->
     <e><p><l>competitor<s n="n"/></l><r>Wettbewerbsteilnehmer<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>competitor<s n="n"/></l><r>Konkurrent<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>competitor<s n="n"/></l><r>Wettbewerber<s n="n"/><s n="m"/></r></p></e>
@@ -5739,7 +5740,8 @@
     <e><p><l>configuration<s n="n"/></l><r>Konfiguration<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>configurator<s n="n"/></l><r>Konfigurator<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>confinement<s n="n"/></l><r>Gefangenschaft<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>confirmation<s n="n"/></l><r>Firmung<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>confirmation<s n="n"/></l><r>Firmung<s n="n"/><s n="f"/></r></p></e> <!-- {relig} -->
+    <e><p><l>confirmation<s n="n"/></l><r>Bestätigung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>confirmee<s n="n"/></l><r>Konfirmand<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>confiscation<s n="n"/></l><r>Beschlagnahme<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>conflict<s n="n"/></l><r>Konflikt<s n="n"/><s n="m"/></r></p></e>
@@ -5795,6 +5797,7 @@
     <e><p><l>conscientious<b/>objector<s n="n"/></l><r>Kriegsdienstverweigerer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>conscientiousness<s n="n"/></l><r>Gewissenhaftigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consciousness<s n="n"/></l><r>Bewusstsein<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>consciousness<s n="n"/></l><r>Bewußtsein<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>conscript<s n="n"/></l><r>Wehrpflichtiger<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>conscription<s n="n"/></l><r>Aushebung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consecration<s n="n"/></l><r>Weihe<s n="n"/><s n="f"/></r></p></e>
@@ -10538,6 +10541,7 @@
     <e><p><l>gaiety<s n="n"/></l><r>Fröhlichkeit<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>gaiety<s n="n"/></l><r>Frohsinn<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>gain<s n="n"/></l><r>Zugewinn<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>gain<s n="n"/></l><r>Gewinn<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>gait<s n="n"/></l><r>Gangart<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>gaiter<s n="n"/></l><r>Gamasche<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>gal<s n="n"/></l><r>Gal<s n="n"/><s n="nt"/></r></p></e>
@@ -12648,6 +12652,7 @@
     <e><p><l>incorrectness<s n="n"/></l><r>Unrichtigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>increase<s n="n"/></l><r>Anstieg<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>increase<s n="n"/></l><r>Erhöhung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>increase<s n="n"/></l><r>Steigerung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>increase<s n="n"/></l><r>Zunahme<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>increase<g><b/>in<b/>profit</g><s n="n"/></l><r>Gewinnerhöhung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>increment<s n="n"/></l><r>Zunahme<s n="n"/><s n="f"/></r></p></e>
@@ -15062,7 +15067,7 @@
     <e><p><l>medallion<s n="n"/></l><r>Schaumünze<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>medallist<s n="n"/></l><r>Medaillengewinnerin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>meddler<s n="n"/></l><r>Unbefugter<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>media<s n="n"/></l><r>Medien<s n="n"/><s n="nt"/><s n="pl"/></r></p></e>
+    <e><p><l>media<s n="n"/></l><r>Medium<s n="n"/><s n="nt"/><s n="pl"/></r></p></e>
     <e><p><l>median<s n="n"/></l><r>Mittellinie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>mediation<s n="n"/></l><r>Mediation<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>mediator<s n="n"/></l><r>Mediator<s n="n"/><s n="m"/></r></p></e>
@@ -17764,6 +17769,7 @@
     <e><p><l>performance<s n="n"/></l><r>Auftritt<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>performance<s n="n"/></l><r>Durchführung<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>performance<s n="n"/></l><r>Performance<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>performance<s n="n"/></l><r>Leistung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>performer<s n="n"/></l><r>Darsteller<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>perfume<s n="n"/></l><r>Parfüm<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>perfumer<s n="n"/></l><r>Parfümeur<s n="n"/><s n="m"/></r></p></e>
@@ -20005,7 +20011,7 @@
     <e><p><l>reggae<s n="n"/></l><r>Reggae<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>regicide<s n="n"/></l><r>Königsmord<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>regime<s n="n"/></l><r>Regime<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>regimen<s n="n"/></l><r>Regierung<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>regimen<s n="n"/></l><r>Regierung<s n="n"/><s n="f"/></r></p></e> <!-- {eng-archaic} -->
     <e><p><l>regiment<s n="n"/></l><r>Regiment<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>region<s n="n"/></l><r>Landstrich<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>region<s n="n"/></l><r>Region<s n="n"/><s n="f"/></r></p></e>
@@ -20883,6 +20889,7 @@
     <e><p><l>sales<b/>assistant<s n="n"/></l><r>Vertriebsassistentin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sales<b/>check<s n="n"/></l><r>Kassenzettel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>sales<b/>department<s n="n"/></l><r>Vertrieb<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>distribution<s n="n"/></l><r>Vertrieb<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>sales<b/>department<s n="n"/></l><r>Verkaufsabteilung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sales<b/>division<s n="n"/></l><r>Vertriebsabteilung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sales<b/>experience<s n="n"/></l><r>Verkaufserfahrung<s n="n"/><s n="f"/></r></p></e>
@@ -25807,6 +25814,7 @@
     <e><p><l>vendee<s n="n"/></l><r>Käufer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>vendetta<s n="n"/></l><r>Blutrache<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>vendor<s n="n"/></l><r>Lieferant<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>vendor<s n="n"/></l><r>Lieferantin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>vendor's<b/>tray<s n="n"/></l><r>Bauchladen<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>veneer<s n="n"/></l><r>Furnier<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>veneration<s n="n"/></l><r>Verehrung<s n="n"/><s n="f"/></r></p></e>
@@ -49739,28 +49747,79 @@
 
     <!-- SECTION: Non-nominal elements that appear inside compounds -->
     <!-- As of Dec 2016, by nkrot: just started working on it. Hence limited to deu-eng direction -->
+    <e r="RL"><p><l>all-in-one<s n="adj"/></l><r>Komplett<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>all-in-one<s n="adj"/></l><r>komplett<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>Neben<s n="atp"/></r></p></e>
     <e r="RL"><p><l>auxiliary<s n="adj"/></l><r>neben<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>basic<s n="adj"/></l><r>Grund<s n="n"/><s n="m"/><s n="sg"/><s n="cmp"/></r></p></e>
     <e r="RL"><p><l>basic<s n="adj"/></l><r>grund<s n="n"/><s n="m"/><s n="sg"/><s n="lower"/><s n="cmp"/></r></p></e>
+    <e r="RL"><p><l>brief<s n="adj"/></l><r>Kurz<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>brief<s n="adj"/></l><r>kurz<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>central<s n="adj"/></l><r>Zentral<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>central<s n="adj"/></l><r>zentral<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>collective<s n="adj"/></l><r>Sammel<s n="atp"/></r></p></e>
     <e r="RL"><p><l>collective<s n="adj"/></l><r>sammel<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>communal<s n="adj"/></l><r>Kommunal<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>communal<s n="adj"/></l><r>kommunal<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>complete<s n="adj"/></l><r>Komplett<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>complete<s n="adj"/></l><r>komplett<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>continental<s n="adj"/></l><r>Kontinental<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>continental<s n="adj"/></l><r>kontinental<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>downward<s n="adj"/></l><r>Abwärts<s n="atp"/></r></p></e>
     <e r="RL"><p><l>downward<s n="adj"/></l><r>abwärts<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>high<s n="adj"/></l><r>Hoch<s n="atp"/></r></p></e>
     <e r="RL"><p><l>high<s n="adj"/></l><r>hoch<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>hybrid<s n="adj"/></l><r>Hybrid<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>hybrid<s n="adj"/></l><r>hybrid<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>intermediate<s n="adj"/></l><r>Zwischen<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>intermediate<s n="adj"/></l><r>zwischen<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>local<s n="adj"/></l><r>Kommunal<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>local<s n="adj"/></l><r>kommunal<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>main<s n="adj"/></l><r>Haupt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>main<s n="adj"/></l><r>haupt<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>minimum<s n="adj"/></l><r>Mindest<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>minimum<s n="adj"/></l><r>mindest<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>municipal<s n="adj"/></l><r>Kommunal<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>municipal<s n="adj"/></l><r>kommunal<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>nominal<s n="adj"/></l><r>Nominal<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>nominal<s n="adj"/></l><r>nominal<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>principal<s n="adj"/></l><r>Haupt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>principal<s n="adj"/></l><r>haupt<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>Privat<s n="atp"/></r></p></e>
     <e r="RL"><p><l>private<s n="adj"/></l><r>privat<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>short<s n="adj"/></l><r>Kurz<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>short<s n="adj"/></l><r>kurz<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>top<s n="adj"/></l><r>Höchst<s n="atp"/></r></p></e>
     <e r="RL"><p><l>top<s n="adj"/></l><r>höchst<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>total<s n="adj"/></l><r>Gesamt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>total<s n="adj"/></l><r>gesamt<s n="atp"/><s n="lower"/></r></p></e>
-    <e r="RL"><p><l>hybrid<s n="adj"/></l><r>Hybrid<s n="atp"/></r></p></e>
-    <e r="RL"><p><l>hybrid<s n="adj"/></l><r>hybrid<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>presidential<s n="adj"/></l><r>Präsidial<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>presidential<s n="adj"/></l><r>präsidial<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>rental<s n="n"/><s n="sg"/></l><r>Leih<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>rental<s n="n"/><s n="sg"/></l><r>leih<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>lending<s n="n"/><s n="sg"/></l><r>Leih<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>lending<s n="n"/><s n="sg"/></l><r>leih<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>learning<s n="n"/><s n="sg"/></l><r>Lern<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>learning<s n="n"/><s n="sg"/></l><r>lern<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>delivery<s n="n"/><s n="sg"/></l><r>Liefer<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>delivery<s n="n"/><s n="sg"/></l><r>liefer<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>shipping<s n="n"/><s n="sg"/></l><r>Liefer<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>shipping<s n="n"/><s n="sg"/></l><r>liefer<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>multiyear<s n="adj"/></l><r>Mehrjahres<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>multiyear<s n="adj"/></l><r>mehrjahres<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>multi-year<s n="adj"/></l><r>Mehrjahres<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>multi-year<s n="adj"/></l><r>mehrjahres<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>multi-annual<s n="adj"/></l><r>Mehrjahres<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>multi-annual<s n="adj"/></l><r>mehrjahres<s n="atp"/><s n="lower"/></r></p></e>
+
+    <e r="RL"><p><l>housing<s n="n"/></l><r>Wohn<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>housing<s n="n"/></l><r>wohn<s n="atp"/><s n="lower"/></r></p></e>
+    <!-- <e r="RL"><p><l>living<s n="n"/></l><r>Wohn<s n="atp"/></r></p></e> -->
+    <!-- <e r="RL"><p><l>living<s n="n"/></l><r>wohn<s n="atp"/><s n="lower"/></r></p></e> -->
+    <e r="RL"><p><l>residential<s n="adj"/></l><r>Wohn<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>residential<s n="adj"/></l><r>wohn<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>further<s n="adv"/></l><r>Weiter<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>further<s n="adv"/></l><r>weiter<s n="atp"/><s n="lower"/></r></p></e>
 
   </section>
 
