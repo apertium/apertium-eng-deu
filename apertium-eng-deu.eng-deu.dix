@@ -5529,7 +5529,7 @@
     <e><p><l>company's<b/>name<s n="n"/></l><r>Firmenname<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>comparative<s n="n"/></l><r>Komparativ<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>comparison<s n="n"/></l><r>Komparation<s n="n"/><s n="f"/></r></p></e>
-    <!-- <e><p><l>comparison<s n="n"/></l><r>Steigerung<s n="n"/><s n="f"/></r></p></e> {ling} -->
+    <!-- <e><p><l>comparison<s n="n"/></l><r>Steigerung<s n="n"/><s n="f"/></r></p></e> {deu:ling} -->
     <e r="RL"><p><l>comparison<s n="n"/></l><r>Vergleich<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>compartment<s n="n"/></l><r>Abteil<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>compass<s n="n"/></l><r>Kompass<s n="n"/><s n="m"/></r></p></e>
@@ -5878,7 +5878,7 @@
     <e><p><l>consultant<s n="n"/></l><r>Beraterin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consultation<s n="n"/></l><r>Konsultation<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consultation<s n="n"/></l><r>Rücksprache<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>consultation<g><b/>of<b/>workers<b/>by<b/>management</g><s n="n"/></l><r>Mitsprache<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>employee<b/>participation<s n="n"/></l><r>Mitsprache<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consulting<s n="n"/></l><r>Beratung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>consumer<s n="n"/></l><r>Konsument<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>consumer<s n="n"/></l><r>Konsumentin<s n="n"/><s n="f"/></r></p></e>
@@ -6403,7 +6403,7 @@
     <e><p><l>Crewe<s n="n"/></l><r>Crewe<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>crewman<s n="n"/></l><r>Besatzungsmitglied<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>crib<s n="n"/></l><r>Weihnachtskrippe<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>cribbage<s n="n"/></l><r>Kribbage<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>cribbage<s n="n"/></l><r>Kribbage<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>cricket<s n="n"/></l><r>Kricket<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>cricket<s n="n"/></l><r>Grille<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>cricket<b/>ground<s n="n"/></l><r>Kricketfeld<s n="n"/><s n="nt"/></r></p></e>
@@ -6985,7 +6985,7 @@
     <e r="RL"><p><l>deer<s n="n"/></l><r>Wild<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>deerskin<s n="n"/></l><r>Hirschleder<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>defamation<s n="n"/></l><r>Verleumdung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>default<s n="n"/></l><r>Vorgabe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>default<s n="n"/></l><r>Vorgabe<s n="n"/><s n="f"/></r></p></e> <!-- {comp} -->
     <e><p><l>default<b/>library<s n="n"/></l><r>Standardbibliothek<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>defaulter<s n="n"/></l><r>Schuldner<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>defeat<s n="n"/></l><r>Besiegung<s n="n"/><s n="f"/></r></p></e>
@@ -10585,7 +10585,7 @@
     <e><p><l>gaming<b/>piece<s n="n"/></l><r>Spielstein<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Gamma<s n="n"/></l><r>Gamma<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>gamma<b/>ray<s n="n"/></l><r>Gammastrahl<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>gammaglobulin<s n="n"/></l><r>Gammaglobulin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>gammaglobulin<s n="n"/></l><r>Gammaglobulin<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>gamut<s n="n"/></l><r>Skala<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>gander<s n="n"/></l><r>Gänserich<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>gang<s n="n"/></l><r>Bande<s n="n"/><s n="f"/></r></p></e>
@@ -11580,7 +11580,7 @@
     <e><p><l>hardwood<s n="n"/></l><r>Hartholz<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>hare<s n="n"/></l><r>Hase<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>harem<s n="n"/></l><r>Harem<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>harlequin<s n="n"/></l><r>Harlekin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>harlequin<s n="n"/></l><r>Harlekin<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>harm<s n="n"/></l><r>Leid<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>harm<s n="n"/></l><r>Schaden<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>harmonic<s n="n"/></l><r>Harmonische<s n="n"/><s n="f"/></r></p></e>
@@ -13154,7 +13154,7 @@
     <e><p><l>invincibility<s n="n"/></l><r>Unbesiegbarkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>inviolability<s n="n"/></l><r>Unantastbarkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>invisibility<s n="n"/></l><r>Unsichtbarkeit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>invisibleness<s n="n"/></l><r>Unsichtbarkeiten<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>invisibleness<s n="n"/></l><r>Unsichtbarkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>invitation<s n="n"/></l><r>Einladung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>invocation<s n="n"/></l><r>Aufruf<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>invoice<s n="n"/></l><r>Rechnung<s n="n"/><s n="f"/></r></p></e>
@@ -15148,7 +15148,7 @@
     <e><p><l>memo<s n="n"/></l><r>Notiz<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>memoir<s n="n"/></l><r>Denkschrift<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>memoirs<s n="n"/></l><r>Memoiren<s n="n"/><s n="mfn"/></r></p></e>
-    <e><p><l>memorabilia<s n="n"/></l><r>Denkwürdigkeiten<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>memorabilia<s n="n"/></l><r>Denkwürdigkeit<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>memorandum<s n="n"/></l><r>Notiz<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>memorial<s n="n"/></l><r>Mahnmal<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>memorial<s n="n"/></l><r>Denkmal<s n="n"/><s n="nt"/></r></p></e>
@@ -15275,7 +15275,7 @@
     <e><p><l>mica<s n="n"/></l><r>Glimmer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>micro<s n="n"/></l><r>Micro<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>microbe<s n="n"/></l><r>Mikrobe<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>microbiologist<s n="n"/></l><r>Mikrobiologe<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>microbiologist<s n="n"/></l><r>Mikrobiologe<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>microbiologist<s n="n"/></l><r>Mikrobiologin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>microbiology<s n="n"/></l><r>Mikrobiologie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>microclimate<s n="n"/></l><r>Kleinklima<s n="n"/><s n="nt"/></r></p></e>
@@ -16013,7 +16013,7 @@
     <e><p><l>muskrat<s n="n"/></l><r>Bisamratte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Muslim<s n="n"/></l><r>Muslim<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Muslim<s n="n"/></l><r>Muslime<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>muslin<s n="n"/></l><r>Musselin<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>muslin<s n="n"/></l><r>Musselin<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>mussel<s n="n"/></l><r>Muschel<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>Mussulman<s n="n"/></l><r>Muselmann<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mustache<s n="n"/></l><r>Schnurrbart<s n="n"/><s n="m"/></r></p></e>
@@ -20011,7 +20011,7 @@
     <e><p><l>reggae<s n="n"/></l><r>Reggae<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>regicide<s n="n"/></l><r>Königsmord<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>regime<s n="n"/></l><r>Regime<s n="n"/><s n="nt"/></r></p></e>
-    <e r="LR"><p><l>regimen<s n="n"/></l><r>Regierung<s n="n"/><s n="f"/></r></p></e> <!-- {eng-archaic} -->
+    <e r="LR"><p><l>regimen<s n="n"/></l><r>Regierung<s n="n"/><s n="f"/></r></p></e> <!-- {eng:archaic} -->
     <e><p><l>regiment<s n="n"/></l><r>Regiment<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>region<s n="n"/></l><r>Landstrich<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>region<s n="n"/></l><r>Region<s n="n"/><s n="f"/></r></p></e>
@@ -22269,7 +22269,7 @@
     <e><p><l>smelter<s n="n"/></l><r>Schmelzer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>smeltery<s n="n"/></l><r>Schmelzhütte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>smile<s n="n"/></l><r>Lächeln<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>smith<s n="n"/></l><r>Schmied<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>smith<s n="n"/></l><r>Schmied<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>smithereens<s n="n"/><s n="pl"/></l><r>Bruchstücke<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>smock<s n="n"/></l><r>Kittel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>smog<s n="n"/></l><r>Smog<s n="n"/><s n="m"/></r></p></e>
@@ -23754,7 +23754,7 @@
     <e><p><l>survival<b/>knife<s n="n"/></l><r>Feldmesser<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>survivor<s n="n"/></l><r>Überlebende<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>survivorship<b/>annuity<s n="n"/></l><r>Hinterbliebenenrente<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>susceptibleness<s n="n"/></l><r>Empfänglichkeiten<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>susceptibleness<s n="n"/></l><r>Empfänglichkeit<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>sushi<s n="n"/></l><r>Sushi<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>suspect<s n="n"/></l><r>Verdächtige<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>suspender<s n="n"/></l><r>Strumpfhalter<s n="n"/><s n="m"/></r></p></e>
@@ -25341,7 +25341,7 @@
     <e><p><l>tusk<s n="n"/></l><r>Stoßzahn<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>tussock<s n="n"/></l><r>Büschel<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>tutor<s n="n"/></l><r>Hauslehrer<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>tutor<s n="n"/></l><r>Tutorin<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>tutor<s n="n"/></l><r>Tutorin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tutti<s n="n"/></l><r>Tutti<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>tuxedo<s n="n"/></l><r>Smoking<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>TV<s n="n"/></l><r>Fernseh<s n="n"/><s n="nt"/></r></p></e>
@@ -25563,7 +25563,7 @@
     <e><p><l>unjustness<s n="n"/></l><r>Unrecht<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>unknown<s n="n"/></l><r>Unbekannte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>unlawfulness<s n="n"/></l><r>Unrechtmäßigkeit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>unlikeliness<s n="n"/></l><r>Unwahrscheinlichkeiten<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>unlikeliness<s n="n"/></l><r>Unwahrscheinlichkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>unloved<b/>child<s n="n"/></l><r>ungeliebtes<b/>Kind<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>unmanliness<s n="n"/></l><r>Unmännlichkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>unmercifulness<s n="n"/></l><r>Unbarmherzigkeit<s n="n"/><s n="f"/></r></p></e>
