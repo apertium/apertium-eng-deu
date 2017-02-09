@@ -4258,7 +4258,7 @@
     <e><p><l>catastrophism<s n="n"/></l><r>Katastrophismus<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>catch<s n="n"/></l><r>Haken<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>catch<b/>word<s n="n"/></l><r>Slogan<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>catchment<s n="n"/></l><r>Auffangen<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>catchment<s n="n"/></l><r>Auffangen<s n="n"/><s n="f"/></r></p></e> <!-- TODO: WTF? -->
     <e><p><l>catchment<b/>area<s n="n"/></l><r>Einzugsgebiet<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>catchword<s n="n"/></l><r>Stichwort<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>catchword<b/>index<s n="n"/></l><r>Schlagwortregister<s n="n"/><s n="nt"/></r></p></e>
@@ -4493,7 +4493,7 @@
     <e><p><l>chancellery<s n="n"/></l><r>Kanzleramt<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>chancellor<s n="n"/></l><r>Kanzler<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chancellorship<s n="n"/></l><r>Kanzlerschaft<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>chancery<s n="n"/></l><r>Kanzleigericht<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>chancery<s n="n"/></l><r>Kanzleigericht<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>chancre<s n="n"/></l><r>Schanker<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chandelier<s n="n"/></l><r>Kronleuchter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chandler<s n="n"/></l><r>Krämer<s n="n"/><s n="m"/></r></p></e>
@@ -4684,7 +4684,7 @@
     <e><p><l>chicken<b/>salad<s n="n"/></l><r>Hühnersalat<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chicken<b/>soup<s n="n"/></l><r>Hühnersuppe<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chicken-house<s n="n"/></l><r>Hühnerstall<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>chickenpox<s n="n"/></l><r>Windpocke<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>chickenpox<s n="n"/><s n="sg"/></l><r>Windpocke<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>chickpea<s n="n"/></l><r>Kichererbse<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chicory<s n="n"/></l><r>Wegwarte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chief<s n="n"/></l><r>Chief<s n="n"/><s n="m"/></r></p></e>
@@ -4785,7 +4785,8 @@
     <e><p><l>choreography<s n="n"/></l><r>Choreografie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>choreography<s n="n"/></l><r>Choreographie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chorion<s n="n"/></l><r>Weißeisack<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>chorister<s n="n"/></l><r>Choralist<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>chorister<s n="n"/></l><r>Choralist<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>chorister<s n="n"/></l><r>Choristin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chorister<s n="n"/></l><r>Chorsänger<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chorizo<s n="n"/></l><r>Chorizo<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chorus<s n="n"/></l><r>Refrain<s n="n"/><s n="m"/></r></p></e>
@@ -5991,7 +5992,7 @@
     <e><p><l>conversation<b/>class<s n="n"/></l><r>Konversationsunterricht<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>conversation<b/>course<s n="n"/></l><r>Gesprächskurs<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>conversation<b/>passage<s n="n"/></l><r>Gesprächspassage<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>conversationalist<s n="n"/></l><r>Plauderer<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>conversationalist<s n="n"/></l><r>Plauderer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>conversationist<s n="n"/></l><r>guter<b/>Unterhalter<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>converse<s n="n"/></l><r>Gegenteil<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>conversion<s n="n"/></l><r>Bekehrung<s n="n"/><s n="f"/></r></p></e>
@@ -6256,6 +6257,7 @@
     <e><p><l>courage<s n="n"/></l><r>Courage<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>courage<s n="n"/></l><r>Mut<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>courgette<s n="n"/></l><r>Zucchini<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>zucchini<s n="n"/></l><r>Zucchini<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>courier<s n="n"/></l><r>Kurier<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>courier<b/>service<s n="n"/></l><r>Kurierdienst<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>courier-messenger<s n="n"/></l><r>Kurierbote<s n="n"/><s n="m"/></r></p></e>
@@ -6437,7 +6439,7 @@
     <e r="LR"><p><l>crockery<s n="n"/></l><r>Geschirr<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>crockery<b/>basket<s n="n"/></l><r>Geschirrkorb<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>crocodile<s n="n"/></l><r>Krokodil<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>crocodile<b/>tears<s n="n"/></l><r>Krokodilstränen<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>crocodile<b/>tear<s n="n"/><s n="pl"/></l><r>Krokodilsträne<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>crocus<s n="n"/></l><r>Krokus<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>croissant<s n="n"/></l><r>Croissant<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>cronyism<s n="n"/></l><r>Vetternwirtschaft<s n="n"/><s n="f"/></r></p></e>
@@ -6852,6 +6854,7 @@
     <e><p><l>daytime<s n="n"/></l><r>Tageszeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>DDR<s n="n"/></l><r>DDR<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>de-rating<s n="n"/></l><r>Lastminderung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>derating<s n="n"/></l><r>Lastminderung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>deacon<s n="n"/></l><r>Diakon<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>deactivation<s n="n"/></l><r>Abschaltung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>dead<b/>person<s n="n"/></l><r>Toter<s n="n"/><s n="m"/></r></p></e>
@@ -8882,7 +8885,7 @@
     <e r="RL"><p><l>evangelist<s n="n"/></l><r>Prediger<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>evaporating<b/>dish<s n="n"/></l><r>Abdampfschale<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>evasion<s n="n"/></l><r>Umgehung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>evasiveness<s n="n"/><s n="sg"/></l><r>Ausflüchte<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>evasiveness<s n="n"/><s n="sg"/></l><r>Ausflucht<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>eve<s n="n"/></l><r>Vorabend<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>eve<s n="n"/></l><r>Vortag<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>evening<s n="n"/></l><r>Abend<s n="n"/><s n="m"/></r></p></e>
@@ -10528,7 +10531,7 @@
     <e><p><l>G<b/>sharp<s n="n"/></l><r>Gis<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>G.P.<s n="n"/></l><r>G.P.<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>gab<s n="n"/></l><r>Geplapper<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>gaberdine<s n="n"/></l><r>Gabardine<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>gaberdine<s n="n"/></l><r>Gabardine<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>gadfly<s n="n"/></l><r>Viehbremse<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>gadget<s n="n"/></l><r>Vorrichtung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>gadgetry<s n="n"/></l><r>Apparatur<s n="n"/><s n="f"/></r></p></e>
@@ -12360,7 +12363,7 @@
     <e><p><l>hyperbole<s n="n"/></l><r>Übertreibung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hyperbolic<b/>function<s n="n"/></l><r>Hyperbelfunktion<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hypermarket<s n="n"/></l><r>Verbrauchermarkt<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>hypernym<s n="n"/></l><r>Hyperonym<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>hypernym<s n="n"/></l><r>Hyperonym<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>hyperplane<s n="n"/></l><r>Hyperebene<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hypertension<s n="n"/></l><r>Hypertonie<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hypertext<s n="n"/></l><r>Hypertext<s n="n"/><s n="m"/></r></p></e>
@@ -14786,7 +14789,7 @@
     <e><p><l>mandate<s n="n"/></l><r>Vollmacht<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>mandate<s n="n"/></l><r>Mandat<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>mandator<s n="n"/></l><r>Mandant<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>mandible<s n="n"/></l><r>Kinnbacken<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>mandible<s n="n"/></l><r>Kinnbacke<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>mane<s n="n"/></l><r>Mähne<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>maned<b/>wolf<s n="n"/></l><r>Mähnenwolf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>manege<s n="n"/></l><r>Manege<s n="n"/><s n="f"/></r></p></e>
@@ -15342,7 +15345,7 @@
     <e><p><l>military<b/>review<s n="n"/></l><r>Truppenschau<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>military<b/>service<s n="n"/></l><r>Wehrdienst<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>military<b/>strike<s n="n"/></l><r>Militärschlag<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>military<b/>tactics<s n="n"/></l><r>Militärtaktiken<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>military<b/>tactics<s n="n"/></l><r>Militärtaktik<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>military<b/>training<b/>area<s n="n"/></l><r>Truppenübungsplatz<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>militia<s n="n"/></l><r>Miliz<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>militiaman<s n="n"/></l><r>Milizionär<s n="n"/><s n="m"/></r></p></e>
@@ -15717,7 +15720,7 @@
     <e><p><l>Moor<s n="n"/></l><r>Mohr<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>moor<s n="n"/></l><r>Moor<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>moorhen<s n="n"/></l><r>Sumpfhuhn<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>mooring<s n="n"/></l><r>Mooring<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>mooring<s n="n"/></l><r>Mooring<s n="n"/><s n="f"/></r></p></e> <!-- {naut} -->
     <e><p><l>moorland<s n="n"/></l><r>Heidemoor<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>moot<s n="n"/></l><r>Volksversammlung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>moped<s n="n"/></l><r>Moped<s n="n"/><s n="nt"/></r></p></e>
@@ -16310,7 +16313,7 @@
     <e><p><l>news<b/>broadcast<s n="n"/></l><r>Nachrichtensendung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>news<b/>film<s n="n"/></l><r>Wochenschau<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>news<b/>item<s n="n"/></l><r>Pressemeldung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>news<b/>media<s n="n"/></l><r>Nachrichtenmedien<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>news<b/>media<s n="n"/><s n="pl"/></l><r>Nachrichtenmedium<s n="n"/><s n="nt"/><s n="pl"/></r></p></e>
     <e><p><l>news<b/>media<b/>representative<s n="n"/></l><r>Nachrichtenvertreter<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>news<b/>report<s n="n"/></l><r>Nachrichtenbericht<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>news<b/>service<s n="n"/></l><r>Nachrichtendienst<s n="n"/><s n="m"/></r></p></e>
@@ -19894,6 +19897,7 @@
     <e><p><l>recreational<b/>park<s n="n"/></l><r>Freizeitpark<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>recreational<b/>vehicle<s n="n"/></l><r>Reisemobil<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>recrimination<s n="n"/></l><r>Gegenbeschuldigung<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>counter<b/>accusation<s n="n"/></l><r>Gegenbeschuldigung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>recruit<s n="n"/></l><r>Rekrut<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>recruiter<s n="n"/></l><r>Personalreferent<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>recruiting<s n="n"/></l><r>Anwerbung<s n="n"/><s n="f"/></r></p></e>
@@ -20384,7 +20388,7 @@
     <e><p><l>reverb<s n="n"/></l><r>Hall<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>reverend<s n="n"/></l><r>Geistlicher<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Reverend<s n="n"/></l><r>Hochwürden<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>reversal<s n="n"/></l><r>Storno<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>reversal<s n="n"/></l><r>Storno<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>reverse<s n="n"/></l><r>Revers<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>reversibility<s n="n"/></l><r>Umkehrbarkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>revetment<s n="n"/></l><r>Verkleidung<s n="n"/><s n="f"/></r></p></e>
@@ -20467,6 +20471,8 @@
     <e><p><l>right<b/>hand<s n="n"/></l><r>rechte<b/>Seite<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>right<b/>hander<s n="n"/></l><r>Rechtshänder<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>right<g><b/>of<b/>way</g><s n="n"/></l><r>Vorfahrt<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>visible<b/>side<s n="n"/></l><r>Schauseite<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>front<b/>side<s n="n"/></l><r>Schauseite<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>right<b/>side<s n="n"/></l><r>Schauseite<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>right<g><b/>to<b/>vote</g><s n="n"/></l><r>Wahlrecht<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>right<b/>whale<s n="n"/></l><r>Glattwal<s n="n"/><s n="m"/></r></p></e>
@@ -20524,7 +20530,7 @@
     <e><p><l>river<b/>meadow<s n="n"/></l><r>Aue<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>riverside<s n="n"/></l><r>Flussufer<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>rivet<s n="n"/></l><r>Niete<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>roach<s n="n"/></l><r>Gilling<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>roach<s n="n"/></l><r>Gilling<s n="n"/><s n="f"/></r></p></e> <!-- {naut} -->
     <e r="LR"><p><l>road<s n="n"/></l><r>Straße<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>road<s n="n"/></l><r>Landstraße<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>road<s n="n"/></l><r>Reede<s n="n"/><s n="f"/></r></p></e>
@@ -21276,7 +21282,7 @@
     <e><p><l>sea<b/>bird<s n="n"/></l><r>Seevogel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>sea<b/>chart<s n="n"/></l><r>Seekarte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sea<b/>cow<s n="n"/></l><r>Seekuh<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>sea<b/>food<s n="n"/></l><r>Meeresfrüchte<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sea<b/>food<s n="n"/><s n="sg"/></l><r>Meeresfrucht<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>sea<b/>holly<s n="n"/></l><r>Stranddistel<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>sea<b/>level<s n="n"/></l><r>Meeresspiegel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>sea<b/>lily<s n="n"/></l><r>Seelilie<s n="n"/><s n="f"/></r></p></e>
@@ -22259,7 +22265,7 @@
     <e r="RL"><p><l>small<b/>talk<s n="n"/></l><r>Small<b/>Talk<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>small<b/>town<s n="n"/></l><r>Kleinstadt<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>smallness<s n="n"/></l><r>Kleinheit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>smallpox<s n="n"/></l><r>Pocken<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>smallpox<s n="n"/><s n="sg"/></l><r>Pocke<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>smash<s n="n"/></l><r>Zerbrechen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>smear<s n="n"/></l><r>Abstrich<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>smear<s n="n"/></l><r>Verschmierung<s n="n"/><s n="f"/></r></p></e>
@@ -24628,7 +24634,7 @@
     <e r="RL"><p><l>timetable<s n="n"/></l><r>Zeitplan<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>timidity<s n="n"/></l><r>Furchtsamkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>timing<s n="n"/></l><r>Timing<s n="n"/><s n="nt"/></r></p></e>
-    <e><p><l>timpani<s n="n"/></l><r>Kesselpauken<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>timpani<s n="n"/><s n="sg"/></l><r>Kesselpauke<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>timpanist<s n="n"/></l><r>Paukist<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>tin<s n="n"/></l><r>Blechbüchse<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tin<s n="n"/></l><r>Dose<s n="n"/><s n="f"/></r></p></e>
@@ -25757,7 +25763,7 @@
     <e r="LR"><p><l>variety<b/>theater<s n="n"/></l><r>Varietétheater<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>variety<b/>theatre<s n="n"/></l><r>Varietétheater<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>varlet<s n="n"/></l><r>Knappe<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>varnish<s n="n"/></l><r>Firnis<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>varnish<s n="n"/></l><r>Firnis<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>varsity<s n="n"/></l><r>Uni<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>vasculitis<s n="n"/></l><r>Vasculitis<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>vase<s n="n"/></l><r>Vase<s n="n"/><s n="f"/></r></p></e>
