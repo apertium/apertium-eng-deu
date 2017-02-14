@@ -61,19 +61,32 @@
       <match lemma="zehn"/>
       <match lemma="elf"/>
       <match lemma="zwölf"/>
-	</or>
+    </or>
     <match lemma="Uhr" tags="n.*">
       <select lemma="o'clock" tags="n.*"/>
     </match>
   </rule>
 
+  <rule> <!-- @weiter verbessern => +further improve -->
+    <match lemma="weiter" tags="adv">
+      <select lemma="further" tags="adv"/>
+    </match>
+    <match tags="vblex.*"/>
+  </rule>
+
+  <rule> <!-- @viel Disziplin => -many discipline -->
+    <match lemma="viel" tags="adj.*">
+      <remove lemma="many" tags="det.*"/>
+    </match>
+    <match tags="n.*.sg.*"/>
+  </rule>
+
 </rules>
 
-<!-- 
-Resources: 
+<!--
+Resources:
     http://wiki.apertium.org/wiki/How_to_get_started_with_lexical_selection_rules
     http://wiki.apertium.org/wiki/Constraint-based_lexical_selection
     http://wiki.apertium.org/wiki/Lexical_selection
     http://wiki.apertium.org/wiki/Learning_rules_from_parallel_and_non-parallel_corpora
 -->
-
