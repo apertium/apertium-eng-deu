@@ -7285,8 +7285,8 @@
     <e><p><l>development<b/>environment<s n="n"/></l><r>Entwicklungsumgebung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>deviation<s n="n"/></l><r>Abweichung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>deviationist<s n="n"/></l><r>Abweichler<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>device<s n="n"/></l><r>Emblem<s n="n"/><s n="nt"/></r></p></e>
-    <e r="LR"><p><l>device<s n="n"/></l><r>Vorrichtung<s n="n"/><s n="f"/></r></p></e>
+    <!-- <e><p><l>device<s n="n"/></l><r>Emblem<s n="n"/><s n="nt"/></r></p></e> TODO: WTF? -->
+    <e><p><l>device<s n="n"/></l><r>Vorrichtung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>devil<s n="n"/></l><r>Teufel<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>deviousness<s n="n"/></l><r>Abwegigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>deviser<s n="n"/></l><r>Erfinder<s n="n"/><s n="m"/></r></p></e>
@@ -20296,7 +20296,7 @@
     <e><p><l>respiration<s n="n"/></l><r>Atmung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>respirator<s n="n"/></l><r>Atemschutzgerät<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>respiratory<b/>disease<s n="n"/></l><r>Atemwegserkrankung<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>respiratory<b/>tract<s n="n"/></l><r>Atemwege<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>respiratory<b/>tract<s n="n"/></l><r>Atemweg<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e><p><l>respite<s n="n"/></l><r>Frist<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>response<s n="n"/></l><r>Antwort<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>responsibility<s n="n"/></l><r>Kompetenz<s n="n"/><s n="f"/></r></p></e>
@@ -35607,7 +35607,7 @@
     <e><p><l>concertante<s n="adj"/></l><r>konzertant<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>conciliatory<s n="adj"/></l><r>versöhnlich<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>conclusive<s n="adj"/></l><r>schlüssig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>concomitant<s n="adj"/></l><r>gleichzeitig<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="LR"><p><l>concomitant<s n="adj"/></l><r>gleichzeitig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>concrete<s n="adj"/></l><r>konkret<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>concupiscent<s n="adj"/></l><r>wollüstig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>concurrent<s n="adj"/></l><r>simultan<s n="adj"/><s n="sint"/></r></p></e>
@@ -37935,7 +37935,6 @@
     <e><p><l>manque<s n="adj"/></l><r>verfehlt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>manque<s n="adj"/></l><r>verkannt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>manual<s n="adj"/></l><r>manuell<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>many<s n="adj"/></l><r>viel<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>many-voiced<s n="adj"/></l><r>vielstimmig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>marginal<s n="adj"/></l><r>marginal<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>marine<s n="adj"/></l><r>marin<s n="adj"/><s n="sint"/></r></p></e>
@@ -39984,7 +39983,7 @@
     <e><p><l>suspicious<s n="adj"/></l><r>argwöhnisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sustainable<s n="adj"/></l><r>nachhaltig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="RL"><p><l>sustainable<s n="adj"/></l><r>tragfähig<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>svelte<s n="adj"/></l><r>schlank<s n="adj"/><s n="sint"/></r></p></e>
+    <e r="LR"><p><l>svelte<s n="adj"/></l><r>schlank<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Swabian<s n="adj"/></l><r>schwäbisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>swarthy<s n="adj"/></l><r>dunkelhäutig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sweaty<s n="adj"/><s n="sint"/></l><r>schweißig<s n="adj"/><s n="sint"/></r></p></e>
@@ -41517,6 +41516,7 @@
     <e><p><l>fundamentally<s n="adv"/></l><r>grundsätzlich<s n="adv"/></r></p></e>
     <e r="LR"><p><l>furiously<s n="adv"/></l><r>wild<s n="adv"/></r></p></e>
     <e><p><l>further<s n="adv"/></l><r>sonst<s n="adv"/></r></p></e>
+    <e><p><l>further<s n="adv"/></l><r>weiter<s n="adv"/></r></p></e>
     <e><p><l>furthermore<s n="adv"/></l><r>darüberhinaus<s n="adv"/></r></p></e>
     <e><p><l>furthermore<s n="adv"/></l><r>ferner<s n="adv"/></r></p></e>
     <e><p><l>furthermore<s n="adv"/></l><r>überdies<s n="adv"/></r></p></e>
@@ -41785,7 +41785,6 @@
     <e><p><l>monthly<s n="adv"/></l><r>monatlich<s n="adv"/></r></p></e>
     <e><p><l>monumentally<s n="adv"/></l><r>monumental<s n="adv"/></r></p></e>
     <e><p><l>morally<s n="adv"/></l><r>moralisch<s n="adv"/></r></p></e>
-    <e><p><l>more<s n="adv"/></l><r>weiter<s n="adv"/></r></p></e>
     <e><p><l>moreover<s n="adv"/></l><r>außerdem<s n="adv"/></r></p></e>
     <e><p><l>mortally<s n="adv"/></l><r>sterblich<s n="adv"/></r></p></e>
     <e><p><l>most<s n="adv"/></l><r>meist<s n="adv"/></r></p></e>
@@ -49311,12 +49310,12 @@
     <e><p><l>less<s n="det"/></l><r>kleine<s n="det"/></r></p></e>
     <e><p><l>little<s n="det"/></l><r>klein<s n="det"/></r></p></e>
     <e r="LR"><p><l>lots<b/>of<s n="det"/></l><r>viele<s n="det"/></r></p></e>
-    <e><p><l>many<s n="det"/></l><r>viele<s n="det"/></r></p></e>
+    <e><p><l>many<s n="det"/></l><r>viel<s n="adj"/></r></p></e>
     <e r="RL"><p><l>many<s n="det"/></l><r>manche<s n="det"/></r></p></e>
     <e><p><l>more<s n="det"/></l><r>mehr<s n="det"/></r></p></e>
     <e><p><l>most<s n="det"/></l><r>meisten<s n="det"/></r></p></e>
     <e><p><l>most<b/>of<s n="det"/></l><r>die<b/>meisten<s n="det"/></r></p></e>
-    <e><p><l>much<s n="det"/></l><r>viele<s n="det"/></r></p></e>
+    <e><p><l>much<s n="det"/></l><r>viel<s n="adj"/></r></p></e>
     <e><p><l>no<s n="det"/></l><r>kein<s n="det"/></r></p></e>
     <e><p><l>other<s n="det"/></l><r>andere<s n="det"/></r></p></e>
     <e r="RL"><p><l>other<s n="det"/></l><r>ander<s n="det"/></r></p></e>
