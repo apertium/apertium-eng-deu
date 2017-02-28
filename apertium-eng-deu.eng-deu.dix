@@ -76,6 +76,7 @@
     <sdef n="acr"       c="Acronym"/>
     <sdef n="lower"     c="Lower case"/>
     <sdef n="atp"       c="Attachable prefix"/>
+    <sdef n="heur"      c="If tags were guessed by heuristics"/>
   </sdefs>
 
   <section id="main" type="standard">
@@ -49835,6 +49836,10 @@
     <e r="RL"><p><l>second<s n="adj"/></l><r>zweit<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>third<s n="adj"/></l><r>Dritt<s n="atp"/></r></p></e>
     <e r="RL"><p><l>third<s n="adj"/></l><r>dritt<s n="atp"/><s n="lower"/></r></p></e>
+
+    <!-- SECTION: unknown word guessing rules (carry heur tag). These rules slow down compilation. -->
+    <e><re>[a-zäöüß]+</re><p><l></l><r></r></p></e> <!-- transfer without transformation -->
+
   </section>
 
   <section id="final" type="inconditional">
