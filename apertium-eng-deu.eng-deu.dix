@@ -134,7 +134,7 @@
     <e><p><l>based<b/>on<s n="pr"/></l><r>anhand<s n="pr"/></r></p></e>
     <e><p><l>because<b/>of<s n="pr"/></l><r>punkto<s n="pr"/></r></p></e>
     <e r="LR"><p><l>because<b/>of<s n="pr"/></l><r>wegen<s n="pr"/></r></p></e>
-    <e r="LR"><p><l>before<s n="pr"/></l><r>vor<s n="pr"/></r></p></e>
+    <e><p><l>before<s n="pr"/></l><r>vor<s n="pr"/></r></p></e>
     <e><p><l>behalf<s n="pr"/></l><r>namens<s n="pr"/></r></p></e>
     <e><p><l>behind<s n="pr"/></l><r>hinter<s n="pr"/></r></p></e>
     <e r="RL"><p><l>behind<s n="pr"/></l><r>hinten<s n="pr"/></r></p></e>
@@ -13963,6 +13963,7 @@
     <e><p><l>legal<b/>consequence<s n="n"/></l><r>Rechtsfolge<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>legal<b/>department<s n="n"/></l><r>Rechtsabteilung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>legal<b/>dinner<s n="n"/></l><r>Juristenmahl<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>legal<b/>dispute<s n="n"/></l><r>Rechtsstreitigkeit<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>legal<b/>expert<s n="n"/></l><r>Juristin<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>legal<b/>norm<s n="n"/></l><r>Rechtsnorm<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>legal<b/>order<s n="n"/></l><r>Rechtsordnung<s n="n"/><s n="f"/></r></p></e>
@@ -39778,7 +39779,7 @@
     <e><p><l>sprightly<s n="adj"/></l><r>rüstig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>spurious<s n="adj"/></l><r>fadenscheinig<s n="adj"/><s n="sint"/></r></p></e>
     <e r="LR"><p><l>square<s n="adj"/></l><r>quadratisch<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>squat<s n="adj"/></l><r>niedrig<s n="adj"/><s n="sint"/></r></p></e>
+    <!-- <e><p><l>squat<s n="adj"/></l><r>niedrig<s n="adj"/><s n="sint"/></r></p></e> --> <!-- WTF? -->
     <e><p><l>squeaky<s n="adj"/></l><r>quietschend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>squeamish<s n="adj"/></l><r>penibel<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>squeamish<s n="adj"/></l><r>zimperlich<s n="adj"/><s n="sint"/></r></p></e>
@@ -41393,7 +41394,7 @@
     <e><p><l>eleven-thirty<s n="adv"/></l><r>11<b/>Uhr<b/>dreißig<s n="adv"/></r></p></e>
     <e><p><l>elliptically<s n="adv"/></l><r>elliptisch<s n="adv"/></r></p></e>
     <e><p><l>else<s n="adv"/></l><r>sonst<s n="adv"/></r></p></e>
-    <e r="RL"><p><l>else<s n="adv"/></l><r>außerdem<s n="adv"/></r></p></e>
+    <!-- <e r="RL"><p><l>else<s n="adv"/></l><r>außerdem<s n="adv"/></r></p></e> --> <!-- ex: what else is new? -->
     <e><p><l>elsewhere<s n="adv"/></l><r>sonstwo<s n="adv"/></r></p></e>
     <e><p><l>elsewhere<s n="adv"/></l><r>woanders<s n="adv"/></r></p></e>
     <e r="RL"><p><l>elsewhere<s n="adv"/></l><r>andernorts<s n="adv"/></r></p></e>
@@ -41824,6 +41825,7 @@
     <e><p><l>newly<s n="adv"/></l><r>neulich<s n="adv"/></r></p></e>
     <e r="RL"><p><l>newly<s n="adv"/></l><r>neu<s n="adv"/></r></p></e>
     <e><p><l>next<s n="adv"/></l><r>nächste<s n="adv"/></r></p></e>
+    <e><p><l>next<b/>year<s n="adv"/></l><r>nächstes<b/>Jahr<s n="adv"/></r></p></e>
     <e><p><l>nicely<s n="adv"/></l><r>nett<s n="adv"/></r></p></e>
     <e><p><l>nimbly<s n="adv"/></l><r>flink<s n="adv"/></r></p></e>
     <e><p><l>nine-thirty<s n="adv"/></l><r>9<b/>Uhr<b/>dreißig<s n="adv"/></r></p></e>
@@ -42702,6 +42704,7 @@
     <e><p><l>capable<b/>of<s n="adv"/></l><r>imstande<s n="adv"/></r></p></e>
     <e><p><l>catch<b/>sight<s n="adv"/></l><r>ansichtig<s n="adv"/></r></p></e>
     <e><p><l>close<b/>at<b/>hand<s n="adv"/></l><r>nahe<b/>bei<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>coming<b/>year<s n="adv"/></l><r>nächstes<b/>Jahr<s n="adv"/></r></p></e>
     <e><p><l>commonly<b/>called<s n="adv"/></l><r>vulgo<s n="adv"/></r></p></e>
     <e><p><l>compelled<b/>to<s n="adv"/></l><r>gezwungenermaßen<s n="adv"/></r></p></e>
     <e><p><l>could<b/>say<s n="adv"/></l><r>könnte<b/>man<b/>sagen<s n="adv"/></r></p></e>
@@ -49825,7 +49828,13 @@
     <e r="RL"><p><l>residential<s n="adj"/></l><r>wohn<s n="atp"/><s n="lower"/></r></p></e>
     <e r="RL"><p><l>further<s n="adv"/></l><r>Weiter<s n="atp"/></r></p></e>
     <e r="RL"><p><l>further<s n="adv"/></l><r>weiter<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>upward<s n="adj"/></l><r>Aufwärts<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>upward<s n="adj"/></l><r>aufwärts<s n="atp"/><s n="lower"/></r></p></e>
 
+    <e r="RL"><p><l>second<s n="adj"/></l><r>Zweit<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>second<s n="adj"/></l><r>zweit<s n="atp"/><s n="lower"/></r></p></e>
+    <e r="RL"><p><l>third<s n="adj"/></l><r>Dritt<s n="atp"/></r></p></e>
+    <e r="RL"><p><l>third<s n="adj"/></l><r>dritt<s n="atp"/><s n="lower"/></r></p></e>
   </section>
 
   <section id="final" type="inconditional">
