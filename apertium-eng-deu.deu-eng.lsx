@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary type="separable">
+  <alphabet/>
+  <sdefs>
+    <sdef n="n"/>
+    <sdef n="np"/>
+    <sdef n="det"/>
+    <sdef n="adj"/>
+    <sdef n="adv"/>
+    <sdef n="num"/>
+    <sdef n="pr"/>
+    <sdef n="prn"/>
+    <sdef n="cnjcoo"/>
+    <sdef n="sg"/>
+    <sdef n="pl"/>
+    <sdef n="pos"/>
+    <sdef n="pp"/>
+    <sdef n="vblex"/>
+    <sdef n="sep"/>
+  </sdefs>
+  <pardefs>
+    <pardef n="adj">
+      <e><i><w/><s n="adj"/><j/></i></e>
+      <e><i><w/><s n="adj"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="adv">
+      <e><i><w/><s n="adv"/><j/></i></e>
+    </pardef>
+    <pardef n="cnjcoo">
+      <e><i><w/><s n="cnjcoo"/><j/></i></e>
+    </pardef>
+    <pardef n="det">
+      <e><i><w/><s n="det"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="det-pos">
+      <e><i><w/><s n="det"/><s n="pos"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="n">
+      <e><i><w/><s n="n"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="np">
+      <e><i><w/><s n="np"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="num">
+      <e><i><w/><s n="num"/><j/></i></e>
+      <e><i><w/><s n="num"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="prn">
+      <e><i><w/><s n="prn"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="pr">
+        <e><i><w/><s n="pr"/><t/><j/></i></e>
+    </pardef>
+    <pardef n="modifier-n">
+      <e><par n="adj"/><par n="n"/></e>
+      <e><par n="adj"/><par n="adj"/><par n="n"/></e>
+      <e><par n="adj"/><par n="cnjcoo"/><par n="adj"/><par n="n"/></e>
+      <e><par n="num"/><par n="n"/></e>
+      <e><par n="num"/><par n="adj"/><par n="n"/></e>
+    </pardef>
+    <pardef n="det-modifier-n">
+      <e><par n="det"/><par n="n"/></e>
+      <e><par n="det"/><par n="modifier-n"/></e>
+    </pardef>
+    <pardef n="person">
+      <e><par n="np"/></e>
+      <e><par n="prn"/></e>
+      <e><par n="det-modifier-n"/></e>
+    </pardef>
+    <pardef n="SA">
+      <e><par n="adj"/><par n="cnjcoo"/><par n="adj"/></e>
+    </pardef>
+    <pardef n="SN">
+      <e><par n="n"/></e>
+      <e><par n="np"/></e>
+      <e><par n="prn"/></e>
+      <e><par n="modifier-n"/></e>
+      <e><par n="det-modifier-n"/></e>
+    </pardef>
+  </pardefs>
+
+  <section id="main" type="standard">
+
+    <e lm="kündigen an" c="announce">
+      <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
+      <par n="SN"/><par n="adv"/><p><l>an<t/></l><r></r></p>
+    </e>
+
+    <e lm="kündigen an" c="announce">
+      <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
+      <par n="SN"/><p><l>an<t/></l><r></r></p>
+    </e>
+
+    <e lm="steigen aus" c="get off">
+      <p><l>steigen<s n="vblex"/></l><r>aussteigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
+      <par n="adv"/><p><l>aus<t/></l><r></r></p>
+    </e>
+
+    <e lm="steigen aus" c="get off">
+      <p><l>steigen<s n="vblex"/></l><r>aussteigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
+      <par n="pr"/><par n="SN"/><p><l>aus<t/></l><r></r></p>
+    </e>
+
+  </section>
+</dictionary>
+
+<!--
+<b/> = blank
+<w/> = ANY_CHAR (loop)
+<t/> = ANY_TAG (loop)
+<j/> = <$>
+ -->
