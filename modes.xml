@@ -284,9 +284,6 @@
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
       </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
-      </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="deu-eng.autobil.bin"/>
@@ -328,9 +325,6 @@
       </program>
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
-      </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -422,9 +416,6 @@
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
       </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
-      </program>
       <program name="apertium-pretransfer"/>
     </pipeline>
   </mode>
@@ -441,9 +432,6 @@
       </program>
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
-      </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -464,9 +452,6 @@
       </program>
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
-      </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -491,9 +476,6 @@
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
       </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
-      </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="deu-eng.autobil.bin"/>
@@ -517,9 +499,6 @@
       </program>
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
-      </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -548,9 +527,6 @@
       </program>
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
-      </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">

@@ -28,10 +28,13 @@ TARGETS_COMMON =		\
 	$(PREFIX2).autolex.bin	\
 	$(PREFIX2).autogen.bin	\
 	$(PREFIX2).autopgen.bin	\
-	$(PREFIX2).autosep.bin	\
 	$(PREFIX2).t1x.bin	\
 	$(PREFIX2).t2x.bin	\
 	$(PREFIX2).t3x.bin
+
+if CAN_LSX
+TARGETS_COMMON+=$(PREFIX2).autosep.bin
+endif
 
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
