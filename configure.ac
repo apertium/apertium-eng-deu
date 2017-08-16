@@ -23,12 +23,7 @@ AC_PATH_PROG([LRXPROC], [lrx-proc], [false], [$PATH$PATH_SEPARATOR$with_lrx_proc
 AS_IF([test x$LRXPROC = xfalse], [AC_MSG_ERROR([You don't have lrx-proc installed])])
 
 AC_PATH_PROG([LSXCOMP], [lsx-comp], [false], [$PATH$PATH_SEPARATOR$with_lsx_comp/bin])
-# AS_IF([test x$LSXCOMP = xfalse], [AC_MSG_ERROR([You don't have lsx-comp installed])])
-AM_CONDITIONAL([CAN_LSX], [test x$LSXCOMP = xfalse])
-
-AC_PATH_PROG([LSXPROC], [lsx-proc], [false], [$PATH$PATH_SEPARATO# R$with_lsx_proc/bin])
-# AS_IF([test x$LSXPROC = xfalse], [AC_MSG_ERROR([You don't have lsx-proc installed])])
-AM_CONDITIONAL([CAN_LSX], [test x$LSXPROC = xfalse])
+AS_IF([test x$LSXCOMP = xfalse], [AC_MSG_ERROR([You don't have lsx-comp installed])])
 
 AC_PATH_PROGS(ZCAT, [gzcat zcat], [false])
 AS_IF([test x$ZCAT = xfalse], [AC_MSG_ERROR([You don't have zcat nor gzcat installed])])
