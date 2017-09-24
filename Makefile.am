@@ -95,18 +95,29 @@ $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 ## Bilingual dictionaries
 ###############################################################################
 
-.deps/$(BASENAME).$(PREFIX1).dix: .deps/.d
-
-.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix expand_bidix.xsl
-	xsltproc expand_bidix.xsl $< >$@ && \
-	grep -q ERROR $@ && echo "Errors in $@" && exit 11 || \
-	apertium-validate-dictionary $@
-
-$(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
+$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $<
 	lt-comp lr $< $@
 
-$(PREFIX2).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
+$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $<
 	lt-comp rl $< $@
+
+
+## (experimental part of "unknown word guessing" temporarily deactivated to speed up compilation, (see apertium-eng-deu.eng-deu.dix) (wth))
+#
+#.deps/$(BASENAME).$(PREFIX1).dix: .deps/.d
+#
+#.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix expand_bidix.xsl
+#	xsltproc expand_bidix.xsl $< >$@ && \
+#	grep -q ERROR $@ && echo "Errors in $@" && exit 11 || \
+#	apertium-validate-dictionary $@
+#
+#$(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
+#	lt-comp lr $< $@
+#
+#$(PREFIX2).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
+#	lt-comp rl $< $@
 
 ###############################################################################
 ## Lexical selection rules
