@@ -2346,7 +2346,7 @@
 
 
 		<!-- Herr und Frau Browns Haus -->
-		<rule comment="RULE: TITLE CNJ TITLE COGgen NOM">
+		<rule comment="RULE: TITLE CNJ TITLE COG+gen NOM">
 			<pattern>
 				<pattern-item n="title"/>
 				<pattern-item n="cnjcoo"/>
@@ -2386,11 +2386,12 @@
 						</lu>
 						<b pos="3"/>
 						<lu>
-							<clip pos="4" side="tl" part="lemh"/>
+							<clip pos="4" side="tl" part="lem"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
-							<clip pos="4" side="tl" part="a_cas"/>
-							<clip pos="4" side="tl" part="lemq"/>
+							<lit v="+"/> 
+							<lit v="'s"/> 
+							<lit-tag v="gen"/> 
 						</lu>
 						<b pos="4"/>
 						<lu>
@@ -2759,11 +2760,12 @@
 						</lu>
 						<b pos="1"/>
 						<lu>
-							<clip pos="2" side="tl" part="lemh"/>
+							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
-							<clip pos="2" side="tl" part="a_cas"/>
-							<clip pos="2" side="tl" part="lemq"/>
+							<lit v="+"/> 
+							<lit v="'s"/> 
+							<lit-tag v="gen"/> 
 						</lu>
 						<b pos="2"/>
 						<lu>
@@ -4805,11 +4807,12 @@
 							<tag><var n="v_nbr_nom"/></tag>
 						</tags>
 						<lu>
-							<clip pos="1" side="tl" part="lemh"/>
+							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_nom"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
-							<clip pos="1" side="tl" part="a_cas"/>
-							<clip pos="1" side="tl" part="lemq"/>
+							<lit v="+"/> 
+							<lit v="'s"/> 
+							<lit-tag v="gen"/> 
 						</lu>
 						<b pos="1"/>
 						<lu>
