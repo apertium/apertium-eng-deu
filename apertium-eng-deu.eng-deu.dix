@@ -87,6 +87,8 @@
     <e><p>  <l>prpers<s n="prn"/></l>  <r>prpers<s n="prn"/></r>  </p></e>
     <e><p>  <l>prpers<s n="det"/></l>  <r>prpers<s n="det"/></r>  </p></e>
 
+    <e r="LR"><p><l>'s<s n="gen"/></l> <r>s<s n="gen"/></r>  </p></e>
+
 
     <!-- SECTION: Prepositions -->
 
@@ -43512,6 +43514,7 @@
     <e><p><l>do<s n="vbdo"/></l><r>tun<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>do<s n="vbdo"/></l><r>tun<s n="vbdo"/></r></p></e>
 
+    <e><p><l>have<s n="vblex"/></l><r>haben<s n="vblex"/></r></p></e>
     <e><p><l>have<s n="vbhaver"/></l><r>haben<s n="vbhaver"/></r></p></e>
     <e r="LR"><p><l>have<g><b/>got</g><s n="vbhaver"/></l><r>haben<s n="vbhaver"/></r></p></e>
 
