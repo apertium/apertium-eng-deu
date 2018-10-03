@@ -2003,6 +2003,7 @@
     <e><p><l>audience<s n="n"/></l><r>Zuschauerzahl<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>audience<s n="n"/></l><r>Audienz<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>audience<s n="n"/></l><r>Zuschauer<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>listening<b/>comprehension<s n="n"/></l><r>Hörverstehen<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>audio<s n="n"/></l><r>Audio<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>audio<b/>set<s n="n"/></l><r>Audioführer<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>audiocassette<s n="n"/></l><r>Audiokassette<s n="n"/><s n="f"/></r></p></e>
@@ -4278,7 +4279,7 @@
     <e><p><l>cassette<s n="n"/></l><r>Kassette<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>cassette<s n="n"/></l><r>Cassette<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>cassette<b/>recorder<s n="n"/></l><r>Kassettenrecorder<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>cast<s n="n"/></l><r>Abguß<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>cast<s n="n"/></l><r>Abguss<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>cast<s n="n"/></l><r>Guss<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>cast<s n="n"/></l><r>Wurf<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>cast<b/>iron<s n="n"/></l><r>Gusseisen<s n="n"/><s n="nt"/></r></p></e>
@@ -6290,6 +6291,7 @@
     <e r="RL"><p><l>counter<s n="n"/></l><r>Zähler<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>counter<b/>accusation<s n="n"/></l><r>Gegenbeschuldigung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>counter<b/>clerk<s n="n"/></l><r>Schalterangestellter<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>counter<b/>closing<b/>time<s n="n"/></l><r>Schalterschluss<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>counter-example<s n="n"/></l><r>Gegenbeispiel<s n="n"/><s n="nt"/></r></p></e>
     <e r="LR"><p><l>counter-poison<s n="n"/></l><r>Gegengift<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>counterattack<s n="n"/></l><r>Gegenangriff<s n="n"/><s n="m"/></r></p></e>
@@ -12186,8 +12188,7 @@
     <e><p><l>honey<b/>bee<s n="n"/></l><r>Honigbiene<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>honeycomb<s n="n"/></l><r>Honigwabe<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>honeymoon<s n="n"/></l><r>Flitterwochen<s n="n"/><s n="mfn"/></r></p></e>
-    <e><p><l>honeymoon<s n="n"/></l><r>Hochtzeitsreise<s n="n"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>honeymoon<s n="n"/></l><r>Hochzeitsreise<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>honeymoon<s n="n"/></l><r>Hochzeitsreise<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>honeymooner<s n="n"/></l><r>Hochzeitsreisender<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>honeysuckle<s n="n"/></l><r>Geißblatt<s n="n"/><s n="nt"/></r></p></e>
     <e r="RL"><p><l>honeysuckle<s n="n"/></l><r>Heckenkirsche<s n="n"/><s n="f"/></r></p></e>
@@ -12562,7 +12563,6 @@
     <e><p><l>idealization<s n="n"/></l><r>Idealisierung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>ideation<s n="n"/></l><r>Ideenbildung<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>identification<s n="n"/></l><r>Identifikation<s n="n"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>identification<s n="n"/></l><r>Indentifikation<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>identifier<s n="n"/></l><r>Bezeichnung<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>identify<s n="n"/></l><r>Selbstverständnis<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>identifying<b/>label<s n="n"/></l><r>Kennsatz<s n="n"/><s n="m"/></r></p></e>
@@ -16464,7 +16464,7 @@
     <e><p><l>newlywed<s n="n"/></l><r>Frischvermählter<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>newlywed<s n="n"/></l><r>Frischvermählte<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>newness<s n="n"/></l><r>Neuheit<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>news<s n="n"/></l><r>Nachricht<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>news<s n="n"/><s n="pl"/></l><r>Nachricht<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e r="RL"><p><l>news<s n="n"/></l><r>Neuigkeiten<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>news<b/>agency<s n="n"/></l><r>Nachrichtenagentur<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>news<b/>announcement<s n="n"/></l><r>Nachrichtenmeldung<s n="n"/><s n="f"/></r></p></e>
@@ -22232,6 +22232,7 @@
     <e r="RL"><p><l>single<s n="n"/></l><r>Single<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>single<b/>bed<s n="n"/></l><r>Einzelbett<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>single<b/>cabin<s n="n"/></l><r>Einzelkabine<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>single<b/>file<s n="n"/></l><r>Einerreihe<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>single<b/>find<s n="n"/></l><r>Einzelfund<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>single<b/>malt<s n="n"/></l><r>Single<b/>Malt<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>single<b/>market<s n="n"/></l><r>Binnenmarkt<s n="n"/><s n="m"/></r></p></e>
@@ -36597,7 +36598,7 @@
     <e><p><l>explanatory<s n="adj"/></l><r>erläuternd<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>explicit<s n="adj"/></l><r>explizit<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>explosive<s n="adj"/></l><r>explosiv<s n="adj"/><s n="sint"/></r></p></e>
-    <e><p><l>exponential<s n="adj"/></l><r>exponenziell<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>exponential<s n="adj"/></l><r>exponentiell<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>exporting<s n="adj"/></l><r>ausführend<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>expressible<s n="adj"/></l><r>ausdrückbar<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>expressive<s n="adj"/></l><r>ausdrucksvoll<s n="adj"/><s n="sint"/></r></p></e>
@@ -39715,6 +39716,7 @@
     <e><p><l>showy<s n="adj"/><s n="sint"/></l><r>prächtig<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>shrewd<s n="adj"/></l><r>schlau<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>shy<s n="adj"/><s n="sint"/></l><r>scheu<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>shy<s n="adj"/><s n="sint"/></l><r>schüchtern<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Siberian<s n="adj"/></l><r>sibirisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>Sicilian<s n="adj"/></l><r>sizilianisch<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>sick<s n="adj"/></l><r>übel<s n="adj"/><s n="sint"/></r></p></e>
@@ -41077,6 +41079,7 @@
     <e><p><l>well-fed<s n="adj"/></l><r>wohlgenährt<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>well-known<s n="adj"/></l><r>renommiert<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>well-known<s n="adj"/></l><r>wohlbekannt<s n="adj"/><s n="sint"/></r></p></e>
+    <e><p><l>well-known<s n="adj"/></l><r>bekannt<s n="vblex"/></r></p></e>
     <e><p><l>well-led<s n="adj"/></l><r>wohlfeil<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>well-made<s n="adj"/></l><r>gutgemacht<s n="adj"/><s n="sint"/></r></p></e>
     <e><p><l>well-off<s n="adj"/></l><r>begütert<s n="adj"/><s n="sint"/></r></p></e>
@@ -41614,6 +41617,7 @@
     <e><p><l>exclusively<s n="adv"/></l><r>exklusiv<s n="adv"/></r></p></e>
     <e><p><l>expediently<s n="adv"/></l><r>zweckmäßigerweise<s n="adv"/></r></p></e>
     <e><p><l>explicitly<s n="adv"/></l><r>ausdrücklich<s n="adv"/></r></p></e>
+    <e><p><l>exponentially<s n="adv"/></l><r>exponentiell<s n="adv"/></r></p></e>
     <e><p><l>expressively<s n="adv"/></l><r>ausdrucksvoll<s n="adv"/></r></p></e>
     <e><p><l>expressly<s n="adv"/></l><r>ausdrücklich<s n="adv"/></r></p></e>
     <e><p><l>externally<s n="adv"/></l><r>äußerlich<s n="adv"/></r></p></e>
@@ -43151,7 +43155,7 @@
     <e><p><l>last<b/>night<s n="adv"/></l><r>gestern<b/>Abend<s n="adv"/></r></p></e>
     <e><p><l>last<b/>Saturday<s n="adv"/></l><r>letzten<b/>Samstag<s n="adv"/></r></p></e>
     <e><p><l>last<b/>spring<s n="adv"/></l><r>im<b/>vergangenen<b/>Frühjahr<s n="adv"/></r></p></e>
-    <e><p><l>last<b/>summer<s n="adv"/></l><r>im<b/>letzen<b/>Sommer<s n="adv"/></r></p></e>
+    <e><p><l>last<b/>summer<s n="adv"/></l><r>im<b/>letzten<b/>Sommer<s n="adv"/></r></p></e>
     <e><p><l>last<b/>winter<s n="adv"/></l><r>letzten<b/>Winter<s n="adv"/></r></p></e>
     <e><p><l>last<b/>year<s n="adv"/></l><r>letztes<b/>Jahr<s n="adv"/></r></p></e>
     <e><p><l>later<b/>on<s n="adv"/></l><r>späterhin<s n="adv"/></r></p></e>
@@ -43343,7 +43347,6 @@
     <e><p><l>several<b/>times<s n="adv"/></l><r>mehrmals<s n="adv"/></r></p></e>
     <e><p><l>side<b/>by<b/>side<s n="adv"/></l><r>nebeneinander<s n="adv"/></r></p></e>
     <e><p><l>since<b/>then<s n="adv"/></l><r>seither<s n="adv"/></r></p></e>
-    <e><p><l>single<b/>file<s n="adv"/></l><r>Einerreihe<s n="adv"/></r></p></e>
     <e><p><l>six<b/>o'clock<s n="adv"/></l><r>sechs<b/>Uhr<s n="adv"/></r></p></e>
     <e><p><l>six<b/>times<s n="adv"/></l><r>sechsmal<s n="adv"/></r></p></e>
     <e><p><l>so<b/>heavily<s n="adv"/></l><r>dermaßen<s n="adv"/></r></p></e>
@@ -43515,6 +43518,7 @@
     <e r="RL"><p><l>do<s n="vbdo"/></l><r>tun<s n="vbdo"/></r></p></e>
 
     <e><p><l>have<s n="vblex"/></l><r>haben<s n="vblex"/></r></p></e>
+
     <e><p><l>have<s n="vbhaver"/></l><r>haben<s n="vbhaver"/></r></p></e>
     <e r="LR"><p><l>have<g><b/>got</g><s n="vbhaver"/></l><r>haben<s n="vbhaver"/></r></p></e>
 
@@ -46460,6 +46464,7 @@
     <e r="RL"><p><l>look<g><b/>round</g><s n="vblex"/></l><r>umschauen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>round</g><s n="vblex"/></l><r>schauen<g><b/>um</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>round</g><s n="vblex"/></l><r>sehen<g><b/>um</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
+    <e><p><l>look<b/>shy<s n="vblex"/></l><r>schüchtern<b/>gucken<s n="vblex"/></r></p></e>
     <e><p><l>look<g><b/>through</g><s n="vblex"/></l><r>sehen<b/>durch<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>through</g><s n="vblex"/></l><r>durchblicken<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>look<g><b/>through</g><s n="vblex"/></l><r>durchlesen<s n="vblex"/><s n="sep"/></r></p></e>
@@ -48028,7 +48033,6 @@
     <e r="RL"><p><l>shut<s n="vblex"/></l><r>machen<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="RL"><p><l>shut<s n="vblex"/></l><r>schließen<g><b/>zu</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e r="LR"><p><l>shut<g><b/>down</g><s n="vblex"/></l><r>schließen<s n="vblex"/></r></p></e>
-    <e><p><l>shy<s n="vblex"/></l><r>schüchtern<s n="vblex"/></r></p></e>
     <e><p><l>sicken<s n="vblex"/></l><r>erkranken<s n="vblex"/></r></p></e>
     <e><p><l>sidestep<s n="vblex"/></l><r>ausweichen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>sidestep<s n="vblex"/></l><r>weichen<g><b/>aus</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
@@ -49006,7 +49010,6 @@
     <e><p><l>welcome<s n="vblex"/></l><r>begrüßen<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>welcome<s n="vblex"/></l><r>willkommen<b/>heißen<s n="vblex"/></r></p></e>
     <e><p><l>weld<s n="vblex"/></l><r>schweißen<s n="vblex"/></r></p></e>
-    <e><p><l>well-known<s n="vblex"/></l><r>bekannt<s n="vblex"/></r></p></e>
     <e><p><l>wellness<s n="vblex"/></l><r>wohlfühlen<s n="vblex"/><s n="sep"/></r></p></e>
     <e r="RL"><p><l>wellness<s n="vblex"/></l><r>fühlen<g><b/>wohl</g><s n="vblex"/><s n="sep"/><s n="fm"/></r></p></e>
     <e><p><l>wet<s n="vblex"/></l><r>befeuchten<s n="vblex"/></r></p></e>
@@ -49742,7 +49745,7 @@
     <e><p><l>bang<s n="ij"/></l><r>bum<s n="ij"/></r></p></e>
     <e><p><l>beware<s n="ij"/></l><r>Achtung<s n="ij"/></r></p></e>
     <e><p><l>bow-wow<s n="ij"/></l><r>wau-wau<s n="ij"/></r></p></e>
-    <e r="RL"><p><l>bow-wow<s n="ij"/></l><r>wauwau<s n="ij"/></r></p></e>
+    <e r="RL"><p><l>bow-wow<s n="ij"/></l><r>Wauwau<s n="ij"/></r></p></e>
     <e><p><l>bravo<s n="ij"/></l><r>bravo<s n="ij"/></r></p></e>
     <e><p><l>bye<s n="ij"/></l><r>tschüss<s n="ij"/></r></p></e>
     <e r="RL"><p><l>bye<s n="ij"/></l><r>wiederhören<s n="ij"/></r></p></e>
