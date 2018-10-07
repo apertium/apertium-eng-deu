@@ -385,7 +385,7 @@
 
 
 		<!-- (verb) (to be determined) -->
-		<!--(only necessary for rules that start with Verbs)-->
+		<!--(only necessary for rules that start with verbs)-->
 		<def-macro n="upd_PD_ND_GD" npar="2">
 			<call-macro n="upd_PD_pers"> <!-- PD to "pers" -->
 				<with-param pos="1"/>
@@ -409,7 +409,7 @@
 			 if "inf" is not used to replace another word  (e.g.: "do not go" -> "geht nicht") -->
 		<def-macro n="rm_PD_ND_GD" npar="2">
 			<choose>
-				<when>
+				<when>  <!-- "inf" or "pprs" or "pp" -->
 					<test>
 						<or>
 							<equal>
@@ -419,6 +419,10 @@
 							<equal>
 								<clip pos="1" part="a_tense"/>
 								<lit-tag v="pprs"/>
+							</equal>
+							<equal>
+								<clip pos="1" part="a_tense"/>
+								<lit-tag v="pp"/>
 							</equal>
 						</or>
 					</test>
