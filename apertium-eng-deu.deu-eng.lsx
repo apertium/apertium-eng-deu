@@ -118,7 +118,7 @@
 
     <e lm="kündigen an" c="announce">
       <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><par n="SN"/><p><l>an<t/></l><r></r></p>
+      <par n="SN"/><par n="SN"/><p><l>an<t/></l><r></r></p>
     </e>
 
     <e lm="steigen aus" c="get off">
@@ -128,32 +128,32 @@
 
     <e lm="bauen auf" c="build up">
       <p><l>bauen<s n="vblex"/></l><r>aufbauen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>auf<t/></l><r></r></p>
+      <par n="SN"/><p><l>auf<t/><j/></l><r></r></p>
     </e>
 
     <e lm="fahren zurück" c="ride back">
       <p><l>fahren<s n="vblex"/></l><r>zurückfahren<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>zurück<t/></l><r></r></p>
+      <par n="SAdv"/><p><l>zurück<t/><j/></l><r></r></p>
     </e>
 
     <e lm="ziehen an" c="put on">
       <p><l>ziehen<s n="vblex"/></l><r>anziehen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>an<t/></l><r></r></p>
+      <par n="SN"/><p><l>an<t/></l><r></r></p>
     </e>
 
     <e lm="bringen um" c="kill">
       <p><l>bringen<s n="vblex"/></l><r>umbringen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>um<t/></l><r></r></p>
+      <par n="SN"/><p><l>um<t/><j/></l><r></r></p>
     </e>
 
     <e lm="fahren ab" c="depart">
       <p><l>fahren<s n="vblex"/></l><r>abfahren<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>ab<t/></l><r></r></p>
+      <par n="SAdv"/><p><l>ab<t/><j/></l><r></r></p>
     </e>
 
     <e lm="laden herunter" c="download">
       <p><l>laden<s n="vblex"/></l><r>herunterladen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>herunter<t/></l><r></r></p>
+      <par n="SN"/><p><l>herunter<t/><j/></l><r></r></p>
     </e>
 
   </section>
