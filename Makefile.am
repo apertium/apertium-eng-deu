@@ -87,10 +87,10 @@ $(PREFIX2).prob: $(AP_SRC2)/$(LANG2).prob
 ###############################################################################
 
 $(PREFIX1).autoseq.bin: $(BASENAME).$(PREFIX1).lsx
-	lsx-proc rl $< $@
+	lsx-comp rl $< $@
 
 $(PREFIX2).autoseq.bin: $(BASENAME).$(PREFIX2).lsx
-	lsx-proc rl $< $@
+	lsx-comp rl $< $@
 
 ###############################################################################
 ## Disambiguation rules

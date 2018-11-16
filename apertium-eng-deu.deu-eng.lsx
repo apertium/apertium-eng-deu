@@ -117,7 +117,7 @@
   <section id="main" type="standard">
     <e lm="kündigen an" c="announce">
       <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>an<t/></l><r></r></p>
+      <par n="SN"/><p><l>an<t/><j/></l><r></r></p>
     </e>
 
     <e lm="steigen aus" c="get off">
