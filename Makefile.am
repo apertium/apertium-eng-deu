@@ -80,7 +80,7 @@ $(PREFIX1).prob: $(AP_SRC1)/$(LANG1).prob
 	cp $< $@
 
 $(PREFIX2).prob: $(AP_SRC2)/$(LANG2).prob
-	cp $< $@z
+	cp $< $@
 
 ###############################################################################
 ## Reordering separable/discontiguous multiwords
