@@ -17,6 +17,9 @@
         <file name="eng-deu.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
       <program name="lt-proc -b">
         <file name="eng-deu.autobil.bin"/>
       </program>
@@ -284,10 +287,10 @@
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
       </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
-      </program>
       <program name="apertium-pretransfer"/>
+      <program name="lsx-proc">
+        <file name="deu-eng.autoseq.bin"/>
+      </program>
       <program name="lt-proc -b">
         <file name="deu-eng.autobil.bin"/>
       </program>

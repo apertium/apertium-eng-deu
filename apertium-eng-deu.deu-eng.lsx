@@ -115,12 +115,6 @@
   </pardefs>
 
   <section id="main" type="standard">
-
-    <e lm="kündigen an" c="announce">
-      <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><par n="SN"/><p><l>an<t/></l><r></r></p>
-    </e>
-
     <e lm="kündigen an" c="announce">
       <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SN"/><p><l>an<t/></l><r></r></p>
@@ -128,12 +122,7 @@
 
     <e lm="steigen aus" c="get off">
       <p><l>steigen<s n="vblex"/></l><r>aussteigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>aus<t/></l><r></r></p>
-    </e>
-
-    <e lm="bauen auf" c="build up">
-      <p><l>bauen<s n="vblex"/></l><r>aufbauen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><par n="SN"/><p><l>auf<t/><j/></l><r></r></p>
+      <par n="SAdv"/><p><l>aus<t/><j/></l><r></r></p>
     </e>
 
     <e lm="bauen auf" c="build up">
@@ -146,22 +135,12 @@
       <par n="SAdv"/><p><l>zurück<t/><j/></l><r></r></p>
     </e>
 
-    <e lm="ziehen an" c="put on">
+    <e lm="ziehen an" c="dress">
       <p><l>ziehen<s n="vblex"/></l><r>anziehen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><par n="SN"/><p><l>an<t/></l><r></r></p>
+      <par n="SN"/><p><l>an<t/><j/></l><r></r></p>
     </e>
 
-    <e lm="ziehen an" c="put on">
-      <p><l>ziehen<s n="vblex"/></l><r>anziehen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>an<t/></l><r></r></p>
-    </e>
-
-    <e lm="bringen um" c="kill">
-      <p><l>bringen<s n="vblex"/></l><r>umbringen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><par n="SN"/><p><l>um<t/><j/></l><r></r></p>
-    </e>
-
-    <e lm="bringen um" c="kill">
+    <e lm="bringen um" c="murder">
       <p><l>bringen<s n="vblex"/></l><r>umbringen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SN"/><p><l>um<t/><j/></l><r></r></p>
     </e>
@@ -169,11 +148,6 @@
     <e lm="fahren ab" c="depart">
       <p><l>fahren<s n="vblex"/></l><r>abfahren<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SAdv"/><p><l>ab<t/><j/></l><r></r></p>
-    </e>
-
-    <e lm="laden herunter" c="download">
-      <p><l>laden<s n="vblex"/></l><r>herunterladen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><par n="SN"/><p><l>herunter<t/><j/></l><r></r></p>
     </e>
 
     <e lm="laden herunter" c="download">
