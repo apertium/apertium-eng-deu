@@ -115,9 +115,9 @@
   </pardefs>
 
   <section id="main" type="standard">
-    <e lm="be late" c="spät sein">
-      <p><l>be<s n="vbser"/></l><r>be<g><b/>late</g><s n="vbser"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>late<t/><j/></l><r></r></p>
+    <e lm="clean up" c="aufräumen">
+      <p><l>clean<s n="vblex"/></l><r>clean<g><b/>up</g><s n="vbser"/><s n="sep"/></r></p><i><t/><j/></i>
+      <par n="SN"/><p><l>up<t/><j/></l><r></r></p>
     </e>
 
     <e lm="build up" c="aufbauen">
