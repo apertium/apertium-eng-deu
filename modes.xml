@@ -431,6 +431,23 @@
     </pipeline>
   </mode>
 
+  <mode name="deu-eng-pretransfer" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="deu-eng.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="deu-eng.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="deu-eng.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
   <mode name="deu-eng-separate" install="no">
     <pipeline>
       <program name="lt-proc -w">
@@ -448,23 +465,6 @@
       <program name="lsx-proc">
         <file name="deu-eng.autoseq.bin"/>
       </program>
-    </pipeline>
-  </mode>
-
-  <mode name="deu-eng-pretransfer" install="no">
-    <pipeline>
-      <program name="lt-proc -w">
-        <file name="deu-eng.automorf.bin"/>
-      </program>
-
-
-      <program name="cg-proc -w">
-        <file name="deu-eng.rlx.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="deu-eng.prob"/>
-      </program>
-      <program name="apertium-pretransfer"/>
     </pipeline>
   </mode>
 
