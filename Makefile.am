@@ -29,7 +29,7 @@ TARGETS_COMMON =		\
 	$(PREFIX2).autolex.bin	\
 	$(PREFIX2).autogen.bin	\
 	$(PREFIX2).autopgen.bin	\
-	$(PREFIX1).autoseq.bin	\
+	$(PREFIX2).autoseq.bin	\
 	$(PREFIX2).t1x.bin	\
 	$(PREFIX2).t2x.bin	\
 	$(PREFIX2).t3x.bin
@@ -87,10 +87,10 @@ $(PREFIX2).prob: $(AP_SRC2)/$(LANG2).prob
 ###############################################################################
 
 $(PREFIX1).autoseq.bin: $(BASENAME).$(PREFIX1).lsx
-	lsx-comp rl $< $@
+	lsx-comp lr $< $@
 
 $(PREFIX2).autoseq.bin: $(BASENAME).$(PREFIX2).lsx
-	lsx-comp rl $< $@
+	lsx-comp lr $< $@
 
 ###############################################################################
 ## Disambiguation rules
