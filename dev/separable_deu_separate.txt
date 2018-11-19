@@ -1,0 +1,8 @@
+^Ich<prn><pers><p1><mf><sg><nom>$ ^aufbauen<vblex><sep><pri><p1><sg>$ ^der<det><def><mfn><pl><nom>$ ^Turm<n><m><sg><cmp><compound-only-L>$ ^.<sent>$
+^Du<prn><pers><p2><mf><sg><nom>$ ^anziehen<vblex><sep><pii><p2><sg>$ ^der<det><def><mfn><pl><nom>$ ^Kleidung<n><f><pl><nom>$ ^.<sent>$
+^Er<prn><pers><p3><m><sg><nom>$ ^umbringen<vblex><sep><pri><p3><sg>$ ^der<det><def><m><sg><acc>$ ^Mann<n><m><sg><acc>$ ^.<sent>$
+^Ich<prn><pers><p1><mf><sg><nom>$ ^zurückfahren<vblex><sep><pri><p1><sg>$ ^jetzt<adv>$ ^.<sent>$
+^Wir<prn><pers><p1><mf><pl><nom>$ ^abfahren<vblex><sep><inf>$ ^langsam<adv>$ ^.<sent>$
+^Sie<prn><pers><p3><mf><pl><nom>$ ^herunterladen<vblex><sep><inf>$ ^der<det><def><f><sg><nom>$ ^Musik<n><f><sg><nom>$ ^.<sent>$
+^Wir<prn><pers><p1><mf><pl><nom>$ ^ankündigen<vblex><sep><inf>$ ^der<det><def><mfn><pl><nom>$ ^Ergebnis<n><nt><pl><acc>$ ^.<sent>$
+^Ich<prn><pers><p1><mf><sg><nom>$ ^aussteigen<vblex><sep><pri><p1><sg>$ ^gerade<adv>$ ^.<sent>$^.<sent>$
