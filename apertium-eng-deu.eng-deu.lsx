@@ -135,7 +135,7 @@
       <par n="SN"/><p><l>out<t/><j/></l><r></r></p>
     </e>
 
-    <e lm="switch off" c="abdrehen">
+    <e lm="switch off" c="abschalten">
       <p><l>switch<s n="vblex"/></l><r>switch<g><b/>off</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SN"/><p><l>off<t/><j/></l><r></r></p>
     </e>
