@@ -1,0 +1,5 @@
+^PRPERS<prn><subj><p1><mf><sg>/PRPERS<prn><subj><p1><mf><sg>$ ^switch# off<vblex><sep><pres>/abschalten<vblex><sep><sep><pres>$ ^the<det><def><sp>/der<det><def><sp>$ ^light<n><pl>/Licht<n><nt><pl>$^.<sent>/.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>/PRPERS<prn><subj><p1><mf><sg>$ ^take# away<vblex><sep><pres>/abräumen<vblex><sep><sep><pres>/wegnehmen<vblex><sep><sep><pres>$ ^prpers<det><pos><p3><m><sg>/prpers<det><pos><p3><m><sg>$ ^life<n><sg>/Leben<n><nt><sg>$^.<sent>/.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>/PRPERS<prn><subj><p1><mf><sg>$ ^build# up<vblex><sep><pres>/aufbauen<vblex><sep><sep><pres>$^the<det><def><sp>/der<det><def><sp>$ ^house<n><sg>/Haus<n><nt><sg>$^.<sent>/.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>/PRPERS<prn><subj><p1><mf><sg>$ ^clean# up<vbser><sep><pres>/@clean# up<vbser><sep><pres>$ ^prpers<det><pos><p3><m><sg>/prpers<det><pos><p3><m><sg>$ ^room<n><sg>/Zimmer<n><nt><sg>$^.<sent>/.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>/PRPERS<prn><subj><p1><mf><sg>$ ^take# out<vblex><sep><pres>/ausführen<vblex><sep><sep><pres>$ ^the<det><def><sp>/der<det><def><sp>$ ^trash<n><sg>/Kitsch<n><m><sg>$^.<sent>/.<sent>$^.<sent>/.<sent>$

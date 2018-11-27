@@ -115,28 +115,28 @@
   </pardefs>
 
   <section id="main" type="standard">
-    <e lm="be late" c="verspätet sein">
-      <p><l>be<s n="vbser"/></l><r>be<g><b/>late</g><s n="vbser"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>late<t/><j/></l><r></r></p>
-    </e>
-
-    <e lm="build up" c="aufbauen">
-      <p><l>buile<s n="vblex"/></l><r>build<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
+    <e lm="clean up" c="aufräumen">
+      <p><l>clean<s n="vblex"/></l><r>clean<g><b/>up</g><s n="vbser"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SN"/><p><l>up<t/><j/></l><r></r></p>
     </e>
 
-    <e lm="take away" c="wegnehmen">
+    <e lm="build up" c="aufbauen">
+      <p><l>build<s n="vblex"/></l><r>build<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
+      <par n="SN"/><p><l>up<t/><j/></l><r></r></p>
+    </e>
+
+    <e lm="take away" c="abräumen">
       <p><l>take<s n="vblex"/></l><r>take<g><b/>away</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SN"/><p><l>away<t/><j/></l><r></r></p>
     </e>
 
-    <e lm="take out" c="ausnehmen">
+    <e lm="take out" c="ausführen">
       <p><l>take<s n="vblex"/></l><r>take<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SN"/><p><l>out<t/><j/></l><r></r></p>
     </e>
 
-    <e lm="turn off" c="abschalten">
-      <p><l>turn<s n="vblex"/></l><r>turn<g><b/>off</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
+    <e lm="switch off" c="abschalten">
+      <p><l>switch<s n="vblex"/></l><r>switch<g><b/>off</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
       <par n="SN"/><p><l>off<t/><j/></l><r></r></p>
     </e>
   </section>

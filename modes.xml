@@ -16,6 +16,9 @@
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
       </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="eng-deu.autobil.bin"/>
@@ -34,6 +37,9 @@
       <program name="apertium-postchunk">
         <file name="apertium-eng-deu.eng-deu.t3x"/>
         <file name="eng-deu.t3x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.revautoseq.bin"/>
       </program>
       <program name="lt-proc $1">
         <file name="eng-deu.autogen.bin"/>
@@ -58,6 +64,9 @@
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
       </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="eng-deu.autobil.bin"/>
@@ -73,6 +82,9 @@
       <program name="apertium-postchunk">
         <file name="apertium-eng-deu.eng-deu.t3x"/>
         <file name="eng-deu.t3x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.revautoseq.bin"/>
       </program>
       <program name="lt-proc -d">
         <file name="eng-deu.autogen.bin"/>
@@ -129,7 +141,29 @@
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
       </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
       <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="eng-deu-separate" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="eng-deu.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="eng-deu.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -gx">
+        <file name="eng-deu.prob"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
     </pipeline>
   </mode>
 
@@ -146,10 +180,13 @@
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
       </program>
-      <program name="apertium-pretransfer"/>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
       <program name="lt-proc -b">
         <file name="eng-deu.autobil.bin"/>
       </program>
+<program name="apertium-pretransfer"/>
     </pipeline>
   </mode>
 
@@ -165,6 +202,9 @@
       </program>
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -188,6 +228,9 @@
       </program>
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -215,6 +258,9 @@
       </program>
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -247,6 +293,9 @@
       <program name="apertium-tagger -gx">
         <file name="eng-deu.prob"/>
       </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="eng-deu.autobil.bin"/>
@@ -269,6 +318,44 @@
     </pipeline>
   </mode>
 
+  <mode name="eng-deu-revautoseq" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="eng-deu.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="eng-deu.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -gx">
+        <file name="eng-deu.prob"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.autoseq.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="eng-deu.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-eng-deu.eng-deu.t1x"/>
+        <file name="eng-deu.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-eng-deu.eng-deu.t2x"/>
+        <file name="eng-deu.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-eng-deu.eng-deu.t3x"/>
+        <file name="eng-deu.t3x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="eng-deu.revautoseq.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
   <!-- deu → eng -->
 
   <mode name="deu-eng" install="yes">
@@ -285,7 +372,7 @@
         <file name="deu-eng.prob"/>
       </program>
       <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
+        <file name="deu-eng.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -305,6 +392,9 @@
       <program name="apertium-postchunk">
         <file name="apertium-eng-deu.deu-eng.t3x"/>
         <file name="deu-eng.t3x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="deu-eng.revautoseq.bin"/>
       </program>
       <program name="lt-proc $1">
         <file name="deu-eng.autogen.bin"/>
@@ -330,7 +420,7 @@
         <file name="deu-eng.prob"/>
       </program>
       <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
+        <file name="deu-eng.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -347,6 +437,9 @@
       <program name="apertium-postchunk">
         <file name="apertium-eng-deu.deu-eng.t3x"/>
         <file name="deu-eng.t3x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="deu-eng.revautoseq.bin"/>
       </program>
       <program name="lt-proc -d">
         <file name="deu-eng.autogen.bin"/>
@@ -390,25 +483,6 @@
     </pipeline>
   </mode>
 
-  <mode name="deu-eng-separate" install="no">
-    <pipeline>
-      <program name="lt-proc -w">
-        <file name="deu-eng.automorf.bin"/>
-      </program>
-
-
-      <program name="cg-proc -w">
-        <file name="deu-eng.rlx.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="deu-eng.prob"/>
-      </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
   <mode name="deu-eng-pretransfer" install="no">
     <pipeline>
       <program name="lt-proc -w">
@@ -423,9 +497,28 @@
         <file name="deu-eng.prob"/>
       </program>
       <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
+        <file name="deu-eng.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="deu-eng-separate" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="deu-eng.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="deu-eng.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g">
+        <file name="deu-eng.prob"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="deu-eng.autoseq.bin"/>
+      </program>
     </pipeline>
   </mode>
 
@@ -442,10 +535,10 @@
       <program name="apertium-tagger -g $2">
         <file name="deu-eng.prob"/>
       </program>
-      <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
-      </program>
       <program name="apertium-pretransfer"/>
+      <program name="lsx-proc">
+        <file name="deu-eng.autoseq.bin"/>
+      </program>
       <program name="lt-proc -b">
         <file name="deu-eng.autobil.bin"/>
       </program>
@@ -466,7 +559,7 @@
         <file name="deu-eng.prob"/>
       </program>
       <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
+        <file name="deu-eng.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -492,7 +585,7 @@
         <file name="deu-eng.prob"/>
       </program>
       <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
+        <file name="deu-eng.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -519,7 +612,7 @@
         <file name="deu-eng.prob"/>
       </program>
       <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
+        <file name="deu-eng.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -550,7 +643,7 @@
         <file name="deu-eng.prob"/>
       </program>
       <program name="lsx-proc">
-        <file name="deu-eng.autosep.bin"/>
+        <file name="deu-eng.autoseq.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -567,6 +660,44 @@
       <program name="apertium-postchunk">
         <file name="apertium-eng-deu.deu-eng.t3x"/>
         <file name="deu-eng.t3x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="deu-eng-revautoseq" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="deu-eng.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="deu-eng.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="deu-eng.prob"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="deu-eng.autoseq.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="deu-eng.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-eng-deu.deu-eng.t1x"/>
+        <file name="deu-eng.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-eng-deu.deu-eng.t2x"/>
+        <file name="deu-eng.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-eng-deu.deu-eng.t3x"/>
+        <file name="deu-eng.t3x.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="deu-eng.revautoseq.bin"/>
       </program>
     </pipeline>
   </mode>
