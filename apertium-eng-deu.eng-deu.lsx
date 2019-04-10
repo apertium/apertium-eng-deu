@@ -116,23 +116,55 @@
 
 	<section id="main" type="standard">
 		<e lm="clean up" c="aufräumen">
-			<p><l>clean<s n="vblex"/></l><r>clean<g><b/>up</g><s n="vbser"/><s n="sep"/></r></p><i><t/><j/></i>
-			<par n="SN"/><p><l>up<t/><j/></l><r></r></p>
+			<p>
+				<l>clean<s n="vblex"/></l>
+				<r>clean<g><b/>up</g><s n="vbser"/><s n="sep"/></r>
+			</p>
+			<i><t/><j/></i>
+			<par n="SN"/>
+			<p>
+				<l>up<s n="pr"/><j/></l>
+				<r></r>
+			</p>
 		</e>
 
 		<e lm="build up" c="aufbauen">
-			<p><l>build<s n="vblex"/></l><r>build<g><b/>up</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-			<par n="SN"/><p><l>up<t/><j/></l><r></r></p>
+			<p>
+				<l>build<s n="vblex"/></l>
+				<r>build<g><b/>up</g><s n="vblex"/><s n="sep"/></r>
+			</p>
+			<i><t/><j/></i>
+			<par n="SN"/>
+			<p>
+				<l>up<s n="pr"/><j/></l>
+				<r></r>
+			</p>
 		</e>
 
 		<e lm="take away" c="abräumen">
-			<p><l>take<s n="vblex"/></l><r>take<g><b/>away</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-			<par n="SN"/><p><l>away<t/><j/></l><r></r></p>
+			<p>
+				<l>take<s n="vblex"/></l>
+				<r>take<g><b/>away</g><s n="vblex"/><s n="sep"/></r>
+			</p>
+			<i><t/><j/></i>
+			<par n="SN"/>
+			<p>
+				<l>away<s n="pr"/><j/></l>
+				<r></r>
+			</p>
 		</e>
 
 		<e lm="take out" c="ausführen">
-			<p><l>take<s n="vblex"/></l><r>take<g><b/>out</g><s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-			<par n="SN"/><p><l>out<t/><j/></l><r></r></p>
+			<p>
+				<l>take<s n="vblex"/></l>
+				<r>take<g><b/>out</g><s n="vblex"/><s n="sep"/></r>
+			</p>
+			<i><t/><j/></i>
+			<par n="SN"/>
+			<p>
+				<l>out<s n="pr"/><j/></l>
+				<r></r>
+			</p>
 		</e>
 
 		<e lm="switch off" c="abschalten">
