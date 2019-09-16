@@ -2389,9 +2389,8 @@
 							<clip pos="4" side="tl" part="lem"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="4"/>
 						<lu>
@@ -2763,9 +2762,8 @@
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="2"/>
 						<lu>
@@ -3449,9 +3447,8 @@
 							<clip pos="4" side="tl" part="lem"/>
 							<clip pos="4" side="tl" part="a_nom"/>
 							<clip pos="4" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="4"/>
 						<lu>
@@ -3546,27 +3543,60 @@
 				<call-macro n="chg_ADV_chunk_tag">  <!-- "SN"/"ADV" -->
 					<with-param pos="2"/>
 				</call-macro>
-				<out>
-					<chunk name="det_nom" case="caseFirstWord">
-						<tags>
-							<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
-							<tag><var n="v_pers_nom"/></tag>
-							<tag><var n="v_gen_nom"/></tag>
-							<tag><var n="v_nbr_nom"/></tag>
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
-						</lu>
-						<b pos="1"/>
-						<lu>
-							<clip pos="2" side="tl" part="lemh"/>
-							<clip pos="2" side="tl" part="a_nom"/>
-							<clip pos="2" side="tl" part="a_nbr"/>
-							<clip pos="2" side="tl" part="a_cas"/>  <!-- null or "gen" -->
-							<clip pos="2" side="tl" part="lemq"/>
-						</lu>
-					</chunk>
-				</out>
+				<choose>
+					<when>
+						<test>
+							<equal>
+								<clip pos="2" side="tl" part="a_cas"/>
+								<lit-tag v="gen"/>
+							</equal>
+						</test>
+						<out>
+							<chunk name="det_nom" case="caseFirstWord">
+								<tags>
+									<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="lem"/>
+									<clip pos="2" side="tl" part="a_nom"/>
+									<clip pos="2" side="tl" part="a_nbr"/>
+									<lit v="+'s"/>
+									<lit-tag v="gen"/>
+								</lu>
+							</chunk>
+						</out>
+					</when>
+					<otherwise>
+						<out>
+							<chunk name="det_nom" case="caseFirstWord">
+								<tags>
+									<tag><var n="v_chunk_tag"/></tag>  <!-- "SN"/"ADV" -->
+									<tag><var n="v_pers_nom"/></tag>
+									<tag><var n="v_gen_nom"/></tag>
+									<tag><var n="v_nbr_nom"/></tag>
+								</tags>
+								<lu>
+									<clip pos="1" side="tl" part="whole"/> <!-- "a_det" -->
+								</lu>
+								<b pos="1"/>
+								<lu>
+									<clip pos="2" side="tl" part="lemh"/>
+									<clip pos="2" side="tl" part="a_nom"/>
+									<clip pos="2" side="tl" part="a_nbr"/>
+									<clip pos="2" side="tl" part="a_cas"/>  <!-- null or "gen" -->
+									<clip pos="2" side="tl" part="lemq"/>
+								</lu>
+							</chunk>
+						</out>
+					</otherwise>
+				</choose>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
@@ -3651,9 +3681,8 @@
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_nom"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="1"/>
 						<lu>
@@ -3664,9 +3693,8 @@
 							<clip pos="3" side="tl" part="lem"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="3"/>
 						<lu>
@@ -3726,9 +3754,8 @@
 							<clip pos="3" side="tl" part="lem"/>
 							<clip pos="3" side="tl" part="a_nom"/>
 							<clip pos="3" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="3"/>
 						<lu>
@@ -4082,7 +4109,7 @@
 					</when>
 					<otherwise>
 						<out>
-							<chunk name="pr_nom" case="caseFirstWord">
+							<chunk name="pr_det_nom" case="caseFirstWord">
 								<tags>
 									<tag><lit-tag v="SN"/></tag>
 									<tag><var n="v_pers_nom"/></tag>
@@ -4196,9 +4223,8 @@
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="2"/>
 						<lu>
@@ -4672,9 +4698,8 @@
 							<clip pos="2" side="tl" part="lem"/>
 							<clip pos="2" side="tl" part="a_nom"/>
 							<clip pos="2" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="2"/>
 						<lu>
@@ -5115,9 +5140,8 @@
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_nom"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 						<b pos="1"/>
 						<lu>
@@ -5196,9 +5220,8 @@
 							<clip pos="1" side="tl" part="lem"/>
 							<clip pos="1" side="tl" part="a_nom"/>
 							<clip pos="1" side="tl" part="a_nbr"/>
-							<lit v="+"/> 
-							<lit v="'s"/> 
-							<lit-tag v="gen"/> 
+							<lit v="+'s"/>
+							<lit-tag v="gen"/>
 						</lu>
 					</chunk>
 				</out>
@@ -6315,9 +6338,8 @@
 									<clip pos="3" side="tl" part="lem"/>
 									<clip pos="3" side="tl" part="a_nom"/>
 									<clip pos="3" side="tl" part="a_nbr"/>
-									<lit v="+"/> 
-									<lit v="'s"/> 
-									<lit-tag v="gen"/> 
+									<lit v="+'s"/>
+									<lit-tag v="gen"/>
 								</lu>
 								<b pos="3"/>
 								<lu>
@@ -6344,9 +6366,8 @@
 									<clip pos="3" side="tl" part="lem"/>
 									<clip pos="3" side="tl" part="a_nom"/>
 									<clip pos="3" side="tl" part="a_nbr"/>
-									<lit v="+"/> 
-									<lit v="'s"/> 
-									<lit-tag v="gen"/> 
+									<lit v="+'s"/>
+									<lit-tag v="gen"/>
 								</lu>
 								<b pos="3"/>
 								<lu>
