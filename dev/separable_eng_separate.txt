@@ -1,0 +1,5 @@
+^PRPERS<prn><subj><p1><mf><sg>$ ^switch# off<vblex><sep><pres>$ ^the<det><def><sp>$ ^light<n><pl>$^.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>$ ^take# away<vblex><sep><pres>$ ^prpers<det><pos><p3><m><sg>$ ^life<n><sg>$^.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>$ ^build# up<vblex><sep><pres>$ ^the<det><def><sp>$ ^house<n><sg>$^.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>$ ^clean# up<vbser><sep><pres>$ ^prpers<det><pos><p3><m><sg>$ ^room<n><sg>$^.<sent>$
+^PRPERS<prn><subj><p1><mf><sg>$ ^take# out<vblex><sep><pres>$ ^the<det><def><sp>$ ^trash<n><sg>$^.<sent>$^.<sent>$
