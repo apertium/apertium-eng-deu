@@ -1,0 +1,38 @@
+[3Y-cQ3L47nOG#0] ^Det_nom<SN><p3><m><sg><nom>{^Prpers<det><pos><m><sg><nom>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><sg><nom>{^prpers<det><pos><m><sg><nom>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><sg><nom>{^prpers<det><pos><m><sg><nom>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><sg><nom>{^unser<det><pos><m><sg><nom>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><sg><nom>{^prpers<det><pos><m><sg><nom>$ ^Hund<n><m><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/3Y-cQ3L47nOG]
+[3rfK00e5LSfl#0] ^Det_nom<SN><p3><f><sg><nom>{^Prpers<det><pos><f><sg><nom>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><f><sg><nom>{^prpers<det><pos><f><sg><nom>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><f><sg><nom>{^prpers<det><pos><f><sg><nom>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><f><sg><nom>{^unser<det><pos><f><sg><nom>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><f><sg><nom>{^prpers<det><pos><f><sg><nom>$ ^Katze<n><f><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/3rfK00e5LSfl]
+[5qq39LFWr8g6#0] ^Itg<ITG>{^Wo<adv><itg>$}$ ^verb<SV_ser><pri><p3><sg>{^sein<vbser><2><3><4>$}$ ^nom_nom<SN><p3><m><sg><nom>{^Vati<n><m><sg><gen>$^Schuh<n><m><sg><nom>$}$^punt<QST>{^?<sent>$}$
+[/5qq39LFWr8g6]
+[7XOMrqP4z4G7#0] ^Adj_nom<SN><p3><m><sg><nom>{^Schnell<adj><m><sg><nom><st>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^adj_nom<SN><p3><f><sg><nom>{^schwarz<adj><f><sg><nom><st>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^adj_nom<SN><p3><nt><sg><nom>{^groß<adj><nt><sg><nom><st>$ ^Haus<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/7XOMrqP4z4G7]
+[JH6DxEEfZUBu#0] ^Prpers<PRPERS><p3><nt><sg>{^Prpers<prn><subj><p3><nt><sg><nom>$}$ ^verb<SV_ser><pri><p3><sg>{^sein<vbser><2><3><4>$}$ ^pr_det_nom<SN><p3><m><sg><dat>{^in<pr><dat>$ ^ein<det><ind><m><sg><dat>$ ^Käfig<n><m><sg><dat>$}$^punt<sent>{^.<sent>$}$
+[/JH6DxEEfZUBu]
+[JKMdbhQ6wDW9#0] ^Det_nom<SN><p3><m><sg><nom>{^Der<det><def><m><sg><nom>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><f><sg><nom>{^der<det><def><f><sg><nom>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><nt><sg><nom>{^der<det><def><nt><sg><nom>$ ^Haus<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/JKMdbhQ6wDW9]
+[JfBbVmdWCo1D#0] ^Prpers<PRPERS><p3><nt><sg>{^Prpers<prn><subj><p3><nt><sg><nom>$}$ ^verb<SV_ser><pri><p3><sg>{^sein<vbser><2><3><4>$}$ ^adj<ADJ>{^grau<adj>$}$^punt<sent>{^.<sent>$}$
+[/JfBbVmdWCo1D]
+[KBHFU2oKCXJV#0] ^Det_adj_nom<SN><p3><m><sg><nom>{^Der<det><def><m><sg><nom>$ ^braun<adj><m><sg><nom><sw>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_adj_nom<SN><p3><f><sg><nom>{^der<det><def><f><sg><nom>$ ^schwarz<adj><f><sg><nom><sw>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_adj_nom<SN><p3><nt><sg><nom>{^der<det><def><nt><sg><nom>$ ^groß<adj><nt><sg><nom><sw>$ ^Haus<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/KBHFU2oKCXJV]
+[KZoQ7lMNcCBZ#0] ^Det_nom<SN><p3><nt><sg><nom>{^Prpers<det><pos><nt><sg><nom>$ ^Haus<n><nt><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><nt><sg><nom>{^prpers<det><pos><nt><sg><nom>$ ^Haus<n><nt><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><nt><sg><nom>{^prpers<det><pos><nt><sg><nom>$ ^Haus<n><nt><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><nt><sg><nom>{^unser<det><pos><nt><sg><nom>$ ^Haus<n><nt><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><nt><sg><nom>{^prpers<det><pos><nt><sg><nom>$ ^Haus<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/KZoQ7lMNcCBZ]
+[MQkEzi298HGd#0] ^Det_nom_adj<SN><p3><nt><sg><nom>{^Der<det><def><nt><sg><nom>$ ^Fasten<n><nt><sg><nom>$ ^braun<adj><sint><pred>$}$ ^nom<SN><p3><m><sg><nom>{^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_adj_nom<SN><p3><nt><sg><nom>{^der<det><def><nt><sg><nom>$ ^schnell<adj><nt><sg><nom><sw>$ ^Schwarz<n><nt><sg><nom>$}$ ^nom<SN><p3><f><sg><nom>{^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_adj_adj_nom<SN><p3><nt><sg><nom>{^der<det><def><nt><sg><nom>$ ^groß<adj><nt><sg><nom><sw>$ ^grau<adj><nt><sg><nom><sw>$ ^Haus<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/MQkEzi298HGd]
+[QXw90w_Z35xl#0] ^Prpers<PRPERS><p3><f><sg>{^Prpers<prn><subj><p3><f><sg><nom>$}$ ^verb<SV><pri><p3><sg>{^lachen<vblex><2><3><4>$}$^punt<sent>{^.<sent>$}$
+[/QXw90w_Z35xl]
+[ckiQ5Ia2bRPB#0] ^Det_nom<SN><p3><f><sg><nom>{^Der<det><def><f><sg><nom>$ ^Maus<n><f><sg><nom>$}$ ^verb<SV><pri><p3><sg>{^rennen<vblex><2><3><4>$}$^punt<sent>{^.<sent>$}$
+[/ckiQ5Ia2bRPB]
+[fZcs-xOOFmFF#0] ^Det_nom<SN><p3><m><pl><nom>{^Prpers<det><pos><mfn><pl><nom>$ ^Hund<n><m><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><pl><nom>{^prpers<det><pos><mfn><pl><nom>$ ^Hund<n><m><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><pl><nom>{^prpers<det><pos><mfn><pl><nom>$ ^Hund<n><m><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><pl><nom>{^unser<det><pos><mfn><pl><nom>$ ^Hund<n><m><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><m><pl><nom>{^prpers<det><pos><mfn><pl><nom>$ ^Hund<n><m><pl><nom>$}$^punt<sent>{^.<sent>$}$
+[/fZcs-xOOFmFF]
+[gbTCFCfzvxpu#0] ^Nom<SN><p3><m><sg><nom>{^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^nom<SN><p3><f><sg><nom>{^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^nom<SN><p3><nt><sg><nom>{^Haus<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/gbTCFCfzvxpu]
+[o-LeiziWw0VF#0] ^Det_nom<SN><p3><m><pl><nom>{^Der<det><def><mfn><pl><nom>$ ^Hund<n><m><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><f><pl><nom>{^der<det><def><mfn><pl><nom>$ ^Katze<n><f><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><nt><pl><nom>{^der<det><def><mfn><pl><nom>$ ^Haus<n><nt><pl><nom>$}$^punt<sent>{^.<sent>$}$
+[/o-LeiziWw0VF]
+[pRZGwA50UWTx#0] ^Prpers<PRPERS><p3><nt><sg>{^Prpers<prn><subj><p3><nt><sg><nom>$}$ ^verb<SV_ser><pri><p3><sg>{^sein<vbser><2><3><4>$}$ ^adj<ADJ>{^grau<adj>$}$^punt<sent>{^.<sent>$}$
+[/pRZGwA50UWTx]
+[sCvlJWJ1y1Ww#0] ^Nom<SN><p3><m><pl><nom>{^Hund<n><m><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^nom<SN><p3><f><pl><nom>{^Katze<n><f><pl><nom>$}$^coma<CM>{^,<cm>$}$ ^nom<SN><p3><nt><pl><nom>{^Haus<n><nt><pl><nom>$}$^punt<sent>{^.<sent>$}$
+[/sCvlJWJ1y1Ww]
+[uXDyBMBMbd0L#0] ^Det_nom<SN><p3><m><sg><nom>{^Ein<det><ind><m><sg><nom>$ ^Hund<n><m><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><f><sg><nom>{^ein<det><ind><f><sg><nom>$ ^Katze<n><f><sg><nom>$}$^coma<CM>{^,<cm>$}$ ^det_nom<SN><p3><nt><sg><nom>{^ein<det><ind><nt><sg><nom>$ ^Haus<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/uXDyBMBMbd0L]
+[vczV3IWqvDPc#0] ^Adj<ADJ>{^Erste<adj>$}$ ^prpers<PRPERS><p3><m><sg>{^prpers<prn><subj><p3><m><sg><nom>$}$ ^verb<SV><pii><p3><sg>{^verlassen<vblex><2><3><4>$}$ ^nom<SN><p3><nt><sg><acc>{^Miami<np><nt><sg><acc>$}$^punt<sent>{^.<sent>$}$
+[/vczV3IWqvDPc]

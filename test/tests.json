@@ -1,0 +1,18 @@
+{
+    "eng-deu-pending": {
+        "input": "eng-deu-pending-input.txt",
+        "mode": "eng-deu"
+    },
+    "eng-deu-regression": {
+        "input": "eng-deu-regression-input.txt",
+        "mode": "eng-deu"
+    },
+    "eng-deu": {
+        "input": "eng-deu-input.txt",
+        "mode": "eng-deu"
+    },
+    "deu-eng": {
+        "input": "deu-eng-input.txt",
+        "mode": "deu-eng"
+    }
+}

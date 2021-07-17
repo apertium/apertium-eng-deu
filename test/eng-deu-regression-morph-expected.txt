@@ -1,0 +1,38 @@
+[3Y-cQ3L47nOG#0] ^My/my<det><pos><sp>/prpers<det><pos><p1><mf><sg>$ ^dog/dog<n><sg>$^,/,<cm>$ ^his/his<det><pos><sp>/prpers<prn><pos><p3><m><sg>/prpers<det><pos><p3><m><sg>$ ^dog/dog<n><sg>$^,/,<cm>$ ^her/her<det><pos><sp>/prpers<prn><obj><p3><f><sg>/prpers<det><pos><p3><f><sg>$ ^dog/dog<n><sg>$^,/,<cm>$ ^our/our<det><pos><sp>/prpers<det><pos><p1><mf><pl>$ ^dog/dog<n><sg>$^,/,<cm>$ ^their/their<det><pos><sp>/prpers<det><pos><p3><mf><pl>$ ^dog/dog<n><sg>$^./.<sent>$
+[/3Y-cQ3L47nOG]
+[3rfK00e5LSfl#0] ^My/my<det><pos><sp>/prpers<det><pos><p1><mf><sg>$ ^cat/cat<n><sg>$^,/,<cm>$ ^his/his<det><pos><sp>/prpers<prn><pos><p3><m><sg>/prpers<det><pos><p3><m><sg>$ ^cat/cat<n><sg>$^,/,<cm>$ ^her/her<det><pos><sp>/prpers<prn><obj><p3><f><sg>/prpers<det><pos><p3><f><sg>$ ^cat/cat<n><sg>$^,/,<cm>$ ^our/our<det><pos><sp>/prpers<det><pos><p1><mf><pl>$ ^cat/cat<n><sg>$^,/,<cm>$ ^their/their<det><pos><sp>/prpers<det><pos><p3><mf><pl>$ ^cat/cat<n><sg>$^./.<sent>$
+[/3rfK00e5LSfl]
+[5qq39LFWr8g6#0] ^Where/where<adv>/where<adv><itg>$ ^is/be<vbser><pres><p3><sg>$ ^Daddy/daddy<n><sg>$^'s/'s<gen>/be<vbser><pres><p3><sg>/have<vbhaver><pres><p3><sg>$ ^shoe/shoe<n><sg>/shoe<vblex><inf>/shoe<vblex><pres>/shoe<vblex><imp>$^?/?<sent>$
+[/5qq39LFWr8g6]
+[7XOMrqP4z4G7#0] ^Fast/fast<adv>/fast<n><sg>/fast<adj><sint>$ ^dog/dog<n><sg>$^,/,<cm>$ ^black/black<n><sg>/black<adj><sint>$ ^cat/cat<n><sg>$^,/,<cm>$ ^big/big<adj><sint>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^./.<sent>$
+[/7XOMrqP4z4G7]
+[JH6DxEEfZUBu#0] ^It's/prpers<prn><subj><p3><nt><sg>+be<vbser><pres><p3><sg>$ ^in/in<adv>/in<pr>$ ^a/a<det><ind><sg>$ ^cage/cage<n><sg>$^./.<sent>$
+[/JH6DxEEfZUBu]
+[JKMdbhQ6wDW9#0] ^The/the<det><def><sp>$ ^dog/dog<n><sg>$^,/,<cm>$ ^the/the<det><def><sp>$ ^cat/cat<n><sg>$^,/,<cm>$ ^the/the<det><def><sp>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^./.<sent>$
+[/JKMdbhQ6wDW9]
+[JfBbVmdWCo1D#0] ^It/prpers<prn><subj><p3><nt><sg>/prpers<prn><obj><p3><nt><sg>$ ^is/be<vbser><pres><p3><sg>$ ^grey/grey<adj><sint>$^./.<sent>$
+[/JfBbVmdWCo1D]
+[KBHFU2oKCXJV#0] ^The/the<det><def><sp>$ ^brown/brown<adj><sint>$ ^dog/dog<n><sg>$^,/,<cm>$ ^the/the<det><def><sp>$ ^black/black<n><sg>/black<adj><sint>$ ^cat/cat<n><sg>$^,/,<cm>$ ^the/the<det><def><sp>$ ^big/big<adj><sint>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^./.<sent>$
+[/KBHFU2oKCXJV]
+[KZoQ7lMNcCBZ#0] ^My/my<det><pos><sp>/prpers<det><pos><p1><mf><sg>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^,/,<cm>$ ^his/his<det><pos><sp>/prpers<prn><pos><p3><m><sg>/prpers<det><pos><p3><m><sg>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^,/,<cm>$ ^her/her<det><pos><sp>/prpers<prn><obj><p3><f><sg>/prpers<det><pos><p3><f><sg>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^,/,<cm>$ ^our/our<det><pos><sp>/prpers<det><pos><p1><mf><pl>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^,/,<cm>$ ^their/their<det><pos><sp>/prpers<det><pos><p3><mf><pl>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^./.<sent>$
+[/KZoQ7lMNcCBZ]
+[MQkEzi298HGd#0] ^The/the<det><def><sp>$ ^fast/fast<adv>/fast<n><sg>/fast<adj><sint>$ ^brown/brown<adj><sint>$ ^dog/dog<n><sg>$^,/,<cm>$ ^the/the<det><def><sp>$ ^fast/fast<adv>/fast<n><sg>/fast<adj><sint>$ ^black/black<n><sg>/black<adj><sint>$ ^cat/cat<n><sg>$^,/,<cm>$ ^the/the<det><def><sp>$ ^big/big<adj><sint>$ ^grey/grey<adj><sint>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^./.<sent>$
+[/MQkEzi298HGd]
+[QXw90w_Z35xl#0] ^She/prpers<prn><subj><p3><f><sg>$ ^is/be<vbser><pres><p3><sg>$ ^laughing/laugh<vblex><pprs>/laugh<vblex><subs>/laugh<vblex><ger>$^./.<sent>$
+[/QXw90w_Z35xl]
+[ckiQ5Ia2bRPB#0] ^The/the<det><def><sp>$ ^mouse/mouse<n><sg>$ ^is/be<vbser><pres><p3><sg>$ ^running/running<n><sg>/run<vblex><pprs>/run<vblex><subs>/run<vblex><ger>$^./.<sent>$
+[/ckiQ5Ia2bRPB]
+[fZcs-xOOFmFF#0] ^My/my<det><pos><sp>/prpers<det><pos><p1><mf><sg>$ ^dogs/dog<n><pl>$^,/,<cm>$ ^his/his<det><pos><sp>/prpers<prn><pos><p3><m><sg>/prpers<det><pos><p3><m><sg>$ ^dogs/dog<n><pl>$^,/,<cm>$ ^her/her<det><pos><sp>/prpers<prn><obj><p3><f><sg>/prpers<det><pos><p3><f><sg>$ ^dogs/dog<n><pl>$^,/,<cm>$ ^our/our<det><pos><sp>/prpers<det><pos><p1><mf><pl>$ ^dogs/dog<n><pl>$^,/,<cm>$ ^their/their<det><pos><sp>/prpers<det><pos><p3><mf><pl>$ ^dogs/dog<n><pl>$^./.<sent>$
+[/fZcs-xOOFmFF]
+[gbTCFCfzvxpu#0] ^Dog/dog<n><sg>$^,/,<cm>$ ^cat/cat<n><sg>$^,/,<cm>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^./.<sent>$
+[/gbTCFCfzvxpu]
+[o-LeiziWw0VF#0] ^The/the<det><def><sp>$ ^dogs/dog<n><pl>$^,/,<cm>$ ^the/the<det><def><sp>$ ^cats/cat<n><pl>$^,/,<cm>$ ^the/the<det><def><sp>$ ^houses/house<vblex><pres><p3><sg>/house<n><pl>$^./.<sent>$
+[/o-LeiziWw0VF]
+[pRZGwA50UWTx#0] ^It's/prpers<prn><subj><p3><nt><sg>+be<vbser><pres><p3><sg>$ ^grey/grey<adj><sint>$^./.<sent>$
+[/pRZGwA50UWTx]
+[sCvlJWJ1y1Ww#0] ^Dogs/dog<n><pl>$^,/,<cm>$ ^cats/cat<n><pl>$^,/,<cm>$ ^houses/house<vblex><pres><p3><sg>/house<n><pl>$^./.<sent>$
+[/sCvlJWJ1y1Ww]
+[uXDyBMBMbd0L#0] ^A/a<det><ind><sg>$ ^dog/dog<n><sg>$^,/,<cm>$ ^a/a<det><ind><sg>$ ^cat/cat<n><sg>$^,/,<cm>$ ^a/a<det><ind><sg>$ ^house/house<vblex><inf>/house<vblex><pres>/house<vblex><imp>/house<n><sg>$^./.<sent>$
+[/uXDyBMBMbd0L]
+[vczV3IWqvDPc#0] ^First/first<adv>/first<adj><ord>$ ^he/prpers<prn><subj><p3><m><sg>$ ^left/left<adj>/left<adv>/left<n><sg>/leave<vblex><past>/leave<vblex><pp>$ ^Miami/Miami<np><top><sg>$^./.<sent>$
+[/vczV3IWqvDPc]

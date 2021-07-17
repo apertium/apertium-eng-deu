@@ -1,0 +1,19 @@
+Dog, cat, house.
+The dog, the cat, the house.
+A dog, a cat, a house.
+Dogs, cats, houses.
+Fast dog, black cat, big house.
+The dogs, the cats, the houses.
+The brown dog, the black cat, the big house.
+The fast brown dog, the fast black cat, the big grey house.
+My dog, his dog, her dog, our dog, their dog.
+My cat, his cat, her cat, our cat, their cat.
+My house, his house, her house, our house, their house.
+My dogs, his dogs, her dogs, our dogs, their dogs.
+It is grey.
+It's grey.
+It's in a cage.
+The mouse is running.
+She is laughing.
+Where is Daddy's shoe?
+First he left Miami.

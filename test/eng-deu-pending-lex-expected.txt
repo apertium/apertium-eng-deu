@@ -1,0 +1,26 @@
+[-QwFDgfHYnlL#0] ^prpers<prn><subj><p3><m><sg>/prpers<prn><subj><p3><m><sg>$ ^go<vblex><past>/gehen<vblex><past>$
+[/-QwFDgfHYnlL]
+[0JKrBij9gcd3#0] ^prpers<prn><subj><p3><f><sg>/prpers<prn><subj><p3><f><sg>$ ^go<vblex><pres><p3><sg>/gehen<vblex><pres><p3><sg>$
+[/0JKrBij9gcd3]
+[2J8V9dAtFoNO#0] ^prpers<prn><subj><p1><mf><pl>/prpers<prn><subj><p1><mf><pl>$ ^go<vblex><pres>/gehen<vblex><pres>$
+[/2J8V9dAtFoNO]
+[6Lchfn84ghaT#0] ^prpers<prn><subj><p3><mf><pl>/prpers<prn><subj><p3><mf><pl>$ ^go<vblex><pres>/gehen<vblex><pres>$
+[/6Lchfn84ghaT]
+[6fpdwvKUvm9j#0] ^prpers<prn><subj><p3><m><sg>/prpers<prn><subj><p3><m><sg>$ ^be<vbser><pres><p3><sg>/sein<vbser><pres><p3><sg>$ ^go<vblex><ger>/gehen<vblex><ger>$
+[/6fpdwvKUvm9j]
+[QLje6mDvAMMG#0] ^prpers<prn><subj><p3><nt><sg>/prpers<prn><subj><p3><nt><sg>$ ^go<vblex><pres><p3><sg>/gehen<vblex><pres><p3><sg>$
+[/QLje6mDvAMMG]
+[RFwkM5mVb-jz#0] ^prpers<prn><subj><p3><m><sg>/prpers<prn><subj><p3><m><sg>$ ^go<vblex><pres><p3><sg>/gehen<vblex><pres><p3><sg>$
+[/RFwkM5mVb-jz]
+[T1QXfYXC0wkr#0] ^ball pen<n><sg>/Kugelschreiber<n><m><sg>$
+[/T1QXfYXC0wkr]
+[Tli_1TySbd8C#0] ^fire department<n><sg>/Feuerwehr<n><f><sg>$
+[/Tli_1TySbd8C]
+[g10GKjEzkur-#0] ^prpers<prn><subj><p1><mf><pl>/prpers<prn><subj><p1><mf><pl>$ ^be<vbser><pres>/sein<vbser><pres>$ ^go<vblex><ger>/gehen<vblex><ger>$
+[/g10GKjEzkur-]
+[gSHRnaBF6KR6#0] ^A<det><ind><sg>/Ein<det><ind><sg>$ ^pink<adj><sint>/pink<adj><sint>$ ^pig<n><sg>/Schwein<n><nt><sg>$^.<sent>/.<sent>$
+[/gSHRnaBF6KR6]
+[tk1u4raCl4WB#0] ^computer game<n><sg>/Computerspiel<n><nt><sg>$
+[/tk1u4raCl4WB]
+[w6u2iIVKcXP0#0] ^two<num><pl>/zwei<num><pl>$ ^child<n><pl>/Kind<n><nt><pl>$
+[/w6u2iIVKcXP0]

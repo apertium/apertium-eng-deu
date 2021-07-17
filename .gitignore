@@ -22,4 +22,4 @@ dev/apertium-en-de/stamp-h1
 /.deps
 /config.in
 /config
-
+/test/*-output.txt

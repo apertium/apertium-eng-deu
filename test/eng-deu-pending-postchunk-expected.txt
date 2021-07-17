@@ -1,0 +1,26 @@
+[-QwFDgfHYnlL#0] ^prpers<prn><subj><p3><m><sg><nom>$ ^gehen<vblex><pii><p3><sg>$
+[/-QwFDgfHYnlL]
+[0JKrBij9gcd3#0] ^prpers<prn><subj><p3><f><sg><nom>$ ^gehen<vblex><pri><p3><sg>$
+[/0JKrBij9gcd3]
+[2J8V9dAtFoNO#0] ^prpers<prn><subj><p1><m><pl><nom>$ ^gehen<vblex><pri><p1><pl>$
+[/2J8V9dAtFoNO]
+[6Lchfn84ghaT#0] ^prpers<prn><subj><p3><m><pl><nom>$ ^gehen<vblex><pri><p3><pl>$
+[/6Lchfn84ghaT]
+[6fpdwvKUvm9j#0] ^prpers<prn><subj><p3><m><sg><nom>$ ^gehen<vblex><pri><p3><sg>$
+[/6fpdwvKUvm9j]
+[QLje6mDvAMMG#0] ^prpers<prn><subj><p3><nt><sg><nom>$ ^gehen<vblex><pri><p3><sg>$
+[/QLje6mDvAMMG]
+[RFwkM5mVb-jz#0] ^Prpers<prn><subj><p3><m><sg><nom>$ ^gehen<vblex><pri><p3><sg>$
+[/RFwkM5mVb-jz]
+[T1QXfYXC0wkr#0] ^Kugelschreiber<n><m><sg><nom>$
+[/T1QXfYXC0wkr]
+[Tli_1TySbd8C#0] ^Feuerwehr<n><f><sg><nom>$
+[/Tli_1TySbd8C]
+[g10GKjEzkur-#0] ^prpers<prn><subj><p1><m><pl><nom>$ ^gehen<vblex><pri><p1><pl>$
+[/g10GKjEzkur-]
+[gSHRnaBF6KR6#0] ^Ein<det><ind><nt><sg><nom>$ ^pink<adj><nt><sg><nom><mix>$ ^Schwein<n><nt><sg><nom>$^.<sent>$
+[/gSHRnaBF6KR6]
+[tk1u4raCl4WB#0] ^Computerspiel<n><nt><sg><nom>$
+[/tk1u4raCl4WB]
+[w6u2iIVKcXP0#0] ^zwei<num><pl>$ ^Kind<n><nt><pl><nom>$
+[/w6u2iIVKcXP0]

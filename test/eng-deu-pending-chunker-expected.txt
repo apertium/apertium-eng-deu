@@ -1,0 +1,26 @@
+[-QwFDgfHYnlL#0] ^prpers<PRPERS><p3><m><sg>{^prpers<prn><subj><p3><m><sg><nom>$}$ ^verb<SV><pii><p3><sg>{^gehen<vblex><2><3><4>$}$
+[/-QwFDgfHYnlL]
+[0JKrBij9gcd3#0] ^prpers<PRPERS><p3><f><sg>{^prpers<prn><subj><p3><f><sg><nom>$}$ ^verb<SV><pri><p3><sg>{^gehen<vblex><2><3><4>$}$
+[/0JKrBij9gcd3]
+[2J8V9dAtFoNO#0] ^prpers<PRPERS><p1><m><pl>{^prpers<prn><subj><p1><m><pl><nom>$}$ ^verb<SV><pri><p1><pl>{^gehen<vblex><2><3><4>$}$
+[/2J8V9dAtFoNO]
+[6Lchfn84ghaT#0] ^prpers<PRPERS><p3><m><pl>{^prpers<prn><subj><p3><m><pl><nom>$}$ ^verb<SV><pri><p3><pl>{^gehen<vblex><2><3><4>$}$
+[/6Lchfn84ghaT]
+[6fpdwvKUvm9j#0] ^prpers<PRPERS><p3><m><sg>{^prpers<prn><subj><p3><m><sg><nom>$}$ ^verb<SV><pri><p3><sg>{^gehen<vblex><2><3><4>$}$
+[/6fpdwvKUvm9j]
+[QLje6mDvAMMG#0] ^prpers<PRPERS><p3><nt><sg>{^prpers<prn><subj><p3><nt><sg><nom>$}$ ^verb<SV><pri><p3><sg>{^gehen<vblex><2><3><4>$}$
+[/QLje6mDvAMMG]
+[RFwkM5mVb-jz#0] ^Prpers<PRPERS><p3><m><sg>{^prpers<prn><subj><p3><m><sg><nom>$}$ ^verb<SV><pri><p3><sg>{^gehen<vblex><2><3><4>$}$
+[/RFwkM5mVb-jz]
+[T1QXfYXC0wkr#0] ^Nom_nom<SN><p3><nt><sg><nom>{^Kugelschreiber<n><m><sg><nom>$
+[/T1QXfYXC0wkr]
+[Tli_1TySbd8C#0] ^nom<SN><p3><f><sg><nom>{^Feuerwehr<n><f><sg><nom>$}$
+[/Tli_1TySbd8C]
+[g10GKjEzkur-#0] ^prpers<PRPERS><p1><m><pl>{^prpers<prn><subj><p1><m><pl><nom>$}$ ^verb<SV><pri><p1><pl>{^gehen<vblex><2><3><4>$}$
+[/g10GKjEzkur-]
+[gSHRnaBF6KR6#0] ^det_adj_nom<SN><p3><nt><sg><nom>{^Ein<det><ind><nt><sg><nom>$ ^pink<adj><nt><sg><nom><mix>$ ^Schwein<n><nt><sg><nom>$}$^punt<sent>{^.<sent>$}$
+[/gSHRnaBF6KR6]
+[tk1u4raCl4WB#0] ^Computerspiel<n><nt><sg><nom>$}$
+[/tk1u4raCl4WB]
+[w6u2iIVKcXP0#0] ^num_nom<SN><p3><nt><pl><nom>{^zwei<num><pl>$ ^Kind<n><nt><pl><nom>$}$
+[/w6u2iIVKcXP0]

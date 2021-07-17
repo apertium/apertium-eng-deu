@@ -1,0 +1,38 @@
+[3Y-cQ3L47nOG#0] ^Prpers<det><pos><p1><mf><sg>$ ^dog<n><sg>$^,<cm>$ ^prpers<det><pos><p3><m><sg>$ ^dog<n><sg>$^,<cm>$ ^prpers<det><pos><p3><f><sg>$ ^dog<n><sg>$^,<cm>$ ^our<det><pos><sp>$ ^dog<n><sg>$^,<cm>$ ^prpers<det><pos><p3><mf><pl>$ ^dog<n><sg>$^.<sent>$
+[/3Y-cQ3L47nOG]
+[3rfK00e5LSfl#0] ^Prpers<det><pos><p1><mf><sg>$ ^cat<n><sg>$^,<cm>$ ^prpers<det><pos><p3><m><sg>$ ^cat<n><sg>$^,<cm>$ ^prpers<det><pos><p3><f><sg>$ ^cat<n><sg>$^,<cm>$ ^our<det><pos><sp>$ ^cat<n><sg>$^,<cm>$ ^prpers<det><pos><p3><mf><pl>$ ^cat<n><sg>$^.<sent>$
+[/3rfK00e5LSfl]
+[5qq39LFWr8g6#0] ^Where<adv><itg>$ ^be<vbser><pres><p3><sg>$ ^Daddy<n><sg>$^'s<gen>$ ^shoe<n><sg>$^?<sent>$
+[/5qq39LFWr8g6]
+[7XOMrqP4z4G7#0] ^Fast<adj><sint>$ ^dog<n><sg>$^,<cm>$ ^black<adj><sint>$ ^cat<n><sg>$^,<cm>$ ^big<adj><sint>$ ^house<n><sg>$^.<sent>$
+[/7XOMrqP4z4G7]
+[JH6DxEEfZUBu#0] ^Prpers<prn><subj><p3><nt><sg>$ ^be<vbser><pres><p3><sg>$ ^in<pr>$ ^a<det><ind><sg>$ ^cage<n><sg>$^.<sent>$
+[/JH6DxEEfZUBu]
+[JKMdbhQ6wDW9#0] ^The<det><def><sp>$ ^dog<n><sg>$^,<cm>$ ^the<det><def><sp>$ ^cat<n><sg>$^,<cm>$ ^the<det><def><sp>$ ^house<n><sg>$^.<sent>$
+[/JKMdbhQ6wDW9]
+[JfBbVmdWCo1D#0] ^Prpers<prn><subj><p3><nt><sg>$ ^be<vbser><pres><p3><sg>$ ^grey<adj><sint>$^.<sent>$
+[/JfBbVmdWCo1D]
+[KBHFU2oKCXJV#0] ^The<det><def><sp>$ ^brown<adj><sint>$ ^dog<n><sg>$^,<cm>$ ^the<det><def><sp>$ ^black<adj><sint>$ ^cat<n><sg>$^,<cm>$ ^the<det><def><sp>$ ^big<adj><sint>$ ^house<n><sg>$^.<sent>$
+[/KBHFU2oKCXJV]
+[KZoQ7lMNcCBZ#0] ^Prpers<det><pos><p1><mf><sg>$ ^house<n><sg>$^,<cm>$ ^prpers<det><pos><p3><m><sg>$ ^house<n><sg>$^,<cm>$ ^prpers<det><pos><p3><f><sg>$ ^house<n><sg>$^,<cm>$ ^our<det><pos><sp>$ ^house<n><sg>$^,<cm>$ ^prpers<det><pos><p3><mf><pl>$ ^house<n><sg>$^.<sent>$
+[/KZoQ7lMNcCBZ]
+[MQkEzi298HGd#0] ^The<det><def><sp>$ ^fast<n><sg>$ ^brown<adj><sint>$ ^dog<n><sg>$^,<cm>$ ^the<det><def><sp>$ ^fast<adj><sint>$ ^black<n><sg>$ ^cat<n><sg>$^,<cm>$ ^the<det><def><sp>$ ^big<adj><sint>$ ^grey<adj><sint>$ ^house<n><sg>$^.<sent>$
+[/MQkEzi298HGd]
+[QXw90w_Z35xl#0] ^Prpers<prn><subj><p3><f><sg>$ ^be<vbser><pres><p3><sg>$ ^laugh<vblex><ger>$^.<sent>$
+[/QXw90w_Z35xl]
+[ckiQ5Ia2bRPB#0] ^The<det><def><sp>$ ^mouse<n><sg>$ ^be<vbser><pres><p3><sg>$ ^run<vblex><ger>$^.<sent>$
+[/ckiQ5Ia2bRPB]
+[fZcs-xOOFmFF#0] ^Prpers<det><pos><p1><mf><sg>$ ^dog<n><pl>$^,<cm>$ ^prpers<det><pos><p3><m><sg>$ ^dog<n><pl>$^,<cm>$ ^prpers<det><pos><p3><f><sg>$ ^dog<n><pl>$^,<cm>$ ^our<det><pos><sp>$ ^dog<n><pl>$^,<cm>$ ^prpers<det><pos><p3><mf><pl>$ ^dog<n><pl>$^.<sent>$
+[/fZcs-xOOFmFF]
+[gbTCFCfzvxpu#0] ^Dog<n><sg>$^,<cm>$ ^cat<n><sg>$^,<cm>$ ^house<n><sg>$^.<sent>$
+[/gbTCFCfzvxpu]
+[o-LeiziWw0VF#0] ^The<det><def><sp>$ ^dog<n><pl>$^,<cm>$ ^the<det><def><sp>$ ^cat<n><pl>$^,<cm>$ ^the<det><def><sp>$ ^house<n><pl>$^.<sent>$
+[/o-LeiziWw0VF]
+[pRZGwA50UWTx#0] ^Prpers<prn><subj><p3><nt><sg>$ ^be<vbser><pres><p3><sg>$ ^grey<adj><sint>$^.<sent>$
+[/pRZGwA50UWTx]
+[sCvlJWJ1y1Ww#0] ^Dog<n><pl>$^,<cm>$ ^cat<n><pl>$^,<cm>$ ^house<n><pl>$^.<sent>$
+[/sCvlJWJ1y1Ww]
+[uXDyBMBMbd0L#0] ^A<det><ind><sg>$ ^dog<n><sg>$^,<cm>$ ^a<det><ind><sg>$ ^cat<n><sg>$^,<cm>$ ^a<det><ind><sg>$ ^house<n><sg>$^.<sent>$
+[/uXDyBMBMbd0L]
+[vczV3IWqvDPc#0] ^First<adj><ord>$ ^prpers<prn><subj><p3><m><sg>$ ^leave<vblex><past>$ ^Miami<np><top><sg>$^.<sent>$
+[/vczV3IWqvDPc]

@@ -1,0 +1,26 @@
+[-QwFDgfHYnlL#0] ^prpers<prn><subj><p3><m><sg>$ ^go<vblex><past>$
+[/-QwFDgfHYnlL]
+[0JKrBij9gcd3#0] ^prpers<prn><subj><p3><f><sg>$ ^go<vblex><pres><p3><sg>$
+[/0JKrBij9gcd3]
+[2J8V9dAtFoNO#0] ^prpers<prn><subj><p1><mf><pl>$ ^go<vblex><pres>$
+[/2J8V9dAtFoNO]
+[6Lchfn84ghaT#0] ^prpers<prn><subj><p3><mf><pl>$ ^go<vblex><pres>$
+[/6Lchfn84ghaT]
+[6fpdwvKUvm9j#0] ^prpers<prn><subj><p3><m><sg>$ ^be<vbser><pres><p3><sg>$ ^go<vblex><ger>$
+[/6fpdwvKUvm9j]
+[QLje6mDvAMMG#0] ^prpers<prn><subj><p3><nt><sg>$ ^go<vblex><pres><p3><sg>$
+[/QLje6mDvAMMG]
+[RFwkM5mVb-jz#0] ^prpers<prn><subj><p3><m><sg>$ ^go<vblex><pres><p3><sg>$
+[/RFwkM5mVb-jz]
+[T1QXfYXC0wkr#0] ^ball<n><sg>$ ^pen<n><sg>$
+[/T1QXfYXC0wkr]
+[Tli_1TySbd8C#0] ^fire department<n><sg>$
+[/Tli_1TySbd8C]
+[g10GKjEzkur-#0] ^prpers<prn><subj><p1><mf><pl>$ ^be<vbser><pres>$ ^go<vblex><ger>$
+[/g10GKjEzkur-]
+[gSHRnaBF6KR6#0] ^A<det><ind><sg>$ ^pink<adj><sint>$ ^pig<n><sg>$^.<sent>$
+[/gSHRnaBF6KR6]
+[tk1u4raCl4WB#0] ^computer game<n><sg>$
+[/tk1u4raCl4WB]
+[w6u2iIVKcXP0#0] ^two<num><pl>$ ^child<n><pl>$
+[/w6u2iIVKcXP0]
