@@ -21,36 +21,36 @@
   </sdefs>
   <pardefs>
     <pardef n="adj">
-      <e><i><w/><s n="adj"/><j/></i></e>
-      <e><i><w/><s n="adj"/><t/><j/></i></e>
+      <e><i><w/><s n="adj"/><d/></i></e>
+      <e><i><w/><s n="adj"/><t/><d/></i></e>
     </pardef>
     <pardef n="adv">
-      <e><i><w/><s n="adv"/><j/></i></e>
+      <e><i><w/><s n="adv"/><d/></i></e>
     </pardef>
     <pardef n="cnjcoo">
-      <e><i><w/><s n="cnjcoo"/><j/></i></e>
+      <e><i><w/><s n="cnjcoo"/><d/></i></e>
     </pardef>
     <pardef n="det">
-      <e><i><w/><s n="det"/><t/><j/></i></e>
+      <e><i><w/><s n="det"/><t/><d/></i></e>
     </pardef>
     <pardef n="det-pos">
-      <e><i><w/><s n="det"/><s n="pos"/><t/><j/></i></e>
+      <e><i><w/><s n="det"/><s n="pos"/><t/><d/></i></e>
     </pardef>
     <pardef n="n">
-      <e><i><w/><s n="n"/><t/><j/></i></e>
+      <e><i><w/><s n="n"/><t/><d/></i></e>
     </pardef>
     <pardef n="np">
-      <e><i><w/><s n="np"/><t/><j/></i></e>
+      <e><i><w/><s n="np"/><t/><d/></i></e>
     </pardef>
     <pardef n="num">
-      <e><i><w/><s n="num"/><j/></i></e>
-      <e><i><w/><s n="num"/><t/><j/></i></e>
+      <e><i><w/><s n="num"/><d/></i></e>
+      <e><i><w/><s n="num"/><t/><d/></i></e>
     </pardef>
     <pardef n="prn">
-      <e><i><w/><s n="prn"/><t/><j/></i></e>
+      <e><i><w/><s n="prn"/><t/><d/></i></e>
     </pardef>
     <pardef n="pr">
-        <e><i><w/><s n="pr"/><t/><j/></i></e>
+        <e><i><w/><s n="pr"/><t/><d/></i></e>
     </pardef>
     <pardef n="modifier-n">
       <e><par n="adj"/><par n="n"/></e>
@@ -69,32 +69,32 @@
       <e><par n="det-modifier-n"/></e>
     </pardef>
     <pardef n="freq-adv">
-      <e><i>always<s n="adv"/><j/></i></e>
-      <e><i>anually<s n="adv"/><j/></i></e>
-      <e><i>bianually<s n="adv"/><j/></i></e>
-      <e><i>constantly<s n="adv"/><j/></i></e>
-      <e><i>daily<s n="adv"/><j/></i></e>
-      <e><i>eventually<s n="adv"/><j/></i></e>
-      <e><i>frequently<s n="adv"/><j/></i></e>
-      <e><i>generally<s n="adv"/><j/></i></e>
-      <e><i>hourly<s n="adv"/><j/></i></e>
-      <e><i>monthly<s n="adv"/><j/></i></e>
-      <e><i>never<s n="adv"/><j/></i></e>
-      <e><i>nightly<s n="adv"/><j/></i></e>
-      <e><i>normally<s n="adv"/><j/></i></e>
-      <e><i>occasionally<s n="adv"/><j/></i></e>
-      <e><i>often<s n="adv"/><j/></i></e>
-      <e><i>quarterly<s n="adv"/><j/></i></e>
-      <e><i>rarely<s n="adv"/><j/></i></e>
-      <e><i>regularly<s n="adv"/><j/></i></e>
-      <e><i>seldom<s n="adv"/><j/></i></e>
-      <e><i>semi-anually<s n="adv"/><j/></i></e>
-      <e><i>so<s n="adv"/><j/></i></e>
-      <e><i>sometimes<s n="adv"/><j/></i></e>
-      <e><i>too<s n="adv"/><j/></i></e>
-      <e><i>usually<s n="adv"/><j/></i></e>
-      <e><i>weekly<s n="adv"/><j/></i></e>
-      <e><i>yearly<s n="adv"/><j/></i></e>
+      <e><i>always<s n="adv"/><d/></i></e>
+      <e><i>anually<s n="adv"/><d/></i></e>
+      <e><i>bianually<s n="adv"/><d/></i></e>
+      <e><i>constantly<s n="adv"/><d/></i></e>
+      <e><i>daily<s n="adv"/><d/></i></e>
+      <e><i>eventually<s n="adv"/><d/></i></e>
+      <e><i>frequently<s n="adv"/><d/></i></e>
+      <e><i>generally<s n="adv"/><d/></i></e>
+      <e><i>hourly<s n="adv"/><d/></i></e>
+      <e><i>monthly<s n="adv"/><d/></i></e>
+      <e><i>never<s n="adv"/><d/></i></e>
+      <e><i>nightly<s n="adv"/><d/></i></e>
+      <e><i>normally<s n="adv"/><d/></i></e>
+      <e><i>occasionally<s n="adv"/><d/></i></e>
+      <e><i>often<s n="adv"/><d/></i></e>
+      <e><i>quarterly<s n="adv"/><d/></i></e>
+      <e><i>rarely<s n="adv"/><d/></i></e>
+      <e><i>regularly<s n="adv"/><d/></i></e>
+      <e><i>seldom<s n="adv"/><d/></i></e>
+      <e><i>semi-anually<s n="adv"/><d/></i></e>
+      <e><i>so<s n="adv"/><d/></i></e>
+      <e><i>sometimes<s n="adv"/><d/></i></e>
+      <e><i>too<s n="adv"/><d/></i></e>
+      <e><i>usually<s n="adv"/><d/></i></e>
+      <e><i>weekly<s n="adv"/><d/></i></e>
+      <e><i>yearly<s n="adv"/><d/></i></e>
     </pardef>
     <pardef n="SA">
       <e><par n="adj"/><par n="cnjcoo"/><par n="adj"/></e>
@@ -116,78 +116,78 @@
 
   <section id="main" type="standard">
     <e lm="fahren ab" c="depart">
-      <p><l>fahren<s n="vblex"/></l><r>abfahren<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>ab<t/><j/></l><r></r></p>
+      <p><l>fahren<s n="vblex"/></l><r>abfahren<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SAdv"/><p><l>ab<t/><d/></l><r></r></p>
     </e>
 
     <e lm="schalten ab" c="switch off">
-      <p><l>schalten<s n="vblex"/></l><r>abschalten<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>ab<t/><j/></l><r></r></p>
+      <p><l>schalten<s n="vblex"/></l><r>abschalten<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>ab<t/><d/></l><r></r></p>
     </e>
 
     <e lm="bauen auf" c="build up">
-      <p><l>bauen<s n="vblex"/></l><r>aufbauen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>auf<t/><j/></l><r></r></p>
+      <p><l>bauen<s n="vblex"/></l><r>aufbauen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>auf<t/><d/></l><r></r></p>
     </e>
 
     <e lm="kündigen an" c="announce">
-      <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>an<t/><j/></l><r></r></p>
+      <p><l>kündigen<s n="vblex"/></l><r>ankündigen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>an<t/><d/></l><r></r></p>
     </e>
 
     <e lm="ziehen an" c="dress">
-      <p><l>ziehen<s n="vblex"/></l><r>anziehen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>an<t/><j/></l><r></r></p>
+      <p><l>ziehen<s n="vblex"/></l><r>anziehen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>an<t/><d/></l><r></r></p>
     </e>
 
     <e lm="räumen auf" c="clean up">
-      <p><l>räumen<s n="vblex"/></l><r>aufräumen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>auf<t/><j/></l><r></r></p>
+      <p><l>räumen<s n="vblex"/></l><r>aufräumen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>auf<t/><d/></l><r></r></p>
     </e>
 
     <e lm="steigen aus" c="get off">
-      <p><l>steigen<s n="vblex"/></l><r>aussteigen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>aus<t/><j/></l><r></r></p>
+      <p><l>steigen<s n="vblex"/></l><r>aussteigen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SAdv"/><p><l>aus<t/><d/></l><r></r></p>
     </e>
 
     <e lm="laden herunter" c="download">
-      <p><l>laden<s n="vblex"/></l><r>herunterladen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>herunter<t/><j/></l><r></r></p>
+      <p><l>laden<s n="vblex"/></l><r>herunterladen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>herunter<t/><d/></l><r></r></p>
     </e>
 
     <e lm="lernen kennen" c="get to know">
-      <p><l>lernen<s n="vblex"/></l><r>kennenlearnen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>kennen<t/><j/></l><r></r></p>
+      <p><l>lernen<s n="vblex"/></l><r>kennenlearnen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>kennen<t/><d/></l><r></r></p>
     </e>
 
     <e lm="bringen mit" c="bring along/with">
-      <p><l>bringen<s n="vblex"/></l><r>mitbringen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>mit<t/><j/></l><r></r></p>
+      <p><l>bringen<s n="vblex"/></l><r>mitbringen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>mit<t/><d/></l><r></r></p>
     </e>
 
     <e lm="kommen mit" c="come along/with">
-      <p><l>kommen<s n="vblex"/></l><r>mitkommen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>mit<t/><j/></l><r></r></p>
+      <p><l>kommen<s n="vblex"/></l><r>mitkommen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>mit<t/><d/></l><r></r></p>
     </e>
 
     <e lm="nehmen mit" c="take along/with">
-      <p><l>nehmen<s n="vblex"/></l><r>mitnehmen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>mit<t/><j/></l><r></r></p>
+      <p><l>nehmen<s n="vblex"/></l><r>mitnehmen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>mit<t/><d/></l><r></r></p>
     </e>
 
     <e lm="finden statt" c="take place at">
-      <p><l>finden<s n="vblex"/></l><r>stattfinden<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>statt<t/><j/></l><r></r></p>
+      <p><l>finden<s n="vblex"/></l><r>stattfinden<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>statt<t/><d/></l><r></r></p>
     </e>
 
     <e lm="bringen um" c="murder">
-      <p><l>bringen<s n="vblex"/></l><r>umbringen<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SN"/><p><l>um<t/><j/></l><r></r></p>
+      <p><l>bringen<s n="vblex"/></l><r>umbringen<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SN"/><p><l>um<t/><d/></l><r></r></p>
     </e>
 
     <e lm="fahren zurück" c="ride back">
-      <p><l>fahren<s n="vblex"/></l><r>zurückfahren<s n="vblex"/><s n="sep"/></r></p><i><t/><j/></i>
-      <par n="SAdv"/><p><l>zurück<t/><j/></l><r></r></p>
+      <p><l>fahren<s n="vblex"/></l><r>zurückfahren<s n="vblex"/><s n="sep"/></r></p><i><t/><d/></i>
+      <par n="SAdv"/><p><l>zurück<t/><d/></l><r></r></p>
     </e>
 
   </section>
@@ -197,5 +197,5 @@
 <b/> = blank
 <w/> = ANY_CHAR (loop)
 <t/> = ANY_TAG (loop)
-<j/> = <$>
+<d/> = <$>
  -->
