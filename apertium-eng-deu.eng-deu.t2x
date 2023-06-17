@@ -1412,6 +1412,44 @@
 		</rule>
 
 
+		<!-- "Vh ~V N" => "Vh N ~V" -->
+		<rule comment="RULE: Vh V N">
+			<pattern>
+				<pattern-item n="SV_haver"/>
+				<pattern-item n="SV"/>
+				<pattern-item n="SN"/>
+			</pattern>
+			<action>
+				<call-macro n="upd_PD_ND_GD">  <!-- (to be determined) -->
+					<with-param pos="1"/>
+					<with-param pos="3"/>  <!-- from noun -->
+				</call-macro>
+				<call-macro n="rm_PD_ND_GD">
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk>
+						<clip pos="1" part="lem"/>
+						<clip pos="1" part="tags"/>
+						<clip pos="1" part="chcontent"/>
+					</chunk>
+					<b pos="1"/>
+					<chunk>
+						<clip pos="3" part="lem"/>
+						<clip pos="3" part="tags"/>
+						<clip pos="3" part="chcontent"/>
+					</chunk>
+					<b pos="2"/>
+					<chunk>
+						<clip pos="2" part="lem"/>
+						<clip pos="2" part="tags"/>
+						<clip pos="2" part="chcontent"/>
+					</chunk>
+				</out>
+			</action>
+		</rule>
+
+
 		<!-- update nbr/ND -->
 		<rule comment="RULE: V">
 			<pattern>

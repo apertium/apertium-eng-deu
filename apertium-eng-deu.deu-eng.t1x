@@ -385,7 +385,7 @@
 			<attr-item tags="num"/>
 			<attr-item tags="num.ord"/>
 		</def-attr>
-		<def-attr n="a_tipus_prn">
+		<def-attr n="a_tipus_prn">			<!-- not for "prn.rel" -->
 			<attr-item tags="prn.subj"/>
 			<attr-item tags="prn.obj"/>
 			<attr-item tags="prn.itg"/>
@@ -583,6 +583,7 @@
 		<def-var n="v_chunk_tag"/>
 		<def-var n="v_chunk_name"/>
 		<def-var n="v_use_participle" v="false"/> <!-- "true": translate verbs as present participle -->
+		<def-var n="v_debug"/>
 	</section-def-vars>
 
 
@@ -5696,6 +5697,35 @@
 		</rule>
 
 
+		<!-- that: <s n="rel"/><s n="an"/> // what: <s n="rel"/><s n="nn"/> -->
+		<rule comment="RULE: REL">
+			<pattern>
+				<pattern-item n="rel"/>
+			</pattern>
+			<action>
+				<call-macro n="build_rel">  <!-- OUT: v...prn, v_chunk_tag -->
+					<with-param pos="1"/>
+				</call-macro>
+				<out>
+					<chunk name="prn" case="caseFirstWord">
+						<tags>
+							<tag><var n="v_chunk_tag"/></tag>  <!-- "REL"/"PRN" -->
+							<tag><var n="v_pers_prn"/></tag>
+							<tag><var n="v_gen_prn"/></tag>
+							<tag><var n="v_nbr_prn"/></tag>
+						</tags>
+						<lu>
+							<clip pos="1" side="tl" part="whole"/>
+						</lu>
+					</chunk>
+				</out>
+				<call-macro n="firstWord">
+					<with-param pos="1"/>
+				</call-macro>
+			</action>
+		</rule>
+
+
 		<!-- (prn) convert iobj/dobj to obj-->
 		<rule comment="RULE: PRN">
 			<pattern>
@@ -5746,35 +5776,6 @@
 						</out>
 					</otherwise>
 				</choose>
-				<call-macro n="firstWord">
-					<with-param pos="1"/>
-				</call-macro>
-			</action>
-		</rule>
-
-
-		<!-- that: <s n="rel"/><s n="an"/> // what: <s n="rel"/><s n="nn"/> -->
-		<rule comment="RULE: REL">
-			<pattern>
-				<pattern-item n="rel"/>
-			</pattern>
-			<action>
-				<call-macro n="build_rel">  <!-- OUT: v...prn, v_chunk_tag -->
-					<with-param pos="1"/>
-				</call-macro>
-				<out>
-					<chunk name="prn" case="caseFirstWord">
-						<tags>
-							<tag><var n="v_chunk_tag"/></tag>  <!-- "REL"/"PRN" -->
-							<tag><var n="v_pers_prn"/></tag>
-							<tag><var n="v_gen_prn"/></tag>
-							<tag><var n="v_nbr_prn"/></tag>
-						</tags>
-						<lu>
-							<clip pos="1" side="tl" part="whole"/>
-						</lu>
-					</chunk>
-				</out>
 				<call-macro n="firstWord">
 					<with-param pos="1"/>
 				</call-macro>
