@@ -126,6 +126,7 @@
 			<attr-item tags="nt"/>
 			<attr-item tags="mf"/>
 			<attr-item tags="mfn"/>
+			<attr-item tags="un"/>
 			<attr-item tags="GD"/>
 		</def-attr>
 		<def-attr n="a_nbr">			<!-- Number -->

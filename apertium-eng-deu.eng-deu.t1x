@@ -429,6 +429,9 @@
 			<attr-item tags="prn.iobj"/>
 			<attr-item tags="prn.dobj"/>
 		</def-attr>
+		<def-attr n="a_np_al">
+			<attr-item tags="np.al"/>
+		</def-attr>
 		<def-attr n="a_cog">
 			<attr-item tags="np.cog"/>
 		</def-attr>
@@ -443,6 +446,7 @@
 			<attr-item tags="nt"/>
 			<attr-item tags="mf"/>
 			<attr-item tags="mfn"/>
+			<attr-item tags="un"/>
 			<attr-item tags="GD"/>
 		</def-attr>
 		<def-attr n="a_nbr">			<!-- Number -->
@@ -3239,6 +3243,15 @@
 				</when>
 			</choose>
 			<choose>
+				<when>  <!-- "np.al" with "un" -->
+					<test>
+						<equal>
+							<clip pos="1" side="tl" part="a_np_al"/>
+							<lit-tag v="np.al"/>
+						</equal>
+					</test>
+					<let><var n="v_gen_nom"/><lit-tag v="un"/></let>
+				</when>
 				<when>  <!-- "np.cog" with "mf" -->
 					<test>
 						<equal>

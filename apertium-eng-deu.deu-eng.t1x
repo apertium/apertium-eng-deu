@@ -299,6 +299,7 @@
 			<attr-item tags="nt"/>
 			<attr-item tags="mf"/>
 			<attr-item tags="mfn"/>
+			<attr-item tags="un"/>
 			<attr-item tags="GD"/>
 		</def-attr>
 		<def-attr n="a_pers">                 <!-- Person -->
@@ -326,6 +327,12 @@
 			<attr-item tags="np.top"/>
 			<attr-item tags="np.org"/>
 			<attr-item tags="np.al"/>
+		</def-attr>
+		<def-attr n="a_nom_un">
+			<attr-item tags="np.al.un"/>
+			<attr-item tags="np.org.un"/>
+			<attr-item tags="np.loc.un"/>
+			<attr-item tags="np.top.un"/>
 		</def-attr>
 		<def-attr n="a_cog">
 			<attr-item tags="np.cog"/>
@@ -1213,12 +1220,12 @@
 		</def-macro>
 
 
-		<!-- (TL) change "mfn" to "nt" (leave "m" or "f" or "nt") / OUT: v_gen -->
+		<!-- (TL) change "mfn"/"un" to "nt" (leave "m" or "f" or "nt") / OUT: v_gen -->
 		<def-macro n="chg_mfn__m_f_nt_gen" npar="1">
 			<choose>
 				<when>  <!-- leave "m"/"f"/"nt" -->
 					<test>
-						<not>  <!-- "mfn" or "mf" or emty (or GD) -->
+						<not>  <!-- "mfn" or "mf" or emty (or "un" or GD) -->
 							<or>
 								<equal>
 									<var n="v_gen"/>
@@ -1244,12 +1251,12 @@
 		</def-macro>
 
 
-		<!-- (TL) change "mfn" to "mf" (leave "m" or "f" or "nt") / OUT: v_gen -->
+		<!-- (TL) change "mfn"/"un" to "mf" (leave "m" or "f" or "nt") / OUT: v_gen -->
 		<def-macro n="chg_mfn__m_f_nt__mf_gen" npar="1">
 			<choose>
 				<when>  <!-- leave "m"/"f"/"nt" -->
 					<test>
-						<not>  <!-- "mfn" or "mf" or emty (or GD) -->
+						<not>  <!-- "mfn" or "mf" or emty (or "un" or GD) -->
 							<or>
 								<equal>
 									<var n="v_gen"/>
