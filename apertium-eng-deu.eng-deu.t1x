@@ -597,15 +597,15 @@
 			<attr-item tags="det.pos"/>
 		</def-attr>
 		<def-attr n="a_verb">
+			<attr-item tags="vblex.sep.fm"/>
+			<attr-item tags="vblex.sep.fs"/>
+			<attr-item tags="vblex.sep"/>
 			<attr-item tags="vblex"/>
 			<attr-item tags="vbser"/>
 			<attr-item tags="vbhaver"/>
 			<attr-item tags="vbdo"/>
 			<attr-item tags="vbmod"/>
 			<attr-item tags="vaux"/>
-			<attr-item tags="vblex.sep.fm"/>
-			<attr-item tags="vblex.sep.fs"/>
-			<attr-item tags="vblex.sep"/>
 		</def-attr>
 		<def-attr n="a_verb1">
 			<attr-item tags="vblex"/>
@@ -720,6 +720,7 @@
 		<def-var n="v_tense_verb"/>
 		<def-var n="v_pers_verb"/>
 		<def-var n="v_nbr_verb"/>
+		<def-var n="v_sep_verb"/>
 		<def-var n="v_lemq_verb"/>
 		<def-var n="v_pers_noun"/>
 		<def-var n="v_nbr_noun"/>
@@ -834,6 +835,7 @@
 			<let><var n="v_pers"/><lit-tag v="p3"/></let>
 			<let><var n="v_pers_noun"/><lit v=""/></let>
 			<let><var n="v_nbr_noun"/><lit v=""/></let>
+			<let><var n="v_sep_verb"/><lit v=""/></let>
 			<let><var n="v_debug"/><lit v=""/></let>
 		</def-macro>
 
@@ -2137,6 +2139,7 @@
 								<clip pos="1" side="tl" part="a_sep_verb"/>  <!-- a_sep_verb! -->
 								<lit-tag v="vblex.sep.fm"/>
 							</let>
+							<let><var n="v_sep_verb"/><lit-tag v="fm"/></let>
 						</when>
 						<when>		<!-- if sep prefer inf instead of ger -->
 							<test>
@@ -2643,7 +2646,7 @@
 		</def-macro>
 
 
-		<!-- (verb) if empty set link / OUT: v_tense_verb -->
+		<!-- (verb) if tag is empty set link number / OUT: v_tense_verb -->
 		<def-macro n="chg_empty_to_link_verb" npar="1">
 			<choose>
 				<when>
@@ -2879,7 +2882,7 @@
 		</def-macro>
 
 
-		<!-- nouns : if variable empty set default value -->
+		<!-- nouns : if variable is empty set default value -->
 		<def-macro n="set_empty_to_default" npar="1">
 			<choose>
 				<when>
@@ -3847,8 +3850,8 @@
 		</def-macro>
 
 
-		<!-- (PRN + VERB) / OUT: v...nom / v...verb -->
-		<def-macro n="build_nom_verb" npar="2">
+		<!-- (PRN + VERB)/(PRN + DO + VERB) / OUT: v...nom / v...verb -->
+		<def-macro n="build_nom_verb" npar="3">
 			<call-macro n="set_pers_gen_nbr_cas_nom">
 				<with-param pos="1"/>
 			</call-macro>
@@ -3897,7 +3900,7 @@
 					<let><var n="v_pers_tmp"/><lit v=""/></let>
 				</otherwise>
 			</choose>
-
+			
 			<!-- verb gets person and number from noun -->
 			<let><var n="v_pers_verb"/><var n="v_pers_nom"/></let>
 			<let><var n="v_nbr_verb"/><var n="v_nbr_nom"/></let>
@@ -3909,6 +3912,9 @@
 			</call-macro>
 			<call-macro n="chg_sp__verb_nom">  <!-- "sp" to v_nbr_verb -->
 				<with-param pos="2"/>
+			</call-macro>
+			<call-macro n="upd_fm_verb">  <!-- add fm if missing in sep verb -->
+				<with-param pos="3"/>
 			</call-macro>
 
 			<let><var n="v_pers_nom"/><var n="v_pers_tmp"/></let>
@@ -3929,7 +3935,7 @@
 			<let>
 				<clip pos="2" side="tl" part="tags"/>
 				<concat>
-					<clip pos="1" side="tl" part="a_verb"/>
+					<clip pos="2" side="tl" part="a_verb"/>
 					<var n="v_tense_verb"/>
 					<var n="v_pers_verb"/>
 					<var n="v_nbr_verb"/>
@@ -10851,6 +10857,7 @@
 				<call-macro n="build_nom_verb">  <!-- OUT: v...nom / v...verb -->
 					<with-param pos="2"/>
 					<with-param pos="1"/>  <!-- temp/pers/nbr from first verb -->
+					<with-param pos="3"/>
 				</call-macro>
 				<out>
 					<chunk name="verb" case="caseFirstWord">
