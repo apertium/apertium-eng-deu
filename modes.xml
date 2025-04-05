@@ -24,7 +24,7 @@
       <program name="cg-proc -w">
         <file name="eng-deu.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -gx">
+      <program name="apertium-tagger -g">
         <file name="eng-deu.prob"/>
       </program>
       <program name="lsx-proc">
@@ -69,7 +69,7 @@
       <program name="cg-proc -w">
         <file name="eng-deu.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -gx">
+      <program name="apertium-tagger -g">
         <file name="eng-deu.prob"/>
       </program>
       <program name="lsx-proc">
@@ -86,7 +86,7 @@
       <program name="cg-proc -w">
         <file name="eng-deu.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -gx">
+      <program name="apertium-tagger -g">
         <file name="eng-deu.prob"/>
       </program>
       <program name="lsx-proc">
